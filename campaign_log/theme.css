@@ -1,0 +1,55 @@
+body {
+    background: #000;
+}
+
+body > p {
+    color: white;
+}
+
+body > p > a {
+    color: #aaf;
+}
+
+div.content {
+    max-width: 30em;
+    width: 90%;
+    margin: 1em auto;
+    background: #f7f7c7 0%;
+    font-size: 16pt;
+    padding: 1px 1em;
+    box-shadow: 6px 3px 10px 5px #ffa,
+               -2px 1px 4px 0px #fed,
+               -6px 3px 8px 7px #fca;
+}
+
+h1 {
+    font-size: 22pt;
+    text-shadow: 1px 1px 3px #700;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h3 {
+    font-size: 14pt;
+    font-style: italic;
+    margin-top: -0.5em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 12pt;
+    border: 1px solid #555;
+    padding: 2px;
+}
+
+th {
+    font-size: 12pt;
+    background: #ddd;
+    white-space: nowrap;
+    text-align: center;
+}

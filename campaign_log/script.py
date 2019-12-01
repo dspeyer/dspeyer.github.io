@@ -1,0 +1,61 @@
+#!/usr/bin/python
+
+import re, subprocess, itertools
+
+lines = file('cl5.txt').readlines()
+lines[0] = lines[0][3:]
+chapters = [ line[2:] for line in lines if line.startswith('# ') ]
+cfns = [ re.sub('[^a-zA-Z0-9]','_',c)+'.html' for c in chapters ]
+cfs = [ file(fn,'w') for fn in cfns ]
+
+for c,f in zip(cfs,chapters):
+    c.write('''
+              <html>
+                <head>
+                  <title>%s</title>
+                  <link rel=stylesheet href=theme.css>
+                  <meta charset="utf-8">
+                </head>
+                <body>
+                  <div class=content>
+    ''' % f)
+    c.flush()
+    
+proc=None
+for line in lines:
+    if line.startswith('# '):
+        if proc:
+            proc.stdin.close()
+            proc.wait()
+        i = chapters.index(line[2:])
+        proc = subprocess.Popen(['pandoc','-f','markdown'],stdin=subprocess.PIPE,stdout=cfs[i])
+    proc.stdin.write(line)
+proc.stdin.close()
+proc.wait()
+
+for c,i in zip(cfs,itertools.count()):
+    c.write('</div>')
+    try:
+        c.write('<p><a href=%s>Next: %s</a></p>' % (cfns[i+1],chapters[i+1]))
+    except IndexError:
+        pass
+    c.write('<p>Jump to chapter: <select id=s>\n')
+    for cn,fn,j in zip(chapters,cfns,itertools.count()):
+        c.write('  <option value=%s%s>%s</option>\n'%(fn,(i==j and ' selected' or ''),cn))
+    c.write('''</select></p>
+    <script>
+      document.getElementById('s').addEventListener('change',function(){
+        window.location.href = this.value;
+      });
+    </script>
+    <p><a href=index.html>Home</a></p>
+    ''')
+    c.write('</body></html>')
+    c.close()
+
+f = file('index.html','w')
+f.write('<html><head><title>Campaign Log</title><link rel=stylesheet href=theme.css></head><body><div class=content><ul>')
+for cn,fn in zip(chapters,cfns):
+    f.write('  <li><a href=%s>%s</a>\n'%(fn,cn))
+f.write('</ul></div></body></html>')
+f.close()
