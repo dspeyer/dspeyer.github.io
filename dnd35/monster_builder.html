@@ -1,0 +1,1084 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script src=data.js></script>
+<script src=data_lists.js></script>
+<script src=dragondata.js></script>
+<script src=epicdragondata.js></script>
+<script src=wotcdata.js></script>
+<script src=variets.js></script>
+<script src=realmsdata.js></script>
+<style>
+input.small { width: 2em }
+td.nowrap {white-space: nowrap }
+</style>
+<script>
+t = function(hd, bab, goodsaves, skills, nonstat) {
+     return {'hd':hd, 'bab':bab, 'goodsaves':goodsaves, 'skills':skills, 'nonstat':nonstat};
+};
+types = {
+    'Aberration': t(8, .75, 'will', 2),
+    'Animal': t(8, .75, 'fort,ref', 2),
+    'Construct': t(10, .75, '', 2, 'con'),
+    'Dragon': t(12, 1, 'fort,ref,will', 6),
+    'Elemental': t(8, .75, 'varies', 2),
+    'Fey': t(6, .5, 'ref,will', 6),
+    'Giant': t(8, .75, 'fort', 2),
+    'Humanoid': t(8, .75, 'ref', 2),
+    'Magical Beast': t(10, 1, 'ref,fort', 2),
+    'Monstrous Humanoid': t(8, 1, 'ref,will', 2),
+    'Ooze': t(10, .75, '', 2, 'int'),
+    'Outsider': t(8, 1, 'fort,ref,will', 8),
+    'Plant': t(8, .75, 'fort', 2),
+    'Undead': t(12, .5, 'will', 4, 'con'),
+    'Vermin': t(8, .75, 'fort', 2, 'int')
+};
+
+sizenames = ['Fine', 'Diminutive', 'Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan', 'Colossal', 'Colossal+'];
+
+skillkeys = {
+  'Appraise': 'int',
+  'Autohypnosis': 'int',
+  'Balance': 'dex',
+  'Bluff': 'cha',
+  'Climb': 'str',
+  'Concentration': 'con',
+  'Craft': 'int',
+  'Decipher Script': 'int',
+  'Diplomacy': 'cha',
+  'Disable Device': 'int',
+  'Disguise': 'cha',
+  'Escape Artist': 'dex',
+  'Forgery': 'int',
+  'Gather Information': 'cha',
+  'Handle Animal': 'cha',
+  'Heal': 'wis',
+  'Hide': 'dex',
+  'Intimidate': 'cha',
+  'Jump': 'str',
+  'Knowledge': 'int',
+  'Listen': 'wis',
+  'Martial Lore': 'int',
+  'Move Silently': 'dex',
+  'Open Lock': 'dex',
+  'Perform': 'cha',
+  'Profession': 'wis',
+  'Psicraft': 'int',
+  'Ride': 'dex',
+  'Search': 'int',
+  'Sense Motive': 'wis',
+  'Sleight of Hand': 'dex',
+  'Spellcraft': 'int',
+  'Spot': 'wis',
+  'Survival': 'wis',
+  'Swim': 'str',
+  'Tumble': 'dex',
+  'Use Magic Device': 'cha',
+  'Use Psionic Device': 'cha',
+  'Use Rope': 'dex'
+};
+
+attrs = ['str', 'dex', 'con', 'int', 'wis', 'cha'];
+
+damagebysize = ['1', '1d2', '1d3', '1d4', '1d6', '1d8', '2d6', '3d6', '4d6', '6d6'];
+
+bigger={};
+smaller={};
+for (i in damagebysize) {
+    if (i != 0) {
+	smaller[damagebysize[i]] = damagebysize[i-1];
+    }
+    if (i != damagebysize.length-1) {
+	bigger[damagebysize[i]] = damagebysize[i-(-1)]; // force integer addition
+    }
+}
+smaller['1d10'] = '1d8';
+bigger['1d10'] = '2d8';
+smaller['1d12'] = '1d10';
+bigger['1d12'] = '3d6';
+smaller['2d4'] = '1d6';
+bigger['2d4'] = '2d6';
+smaller['2d8'] = '1d10';
+bigger['2d8'] = '3d10';
+smaller['3d8'] = '2d8';
+bigger['3d8'] = '4d8';
+smaller['4d8'] = '3d8';
+bigger['4d8'] = '6d8';
+smaller['6d8'] = '4d8';
+bigger['6d8'] = '8d8';
+smaller['8d6'] = '6d8';
+
+sq = function(n) {
+    return n * n;
+}
+
+wp = function(n) {
+    if (n >= 0) {
+	return '+' + (n-0);
+    } else {
+	return n.toString();
+    }
+};
+
+add = function(map, key, val) {
+    if ( ! (key in map)) {
+	map[key] = 0;
+    }
+    map[key] += val-0;
+};
+
+crRound = function(n) {
+    if (n > .65) {
+	return Math.round(n);
+    } else if (n > 0.1) {
+	return '1/'+Math.round(1/n);
+    } else {
+	return '1/10';
+    }
+};
+
+recalc = function() {
+    var d = {};
+    $('input, textarea').each(function() {
+	    var id = this.id;
+	    if (!id) {
+		return;
+	    }
+	    var v = this.value;
+	    d[id] = v;
+	    $(this).text(this.value);
+	});
+    $('select').each(function() {
+	    d[this.id] = $(this).val();
+	});
+    d.sizename = d.size;
+    d.size = sizenames.indexOf(d.sizename);
+    var t = d.type;    
+    d.type = types[t];
+    d.type.name = t;
+    var featsfound = [];
+    var hasfeat = function(feat) {
+	var retval = d.feats.toLowerCase().indexOf(feat) != -1;
+	if (retval) featsfound.push(feat);
+	return retval;
+    };
+    
+    for (var i in attrs) {
+	var a = attrs[i];
+	if (d[a] == '-') {
+	    d[a+'b'] = 0;
+	} else {
+	    d[a+'b'] = Math.floor((d[a]-10) / 2);
+	}
+    }
+
+    //dice
+    $('#dice').text(d.type.hd);
+
+    //bonushp
+    var bhp = d.conb * d.hd;
+    if (d.type.name == 'Construct') {
+	if (d.size > 2) {
+	    bhp += 10 * (d.size-2);
+	}
+	if (d.size > 6) {
+	    bhp += 10 * (d.size-6);
+	}
+    }
+    $('#bonushp').text(bhp);
+
+    //hp
+    var hp = Math.floor(d.hd*(d.type.hd/2+0.5)) + bhp;
+    if (hasfeat('toughness')) hp += 3;
+    $('#hp').text(hp);
+
+    //init
+    $('#init').text(wp(d.dexb) - (hasfeat('improved initiative')?-4:0));
+
+    //speeds
+    $('#speeds').text(d.walk);
+    $('#speeds').append(' ft (');
+    $('#speeds').append(d.walk/5);
+    $('#speeds').append(' squares)');
+    var move = ['fly', 'swim', 'burrow', 'climb'];
+    for (var i in move) {
+	mv = move[i];
+	if (d[mv] > 0) {
+	    $('#speeds').append(', '+mv+' '+d[mv]+'ft');
+	    if (mv == 'fly') {
+		$('#speeds').append('('+d.manuv+')');
+	    }
+	}
+    }
+
+    //ac autoac touch flat
+    var ac=10, touchdiff=0, flatdiff=0;
+    $('#autoac').text('');
+
+    var sizeAcAtk;
+    if (d.size == 4) {
+	sizeAcAtk = 0;
+    } else {
+	sizeAcAtk = Math.pow(2, Math.abs(d.size - 4) - 1);
+	if (d.size > 4) sizeAcAtk *= -1;
+    }
+    if (sizeAcAtk != 0) {
+	$('#autoac').append(wp(sizeAcAtk)+' size,');
+	ac += sizeAcAtk;
+    }
+
+    $('#autoac').append(wp(d.dexb)+' dex');
+    ac += d.dexb-0;
+    if (d.dexb > 0) {
+	flatdiff += d.dexb-0;
+    }
+
+    for (var i in manualacs) {
+	mac = manualacs[i];
+	var t = mac.type.val().toLowerCase();
+	var v = mac.value.val();
+	ac += v-0;
+	if (t == 'armor' || t == 'natural') {
+	    touchdiff += v-0;
+	}
+	if (t == 'dodge') {
+	    flatdiff += v-0;
+	}
+	mac.type.text(mac.type.val());
+	mac.value.text(wp(mac.value.val()));
+    }
+
+    $('#ac').text(ac);
+    $('#touch').text(ac-touchdiff);
+    $('#flat').text(ac-flatdiff);
+
+    //bab
+    var bab = Math.floor(d.hd * d.type.bab);
+    $('#bab').text(wp(bab));
+
+    //grapple
+    $('#grapple').text(wp(bab + d.strb + (d.size-4)*4));
+
+    //attack fullattack
+    $('#attack').text('');
+    $('#fullattack').text('');
+    var allatk = bab + sizeAcAtk;
+    var bonuses = {'ranged': d.dexb,
+		   'melee': hasfeat('weapon finesse') ? d.dexb : d.strb,
+		   'pri': 0,
+		   'sec': hasfeat('multiattack') ? -2 : -5};
+    var highestAtk = -Infinity; // We'll need this for CR
+    for (var i in weapons) {
+	w = {};
+	for (var f in weapons[i]) {
+	    w[f] = weapons[i][f].val();
+	}
+	var atk = allatk + bonuses[w.level] + bonuses[w.type];
+	if (hasfeat('weapon focus('+w.name+')') || hasfeat('weapon focus ('+w.name+')')) {
+	    atk += 1;
+	}
+	if (atk > highestAtk) highestAtk = atk;
+	var dmg = (w.type == 'melee') ? d.strb : 0;
+	if (w.level == 'sec') dmg = Math.floor(dmg / 2);
+	var desc = ' '+wp(atk)+' '+w.type+' ('+w.dmg+wp(dmg);
+	if (w.plus) {
+	    desc += ' plus '+w.plus;
+	}
+	desc += ')';
+	if (w.level == 'pri') {
+	    if ($('#attack').text()) {
+		$('#attack').append(' or ');
+	    }
+	    $('#attack').append(w.name+desc);
+	}
+	if ($('#fullattack').text()) {
+	    $('#fullattack').append(' and ');
+	}
+	if (w.n == 1) {
+	    $('#fullattack').append(w.name+desc);
+	} else {
+	    $('#fullattack').append(w.n+' '+w.name+'s'+desc);
+	}
+    }
+
+    //spacereach
+    var srs = ['1ft/0ft', '1ft/0ft', '2.5ft/0ft', '5ft/5ft', '5ft/5ft', '10ft/5ft', '15ft,10ft', '20ft/15ft', '30ft/20ft', '50ft/30ft'];
+    $('#spacereach').text(srs[d.size]);
+
+    //fort ref will
+    var saves = {'fort':'conb', 'ref':'dexb', 'will':'wisb'};
+    var savefeat = {'fort':'great fortitude', 'ref':'lightning reflexes', 'will':'iron will'};
+    for (var save in saves) {
+	var good = 0;
+	if (d[save+'over'] == 'good') {
+	    good = 1;
+	} else if (d[save+'over'] == '-') {
+	    if (d.type.goodsaves.indexOf(save) != -1) {
+		good = 1;
+	    }
+	    if (d.type.name == 'Elemental') {
+		if (save == 'fort' && (d.subtypes.indexOf('earth') != -1 ||
+				       d.subtypes.indexOf('water') != -1)) {
+		    good = 1;
+		}
+		if (save == 'ref' && (d.subtypes.indexOf('fire') != -1 ||
+				      d.subtypes.indexOf('air') != -1)) {
+		    good = 1;
+		}
+	    }
+	}
+	var v = good ? Math.floor(2 + d.hd / 2) : Math.floor(d.hd / 3);
+	v += d[saves[save]]-0;
+	v += d[save+'b']-0;
+	if (hasfeat(savefeat[save])) v += 2;
+	$('#'+save).text(wp(v));
+    }
+
+    //abiliywarnings
+    if (d.type.nonstat && d[d.type.nonstat] != '-') {
+	$('#abiliywarnings').text(d.type.name+"s generally don't have "+d.type.nonstat+' scores.  Use "-" to indicate a non-score');
+    } else {
+	$('#abiliywarnings').text('');
+    }
+
+    //skills
+    var mods = {};
+    var alts = {};
+    var situational = {};
+    var altreverse = {}, racialreverse = {}; // Used in the gitp section below
+    for (var i in alternates) {
+	var skill = alternates[i].skill.val();
+	var attr = alternates[i].attr.val();
+	alts[skill] = attr;
+	mods[skill] = 0;
+	if ( ! (attr in altreverse)) altreverse[attr] = [];
+	altreverse[attr].push(skill);
+    }
+    var plainsynergies = {
+	'Autohypnosis': ['Knowledge (psionics)'],
+	'Bluff': ['Diplomacy', 'Intimidate', 'Sleight of Hand'],
+	'Concentration': ['Autohypnosis'],
+	'Handle Animal': ['Ride'],
+	'Jump': ['Tumble'],
+	'Knowledge (arcana)': ['Spellcraft'],
+	'Knowledge (local)': ['Gather Information'],
+	'Knowledge (nobility and royalty)': ['Diplomacy'],
+	'Knowledge (psionics)': ['Psicraft'],
+	'Sense Motive': ['Diplomacy'],
+	'Survival': ['Knowledge (nature)'],
+	'Tumble': ['Balance', 'Jump']
+    };
+    var situationalsynergies = {
+	'Bluff': [['Disguise', 'to act in character']],
+	'Decipher Script': [['Use Magic Device', 'involving scrolls']],
+	'Escape Artist': [['Use Rope', 'involving bindings']],
+	'Knowledge (architecture and engineering)': [['Search', 'secret doors and similar']],
+	'Knowledge (dungeoneering)': [['Survival', 'underground']],
+	'Knowledge (geography)': [['Survival', 'keep from getting lost or avoiding hazards']],
+	'Knowledge (nature)': [['Survival', 'above-ground nature']],
+	'Knowledge (the planes)': [['Survival', 'on other planes']],
+	'Psicraft': [['Use Psionic Device', 'power stones']],
+	'Search': [['Survival', 'following tracks']],
+	'Spellcraft': [['Use Magic Device', 'scrolls']],
+	'Use Magic Device': [['Spellcraft', 'to decipher scrolls']],
+	'Use Psionic Device': [['Psicraft', 'to address power stones']],
+	'Use Rope': [['Climb', 'ropes'], ['Escape Artist', 'ropes']]
+    };
+    for (var i in ranks) {
+	var skill = ranks[i].skill.val();
+	var v = ranks[i].ranks.val();
+	add(mods, skill, v);
+	if (ranks[i].isranks) {
+	    if (v >= 5) {
+		if (skill in plainsynergies) {
+		    for (var i in plainsynergies[skill]) {
+			add(mods, plainsynergies[skill][i], 2);
+		    }
+		}
+		if (skill in situationalsynergies) {
+		    for (var i in situationalsynergies[skill]) {
+			var syn = situationalsynergies[skill][i]
+			add(mods, syn[0], 0);
+			if ( ! (syn[0] in situational)) {
+			    situational[syn[0]] = {};
+			}
+			situational[syn[0]][syn[1]] = 2;
+		    }
+		}
+	    }
+	} else {
+	    if ( ! (v in racialreverse)) racialreverse[v] = [];
+	    racialreverse[v].push(skill);
+	}
+    }
+    var skillfeats = {'acrobatic': ['Jump', 'Tumble checks'],
+		      'agile': ['Balance', 'Escape Artist'],
+		      'alertness': ['Listen', 'Spot'],
+		      'animal affinity': ['Handle Animal', 'Ride'],
+		      'athletic': ['Climb', 'Swim'],
+		      'deceitful': ['Disguise', 'Forgery'],
+		      'deft hands': ['Sleight of Hand', 'Use Rope'],
+		      'diligent': ['Appraise', 'Decipher Script'],
+		      'investigator': ['Gather Information', 'Search'],
+		      'magical aptitude': ['Spellcraft', 'Use Magic'],
+		      'negotiator': ['Diplomacy', 'Sense Motive'],
+		      'nimble fingers': ['Disable Device', 'Open Lock'],
+		      'persuasive': ['Bluff', 'Intimidate'],
+		      'self-sufficient': ['Heal', 'Survival'],
+		      'stealthy': ['Hide', 'Move Silently']};
+    for (var f in skillfeats) {
+	if (hasfeat(f)) {
+	    add(mods, skillfeats[f][0], 2);
+	    add(mods, skillfeats[f][1], 2);
+	}
+    }
+    var re = new RegExp('skill focus *\\(([^)]*)\\)', 'gi');
+    var match;
+    while((match=re.exec(d.feats))) {
+	featsfound.push(match[0]);
+	add(mods, match[1].title(), 3);
+    }	
+    if (d.size < 4) {
+	add(mods, 'Hide', 4 * (4-d.size));
+    }
+    for (var skill in mods) {
+	var attr;
+	if (skill in alts) {
+	    attr=alts[skill];
+	} else if (skill in skillkeys) {
+	    attr=skillkeys[skill];
+	} else {
+	    attr=skillkeys[skill.split(' (')[0]];
+	}
+	mods[skill] += d[attr+'b'];
+    }
+    if (d.size > 4 && 'Hide' in mods) {
+	add(mods, 'Hide', 4 * (4-d.size));
+    }
+
+    var skillList = [];
+    for (var skill in mods) {
+	var skilltext = skill+' '+wp(mods[skill]);
+	if (skill in situational) {
+	    for (var situation in situational[skill]) {
+		skilltext += ' ('+wp(mods[skill]+situational[skill][situation])+' '+situation+')';
+	    }
+	}
+	skillList.push(skilltext);
+    }
+    skillList.sort()
+    $('#skills').text(skillList.join(', '));
+
+    //sumranks
+    var sumranks = 0;
+    for (var i in ranks) {
+	if (ranks[i].isranks) {
+	    sumranks += ranks[i].ranks.val()-0;
+	}
+    }
+    $('#sumranks').text(sumranks);
+
+    //availranks
+    if (d.int > 0) {
+	$('#availranks').text(Math.max(d.type.skills + d.intb, 1) * (d.hd - -3));
+    } else {
+	$('#availranks').text(0);
+    }
+
+    //maxranks
+    $('#maxranks').text(d.hd - -3);
+
+    //nfeats
+    var nfeats; // We'll need this later for VTcr
+    if (d.int > 0) {
+	nfeats = Math.floor(d.hd/3)+1;
+	$('#nfeats').text(nfeats);
+    } else {
+	nfeats = 0;
+	$('#availranks').text(0);
+    }
+
+    //featsshown
+    if (featsfound.length) {
+	$('#featsacct').text('Feats included in statblock: ' + featsfound.join(', '));
+    } else {
+	$('#featsacct').text('');
+    }
+
+    //CR
+    $('#HPACcr').text(crRound(-5.337 + 0.327*ac + 0.658*Math.sqrt(hp)));
+    $('#TABcr').text(crRound(0.06 + 0.525*highestAtk));
+    var VTcr = hp / (4.5 + .5 * Math.floor(d.hd / 5));
+    VTcr += (ac - 10) / 5;
+    if (/[a-z]/.test(d.specialattacks)) VTcr += d.specialattacks.split(/[,;]/).length;
+    if (/[a-z]/.test(d.specialqualities)) VTcr += d.specialqualities.split(/[,;]/).length;
+    VTcr += Math.max((d.feats.split(/[,;]/).length - nfeats) / 2, 0);
+    VTcr /= 3;
+    $('#VTcr').text(crRound(VTcr));
+    var bestname='', bestscore=Infinity;
+    for (var i in monsters) {
+	if (!('Hit Points' in monsters[i] && 'Armor Class' in monsters[i] && 'Total Attack Bonus' in monsters[i])){
+	    continue;
+	}
+	var err=0;
+	err += sq(Math.sqrt(hp) - Math.sqrt(monsters[i]['Hit Points']));
+	err += sq(ac - monsters[i]['Armor Class']);
+	err += sq(highestAtk - monsters[i]['Total Attack Bonus'][0]);
+	if (err < bestscore && err > -Infinity) {
+	    bestname = i;
+	    bestscore = err;
+	}
+    }
+    if (bestname) {
+	$('#CloseCRName').text(bestname);
+	$('#CloseCRName').attr('href', '/monster_view.html#' + bestname);
+	$('#CloseCR').text(monsters[bestname]['Challenge Rating']);
+    }
+
+    //gitp
+    $('#gitp').text('');
+    var trs = $('tr');
+    $('#gitp').append('[SIZE=+1]'+d.name+'[/SIZE]');
+    $('#gitp').append($('<br/>'));
+    $('#gitp').append($('<br/>'));
+    $('#gitp').append('[TABLE="class:borderless"]');
+    cols=['f2e0ce','fff2e5'];
+    col=0;
+    trs.each(function(){
+	    var tr = $(this);
+	    var nametd = tr.children('td:first');
+	    var valtd = nametd.next();
+	    var name = nametd.text();
+	    if (name == 'Name') {
+		return;
+            } else {
+		$('#gitp').append('[TR][TD="align:right"][B]'+name+':[/B][/TD][TD="bgcolor:#'+cols[col]+'"]')
+                if (name == 'Size/Type') {
+		    $('#gitp').append(d.sizename+' '+d.type.name);
+		    if (d.subtypes) {
+		        $('#gitp').append(' ('+d.subtypes+')');
+		    }
+                } else {
+                    $('#gitp').append(valtd.text());
+                }
+		$('#gitp').append('[/TD][/TR]');
+		$('#gitp').append($('<br/>'));
+            }
+            col=1-col;
+	});
+    $('#gitp').append('[/TABLE]');
+    $('#gitp').append($('<br/>'));
+    $('#gitp').append($('<br/>'));
+    var specials = Array.concat(d.specialattacks.split(/[;,] */),
+				d.specialqualities.split(/[;,] */)); 
+    for (var i in weapons) {
+	var plus = weapons[i].plus.val();
+	if (plus) {
+	    specials.push(plus);
+	}
+    }
+    for (var i in specials) {
+	if (!specials[i]) continue;
+	$('#gitp').append('[B]'+specials[i].title()+'[/B]');
+	$('#gitp').append($('<br/>'));
+	$('#gitp').append($('<br/>'));
+    }
+    var listWithAnd=function(x) {
+	if (x.length == 0) {
+	    return '';
+	} else if (x.length == 1) {
+	    return x[0];
+	} else {
+	    return x.slice(0,-1).join(', ')+' and '+x[x.length-1];
+	}
+    };
+    var racl=[], altl=[], tenl=[];
+    for (var bonus in racialreverse) {
+	racl.push('a +'+bonus+' racial bonus on '+listWithAnd(racialreverse[bonus])+' checks');
+    }
+    for (var attr in altreverse) {
+	altl.push('its '+attr+' modifier for '+listWithAnd(altreverse[attr])+' checks');
+    }
+    if (d.swim > 0) {
+	tenl.push('swim');
+    }
+    if (d.climb > 0) {
+	tenl.push('climb');
+    }
+    if (racl.length || altl.length || tenl.length) {
+	$('#gitp').append($('<br/>'));
+	$('#gitp').append($('<br/>'));
+	$('#gitp').append('[B]Skills[/B]')
+	$('#gitp').append($('<br/>'));
+	var callit = 'A '+d.name;
+	if (racl.length) {
+	    $('#gitp').append(callit+' has '+listWithAnd(racl)+'. ');
+	    callit = 'It';
+	}
+	if (altl.length) {
+	    $('#gitp').append(callit+' uses '+listWithAnd(altl)+'. ');
+	    callit = 'It';
+	}
+	if (tenl.length) {
+	    $('#gitp').append(callit+' can take 10 on '+listWithAnd(tenl)+
+			      ' checks even when rushed or threatened. ');
+	}
+    }
+
+    if (d.fortb || d.refb || d.willb) {
+	$('#gitp').append($('<br/>'));
+	$('#gitp').append($('<br/>'));
+	$('#gitp').append('[B]Saves[/B]')
+	$('#gitp').append($('<br/>'));
+	if (d.fortb == d.refb && d.refb == d.willb) {
+	    $('#gitp').append('A '+d.name+' has a '+wp(d.fortb)+' racial bonus to all saves.');
+	} else {
+	    var savl=[];
+	    if (d.fortb) savl.push('a '+wp(d.fortb)+' racial bonus to fort saves');
+	    if (d.refb) savl.push('a '+wp(d.refb)+' racial bonus to ref saves');
+	    if (d.willb) savl.push('a '+wp(d.willb)+' racial bonus to will saves');
+	    $('#gitp').append('A '+d.name+' has '+listWithAnd(savl)+'.');
+	}
+    }
+};
+
+oldsize = sizenames.indexOf('Medium');
+changeSize = function() {
+    var sizename = $('#size').val()
+    var size = sizenames.indexOf(sizename);
+    var changes = size - oldsize;
+    var dir = bigger;
+    if (changes < 0) {
+	changes = -changes;
+	dir = smaller;
+    }
+    for (var i in weapons) {
+	var weapon = weapons[i];
+	var dmg = weapon.dmg.val();
+	for (var j=0; j<changes; j++) {
+	    if (dmg in dir) {
+		dmg = dir[dmg];
+	    }
+	}
+	weapon.dmg.val(dmg);
+    }
+    oldsize = size;
+    recalc();
+};
+
+closeButton = function(list) {
+    return $('<input type=button />').
+      val('X').
+      data('target', list[list.length-1]).
+      data('list', list).
+      click(function(){
+	      var self = $(this);
+	      var target = self.data('target');
+	      var list = self.data('list');
+	      for (var i=0; i<list.length; i++) {
+		  if (list[i] == target) {
+		      var rest = list.splice(i+1);
+		      list.length = i;
+		      list.push.apply(list, rest);
+		      break;
+		  }
+	      }
+	      self.parent().empty();
+	      recalc();
+	  });
+}
+		  
+manualacs = [];
+moreacs = function() {
+    var v = $('<input/>').css('width','2em').change(recalc).appendTo($('#manualacs'));
+    var t = $('<input/>').css('width','7em').change(recalc).appendTo($('#manualacs'));
+    manualacs.push({'type':t, 'value':v});
+    $('<span/>').
+      append(', ').
+      append(v).
+      append(' ').
+      append(t).
+      append(closeButton(manualacs)).
+      appendTo($('#manualacs'));
+};
+
+weapons = [];
+moreweapons = function() {
+    var n = $('<input/>').val(1).change(recalc).css('width','1em');
+    var na = $('<input/>').val('slam').change(recalc).css('width','6em');
+    var recdmg = damagebysize[sizenames.indexOf($('#size').val())];
+    var dmg = $('<input/>').val(recdmg).change(recalc).css('width','3em');
+    var plus = $('<input/>').val('').change(recalc).css('width','6em');
+    var t = $('<select><option>melee</option><option>ranged</option></select>');
+    var l = $('<select><option>pri</option><option>sec</option></select>');
+    weapons.push({'n':n, 'name':na, 'dmg':dmg, 'plus':plus, 'type':t, 'level':l});
+    $('<div/>').
+      append(n).
+      append(na).
+      append(' does ').
+      append(dmg).
+      append('+').
+      append(plus).  
+      append(t).
+      append(l).
+      append(closeButton(weapons)).
+      appendTo($('#weapons'));
+};
+
+superskills = {'Craft':0, 'Knowledge':0, 'Perform':0, 'Profession':0};
+
+skillChange = function() {
+    var self = $(this);
+    if (self.val() in superskills) {
+	self.css('width','1in');
+	self.data('e').css('display','inline');
+    } else {
+	self.css('width','1.5in');
+	self.data('e').css('display','none');
+    }
+    recalc();
+};
+
+getSkill = function() {
+    var self = $(this);
+    var s = self.data('s').val();
+    if (s in superskills) {
+	return s + ' (' + this.data('e').val() + ')';
+    } else {
+	return s;
+    }
+};
+
+newSkillSelecter = function() {
+    var cont = $('<span/>').css('white-space','nowrap');
+    var s = $('<select/>').change(skillChange).css('width','1.5in');
+    for (var i in skillkeys) {
+	$('<option/>').text(i).attr('value',i).appendTo(s);
+    }
+    var e = $('<input/>').change(recalc).
+                css('width','.5in').css('display','none');
+    cont.append(s).append(e);
+    cont.val = getSkill;
+    cont.data('s',s).data('e',e);
+    s.data('e',e);
+    return cont;
+};
+
+ranks = [];
+moreranksorbonuses = function(cont, isranks) {
+    var s = newSkillSelecter();
+    var v = $('<input/>').change(recalc).css('width','2em');
+    ranks.push({'skill':s, 'ranks':v, 'isranks':isranks});
+    $('<div/>').
+      append(s).
+      append(v).
+      append(closeButton(ranks)).
+      appendTo(cont);
+};
+
+moreranks = function() {
+    moreranksorbonuses($('#ranks'),1);
+};
+
+bonuses = [];
+morebonuses = function() {
+    moreranksorbonuses($('#bonuses'),0);
+};
+
+alternates = [];
+morealternates = function() {
+    var s = newSkillSelecter();
+    var a = $('<select/>').change(recalc);
+    for (var i in attrs) {
+	$('<option/>').text(attrs[i]).attr('value',attrs[i]).appendTo(a);
+    }
+    alternates.push({'skill':s, 'attr':a});
+    $('<div/>').
+      append(s).
+      append('uses').
+      append(a).
+      append(closeButton(alternates)).
+      appendTo($('#alternates'));
+};
+
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+};
+String.prototype.title = function() {
+        return this.replace(/([^\W_]+[^\s-]*) */g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+base = function() {
+    var monstername = $('#base_on').val();
+    if (!(monstername in monsters)) {
+	return;
+    }
+    manualacs = [];
+    $('#manualacs').empty();
+    weapons = [];
+    $('#weapons').empty();
+    ranks = [];
+    $('#ranks').empty();
+    $('#bonuses').empty();    
+    alerternates = [];
+    $('#alertnates').empty();
+    monster = monsters[monstername];
+    for (var aspect in monster) {
+	if (aspect.indexOf(' ') == -1) {
+	    var field = $('#'+aspect.toLowerCase());
+	    if (field.length) {
+                if (monster[aspect] instanceof Array) {
+                    field.val(monster[aspect].join(', '));
+                } else {
+                    field.val(monster[aspect]);
+                }
+	    }
+	}
+	if (aspect.indexOf('Armor Class: ') != -1) {
+	    var acbit = aspect.substr('Armor Class: '.length);
+	    if (manualacs.length < 1 || manualacs[0].type.val()) {
+		moreacs();
+	    }
+	    var ac = manualacs[manualacs.length-1];
+	    ac.type.val(acbit);
+	    ac.value.val(monster[aspect]);
+	}
+    }
+    $('#name').val('Modified ' + monstername);
+    $('#size').val(monster.Size.capitalize());
+    oldsize = sizenames.indexOf(monster.Size.capitalize());
+    $('#type').val(monster.Type.capitalize());
+    $('#hd').val(monster['Hit Dice']);
+    if (monster['Special Attacks'].join) {
+        $('#specialattacks').val(monster['Special Attacks'].join(', '));
+    } else {
+        $('#specialattacks').val(monster['Special Attacks']);
+    }
+    $('#specialqualities').val(monster['Special Qualities'].join(', '));
+    $('#cr').val(monster['Challenge Rating']);
+    $('#la').val(monster['Level Adjustment']);
+    var speeds = monster.Speed;
+    for (var i in speeds) {
+	var speed = speeds[i];
+	speed = speed.replace(' ft','');
+	if (speed > 0) {
+	    $('#walk').val(speed);
+	} else {
+	    pieces = speed.split(' ');
+	    field = $('#' + pieces[0]);
+	    if (field.length) {
+		field.val(pieces[1]);
+		if (pieces[0] == 'fly' && pieces.length == 3) {
+		    $('#manuv').val(pieces[2].replace('(','').replace(')','').capitalize());
+		}
+	    }
+	}
+    }
+    var attacks = monster['Full Attack'].split(/ +(?:and|or) +/);
+    for (var i in attacks) {
+	var attack = attacks[i];
+	moreweapons();
+	fields = weapons[i];
+	fields.n.val(attack.match(/^[0-9]+/) || 1);
+	fields.name.val(attack.replace(/^[0-9]+ +/,'').replace(/ [+\-].*/, ''));
+	fields.dmg.val(attack.match(/[0-9]+d[0-9]+/));
+	if (attack.indexOf('range') != -1) {
+	    fields.type.val('ranged');
+	}
+    }
+    recalc()
+};
+	
+alpha = function(s) {
+    var t = $('#'+s).val();
+    t = t.split(/[,;] */).sort().join(', ');
+    $('#'+s).val(t);
+}
+    
+</script>
+</head>
+<body>
+Base on: <input id=base_on><input type=button onclick=base()><br>
+<table border>
+<tr>
+  <td>Name</td>
+  <td><input id=name></td>
+</tr><tr>
+  <td>Size/Type</td>
+  <td>
+    <select id=size></select>
+    <select id=type></select>
+    (<input id=subtypes>)
+  </td>
+</tr><tr>
+  <td>Hit Dice</td>
+  <td><input id=hd class=small value=1>d<span id=dice></span>+<span id=bonushp></span> (<span id=hp></span> hp)</td>
+</tr><tr>
+  <td>Initiative</td>
+  <td><span id=init></span></td>
+</tr><tr>
+  <td>Speed</td>
+  <td><span id=speeds></span></td>
+  <td colspan=2>Walk:<input id=walk value=30 class=small> | 
+    Climb:<input id=climb class=small> | 
+    Swim:<input id=swim class=small> | 
+    Burrow:<input id=burrow class=small> | 
+    <nobr>Fly:<input id=fly class=small><select id=manuv>
+      <option>Perfect</option>
+      <option>Good</option>
+      <option>Average</option>
+      <option>Poor</option>
+      <option>Clumsy</option>
+    </select></nobr>
+  </td>
+</tr><tr>
+  <td>Armor Class</td>
+  <td><span id=ac></span> (<span id=autoac></span><span id=manualacs></span><input type=button value=more onclick="moreacs()">), touch <span id=touch></span>, flat-footed <span id=flat></span> </td>
+</tr><tr>
+  <td>Base Attack/Grapple</td>
+  <td><span id=bab></span>/<span id=grapple></span></td>
+</tr><tr>
+  <td>Attack</td>
+  <td><span id=attack></span></td>
+  <td rowspan=2 colspan=2 class=nowrap>Weapons:
+    <div id=weapons></div>
+    <input type=button value=more onclick="moreweapons()">
+  </td>
+</tr><tr>
+  <td>Full Attack</td>
+  <td><span id=fullattack></span></td>
+</tr><tr>
+  <td>Space/Reach</td>
+  <td><span id=spacereach></span></td>
+</tr><tr>
+  <td>Special Attacks</td>
+  <td><textarea cols=40 rows=3 id=specialattacks></textarea></td>
+  <td colspan=2><input type=button value="Alphabetize" onclick="alpha('specialattacks');"></td>
+</tr><tr>
+  <td>Special Qualities</td>
+  <td><textarea cols=40 rows=3 id=specialqualities></textarea></td>
+  <td colspan=2><input type=button value="Alphabetize" onclick="alpha('specialqualities');"></td>
+</tr><tr>
+  <td>Saves</td>
+  <td>Fort <span id=fort></span>,
+    Ref <span id=ref></span>,
+    Will <span id=will></span></td>
+  <td colspan=2 class=nowrap>
+    Racial bonuses: Fort <input id=fortb class=small>, Ref <input id=refb class=small>, Will <input id=willb class=small>
+    <br>
+    Overrides:
+      Fort <select id=fortover><option>-</option><option>bad</option><option>good</option></select>
+      Ref <select id=refover><option>-</option><option>bad</option><option>good</option></select>
+      Will <select id=willover><option>-</option><option>bad</option><option>good</option></select>
+  </td>
+</tr><tr>
+  <td>Abilities</td>
+  <td>
+    Str <input id=str class=small value=10>,
+    Dex <input id=dex class=small value=10>,
+    Con <input id=con class=small value=10>,
+    Int <input id=int class=small value=10>,
+    Wis <input id=wis class=small value=10>,
+    Cha <input id=cha class=small value=10>
+  </td>
+  <td colspan=2>
+    <span id=abiliywarnings></span>
+  </td>
+</tr><tr>
+  <td>Skills</td>
+  <td><span id=skills></span></td>
+  <td>Ranks:
+    <div id=ranks></div>
+    <div style="width:1.6in;background:#ccc;text-align:right">Total: <span id=sumranks></span></div>
+    Total should be: <span id=availranks></span>, Max ranks: <span id=maxranks></span><br>
+    <input type=button value=more onclick="moreranks();">
+  </td>
+  <td>Racial Bonuses:
+    <div id=bonuses></div>
+    <input type=button value=more onclick="morebonuses();"><br>
+    Alternate Abilities:
+    <div id=alternates></div>
+    <input type=button value=more onclick="morealternates();">
+  </td>
+</tr><tr>
+  <td>Feats</td>
+  <td><textarea cols=40 rows=2 id=feats></textarea></td>
+  <td colspan=2>Should have <span id=nfeats></span> non-bonus feats<br>
+       <input type=button value="Alphabetize" onclick="alpha('feats');"><br>
+       <span id=featsacct></span></td>
+</tr><tr>
+  <td>Environment</td>
+  <td><input id=environment></td>
+</tr><tr>
+  <td>Organization</td>
+  <td><input id=organization></td>
+</tr><tr>
+  <td>Challenge Rating</td>
+  <td><input id=cr></td>
+  <td colspan=2>
+    <attr title="A simple regression based on Hit Points and Armor Class that predicts the SRD well">HPAC</attr>:
+    <span id=HPACcr></span>,
+    <attr title="A linear regression based on Total Attack Bonus that predicts the SRD almost as well">TAB</attr>:
+    <span id=TABcr></span>,
+    <attr title="A more complicated formula proposed by Vorpal Tribble on the GitP boards">VT</attr>:
+    <span id=VTcr></span><br>
+    <attr title="CR of closest existing monster by least-squares of a bunch of attributes">Most Similar:</attr>
+    <a id=CloseCRName></a>: <span id=CloseCR></span>
+  </td>
+</tr><tr>
+  <td>Treasure</td>
+  <td><input id=treasure></td>
+</tr><tr>
+  <td>Alignment</td>
+  <td><input id=alignment></td>
+</tr><tr>
+  <td>Advancement</td>
+  <td><input id=advancement></td>
+</tr><tr>
+  <td>Level Adjustment</td>
+  <td><input id=la></td>
+</tr>
+</table>
+
+    <h1>GiantITP code:</h1>
+<div style="border: solid thick black;" id=gitp></div>
+
+<script>
+monsterlist = [];
+for (monster in monsters) {
+    monsterlist.push(monster);
+}
+$('#base_on').autocomplete({'source': monsterlist});
+
+for (var type in types) {
+    $('<option/>').text(type).attr('value',type).appendTo($('#type'));
+}
+for (var size in sizenames) {
+    $('<option/>').text(sizenames[size]).attr('value',sizenames[size]).appendTo($('#size'));
+}
+$('#size').val('Medium');
+$('#size').change(changeSize);
+
+$('input').each(function() { $(this).change(recalc); } )
+$('textarea').each(function() { $(this).change(recalc); } );
+$('select').each(function() { if (this.id != 'size') $(this).change(recalc); } );
+
+moreacs();
+moreweapons();
+moreranks();
+
+recalc();
+
+if (window.location.hash) {
+    b = unescape(window.location.hash).substr(1);
+    if (b in monsters) {
+	$('#base_on').val(b);
+	base();
+    }
+}
+
+</script>
+</body>
+</html>

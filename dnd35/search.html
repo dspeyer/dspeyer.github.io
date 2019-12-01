@@ -1,0 +1,463 @@
+<html><head><title>Monster Search</title>
+<script src=data.js></script>
+<script src=data_lists.js></script>
+<script src=dragondata.js></script>
+<script src=epicdragondata.js></script>
+<script>
+for (i in monsters) {
+  monsters[i]['Web Nature'] = 'SRD';
+}
+</script>
+<script>
+for (i in monsters) {
+  if (!('Web Nature' in monsters[i])) {
+    monsters[i]['Web Nature'] = 'SRD+Logic';
+  }
+}
+</script>
+<script src=wotcdata.js></script>
+<script>
+for (i in monsters) {
+  if (!('Web Nature' in monsters[i])) {
+    monsters[i]['Web Nature'] = 'WOTC Web Enhancement';
+  }
+}
+</script>
+<script src=realmsdata.js></script>
+<script>
+for (i in monsters) {
+  if (!('Web Nature' in monsters[i])) {
+    monsters[i]['Web Nature'] = 'Realmshelp';
+  }
+}
+</script>
+<script>
+for (i in monsters) {
+  if (!('Size' in monsters[i])) {
+    delete monsters[i];
+  }
+}
+</script>
+<style>
+     td { border: thin solid #005; text-align: center; }
+     th { background: #005; color: white; }
+     table { margin: 1em; }
+     select { margin: 2px; }
+     a.button {
+	 background: #44a;
+	 border: thin outset #44a;
+	 color: white;
+	 text-decoration: none;
+	 font-size: smaller;
+	 float: right;
+	 margin-left: 2px;
+	 border-radius: 0.5em;
+     }
+</style>
+</head><body>
+<script src=variets.js></script>
+<script src=templates.js></script>
+<div style="background: #ffc; padding: 5px;">
+<input type=button value="Fewer" onclick="removeShown();" style="float:right;" id="fewer">
+<input type=button value="More" onclick="addShown();" style="float:right;">
+Extra Columns: <span id=showncols></span>
+<hr>
+<input type=button value="Add Search Term" onclick="addConstraint()" style="float:right;" height="100%">
+<b>Search for:</b>
+<form id=constraints style="margin: 10px; background:white; padding: 10px;">
+<input type=checkbox id=templates name=templates value=true><label for=templates>Include Templates</label>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type=checkbox id=variants name=variants value=true><label for=variants>Include Variants</label>
+<br>
+</form>
+<form controls>
+<input type=button value="Search" onclick="search()" style="width:100%"></div>
+<div id=results> </div>
+<script>
+
+possibilities = {};
+
+function dbg(msg) {
+    document.body.appendChild(document.createTextNode(msg));
+    document.body.appendChild(document.createElement('br'));
+}
+
+function cmp(a, b) {
+    var i, al, bl, aint, bint, as, bs, aq, bq, al, bl;
+    al = a.split(/([\d\.]+|\(|\))/);
+    bl = b.split(/([\d\.]+|\(|\))/);
+    for (i=0; i< al.length && i < bl.length; i++) {
+	if (al[i] == bl[i]) {
+	    continue;
+	}
+	aint = ((al[i]-0+'')==al[i]);
+	bint = ((bl[i]-0+'')==bl[i]);
+	if (aint && !bint) {
+	    return -1;
+	}
+	if (!aint && bint) {
+	    return 1;
+	}
+	if (aint && bint) {
+	    if (i>0 && al[i-1]=='-') return bl[i] - al[i];
+	    return al[i] - bl[i];
+	}
+	if (!aint && !bint) {
+	    if (al[i]=='-' && bl[i]=='+') return -1;
+	    if (al[i]=='+' && bl[i]=='-') return 1;
+	    lists = [ ['colossal+', 'colossal', 'gargantuan', 'huge', 'large', 'medium',
+		       'small', 'tiny', 'diminutive', 'fine'],
+		      ['none', 'no', 'standard', 'double', 'triple'],
+		      ['any', 'often', 'usually', 'always',
+		       'chaotic', 'good', 'neutral', 'evil', 'lawful'],
+		      ['clumsy', 'poor', 'average', 'good', 'perfect'],
+		      ['wyrmling', 'very young', 'young', 'juvenile', 'young adult',
+		       'adult', 'mature adult', 'old', 'very old', 'ancient',
+		       'wyrm', 'great wyrm'] ];
+	    for (li in lists) {
+		aind = lists[li].indexOf(al[i]);
+		bind = lists[li].indexOf(bl[i]);
+		if (aind > -1 && bind > -1) return aind - bind;
+	    }
+	    return al[i] < bl[i] ? -1 : 1;
+	}
+    }
+    return al.length - bl.length;
+}
+
+
+for (m in monsters) {
+    recalECL(monsters[m]);
+}
+
+for (m in monsters) {
+    for (k in monsters[m]) {
+	if (!possibilities[k]) {
+	    possibilities[k] = {};
+	}
+	if (typeof(monsters[m][k]) == typeof('')) {
+	    possibilities[k][monsters[m][k]] = 1;
+	} else {
+	    possibilities[k]['>canBeList'] = 1;
+	    for (v in monsters[m][k]) {
+		possibilities[k][monsters[m][k][v]] = 1;
+	    }
+	}
+    }
+}
+
+function fillSel(map, sel) {
+    opts = [];
+    for (i in map) {
+	opts.push(i);
+    }
+    opts.sort(cmp);
+    for (i in opts) {
+	if (opts[i][0] == '>') continue;
+	o = document.createElement('option');
+	o.appendChild(document.createTextNode(opts[i]));
+	sel.appendChild(o);
+    }
+}
+
+
+function addConstraint() {
+    var f,p,k,o,v,m,b,x;
+    f = document.getElementById('constraints');
+    p = document.createElement('p');
+    k = document.createElement('select');
+    fillSel(possibilities, k);
+    k.value = 'Alignment';
+    o = document.createElement('select');
+    fillSel({'    is or includes':1, '  is between':1,
+	     " isn't or doesn't include":1, "isn't between":1}, o); 
+    v = document.createElement('select');
+    m = document.createElement('span');
+    m.style.display = 'none';
+    m.appendChild(document.createTextNode(' and '));
+    o.onchange = function() { m.style.display = (['none','inline'])[o.selectedIndex&1]; }
+    x = document.createElement('select');
+    m.appendChild(x);
+    k.onchange = function() { filin(k, v); filin(k, x); };
+    k.onchange();
+    v.onchange = function() { if (v.selectedIndex > x.selectedIndex) x.value = v.value; };
+    x.onchange = function() { if (v.selectedIndex > x.selectedIndex) v.value = x.value; };
+    k.opsel = o;
+    k.valsel = v;
+    k.maxsel = x;
+    b = document.createElement('button');
+    b.appendChild(document.createTextNode('X'));
+    b.onclick = function() { f.removeChild(p); };
+    p.appendChild(b);
+    p.appendChild(k);
+    p.appendChild(o);
+    p.appendChild(v);
+    p.appendChild(m);
+    f.appendChild(p);
+}
+
+function removeChildren(node) {
+    while(node.childNodes.length > 0) {
+	node.removeChild(node.childNodes[0]);
+    }
+}
+
+function filin(key, val) {
+    removeChildren(val);
+    fillSel(possibilities[key.value], val);
+}
+
+function accepts(q, v) {
+    if (typeof(v) == 'undefined') {
+	return false;
+    }
+    if (q.isrange) {
+	return cmp(q.val,v)<=0 && cmp(v,q.max)<=0;
+    } else {
+	return q.val == v;
+    }
+}
+
+function monsterMatch(m, q) {
+    for (i in q) {
+	mval = m[q[i].key];
+	if ((typeof(mval) == 'undefined') && !q[i].isnot){
+	    return false;
+	} else if (typeof(mval) == 'string') {
+	    if (accepts(q[i], mval) == q[i].isnot) {
+		//		dbg(m['>templateurl']+' '+q[i].key+' '+mval+' '+q[i].val);
+		return false;
+	    }
+	} else {
+	    found = false;
+	    for (j in mval) {
+		if (accepts(q[i], mval[j])) {
+		    found = true;
+		    break;
+		}
+	    }
+	    if (found == q[i].isnot) {
+		return false;
+	    }
+	}
+    }
+    return true;
+}
+
+function getUrl(m) {
+    if (m['>url']) {
+	return m['>url'];
+    } else {
+	htmlfile = m['>file'];
+	htmlanchor = m['>anchor'];
+	if (epic.indexOf(htmlfile.toLowerCase()) > -1) {
+	    section = 'epic/';
+	} else if (psionic.indexOf(htmlfile.toLowerCase()) > -1) {
+	    section = 'psionic/';
+	} else {
+	    section = '';
+	}
+	return 'http://www.d20srd.org/srd/' + section + 'monsters/' +
+	    htmlfile + '.htm#' + (htmlanchor || '');
+    }
+}
+
+function appendMonster(m, mname, results, tname) {
+    tr = document.createElement('tr');
+    results.appendChild(tr);
+    results.data.push(tr);
+    tr.data = [];
+    for (i in cols) {
+	td = document.createElement('td');
+	if (i==0) {
+	    if (m['>base']) {
+		a = document.createElement('a');
+		a.href = 'http://www.d20srd.org/srd/monsters/lycanthrope.htm#creatingALycanthrope';
+		a.appendChild(document.createTextNode('Were -'));
+		td.appendChild(a);
+		td.appendChild(document.createTextNode(' '));
+		a = document.createElement('a');
+		a.href = getUrl(m['>base']);
+		a.appendChild(document.createTextNode(tname));
+		td.appendChild(a);
+		td.appendChild(document.createTextNode(' '));
+	    } else if (tname) {
+		a = document.createElement('a');
+		a.href = m['>templateurl'];
+		a.appendChild(document.createTextNode(tname));
+		td.appendChild(a);
+		td.appendChild(document.createTextNode(' '));
+	    }
+	    a = document.createElement('a');
+	    a.href=getUrl(m);
+	    a.appendChild(document.createTextNode(mname));
+	    td.appendChild(a);
+	    var button = function(l,url) {
+		a = document.createElement('a');
+		a.appendChild(document.createTextNode(l));
+		a.href = url + '#' + escape(mname);
+		a.className = 'button';
+		td.appendChild(a);
+	    };
+	    button('V','monster_view.html');
+	    button('M','monster_builder.html');
+	    tr.data.push(tname.toLowerCase() + ' ' + mname.toLowerCase());
+	}else{
+	    td.appendChild(document.createTextNode(m[cols[i]]));
+	    tr.data.push(m[cols[i]]);
+	}
+	tr.appendChild(td);
+    }
+}
+
+function search() {
+    var i, q, results, tmpl, vari;
+    tmpl = document.getElementById('templates').checked;
+    vari = document.getElementById('variants').checked;
+    q = [];
+    cols = ['Name', 'Size', 'Type'];
+    sels = document.getElementsByTagName('select');
+    div = document.getElementById('results');
+    results = document.createElement('table');
+    results.cellSpacing = 0;
+    div.insertBefore(results, div.firstChild);
+    for (i=0; i<sels.length; i++) {
+	if (sels[i].valsel) {
+	    newq = {key: sels[i].value,
+		    isrange: sels[i].maxsel.parentNode.style.display == 'inline',
+		    isnot: sels[i].opsel.selectedIndex > 1,
+ 		    val: sels[i].valsel.value, max: sels[i].maxsel.value};
+	    q.push(newq);
+	    if ((newq.isrange || newq.isnot || possibilities[newq.key]['>canBeList']) &&
+		(cols.indexOf(newq.key) == -1)) {
+		cols.push(newq.key);
+	    }
+	}
+    }
+    for (i in extraCols) {
+	if (cols.indexOf(extraCols[i].value) == -1) {
+	    cols.push(extraCols[i].value);
+	}
+    }
+    tr = document.createElement('tr');
+    results.appendChild(tr);
+    th = document.createElement('th');
+    th.colSpan = cols.length;
+    th.style.vAlign='center';
+    a = document.createElement('a');
+    a.appendChild(document.createTextNode('X'));
+    a.href='#';
+    a.onclick = function(){ results.parentNode.removeChild(results); };
+    a.style.background='red';
+    a.style.color='white';
+    a.style.border='outset red';
+    a.style.margin='2px';
+    a.style.fontSize='smaller';
+    a.style.textDecoration='none';
+    a.style.cssFloat='right';
+    th.appendChild(a);
+    caption = '';
+    for (i in q) {
+	if (q[i].isrange) {
+	    chr = q[i].isnot ? '\u2270' : '\u2264';
+	    caption += q[i].val+chr+q[i].key+chr+q[i].max+' ';
+	}else{
+	    chr = q[i].isnot ? '\u2260' : '=';
+	    caption += q[i].key+chr+q[i].val+' ';
+	}
+    }
+    th.appendChild(document.createTextNode(caption));
+    tr.appendChild(th);
+    tr = document.createElement('tr');
+    results.appendChild(tr);
+    for (i in cols) {
+	th = document.createElement('th');
+	a = document.createElement('a');
+	th.appendChild(a)
+	a.appendChild(document.createTextNode(cols[i]));
+	a.href = '#';
+	a.style.color = '#ccf';
+	a.table = results;
+	a.index = i;
+	a.onclick = resort;
+	if (i==0) {
+	    firstA = a;
+	}
+	tr.appendChild(th);
+    }
+    results.data = [];
+    omitTemplates = {};
+    if (tmpl) {
+	for (t in templates) {
+	    nm = templates[t](monsters['Human']);
+	    if (nm && monsterMatch(nm, q)) {
+		appendMonster(nm, '', results, t);
+		omitTemplates[t] = true;
+	    }
+	}
+    }
+    for (m in monsters) {
+	if (!vari && monsters[m]['>variant']) {
+	    continue;
+	}
+	if (monsterMatch(monsters[m], q)) {
+	    appendMonster(monsters[m], m, results, '');
+	} else if (tmpl) {
+	    for (t in templates) {
+		if (omitTemplates[t]) {
+		    continue;
+		}
+		nm = templates[t](monsters[m]);
+		if (nm && monsterMatch(nm, q)) {
+		    appendMonster(nm, m, results, t);
+		}
+	    }
+	}
+    }
+    firstA.onclick();
+}
+
+function resort() {
+    for (i in this.table.data) {
+	this.table.removeChild(this.table.data[i]);
+    }
+    var index = this.index;
+    this.table.data.sort(function(a,b){return cmp(a.data[index]+'', b.data[index]+'');});
+    for (i in this.table.data) {
+	this.table.appendChild(this.table.data[i]);
+    }
+    if (this.table.prevsorted) {
+	this.table.prevsorted.style.color='#aaf';
+	this.table.prevsorted.style.textDecoration='underline';
+    }
+    this.style.color='#fff';
+    this.style.textDecoration='none';
+    this.table.prevsorted=this;
+    return false;
+}
+
+extraCols = [];
+
+function addShown(){
+    sel = document.createElement('select');
+    fillSel(possibilities, sel);
+    extraCols.push(sel);
+    document.getElementById('showncols').appendChild(sel);
+    document.getElementById('fewer').style.display = 'inline';
+}
+
+function removeShown(){
+    sel = extraCols.pop();
+    document.getElementById('showncols').removeChild(sel);
+    if (extraCols.length == 0) {
+	document.getElementById('fewer').style.display = 'none';
+    }
+}
+
+addConstraint();
+addShown();
+extraCols[0].value="Challenge Rating";
+
+dbg(templates['HalfDragon'](monsters['Human'])['Equivalent Character Level']);
+</script>
+    </body></html>
