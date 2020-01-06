@@ -1,9 +1,40 @@
 <html><head><title>Daniel Speyer</title>
 </head>
+<style>
+h3 {
+  text-align: center;
+  font-style: italic;
+}
+div {
+  background: #ffa;
+  margin: 1em;
+  padding: 0.5em;
+}
+td:first-child > div {
+  transform: skew(0deg, 3deg);
+  box-shadow: -3px 3px 8px 5px #cc7;
+}
+td:last-child > div {
+  transform: skew(0deg, -3deg);
+  box-shadow: 3px 3px 8px 5px #cc7;
+}
+td {
+  vertical-align: top;
+}
+img {
+  width: 30%;
+}
+img.big {
+  float: left;
+  width:60%;
+}
+</style>
 <body>
+<table><tr><td colspan=2>
 <h1 style="text-align:center;">Daniel Speyer</h1>
-<p>This is my personal page, in case anyone cares.</p>
-
+<h3>This is my personal page, in case anyone cares.</h3>
+</td></tr><tr><td width=50%>
+<div>
 <h2>Research Projects</h2>
 <ul>
 <li><b>Rapid re-identification of human samples using portable DNA sequencing</b> -- <a href=https://cdn.elifesciences.org/articles/27798/elife-27798-v1.pdf>Using Nanopore Sequencers to identify individuals from whom DNA was taken</a>.  With Sophie Zaaijer, Assaf Gordon, Robert Piccone, Simon Cornelis Groen, and Yaniv Erlich.  I devised the core algorithm and did the first test; the coauthors took it from there.  Published in eLife.  Previously prepublished as <a href=https://www.biorxiv.org/content/biorxiv/early/2016/06/30/061556.full.pdf>Democratizing dna fingerprinting</a>
@@ -30,14 +61,52 @@ such code, but it is not really ready for practical use.  You can read
 <a href=autorefactor.pdf>my report</a> or you can
 download <a href=autoref.tgz>the software</a>.
 </ul>
+</div>
 
+</td><td width=50%>
+
+<div>
+<h2>Contact Information</h2>
+<ul>
+<li> Email: dspeyer@gmail.com
+<li> Phone: 646-506-5378
+</ul>
+</div>
+
+<div>
+<h2>Photos</h2>
+<h3>In case you want to know what I look like</h3>
+<a href=photos/toronto.jpg><img src=photos/toronto_thumb.jpg class=big></a>
+<a href=photos/beach.jpg><img src=photos/beach_thumb.jpg></a>
+<a href=photos/dancing.jpg><img src=photos/dancing_thumb.jpg></a>
+<a href=photos/dnaland.jpg><img src=photos/dnaland_thumb.jpg></a>
+<a href=photos/speaking.jpg><img src=photos/speaking_thumb.jpg></a>
+<a href=photos/voted.jpg><img src=photos/voted_thumb.jpg></a>
+</div>
+
+<div>
 <h2>Credentials</h2>
 <ul>
 <li><b><a href=resume2018.html>Resume</a></b>, not quite up to date
 <li><b><a href=columbia_transcript.pdf>Columbia University Transcript</a></b>
 <li><b><a href=umd_transcript.pdf>University of Maryland Transcript</a></b>
 </ul>
+</div>
 
+<div>
+<h2>Rationality</h2>
+<ul>
+<li><b><a href=http://lesswrong.com/lw/e24/the_fallacy_of_large_numbers/>The Fallacy of Large Numbers</a></b> -- When handwaving about large numbers just won't do.
+<li><b><a href=stats.html>Statistics Calculator</a></b> -- Doesn't think for you, but does crunch the numbers (and gives you a few reminders of what you should be thinking about).
+<li><b><a href=http://miscreeds.livejournal.com/7594.html>Exploring Moralspace</a></b> -- A first crack at metaethics.
+</ul>
+</div>
+
+</td></tr>
+<tr><td colspan=2><hr></td></tr>
+<tr><td>
+
+<div>
 <h2>D&D Stuff</h2>
 <ul>
 <li><b><a href=dnd35/search.html>Monster Search</a></b> -- For when you need the right monster. [D&D 3.5]
@@ -46,19 +115,20 @@ download <a href=autoref.tgz>the software</a>.
 <li><b><a href=dtd_dice_sa.html>Dungeons the Dragonning Dice Roller</a></b> -- Probability Density Functions considering explosions.
 <li><b><a href=http://age-of-warriors.appspot.com/>Age of Warriors</a></b> -- A fan sequal to Tome of Battle.  Mostly abandoned.
 </ul>
-<h2>Rationality</h2>
-<ul>
-<li><b><a href=http://lesswrong.com/lw/e24/the_fallacy_of_large_numbers/>The Fallacy of Large Numbers</a></b> -- When handwaving about large numbers just won't do.
-<li><b><a href=stats.html>Statistics Calculator</a></b> -- Doesn't think for you, but does crunch the numbers (and gives you a few reminders of what you should be thinking about).
-<li><b><a href=http://miscreeds.livejournal.com/7594.html>Exploring Moralspace</a></b> -- A first crack at metaethics.
-</ul>
+</div>
+
+<div>
 <h2>Games</h2>
 <ul>
 <li><b><a href=rr>Rodent's Revenge</a></b> -- I was challenged to do something interesting in under 50 lines of readable javascript.  Success!
 <li><b><a href=pipedream>Pipedream</a></b> -- The old gameboy game.  I really just wanted to see if I could do it in javascript without any serious graphics tools.  And who knew?  I could.
 <li><b><a href=apums.py>Antepenultimate Minesweeper</a></b> -- Minesweeper has been around for a long time, and nobody actually added features to it.  Now I have.  A silly little game.  Not as silly as all the "ultimate" games out there which are really the same old games with eye candy, though.
 </ul>
+</div>
 
+</td><td>
+
+<div>
 <h2>Fiction</h2>
 <ul>
   <li><a href="fiction/coin.html">The Coin</a>
@@ -70,9 +140,11 @@ download <a href=autoref.tgz>the software</a>.
   <li><a href="https://www.reddit.com/r/HFY/search/?q=author%3Adspeyer&restrict_sr=1&sort=top">Humanity Fuck Yeah</a>, a collection of stories glorifying humanity
   <li><a href="https://www.tthfanfic.org/authors.php?no=12918&list=published&rewrite=true">Twisting the Hellmouth</a>, a collection of (mostly crossover) fanfic
 </ul>
+</div>
 
-
+<div>
 <h2>For obsessives</h2>
 I'm user <tt>dspeyer</tt> just about everywhere, including gmail, reddit, hacker news, lesswrong and stackoverflow. 
+</div>
+</td></tr></table>
 </body></html>
-
