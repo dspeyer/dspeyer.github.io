@@ -15,7 +15,7 @@ function isEmpty(l) {
     return getImg(l) && getImg(l).src.indexOf('empty.jpg') != -1;
 }
 
-window.onkeypress=function(ev) {
+document.addEventListener('keydown',function(ev) {
     getImg(mouse).src='empty.jpg';
     for ([i, done] = [move(ev.keyCode,mouse), false]; 
 	 getImg(i) && getImg(i).src.indexOf('cat.jpg') == -1 && !done;
@@ -32,7 +32,7 @@ window.onkeypress=function(ev) {
 	for(; !isEmpty(cat);
 	    cat=[Math.floor(13*Math.random()), Math.floor(13*Math.random())]);
     }
-};
+});
 
 function tryMoveCatTo(nloc){
     if (getImg(nloc) && getImg(nloc).src.indexOf('empty.jpg') != -1) {
