@@ -1,0 +1,255 @@
+<html>
+  <head>
+    <title>Does your stats gruntwork for you</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+    <style>
+      input { width:3em; }
+      div.obs { 
+	  border: thin solid black; 
+	  border-radius: 5px;
+	  padding: 5px;
+	  margin: 10px;
+          display: inline-block;
+          background: #ffc;
+          white-space: nowrap;
+      }
+      div.help {      
+          background: #ccf;
+          -moz-box-shadow: 3px 3px 2px #444;
+          -webkit-box-shadow: 3px 3px 2px #444;
+          box-shadow: 3px 3px 2px #444;
+          padding: 2px;
+          margin-bottom: 10px;
+          margin-right: 5px;
+          display:none;
+      }
+      div.belief {
+          font-size: larger;
+          color: #333;
+      }
+      div.help h4 { margin: 0px; }
+      div.option:hover { background: yellow; }
+      td { vertical-align: top; }
+      a.help {
+        color: white;
+        background: blue;
+        border-radius: 50%;
+        text-decoration: none;
+        padding-left: 3px;
+        padding-right: 4px;
+        font-weight: 700;
+      }
+      a.close {
+	  color:white;
+	  background: #a00;
+	  border: 3px yellow outset;
+	  margin: 3px;
+	  text-decoration: none;
+	  float: right;
+          font-weight: 900;
+      }
+      div.indent { margin-left: 3em; }
+    </style>
+    <script>
+function dbg(str) {
+    $('body').append(str).append($('<br>'));
+}
+
+var obss=0;
+
+function mustBeProbability() {
+    var self = $(this);
+    var v = self.val();
+    if (v != '' && (isNaN(v) || v<0 || v>1)) {
+	self.css('background', '#fa0'); 
+    } else {
+	self.css('background', ''); 
+    }
+}
+
+function changeAble(n,v){
+    $('#pb'+n).prop('disabled', v!='known');
+    $('#fpr'+n).prop('disabled', v!='fp');
+    $('#mean'+n).prop('disabled', v!='norm');
+    $('#stdev'+n).prop('disabled', v!='norm');
+    $('#nv'+n).prop('disabled', v!='norm');
+    $('#n'+n).prop('disabled', v!='binom');
+    $('#p'+n).prop('disabled', v!='binom');
+    $('#bv'+n).prop('disabled', v!='binom');
+}
+
+function recalcFpr(n) {
+    var pbgna=parseFloat($('#fpr'+n).val());
+    var pbga=parseFloat($('#pbga'+n).val());
+    var pa=parseFloat($('#pagb'+(n-1)).val());
+    var pb = pbga*pa + pbgna*(1-pa);
+    $('#pb'+n).val(pb);
+    recalcBayes(n);    
+}
+
+function recalcNorm(n) {
+    var mean=parseFloat($('#mean'+n).val());
+    var stdev=parseFloat($('#stdev'+n).val());
+    var v=parseFloat($('#nv'+n).val());
+    if (isNaN(mean) || isNaN(stdev) || isNaN(v)) return;
+    $.getJSON('/cgi-bin/stats.py?dist=norm&mean='+mean+'&stdev='+stdev+'&v='+v,
+              function(raw) {
+                  $('#fpr'+n).val(raw);
+		  recalcFpr(n);
+              });
+}
+    
+function recalcBinom(n) {
+    var cnt=parseFloat($('#n'+n).val());
+    var p=parseFloat($('#p'+n).val());
+    var v=parseFloat($('#bv'+n).val());
+    if (isNaN(cnt) || isNaN(p) || isNaN(v)) return;
+    $.getJSON('/cgi-bin/stats.py?dist=binom&n='+cnt+'&p='+p+'&v='+v,
+              function(raw) {
+                  $('#fpr'+n).val(raw);
+		  recalcFpr(n);
+              });
+}
+
+function recalcBayes(n) {
+    var pa = parseFloat($('#pagb'+(n-1)).val());
+    var pbga = parseFloat($('#pbga'+n).val());
+    var pb = parseFloat($('#pb'+n).val());
+    if (isNaN(pa) || isNaN(pbga) || isNaN(pb)) return;
+    var pagb = pa * pbga / pb;
+    $('#pagb'+n).val(pagb);
+    if (n+1 < obss) {
+	recalcbayseAndMaybeFpr(n+1);
+    }
+}
+
+function recalcBayesAndMaybeFpr(n) {
+    if ($('#pb'+n).prop('disabled')) {
+	recalcFpr(n); // Will call recalcBayes
+    } else {
+	recalcBayes(n);
+    }
+}
+
+function showhelp(which) {
+    var help = $('#'+which+'help');
+    if (help.css('display') == 'none') {
+	help.show();
+    } else {
+	help.css('backgroundColor','#ffa');
+	help.animate({'backgroundColor': '#ccf'}, 500);
+    }
+}
+
+function close() {
+    $(this).parent().hide();
+}
+
+function moreObss() {
+    $(("<div id=obsbox0>" +
+       "  <div class=obs>" +
+       "    Likelihood of this if the hypothesis in question is true: " +
+       "    <input id=pbga0 onchange=recalcBayes(0) class=prob>" +
+       "    <a class=help href=# onclick=\"showhelp('cond');\">?</a>" +
+
+       "    <div class=option>" +
+       "      <input onchange=\"changeAble(0,'known')\" type=radio name=opts0 id=known0 checked>" +
+       "      <label for=known0>Overall likelihood: </label>"+
+       "      <input id=pb0 onchange=recalcBayes(0) class=prob>" +
+       "      <a class=help href=# onclick=\"showhelp('overall');\">?</a>" +
+       "    </div>" +
+
+       "    <div class=option>" +
+       "      <input onchange=\"changeAble(0,'fp')\" type=radio name=opts0 id=fp0>" +
+       "      <label for=fp0>False positive rate: </label>" +
+       "      <input id=fpr0 onchange=recalcFpr(0) class=prob>" +
+       "      <a class=help href=# onclick=\"showhelp('fp');\">?</a>" +
+       "    </div>" +
+
+       "    <div class=option>" +
+       "      <input onchange=\"changeAble(0,'norm')\" type=radio name=opts0 id=norm0>" +
+       "      <label for=norm0>Normal distribution with:</label>" +
+       "      <a class=help href=# onclick=\"showhelp('norm');\">?</a>" +
+       "      <div class=indent>" +
+       "        mean=<input id=mean0 onchange=recalcNorm(0)> " +
+       "        stdev=<input id=stdev0 onchange=recalcNorm(0)>" +
+       "        observation=<input id=nv0 onchange=recalcNorm(0)>" +
+       "      </div>" +
+       "    </div>" +
+
+       "    <div class=option>" +
+       "      <input onchange=\"changeAble(0,'binom')\" type=radio name=opts0 id=binom0>" +
+       "      <label for=binom0>Binomial distribution with:</label>" +
+       "      <a class=help href=# onclick=\"showhelp('binom');\">?</a>" +
+       "      <div class=indent>" +
+       "        tries=<input id=n0 onchange=recalcBinom(0)> " +
+       "        normal_rate=<input id=p0 onchange=recalcBinom(0) class=prob>" +
+       "        successes=<input id=bv0 onchange=recalcBinom(0)>" +
+       "      </div>" +
+       "    </div>" +
+
+       "  </div>" + // class=obs
+       "  <div class=belief>Updated belief: <input id=pagb0 disabled></div>" +
+       "</div>").replace(/0/g, obss)
+      ).appendTo($('#obs'))
+       .find('input.prob').change(mustBeProbability);
+    changeAble(obss, 'known');
+    obss++;
+}
+    </script>
+  </head>
+  <body>
+    <div style=float:left>
+      <div class=belief>Prior Belief: <input id="pagb-1" onchange=recalcBayesAndMaybeFpr(0)>
+	<a class=help href=# onclick="showhelp('prior');">?</a></div>
+      <div id=obs></div>
+      <a class=help style="float:right" href=# onclick="showhelp('more');">?</a>
+      <div style="overflow:hidden">
+	<input type=button value="More Independent Observations" onclick=moreObss() style="width:100%;">
+      </div>
+    </div>
+    <div style=overflow:hidden>
+      <div class=help id=priorhelp>
+        <a class=close>&#215;</a>
+	<h4>Prior Belief</h4>
+	How likely this thing seemed <i>before</i> you started making observations.  As the saying goes, "extraordinary claims require extraordinary evidence," and this measures how extraordinary the claim is.  For example, if the hypothesis is that you have a specific disease, the prior is the frequency of that disease in the general population.  If you can't measure directly, a good guideline is that the more complicated the hypothesis is, the lower this should be.
+      </div>
+      <div class=help id=condhelp>
+        <a class=close>&#215;</a>
+	<h4>Conditional Likelihood</h4>
+        How likely this <i>observation</i> is assuming the hypothesis is <i>true</i>.  Often, this can be rounded to 1.
+      </div>
+      <div class=help id=overallhelp>
+        <a class=close>&#215;</a>
+	<h4>Overall Likelihood</h4>
+        How likely this observation is in general, <i>regardless</i> of whether the hypothesis is true.  If the hypothesis is "that man is scandanavian" and the observation is "he's blond", then this is the fraction of all men with blond hair.
+      </div>
+      <div class=help id=fphelp>
+        <a class=close>&#215;</a>
+	<h4>False Positive Rate</h4>
+	How likely this observation is assuming the hypothesis is <i>false</i>.  Sometimes the overall likelihood is hard to find, but we can calculate if for you using this and the other information given.
+      </div>
+      <div class=help id=normhelp>
+        <a class=close>&#215;</a>
+	<h4>Normal Distribution</h4>
+	Sometimes the false positive rate is also hard to find.  If the observation comes from a normally distributed population, we can help with that too.  For example, if the observation is that a man is very short, you can enter the mean and standard deviation of male heights in his country, and his height, and we'll compute the likelihood of his being that short without special circumstances.  Normal distributions are very common in nature, though not universal.
+      </div>
+      <div class=help id=binomhelp>
+        <a class=close>&#215;</a>
+	<h4>Binomial Distribution</h4>
+	If the observation was something like "we rolled this 4-sided die 10 times and 5 of them rolled 4s" we can calculate the false positive rate for that too.  In that example, the values would be tries=10 normal_rate=0.25 successes=5.
+      </div>
+      <div class=help id=morehelp>
+        <a class=close>&#215;</a>
+	<h4>More Observations</h4>
+	You can provide multiple observations that say things about your hypothesis.  There are two caveats.  First, the observations must be <i>independant</i>.  For example, observing that two experts support something when in fact the second expert based his advise on reading the first one's statement is no good.  Second, you must include <i>all</i> observations.  If you make a lot of observations and only calculate based on the ones you like you'll conclude what you like, rather than what's true.
+      </div>
+    </div>
+    <script>
+      moreObss();
+      $('a.close').attr('href','#').click(close);
+      $('#pagb-1').change(mustBeProbability);
+    </script>
+  </body>
+</html>

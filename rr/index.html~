@@ -1,0 +1,18 @@
+/*<html>
+<head><title>Rodent's Revenge</title>
+<script>*/
+function dbg(str) {
+    document.getElementById('dbg').appendChild(document.createTextNode(str));
+    document.getElementById('dbg').appendChild(document.createElement('br'));
+}
+
+window.onkeypress=function(ev) {
+    for (i in ev) {
+	dbg(i+':'+ev[i]);
+    }
+}
+/*
+</script>
+</head><body>
+<div id=dbg></div>
+</body></html>
