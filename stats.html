@@ -3,6 +3,8 @@
     <title>Does your stats gruntwork for you</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+
     <style>
       input { width:3em; }
       div.obs { 
@@ -93,23 +95,27 @@ function recalcNorm(n) {
     var stdev=parseFloat($('#stdev'+n).val());
     var v=parseFloat($('#nv'+n).val());
     if (isNaN(mean) || isNaN(stdev) || isNaN(v)) return;
-    $.getJSON('/cgi-bin/stats.py?dist=norm&mean='+mean+'&stdev='+stdev+'&v='+v,
-              function(raw) {
-                  $('#fpr'+n).val(raw);
-		  recalcFpr(n);
-              });
+    var fpr = jStat.normal.cdf(v,mean,stdev);
+    if (fpr>0.5) fpr=1-fpr;
+    $('#fpr'+n).val(fpr);
+    recalcFpr(n);
 }
     
 function recalcBinom(n) {
     var cnt=parseFloat($('#n'+n).val());
     var p=parseFloat($('#p'+n).val());
     var v=parseFloat($('#bv'+n).val());
-    if (isNaN(cnt) || isNaN(p) || isNaN(v)) return;
-    $.getJSON('/cgi-bin/stats.py?dist=binom&n='+cnt+'&p='+p+'&v='+v,
-              function(raw) {
-                  $('#fpr'+n).val(raw);
-		  recalcFpr(n);
-              });
+         if (isNaN(cnt) || isNaN(p) || isNaN(v)) return;
+         var fpr;
+         if (Math.abs(cnt*p - v) < 0.5) {
+             fpr = 1;
+         } else if (v < cnt*p) {
+             fpr = jStat.binomial.cdf(v,cnt,p)
+         } else {
+             fpr = 1 - jStat.binomial.cdf(v,cnt,p) + jStat.binomial.pdf(v,cnt,p);
+         }
+    $('#fpr'+n).val(fpr);
+    recalcFpr(n);
 }
 
 function recalcBayes(n) {
