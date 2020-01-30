@@ -15,6 +15,14 @@
      text-shadow: 0 0 3px #fee;
      margin: 0.1em;
  }
+
+ h2:target {
+     color: black;
+     margin-left: 0.2em;
+     background: linear-gradient(to right, #836968, transparent 40%);
+     padding-left: 5px;
+     border-radius: 5px;
+ }
  
  h3 {
      text-align: center;
@@ -76,7 +84,7 @@
         <h3>This is my personal page.  It aggregates things by or about me.</h3>
     </td></tr><tr class=formal><td width=50%><div>
         <div>
-            <h2>Research Projects</h2>
+            <h2 id="research">Research Projects</h2>
             <ul>
                 <li><b>Rapid re-identification of human samples using portable DNA sequencing</b> -- <a href=https://cdn.elifesciences.org/articles/27798/elife-27798-v1.pdf>Using Nanopore Sequencers to identify individuals from whom DNA was taken</a>.  With Sophie Zaaijer, Assaf Gordon, Robert Piccone, Simon Cornelis Groen, and Yaniv Erlich.  I devised the core algorithm and did the first test; the coauthors took it from there.  Published in eLife.  Previously prepublished as <a href=https://www.biorxiv.org/content/biorxiv/early/2016/06/30/061556.full.pdf>Democratizing dna fingerprinting</a></li>
                 <li><b>DNA.Land</b> -- <a href=https://www.nygenome.org/wp-content/uploads/2018/02/DNA.Land-is-a-framework-to-collect-genomes-and-phenomes-in-the-era-of-abundant-genetic-information.pdf>A framework to collect genomes and phenomes in the era of abundant genetic information</a>.  With Jie Yuan, Assaf Gordon, Richard Aufrichtig, Dina Zielinski, Joseph Pickrell and Yaniv Erlich.  I contributed various features to the DNA.Land project.  Published in Nature Genetics.</li>
@@ -107,7 +115,7 @@
     </div></td><td width=50%><div>
 
         <div>
-            <h2>Contact Information</h2>
+            <h2 id="contact">Contact Information</h2>
             <ul>
                 <li> Email: dspeyer@gmail.com</li>
                 <li> GPG Public Key: <a href="Daniel_Speyer_public_key.txt">as text</a>, <a href="Daniel_Speyer_public_key.ring">as binary GPG keyring</a>.  <span class="small">(Please do not encrypt email to me by default.  To keep my private key safe, I keep it in a place that's somewhat inconvenient for me to get at.)</span></li>
@@ -117,7 +125,7 @@
         </div>
 
         <div>
-            <h2>Photos</h2>
+            <h2 id="photos">Photos</h2>
             <h3>In case you want to know what I look like</h3>
             <a href=photos/toronto.jpg><img src=photos/toronto_thumb.jpg class=big></a>
             <a href=photos/beach.jpg><img src=photos/beach_thumb.jpg></a><br>
@@ -128,7 +136,7 @@
         </div>
 
         <div>
-            <h2>Credentials</h2>
+            <h2 id="credentials">Credentials</h2>
             <ul>
                 <li><b><a href=resume2018.html>Resume</a></b>, not quite up to date</li>
                 <li><b><a href=columbia_transcript.pdf>Columbia University Transcript</a></b></li>
@@ -137,11 +145,13 @@
         </div>
 
         <div>
-            <h2>Rationality</h2>
+            <h2 id="rationality">Rationality</h2>
             <ul>
                 <li><b><a href=http://lesswrong.com/lw/e24/the_fallacy_of_large_numbers/>The Fallacy of Large Numbers</a></b> -- When handwaving about large numbers just won't do.</li>
                 <li><b><a href=stats.html>Statistics Calculator</a></b> -- Doesn't think for you, but does crunch the numbers (and gives you a few reminders of what you should be thinking about).</li>
                 <li><b><a href=http://miscreeds.livejournal.com/7594.html>Exploring Moralspace</a></b> -- A first crack at metaethics.</li>
+                <li><b><a href="https://www.lesswrong.com/posts/tQaN2qhAXqTNgeNJX/against-rationalization-ii-sequence-recap">Against Rationalization II</a></b> -- Tools to avoid rationalizing</li>
+                <li><b><a href="https://secularsolstice.github.io/speeches/gen/No_Royal_Road.html">No Royal Road to Knowledge; No Mercy for Ignorance</a></b></li>
             </ul>
         </div>
 
@@ -153,7 +163,7 @@
     <tr class=personal><td><div>
 
         <div>
-            <h2>Computer Games</h2>
+            <h2 id="computer_games">Computer Games</h2>
             <ul>
                 <li><b><a href=rr>Rodent's Revenge</a></b> -- I was challenged to do something interesting in under 50 lines of readable javascript.  Success!
                     <li><b><a href=pipedream>Pipedream</a></b> -- The old gameboy game.  I really just wanted to see if I could do it in javascript without any serious graphics tools.  And who knew?  I could.
@@ -162,7 +172,7 @@
         </div>
 
         <div>
-            <h2>Yom Kippur Thoughts</h2>
+            <h2 id="yom_kippur">Yom Kippur Thoughts</h2>
             <ul>
                 <li><a href="https://www.facebook.com/daniel.speyer/posts/10205120689015560">To Forgive is Divine</a></li>
                 <li><a href="https://www.facebook.com/daniel.speyer/posts/10205126249514569">Forms of Forgiveness</a>, and <a href="https://www.facebook.com/daniel.speyer/posts/10207326424157560">addendum</a></li>
@@ -173,7 +183,7 @@
         
 
         <div>
-            <h2>Rationalist Ritual</h2>
+            <h2 id="ritual">Rationalist Ritual</h2>
             <ul>
                 <li><a href="https://secularsolstice.github.io">Winter Solstice</a>: I ran this in NYC since 2017 or 2018 depending how you count, and manage the resource repository.  I also wrote up <a href="http://secularsolstice.com/the-thinking-behind-the-nyc-2017-setlist/">how 2017 came to be</a> and <a href="http://secularsolstice.com/a-campbellian-perspective-on-solstice/">again from a Campbellian perspective</a></li>
                 <li><b>Petrov Day:</b> to celebrate the act of not destroying the world.  <a href="https://docs.google.com/presentation/d/1rM5ECNPElURuRRKxaUudzjQbVfh2Xk8TIGdPpAENaa4/edit?usp=sharing">My siddur as of 2019</a>, <a href="https://docs.google.com/presentation/d/1_dcj9uEoywvGaTFhWEf2hlSiyjkDVs0DqB-stoPRVkA/edit?usp=sharing">Alternate version without AGI stuff</a>, <a href="http://petrovday.com/">Other versions, and more about the holiday in general.</a></li>
@@ -186,7 +196,7 @@
     </div></td><td><div>
 
         <div>
-            <h2>Role Playing Games</h2>
+            <h2 id="RPGs">Role Playing Games</h2>
             <ul>
                 <li><b><a href=dnd35/search.html>Monster Search</a></b> -- For when you need the right monster. [D&D 3.5]</li>
                 <li><b><a href=dnd35/monster_builder.html>Monster Builder</a></b> -- For when no published monster will do. [D&D 3.5]</li>
@@ -197,7 +207,7 @@
         </div>
 
         <div>
-            <h2>Fiction</h2>
+            <h2 id="fiction">Fiction</h2>
             <ul>
                 <li><a href="fiction/coin.html">The Coin</a></li>
                 <li><a href="fiction/korra1.5.html">Korra Season 1.5</a></li>
@@ -211,7 +221,7 @@
         </div>
 
         <div>
-            <h2>Music</h2>
+            <h2 id="music">Music</h2>
             <ul>
                 <li><a href="https://secularsolstice.github.io/Walk_With_Me/gen/">Walk With Me</a>: An invitation to a journey, highlighting the practical benefits of companions</li>
                 <li><a href="https://secularsolstice.github.io/That_Problem_Solved/gen/">That Problem Solved</a>:  I can solve my problems with my parents' teachings... until I can't</li>
@@ -222,7 +232,7 @@
         </div>
                     
         <div>
-            <h2>Even More</h2>
+            <h2 id="even_more">Even More</h2>
             Most of my writing goes on my <a href="https://www.facebook.com/daniel.speyer">Facebook</a>, automatically mirrored to my <a href="https://www.reddit.com/r/dspeyer/">Reddit</a> and thereby subscribable as <a href="https://www.reddit.com/r/dspeyer/new/.rss?sort=new">RSS</a>.  Other places you can find me inclue <a href="https://www.lesswrong.com/users/dspeyer">Less Wrong</a>, <a href="https://www.flickr.com/photos/184445808@N05/albums">Flickr</a>, <a href="https://stackoverflow.com/users/1944458/dspeyer">Stack Overflow</a> and <a href="http://www.giantitp.com/forums/search.php?searchid=2174222">Giant in the Playground</a>.
         </div>
     </div></td></tr></table>
