@@ -36,40 +36,77 @@ If your character is about to die or otherwise suffer unacceptable harm, you may
 
 The abilities (and some example DCs, to be adjusted on the fly by the DM) are:
 
-Destiny (Crown): How relevant your success is to Adam Kadmon's ultimate goodness. A high destiny check means the setting's contrived co-incidences go your way. DCs:
+## Destiny
+
+*(Crown)*
+
+How relevant your success is to Adam Kadmon's ultimate goodness. A high destiny check means the setting's contrived co-incidences go your way.
+
+Example DCs:
 
 * 10: Something which by actual luck had about a 10% chance of happening
 * 20: Something which by actual luck had about a 1% chance of happening
 
-Celestial Kabalah (Wisdom): Recognizing how things are metaphors for eachother. Interacting with Yitzerah. Example DCs:
+## Celestial Kabalah
+
+*(Wisdom)*
+
+Recognizing how things are metaphors for eachother. Interacting with Yitzerah.
+
+Example DCs:
 
 * 25: Obtain crypric prophessies
 * 30: Letter manipulation when already in Yitzerah
+* 35: Deliberately step in or out of Yitzerah
 * 40: Teleportation
 * 40: See clearly into the future during a solar eclipse
 * 50: Letter manipulation in the material world
 
-Kabbalistic Knowledge (Understanding): Finding relevant references in Tanakh or Talmud. Finding linguistic correspondences. Example DCs:
+## Kabbalistic Knowledge
+
+*(Understanding)*
+
+Finding relevant references in Tanakh or Talmud. Finding linguistic correspondences.
+
+Example DCs:
 
 * 10: Get the answer to a single question, moderately obscure
 * 15: Get the answer to a single question, highly obscure
 * 20: You (the player) can use the internet and treat it as your characters knowledge
 * 30: The entire table (DM included) helps you brainstorm, and then your character thinks of it in an instant.
 
-Social Skills (Kindness): Self explanatory. Example DCs:
+## Social Skills
+
+*(Kindness)*
+
+Self explanatory.
+
+Example DCs:
 
 * 10: To befriend a stranger
 * 15: To convince someone of something plausible (if false, subtract half their roll; if true, add half)
 * 20: To make peace where there is strife
 
-Violence (Harshness): Everything from wrestling to sniping. Example DCs:
+## Violence
+
+*(Harshness)*
+
+Everything from wrestling to sniping.
+
+Example DCs:
 
 * 10: Shoot someone with a long-barreled gun at close range
 * 15: Shoot someone with a pistol at close range or long gun at moderate range
 * 15: Use rapier and dagger effectively
 * 25: Use a sniper rifle at multi-mile range
 
-Naming (Miracles): Learn and reason about Names. Example DCs:
+## Naming
+
+*(Miracles)*
+
+Learn and reason about Names.
+
+Example DCs:
 
 * 5: Look up and memorize a Name which is explicitely available to the public
 * 10-15: Track down a Name which is known to the Unitarians or other underground group
@@ -80,7 +117,13 @@ Naming (Miracles): Learn and reason about Names. Example DCs:
 * 30: Improve state-of-the-art Name-finding algorithms efficiency by 1%
 * 35: Crack state-of-the-art klipot
 
-Placebomancy (Eternity): Perform placebomancy, or deduce how effective it will be without performing it. Example DCs:
+## Placebomancy
+
+*(Eternity)*
+
+Perform placebomancy, or deduce how effective it will be without performing it.
+
+Example DCs:
 
 * 10: Grant a simple blessing, allowing the recipient to reroll one die in the course of their next operation
 * 15: Grant a more substantive blessing, such as +1 die to all checks of one ability thoughout the operation, or automatic successes on a more narrow category of checks.
@@ -89,17 +132,35 @@ Placebomancy (Eternity): Perform placebomancy, or deduce how effective it will b
 * 25: Make up for not-quite-heroic preparation with style
 * 30: (As a player) the entire table (including DM) helps you brainstorm
 
-Science/Technology (Splendor): As is based on physics. Includes knowing which bits of physics are running at the moment. Example DCs:
+## Science/Technology
+
+*(Splendor)*
+
+As is based on physics. Includes knowing which bits of physics are running at the moment.
+
+Example DCs:
 
 * 15: Repair most technological devices
 * 20: (As a player) use the internet and then treat it as character knowledge
 * 25: Break security (digital or physical) on a government office
 
-Metis (Foundation): Practical skills. Includes anything that doesn't fit anywhere in particular. Example DCs:
+## Metis
+
+*(Foundation)*
+
+Practical skills. Includes anything that doesn't fit anywhere in particular.
+
+Example DCs:
 
 * 10: Hold down a job
 
-Wealth (Kingdom): Buy stuff. Example DCs:
+## Wealth
+
+*(Kingdom)*
+
+Buy stuff.
+
+Example DCs:
 
 * 2: Anything that IRL would be <$100
 * 5: <$300
