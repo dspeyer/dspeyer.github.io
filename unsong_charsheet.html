@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>UNSONG RPG Character Sheet</title>
+        <style>
+         img {
+             width: 112px;
+             height: 88px;
+             float: left;
+         }
+         .text {
+             height: 22px;
+             width: calc(6.5in - 112px);
+             margin-left: 112px;
+             display: flex;
+             justify-content: stretch;
+             white-space: nowrap;
+         }
+         .text::after {
+             content: " ";
+             width: 100%;
+             flex-grow: 999;
+             border-bottom: thin solid #555;
+             position: relative;
+             bottom: 5px;
+         }
+             
+         .sheet {
+             height: calc(9in - 88px);
+             width: 6.5in;
+             position:relative;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: space-between;
+         }
+
+         .pair {
+             display: flex;
+             justify-content: space-around;
+         }
+
+         .ability {
+             width: 1.5in;
+             height: .9in;
+             border: thin solid #333;
+             border-radius: .2in;
+             text-align: center;
+             margin: .1in;
+             background: white;
+             box-shadow: -1px -2px 2px white, 1px 2px 2px #777;
+         }
+         
+         table {
+             position: absolute;
+             width:2in;
+             z-index: -1;
+             border: thin solid #333;
+             border-radius: .1in;
+             border-collapse: collapse;
+         }
+
+         td {
+             border: thin solid #555;
+             border-top: none;
+             text-align: center;
+         }
+         
+        </style>
+    </head>
+    <body>
+        <img src="alef.png">
+        <div class="text">Name:</div>
+        <div class="text">Player:</div>
+        <div class="text">Value System:</div>
+        <div class="text">Perspective on Theodicy:</div>
+
+        <div class="sheet">
+            <div class="ability">Destiny</div>
+            <div class="pair">
+                <div class="ability">Kabbalistic Knowledge</div>
+                <div class="ability">Celestial Kabbalah</div>
+            </div>
+            <div class="pair">
+                <div class="ability">Violence</div>
+                <div class="ability">Social Skills</div>
+            </div>
+            <div class="ability">Naming</div>
+            <div class="pair">
+                <div class="ability">Science/Technology</div>
+                <div class="ability">Placebomancy</div>
+            </div>
+            <div class="ability">Metis</div>
+            <div class="ability">Wealth</div>
+
+            <table style="top:2em;left:0">
+                <tr><td>SX</td><td>Names Known</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </table>
+
+            <table style="top:2em;right:0">
+                <tr><td>SX</td><td>Connections</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </table>
+
+            <table style="bottom:0;left:0">
+                <tr><td>SX</td><td>Specific Skills</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </table>
+
+            <table style="bottom:0;right:0">
+                <tr><td>SX</td><td>Physical Objects</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </table>
+
+        </div>
+    </body>
+</html>
