@@ -38,8 +38,6 @@ The abilities (and some example DCs, to be adjusted on the fly by the DM) are:
 
 ## Destiny
 
-*(Crown)*
-
 How relevant your success is to Adam Kadmon's ultimate goodness. A high destiny check means the setting's contrived co-incidences go your way.
 
 Example DCs:
@@ -48,8 +46,6 @@ Example DCs:
 * 20: Something which by actual luck had about a 1% chance of happening
 
 ## Celestial Kabalah
-
-*(Wisdom)*
 
 Recognizing how things are metaphors for eachother. Interacting with Yitzerah.
 
@@ -64,8 +60,6 @@ Example DCs:
 
 ## Kabbalistic Knowledge
 
-*(Understanding)*
-
 Finding relevant references in Tanakh or Talmud. Finding linguistic correspondences.
 
 Example DCs:
@@ -77,8 +71,6 @@ Example DCs:
 
 ## Social Skills
 
-*(Kindness)*
-
 Self explanatory.
 
 Example DCs:
@@ -88,8 +80,6 @@ Example DCs:
 * 20: To make peace where there is strife
 
 ## Violence
-
-*(Harshness)*
 
 Everything from wrestling to sniping.
 
@@ -101,8 +91,6 @@ Example DCs:
 * 25: Use a sniper rifle at multi-mile range
 
 ## Naming
-
-*(Miracles)*
 
 Learn and reason about Names.
 
@@ -119,8 +107,6 @@ Example DCs:
 
 ## Placebomancy
 
-*(Eternity)*
-
 Perform placebomancy, or deduce how effective it will be without performing it.
 
 Example DCs:
@@ -134,8 +120,6 @@ Example DCs:
 
 ## Science/Technology
 
-*(Splendor)*
-
 As is based on physics. Includes knowing which bits of physics are running at the moment.
 
 Example DCs:
@@ -146,8 +130,6 @@ Example DCs:
 
 ## Metis
 
-*(Foundation)*
-
 Practical skills. Includes anything that doesn't fit anywhere in particular.
 
 Example DCs:
@@ -155,8 +137,6 @@ Example DCs:
 * 10: Hold down a job
 
 ## Wealth
-
-*(Kingdom)*
 
 Buy stuff.
 
