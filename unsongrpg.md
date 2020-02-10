@@ -320,7 +320,9 @@ You also start with four “expensive” resources, which you could get by rolli
 
 (There are blanks on your character sheet to mark these DCs.  They are useful if you are likely to gain abilities during the game, but may not have immediate downtime.)
 
-You may be an ordained priest, which enables you to create Holy Water and grants social bonuses in relevant situations.  This counts as an expensive resource regardless of your abilities.
+Note that languages spoken beyond your native ones count as resources.  You may have multiple native languages if it fits your backstory.  Do not abuse this.
+
+You may be an ordained priest, which enables you to create Holy Water and grants social bonuses in relevant situations.  This counts as a connection and as an expensive resource regardless of your abilities.
 
 A [blank character sheet](unsong_charsheet.html) is available.
 
