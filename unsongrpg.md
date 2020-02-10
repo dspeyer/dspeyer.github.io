@@ -32,6 +32,12 @@ There are no hit points.  Injuries are described in-universe.  Being shot with a
 
 If your character is about to die or otherwise suffer unacceptable harm, you may permanently burn a Destiny die to prevent it by implausible coincidence.  If you have no Destiny dice, you cannot do this.
 
+## Leveling
+
+In a multi-session campaign, characters gain dice of abilities after successful sessions.  If multiple dice are gained in a session, they must be placed in separate abilities.  This does not grant resources, or change the DCs at which retroactive resources can be obtained.  (See [Resources](#resources))
+
+If there is in-universe downtime, characters may acquire resources.  This may either be done explicitly, with estimates of how long the acquisitions take, or abstractly, with one Starting Expensive Resource slot per week.  Having downtime, even just one week of it, *does* update the DCs at which retroactive resources can be obtained.
+
 # Abilities
 
 The abilities (and some example DCs, to be adjusted on the fly by the DM) are:
@@ -169,6 +175,8 @@ Making connections is a Social Skills check.  Again, this takes a while, and it 
 * 20: Be trusted by a notorious crime boss
 
 Resources can be claimed retroactively, up to the limits of chargen.  A resource that is clearly in line with a character concept is automatic.  One which isn't requires a Destiny check, with bonus dice for being somewhat in line.  Once a resource is claimed retroactively, you have it permanently (unless you lose it in-universe).
+
+When claiming retroactive resources, use your ability scores at time of last downtime, not your current ones (if they differ).
 
 # Names
 
@@ -309,6 +317,8 @@ You have one free point in each ability. You have 4 additional points to distrib
 You may claim unlimited resources if you could get them by rolling all 3s on your relevant acquisition check.  Please keep this within reason for a character concept.  Granted, “crazy hoarder” *is* a character concept.  Also, remember that you can fill these in retroactively (see the Resources section).
 
 You also start with four “expensive” resources, which you could get by rolling all 5s on your check.  You may leave some of these blank to fill in retroactively if you wish.  Mark these by checking the “SX” (Starting Expensive) box on your character sheet.
+
+(There are blanks on your character sheet to mark these DCs.  They are useful if you are likely to gain abilities during the game, but may not have immediate downtime.)
 
 You may be an ordained priest, which enables you to create Holy Water and grants social bonuses in relevant situations.  This counts as an expensive resource regardless of your abilities.
 

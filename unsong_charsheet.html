@@ -19,7 +19,7 @@
              content: " ";
              width: 100%;
              flex-grow: 999;
-             border-bottom: thin solid #555;
+             border-bottom: 1px solid #555;
              position: relative;
              bottom: 5px;
          }
@@ -54,15 +54,21 @@
              position: absolute;
              width:2in;
              z-index: -1;
-             border: thin solid #333;
-             border-radius: .1in;
              border-collapse: collapse;
          }
 
          td {
              border: thin solid #555;
-             border-top: none;
              text-align: center;
+         }
+
+         td.dcs {
+             border: none;
+             text-align: left;
+         }
+
+         td.right {
+             text-align: right;
          }
          
         </style>
@@ -72,7 +78,11 @@
         <div class="text">Name:</div>
         <div class="text">Player:</div>
         <div class="text">Value System:</div>
-        <div class="text">Perspective on Theodicy:</div>
+        <div class="text">
+            <span>Ability Dice:</span><u>&nbsp; &nbsp; &nbsp;</u>  &nbsp;
+            <span>Expensive Resources:</span><u>&nbsp; &nbsp; / &nbsp;  &nbsp;</u>  &nbsp;
+            <span>Special:</span>
+        </div>
 
         <div class="sheet">
             <div class="ability">Destiny</div>
@@ -104,6 +114,7 @@
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td colspan="2" class="dcs">Naming: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u></td></tr>
             </table>
 
             <table style="top:2em;right:0">
@@ -118,9 +129,15 @@
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td colspan="2" class="dcs right">Social: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u></td></tr>
             </table>
 
             <table style="bottom:0;left:0">
+                <tr><td colspan="2" class="dcs">
+                    Metis: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u><br>
+                    Science: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u><br>
+                    Understand: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u><br>
+                </td></tr>
                 <tr><td>SX</td><td>Specific Skills</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -135,6 +152,7 @@
             </table>
 
             <table style="bottom:0;right:0">
+                <tr><td colspan="2" class="dcs right">Wealth: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u></td></tr>
                 <tr><td>SX</td><td>Physical Objects</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
