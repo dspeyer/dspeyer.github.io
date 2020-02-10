@@ -45,7 +45,7 @@ Example DCs:
 * 10: Something which by actual luck had about a 10% chance of happening
 * 20: Something which by actual luck had about a 1% chance of happening
 
-## Celestial Kabalah
+## Metaphors
 
 Recognizing how things are metaphors for eachother. Interacting with Yitzerah.
 
@@ -58,9 +58,11 @@ Example DCs:
 * 40: See clearly into the future during a solar eclipse
 * 50: Letter manipulation in the material world
 
-## Kabbalistic Knowledge
+## Understanding
 
-Finding relevant references in Tanakh or Talmud. Finding linguistic correspondences.
+Knowledge and comprehension of the world as it functions via sephirot.  Knowledge of the sephirot themselves, of sacred texts, and of languages.  Finding relevant references in Tanakh or Talmud. Finding linguistic correspondences.
+
+Does not include how the world functions via math: that's Science.  Also does not include practical skills: those are Metis.
 
 Example DCs:
 
@@ -118,9 +120,9 @@ Example DCs:
 * 25: Make up for not-quite-heroic preparation with style
 * 30: (As a player) the entire table (including DM) helps you brainstorm
 
-## Science/Technology
+## Science
 
-As is based on physics. Includes knowing which bits of physics are running at the moment.
+The world as based on physics. Includes knowing which bits of physics are running at the moment.  Also includes practical applications via technology.
 
 Example DCs:
 
@@ -156,9 +158,9 @@ Learning a new skill is usually either a Metis or Science check, and tends to ta
 
 * Metis 5: Jerry-rig a belay system out of rope; compose sonnets; cook arbitrary Thai curries
 * Metis 10: Work as a secretary for a large business; craft or repair clothing so that it looks “real”
-* Science/Technology 5: Identify edible plants in your native environment; Change oil in a car
-* Science/Technology 10: Write ordinary software; Understand organic chemistry
-* Kabbalistic Knowledge 5: Be fluent in a language besides your native one
+* Science 5: Identify edible plants in your native environment; Change oil in a car
+* Science 10: Write ordinary software; Understand organic chemistry
+* Understanding 5: Be fluent in a language besides your native one
 
 Making connections is a Social Skills check.  Again, this takes a while, and it is usually better to role-play explicitly outside of backstory.  For backstory purposes, some example DCs:
 
@@ -318,7 +320,7 @@ There are people in this setting with extra abilities that don't fit neatly.  St
 
 For example, you can be a Fallen Angel.  This has advantages: you are fluent in all languages except Aramaic; can fly when drunk on holy water; can conjure a flaming sword at will; and if killed by ordinary violence, you recorporate after a brief time.  It also has disadvantages: you cannot learn Aramaic, comprehend deception, reliably remember limitations, or generally cope with the harshness of the world.  You start with one fewer ability die.
 
-You can also have a complicated relationship with space.  Using this to your advantage requires a dc 10 Celestial Kabbalah check.  You start with two fewer ability dice.
+You can also have a complicated relationship with space.  Using this to your advantage requires a dc 10 Metaphors check.  You start with two fewer ability dice.
 
 Other abilities are possible, at similar ability-die costs.
 
