@@ -61,6 +61,8 @@ Recognizing how things are metaphors for eachother. Interacting with Yitzerah.
 
 Example DCs:
 
+* 20: Exchange words telepathically
+* 25: Deeper telepathy
 * 25: Obtain crypric prophessies
 * 30: Letter manipulation when already in Yitzerah
 * 35: Deliberately step in or out of Yitzerah
