@@ -28,7 +28,7 @@ td {
     box-shadow: -1px -1px 1px #ddd, 3px 3px 3px #222;
     border-radius: 3px;
     color: #777;
-    padding: 0px 10px;
+    padding: 2px 10px;
 }
 
 td.small {
