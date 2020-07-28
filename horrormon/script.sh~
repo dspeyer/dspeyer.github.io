@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in raw/*.txt; do
+    pandoc $i > `basename $i .txt`.html
+done
+
+for i in raw/*.html; do
+    perl -e '$b=0;while(<>){if /body/ $b=1;if $b print;}' > `basename $i`;
+done

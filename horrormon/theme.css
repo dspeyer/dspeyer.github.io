@@ -1,0 +1,84 @@
+body {
+    background: #999;
+    background-attachment: fixed;
+}
+
+table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+thead td {
+    font-size: larger;
+    font-style: italic;
+    color: black;
+}
+
+td {
+    text-align: center;
+    text-shadow: 2px 2px 2px white,
+                 -2px 2px 2px white,
+                 2px -2px 2px white,
+                 -2px -2px 2px white,
+                 -2px 0px 2px white,
+                 2px 0px 2px white,
+                 0px -2px 2px white,
+                 0px 2px 2px white;
+    box-shadow: -1px -1px 1px #ddd, 3px 3px 3px #222;
+    border-radius: 3px;
+    color: #777;
+    padding: 0px 10px;
+}
+
+td.small {
+    box-shadow: none;
+    font-size: 9pt;
+    border: 1px dashed #bbb;
+}
+
+td.invis {
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.otto {
+    background-image: linear-gradient(110deg, black, red);
+}
+
+.sarah {
+    background-image: linear-gradient(110deg, #77f, white);
+}
+
+.citrine {
+    background-image: linear-gradient(110deg, #cf7, #7ff);
+}
+
+.historian {
+    background-image: linear-gradient(110deg, #993, #ffc);
+}
+
+.jacqueline {
+    background-image: linear-gradient(110deg, #a30, #0cc);
+}
+
+.marianna {
+    background-image: linear-gradient(110deg, #440, #0c0);
+}
+
+.author {
+    font-size: smaller;
+    text-transform: capitalize;
+}
+
+.content {
+    margin: 1em auto;
+    max-width: 30em;
+    width: 90%;
+    background: rgba(255,255,255,0.7);
+    padding: 5px;
+    box-shadow: 0 0 3px white;
+}

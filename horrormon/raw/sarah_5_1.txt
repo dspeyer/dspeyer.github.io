@@ -1,0 +1,783 @@
+﻿# The Power Plant
+
+We’re not dead. That’s actually pretty surprising, considering how terribly that went. We’re sitting behind some bushes about fifty meters from the power plant, examining some of the stuff we stole. It feels like the alarms should be going off, but they’re not because we broke too much stuff for the alarms to work anymore. That’s probably why there’s nobody coming after us yet.
+
+I’m not sure where my voice recorder’s gotten to, which is a little worrying. I thought I put it in my pocket but it doesn’t seem to be there anymore. Maybe it fell out at some point during the running and hiding and explosions. It probably won’t be too much of a problem though. I’m still not sure how much mons can use human language. Regular mons, anyway. Somehow them finding the recording and scanning it for clues about us to track us down for revenge just doesn’t seem in character. But I also wouldn’t have thought they would run a power plant, and here they are running hundreds of them.
+
+I should start from the beginning, though.
+
+The power plant has a couple doors. There was a big one facing the forest we arrived from, about five meters tall. We decided to avoid it and went around the side to a smaller door. It was guarded by a nine-button keypad covered in symbols I didn’t recognize.
+
+“It looks like this one’s got some wear,” Clarence noted after a quick examination, indicating the center button without touching it.
+
+“Let’s try it then,” suggested Jacqueline, pushing it.
+
+“Hey, wait, we don’t know the rest of the code!”
+
+“Do any of the other ones have wear that we should guess?”
+
+Clarence stared hard at the buttons. “I don’t see any.” It was true; the middle button was indented like it had been hit a lot, and there were claw marks marring the surface.
+
+“Well if you don’t  have any other ideas, I’m going to press it again. And again. And—oh hey, it worked!” The LED above the pad switched from red to green and the door slid into the ceiling.
+
+Apparently the code was just the middle button four times. I’m not sure what the point of a code is if it’s going to be that easy.
+
+The door revealed a shiny metal hallway, empty of any sign of life. Looks like Lou had been right about it being a good time of day—well, night—to sneak in. We tiptoed down the hall, tensely waiting for an ambush. There hadn’t been one by the time we reached the first door, so we opened it. It was an office with filing cabinets full of incomprehensible papers (but not April’s signature brand of gibberish, and there were no rivets) and a computer, which seemed to be some kind of security system. It showed video feeds from various rooms in the plant, labeled with what level they were on. This felt kind of like that first facility off the coast two hundred years ago. Or maybe that’s just how security cameras always are.
+
+There was a lot of stuff stuck to the walls. Diagrams, mostly of things I didn’t recognize. A few of them were anatomical illustrations of various creatures, including a Monitor with its tentacles splayed out for a better view of its screen, and some humanoids with organs that I didn’t recognize from either current or pre-cataclysm humans. The writing was strange. If you didn’t look too closely, it seemed like perfectly legitimate scientific posters, albeit with a strange mix of topics. But if you actually tried to read them, the grammar didn’t quite work, and a lot of the words seemed made up, and in some places I didn’t recognize any of the letters even though they had the same flavor as the Common writing system. Very young children quickly learn how sounds in their society’s language fit together, and will start babbling in a way that sounds completely fluent to an outsider. The posters felt like that: they captured the aesthetic qualities of what scientific informational posters should be like, without having gotten the hang of actually making any sense.
+
+Some things of note in the video feeds included a person with a really twisty flesh-spiral strapped to a table, what might have been a mad electrician’s workshop, and a lava pit. Of course this place had a lava pit! Actually this maybe made sense—perhaps they were extracting power from the lava.
+
+I’m not pretending I don’t know how they generate power for the sake of narrative. We still have no idea how this power plant actually works. Some idea how to make it not work, though! But we’ll get to that later.
+
+Also of note was the floor labels on the various feeds. There was L1, L2, and L3, which meant at least two of the levels were underground, since the plant was a one-story building from the outside. The lava pit was on L3, so that was probably the bottom level. Constructing a level underneath a lava pit is unnecessarily complicated.
+
+Jacqueline nudged Clarence out of the way and started doing something with camera pointed at the lava pit. The video focused, then swiveled around, taking in the room.
+
+“How are you doing that?” I asked.
+
+“It’s a camera.” she shrugged. “I’m just moving it around to get a better view of what they’re doing with all this lava.”
+
+So we’d discovered one more fact about Jacqueline, besides that she’s apparently a necromancer, and possibly a vampire. She panned the camera around the room, showing a door, a catwalk, and a—
+
+“What’s that!?”
+
+There was something rising out of the lava, floating up, face in a gaping scream, before sliding back under the lava in a tangle of limbs.
+
+“How about we don’t go to L3?” I suggested hopefully. “I don’t like lava.”
+
+“The workshop’s on L3.”
+
+Of course it was!
+
+There was a map on the wall, along with all the other useless posters. I checked it futilely for other workshops that didn’t include a trip to the lava level. The map showed the ground floor of Substation 46, except the pieces that were burned off.
+
+“Substation 46?” said Otto, frowning. “That certainly implies there are more of them. This is a lot better organized than it should be.”
+
+We located the service elevator on the northern end of the facility. Not very convenient, as we had entered on the south side. To the west of us were the transformers, and the eastern part of the facility was the CRU-- but the rest was burned away. I wondered what was over there. Crushers? Crumpet factory? Crustacean storage? Maybe it wasn’t even a real word. I decided not to worry about it.
+
+The hallway we’d been walking down jogged over to the left and then continued straight for a long ways. Time to start opening random doors!
+
+The door on the left had a big red button next to it.
+
+“No,” I said firmly. “We are not pushing that. You don’t push big red buttons, they told us that in science school.” These big red buttons even came with helpful outlines of black and yellow striped caution tape, in case you didn’t get the message that you weren’t supposed to push them.
+
+Except that there was a big red button next to the door opposite it, too.
+
+“They have claw marks on them, like they’ve been pushed a lot,” Clarence reported.
+
+“Must be safe,” Otto concluded. “This place has been around for a while, they wouldn’t have lasted this long if they had destroy-everything buttons all over the place.”
+
+“It’s because of people like you who go around pushing the big red buttons—” my protest was interrupted by Clarence pushing the button and the door opening upon a terrifying… broom closet. We could tell it was a broom closet because it had a broom in it. Also a few shelves stacked with glowing containers. They’re glass containers about the size of a can of beans, and the still-unknown contents cycle through cyan, red, and yellow. They were all in sync, colors changing simultaneously.
+
+Otto picked one up. “About two kilos,” he noted, shaking it. “It’s sloshy!” His removing it from the shelf had no effect on its color pattern; it stayed in sync with the others. Now that I think about it, this sort of reminds me of those chunks we took out of the wall back in the city ruins.
+
+Clarence started examining one. “It’s got a USB port. And this one’s for power, and so is this one, and I  have no idea what this one is…”
+
+“That one’s normal, you use it to charge big equipment, like the really good cameras.”
+
+“I don’t see any that I recognize as data-specific—looks like these have a lot of power ports.”
+
+“Batteries?” Otto suggested. We took a few and stored them in Jacqueline’s box of skeletons to deal with later. They were cool, but not what we were looking for.
+
+Nobody but Clarence knew what we were looking for, not really. Electronics parts or tools for making intricate circuits. It’s not like he’d been very specific in the description—mostly he kept saying he’d know it when he saw it. And it’s not like we’d necessarily recognize something even with a description. Jacqueline apparently knows about cameras, but her knowledge seems more on the use rather than construction side of things. And Otto mostly knows technology as it relates to weaponry, I think he was some sort of soldier or general before he ended up in that dungeon.
+
+The other door opened onto another hallway, which had three big doors. Two had windows, but one had been covered in caution tape from the inside and so wasn’t useful. It also required a keycard to open, so we ignored it for now. The other window led to the service elevator.
+
+Knowing where the elevator was didn’t help that much, though. There was a long hallway between us and it, filled with what appeared to be lightning generators. Metal antennae poked out at various points along the walls, and lightning arced between them.
+
+“I guess that’s one way to do a security system,” commented Clarence.
+
+Otto took a look and then ducked away from the window, looking impressed. “*And* they’ve got lasers!”
+
+“Lasers?”
+
+“The things at the end of the hallway. I suppose they don’t track you on the other side of this door, otherwise you’d have already have gotten shot.”
+
+“Lovely. How about we also don’t go into the murder hallway!” I suggested.
+
+“Fine, it’s not like we can get in anyway. This one also wants a keycard.”
+
+So we turned to the last door, which opened at the push of another very suspicious big red button. This room was a lab, lined with large tanks. Wiping the fog off one of them, Clarence revealed a person-Monitor-thing floating in green-tinted liquid. It was a person, or had been, but there was a Monitor with a broken screen sticking out of the side of its head, tentacles entering the body in various places. No hit points.
+
+The other tanks contained similar things, although a few of them were apparently alive, or at least had HP bars. A human with pieces replaced by purple goo, which somehow had 6 hit points. A human, face covered in a fungus which somehow looked like a doodled-on smiley face, with funguslike wings and 14 hit points. Some other humans cut open to reveal what I thought were a normal array of organs, floating with a mix of broken mon pieces. Someone had been trying to combine humans and mons, and it had kind of worked sometimes. But mostly failed horribly.
+
+Greenish liquid fell from above and landed on the back of Clarence’s neck. My gaze reversed its path as he startled and glanced upward. It was another tank, precariously strapped to the ceiling in a tangle of cables, liquid oozing from cracks in the side. We hurriedly scooted out from underneath it, then considered the contents. The glass was fogged up and spiderwebbed with cracks but we could see something in there with wings. And maybe tentacles? It was definitely alive, having 26 hit points, though it wasn’t moving. Asleep? Oh, and there was also a red rectangle floating in the corner, probably a keycard.
+
+Of course that was where the keycard would be. Dammit, Lily! Okay, so this actually turned out rather well in this case, but still. Can’t you ever make anything easy?
+
+After some consideration, it was decided that we would have to open the tank, as it was the only way to get the card which would presumably let us access the elevators (*why* did we want to do that again?). Since the thing in the tank had a worryingly high number of hit points, Otto began sharpening the broom we’d found earlier to impale the thing on, and then turned into a bear. I’d considered setting up some bombs on the floor (I was getting the hang of being Plaguelock more, and was pretty sure I could delay detonating them), but we didn’t want to risk damaging the card.
+
+“But are you *sure* we should be stabbing it?” Jacqueline kept asking. “It might not be hostile.”
+
+But nobody was listening because we were operating off the assumption that since it had hit points it was a mon, and therefore was going to try killing us once we let it out. It hadn’t occurred to us that Clarence and I currently had hit points, since we’d transformed before entering the power plant.
+
+When we unlatched the door of the tank, the creature fell onto the broom, made a lot of horrible wet noises, and then asked, “Wait a minute, is this real?”
+
+We stared. The creature was a green-tinted woman with large mothlike wings and very long tentacly arms. Unlike the other experiments, she seemed more cohesive, like she could actually function outside someone’s brilliant idea for a science project. Also, she could apparently talk.
+
+“It’s probably not real,” said Jacqueline, because *of course* she would, “but can you really pick any reasonable action based on that?”
+
+There was a long pause filled with the moth-lady making more wet coughing sounds like she was trying to figure out how lungs worked.
+
+“Is there a philosophical tradition of solipsism among your species?” Jacqueline tried.
+
+In response, the moth-lady pulled the broom out of her stomach. Blood oozed out slowly, a dark red that was almost black. That was not a good color for blood ordinarily, but I doubted normal biology applied in this case. The moth-lady still had 26 hit points so it looked like getting stabbed with a broom was totally fine. “My question is, am I dreaming?” she asked.
+
+“Maybe.”
+
+“No!” corrected Clarence.
+
+“You’re really unhelpful,” observed the moth-lady.
+
+Jacqueline, sensing an opportunity, started an interrogation on what the moth-lady knew, how she thought she knew it, and to please explain her framework for deciding what was real.
+
+The moth-lady was not bothered by this, and replied that she wasn’t sure. “I think this is the first real experience I’ve had,” she explained.
+
+“What’s the first thing you remember after all the things you’ve forgotten?”
+
+“Now I’m here,” the moth-lady went on without acknowledging Jacqueline’s new question. “Here is not like the place that makes no sense, so I think maybe I’m awake?”
+
+“How do you know you were asleep if you don’t remember being awake?” Clarence asked, puzzled.
+
+She told us how her dreams never made sense, she was always trying to escape them but they’d just lead to another place that didn’t make sense. This place made some sense, which was an improvement; she wanted to not go back to sleep for a while. Often there was someone watching her in her dreams, “A tall guy with the opposite of a face, like where a face is but there’s not one,” she struggled to explain.
+
+April. Of course it was April.
+
+“Sorry about stabbing you,” I blurted, because I am an idiot. I really have to learn to not apologize for stuff people didn’t realize was my fault. And possibly to not share so much information in general. I really hope we’re not going to be in trouble with the voice recorder falling into the wrong hands.
+
+The moth-lady looked down at her wound, which was closing surprisingly fast. “You did this? Why?”
+
+“We thought we were going to have to fight you,” Clarence began, then broke off at the sound of a door opening. We all froze, except the moth-lady who waved her tentacles experimentally and seemed pleased by them.
+
+“Do you know your name?” Clarence asked after the lab door hadn’t burst open (there was another button on the inside which could close the door; we’d closed it to prevent anyone from walking in on us and noticing intruders). “Do you have a name?” he added when she seemed confused. “Do you want a name?”
+
+“Sure!” said Citrine, responding to the third query, but there didn’t end up being time to help her come up with one for a while. Citrine is the name she picked sometime in the last twenty minutes we’ve been crouching in the bushes outside the power plant. I’ve been writing and everyone else has been poring over the collection of mostly mysterious objects we managed to steal. The staring bemusedly at loot ended when Clarence figured out that one of the things Jacqueline had picked up was a giant cloud with way too many eyes.
+
+We are now flying on said cloud. Flying only a little ways above the ground so we won’t get hurt too bad if the cloud expires or dies or something. It’s very a soft and comfortable cloud, and hardly terrifying at all. I’m going to keep writing and not thinking about how clouds are made of water vapor and other particles and are definitely not solid and any second physics is going to notice what we’re doing and smack us. Or thinking about how this cloud has a *lot* of eyes, and though they skitter away from us, we’re still probably accidentally stepping on some that didn’t manage to get away fast enough. I hope we don’t make the cloud upset with us.
+
+Back in the room full of tanks. Loud footsteps like someone very heavy was passing by. We all froze, including the moth-lady.
+
+“Do you know how to fight things?” I asked her when the footsteps had faded into the distance.
+
+“I think so!”
+
+Well, that was good. Citrine seemed eager to leave the room, so we carefully peeked outside to see if whatever had passed by was lying in wait. It wasn’t, but there were some rather large ashy footprints on the floor. Otto sniffed them and reported in a very growly voice that they smelled more like grilled meat than burned plant, for whatever that was worth.
+
+The footprints had come out of the caution-taped door, which we could now open with the keycard. That revealed a long hallway with several doors. A careful examination of the footprints showed them going in and out of the nearest room on the left, but only out of the room on the right. There was a lot of ash on the floor on the right, indicating that the ash had probably come from there.
+
+The creature, however, had probably come from the room on the left. When we opened it—another horrible red button—we found four round and squat but still recognizably humanoid robot bodies with Monitors perched atop their shoulders, tentacles weaving around them and through holes in their chassis. One arm was clublike, the other seemed to be a gun. They were big and heavy and had feet that could have made the prints we’d found. More tellingly, there was an empty spot between two of them where the walker had left from.
+
+They didn’t seem to notice us, which was rather fortunate since the Monitors had the normal 14 hit points and the robotic bodies had 20; I didn’t want to fight these. Clarence carefully approached the computer terminal in the center of the room and checked the options. Units 1, 2, 3, and 5 were inactive, but unit 4 was active and could not be deactivated because it was not docked. So that wouldn’t help much. Although it was nice to know these four were not going to wake up and kill us, probably.
+
+There were also logs, twenty of them. All but six were corrupted, although looking closer one of the ‘corrupted’s was misspelled. They were filmed from a Monitor’s point of view (based on the tentacle movements we saw), and usually didn’t have sound. I don’t know what might turn out to be important about these, so I’m writing down all the details I can remember.
+
+The first one was from ten years ago, and showed a human being carried into the power plant, and then a Monitor being inserted into its head. It didn’t work very well. I don’t want to go into the details. I’ll do the rest of them. I’m pretty sure early hybrid experiments aren’t going to be relevant.
+
+The next log was two years later, and showed a group of Monitors accompanied by some Ooziels making a trade with a human: they gave a him vial in return for a USB stick. The human’s hair was weird, making a gradient from pink on one side of his head to blue on the other. This is relevant because Pink Blue Hair Guy made appearances in other logs. Also, it’s notable that the Monitors were trading with a human, instead of just killing him. Looks like maybe we were wrong about collaboration with mons being impossible. Lastly, what’s with his hair? I haven’t seen anyone with colorful hair here, except Citrine.
+
+The next log was about a year later, showing the lava room. It was full of robots. Not like the big stompy ones in this room; these had tentacles instead. And faces with expressions of agony and despair. They walked towards the lava pool like they were weighed down by the sorrows of the world, and slowly lowered themselves into the lava. After drifting limply, they climbed out looking even more depressed than before. The monitor whose screen we were looking through moved along the catwalk into another room, where some AngerCycles in humanoid form stood with their hands pressed to a glowing metal wall. At each passing second, they would glow brighter. I feel like this log is a clue to how the power plant works, but I still don’t get it. Maybe we would have gotten more clues if we’d checked all the rooms on L3. There was definitely some energy transfer going on with the glowy metal wall though.
+
+The next log had sound, although we didn’t realize it for a bit. The filmer was one of a circle of Monitors looking at the one in the middle, which had a flesh-spiral wrapped around its tentacle. The flesh-spiral flexed in a motion I recognized: the Monitor was trying to summon something. Instead there was a loud bang (we jumped, then realized the sound had come from the log), and a flash of light that blinded the camera for a second. When the feed came back, there was a soul fruit in the spot the Monitor had been pointing at, but no Monitor. This is kind of worrying, that they’re trying to use mediums. But not that worrying, since it obviously didn’t work. No idea why.
+
+Pink Blue Hair Guy was in the next log, standing on one of the ruined towers in the city we’d met Terrence in (unless there’s another city with twisted metal towers). There was no sound, but he appeared to be having an argument with the Monitor. He looked surprised, then angry. He said something, shaking his head. Then he rolled his eyes like his interlocutor was being a total idiot, and jumped off the building with a shrug. It began to rain.
+
+The last log was of a meeting of some sort, taking place three years ago. The participants included some of the Monitor/robot things, a skeleton wearing armor with heart on it, and Pink Blue Hair Guy. The meeting began with one of the Monitors explaining something about a map  which was displayed on the wall. We couldn’t hear what they were saying, but it was a map of our world, although it looked kind of off from what I remember. A big difference was the very deep crevice stretching across a large part of the continent. One end of the crack was about where our lab had been. Colored points dotted the map, probably representing power stations. The skeleton gestured pointedly at a green one near the center which could have been this power plant (my geography is not great). Everyone nodded. Then some Monitors without robot bodies pulled in tanks for examination. The tanks we’d found before, with the human-mon hybrids. Pink Blue Hair Guy seemed surprised by this development, as if he hadn’t known about the experiments. One of the Monitors started talking to him, gesticulating wildly.
+
+Leaving the corrupted log aside in case it had a negative effect on the system, Clarence checked out the rest of the computer functions. He concluded that the station was connected to several others, including outlets 47 though 53 (probably other power plants), and fast network connections with stations at distances of 10, 30, and 100 kilometers. There were over a hundred nodes in the network, but only around 30 were active. There was also a connection to something called the Dark World, which Clarence said had the same latency has the 10 kilometer stations. Also the reactor status was critical. Eh, this was probably fine.
+
+Investigation done, Clarence played the corrupted log. We’d already gotten all the information we were going to get out of the computer, so we didn’t really care what it did as long as it didn’t set off any alarms. It was immediately clear why the log had been marked as corrupted, misspelled or not: the video flickered, patches of the image going blank for a second at a time. There was sound, but it was a staticky hiss that didn’t have much to do with the visuals. There was a castle in the background, covered in enough turrets and bridges and gargoyles that it gave the impression that it was a massive knobbly creature in hibernation. As well as the feeling that it was looming over you, about to topple on your head. And the sky was weird. The normal kind of weird, I mean—it was dark the way it gets when you look at the sun for too long and the sun turns into Steve’s Barbed Wheel. I was surprised that the Monitor could see the effect, and that it showed up on camera. But are Monitor videos like cameras, or like memories? Does this make a difference?
+
+Anyway, the Monitor stopped staring at the sky and instead focused on the people in conversation. Pink Blue Hair Guy and a faceless figure in a white lab coat holding a rivet gun. April. They seemed to agree on something, and looked up to the sky, the Monitor’s gaze following them. We caught a glimpse of the Barbed Wheel sun before the sky lit up blindingly bright. No, normally bright, and under the non-Steve sun the castle was a ruined fortress sitting on top of a mountain. April pulled out a cyan gem and Pink Blue Hair Guy and the Monitor grabbed onto her, then there was a montage of places caused by repeated short-distance teleportation. When the disorienting blur stopped, the sky was back to normal and April and Pink Blue Hair Guy were standing on top of the ruined city where he’d jumped off a building. He did so again, plummeting toward the group of people standing in the street that April indicated. As he fell, a mist enveloped him and suddenly a giant bird appeared. An enormous bird with two heads. It started to rain.
+
+“The *Rain Bird*?” said Clarence in disbelief. “They made the *Rain Bird*?” He started typing furiously.
+
+“And April’s in on it,” I added. “I *knew* she was up to something.”
+
+Citrine, Jacqueline, and Otto didn’t seem to understand our panic. I tried to get them to see how terrible the Rain Bird was, and why April had to be stopped, but they didn’t seem that convinced.
+
+“Let’s go,” Clarence sighed, getting up from the keyboard. “I’m not getting anything else out of the computer, I tried guessing the password and it started insulting me when I got it wrong.”
+
+After a brief discussion about how much we wanted to be on fire, Jacqueline used a skeleton to open the door of the ashy room. It turned out to be a good precaution, as a blast of hot air and ashes blossomed out of the opening door, speckling the skeleton. Peeking around the wall, the room was cut in half, with very thick metal bars dividing the two areas. The area by the door was ringed with tables with microscopes bolted on. To the left was the second area, which was covered in ash piles that spilled through the bars. And vial filled with a glowing grey vial. Citrine snaked out a tentacle and grabbed it, whipping her appendage back before it could be hit by the blade that shot from one of the ash piles.
+
+We passed the vial around, examining it closely. It seemed to contain grey storm clouds, complete with tiny strands of crackling lightning.
+
+“It’s the Rain Bird, isn’t it,” I said with the certainty of doom.
+
+“If it is,” Otto noticed, “that’s actually really useful. We’d have another Rain Bird to fight the one they’ve got.”
+
+He maybe had a point….
+
+“I promise that if I become the new Rain Bird, I will only make it rain when necessary,” Jacqueline announced, preparing to pour the vial into her medium.
+
+“You have a summoning medium, not a becoming one,” Clarence pointed out.
+
+“Anyway, we don’t know if you’d have any control over it either way,” I added.
+
+“Come on, nobody keeps their campaign promises!” Jacqueline quipped. “I’ve never actually seen a campaign promise before, that I can remember.” She brightened. “I’ve never broken a promise, at least! That I can remember. But I’ve never kept a promise, either. Oh, I know! You’d better prevent me from becoming the Rain Bird until I’ve made a bunch of promises and either kept them or not!”
+
+I rather thought it mattered whether she kept the promises, but Jacqueline had already poured the clouds into her gauntlet. And anyway I was distracted by the emergence of a thing from the largest ash pile on the other side of the room. It was some sort of goopy lava monster with 46 hit points and an arm that was actually a sword which glowed like it was in danger of melting. It groaned, eyes like black voids in the lava goggling at us, then started breathing in like it was gearing up for something. Probably to melt us.
+
+Not wanting to be melted, we fled. As we reached the hall, there was an unearthly shriek and the doorway lit up with a fireball. I hit the button to close the door and sighed with relief when it started grinding down the cover the opening.
+
+“That was neat!” Citrine seemed delighted with almost getting burned to death. I wasn’t sure she quite got the concept of harm, given she hadn’t minded being stabbed at all. But she probably wasn’t indestructible. I can do hit point damage to other mons with a crowbar, and the same probably applied to Citrine.
+
+“Let’s *not* go back in there,” Clarence corrected her.
+
+“Okay!”
+
+Before we could further discuss the advisability of hanging out with lava monsters, the thumping footsteps that were clearly approaching presented an immediate threat. We dashed down the hall and through the nearest door, emerging in… a classroom? There was a chalkboard at one end of the room, and desks scattered around, some of them overturned. Also some smashed electronics and a lot of smashed neon tubes. On one upright desk was a Gauntlet Launcher like the ones Jacqueline and Otto wear. One of the marbles contained in it had fallen out, so Otto took it. (Clarence and my transformation breastplates aren’t as versatile in what they can accept as the modern mediums are.)
+
+We searched the rest of the classroom as quietly as we could, trying not to step on too much glass. There was a pile of worksheets on the desk, covering up an organic-looking stain. Otto turned into a bear to smell it while I read over the worksheets. Multiple choice tests covering common knowledge about mons dated around 50 years ago. Some diagrams labeled Energy Production showing a human attached to a battery.
+
+There was a lot of ka-chunking and then an “ouch!” Clarence confiscated the stapler Citrine had found and been playing with.
+
+The cupboards yielded a lot of paper and pencils, some spare chalk, and a toolbox with perfectly normal carpentry implements that can be used to hit people and otherwise destroy things.
+
+“That spell’s finished loading,” Otto announced. “Costs one energy. Let’s see what it does!” He pointed his hand at the middle of the room and a tangle of giant neon tubes shot out, ensnaring the desks and lifting them up before some of the tubes cracked under the unaccustomed weight. With a quiet pop, all the tubes began glowing.
+
+“Oooh,” we all said appreciatively, then fell silent as the footsteps we’d been fleeing from sounded outside the now closed door (if left alone, the doors all close after a short while). We tried to coordiate an ambush, but it was hard to do much planing while trying to stay silent. We’d managed to get behind the desk/tube barrier when the door opened.
+
+The Monitor/robot was decked out for battle. It was pointing its gun-arm at us, and looked extra menacing with a circular saw buzzing on an arm extending from its back. But it was no match for Otto’s tubes, which immobilized it, and Citrine’s wings, which somehow mesmerized the Monitor. Since the Monitor appeared to be in control, the thing didn’t manage to get much done before we destroyed the Monitor. The robot body stood there inertly and we breathed a sigh of relief.
+
+Then the alarms went off.
+
+For some reason, this made us run out of the classroom and yet farther down the hall. Because we apparently don’t know when to cut our losses and run. If we had discussed this ahead of time I’m sure we would all have agreed that if we set off the alarms we should probably leave. But no, we had somehow decided to run around checking out random rooms because we hadn’t yet abandoned our mission of finding electronics parts for the power armor.
+
+Citrine arrived at the door first, Jacqueline on her heels, and slipped under the opening door to blunder around in the dark. Somehow she avoided injury, and had even found a light switch by the time the rest of us had caught up. This room had been mostly cleared out, leaving empty shelving units and some screens that were attached to the wall. And one last computer left on a table in the middle of the room. Clarence tried to wake it up but it seemed unwilling to respond to him.
+
+The sound of footsteps had started up again, and there were crashes of breaking glass from the classroom next door.
+
+“I propose that we clean our shoes and run across the hall,” suggested Otto. “That way they can’t follow our footsteps.” We’d been leaving footprints all over the place since the ash room.
+
+After a very quick cleanup using some of the paper we’d taken from the classroom, we checked the hall and sprinted across just as we heard the door to the classroom reopening. At this point, we had a bit of a dilemma: they would be able to see us if through the open door, but if we closed it they would hear the noise. And in about a minute the door was going to close itself anyway. Looking around for anything useful, we found lot of tanks filled with green, purple, and black swirled slime.
+
+“Ooh, shiny,” remarked Citrine.
+
+I thought she was talking about the slimes, which were iridescent, but her gaze was pointing upward. To the ceiling, which was covered in spikes. “Guys, have you noticed that the ceiling is covered in spikes?”
+
+“The real question is, why do the tanks have 6 hit points each?” Clarence wondered.
+
+“Spikes?” Jacqueline looked nervously upward. “They don’t have hit points.”
+
+“Are they mons?” Clarence continued. “They don’t look like mons. But they look sort of familiar. Wait, spikes?”
+
+Citrine poked one of the tanks with a tentacle. It dinged quietly.
+
+“Shhhh!” I urged, probably louder than the ding had been. There was something familiar about the slime, but I couldn’t put my finger on what. I had seen that shade of purple somewhere before.
+
+The footsteps didn’t seem to notice, though. They stopped for a tense moment in front of the door, then walked into the storage room instead.
+
+“Perfect, now we can ambush them!” said Clarence happily.
+
+“We’re waiting to ambush *them* in a room full of spikes waiting to fall on our head?”
+
+“Well, when you put it like that…”
+
+“Since they’ve passed us by, we could sneak up and attack from behind.”
+
+“Or we could, you know, run away?” I suggested hopefully.
+
+“What’s that?” Citrine pointed to a red light on the ceiling.
+
+“No!” Clarence held her back. “Don’t go touching everything!”
+
+Jacqueline squinted at it. “A camera. A pretty nice one, actually. I think I could disable it, if you’ll give me a boost.”
+
+“No, they’ll notice,” Otto objected.
+
+“If they’re paying any attention at all, they’ve already noticed we’re here,” pointed out Jacqueline.
+
+“The alarms probably help,” I added.
+
+“We don’t *know* the alarms are our fault.”
+
+Nobody wanted to take their chances with the spikes, so we snuck out into the hall and milled around the entrance to the storage room our pursuers had gone into. Apparently our lack of footprints leading out had done the trick.
+
+“If only we could jam the door shut with them inside,” lamented Clarence. “I saw a soldering iron in the toolbox but that’s way too slow.”
+
+But there was another way: Jacqueline’s skeleton. The doors were controlled by buttons, and if the button on the inside was no longer intact…
+
+“Skeleton,” she ordered, handing it the hammer from the toolbox. “Go into the room and close the door, then smash the button. Your sacrifice will be remembered. Or maybe you’ll be totally fine, who knows!”
+
+As dramatic speeches go, Jacqueline has some talent but she can’t keep it up for very long.
+
+Surprisingly, the plan went off without a hitch. The room’s occupants were distracted by Citrine’s wings and yet more neon tubes Otto summoned into the doorway and so didn’t stop the skeleton from smashing the button just after the shower of broken glass as the door descended onto the mess of tubes.
+
+There was also a crash from the room across the hall, as the spikes fell from the ceiling. “Told you,” I muttered as we sprinted back down the hall towards the elevators. Apparently we had decided to give those another try.
+
+We had kind of hoped that the key-card we had retrieved from Citrine’s tank would disarm the lighting generators, but that was not the case. The air seemed charged with electricity once we opened the doors, like the lightning storm inside the hall was about to spread outside. The sensible thing to do, therefore, was to throw a metallic-looking scythe into the middle of it. Did I say sensible? I meant completely nuts. All of my friends are nuts, it’s not just April.
+
+“What?” I demanded as Clarence’s scythe flew down the hall, wreathed in lightning.
+
+“I wanted to see how they’d react,” he said reasonably. The scythe seemed unharmed by the blast from the laser gun at the end of the hall, but scraped along the wall on its return trip. “That’s on purpose,” Clarence assured me as sparks flew and the lights dimmed a bit. “I wanted to see if there was anything important in the wall.”
+
+It turned out that there was, in fact, something important in the wall. The lightning increased, a bolt melting one of the laser guns into a twisted mess. There were several loud pops accompanied by puffs of sparks, and then an echoing *bang* and all the lights went off.
+
+“Did I accidentally break the electricity to the entire place?” Clarence wondered.
+
+A few emergency lights flickered on and then all the doors shot up into the ceiling.
+
+“Damn their commitment to fire safety procedures,” he muttered in response.
+
+“Well at least all this smoke will hide us,” Otto noted hopefully.
+
+“If it doesn’t kill us first,” I pointed out.
+
+“Reminder, we don’t need to breath.”
+
+“Riiiight,” said Otto, Clarence, and I in unison. Then we followed Jacqueline and Citrine down the newly un-electrified hallway to the elevator.
+
+Strangely, it was still working despite the power being out. Its four buttons were even glowing: L0, L1, L2, and L3. Clarence pushed L3 and a metal grate closed in front of us as the elevator began to descend. Toward the lava pits. Yay. Why did the workshop have to be next to the lava pits?
+
+After a surprisingly long stretch of blank wall between floors, we passed L1 and glimpsed a large space held up by square concrete columns. In the distance were a few robot-Monitor things, carrying boxes. Some Ooziels trailed them, two green ones and one purple. The same purple as had been in the slime tanks. That was where I had seen them before. The next floor down held a soft green light and an ominous wumping noise.
+
+And that was where the elevator stopped, halfway to leaving L2. I supposed it was better than being completely trapped between floors, but why did it have to be the creepiest floor? Resigned to the fact that nothing would ever go as planned, we climbed pried the grate open and climbed out of the elevator with the assistance of Jacqueline’s Puppet Reaper. The puppeteer giggled as it boosted us. I glared at it but it didn’t seem to care.
+
+L2 consisted of a hallway with four rooms, two on each side. Since there was nothing else to do, we entered the closer one on the left. It was the meeting room we’d seen in the logs, though the screen on the wall was unlit. There were some metal chairs and a steel table scattered around. Like the rest of the facility, this room felt impersonal and neurotically clean, like someone had scoured the mostly metal surfaces a few minutes ago and would be back to clean anything we might soil by touching it, or breathing on it, or just standing next to it. I mention this because it was a sharp contrast to the next room we checked.
+
+We didn’t notice anything at first, because the emergency lighting didn’t reach into the room across the hall. After some fumbling for flashlights, we found rusty floor and walls and an air of neglect. No spikes on the ceiling, though. I checked.
+
+“Oh, wow,” breathed Otto, who had walked farther into the room. He was gazing around like nothing made sense. I stepped into the room and looked around as well. The walls didn’t seem to be there anymore, my flashlight beam traveling much farther than it should have before illuminating a patch of floor. I raised the flashlight and couldn’t get it to hit a wall. Not in any direction, except the door. The door was normal, for some reason, a portal out of this seemingly endless space. I headed back towards it, back to the relative safety of the green-lit hall. Clarence came with me, muttering “This room is terrible!”
+
+“Oooh, spiky!”
+
+Citrine had found a device that was indeed spiky. All the possible ceiling-spikes they hadn’t used had instead attached themselves to a sphere which managed to look intricate and carefully engineered despite having most of its surface covered in spikes. Next to the spikiest, needliest spike was a button labeled “darkshift”, and nearby was a relatively small (meaning as long as a finger instead of an arm) spike coming out of a hole labeled “sacrifice”. And everything else was covered in spikes. Some of the spikes had spikes on.
+
+“Who votes we leave this room and never come back!” Clarence suggested brightly.
+
+“Meeeee,” I replied without much hope. There was no way Jacqueline or Otto was going to leave that thing alone and un-bled-on.
+
+“Hey, it’s not bolted down!”
+
+“Who votes we leave the device here, leave this room, and never come back,” Clarence amended.
+
+“I’m willing to consider coming back,” stated Jacqueline.
+
+“Let’s not discard the possibility of coming back if it sounds like a good idea later,” said Otto surprisingly reasonably, “but I’m fine with leaving it alone for now.”
+
+And so we left.
+
+Farther down the hall was a room with a generator. Several generators, actually. One was turned on, and making a wumping noise which was suddenly less ominous now that I knew its source. Three others were plugged into the wall but not wumping, and there were four more unplugged.
+
+“Do we even *want* to turn this facility back on?” Clarence wondered, considering the setup. I was pretty sure he already had some idea how to get them turned back on and powering up the plant.
+
+“We probably want to turn the elevator on, if nothing else,” I pointed out.
+
+“Yes, but we don’t want to turn on those electricity arcing things upstairs…” Clarence stared at the generator setup, tapping the fingers of one hand against his arm to the tempo of the generator’s wumping.
+
+The rest of us went across the hall to the final room. There was a map of the facility, showing more details than the previous one we’d found. We learned that the room we’d found Citrine in was hybrid storage, and the ash room was part lab and part hybrid containment. L1 had been long-term materials, and the generators we’d found were backup power, and the creepy room with the sacrifice machine was fuel storage.
+
+“Fuel storage?” asked Citrine with an expression that suggested she wanted to go check it out again. I held onto one of her tentacles and directed her attention back to the map.
+
+L3 made a lot more sense as a floorplan than it had from the videos. It had a circular room in the center, with an elevator shaft marked, surrounded by lava. There were four smaller rooms marking the corners of a square, with catwalks connecting them to the middle room.
+
+“Why are there catwalks?” Clarence asked as if despairing at the folly of these architects. He’d wandered in while we were examining the map, evidently having gotten all the information he could out of staring at the generators.
+
+“So you can view your lava and cackle maniacally, obviously,” I quipped.
+
+“And roast marshmallows!” Otto added, getting into the spirit of things.
+
+“What are marshmallows?” Citrine asked, before wandering off and picking items off a table to look at them.
+
+I looked back at the map. That was a lot of lava. “*Why* did we want to go to the third floor again?”
+
+Clarence tapped the map. “Because those rooms are labeled workshops. They’ve got to have the parts I need, or at least some proper tools.”
+
+“You’re still trying to get those?” I asked incredulously. “We don’t even know if we can get the elevator to work and you’re considering going even farther from the surface?”
+
+“Hey, look!” interrupted Jacqueline. She was carrying an arm full of those glowy battery-things, and was accompanied by Citrine, who had tangled her tentacles up in several gauntlets she’d picked up somewhere.
+
+“Why are these speckled with blood?” Clarence wondered, untangling her.
+
+“I don’t know! Ooooh, what’s in that box?”
+
+The box in question was a freezer, and it contained two corpses, still cold.
+
+“Does anyone mind if I reanimate them?” Jacqueline asked.
+
+Otto approved. “These ones have vocal cords, so maybe they’ll be able to talk.”
+
+“We can ask its opinion on having been reanimated! Then we’ll know whether what we’ve been doing is evil!”
+
+“Dear gods, why,” asked Clarence, standing in corner opposite the fridge.
+
+“And we can ask what happened to them,” I added. “It looks like they’ve got a lot of electrical burns, maybe someone was trying that attach-a-human-to-a-battery thing that was on the worksheets.”
+
+“I’m not objecting, I’m just standing in the corner saying dear gods, why,” Clarence clarified from the corner. “Who am I to stand in the way of scientific progress?”
+
+He looked pretty upset about the bodies, but this really was a priceless opportunity to investigate the afterlife, or after-unlife, or whatever, so we pulled them out of the freezer. There was a third one in there behind the first two, so we pulled her out as well.
+
+“Rise up,” intoned Jacqueline, pointing dramatically at one of the corpses. “We have some questions for you.” Light poured out of the medium and struck the body. A purple glow came from beneath its half-closed eyelids; looking closer its pupils were glowing with the same light as the skeleton’s eye-holes had.
+
+“Say something,” Jacqueline ordered.
+
+The corpse made a horrible groaning noise, like it was trying to vomit an Ooziel made of fire. We didn’t flinch, as Citrine’s greeting upon exiting the tank had recalibrated our horrible-groaning noise scales half an hour before.
+
+“He’s still frozen.” I knelt by the body and felt a hand and poked its chest. There was a nametag attached to the polo shirt. “It’s going to take a while before Rafael here is thawed enough to talk or move.”
+
+The other two corpses had nametags, too; we had Rafael Still, Darren Miller, and Jessica Abbot. They had been rangers, and a check at Darren’s notebook showed he’d been alive five years ago. Presumably they’d all been captured together.
+
+“What should I do?” Jacqueline asked frantically. “Do I bring them all back to life? Do I not? Is it okay to take them with me? I can’t undo whatever it is I did to them! I don’t know if this is even properly alive, or if it’s evil, or if—”
+
+“I don’t think you have a duty one way or the other at this point,” Clarence interrupted. “We don’t know if you’re actually bringing them back to life until one thaws enough to ask them. We can’t carry them very well and they can’t move on their ow, so we don’t really have many options.”
+
+But we did have the option of putting them in the box to deal with later. The box was smaller than the freezer so we had to leave Darren behind and remove the skeleton, which had no problem following Jacqueline around.
+
+Back in the generator room, Clarence had a plan. “These generators are the backup power supply for the facility. As far as I can tell, more systems get turned on as there is more power available. That was obvious. I mean that there’s a tiered system, where the more critical things get turned on first, and then the less important ones. We observed that when the lightning devices stopped working the elevator and emergency lights stayed on, and the emergency lights have stayed even after the elevator failed. Therefore to restore the elevator, all we need to do is—” He flipped a switch on one of the plugged in generators with a flourish.
+
+Nothing happened.
+
+“Hmm,” said Clarence, puzzled. “That should have worked…” He opened up the side of the generator. “Ah: there’s no fuel in this one.”
+
+There was no fuel in any of the other ones either, except the one that was wumping away happily like its friends weren’t all dead.
+
+“I guess we’ll have to go to fuel storage,” said Otto with a shrug, turning to head over to the sacrifice machine.
+
+“No! Not that creepy room!” Clarence objected. “We’ll—we’ll… consume power eight times as fast!”
+
+“What?”
+
+“No, four times as fast,” he corrected, then explained. “These four—” he indicated the generators that were plugged in “—were still warm when we came in, so they must have been running recently. We just need to divide the fuel from the running one up between them, and we’ll have the elevator running again.”
+
+So we set about improvising a siphoning system from the miscellaneous lab equipment and office chairs, and were soon interrupted by some banging from the direction of the elevator.
+
+Clarence and I went to investigate, and were greeted with a hissing noise, like someone was welding. Approaching the elevator shaft, we spied the glow of a welding torch. Through the grate which we’d pulled back in front of the shaft, we could see a Monitor and some of the robot-things perched on the elevator, trying to weld a hole through the ceiling of it. Clarence managed to get his scythe through the bars and whacked the Monitor enough that it decided to quit welding and take its minions somewhere less stabby. On the way back, we collected Citrine from where she was standing outside the sacrifice room, staring speculatively at the sacrifice machine.
+
+Back in the generator room, they were almost ready to go. The fuel level had dropped perceptibly while we’d been working, indicating the elevator wouldn’t work for long.
+
+“We should probably figure out whether we want to go up or down,” I suggested as we turned on the first generator. The emergency lights got a little brighter.
+
+“What happens when the fuel runs out?” Citrine wanted to know as the sound of a large saw started up in the hallway.
+
+Otto flipped the second generator’s switch and the room lights blinked on, making us blink in the brightness.
+
+“I think we should try making more fuel so the elevator doesn’t stop with us in it again,” Citrine continued, “that wasn’t much fun.”
+
+Jacqueline flipped the last generator’s switch and there was the sound of the elevator leaving, and heading down.
+
+“Ah, great, now it’s going to go up again,” Clarence complained as we ran down the hall. Jacqueline’s skeleton’s bones clacked as it ran after us. “If they managed to press the call button, it’ll go all the way to the top.”
+
+“Perfect!” I exclaimed. “We can jump in and get out of here!” I started wrestling with the grate so it wouldn’t block our exit.
+
+“No, then we won’t be able to go down!”
+
+“We need to get out of here now!”
+
+“But then we won’t get the electronics and we can’t fix the power armor!” He pummeled the call button. The sawing was louder out here. Evidently the Monitor hadn’t been scared away, but had decided to try a different tactic to get to us. “Look, if we go down a level we may not need more fuel, it sounds like they’re going to cut their way to us anyway.”
+
+I wasn’t watching him; my attention was captured by the map in the conference room, which was now lit up. The network had grown since we’d seen the map in the log; there were a lot more stations. Hundreds of them, with spidery green arrows connecting them. Most of the arrows pointed into one of three spots, which were evidently drawing most of the power of the network. But why? What was special about those ones?
+
+But the elevator was approaching.
+
+“Let’s hope they didn’t think to press the button and we can go down!” Otto said with a maniacal grin.
+
+“And if it goes up we can leave!” I felt obligated to point out, but didn’t think anyone else would care.
+
+“Yeah, but going down sounds more fun,” Jacqueline said, confirming my suspicion.
+
+The elevator had decided to go down. But I didn’t have much to object about since it started moving just as the Monitor and its robot friends dropped through the hole they’d made in the ceiling.
+
+“We’re just going to have a quick look around,” Clarence stressed. “Like a minute. Thirty seconds. We don’t want the elevator to run out of power.”
+
+“I’ll leave the box blocking the door so the elevator doesn’t leave,” Jacqueline added.
+
+“Good. There’s four rooms to check, so we can each take a door and if you see anything useful, you shout.”
+
+It seemed like an okay plan, given the situation. Which is to say I was not happy about it at all, but this was more the situation’s fault. It got worse when we arrived in the room to find a giant Monitor hanging from the ceiling.
+
+“Let’s go!” Clarence had eyes only for the doors that might lead to the tools.
+
+The Monitor screen started glowing, displaying an exclamation point. Its 100 hit points were now clearly visible. In response, Citrine unfurled her wings, and evidently tried to look charming.
+
+“So unusual that humans come around here….” I looked around for the very deep voice, and realized that it was the Monitor. There was a cable running between it and some large speakers on the floor. “What brings you to these parts?”
+
+There was silence.
+
+“Hi?” I said, because it obviously wanted a response and nobody else was giving one. “We’re looking for electronics parts. But if you don’t want us to, we can leave,” I added. “That would also be fine!”
+
+“Well…. Escorted guests…” The giant Monitor somehow managed to look contemplative. “I’d like to know what you’re doing with my creation.”
+
+Heads swiveled in confusion.
+
+“Isn’t she beautiful?” The Monitor went on. “A self-sustaining monster, hybridized from a human and a Chrystalis.”
+
+Citrine. Who was doing a happy little dance, apparently pleased by the compliment. Maybe the Monitor would be reluctant to kill us if we were friends with its child. And if we could keep it talking maybe it would like us, too.
+
+“What inspired you to create her?” Otto asked, thinking along the same lines.
+
+“Oh, many things really. Most mons can’t really sustain themselves for very long, and thus leaching off humans is something of a necessity. Fortunately, there were many… unwilling donors.”
+
+This guy really had the dramatic pauses down pat.
+
+The Monitor waved a tentacle and some panels fell off the walls, revealing normal-sized Monitors. Fifty or so. “You can stay for however long you like, and however much you don’t like.”
+
+“I think we’re really just here for some electronics parts,” Clarence tried. “And then we’re going to leave.”
+
+Bolts of energy shot out from the big Monitor and struck two of the smaller ones. “Cute.” The two Monitors started scuttling towards us, tentacles raised.
+
+“Come on guys,” Clarence urged, “it’s only got a hundred hit points, we can take it! We’ve done it before.”
+
+“We could kill it if we had a bag of flour!” I rolled my eyes. You only get a set up that lets you blow up a dragon once in a while.
+
+“We do have those batteries…”
+
+“Do *you* know how to blow up batteries?” Otto asked. “Ah, but we do however have a nice lake of lava out there we could drop things in!”
+
+Jacqueline was the only sensible one, and ran for the elevator. It didn’t work though.
+
+“Thought I’d let you escape?” The giant Monitor asked as its minions closed in, then did a laugh that would have received full marks at a villainous chuckle competition.
+
+Resigned to fighting, we attacked. Otto conjured more glass tubes on the other side of the room and Clarence threw his scythe while Citrine dazzled the giant Monitor with her wings, causing an hourglass to slowly spin on its screen. Two more minions the Monitor had woken before being mesmerized got tangled in the tubes as I threw a Ghost Bomb at the big Monitor. I’ve been figuring out more moves the longer I spend as Plaguelock, and this one seemed perfect for the situation: each bomb would do damage to whoever I threw it at, as well as anyone who’d already been damaged by a Ghost bomb in the past minute. By hitting the big Monitor first, I could start picking off the minions and still damage the big one.
+
+“Puppet reaper, attack!” Jacqueline ordered. “And keep attacking the big one! Skeleton, fend off the small ones!” The puppet lifted its arms and guns popped out of its elbows and began firing darts.
+
+Clarence threw his scythe and Citrine shot a beam of light at the big Monitor as one of its minions slapped it awake. It started waking more minions as the others came at us. I threw a bomb at one, which reduced it to half health but didn’t stop it from slapping Clarence. He snapped back to human, looking dazed. His scythe boomeranged back and slapped into his hand. He stared at it in astonishment.
+
+Things were not going well. As far as I knew, Clarence didn’t have any other mon to become, and I didn’t have a backup if my Plaguelock ran out of health. But at least the giant Monitor had dropped to 42 hit points. The battle continued.
+
+Otto had summoned an Ooziel, which threw a glob of goo onto the Monitor’s screen, somehow hindering it. Jacqueline’s puppeteer attacked with its scythe, Citrine fired another beam, and I threw a bomb, killing the minion that had slapped Clarence and injuring another one.
+
+Clarence was still staring at the scythe he was holding. His human hands looked weird on the handle; I’d only seen him use it as the Blighted Lord. He threw it at the giant Monitor. Clarence is not very good at throwing things, but the scythe sailed straight at the Monitor, smashing into its screen in a shower of sparks and vanishing.
+
+This made the Monitor angry, and it shot electricity at all of us. The three humans looked slightly singed, and Citrine and I lost 8 hit points.
+
+Jacqueline’s remaining skeleton made a brave stand against one of the minions, doing one hit point of damage before it was smashed by a tentacle. She summoned a Monitor of her own as her Puppet Reaper died after shooting one more dart at the giant Monitor. But the other monitors converged on us.
+
+One slapped me with a tentacle, then grabbed me, stopping me from moving. Otto whacked the tentacle with a crowbar, breaking its hold, but three others sent Ring Chains at me as well. Apparently they had noticed I was the one throwing bombs at them. I could do that some more! Hitting one of the healthy ones took care of one other as well as the giant Monitor, which went down in a satisfying explosion, dropping what looked like a bunch of grapes as it vanished.
+
+But I was still trapped by two Monitors. I tried using the Heal spell on myself, but the remaining two Monitors sent Ring Rot down their tentacles. Orange and brown waves rippled towards me and then I was on the ground, free of their hold but now human. It was disorienting. I had lost the instinctive knowledge of how to best blow things up, and noticed that I didn’t really want to blow things up as much as I did when I was Plaguelock.
+
+There were now three Monitor minions left, one extra-healthy one with 15 hit points, the one Jacqueline’s skeleton had punched with 13, and one with only 4. Clarence and I rushed that one with hammer and crowbar, destroying it. Otto’s Ooziel attacked a second one, and Citrine finished it off with a beam. I still don’t get how that works, she seems to be able to shoot a beam from anywhere on her skin. Because apparently all the Monitors hate me, the remaining one slapped me before Otto’s Ooziel gooed it into submission and Citrine killed it by slapping it with her tentacles.
+
+And everything was… fine? We looked around in suspicion. There didn’t seem to be more Monitors after us, although there were a lot of them in the cubbies lining the walls. Maybe they were asleep, or something. Maybe they didn’t care, because their leader was dead.
+
+Speaking of their leader, the big Monitor had dropped a soulfruit cluster that looked like a bunch of grapes. Clarence picked it up and weighed it in his hand. “Do you mind if I take this? I kind of want to be a giant Monitor.” Nobody did, so he fed the soul-grapes one by one into the hole on the front of his breastplate. Otto and I took Monitor soul fruit as well, leaving four of them.
+
+Jacqueline picked one up and held it contemplatively. “Rise up!”
+
+“What why—”
+
+Lightning enveloped the soulfruit, blossoming and flickering like a very skillful fireworks display, then a blemish spread across the fruit and the light looked sickly. The soulfruit fell out of Jacqueline’s hand, and made a black mark on the floor.
+
+“Interesting!” Clarence said approvingly.
+
+The floor cracked around the black mark, and dark mist rose out of the cracks. A screen floated up out of the mist, followed by tentacles which rose until they hovered a few inches above the floor.  The screen was cracked and the tentacles were frayed, exposing wiring. This Monitor was not right. Its broken screen showed a spiky circle, glowing with the same purple light that marks Jacqueline’s undead.
+
+“You made a friend!” Citrine exclaimed in delight. Nobody really wanted to correct her. Jacqueline couldn’t figure out how to unsummon the undead Monitor, and it followed her around, tentacles trailing like a depressed jellyfish.
+
+After I healed everyone and Otto and I split the rest of the soulfruit, we took a better look around the room. There was a tub on the other side of the room filled with black liquid, which rippled without any visible cause.
+
+“Oh, *that’s* where this is!” said Jacqueline, nodding.
+
+“What?”
+
+“We saw it in the surveillance room. You were staring at the walls muttering about properly parametrized nonsense. There was a red thing in it which floated to the surface and a tentacle came down from the ceiling to poke it.”
+
+“Which must have been the giant Monitor.”
+
+“Exactly!”
+
+“Well, we’ve got to get the red thing then!” Clarence decided. “I’m curious.”
+
+“Do you want to reach in there and get it, then?” I offered.
+
+“Well, not really…. That liquid looks gross and kind of scary.”
+
+“I’ll get it!” Citrine reached a tentacle out.
+
+“No!”
+
+“Okay, then. So we need to get the mysterious red object, but we don’t want to touch it. That’s helpful.”
+
+“Ah!” Clarence interrupted. “The giant Monitor finished processing. It costs three energy. I’m going to try it on.” He closed his eyes in concentration and then began transforming. “This feels pretty weird,” he remarked as light enveloped him.
+
+Clarence retained a humanoid body, albeit one that appeared to be wrapped in layers of thin interwoven cables except for his normal face peeking out. He also had four thick tentacle cables coming out of his back, bringing him to a total of eight limbs. They weren’t very flexible but some trial and error found that they were dexterous, and could shoot electricity between them. A screen floated above his head. It didn’t seem to be connected to the rest of his body but followed him around as he moved.
+
+“You have tentacles and that’s cool!” Citrine exclaimed, waving her own ones.
+
+“Tentacle buddies?” Clarence asked tentatively.
+
+“Tentacle buddies!” Citrine hugged him. Clarence seemed pleased.
+
+“Let’s see what I can do…” Clarence looked up as if reading off an invisible screen. Maybe he was reading off an invisible screen. “I can hit people, I can grab people and shock them, I can send a bunch of electricity around at everyone, I can analyze.”
+
+“Analyze? That sounds useful.”
+
+“Yeah…. Okay, now I can see what things are valid analyze targets. Ah! Ooziel. The Ooze Angel.”
+
+“The Ooze Angel?” Otto asked.
+
+“He does have wings,” I pointed out.
+
+“That’s what the display says, okay? Ooziel the Ooze Angel has six hit points, is divine and alien typed, can use slam, fling goo, discharge…”
+
+“It all matches what I’ve observed so far,” Otto confirmed.
+
+“Try me!” Citrine invited, bouncing with excitement.
+
+“Okay, it says you’re a Chrystalis. But you don’t look like one, those look like crystal chrysalises. You’ve got a cool move where you throw scales at things, did you know that? And you’ve got two energy, huh. And… oh. Oh *yikes*.”
+
+“What?”
+
+Citrine has two sets of information. She’s a perfectly normal Chrystalis with a maximum of 26 hit points and some presumably normal Chrystalis moves. But she’s also a human missing a lot of organs. Also her arms and legs. She has reduced capacity and reduced energy, whatever that means.
+
+“Ooh, ooh, we can bring you to the doctor in the village and use her scanny machine!” I suggested. “We can find out which organs you’ve got and how you work.”
+
+We turned back to the vat of weird black ooze. It was still undulating. “It’s called stabilization oil,” Clarence reported after scanning it. “I hate it.” But since it apparently wasn’t dangerous, he reached a cable-covered hand in and pulled out a fist-sized red gem, shaking oil off of it. “Hold on, it’s stabilization oil, maybe we should…” He plunged his hand back into the oil, looking relieved when nothing else happened.
+
+“We need a bucket,” Otto stated.
+
+“We’ve got a container.” Clarence gestured with his head towards Jacqueline.
+
+“It’s full of a dead body, we need that.”
+
+“Two dead bodies,” Jacqueline corrected me.
+
+“Well we’ve got to put this Chaos Emerald somewhere!”
+
+I had thought emeralds were only green. But I had seen a greenish version of this gem: Terrence had delivered a cyan fist-sized gem to April just before she ran away from us. “Hey Clarence, do you feel like you can teleport?”
+
+“What?”
+
+“April got one of these, and then she teleported. Although maybe that has to do with her also being a Tall Man.”
+
+“I don’t think so….”
+
+“In any case,” Otto interrupted. “We’ve got this toolbox.” He dumped the tools out on the floor and immersed it in the tub until it filled with stabilization oil. The ripples in the tub stopped once Clarence removed the emerald, and started up in the toolbox as soon as he placed it in. Weird.
+
+Emerald taken care of, Clarence was slowly turning around with an expression of concentration. “I can’t tell which of these rooms will be useful,” he complained. “Apparently entire rooms cannot be Analyzed. There’s four of them. And we’re running out of time.”
+
+“We could keep the doors open,” Otto suggested. “Then it’s not as much like we’re splitting up.” He opened the nearest door, revealing a catwalk stretching out over a lava pit. I could see heat shimmering above the lava, but it stopped around the catwalk, which was covered in a blueish something that flickered in and out of view.
+
+“As long as we stay where the catwalk is and some amount of air above it, we’ll be protected from the heat,” Clarence hypothesized. “This is really clever! Who are these mons and why are they so smart?”
+
+I didn’t like the look of the lava pit, marvel of technology catwalk or not, so I turned into the Monitor my breastplate had finally finished processing. If the heat was a problem, Monitor would start losing hit points before I got myself  hurt.
+
+“A new tentacle buddy!” exclaimed Citrine.
+
+I tried to take a step and tripped over my extra legs. Why did I have so many of them? “This is just too many limbs,” I complained.
+
+“Does that mean you don’t want a tentacle buddy hug?”
+
+“I will take a tentacle hug.” I managed that better, starting to get the hang of all the tentacles. I just had to keep them from tangling with each other. I walked around the room a little to practice. I could stretch my tentacles out pretty, far, and choose between ones tipped with a camera, microphone, or various shapes of manipulator. I found it was easier to think about them as fingers. I’m used to having lots of fingers, and my tentacles are as dexterous, only more versatile. Except if all my tentacles are fingers then what am I scuttling along on? More fingers? I’m not sure I like that.
+
+“I don’t think we should split up,” Clarence was saying when I walked by him. “There’s a lot of Monitors in the walls, literally hundreds of them. They’re asleep now, but I don’t know what might make them wake up.”
+
+“We could get them out of the wall one by one, mine them for soul fruit,” suggested Jacqueline.
+
+“No. Electronics supplies. And then we get out before the elevator stops working.”
+
+“Yes!”
+
+The first room we checked contained the man with the flesh-spiral strapped to the table. A metal brace extended over his left hand, presumably to prevent him from summoning anything. The spiral extended all the way up his arm, past his shoulder and attached to the back of his head. Spikes emerged and dissolved back into the spiral’s cord as it undulated with his heartbeat.
+
+“That is not how this is supposed to work,” Clarence complained. “Oh, this is a Left Helix medium, status Advanced. Whatever that means. That explains why it’s so creepy, of course!”
+
+The flesh-spiral held six blobs. “Are you thinking what I’m thinking?” I asked Clarence, then tried to pull out a knife-tipped tentacle. “Come on, I can’t have knife-tentacles? I was so going to taunt the Flesh Worker about it.” I hunted about in the drawers for a knife to hold, setting aside some empty vials for later use.
+
+“What are you doing?” Jacqueline grabbed my tentacle in protest.
+
+“We’re cutting open his flesh-spiral,” I explained.
+
+Jacqueline looked worried. “I don’t think you can remove it, it looks pretty entrenched in his head I was going to suggest cutting off his arm but I don’t think that will work.”
+
+That was a surprisingly bloodthirsty suggestion coming from Jacqueline, I would more have expected her to ask us to wake him up so she could ask what he thought of his imprisonment. Or of skeleton labor. “We’re going to cut open his flesh-spiral and take all his mons and spells.”
+
+“He’ll still be dangerous, although significantly less dangerous.”
+
+“Yeah, but we’ll still have his stuff!” said Clarence and I in unison.
+
+“You sound—okay, fine, go ahead.” Jacqueline joined Otto in ransacking the drawers. They came up with a few vials. “Mending sounds useful for later, and this one’s Anathema.”
+
+“How about we don’t put that one in anyone’s medium right now, either,” I suggested. The red and black swirl in the vial looked *wrong* and I didn’t want it anywhere near me.
+
+“Ooooh, I want it!” Otto poured it into his gauntlet.
+
+“Oh, come on!” I went back to cutting open the flesh-spiral. Unlike when we’d cut open Ace’s spiral, the blobs were reluctant to come out and we had to make an incision over each one. The spiral was a lot tougher than ours or Ace’s had been, too, as if it was calloused from use.
+
+“This one’s Leviazizmoth,” said Clarence, stowing the last vial in Jacqueline’s box, “which sounds awesome, and I don’t have time to check the others.” He looked at the toolbox he was still carrying. “I kind of want to put that in your box, but don’t feel good about putting it inside someone’s medium.”
+
+“We’re not going to save the guy?” Jacqueline asked wistfully as we started out of the room.
+
+Clarence looked pained. “You want to save the guy?”
+
+“Yes, but I don’t see a good way to do that.”
+
+I did, or at least I saw a possibility in the USB port on the side of the table the man was strapped to. I plugged a USB tentacle in (why do I have those but not knife tentacles?) and checked what information it had to tell me. “He seems healthy enough as is, it’s not clear what’s keeping him unconscious. It says the helix is in an advanced bonding stage. I can see how it’s attached itself to him, and… ergh. Yeah, it’s wrapped around his spine and spreads out from there. That thing is not coming out.” I was glad Lara had gotten to us before it was too late.
+
+“I don’t think we can remove it,” Jacqueline clarified. “I was hoping we could take him back to the village and have the Flesh Worker take a look.”
+
+I don’t really trust what the Flesh Worker might do. Maybe help remove the flesh-spiral. Maybe try to use it for something even worse. In any case, we didn’t have a good way to free the guy, or a safe way to transport him, and we still hadn’t found the electronics parts.
+
+From the catwalk leading to the next room we tried, we could see grey lumps lurking in the lava. “Metal ghast,” Clarence muttered. “35 hit points, fire and...”
+
+One rose up and faced us, lava dripping out of its eyes and mouth, which were arrayed in an expression of misery. I sprinted two steps forward, then was passed by Otto and Citrine as I hopped back to grab Clarence who was standing motionless and staring into space. “What are you doing?” I asked in exasperation, pulling him along. 
+
+“Analyzing my Analyze. But it turns out I would need Meta-analysis for that. Oooh!”
+
+We had reached the correct workshop. Electronic parts were spread all over the table, as well as tools, and a small set of test tubes with glowing contents. “Fine manipulation spells!” said Clarence blissfully. “For metal and plastic! Perfect! Jacqueline, will you put these in your box?”
+
+But Jacqueline wasn’t there.
+
+“Where did the box person go?” Citrine wondered.
+
+“Oh no,” moaned Clarence, then grabbed an armload of electronics parts and sprinted back across the catwalk. The rest of us followed after grabbing some more parts. “Jacqueliiiine!!!!”
+
+Jacqueline was standing in the center room, looking confused. “Lost you for a moment there,” she said calmly. “What did you find?”
+
+“Things!” Citrine proudly displayed her armful.
+
+“Parts and some really useful spells. I think we might be good.”
+
+“Do we need more things?” Citrine asked. “Or are we done here?”
+
+“I don’t think anyone’s sawing through yet,” Otto observed.
+
+“Yeah, we should be—” Clarence broke off. “Why are they not listed as inactive?”
+
+“What?”
+
+“The Monitors in the walls. They were inactive before. But now they’re not. I’m not sure what it—”
+
+“Let’s go,” interrupted Jacqueline, hopping into the elevator.
+
+Perhaps attracted by the elevator music (there hadn’t been any before, so something must have come back online; in any case, Citrine seemed to enjoy it), the welders returned and once again sparks rained from the elevator ceiling. The music petered out, to Citrine’s obvious disappointment. We glanced nervously upward and hoped the ceiling would hold. It made it past L2 before giving way and revealing three Monitor-robots.
+
+We contemplated the hole.
+
+“Could you make a forest of glass to block the hole?” Clarence asked Otto.
+
+“And have it rain broken glass on us when they break through anyway?” I objected.
+
+“Monitors, use Ring Chain!” Jacqueline ordered her regular Monitor and the undead one, taking action instead of debating strategy. The regular Monitor shot out a chain of linked rings which attached itself to one of the Monitors who had made a hole in the ceiling. The undead Monitor followed suit, except its chain of shadowy bronzeish rings fell apart as soon as it hit the target, doing one damage. It was kind of comically pathetic.
+
+“I don’t want it to interfere with the elevator going up,” Otto decided, and sent Ooziel up through the hole to shock the robots. While the rest of us tried to hit them rather ineffectually, Ooziel exploded, taking most of the Monitors’ health. That left us to finish them off just as the elevator slowed for the ground floor.
+
+Except for the last Monitor, which dropped something before Ooziel slammed it. A smoking, beeping something. I wasn’t sure what it is, besides that I didn’t want to be in the elevator with it.
+
+The door opened to reveal a fiery humanoid with a knife for one arm and 40 hit points. Ready for something to happen, Jacqueline and I attacked as soon as we saw it, dropping it to 30. Citrine flashed her wings at it before kicking the beeping object out of the elevator and into the hall. Then everything exploded. Mostly the fire monster exploded, thanks to Citrine’s kicking the bomb at it.
+
+“I’m going to use Anathema!” Otto yelled as we frantically attacked.
+
+“What? No!”
+
+“A Damn o’ Klees hybrid,” Clarence said as the thing died. The fire melted away, leaving a limbless human covered in burns, lying next to a twisted sword and a soul fruit. “Normal human, reduced capacity, reduced energy,” he continued. The  person seemed to be emitting embers, and was having trouble breathing. “Aaah, how does ethics work again?”
+
+“I don’t know if we can do anything to save it—” Something whooshed past me and hit the burned body. It rose up, wreathed in red and black flames, then vanished.
+
+“What. Was. That?” demanded Clarence.
+
+“Anathema!” said Otto, grinning maniacally. His eyes were glowing with red and black swirls instead of their usual brown. “It left no corpse at all? Huh!” He turned to leave. “As an escape route, I propose we use the Rain Bird and see if we can fly out of the facility on it!”
+
+We looked a little stunned. Clarence and Jacqueline did, at least. I’m not sure how readable my expressions are as a Monitor, and I don’t think Citrine has enough baseline for normal to tell that Otto was acting really strange. She’s probably never going to get an idea what normal looks like if she keeps hanging around with us.
+
+“Remember that thing about who’s a vampire?” Otto continued. “I think I am now!”
+
+“We are *not* taking out the Rain Bird inside,” I said firmly. Or at all, if I could help it. I scooped up the Damn o’ Klees soulfruit and started walking towards the exit.
+
+Otto had calmed down somewhat by the time we arrived at a safe-ish vantage point behind the bushes. He was still almost vibrating with energy, but his eyes had gone back to normal and he wasn’t grinning anymore. He said he felt a little weird, and wanted to see if the doctor’s scanny machine could tell if there were any lingering effects for whatever Anathema had done, besides give him back two energy instead of taking any.
+
+There followed a debate on how to get back. We didn’t really want to leave tracks that might attract pursuers back to the village. But summoning the Rain Bird seemed like a stupid plan, especially for something trivial like escaping. If we were going to summon a Rain Bird to fight the other Rain Bird, that might be worth it. Just there was too much chance something would go wrong, or that we wouldn’t be able to control it. I wasn’t paying that much attention, since everyone already knew I was not in favor of trying to control the Rain Bird, and I was writing. Writing is *so much faster* as a Monitor, I have some sort of dictation tentacle that can write words as fast as I think them. It’s great, like using a voice recorder except that I can’t drop it anywhere since it’s attached to me.
+
+In the end, Clarence and his Analyze came to the rescue, by determining that the vial of clouds Jacqueline had poured into her medium was not the Rain Bird or even a mon at all, but a spell called Nimbus. When she cast it, she summoned a Stormnimbus, a large cloud with many eyes, which was somehow solid enough to stand on. And so atop the cloud, we set off for the village.

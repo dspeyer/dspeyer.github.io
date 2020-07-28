@@ -1,0 +1,12 @@
+table {
+    border: auto;
+}
+
+td {
+    text-align: center;
+    text-shadow: 0 0 2px 2px white;
+}
+
+.otto {
+    background: linear-gradient(black, red);
+}
