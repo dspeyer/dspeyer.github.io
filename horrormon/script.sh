@@ -18,9 +18,6 @@ for i in `ls tmp/*_*.html | cut -d _ -f 2 | sort -n | uniq`; do
     if test $i -eq '-1'; then
         echo "<td class=invis colspan=3></td>" >> index.html
     fi
-    if test $i -eq 16; then
-        echo "<td class=invis style='border:none'></td>" >> index.html
-    fi
     for n in sarah otto citrine marianna jacqueline historian; do
         FN=`echo tmp/${n}_${i}_*`
         if test -e $FN; then
