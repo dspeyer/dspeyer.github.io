@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <title>Universal Decay Firearm Maker</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+         .ablefalse {
+             color: grey;
+         }
+         .overbudgettrue {
+             color: red;
+         }
+         #budget {
+             font-weight: bold;
+         }
+         input[type="number"] {
+             width:2em;
+         }
+         td {
+             vertical-align: top;
+         }
+         th {
+             text-transform: capitalize;
+             font-weight: bold;
+             text-align: right;
+         }
+         th.left {
+             text-align: left;
+         }
+         th.cent {
+             text-align: center;
+         }
+         #w > td {
+             position: relative;
+         }
+         h1 {
+             text-align: center;
+             font-size: 20pt;
+         }
+         h1 > input {
+             font-size: 20pt;
+         }
+         h1 > select {
+             font-size: 20pt;
+         }
+         td > table {
+             margin: auto;
+         }
+         #nogood {
+             position: absolute;
+             font-size: 200pt;
+             color: red;
+             opacity: 0.5;
+             display: none;
+         }
+         .disclaimer {
+             font-size: smaller;
+             color: #444;
+         }
+         .clip {
+             margin: 1em;
+             border: 1px solid grey;
+             background: #ddd;
+             text-align: center;
+         }
+         h6 {
+             margin: 0;
+             text-align: center;
+             font-size: larger;
+             text-shadow: 1px 1px 2px yellow;
+         }
+         .bl {
+             border-left: 1px solid black;
+         }
+         #clips td {
+             border-bottom: 1px solid grey;
+             vertical-align: middle;
+         }
+         #clips th {
+             border-bottom: 1px solid grey;
+         }
+         #clips tr.nb th {
+             border-bottom: none;
+         }
+         #clips tr.nb td {
+             border-bottom: none;
+         }
+         #clips table {
+             border-collapse: collapse;
+         }
+        </style>
+
+        <script>
+         function Base(chassis, prof, type, size, dice, price, clip, range, weight, options, gl, special) {
+             return {chassis, prof, type, size, dice, price, clip, range, weight, options, gl, special};
+         }
+         const bases = [
+             Base("Holdout", "Simple",  "Firearm", "Fine",  1, 5,   6,  10, 1, 0, 2, "halfopts"),
+             Base("Pistol",  "Simple",  "Firearm", "Dim",   2, 10,  10, 20, 2, 0, 2),
+             Base("Gun",     "Martial", "Firearm", "Tiny",  2, 25,  15, 20, 4, 0, 3, "freeauto"),
+             Base("Rifle",   "Martial", "Firearm", "Small", 4, 100, 20, 50, 8, 2, 3),
+             Base("Cannon",  "Exotic",  "Firearm", "Med",   8, 500, 50, 75, 16, 10, 4)
+             // Projectiles not supported
+             // Base("Popcan", "Simple", "Projectile", "Tiny", "ammo", 5, 1, 5, 2, 0),
+             // Base("Thrower", "Martial", "Projectile", "Small", "ammo" 15, 4, 10, 10, 2),
+             // Base("Launcher", "Exotic", "Projectile", "Med", "ammo", 40, 10, "ammo", 20, 5),
+             // Base("Gyroc Pistol", "Exotic", "Projectile", "Tiny", "ammo", 125, 15, "ammo", 6, 0, "space"),
+             // Base("Gyroc Rifle", "Exotic", "Projectile", "Small", "ammo", 200, 30, "ammo", 9, 2, "space"),
+         ];
+         function Ammo(ammo, die, price, clip, range, weight) {
+             return {ammo, die, price, clip, range, weight};
+         }
+
+         const ammos = [
+             Ammo('Slug', 'd6', 1, 0.3333, 1, 1.5),
+             Ammo('Chemical', ' doses', 1.5, 0.25, 0.25, 2)
+             // space tech and projectiles omitted
+         ];
+         
+         function Option(name, opts, max, pm, action, filter) {
+             return {name, opts, max, pm, action, filter};
+         }
+         function Mut(name, action, filter) {
+             return Option(name, 0, 1, 0, action, filter);
+         }
+         let opts = [
+             Mut('Compact Rounds', (x)=>{x.clip*=2}, (x)=>(x.ammo=='Slug')),
+             Mut('Increased Ammo', (x)=>{x.clip*=1.25}, (x)=>(x.chassis=='Gun')),
+             Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun')),
+             Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2;}, (x)=>(x.ammo=='Slug')),
+             Option('Autofire', 2, 1, 1, (x)=>{x.gl+=2;}),
+             Option('Easy Repair', 1, 10, .1),
+             Option('Extended Range', 2, 999, .5, (x,q)=>{ if (x.ammo=='Slug') x.range*=(1+q); else x.range*=(1+q/4); }),
+             Option('External Ammo', 3, 1, .75, (x)=>{ x.clip='?'; }),
+             Option('Extra Shots', 2, 2, .5, (x,q)=>{ x.clip*=1+q/4; }),
+             Option('Full Auto', 5, 1, 2),
+             Option('Increased Damage', 5, 1, 3, (x)=>{ if (x.die=='d6') x.die='d8'; else x.die='?';
+                                                        x.gl+=Math.ceil(x.dice/2); }),
+             Option('Laser Sight', 2, 1, .5),
+             Option('Light Item', 2, 5, 0.2, (x,q)=>{ x.weight*=1-q/10; }),
+             Option('Sniper', 1, 1, 0, (x)=>{ x.price_add=125; })
+         ]
+
+         function Slug(name, weight, desc, shot) {
+             return {name, weight, desc, shot};
+         }
+         const slugs = [
+             Slug("Regular", 1, "Plain old bullets"),
+             Slug("Birdshot", 1.5, "Emulates full auto", "shot"),
+             Slug("Armor-Piercing", 5, "Halves DR"),
+             Slug("Explosive", 5, "Complicated"),
+             Slug("Hollow Point", .5, "+25% damage, but +50% DR"),
+             Slug("Special Material", 2, "-1 die size; maybe vulnerability?"),
+             Slug("Sink", 25, "-2 die size; double DR; ALL the vulnerabilities", "shot")
+         ]
+
+         function init(){
+             for (let i in bases) {
+                 $('<option>').attr("value",i).text(bases[i].chassis).appendTo($('#chassis'));
+             }
+             for (let i in ammos) {
+                 $('<option>').attr("value",i).text(ammos[i].ammo).appendTo($('#ammo'));
+             }
+             for (let opt of opts) {
+                 opt.tr = $('<tr>').appendTo($('#options'));
+                 $('<td>').text(opt.name).appendTo(opt.tr);
+                 $('<td>').text(opt.opts).appendTo(opt.tr);
+                 if (opt.max==1) {
+                     opt.elem = $('<input type=checkbox>');
+                 } else {
+                     opt.elem = $('<input type=number>').attr('min',0).attr('max',opt.max);
+                 }
+                 opt.elem.on('change',showWeapon);
+                 $('<td>').append(opt.elem).appendTo(opt.tr);
+             }
+             $('#chassis, #ammo, #q').on('change', ()=>{ ableOpts(); showWeapon(); });
+             ableOpts();
+             showWeapon();
+         }
+         $(init);
+         
+         function ableOpts() {
+             let weapon = recalcBase();
+             for (let opt of opts) {
+                 let able = (opt.opts <= weapon.options) && (!opt.filter || opt.filter(weapon));
+                 opt.able = able;
+                 opt.tr.attr('class','able'+able);
+                 opt.elem.attr('disabled', !able);
+                 if (weapon.special=='freeauto' && opt.name=='Autofire') opt.elem.attr('checked',true).attr('disabled',false);
+             }
+         }
+
+         function recalcBase() {
+             let weapon = {};
+             let base = bases[$('#chassis').val()];
+             let ammo = ammos[$('#ammo').val()];
+             let q = $('#q').val()-0;
+             for (let k in base) weapon[k] = base[k];
+             for (let k in ammo){
+                 if (weapon[k]) weapon[k] *= ammo[k]; else weapon[k] = ammo[k];
+             }
+             weapon.price *= q;
+             weapon.options += q;
+             if (weapon.special == 'halfopts') weapon.options = Math.floor(weapon.options/2);
+             weapon.price_mult = 1;
+             weapon.price_add = 0;
+             weapon.optlist = [];
+             weapon.quality = q;
+             return weapon;
+         }
+
+         function recalcWeapon() {
+             let weapon = recalcBase();
+             for (let opt of opts) {
+                 let v = opt.elem.val()-0;
+                 if (isNaN(v)) v = opt.elem.is(':checked');
+                 if (opt.able && v) {
+                     if (opt.action) {
+                         opt.action(weapon, v);
+                     }
+                     if (v > 1) {
+                         weapon.optlist.push(v+' x '+opt.name);
+                     } else {
+                         weapon.optlist.push(opt.name);
+                     }
+                     if (weapon.special=='freeauto' && opt.name=='Autofire'){
+                         continue;
+                     } 
+                     weapon.price_mult += opt.pm * v;
+                     weapon.options -= opt.opts * v;
+                 }
+             }
+             weapon.price *= weapon.price_mult;
+             weapon.price += weapon.price_add;
+             weapon.damage = weapon.dice+weapon.die;
+             return weapon;
+         }
+
+         function showWeapon() {
+             let weapon = recalcWeapon();
+             let table = $('#results');
+             table.empty();
+             for (let k in weapon) {
+                 if (k=='special' || k=='dice' || k=='die' || k=='options' || k.indexOf('_')!=-1) continue;
+                 let v = weapon[k];
+                 if (typeof(v)=='number') v = Math.round(v);
+                 $('<tr><th>'+k+':</th><td>'+v+'</td></tr>').appendTo(table);
+             }
+             let budget = $('#budget');
+             budget.text('Remaining options: '+weapon.options)
+                   .attr('class', 'overbudget'+(weapon.options<0));
+             $('#nogood').css('display', (weapon.options<0)?'block':'none');
+             showClips(weapon);
+         }
+
+         function showClips(weapon) {
+             console.log('showClips',weapon.ammo);
+             $('#clips').empty();
+             if (weapon.ammo != 'Slug') return;
+             let shot = (weapon.optlist.indexOf('Shot')!=-1);
+             let table = $('<table>').appendTo($('#clips'));
+             $('<tr class=nb><th></th><th colspan=3 class="cent bl">Atmospheric</th><th colspan=3 class="cent bl">Space-Capable</th><th class=bl></td></tr>').appendTo(table);
+             let ins = '<th class=bl>Cnt</th><th>Weight</th><th>Cost</th>';
+             $('<tr><th>Name</th>'+ins+ins+'<th class="left bl">Description</th></tr>').appendTo(table);
+             let tr;
+             for (let slug of slugs) {
+                 if (slug.shot && ! shot) continue;
+                 tr = $('<tr>').appendTo(table);
+                 $('<th>').text(slug.name).appendTo(tr);
+                 for (let atmo of [true,false]) {
+                     let n = weapon.clip;
+                     if (atmo) {
+                         if (weapon.optlist.indexOf('Compact Rounds')!=-1) {
+                             n *= 1.25;
+                         } else {
+                             n *= 2;
+                         }
+                     }
+                     n = Math.round(n);
+                     let dice = weapon.dice * n;
+                     let weight = (shot ? .02 : .01) * dice;
+                     let cost = (shot ? .05 : .025) * dice;
+                     weight *= slug.weight;
+                     cost = Math.round(cost*100)/100;
+                     weight = Math.round(weight*100)/100;
+                     $('<td>').text(n).css('text-align','center').addClass('bl').appendTo(tr);
+                     $('<td>').text(weight).css('text-align','center').appendTo(tr);
+                     $('<td>').text(cost).css('text-align','center').appendTo(tr);
+
+                 }
+                 $('<td>').text(slug.desc).addClass('bl').appendTo(tr);
+             }
+             tr.addClass('nb');
+         }
+
+         function replaceAll(tpl,dict) {
+             for (let k in dict) {
+                 tpl = tpl.replace('%'+k+'%',dict[k]);
+             }
+             return tpl;
+         }
+         
+        </script>
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <h1>
+                        Q<input id="q" type="number" min="1" max="7" value="1" >
+                        <select id="ammo" ></select>
+                        <select id="chassis" ></select>
+                    </h1>
+                </td>
+            </tr>
+            <tr id="w">
+                <td>
+                    <h1>Options/Mutables</h1>
+                    <p id="budget"></p>
+                    <table id="options" ></table>
+                </td>
+                <td>
+                    <h1>Results</h1>
+                    <div id="nogood">🚫</div>
+                    <table id="results" ></table>
+                </td>
+                <td>
+                    <h1>Available Clips</h1>
+                    <table id="clips" ></table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <span class="disclaimer">20<sup>th</sup> Century firearms only</span>
+    </body>
+</html>
