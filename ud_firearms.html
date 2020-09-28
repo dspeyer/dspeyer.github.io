@@ -124,7 +124,7 @@
          }
          let opts = [
              Mut('Compact Rounds', (x)=>{x.clip*=2}, (x)=>(x.ammo=='Slug')),
-             Mut('Increased Ammo', (x)=>{x.clip*=1.25}, (x)=>(x.chassis=='Gun')),
+             Mut('Increased Ammo', (x)=>{x.special=undefined;x.clip*=1.25}, (x)=>(x.chassis=='Gun')),
              Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun')),
              Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2;}, (x)=>(x.ammo=='Slug')),
              Option('Autofire', 2, 1, 1, (x)=>{x.gl+=2;}),
