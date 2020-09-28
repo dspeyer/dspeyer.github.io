@@ -141,8 +141,8 @@
              Option('Sniper', 1, 1, 0, (x)=>{ x.price_add=125; })
          ]
 
-         function Slug(name, weight, desc, shot) {
-             return {name, weight, desc, shot};
+         function Slug(name, cost, desc, shot) {
+             return {name, cost, desc, shot};
          }
          const slugs = [
              Slug("Regular", 1, "Plain old bullets"),
@@ -258,6 +258,7 @@
              $('#clips').empty();
              if (weapon.ammo != 'Slug') return;
              let shot = (weapon.optlist.indexOf('Shot')!=-1);
+             let compact = (weapon.optlist.indexOf('Compact Rounds')!=-1);
              let table = $('<table>').appendTo($('#clips'));
              $('<tr class=nb><th></th><th colspan=3 class="cent bl">Atmospheric</th><th colspan=3 class="cent bl">Space-Capable</th><th class=bl></td></tr>').appendTo(table);
              let ins = '<th class=bl>Cnt</th><th>Weight</th><th>Cost</th>';
@@ -270,7 +271,7 @@
                  for (let atmo of [true,false]) {
                      let n = weapon.clip;
                      if (atmo) {
-                         if (weapon.optlist.indexOf('Compact Rounds')!=-1) {
+                         if (compact) {
                              n *= 1.25;
                          } else {
                              n *= 2;
@@ -280,7 +281,15 @@
                      let dice = weapon.dice * n;
                      let weight = (shot ? .02 : .01) * dice;
                      let cost = (shot ? .05 : .025) * dice;
-                     weight *= slug.weight;
+                     cost *= slug.cost;
+                     if (atmo) {
+                         weight /= 2;
+                         cost /= 2;
+                     }
+                     if (compact) {
+                         weight /= 2;
+                         cost *= 2;
+                     }
                      cost = Math.round(cost*100)/100;
                      weight = Math.round(weight*100)/100;
                      $('<td>').text(n).css('text-align','center').addClass('bl').appendTo(tr);
