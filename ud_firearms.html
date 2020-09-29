@@ -56,7 +56,7 @@
              font-size: smaller;
              color: #444;
          }
-         .clip {
+         .mag {
              margin: 1em;
              border: 1px solid grey;
              background: #ddd;
@@ -71,34 +71,37 @@
          .bl {
              border-left: 1px solid black;
          }
-         #clips td {
+         #mags td {
              border-bottom: 1px solid grey;
              vertical-align: middle;
          }
-         #clips th {
+         #mags th {
              border-bottom: 1px solid grey;
          }
-         #clips tr.nb th {
+         #mags tr.nb th {
              border-bottom: none;
          }
-         #clips tr.nb td {
+         #mags tr.nb td {
              border-bottom: none;
          }
-         #clips table {
+         #mags table {
              border-collapse: collapse;
+         }
+         #results {
+             white-space: nowrap;
          }
         </style>
 
         <script>
-         function Base(chassis, prof, type, size, dice, price, clip, range, weight, options, gl, special) {
-             return {chassis, prof, type, size, dice, price, clip, range, weight, options, gl, special};
+         function Base(chassis, prof, size, dice, price, mag, range, weight, options, gl, special) {
+             return {chassis, prof, size, dice, price, mag, range, weight, options, gl, special};
          }
          const bases = [
-             Base("Holdout", "Simple",  "Firearm", "Fine",  1, 5,   6,  10, 1, 0, 2, "halfopts"),
-             Base("Pistol",  "Simple",  "Firearm", "Dim",   2, 10,  10, 20, 2, 0, 2),
-             Base("Gun",     "Martial", "Firearm", "Tiny",  2, 25,  15, 20, 4, 0, 3, "freeauto"),
-             Base("Rifle",   "Martial", "Firearm", "Small", 4, 100, 20, 50, 8, 2, 3),
-             Base("Cannon",  "Exotic",  "Firearm", "Med",   8, 500, 50, 75, 16, 10, 4)
+             Base("Holdout", "Simple Firearm",  "Fine",  1, 5,   6,  10, 1, 0, 2, "halfopts"),
+             Base("Pistol",  "Simple Firearm",  "Dim",   2, 10,  10, 20, 2, 0, 2),
+             Base("Gun",     "Martial Firearm", "Tiny",  2, 25,  15, 20, 4, 0, 3, "freeauto"),
+             Base("Rifle",   "Martial Firearm", "Small", 4, 100, 20, 50, 8, 2, 3),
+             Base("Cannon",  "Exotic Firearm", "Med",   8, 500, 50, 75, 16, 10, 4)
              // Projectiles not supported
              // Base("Popcan", "Simple", "Projectile", "Tiny", "ammo", 5, 1, 5, 2, 0),
              // Base("Thrower", "Martial", "Projectile", "Small", "ammo" 15, 4, 10, 10, 2),
@@ -106,8 +109,8 @@
              // Base("Gyroc Pistol", "Exotic", "Projectile", "Tiny", "ammo", 125, 15, "ammo", 6, 0, "space"),
              // Base("Gyroc Rifle", "Exotic", "Projectile", "Small", "ammo", 200, 30, "ammo", 9, 2, "space"),
          ];
-         function Ammo(ammo, die, price, clip, range, weight) {
-             return {ammo, die, price, clip, range, weight};
+         function Ammo(ammo, die, price, mag, range, weight) {
+             return {ammo, die, price, mag, range, weight};
          }
 
          const ammos = [
@@ -123,18 +126,17 @@
              return Option(name, 0, 1, 0, action, filter);
          }
          let opts = [
-             Mut('Compact Rounds', (x)=>{x.clip*=2}, (x)=>(x.ammo=='Slug')),
-             Mut('Increased Ammo', (x)=>{x.special=undefined;x.clip*=1.25}, (x)=>(x.chassis=='Gun')),
+             Mut('Compact Rounds', (x)=>{x.mag*=2}, (x)=>(x.ammo=='Slug')),
+             Mut('Increased Ammo', (x)=>{x.special=undefined;x.mag*=1.25}, (x)=>(x.chassis=='Gun')),
              Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun')),
              Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2;}, (x)=>(x.ammo=='Slug')),
              Option('Autofire', 2, 1, 1, (x)=>{x.gl+=2;}),
              Option('Easy Repair', 1, 10, .1),
              Option('Extended Range', 2, 999, .5, (x,q)=>{ if (x.ammo=='Slug') x.range*=(1+q); else x.range*=(1+q/4); }),
-             Option('External Ammo', 3, 1, .75, (x)=>{ x.clip='?'; }),
-             Option('Extra Shots', 2, 2, .5, (x,q)=>{ x.clip*=1+q/4; }),
+             Option('External Ammo', 3, 1, .75, (x)=>{ x.mag='?'; }),
+             Option('Extra Shots', 2, 2, .5, (x,q)=>{ x.mag*=1+q/4; }),
              Option('Full Auto', 5, 1, 2),
-             Option('Increased Damage', 5, 1, 3, (x)=>{ if (x.die=='d6') x.die='d8'; else x.die='?';
-                                                        x.gl+=Math.ceil(x.dice/2); }),
+             Option('Increased Damage', 5, 1, 3, (x)=>{ x.die = dieSize(x.die,1); x.gl+=Math.ceil(x.dice/2); }),
              Option('Laser Sight', 2, 1, .5),
              Option('Light Item', 2, 5, 0.2, (x,q)=>{ x.weight*=1-q/10; }),
              Option('Modular', 1, 1, 0.2),
@@ -150,8 +152,8 @@
              Slug("Armor-Piercing", 5, "Halves DR"),
              Slug("Explosive", 5, "Complicated"),
              Slug("Hollow Point", .5, "+25% damage, but +50% DR"),
-             Slug("Special Material", 2, "-1 die size; maybe vulnerability?"),
-             Slug("Sink", 25, "-2 die size; double DR; ALL the vulnerabilities", "shot")
+             Slug("Special Material", 2, (w)=>(dieSize(w.damage,-1)+" damage; maybe vulnerability?")),
+             Slug("Sink", 25, (w)=>(dieSize(w.damage,-2)+" damage; double DR; ALL the vulnerabilities"), "shot")
          ]
 
          function init(){
@@ -244,22 +246,25 @@
                  if (k=='special' || k=='dice' || k=='die' || k=='options' || k.indexOf('_')!=-1) continue;
                  let v = weapon[k];
                  if (typeof(v)=='number') v = Math.round(v);
-                 $('<tr><th>'+k+':</th><td>'+v+'</td></tr>').appendTo(table);
+                 let tr = $('<tr><th>'+k+':</th><td>'+v+'</td></tr>').appendTo(table);
+                 if (k=='optlist') {
+                     tr.find('td').css('white-space','normal');
+                 }
              }
              let budget = $('#budget');
              budget.text('Remaining options: '+weapon.options)
                    .attr('class', 'overbudget'+(weapon.options<0));
              $('#nogood').css('display', (weapon.options<0)?'block':'none');
-             showClips(weapon);
+             showMags(weapon);
          }
 
-         function showClips(weapon) {
-             console.log('showClips',weapon.ammo);
-             $('#clips').empty();
+         function showMags(weapon) {
+             console.log('showMags',weapon.ammo);
+             $('#mags').empty();
              if (weapon.ammo != 'Slug') return;
              let shot = (weapon.optlist.indexOf('Shot')!=-1);
              let compact = (weapon.optlist.indexOf('Compact Rounds')!=-1);
-             let table = $('<table>').appendTo($('#clips'));
+             let table = $('<table>').appendTo($('#mags'));
              $('<tr class=nb><th></th><th colspan=3 class="cent bl">Atmospheric</th><th colspan=3 class="cent bl">Space-Capable</th><th class=bl></td></tr>').appendTo(table);
              let ins = '<th class=bl>Cnt</th><th>Weight</th><th>Cost</th>';
              $('<tr><th>Name</th>'+ins+ins+'<th class="left bl">Description</th></tr>').appendTo(table);
@@ -269,7 +274,7 @@
                  tr = $('<tr>').appendTo(table);
                  $('<th>').text(slug.name).appendTo(tr);
                  for (let atmo of [true,false]) {
-                     let n = weapon.clip;
+                     let n = weapon.mag;
                      if (atmo) {
                          if (compact) {
                              n *= 1.25;
@@ -297,7 +302,7 @@
                      $('<td>').text(cost).css('text-align','center').appendTo(tr);
 
                  }
-                 $('<td>').text(slug.desc).addClass('bl').appendTo(tr);
+                 $('<td>').text(typeof(slug.desc)=='string'?slug.desc:slug.desc(weapon)).addClass('bl').appendTo(tr);
              }
              tr.addClass('nb');
          }
@@ -307,6 +312,19 @@
                  tpl = tpl.replace('%'+k+'%',dict[k]);
              }
              return tpl;
+         }
+
+         function dieSize(x, delta) {
+             const sizes = [2,3,4,6,8,10,12];
+             let prefix = x.match(/[0-9]*d/)[0];
+             let size = parseInt(x.replace(prefix,''));
+             let i = sizes.indexOf(size);
+             if (i==-1) {
+                 size = '['+size+'+'+delta+']';
+             } else {
+                 size = sizes[i+delta];
+             }
+             return prefix+size;
          }
          
         </script>
@@ -335,8 +353,8 @@
                     <table id="results" ></table>
                 </td>
                 <td>
-                    <h1>Available Clips</h1>
-                    <table id="clips" ></table>
+                    <h1>Available Mags</h1>
+                    <table id="mags" ></table>
                 </td>
             </tr>
         </table>
