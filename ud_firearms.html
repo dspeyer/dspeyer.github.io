@@ -130,7 +130,7 @@
              Mut('Increased Ammo', (x)=>{x.special=undefined;x.mag*=1.25}, (x)=>(x.chassis=='Gun')),
              Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun')),
              Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2; x.gl=2*x.gl-1;}, (x)=>(x.ammo=='Slug')),
-             Mut('Double-Barrel', (x)=>{x.mag*=.75;}, (x)=>(x.ammo=='Slug')),
+             Mut('Double-Barrel', (x)=>{x.mag*=.75;x.price*=2;x.weight*=1.5;x.gl+=2;}, (x)=>(x.ammo=='Slug')),
              Option('Autofire', 2, 1, 1, (x)=>{x.gl+=2;}),
              Option('Easy Repair', 1, 10, .1),
              Option('Extended Range', 2, 999, .5, (x,q)=>{ x.range*=(1+q); }),
