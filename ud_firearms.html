@@ -129,18 +129,19 @@
              Mut('Compact Rounds', (x)=>{x.mag*=2}, (x)=>(x.ammo=='Slug')),
              Mut('Increased Ammo', (x)=>{x.special=undefined;x.mag*=1.25}, (x)=>(x.chassis=='Gun')),
              Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun')),
-             Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2;}, (x)=>(x.ammo=='Slug')),
+             Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2; x.gl=2*x.gl-1;}, (x)=>(x.ammo=='Slug')),
+             Mut('Double-Barrel', (x)=>{x.mag*=.75;}, (x)=>(x.ammo=='Slug')),
              Option('Autofire', 2, 1, 1, (x)=>{x.gl+=2;}),
              Option('Easy Repair', 1, 10, .1),
-             Option('Extended Range', 2, 999, .5, (x,q)=>{ if (x.ammo=='Slug') x.range*=(1+q); else x.range*=(1+q/4); }),
+             Option('Extended Range', 2, 999, .5, (x,q)=>{ x.range*=(1+q); }),
              Option('External Ammo', 3, 1, .75, (x)=>{ x.mag='?'; }),
              Option('Extra Shots', 2, 2, .5, (x,q)=>{ x.mag*=1+q/4; }),
-             Option('Full Auto', 5, 1, 2),
+             Option('Full Auto', 5, 1, 2, (x)=>{x.gl+=3;}),
              Option('Increased Damage', 5, 1, 3, (x)=>{ x.die = dieSize(x.die,1); x.gl+=Math.ceil(x.dice/2); }),
-             Option('Laser Sight', 2, 1, .5),
+             Option('Laser Sight', 2, 1, .5, (x)=>{ x.gl+=1; }),
              Option('Light Item', 2, 5, 0.2, (x,q)=>{ x.weight*=1-q/10; }),
              Option('Modular', 1, 1, 0.2),
-             Option('Sniper', 1, 1, 0, (x)=>{ x.price_add=125; })
+             Option('Sniper', 1, 1, 0, (x)=>{ x.price_add=125; x.gl+=1; })
          ]
 
          function Slug(name, cost, desc, shot) {
@@ -188,7 +189,10 @@
                  opt.able = able;
                  opt.tr.attr('class','able'+able);
                  opt.elem.attr('disabled', !able);
-                 if (weapon.special=='freeauto' && opt.name=='Autofire') opt.elem.attr('checked',true).attr('disabled',false);
+                 if (weapon.special=='freeauto' && opt.name=='Autofire') {
+                     opt.elem.attr('checked',true).attr('disabled',false);
+                     opt.able = true;
+                 }
              }
          }
 
@@ -218,6 +222,7 @@
                  if (isNaN(v)) v = opt.elem.is(':checked');
                  if (opt.able && v) {
                      if (opt.action) {
+                         console.log('acting for '+opt.name);
                          opt.action(weapon, v);
                      }
                      if (v > 1) {
