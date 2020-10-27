@@ -93,8 +93,8 @@ for x in raw:
             if x['tick']+x['length']+i not in bytime:
                 break
         for a in ['sarah','otto','citrine','historian']:
-            if (x['tick']+x['length']+1,a) in bytimeauth:
-                p = bytimeauth[(x['tick']+x['length']+1,a)]
+            if (x['tick']+x['length'],a) in bytimeauth:
+                p = bytimeauth[(x['tick']+x['length'],a)]
                 if not p['stub']:
                     f.write('<li><b>Immediately Next by %s:</b> <a href=%s>%s</a>'%(a.title(), p['fn'],p['title']))
                     break
