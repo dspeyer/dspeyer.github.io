@@ -71,24 +71,27 @@
          .bl {
              border-left: 1px solid black;
          }
-         #mags td {
+         #ammocol td {
              border-bottom: 1px solid grey;
              vertical-align: middle;
          }
-         #mags th {
+         #ammocol th {
              border-bottom: 1px solid grey;
          }
-         #mags tr.nb th {
+         #ammocol tr.nb th {
              border-bottom: none;
          }
-         #mags tr.nb td {
+         #ammocol tr.nb td {
              border-bottom: none;
          }
-         #mags table {
+         #ammocol table {
              border-collapse: collapse;
          }
          #results {
              white-space: nowrap;
+         }
+         .cpt1 {
+             background: #ddd;
          }
         </style>
 
@@ -109,13 +112,15 @@
              // Base("Gyroc Pistol", "Exotic", "Projectile", "Tiny", "ammo", 125, 15, "ammo", 6, 0, "space"),
              // Base("Gyroc Rifle", "Exotic", "Projectile", "Small", "ammo", 200, 30, "ammo", 9, 2, "space"),
          ];
-         function Ammo(ammo, die, price, mag, range, weight) {
-             return {ammo, die, price, mag, range, weight};
+         function Ammo(ammo, die, price_mult, mag, range, weight) {
+             return {ammo, die, price_mult, mag, range, weight};
          }
 
          const ammos = [
              Ammo('Slug', 'd6', 1, 0.3333, 1, 1.5),
-             Ammo('Chemical', ' doses', 1.5, 0.25, 0.25, 2)
+             Ammo('Chemical', ' doses', 1.5, 0.25, 0.25, 2),
+             Ammo('Laser', 'd4', 2, 1, 5, 0.5),
+             Ammo('Water', ' splashes', 1, 1.5, .25, 1)
              // space tech and projectiles omitted
          ];
          
@@ -131,10 +136,17 @@
              Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun')),
              Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2; x.gl=2*x.gl-1;}, (x)=>(x.ammo=='Slug')),
              Mut('Double-Barrel', (x)=>{x.mag*=.75;x.price*=2;x.weight*=1.5;x.gl+=2;}, (x)=>(x.ammo=='Slug')),
+             Mut('Star-Tech', (x)=>{x.die=dieSize(x.die,1);}, (x)=>(x.ammo=='Slug')),
              Option('Autofire', 2, 1, 1, (x)=>{x.gl+=2;}),
              Option('Easy Repair', 1, 10, .1),
              Option('Extended Range', 2, 999, .5, (x,q)=>{ x.range*=(1+q); }),
-             Option('External Ammo', 3, 1, .75, (x)=>{ x.mag='?'; }),
+             Option('Internal Feed', 0, 1, 0, (x)=>{ x.mag*=1.25}),
+             Option('Obligatory External Ammo', 0, 1, .75, (x)=>{
+                 x.mag='N/A'; x.int_mag=false; x.ext_mag=true;
+                 if (x.ammo=='Laser') x.price_mult-=.5;}),
+             Option('Optional External Ammo', 3, 1, .75, (x)=>{
+                 x.ext_mag=1;
+                 if (x.ammo=='Laser') {x.price_mult-=.5; x.options+=2;} }),
              Option('Extra Shots', 2, 2, .5, (x,q)=>{ x.mag*=1+q/4; }),
              Option('Full Auto', 5, 1, 2, (x)=>{x.gl+=3;}),
              Option('Increased Damage', 5, 1, 3, (x)=>{ x.die = dieSize(x.die,1); x.gl+=Math.ceil(x.dice/2); }),
@@ -177,8 +189,11 @@
                  $('<td>').append(opt.elem).appendTo(opt.tr);
              }
              $('#chassis, #ammo, #q').on('change', ()=>{ ableOpts(); showWeapon(); });
+             console.log('of');
              ableOpts();
+             console.log('course');
              showWeapon();
+             console.log('i');
          }
          $(init);
          
@@ -200,6 +215,8 @@
              let weapon = {};
              let base = bases[$('#chassis').val()];
              let ammo = ammos[$('#ammo').val()];
+             weapon.int_mag = true;
+             weapon.ext_mag = false;
              let q = $('#q').val()-0;
              for (let k in base) weapon[k] = base[k];
              for (let k in ammo){
@@ -208,10 +225,13 @@
              weapon.price *= q;
              weapon.options += q;
              if (weapon.special == 'halfopts') weapon.options = Math.floor(weapon.options/2);
-             weapon.price_mult = 1;
              weapon.price_add = 0;
              weapon.optlist = [];
              weapon.quality = q;
+             if (weapon.ammo=='Water') {
+                 weapon.gl = Math.max(weapon.gl-2, 1);
+                 weapon.dice = Math.ceil(weapon.dice/2);
+             }
              return weapon;
          }
 
@@ -222,7 +242,6 @@
                  if (isNaN(v)) v = opt.elem.is(':checked');
                  if (opt.able && v) {
                      if (opt.action) {
-                         console.log('acting for '+opt.name);
                          opt.action(weapon, v);
                      }
                      if (v > 1) {
@@ -245,6 +264,7 @@
 
          function showWeapon() {
              let weapon = recalcWeapon();
+             console.log('still');
              let table = $('#results');
              table.empty();
              for (let k in weapon) {
@@ -260,16 +280,22 @@
              budget.text('Remaining options: '+weapon.options)
                    .attr('class', 'overbudget'+(weapon.options<0));
              $('#nogood').css('display', (weapon.options<0)?'block':'none');
-             showMags(weapon);
+             $('#ammocol').empty();
+             if (weapon.ammo == 'Slug') {
+                 if (weapon.int_mag) showAmmos(weapon, 'Mags');
+                 if (weapon.ext_mag) showAmmos(weapon, 'Belts');
+             }
+             if (weapon.ammo == 'Laser') {
+                 showCP(weapon);
+             }
+             
          }
 
-         function showMags(weapon) {
-             console.log('showMags',weapon.ammo);
-             $('#mags').empty();
-             if (weapon.ammo != 'Slug') return;
+         function showAmmos(weapon, unit) {
+             $('<h3>').text('Available '+unit).appendTo($('#ammocol'));
              let shot = (weapon.optlist.indexOf('Shot')!=-1);
              let compact = (weapon.optlist.indexOf('Compact Rounds')!=-1);
-             let table = $('<table>').appendTo($('#mags'));
+             let table = $('<table>').appendTo($('#ammocol'));
              $('<tr class=nb><th></th><th colspan=3 class="cent bl">Atmospheric</th><th colspan=3 class="cent bl">Space-Capable</th><th class=bl></td></tr>').appendTo(table);
              let ins = '<th class=bl>Cnt</th><th>Weight</th><th>Cost</th>';
              $('<tr><th>Name</th>'+ins+ins+'<th class="left bl">Description</th></tr>').appendTo(table);
@@ -280,6 +306,7 @@
                  $('<th>').text(slug.name).appendTo(tr);
                  for (let atmo of [true,false]) {
                      let n = weapon.mag;
+                     if (n=='N/A') n=1;
                      if (atmo) {
                          if (compact) {
                              n *= 1.25;
@@ -300,6 +327,14 @@
                          weight /= 2;
                          cost *= 2;
                      }
+                     if (unit=='Belts') {
+                         let m = 1 / weight;
+                         let n2 = Math.round(m*n);
+                         m = n2/n;
+                         n = n2;
+                         cost *= m;
+                         weight *= m
+                     }
                      cost = Math.round(cost*100)/100;
                      weight = Math.round(weight*100)/100;
                      $('<td>').text(n).css('text-align','center').addClass('bl').appendTo(tr);
@@ -310,6 +345,34 @@
                  $('<td>').text(typeof(slug.desc)=='string'?slug.desc:slug.desc(weapon)).addClass('bl').appendTo(tr);
              }
              tr.addClass('nb');
+         }
+
+         function showCP(weapon) {
+             $('<h3>Available Charge Packs</h3>').appendTo($('#ammocol'));
+             let table = $('<table>').appendTo($('#ammocol'));
+             $('<tr><th>Type</th><th>Q</th><th>Shots</th><th>Weight</th><th>Cost</th></tr>').appendTo(table);
+             let desc = ['Internal Pack', 'Space-Age Internal Pack', 'Backpack'];
+             for (let typ=0; typ<3; typ++) {
+                 if (typ<2 && ! weapon.int_mag) continue;
+                 if (typ==2 && ! weapon.ext_mag) continue;
+                 for (let q=1; q<8; q++) {
+                     let tr = $('<tr>').addClass('cpt'+typ).appendTo(table);
+                     if (q==1) {
+                         $('<th rowspan=7>').text(desc[typ]).appendTo(tr);
+                     }
+                     $('<td>').text(q).appendTo(tr);
+                     let r = typ<2 ? weapon.mag : 100;
+                     let e = (typ==1) ? q : q/10;
+                     let c = Math.floor(r * e);
+                     let n = Math.floor(c / weapon.dice);
+                     c = n * weapon.dice;
+                     r = Math.ceil(c / e);
+                     $('<td>').text(n).appendTo(tr);
+                     $('<td>').text(r/100).appendTo(tr);
+                     $('<td>').text(q*r*(typ==1?10:1)).appendTo(tr);
+                 }
+             }
+             table.find('td').addClass('bl');
          }
 
          function replaceAll(tpl,dict) {
@@ -340,7 +403,7 @@
             <tr>
                 <td colspan="3">
                     <h1>
-                        Q<input id="q" type="number" min="1" max="7" value="1" >
+                        Q<input id="q" type="number" min="1" max="10" value="1" >
                         <select id="ammo" ></select>
                         <select id="chassis" ></select>
                     </h1>
@@ -357,9 +420,7 @@
                     <div id="nogood">🚫</div>
                     <table id="results" ></table>
                 </td>
-                <td>
-                    <h1>Available Mags</h1>
-                    <table id="mags" ></table>
+                <td id="ammocol">
                 </td>
             </tr>
         </table>
