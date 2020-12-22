@@ -3,7 +3,7 @@
         <title>Universal Decay Firearm Maker</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <style>
-         .ablefalse {
+         .disabled {
              color: grey;
          }
          .overbudgettrue {
@@ -93,6 +93,33 @@
          .cpt1 {
              background: #ddd;
          }
+         tr.radiostart td {
+             border-top: 1px solid grey;
+             position: relative;
+             padding-top: .4em;
+         }
+         tr.radioend td {
+             border-bottom: 1px solid grey;
+         }
+         tr.radio td:first-child {
+             border-left: 1px solid grey;
+         }
+         tr.radio td:last-child {
+             border-right: 1px solid grey;
+         }
+         .grouplabel {
+             position: absolute;
+             top: -.7em;
+             left: .5em;
+             font-size: smaller;
+             text-shadow: 0 0 2 white;
+             background: white;
+             border: 1px solid grey;
+             border-radius: .5em;
+         }
+         tr.freebie.disabled {
+             display: none;
+         }
         </style>
 
         <script>
@@ -124,29 +151,35 @@
              // space tech and projectiles omitted
          ];
          
-         function Option(name, opts, max, pm, action, filter) {
-             return {name, opts, max, pm, action, filter};
+         function Option(name, opts, max, pm, action, filter, radio) {
+             return {name, opts, max, pm, action, filter, radio};
          }
-         function Mut(name, action, filter) {
-             return Option(name, 0, 1, 0, action, filter);
+         function Mut(name, action, filter, radio) {
+             return Option(name, 0, 1, 0, action, filter, radio);
          }
          let opts = [
-             Mut('Compact Rounds', (x)=>{x.mag*=2}, (x)=>(x.ammo=='Slug')),
-             Mut('Increased Ammo', (x)=>{x.special=undefined;x.mag*=1.25}, (x)=>(x.chassis=='Gun')),
-             Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun')),
+             Mut('Increased Ammo', (x)=>{x.special=undefined;x.mag*=1.25}, (x)=>(x.chassis=='Gun'), 'Gun Freebie'),
+             Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun'), 'Gun Freebie'),
+             Mut('Free Autofire', null, (x)=>(x.chassis=='Gun'), 'Gun Freebie'),
              Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2; x.gl=2*x.gl-1;}, (x)=>(x.ammo=='Slug')),
+             Mut('Compact Rounds', (x)=>{x.mag*=2}, (x)=>(x.ammo=='Slug')),
              Mut('Double-Barrel', (x)=>{x.mag*=.75;x.price*=2;x.weight*=1.5;x.gl+=2;}, (x)=>(x.ammo=='Slug')),
              Mut('Star-Tech', (x)=>{x.die=dieSize(x.die,1);}, (x)=>(x.ammo=='Slug')),
              Option('Autofire', 2, 1, 1, (x)=>{x.gl+=2;}),
              Option('Easy Repair', 1, 10, .1),
              Option('Extended Range', 2, 999, .5, (x,q)=>{ x.range*=(1+q); }),
-             Option('Internal Feed', 0, 1, 0, (x)=>{ x.mag*=1.25}),
-             Option('Obligatory External Ammo', 0, 1, .75, (x)=>{
-                 x.mag='N/A'; x.int_mag=false; x.ext_mag=true;
-                 if (x.ammo=='Laser') x.price_mult-=.5;}),
-             Option('Optional External Ammo', 3, 1, .75, (x)=>{
-                 x.ext_mag=1;
-                 if (x.ammo=='Laser') {x.price_mult-=.5; x.options+=2;} }),
+             Option('Internal Feed', 0, 1, 0, (x)=>{ x.mag*=1.25}, null, 'Ammo Storage'),
+             Option('Swappable Mags', 0, 1, 0, null, null, 'Ammo Storage'),
+             Option('Flexible Belts/Mags', 3, 1, .75,
+                    (x)=>{
+                        x.ext_mag=1;
+                        if (x.ammo=='Laser') {x.price_mult-=.5; x.options+=2;} },
+                    null, 'Ammo Storage'),
+             Option('External Ammo Only', 0, 1, .75,
+                    (x)=>{
+                        x.mag='N/A'; x.int_mag=false; x.ext_mag=true;
+                        if (x.ammo=='Laser') x.price_mult-=.5;},
+                    null, 'Ammo Storage'),
              Option('Extra Shots', 2, 2, .5, (x,q)=>{ x.mag*=1+q/4; }),
              Option('Full Auto', 5, 1, 2, (x)=>{x.gl+=3;}),
              Option('Increased Damage', 5, 1, 3, (x)=>{ x.die = dieSize(x.die,1); x.gl+=Math.ceil(x.dice/2); }),
@@ -176,17 +209,36 @@
              for (let i in ammos) {
                  $('<option>').attr("value",i).text(ammos[i].ammo).appendTo($('#ammo'));
              }
+             let prevradio, prevtr;
              for (let opt of opts) {
                  opt.tr = $('<tr>').appendTo($('#options'));
-                 $('<td>').text(opt.name).appendTo(opt.tr);
+                 let td1 = $('<td>').text(opt.name).appendTo(opt.tr);
                  $('<td>').text(opt.opts).appendTo(opt.tr);
-                 if (opt.max==1) {
+                 if (opt.radio) {
+                     opt.elem = $('<input type=radio>').attr('name',opt.radio);
+                 } else if (opt.max==1) {
                      opt.elem = $('<input type=checkbox>');
                  } else {
                      opt.elem = $('<input type=number>').attr('min',0).attr('max',opt.max);
                  }
                  opt.elem.on('change',showWeapon);
                  $('<td>').append(opt.elem).appendTo(opt.tr);
+                 if (opt.radio != prevradio) {
+                     if (opt.radio) {
+                         opt.tr.addClass('radiostart');
+                         $('<div>').text(opt.radio).addClass('grouplabel').appendTo(td1);
+                     } else if (prevtr) {
+                         prevtr.addClass('radioend');
+                     }
+                 }
+                 if (opt.radio) {
+                     opt.tr.addClass('radio');
+                     if (opt.radio.indexOf('Freebie')!=-1) {
+                         opt.tr.addClass('freebie');
+                     }
+                 }
+                 prevradio = opt.radio;
+                 prevtr = opt.tr;
              }
              $('#chassis, #ammo, #q').on('change', ()=>{ ableOpts(); showWeapon(); });
              console.log('of');
@@ -202,7 +254,7 @@
              for (let opt of opts) {
                  let able = (opt.opts <= weapon.options) && (!opt.filter || opt.filter(weapon));
                  opt.able = able;
-                 opt.tr.attr('class','able'+able);
+                 opt.tr.toggleClass('disabled',!able);
                  opt.elem.attr('disabled', !able);
                  if (weapon.special=='freeauto' && opt.name=='Autofire') {
                      opt.elem.attr('checked',true).attr('disabled',false);
