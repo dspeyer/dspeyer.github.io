@@ -131,7 +131,7 @@
              Base("Pistol",  "Simple Firearm",  "Dim",   2, 10,  10, 20, 2, 0, 2),
              Base("Gun",     "Martial Firearm", "Tiny",  2, 25,  15, 20, 4, 0, 3, "freeauto"),
              Base("Rifle",   "Martial Firearm", "Small", 4, 100, 20, 50, 8, 2, 3),
-             Base("Cannon",  "Exotic Firearm", "Med",   8, 500, 50, 75, 16, 10, 4)
+             Base("Cannon",  "Exotic Firearm", "Med",   8, 500, 45, 75, 16, 4, 4)
              // Projectiles not supported
              // Base("Popcan", "Simple", "Projectile", "Tiny", "ammo", 5, 1, 5, 2, 0),
              // Base("Thrower", "Martial", "Projectile", "Small", "ammo" 15, 4, 10, 10, 2),
@@ -161,6 +161,8 @@
              Mut('Increased Ammo', (x)=>{x.special=undefined;x.mag*=1.25}, (x)=>(x.chassis=='Gun'), 'Gun Freebie'),
              Mut('Long Bore', (x)=>{x.special=undefined; x.range=40}, (x)=>(x.chassis=='Gun'), 'Gun Freebie'),
              Mut('Free Autofire', null, (x)=>(x.chassis=='Gun'), 'Gun Freebie'),
+             Mut('Bonus Ammo', (x)=>{x.mag+=15;}, (x)=>(x.chassis=='Cannon'), 'Cannon Freebie'),
+             Mut('Bonus Range', (x)=>{x.range+=25;}, (x)=>(x.chassis=='Cannon'), 'Cannon Freebie'),
              Mut('Shot', (x)=>{x.price/=2; x.dice=Math.ceil(x.dice*1.5); x.range/=2; x.gl=2*x.gl-1;}, (x)=>(x.ammo=='Slug')),
              Mut('Compact Rounds', (x)=>{x.mag*=2}, (x)=>(x.ammo=='Slug')),
              Mut('Double-Barrel', (x)=>{x.mag*=.75;x.price*=2;x.weight*=1.5;x.gl+=2;}, (x)=>(x.ammo=='Slug')),
@@ -216,6 +218,7 @@
                  $('<td>').text(opt.opts).appendTo(opt.tr);
                  if (opt.radio) {
                      opt.elem = $('<input type=radio>').attr('name',opt.radio);
+                     if ( ! opt.action) opt.elem.attr('checked',true);
                  } else if (opt.max==1) {
                      opt.elem = $('<input type=checkbox>');
                  } else {
@@ -227,7 +230,8 @@
                      if (opt.radio) {
                          opt.tr.addClass('radiostart');
                          $('<div>').text(opt.radio).addClass('grouplabel').appendTo(td1);
-                     } else if (prevtr) {
+                     }
+                     if (prevtr && prevradio) {
                          prevtr.addClass('radioend');
                      }
                  }
