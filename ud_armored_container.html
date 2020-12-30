@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Armored Box Statter</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+
+         table {
+             border: 1px grey solid;
+             display: inline-table;
+         }
+         input[type="number"] {
+             width: 3em;
+         }
+         #diagram {
+             display: inline-block;
+             vertical-align: top;
+             position: relative;
+             text-shadow: 0 0 2px white;
+             font-weight: bold;
+         }
+         #dw {
+             position:absolute;
+             bottom:0;
+             left: 50%;
+         }
+         #dh {
+             position: absolute;
+             top: 50%;
+             left: 0;
+         }
+         #dd {
+             position: absolute;
+         }
+         #flap {
+             border: 2px solid black;
+             width: calc(100% - 8px);
+             position: absolute;
+             top: -2px;
+             left: 2px;
+             text-align: center;
+             border-radius: 0 0 .1in .1in;
+         }
+        </style>
+        <script>
+         
+         function recalc() {
+             let w = $('#w').val();
+             let h = $('#h').val();
+             let d = $('#d').val();
+             let f = $('#f').val();
+             let t = $('#t').val();
+             let sa = 2*w*h + 2*w*d + 2*h*d + f*w;
+             let weight = sa * t * 0.115968607; // Density of SiC in lb/in^3
+             let volume = w*h*d;
+             let c4 = volume * 0.0596100318; // Density of c4 in lb/in^3
+             let c4d = Math.round(c4*70)+'d6';
+             let hp = 10+50*t;
+             $('#weight').text(weight.toPrecision(3)+'lb');
+             $('#volume').html(volume.toPrecision(3)+'in<sup>3</sup>');
+             $('#c4').text(c4.toPrecision(3)+'lb ('+c4d+')');
+             $('#hp').text(hp);
+
+             let bsw = d * Math.cos(Math.PI/6);
+             let bsh = d * Math.sin(Math.PI/6);
+             let boxShadow = [];
+             for (let i=0; i<10; i++) {
+                 boxShadow.push(`${-i*bsw/10}in ${-i*bsh/10}in 0 0 #770`);
+             }
+             boxShadow = boxShadow.join(', ');
+             $('#diagram').css({width:w+'in',
+                                height:h+'in',
+                                marginLeft: bsw+'in',
+                                marginTop: bsh+'in',
+                                boxShadow,
+                                background: '#cc0',
+                                border: (t*10)+'px solid black'});
+             $('#dw').text(w);
+             $('#dh').text(h);
+             $('#dd').text(d).css({bottom:bsh/2+'in',left:-bsw/2+'in'});
+             $('#flap').text(f).css({height:(f/2+.1)+'in', paddingTop:(f/2-.1)+'in'});
+         }
+         
+         $(()=>{
+             $('input').on('change',recalc);
+             $('#cube').on('click',()=>{
+                 let w = $('#w').val();
+                 console.log('cube',w);
+                 $('#h').val(w);
+                 $('#d').val(w);
+                 recalc();
+             });
+             recalc();
+         });
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>Width:</td><td><input type="number" id="w" value="2"></td></tr>
+            <tr><td>Height:</td><td><input type="number" id="h" value="2"></td>
+                <td rowspan="2"><input type="button" value="Cube" id="cube"></td></tr>
+            <tr><td>Depth:</td><td><input type="number" id="d" value="2"></td></tr>
+            <tr><td>Flap:</td><td><input type="number" id="f" value=".2" step=".1"></td></tr>
+            <tr><td>Thickness:</td><td><input type="number" id="t" value=".1" step=".1"></td></tr>
+            <tr><td colspan="2"><hr></td></tr>
+            <tr><td>Weight:</td><td id="weight"></td></tr>
+            <tr><td>Volume:</td><td id="volume"></td></tr>
+            <tr><td>C4 held:</td><td id="c4" colspan="2"></td></tr>
+            <tr><td>Blast damage needed to breach:</td><td id="hp"></td></tr>
+        </table>
+        <div id="diagram">
+            <div id="flap"></div>
+            <div id="dw"></div>
+            <div id="dh"></div>
+            <div id="dd"></div>
+        </div>
+    </body>
+</html>
