@@ -15,7 +15,7 @@ echo '<table>' >> index.html
 echo "<thead><tr><!--td class=small>#</td--><td class=sarah>Sarah's Diary</td><td class=otto>Otto's Log</td><td class=citrine>Citrine's Journal</td><td class=historian>Additional Texts</td></tr></thead>" >> index.html
 for i in `ls tmp/*_*.html | cut -d _ -f 2 | sort -n | uniq`; do
     echo "<tr><!--td class=small>${i}</td-->" >> index.html
-    if test $i -eq '-1'; then
+    if test $i -eq '-1' || test $i -eq 20; then
         echo "<td class=invis colspan=3></td>" >> index.html
     fi
     for n in sarah otto citrine marianna jacqueline historian; do
