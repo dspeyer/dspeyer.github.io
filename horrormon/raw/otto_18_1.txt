@@ -1,1 +1,323 @@
 # April's Castle
+
+## Preparation
+
+With six Emeralds in hand, we felt pretty committed to getting the last two.  At this point, we were April's only path to increasing her “spooky rock collection”, and a conflict was inevitable.  We might as well start it on our terms.
+
+When it comes to violence, it is truly better to give than to receive.
+
+We didn't want to risk April getting the Emeralds from us, though.  Bringing all six with us was putting too many eggs in one basket.
+
+We journeyed to Vidriot and left one Emerald (still in its kettle-bell) in the care of the Champion.  He was reluctant to accept it, given how much damage another Emerald (or possibly the same one) had done to his town, but we assured him that it was safe so long as it was kept cold and stabilized.  And we pointed out how vital this safety precaution was.  He ultimately agreed.
+
+We then journeyed to Nosgoth.  Jacqueline casually slipped the kettle-bell into her personal locker without attracting Kaine's attention.  I knew Kaine wanted an Emerald, and didn't want to have to take this one back by force, but Jacqueline was confident she could handle the subtlety, and it seemed to work.
+
+With the Emerald stowed, we told Kaine that we planned to attack April's castle.  We didn't mention Emeralds, only that she was way too devoted to Steve and sure to cause trouble if we let her live.  In this, he quite agreed.  He gave us some soulfruits and a frag grenade to help us in the fight.
+
+(No word from Roto-Mar in all this time.  Maybe Sig really was dead?)
+
+As we left Nosgoth, we found a formal letter addressed to us.  It was an invitation.  From April.  To visit her castle.
+
+We searched for anti-memes, but found none.
+
+Naturally, this led us to reconsider the plan of going there.
+
+We elected to maximize confusion, by breaking in while distracting her by refusing her invitation.  I proposed a simple letter saying we couldn't make it but had sent her a spooky rock.  Jacqueline rephrased it more formally, and then wrote it out.
+
+The art of war is the art of deception.
+
+We journeyed to the castle by cloud.  Clone!I had our elegantly caligraphed letter of refusal, a cloned fragmentation grenade, and a glamour as a mundane courier.  Would glamours fool April?  Maybe.  Also, Citrine morphed Tall Man and used her sensing-sense to check for anyone watching us.  She found nothing.
+
+## Refusal
+
+Clone!I hopped off the cloud and proceeded to the castle's location on foot, while the rest of us made a more stealthy approach.
+
+There was no castle there.
+
+Just a plateau in the mountains where the locator spells pointed.  Once I was there, I saw the two remaining locator arrows pointed different places: one in the earth and one in the air.
+
+As I was poking around, a Tall Man with a face (glamour?) dressed in formal livery came out and looked quizically at me.  I explained that I had a message and a parcel for April.  The Tall Manservant gestured for me to follow.  He did a thing, and I found myself in the shadow world.
+
+The other mountains disappeared.  Only this one remained.  And, at its peak was a castle.
+
+![The Castle](sm_image0.png)
+
+Surrounding the castle were enormous humanoid figures, floating in midair.  They didn't react to me, so I noted them as “ominous” and moved on.
+
+The Tall Manservant brought me into a tall many-pillared antechamber.  No murder holes, but the pillars were circled by strange centipedish things (Skullapedes, we later learned).  With 50 hp each.
+
+April was there.  “I hear there's a message?"
+
+“Indeed,” I replied, “The ancient adventuring party sends this letter, and a small gift to deliver after you have read it."
+
+"Henry can take them," she gestured to the Tall Manservant, "Unless there's traps, in which case of course you should hand them directly to me."
+
+How would an actual courier respond to that?  With dignity and minimal comment.  “I was instructed to hand them directly to you.  I don't know if they are traps.”
+
+“Oh that definitely means there's traps.”
+
+Was this confidence or insanity?  Did it matter?  I handed her the letter first.
+
+She read the letter, giggling, and then graciously accepted the pinless grenade.
+
+And then she teleported away, leaving the grenade behind.
+
+I caught it before it hit the floor, tossed it to the Tall Manservent (Henry? seriously?) saying “Maybe you should handle this after all” and jumped behind a pillar.
+
+The Tall Manservant did not recongnise the grenade, and took the explosion head on.  The centipede monsters took the edge of the blast, and I took cover.
+
+Henry's corpse showed the same half-and-half look as Citrine.  Another successful hybrid?  I hadn't thought there were any.
+
+And then the Skullapedes converged on me and killed me.
+
+## Entry
+
+We waited for clone!me and the Tall Man to disappear, then advanced and began locator triangulation.  Again, we found one Emerald deep in the Earth and another up in the air.  We chose to go after the deep one first, on the logic that returning to a point in midair was a lot more survivable than a point deep underground.  Sarah morphed Leviazyzmuth and began tunneling to the spot.
+
+Before she finished, I got my clone's memory-rush.  That didn't take long.  So much for simultaneity.
+
+No battle plan survives contact with the enemy.
+
+But hopefully April was distracted, confused, or at least down-a-manserverant.  So we got out our Shadow World Engine and jumped to hopefully-where-the-Emerald-was anyway.
+
+We landed on the steps of the castle, just as clone!I had.  In our previous experience, there had been a one-to-one correspondence between the normal and shadow worlds.  But apparently not here.
+
+The ominous giants looked ready to shoot lasers at us, so we went in the (unlocked) front door.  The skullapedes attacked us, but with all of us present, we made short work of them.
+
+During the fight, we damaged a wall.  Strange goo came out.  Analyze identified it as “Bad Goo” and revealed that it was poisonous, corrosive and highly flammable.  It released toxic fumes, but those could be destroyed by fire.  For safety's sake, I ignited it.
+
+On the one hand, it was too much.  The poison, the acid – pick a way to kill us.
+
+On the other hand, there is no such thing as “overkill” – only “open fire” and “reload”.
+
+Or maybe the real principle is: The enemy is also allowed to be smart.
+
+After all, conventional fortifications aren't very effective in a world of Leviazyzmuths.  We proved that in Penetencia, and I doubt we were the first.  April must have spent a while thinking about this, and constructed her castle out of something that couldn't be safely burrowed through.
+
+Which got me wondering about teleportation.  Analyze showed the walls, while only a foot thick, were eight *zones* thick.  I'd wondered off-and-on about what the “zones” magic ranges were based on were, and how they related to distance in the normal, non-abominational geometric sense.  Apparently, they relate however April decides they will.  This is not encouraging.
+
+We moved on to the next room, which was an irregular hexagon, or maybe just a triangle with its corners lopped off.  In addition to the door we'd come through, there was a small door, a giant door, and a round door like a bank vault.
+
+![What the room would have looked like from above](sm_image1.png)
+
+We tried the small door first.  It led to a hallway full of storage rooms.  One held monsters imitating refrigerators, all in a line.  Fortunately, my hyperbreakers were fully charged, so they went down like dominoes.  No, not fortunately.  Deliberately.
+
+Paranoia: because they *are* out to get you.
+
+The other rooms in the corridor were less interesting, and that was all there was down this way.  Unless we'd missed a secret door, there was nowhere to go but back.
+
+We tried the vault door next.  When the door was closed, it formed an airtight seal and filled with Bad Goo, killing me.  I got the memory-rush and recloned myself.
+
+So the giant door.  It led to a giant staircase.  On each side of the staircase were a series of alcoves, and in each alcove was a powerful monster.
+
+![The Stairs, seen from the bottom](sm_image2.png)
+
+The opening of the combat went well.  I blasted the first few mons with full charge before they could get positioned.  The rest of the party unloaded similarly.
+
+And, then, when we couldn't maintain the pace, we fell back and slammed the door.
+
+A few mons made it into the triangular room, but we now outnumbered them.  I started recharging my hyperbreakers while we positioned ourselves to reopen the door.
+
+We didn't get the six rounds we needed.  The mons broke down the door.
+
+Not only that, but they had archers, firing oddly slow but very deadly arrows.
+
+The fight turned into a real mess after that.  I got so beaten down that I turned into a bear for the sheer survivability of it.  But eventually we prevailed.
+
+We took a moment to rest, heal and reset.  Then we pressed onward.
+
+## Games with Goo
+
+The door at the top of the stairs was another vault-style, so clone!I went first.  It filled with water, not Bad Goo.  There is something frightening about being completely immersed in water with no access to air.  Possibly a lingering emotion from the days when humans needed to breathe.  I forced myself to ignore it and moved forward.
+
+There was no control to drain the water.  At the far side was another vault-door, and beyond that: water.
+
+After finding nothing in the bottom of the tank, I swam to the top, where floated a circular platform (made of stone?).  I climbed onto it and shook off, briefly wishing for a towel.  At the center of the platform was a device labeled “INVERSION ARTIFACT PROTOTYPE ver. 0.8 WATER 🔄 GOO"
+
+![The Platform](sm_image3.png)
+
+![The Artifact](sm_image_artifact.png)
+
+Removing the artifact turned the water into Bad Goo.  Reattaching it turned it back.  Taking it would mean swimming through a massive tower of Bad Goo.  Or, at least, it would if I hadn't already solved this problem.
+
+I radioed my other self to slot the Box, opened the Box, placed the artifact inside, and started swimming.
+
+When the memory-rush arrived, I opened the Box and removed the artifact.
+
+We went back to the triangular room and examined the vault-door.  There was indeed a place to put the Inversion Artifact.
+
+At this point I started worrying that we were doing what April *intended for us to do*.  But I had no alternative to propose.  We kept going.
+
+The vault-chamber indeed flooded with water this time.  And emptied again before going onward.  One by one we went through.
+
+(We considered leaving clone!me behind to send the artifact forward by Box again, but decided to wait and see if we needed it.)
+
+On the far side of the door were three pipes and another door.  The pipes had control valves on them.  By listening carefully, we turned them all off.
+
+The next room had two fountains, both de-activated (presumably they'd have spewed Bad Goo on us had we ignored the pipes.  There were four staircases here.
+
+Having no better way to choose, we tried the rightmost staircase first.  Upwards, there were a few guards we easily dispatched, and a ring of windows from which we could see the rest of the castle.  We briefly considered summoning the cloud and going from window to window.  But we can't actually see zone boundaries, so there was no way to calculate how long it would take or what the giants would do during that time.
+
+Downwards, there was a long tunnel leading to an enormous door (bigger than any we'd opened so far), with a sign saying “please knock”.  We suspected this of being the giants' home.  Having nothing to gain there and no desire to face them, we turned around.
+
+The leftmost staircase lead to a ring gate.
+
+## The Lab Dimension
+
+The pocket dimension looked like a laboratory.  Perhaps April was studying the Emerald and its powers?  Or perhaps it was part of the spell refinement process.  There was a very large spell refinery *outside* the gate, but maybe getting the spells she really wanted required something inside as well.  If we wanted to build our own spell refinery, we would need to understand.  But if, as was starting to seem likely, we stuck to the time travel plan, we only needed to smash.
+
+There were an assortment of mons, technicians and soldiers.  We fought our way through.  At one point a group of enemies gathered too tightly and I put the cloned frag grenade to good use (still saving the original).
+
+There were also a set of sheds in the lab with garage-style sliding doors.  Analyze revealed each housed a mon considerably tougher than those we'd seen so far.  Fortunately, the doors did not open.
+
+When we finished off the defenders, Locator revealed the emerald was in the rear-most shed.  Because of course it was.
+
+Since we didn't seem to be under time pressure, Clarence slotted Manipulate Metal and bored a small hole in the shed.  We peaked through and saw the mon, which looked like a horrifyingly mutated horse, and the emerald, sitting on a pedestal.
+
+And April, resting one hand on the Emerald.
+
+Jacqueline engaged her in some sort of convoluted social combat while Clarence snapped off an Analyze.
+
+Then April disappeared, taking the Emerald with her, and triggering the collapse of the pocket dimension.
+
+This also opened all the shed doors.  I got my full weight on this one, so it quickly stopped opening, but the rest of the monsters were free – and between us and the exit.
+
+Clone!I immediately assumed my traditional role as sacrificial rearguard.  I taunted and shot at the mons while everyone else ran for it.  We made it out and kept running.
+
+Soon thereafter the gate exploded, covering the bottom half of the staircase in rubble.  Presumably the walls had been damaged, so the gaps between the rubble would be filling with Bad Goo.
+
+We had destroyed April's spell distillery, but we had not obtained the Emerald.
+
+We had also gained valuable intelligence.  Analyze revealed that April could withstand nine wounds, and her medium could separately withstand four.  Five discrete blows to the medium would destroy it without necessarily killing her.
+
+## April's Chambers
+
+There were two staircases left, so we tried the one that *didn't* smell of Bad Goo.  After some twists and turns, we found ourselves in April's personal chambers.  There was a bed, a writing table, some chests of drawers, and an almighty mess.
+
+We searched the mess for anything interesting and found her diary.  Some segments discussed us:
+
+
+> **[as of first meeting]**
+>
+
+> Sarah and Clarence are still alive! Neat! Wonder what happened to that other guy? Anyway we didn't have much time to chat, I had to get the Emerald installed. Hope they're doing all right, maybe we'll get to catch up sometime.
+> 
+> **[after power plant, before Vidriot]**
+>
+
+> I LOVE THEM. They're traipsing around the countryside destroying everything in their path and it's GREAT. 
+> 
+> In other news, spell development still sucks donkeys.
+> 
+> **[after Vidriot encounter]**
+>
+
+> Think I fucked that up somehow. I can't help it, though, it's just so much FUN to go all Mysterious Supervillain all over everything. Speaking of which, gotta get back to the mad science.
+> 
+> **[after further Vidriot events]**
+>
+
+> They took out the fucking Hangman! I love them!!! 
+> 
+> Left them a threatening note about it because of course I did. I really have to work on this compulsive supervillainy thing.
+> 
+> **[after Penitencia]**
+>
+
+> I can't believe they did that! My decision to let them collect all the Emeralds for me is INCREDIBLY vindicated, and also I love my friends. I just wish I could figure out how to... be... friends with them.
+> 
+> Oh hey, a moral dilemma! Maybe I can help!
+> 
+> **[very soon after previous entry]**
+>
+
+> This just in: Feelings are the WORST. I'm gonna go light something on fire and pretend that never happened.
+> 
+> **[around the time of Lluvia]**
+>
+
+> It's great how my friends are rounding up the emeralds for me without me even having to ask. I mean, I know they're not doing it for me, but it's still great.
+> 
+> 
+> **[before Nosgoth]**
+>
+
+> Stalking update: Seems like their vampire buddy is having a time? Does she not know how to vampire? Whatever, I'm sure they'll figure it out.
+> 
+> **[after Nosgoth]**
+>
+
+> Man, the one time they don't destroy everything in their path and it has to be Kaine... Okay, I guess they made friends back in Vidriot too, they just took out the Hangman and that was enough destruction to make me happy. Still.
+> 
+> **[after Roto-Mar]**
+>
+
+> SERIOUSLY, FUCKING SIG-MAR?!
+> 
+> **[after the Tall Woods]**
+>
+
+> my friends are so good... my friends are so good... my friends blew up the whole-ass Tall Woods and they are so good and I love them...
+> 
+> **[shortly before sending invitation]**
+>
+
+> Okay, time to get real. I don't want them actually taking my Emeralds, I need those for reasons and purposes.
+> 
+> My friends are so good though??? Sarah offered to send me a murderous rampage, it was so sweet! Clarence keeps trying to talk me out of supervillainy! I don't know the rest of them so well but they're cool too. Look at all the destruction and mayhem they did! They're so badass! I don't wanna kill them. But if I DO kill them I want it to be with the BEST most EPIC insane supervillain lair. Luckily I've got one of those lying around. Better spruce the place up a bit before they get here, I'd hate to disappoint them.
+
+Now the castle's design started to make sense.  It wasn't here to stop us.  It was here to kill us in a suitably epic fashion.  A worthy death for a worthy foe.
+
+Apparently, April's soul wasn't completely destroyed.
+
+## The Bathroom
+
+We noticed that the ceiling was flat, unlike the domes that usually topped the castle's towers.  Tremorsense showed that there was a room above this one, with a large tank of water (or possibly goo) in the middle.  Analyze showed that the ceiling was of mundane materials.
+
+Carefully avoiding the tank, I shot a large hole in the ceiling near the edge.  Citrine flew up and lowered a rope.
+
+It was a bathroom.
+
+The thing in the center was a bathtub.
+
+We found no way to enter or exit the room save destruction and teleportation.  Maybe we missed a secret passage?  Or April just *really* values privacy in the bathroom?  It does seem likely that she has teleportation powers even when not touching an Emerald.
+
+We did find the Goo controls for the entire castle.  Why here?  Maybe she's just insane after all.  We turned off all Bad Goo to the final tower.
+
+## The Final Tower
+
+The final tower was empty inside, with a (bannisterless) spiral staircase running up the wall passing many (empty) alcoves.
+
+![The Final Tower – the star indicates our entrypoint](sm_image_final_tower.png)
+
+At the center of the top of the tower, hovering in midair, was the ring gate.
+
+We climbed to the top of the staircase, cut down some support beams and made a bridge across the tower to render the gate accessible.  Citrine offered to carry us in one at a time, but I didn't want to be dependent on her for leaving.
+
+Inside the pocket dimension, we found ourselves in a hallway with doors on the side and stairs leading down at the end.  In the hallway was a humanoid mon with a hundred hp wearing a bright yellow environment suit.  He ran down the stairs, and we followed.
+
+The lower level had a central corridor, loops of corridors and rooms on either side, and a room for of worrying four-colored swirling mist at the end.  As we got down, the red mist in the room coalesced into a ghostlike mon with 50hp.  It came out to attack us.
+
+Analyze revealed that the ghost was indeed quite dangerous.  But, worse, if it died it would simply return to its mist form in that room.
+
+We spread out through the floor, searching for clues.  We found some technological weapons and a personal spelljammer.  When activated, the latter would create a portal straight into the Astral Sea, which would then be blocked by our world's divine quarantine. So in practice it created impassible barriers.
+
+(We also found a bottle of “Vision Pills” whose listed side effects included “Internal Bleeding, benign tumors, inexplicable growths, hallucinations, believing that growths are alive, Malignant tumors, Total Organ Failure, Sneezing, Cysts, Passive Aggressive Tumors, Fever, Hypothermia, Hyperthermia, The ability to communicate with owls and parental disappointment”.  We never did figure out what was up with that.)
+
+By the time we got a barrier in front of the mist room, only one ghost remained there.  And it had the power to move through solid objects.  Not through divine quarantines, but through the ceiling, and then back through upstairs's floor.
+
+So four invincible monsters, and one terrifying being that (we soon learned) could summon them.  Furthermore, leakage of cyan light (soon confirmed by Locator) suggested the Emerald was *inside* the yellow humanoid's head.  Our strategy was obvious.
+
+The enemy's gate is down.
+
+The yellow man went into the right hand loop, so I entered from both sides, surrounding him.  My hyperbreakers were still fully charged, and maintaining the charge slowed me down.  But I wanted to hit hard when I caught him.
+
+Once I had made effective use of knockback and grappling to keep him from running, we were able to pile onto the yellow man.  He turned out to have the ability to split his head wide open to create an enourmous jaw with a terrifying bite attack.  Nevertheless, we persisted, and soon Jacqueline (in Nightmare form) was able to use Gemectomy in a way that made sense.
+
+(I guess it normally rips out a gem-shaped chunk of brain, replacing it with a false-gem.  Now it ripped out a gem.)
+
+Without their master, the ghosts vanished.  And we had one minute to escape the demiplane.  Which was plenty of time.  Getting to the gate took only six seconds.
+
+In fact, I predicted that we'd be in another fight the moment we got clear and insisted on remaining inside for another 36 seconds to folly charge my hyperbreakers.  Other party members used the time to heal, eat soulfruit, or revive dead mons.  Sarah-as-Leviazyzmuth also detected some more technological weapons on this level, so party members who didn't need to do other things went and gathered those.  The floor was a bit of a maze, but tremorsense largely negated that.
+
+As ready as we were going to be, we stepped out.
