@@ -172,7 +172,10 @@ Learning a new skill is usually either a Metis or Science check, and tends to ta
 * Metis 10: Work as a secretary for a large business; craft or repair clothing so that it looks “real”
 * Science 5: Identify edible plants in your native environment; Change oil in a car
 * Science 10: Write ordinary software; Understand organic chemistry
-* Understanding 5: Be fluent in a language besides your native one
+* Understanding 5: Know some basic vocabulary in a foreign language, enough to express simple concepts most of the time
+* Understanding 7: Speak fluently a language which is related to your native language or which is noted for simple grammar and phonemics
+* Understanding 10: Speak an ordinary foreign language fluently
+* Understanding 15: Speak fluently a foreign language that is notoriously difficult to learn, such as Arabic, Cantonese or Xhosa
 
 Making connections is a Social Skills check.  Again, this takes a while, and it is usually better to role-play explicitly outside of backstory.  For backstory purposes, some example DCs:
 
