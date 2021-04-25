@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Random Book Review Picker</title>
+        <style>
+         h3 {
+             margin-top: calc( 50vh - 4em );
+             margin-bottom: .1em;
+         }
+         h2 {
+             margin-top: .1em;
+             margin-bottom: 1em;
+         }
+        </style>
+    </head>
+    <body>
+        <h3>You should read the review of:</h3>
+        <h2><script>
+            const l = [
+                "A History of Generation Ships in Science-Fiction",
+                "A Libertarian Walks Into a Bear: The Utopian Plot to Liberate an American Town (And Some Bears) by Matthew Hongoltz-Hetling",
+                "An Evolutionary Theory of Economic Change by Richard R. Nelson and Sidney G. Winter",
+                "Antifragile: Things That Gain from Disorder by Nassim Nicholas Taleb",
+                "Anna Karenina by Leo Tolstoy",
+                "Apocalypse Never by Michael Shellenberger",
+                "Astounding: John W. Campbell, Isaac Asimov, Robert A. Heinlein, L. Ron Hubbard, and the Golden Age of Science Fiction by Alec Nevala-Lee",
+                "Atlas Shrugged by Ayn Rand (the first review)",
+                "Atlas Shrugged by Ayn Rand (the second review)",
+                "Bad Religion: How We Became a Nation of Heretics by Ross Douthat",
+                "Behave by Robert Sapolsky",
+                "Brave New World by Aldous Huxley, Or, Should I wirehead my cat?",
+                "Capital as Power: A Study of Order and Creorder by Jonathan Nitzan and Shimshon Bichler",
+                "Che Guevara: A Revolutionary Life by Jon Lee Anderson",
+                "Consciousness Explained by Daniel Dennett",
+                "Defenders of the Truth: The Sociobiology Debate by Ullica Segerstråle",
+                "Democracy in America vol. I by Alexis de Tocqueville",
+                "Disunited Nations (2020) vs Dawn of Eurasia (2017)",
+                "Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood by Edward M. Hallowell & John J. Ratey",
+                "Down and Out in Paris and London by George Orwell",
+                "Enlightenment Now by Stephen Pinker",
+                "Exploring Reality: The Intertwining of Science and Religion by John Polkinghorne",
+                "Fantasyland",
+                "Farmers for Forty Centuries by F. H. King",
+                "Feed by M.T. Anderson",
+                "Fitzpatrick’s War by Theodore Judson",
+                "Games People Play: The Psychology of Human Relationships by Eric Berne",
+                "Gödel, Escher, Bach by Douglas R. Hofstadter",
+                "Guns, Germs and Steel: The Fates of Human Societies by Jared Diamond",
+                "How Children Fail by John Holt",
+                "Human Scale Revisited by Kirkpatrick Sale",
+                "Human Smoke by Nicholson Baker",
+                "Last Tsar. Nicholas II, His Reign & His Russia by Sergei Oldenburg",
+                "Loserthink by Scott Adams",
+                "Made to Stick by Chip Heath and Dan Heath",
+                "On Numbers and Games by John H. Conway",
+                "Open Borders: The Science and Ethics of Immigration by Bryan Caplan and Zach Weinersmith",
+                "Power, Sex, Suicide: Mitochondria and the meaning of life by Nick Lane",
+                "Probability Theory: The Logic of Science by E. T. Jaynes",
+                "Reasons and Persons by Derek Parfit",
+                "Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto",
+                "Revolt of the Public by Martin Gurri",
+                "",
+                "Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies by Geoffrey West",
+                "Scientific Freedom: The Elixir of Civilization by Donald W Braben",
+                "Second Nature: A Gardener's Education by Michael Pollan",
+                "Shattered Sword: The Untold Story of the Battle of Midway by Jonathan Parshall and Anthony Tully",
+                "Shut Out by Kevin Erdmann",
+                "SPQR by Mary Beard",
+                "Steve Jobs by Walter Isaacson",
+                "Strangers Drowning: Impossible Idealism, Drastic Choices, and the Urge to Help by Larissa MacFarquhar",
+                "Strong Towns by Charles Marohn",
+                "Stubborn Attachments, by Tyler Cowen",
+                "Ten Days That Shook the World by John Reed",
+                "The Age of Entitlement: America Since the Sixties by Christopher Caldwell",
+                "The Art of Not Being Governed: An Anarchist History of Upland Southeast Asia by James C. Scott (2009)",
+                "The Book Of Why by Judea Pearl",
+                "The Burnout Society by Byung-Chul Han",
+                "The Call of Cthulhu by H. P. Lovecraft",
+                "The Case Against Reality by Don Hoffman",
+                "The Cult of Smart: How Our Broken Education System Perpetuates Social Injustice by Fredrik deBoer",
+                "The Culture of Narcissism by Christopher Lasch",
+                "The Eldraeverse by Alistair Young",
+                "The Great American Gamble - Deterrence Theory and Practice from the Cold War to the Twenty-First Century by Keith B Payne",
+                "The Gulag Archipelago",
+                "The Horse, the Wheel, and Language by David W. Anthony (2007)",
+                "The Human Predicament: A Candid Guide to Life's Biggest Question by David Benatar",
+                "The Joy Luck Club by Amy Tan",
+                "The Millionaire Next Door by Thomas J. Stanley and William D. Danko (and other books)",
+                "The Ministry for the Future by Kim Stanley Robinson",
+                "The No Breakfast Fallacy: Why the Club of Rome was wrong about us running out of resources by Tim Worstall",
+                "The Open Society and its Enemies by Karl Popper",
+                "The Oxford Handbook of 4E Cognition by Albert Newen, Leon de Bruin, and Shaun Gallagher",
+                "The Power of the Powerless by Václav Havel",
+                "The Recovering by Leslie Jamison",
+                "The Red and the Black by Stendhal",
+                "The Righteous Mind by Jonathan Haidt",
+                "The Ruin of Kasch by Roberto Calasso ",
+                "The Signal and the Noise: The Art and Science of Prediction by Nate Silver",
+                "The Silmarillion by J. R. R. Tolkien",
+                "The Smartest Guys in the Room: The Amazing Rise and Scandalous Fall of Enron by Bethany McLean and Peter Elkind",
+                "The Sovereign Individual by William Rees-Mogg and James Dale Davidson",
+                "The Sovereign State and Its Competitors by Hendrik Spruyt  (1994)",
+                "The Suicide of Reason by Lee Harris",
+                "The True Believer: Thoughts on the Nature of Mass Movements by Eric Hoffer",
+                "The True Creator of Everything: How the Human Brain Shaped the Universe as We Know It by Miguel Nicolelis",
+                "The WEIRDest People in the World by Joseph Henrich (first review)",
+                "The WEIRDEST People in the World  by Joseph Henrich (second review)",
+                "The World Imagined by Hendrik Spruyt (2020)",
+                "Things Fall Apart by Chinua Achebe",
+                "Transcendence: How Humans Evolved through Fire, Language, Beauty, and Time by Gaia Vince (2020)",
+                "Trustee report review",
+                "Understand (1991) by Ted Chiang",
+                "Walkaway by Cory Doctorow",
+                "What the Buddha Taught by Walpola Rahula Thero",
+                "Where Is My Flying Car? A Memoir of Future Past by J. Storrs Hall",
+                "'Without Gloves', 'Without Grease', 'The Great Game of Politics' and 'Political Behavior' by  Frank R Kent",
+                "Working With Contracts: What Law School Doesn't Teach You by Charles M. Fox"
+            ];
+         const i = Math.floor(Math.random()*l.length);
+         document.write(l[i]);
+        </script>
+        </h2>
+        Don't like this random pick?  Hit reload.
+    </body>
+</html>
