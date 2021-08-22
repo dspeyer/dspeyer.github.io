@@ -37,3 +37,32 @@ body {
     text-decoration: none;
     color: #007;
 }
+
+th {    
+    text-align: left;
+    padding-bottom: 1em;
+}
+th em {
+    transform: rotate(-45deg);
+    white-space: nowrap;
+    transform-origin: left;
+    position: absolute;
+    font-style: normal;
+}
+
+td {
+    border: 1px dotted grey;
+    vertical-align: top;
+}
+td:first-child {
+    border-left: none;
+}
+td:last-child {
+    border-right: none;
+}
+
+table {
+    margin-top: 5em;
+    border-collapse: collapse;
+}
+    

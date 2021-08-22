@@ -15,12 +15,16 @@
 <li><a href="#spoiler-warning">Spoiler Warning</a></li>
 </ul></li>
 <li><a href="#basic-mechanics">Basic Mechanics</a><ul>
+<li><a href="#combat">Combat</a></li>
+<li><a href="#character-generation">Character Generation</a><ul>
+<li><a href="#extra-special-abilities">Extra Special Abilities</a></li>
+</ul></li>
 <li><a href="#leveling">Leveling</a></li>
 </ul></li>
 <li><a href="#abilities">Abilities</a><ul>
 <li><a href="#destiny">Destiny</a></li>
 <li><a href="#metaphors">Metaphors</a></li>
-<li><a href="#understanding">Understanding</a></li>
+<li><a href="#exegesis">Exegesis</a></li>
 <li><a href="#social-skills">Social Skills</a></li>
 <li><a href="#violence">Violence</a></li>
 <li><a href="#naming">Naming</a></li>
@@ -31,15 +35,11 @@
 </ul></li>
 <li><a href="#resources">Resources</a></li>
 <li><a href="#names">Names</a><ul>
-<li><a href="#list-of-names-and-syllable-count">List of Names and Syllable Count</a></li>
-<li><a href="#speaking-names">Speaking Names</a></li>
-<li><a href="#researching-names">Researching Names</a></li>
-</ul></li>
-<li><a href="#character-generation">Character Generation</a><ul>
-<li><a href="#extra-special-abilities">Extra Special Abilities</a></li>
+<li><a href="#list-of-names">List of Names</a></li>
 </ul></li>
 </ul>
 </div>
+<!--  pandoc -s --toc -c unsongrpg.css -T "UNSONG RPG" < unsongrpg.md > unsongrpg.html -->
 <h1 id="philosophy">Philosophy</h1>
 <p>This game assumes you have read <a href="https://unsongbook.com">Unsong</a> and remember it well. If you have not, you will likely be very confused.</p>
 <p>A successful game <em>should</em> include lots of specifically worked out placebomancy and yetzirah manipulation. That's what makes the setting vibrant, and will make for great stories afterwards. Therefore these things never get shoved under the abstraction threshold. But it should be possible to play a character who is better at these things than you are. Hence the entire-table-helps mechanics.</p>
@@ -48,38 +48,58 @@
 <h2 id="spoiler-warning">Spoiler Warning</h2>
 <p>These mechanics reveal things from Unsong which would otherwise be surprises, including one major piece of the ending.</p>
 <h1 id="basic-mechanics">Basic Mechanics</h1>
-<p>To see if you succeed at something, roll a number of d10s equal to your relevant ability and add the results. If any die rolls a 10 (“explodes”) reroll it and keep both values. You might add dice to the roll if you have a specific skill or helpful circumstance. If the total value on the dice meets or exceeds the DC, you succeed.</p>
-<p>(If it is necessary to roll a noninteger number of dice, use d4s. They do not explode.)</p>
+<p>To see if you succeed at something, roll a number of d10s equal to your relevant ability and add the results. If any die rolls a 10 (“explodes”) reroll it and keep both values. If you have a specific skill that is directly relevant, add two dice. Somewhat relevant, one die. If this leaves you with no dice to roll, roll a d4 (it does not explode). Add a (non-exploding) d4 if circumstances are conducive to your success.</p>
+<p>If the total value on the dice meets or exceeds the DC, you succeed.</p>
 <p>(Do not use any dice besides d10s and d4s. Unless you have physical d22s or d72s, in which case you should find a way to incorporate them.</p>
+<p>If an action targets a character (and the target is aware) said target may assist or resist as a reaction. They roll a relevant ability and add or subtract half their result from the actor's.</p>
 <p>In general, DCs should look like:</p>
 <ul>
 <li>2: Trivial; why are you even rolling?</li>
-<li>5: Ordinary people can do this, if given a few tries</li>
+<li>5: A sign of basic competence</li>
 <li>10: If this is your thing, you should be able to do this</li>
 <li>15: Requires real effort from specialists</li>
 <li>20: Seriously impressive</li>
 <li>30: Near the best of real-world achievement</li>
 <li>40: Superhuman</li>
 </ul>
+<h2 id="combat">Combat</h2>
 <p>If it is necessary to keep track of exactly when characters do things, go into rounds. Use 10 rounds to the minute. During a round, you can move up to 20 cubits and do something.</p>
+<p>To determine order within a round, roll initiative using Violence. Ties are broken in favor of the player sitting closer tot he DM's right (NPCs last). In an ambush or similar scenario, there is one surprise round in which only the ambushers act, followed by initiative as normal.</p>
 <p>There are no hit points. Injuries are described in-universe. Being shot with a gun is usually fatal.</p>
 <p>If your character is about to die or otherwise suffer unacceptable harm, you may permanently burn a Destiny die to prevent it by implausible coincidence. If you have no Destiny dice, you cannot do this.</p>
+<h2 id="character-generation">Character Generation</h2>
+<p>You start with 10 points to distribute among the abilities. You may not put more than 4 dice in any one ability. (A campaign that starts with experienced characters might start with more dice. The limit on any ability remains 40%, rounded down.)</p>
+<p>While not strictly mandatory, it is advisable to put at least one point into Destiny, Social Skills, Metis and Wealth. A character with no Destiny ultimately doesn't matter, and cannot use the retroactive resource rules. One with no Social Skills has no relationships, and requires an explanation of how they wound up in an adventuring party. A character with no Metis cannot reliably prepare meals or outfits for themselves, and requires an active full-time caretaker. And a character with no wealth has only a 3/4 chance to own pants.</p>
+<p>You may claim unlimited resources if you could get them by rolling all 3s on your relevant acquisition check. Please keep this within reason for a character concept. Granted, “crazy hoarder” <em>is</em> a character concept. Also, remember that you can fill these in retroactively (see the Resources section).</p>
+<p>You also start with four “expensive” resources, which you could get by rolling all 5s on your check. You may leave some of these blank to fill in retroactively if you wish. Mark these by checking the “SX” (Starting Expensive) box on your character sheet.</p>
+<p>(There are blanks on your character sheet to mark these DCs. They are useful if you are likely to gain abilities during the game, but may not have immediate downtime.)</p>
+<p>Note that languages spoken beyond your native ones count as resources. You may have multiple native languages if it fits your backstory. Do not abuse this.</p>
+<p>You may be an ordained priest, which enables you to create Holy Water and grants social bonuses in relevant situations. This counts as a connection and as an expensive resource regardless of your abilities.</p>
+<p>A <a href="unsong_charsheet.html">blank character sheet</a> is available.</p>
+<h3 id="extra-special-abilities">Extra Special Abilities</h3>
+<p>There are people in this setting with extra abilities that don't fit neatly. Starting with these means starting with fewer ability dice, and should effect your roleplay substantially.</p>
+<p>For example, you can be a Fallen Angel. This has advantages: you are fluent in all languages except Aramaic; can fly when drunk on holy water; can conjure a flaming sword at will; and if killed by ordinary violence, you recorporate after a brief time. It also has disadvantages: you cannot learn Aramaic, comprehend deception, reliably remember limitations, or generally cope with the harshness of the world. You start with one fewer ability die.</p>
+<p>You can also have a complicated relationship with space. Using this to your advantage requires a dc 10 Metaphors check. You start with two fewer ability dice.</p>
+<p>Other abilities are possible, at similar ability-die costs.</p>
 <h2 id="leveling">Leveling</h2>
-<p>In a multi-session campaign, characters gain dice of abilities after successful sessions. If multiple dice are gained in a session, they must be placed in separate abilities. This does not grant resources, or change the DCs at which retroactive resources can be obtained. (See <a href="#resources">Resources</a>)</p>
+<p>In a multi-session campaign, characters gain dice of abilities after successful sessions: one for a basic session, two for a session with significant challenge or accomplishment, and four for resolving a major plot point. If multiple dice are gained in a session, they must be placed in separate abilities. Also, no ability can hold more than 40% of your total dice.</p>
+<p>This does not grant resources, or change the DCs at which retroactive resources can be obtained. (See <a href="#resources">Resources</a>)</p>
 <p>If there is in-universe downtime, characters may acquire resources. This may either be done explicitly, with estimates of how long the acquisitions take, or abstractly, with one Starting Expensive Resource slot per week. Having downtime, even just one week of it, <em>does</em> update the DCs at which retroactive resources can be obtained.</p>
 <h1 id="abilities">Abilities</h1>
 <p>The abilities (and some example DCs, to be adjusted on the fly by the DM) are:</p>
 <h2 id="destiny">Destiny</h2>
 <p>How relevant your success is to Adam Kadmon's ultimate goodness. A high destiny check means the setting's contrived co-incidences go your way.</p>
+<p>Destiny powers the retroactive resource rules (see: <a href="#resources">Resources</a>) and can be burned to avoid death (see: <a href="#combat">Combat</a>). It also controls circumstances that intuitively qualify as &quot;luck&quot;. Furthermore, a player may call for a convenient coincidence a number of times per session equal to their destiny dice, and then roll to see just how convenient the coincidence is.</p>
 <p>Example DCs:</p>
 <ul>
-<li>10: Something which by actual luck had about a 10% chance of happening</li>
-<li>20: Something which by actual luck had about a 1% chance of happening</li>
+<li>5: Something which by actual luck had about a 50% chance of happening</li>
+<li>10: Something which by actual luck had about a 25% chance of happening</li>
 </ul>
 <h2 id="metaphors">Metaphors</h2>
 <p>Recognizing how things are metaphors for eachother. Interacting with Yitzerah.</p>
 <p>Example DCs:</p>
 <ul>
+<li>10: Identify what aspects of the current situation apply to the Vanishing Name</li>
 <li>20: Exchange words telepathically</li>
 <li>25: Deeper telepathy</li>
 <li>25: Obtain crypric prophessies</li>
@@ -89,15 +109,17 @@
 <li>40: See clearly into the future during a solar eclipse</li>
 <li>50: Letter manipulation in the material world</li>
 </ul>
-<h2 id="understanding">Understanding</h2>
+<h2 id="exegesis">Exegesis</h2>
 <p>Knowledge and comprehension of the world as it functions via sephirot. Knowledge of the sephirot themselves, of sacred texts, and of languages. Finding relevant references in Tanakh or Talmud. Finding linguistic correspondences.</p>
 <p>Does not include how the world functions via math: that's Science. Also does not include practical skills: those are Metis.</p>
 <p>Example DCs:</p>
 <ul>
-<li>10: Get the answer to a single question, moderately obscure</li>
-<li>15: Get the answer to a single question, highly obscure</li>
-<li>20: You (the player) can use the internet and treat it as your characters knowledge</li>
-<li>30: The entire table (DM included) helps you brainstorm, and then your character thinks of it in an instant.</li>
+<li>5: Identify how interactions among sephirot correspond to lived experiences</li>
+<li>10: Find the most relevant bit of Torah to a particular situation</li>
+<li>15: Identify how a randomly chosen text applies to a given situation</li>
+<li>15: Determine whether a linguistic correspondence is the work of mundane language evolution or reveals a hidden truth of Adam Kadmon</li>
+<li>20: Trace a consonant triple through a dozen unrelated languages</li>
+<li>30: Find all references to a concept in a large body of text</li>
 </ul>
 <h2 id="social-skills">Social Skills</h2>
 <p>Self explanatory.</p>
@@ -124,10 +146,15 @@
 <li>10-15: Track down a Name which is known to the Unitarians or other underground group</li>
 <li>20: Deduce how a Name will operate with regard to edge-cases</li>
 <li>20: Speak a Name at double speed</li>
+<li>20: Memorize a Name by staring at it on a piece of paper for six seconds</li>
 <li>25: Deduce a name from most of it, using principles of names</li>
 <li>25: Crack early klipot</li>
+<li>25: Memorize a Name by hearing it once.</li>
+<li>25: Improvise a simple but novel klipah on the spot</li>
 <li>30: Improve state-of-the-art Name-finding algorithms efficiency by 1%</li>
+<li>30: Spake a Name at triple speed</li>
 <li>35: Crack state-of-the-art klipot</li>
+<li>35: Speak a Name at double speed in an improvised klipah</li>
 </ul>
 <h2 id="placebomancy">Placebomancy</h2>
 <p>Perform placebomancy, or deduce how effective it will be without performing it.</p>
@@ -155,7 +182,7 @@
 <li>10: Hold down a job</li>
 </ul>
 <h2 id="wealth">Wealth</h2>
-<p>Buy stuff.</p>
+<p>Your ability to buy things unexpectedly. This is approximately the amount of money you have, but after earmarking some of it for rent, adding easily accessible credit, etc.</p>
 <p>Example DCs:</p>
 <ul>
 <li>2: Anything that IRL would be &lt;$100</li>
@@ -186,83 +213,355 @@
 <p>Resources can be claimed retroactively, up to the limits of chargen. A resource that is clearly in line with a character concept is automatic. One which isn't requires a Destiny check, with bonus dice for being somewhat in line. Once a resource is claimed retroactively, you have it permanently (unless you lose it in-universe).</p>
 <p>When claiming retroactive resources, use your ability scores at time of last downtime, not your current ones (if they differ).</p>
 <h1 id="names">Names</h1>
-<h2 id="list-of-names-and-syllable-count">List of Names and Syllable Count</h2>
-<p>(Taken straight from Scott's post on the subject)</p>
-<p>The Abjuring Name (25): Can cancel some effects of Names of less than 25 syllables.</p>
-<p>The Amnestic Name (30): Target forgets one second of their life</p>
-<p>The Ascending Name (19): Speaker can float up or down in the air, ignoring gravity</p>
-<p>The Avalanche Name (11): A convulsive sort of explosion that can demolish weak structures</p>
-<p>The Bulletproof Name (33): Stops one projectile.</p>
-<p>The Cavernous Name (27): Causes a large cave to form</p>
-<p>The Charismatic Name (15): The person who hears you speak it likes you more</p>
-<p>The Chromatic Name (10): Changes the color of an object</p>
-<p>The Coagulant Name (18): Stops bleeding</p>
-<p>The Confounding Name (24): Confuses whatever memory or thought is on somebody's mind at the moment.</p>
-<p>The Enlivening Name (23): Awakens unconscious or comatose people.</p>
-<p>The Extinguishing Name (18): Puts out fire</p>
-<p>The Fertile Name (17): Doubles the yield of crops.</p>
-<p>The Fluvial Name (14): A spring of fresh water bursts forth from the ground, lasting from a week to a few months.</p>
-<p>The Fulminant Name (21): Produces a small bolt of lightning, enough to stun a person</p>
-<p>The Heartwarming Name (14): Gives one an inner warmth that lets one resist cold climates</p>
-<p>The Kindling Name (14): Starts a fire</p>
-<p>The Kinetic Name (15): Exerts a strong force (like being pushed really hard) against an object</p>
-<p>The Liberating Name (15): Unties knots, breaks chains, picks locks, bends bars</p>
-<p>The Luminous Name (9): Produces a bright white light</p>
-<p>The Magnifying Name (10): Allows you to see further and more clearly, like binoculars</p>
-<p>The Mortal Name (3): Kills the speaker</p>
-<p>The Motive Name (28): Makes an object move; can be used to power cars</p>
-<p>The Nuptial Name (28): Initiates the Sacred Kabbalistic Marriage</p>
-<p>The Poetic Name (16): A supernatural ability to remember poetry and music</p>
-<p>The Precious Name (25): A form of dowsing; increases your ability to find minerals you are looking for</p>
-<p>The Protective Name (14): Makes the speaker immune to radioactivity</p>
-<p>The Purifying Name (16): Sterilizes an area of bad bacteria; a powerful antibiotic</p>
-<p>The Quickening Name (25): Speeds the pace of gestation of an embryo</p>
-<p>The Reconditioning Name (19): Fixes certain types of broken machinery</p>
-<p>The Respiratory Name (20): Allows the speaker to breathe in an otherwise unbreathable environment for some time</p>
-<p>The Revelatory Name: (25): Reveals hidden dangers in certain situations, like a minefield</p>
-<p>The Sanctifying Name (13): Makes the air in a building cool, pleasant, and healthy to breathe; increases well-being</p>
-<p>The Sandshaper Name (32): Allows one to create monsters and structures from sand</p>
-<p>The Sentinel Name (27): Gives superhuman hearing of certain Names spoken nearby</p>
-<p>The Shield Name (20): Some protection against swords and other such weapons</p>
-<p>The Sobering Name (9): Removes drunkenness and hangovers</p>
-<p>The Static Name (14): Stops growth, especially cancer</p>
-<p>The Steelforging Name (19): Transforms ore to iron, iron to steel, and makes steel stronger</p>
-<p>The Taming Name (24): Causes animals to be friendly to you</p>
-<p>The Tempestuous Name (20): Produces a whirlwind</p>
-<p>The Tenebrous Name (20): Everywhere within the speaker's field of vision goes dark</p>
-<p>The Thunderclap Name (8): Very loud noise</p>
-<p>The Thunderous Name (10): Makes your voice louder</p>
-<p>The Vanishing Name (16): Teleports the speaker to a semirandom location</p>
-<p>The Unyielding Name (22): A barrier that demons cannot easily pass</p>
-<p>The Volatile Name (12): &quot;Disturbs&quot; things by making them shake and become slightly warmer; pushes them to a lower-entropy state</p>
-<p>The Wakening Name (10): Gives the speaker some energy</p>
-<p>The Wrathful Name (36): Nuke-level explosion. Destroys a city.</p>
-<p>The Xenoglossal name (25): Allows one to speak certain foreign languages</p>
-<h2 id="speaking-names">Speaking Names</h2>
 <p>You can speak any name which you know. Ordinary people can speak 10 syllables a round (speaking slowly and carefully) but with a sufficient Naming check, you can speak at twice that speed. Speaking in a klipah requires and additional Naming check (dc 15 for a simple one, higher for more complicated) unless you've specifically practiced that particular klipah.</p>
 <p>If the name allows choices (e.g. the Kinetic name), controlling it with precision also requires a Naming check.</p>
 <p>Writing a name does not activate it, but does trigger any Sentinal Names in the vicinity. Triggering a written name is easy, and destroys the name. (Destroying the name does not automatically trigger it – if you want a chain reaction of Wrathful names, you need to engineer that deliberately.)</p>
 <p>Only a human can write or speak a name.</p>
-<h2 id="researching-names">Researching Names</h2>
-<p>Some names can be discovered by diligent effort in libraries and Unitarian forums.</p>
-<p>A DC 2 Naming check can find the Mortal Name.</p>
-<p>A DC 5 Naming check can find any of the Ascending, Chromatic, Coagulant, Extinguishing, Luminous, or Sobering Names.</p>
-<p>A DC 10 Naming check can find any of the Avalanche, Bulletproof, Fulminent, Kindling, Kinetic, Respiratory, Steelforging, Taming, Tenebrous, Thunderclap or Wakening Names.</p>
-<p>A DC 15 Naming check can find any of the Abjuring, Cavernous, Enlivening, Liberating, Magnifying, Reconditioning, Sentinel, Taming, Vanishing or Volatile Names.</p>
-<p>More obscure names generally require quests.</p>
 <p>The Coagulant, Extinguishing, Luminous, and Thunderclap Names are available in scrollwheel form as a DC 5 Wealth check.</p>
-<h1 id="character-generation">Character Generation</h1>
-<p>You have one free point in each ability. You have 4 additional points to distribute among abilities as you wish.</p>
-<p>You may claim unlimited resources if you could get them by rolling all 3s on your relevant acquisition check. Please keep this within reason for a character concept. Granted, “crazy hoarder” <em>is</em> a character concept. Also, remember that you can fill these in retroactively (see the Resources section).</p>
-<p>You also start with four “expensive” resources, which you could get by rolling all 5s on your check. You may leave some of these blank to fill in retroactively if you wish. Mark these by checking the “SX” (Starting Expensive) box on your character sheet.</p>
-<p>(There are blanks on your character sheet to mark these DCs. They are useful if you are likely to gain abilities during the game, but may not have immediate downtime.)</p>
-<p>Note that languages spoken beyond your native ones count as resources. You may have multiple native languages if it fits your backstory. Do not abuse this.</p>
-<p>You may be an ordained priest, which enables you to create Holy Water and grants social bonuses in relevant situations. This counts as a connection and as an expensive resource regardless of your abilities.</p>
-<p>A <a href="unsong_charsheet.html">blank character sheet</a> is available.</p>
-<h2 id="extra-special-abilities">Extra Special Abilities</h2>
-<p>There are people in this setting with extra abilities that don't fit neatly. Starting with these means starting with fewer ability dice, and should effect your roleplay substantially.</p>
-<p>For example, you can be a Fallen Angel. This has advantages: you are fluent in all languages except Aramaic; can fly when drunk on holy water; can conjure a flaming sword at will; and if killed by ordinary violence, you recorporate after a brief time. It also has disadvantages: you cannot learn Aramaic, comprehend deception, reliably remember limitations, or generally cope with the harshness of the world. You start with one fewer ability die.</p>
-<p>You can also have a complicated relationship with space. Using this to your advantage requires a dc 10 Metaphors check. You start with two fewer ability dice.</p>
-<p>Other abilities are possible, at similar ability-die costs.</p>
+<h2 id="list-of-names">List of Names</h2>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="5%" />
+<col width="5%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><em>Name</em></th>
+<th><em>Time to Speak</em></th>
+<th><em>DC to Research</em></th>
+<th><em>Effects</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mortal</td>
+<td>0</td>
+<td>2</td>
+<td>Kills speaker</td>
+</tr>
+<tr class="even">
+<td>Ascending</td>
+<td>2</td>
+<td>5</td>
+<td>Speaker can float up or down in air, ignoring gravity</td>
+</tr>
+<tr class="odd">
+<td>Chromatic</td>
+<td>1</td>
+<td>5</td>
+<td>Changes color of an object</td>
+</tr>
+<tr class="even">
+<td>Coagulant</td>
+<td>2</td>
+<td>5</td>
+<td>Stops bleeding</td>
+</tr>
+<tr class="odd">
+<td>Extinguishing</td>
+<td>2</td>
+<td>5</td>
+<td>Puts out fire</td>
+</tr>
+<tr class="even">
+<td>Luminous</td>
+<td>1</td>
+<td>5</td>
+<td>Produces a bright white light</td>
+</tr>
+<tr class="odd">
+<td>Sobering</td>
+<td>1</td>
+<td>5</td>
+<td>Removes drunkenness and hangovers</td>
+</tr>
+<tr class="even">
+<td>Avalanche</td>
+<td>1</td>
+<td>10</td>
+<td>A convulsive sort of explosion that can demolish weak structures</td>
+</tr>
+<tr class="odd">
+<td>Bulletproof</td>
+<td>3</td>
+<td>10</td>
+<td>Stops one projectile.</td>
+</tr>
+<tr class="even">
+<td>Fulminant</td>
+<td>2</td>
+<td>10</td>
+<td>Produces a small bolt of lightning, enough to stun a person</td>
+</tr>
+<tr class="odd">
+<td>Kindling</td>
+<td>1</td>
+<td>10</td>
+<td>Starts a fire</td>
+</tr>
+<tr class="even">
+<td>Kinetic</td>
+<td>1</td>
+<td>10</td>
+<td>Exerts a strong force (like being pushed really hard) against an object</td>
+</tr>
+<tr class="odd">
+<td>Respiratory</td>
+<td>2</td>
+<td>10</td>
+<td>Allows speaker to breain an otherwise unbreathable environment for some time</td>
+</tr>
+<tr class="even">
+<td>Steelforging</td>
+<td>2</td>
+<td>10</td>
+<td>Transforms ore to iron, iron to steel, and makes steel stronger</td>
+</tr>
+<tr class="odd">
+<td>Tenebrous</td>
+<td>2</td>
+<td>10</td>
+<td>Everywhere within speaker's field of vision goes dark</td>
+</tr>
+<tr class="even">
+<td>Thunderclap</td>
+<td>1</td>
+<td>10</td>
+<td>Very loud noise</td>
+</tr>
+<tr class="odd">
+<td>Wakening</td>
+<td>1</td>
+<td>10</td>
+<td>Gives speaker some energy, comparable to chugging a cup of coffee</td>
+</tr>
+<tr class="even">
+<td>Abjuring</td>
+<td>3</td>
+<td>15</td>
+<td>Cancels the effects of Names that can be spoken normally in less than 3 rounds</td>
+</tr>
+<tr class="odd">
+<td>Cavernous</td>
+<td>3</td>
+<td>15</td>
+<td>Causes a large cave to form</td>
+</tr>
+<tr class="even">
+<td>Enlivening</td>
+<td>2</td>
+<td>15</td>
+<td>Awakens unconscious or comatose people.</td>
+</tr>
+<tr class="odd">
+<td>Liberating</td>
+<td>2</td>
+<td>15</td>
+<td>Unties knots, breaks chains, picks locks, bends bars</td>
+</tr>
+<tr class="even">
+<td>Magnifying</td>
+<td>1</td>
+<td>15</td>
+<td>Allows you to see further and more clearly, like binoculars</td>
+</tr>
+<tr class="odd">
+<td>Reconditioning</td>
+<td>2</td>
+<td>15</td>
+<td>Fixes certain types of broken machinery</td>
+</tr>
+<tr class="even">
+<td>Sentinel</td>
+<td>3</td>
+<td>15</td>
+<td>Gives superhuman hearing of certains spoken nearby</td>
+</tr>
+<tr class="odd">
+<td>Taming</td>
+<td>2</td>
+<td>15</td>
+<td>Causes animals to be friendly to you</td>
+</tr>
+<tr class="even">
+<td>Vanishing</td>
+<td>2</td>
+<td>15</td>
+<td>Teleports speaker to a location which is a metaphor for the same thing as their current one</td>
+</tr>
+<tr class="odd">
+<td>Volatile</td>
+<td>1</td>
+<td>15</td>
+<td>Disturbs things by making them shake and become slightly warmer; pushes them to a lower-entropy state</td>
+</tr>
+<tr class="even">
+<td>Amnestic</td>
+<td>3</td>
+<td></td>
+<td>Target forgets one second of their life</td>
+</tr>
+<tr class="odd">
+<td>Charismatic</td>
+<td>1</td>
+<td></td>
+<td>person who hears you speak it likes you more</td>
+</tr>
+<tr class="even">
+<td>Confounding</td>
+<td>2</td>
+<td></td>
+<td>Confuses whatever memory or thought is on somebody's mind at moment.</td>
+</tr>
+<tr class="odd">
+<td>Explicit</td>
+<td>7</td>
+<td></td>
+<td>Completely rewrites reality</td>
+</tr>
+<tr class="even">
+<td>Fertile</td>
+<td>2</td>
+<td></td>
+<td>Doubles yield of crops.</td>
+</tr>
+<tr class="odd">
+<td>Fluvial</td>
+<td>1</td>
+<td></td>
+<td>A spring of fresh water bursts forth from ground, lasting from a week to a few months.</td>
+</tr>
+<tr class="even">
+<td>Heartwarming</td>
+<td>1</td>
+<td></td>
+<td>Gives one an inner warmth that lets one resist cold climates</td>
+</tr>
+<tr class="odd">
+<td>Moon-Finding</td>
+<td>1</td>
+<td></td>
+<td>Shows the direction to the moon</td>
+</tr>
+<tr class="even">
+<td>Motive</td>
+<td>3</td>
+<td></td>
+<td>Makes an object move; can be used to power cars</td>
+</tr>
+<tr class="odd">
+<td>Nuptial</td>
+<td>3</td>
+<td></td>
+<td>Initiates Sacred Kabbalistic Marriage</td>
+</tr>
+<tr class="even">
+<td>Optometry</td>
+<td>2</td>
+<td></td>
+<td>Corrects the speaker's vision</td>
+</tr>
+<tr class="odd">
+<td>Poetic</td>
+<td>2</td>
+<td></td>
+<td>A supernatural ability to remember poetry and music</td>
+</tr>
+<tr class="even">
+<td>Precious</td>
+<td>3</td>
+<td></td>
+<td>A form of dowsing; increases your ability to find minerals you are looking for</td>
+</tr>
+<tr class="odd">
+<td>Protective</td>
+<td>1</td>
+<td></td>
+<td>Makes speaker immune to radioactivity</td>
+</tr>
+<tr class="even">
+<td>Purifying</td>
+<td>2</td>
+<td></td>
+<td>Sterilizes an area of bad bacteria; a powerful antibiotic</td>
+</tr>
+<tr class="odd">
+<td>Quickening</td>
+<td>3</td>
+<td></td>
+<td>Speeds pace of gestation of an embryo</td>
+</tr>
+<tr class="even">
+<td>Revelatory</td>
+<td>3</td>
+<td></td>
+<td>Reveals hidden dangers in certain situations, like a minefield</td>
+</tr>
+<tr class="odd">
+<td>Sanctifying</td>
+<td>1</td>
+<td></td>
+<td>Makes air in a building cool, pleasant, and healthy to breathe; increases well-being</td>
+</tr>
+<tr class="even">
+<td>Sandshaper</td>
+<td>3</td>
+<td></td>
+<td>Allows one to create monsters and structures from sand</td>
+</tr>
+<tr class="odd">
+<td>Shield</td>
+<td>2</td>
+<td></td>
+<td>Some protection against swords and other such weapons</td>
+</tr>
+<tr class="even">
+<td>Static</td>
+<td>1</td>
+<td></td>
+<td>Stops growth, especially cancer</td>
+</tr>
+<tr class="odd">
+<td>Tempestuous</td>
+<td>2</td>
+<td></td>
+<td>Produces a whirlwind</td>
+</tr>
+<tr class="even">
+<td>Thunderous</td>
+<td>1</td>
+<td></td>
+<td>Makes your voice louder</td>
+</tr>
+<tr class="odd">
+<td>Unyielding</td>
+<td>2</td>
+<td></td>
+<td>A barrier that demons cannot easily pass</td>
+</tr>
+<tr class="even">
+<td>Vital</td>
+<td>5</td>
+<td></td>
+<td>Grants human souls</td>
+</tr>
+<tr class="odd">
+<td>Wrathful</td>
+<td>4</td>
+<td></td>
+<td>Nuke-level explosion. Destroys a city.</td>
+</tr>
+<tr class="even">
+<td>Xenoglossal</td>
+<td>3</td>
+<td></td>
+<td>Allows one to speak and understand across a language barrier for any human language except Aramaic</td>
+</tr>
+</tbody>
+</table>
+<p>(Taken straight from Scott's post on the subject)</p>
+<p>&quot;Time to Speak&quot; is in rounds (1 round = 6 seconds). Names without listed research DCs require quests to obtain.</p>
 </body>
 </html>

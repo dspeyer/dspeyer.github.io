@@ -1,4 +1,7 @@
-﻿# Philosophy
+﻿<!--  pandoc -s --toc -c unsongrpg.css -T "UNSONG RPG" < unsongrpg.md > unsongrpg.html -->
+
+
+# Philosophy
 
 This game assumes you have read [Unsong](https://unsongbook.com) and remember it well.  If you have not, you will likely be very confused.
 
@@ -236,112 +239,6 @@ When claiming retroactive resources, use your ability scores at time of last dow
 
 # Names
 
-## List of Names and Syllable Count
-
-(Taken straight from Scott's post on the subject)
-
-The Abjuring Name (25): Can cancel some effects of Names of less than 25 syllables.
-
-The Amnestic Name (30): Target forgets one second of their life
-
-The Ascending Name (19): Speaker can float up or down in the air, ignoring gravity
-
-The Avalanche Name (11): A convulsive sort of explosion that can demolish weak structures
-
-The Bulletproof Name (33): Stops one projectile.
-
-The Cavernous Name (27): Causes a large cave to form
-
-The Charismatic Name (15): The person who hears you speak it likes you more
-
-The Chromatic Name (10): Changes the color of an object
-
-The Coagulant Name (18): Stops bleeding
-
-The Confounding Name (24): Confuses whatever memory or thought is on somebody's mind at the moment.
-
-The Enlivening Name (23): Awakens unconscious or comatose people.
-
-The Extinguishing Name (18): Puts out fire
-
-The Fertile Name (17): Doubles the yield of crops.
-
-The Fluvial Name (14): A spring of fresh water bursts forth from the ground, lasting from a week to a few months.
-
-The Fulminant Name (21): Produces a small bolt of lightning, enough to stun a person
-
-The Heartwarming Name (14): Gives one an inner warmth that lets one resist cold climates
-
-The Kindling Name (14): Starts a fire
-
-The Kinetic Name (15): Exerts a strong force (like being pushed really hard) against an object
-
-The Liberating Name (15): Unties knots, breaks chains, picks locks, bends bars
-
-The Luminous Name (9): Produces a bright white light
-
-The Magnifying Name (10): Allows you to see further and more clearly, like binoculars
-
-The Mortal Name (3): Kills the speaker
-
-The Motive Name (28): Makes an object move; can be used to power cars
-
-The Nuptial Name (28): Initiates the Sacred Kabbalistic Marriage
-
-The Poetic Name (16): A supernatural ability to remember poetry and music
-
-The Precious Name (25): A form of dowsing; increases your ability to find minerals you are looking for
-
-The Protective Name (14): Makes the speaker immune to radioactivity
-
-The Purifying Name (16): Sterilizes an area of bad bacteria; a powerful antibiotic
-
-The Quickening Name (25): Speeds the pace of gestation of an embryo
-
-The Reconditioning Name (19): Fixes certain types of broken machinery
-
-The Respiratory Name (20): Allows the speaker to breathe in an otherwise unbreathable environment for some time
-
-The Revelatory Name: (25): Reveals hidden dangers in certain situations, like a minefield
-
-The Sanctifying Name (13): Makes the air in a building cool, pleasant, and healthy to breathe; increases well-being
-
-The Sandshaper Name (32): Allows one to create monsters and structures from sand
-
-The Sentinel Name (27): Gives superhuman hearing of certain Names spoken nearby
-
-The Shield Name (20): Some protection against swords and other such weapons
-
-The Sobering Name (9): Removes drunkenness and hangovers
-
-The Static Name (14): Stops growth, especially cancer
-
-The Steelforging Name (19): Transforms ore to iron, iron to steel, and makes steel stronger
-
-The Taming Name (24): Causes animals to be friendly to you
-
-The Tempestuous Name (20): Produces a whirlwind
-
-The Tenebrous Name (20): Everywhere within the speaker's field of vision goes dark
-
-The Thunderclap Name (8): Very loud noise
-
-The Thunderous Name (10): Makes your voice louder
-
-The Vanishing Name (16): Teleports the speaker to a semirandom location
-
-The Unyielding Name (22): A barrier that demons cannot easily pass
-
-The Volatile Name (12): "Disturbs" things by making them shake and become slightly warmer; pushes them to a lower-entropy state
-
-The Wakening Name (10): Gives the speaker some energy
-
-The Wrathful Name (36): Nuke-level explosion. Destroys a city.
-
-The Xenoglossal name (25): Allows one to speak certain foreign languages
-
-## Speaking Names
-
 You can speak any name which you know.  Ordinary people can speak 10 syllables a round (speaking slowly and carefully) but with a sufficient Naming check, you can speak at twice that speed.  Speaking in a klipah requires and additional Naming check (dc 15 for a simple one, higher for more complicated) unless you've specifically practiced that particular klipah.
 
 If the name allows choices (e.g. the Kinetic name), controlling it with precision also requires a Naming check.
@@ -350,18 +247,68 @@ Writing a name does not activate it, but does trigger any Sentinal Names in the 
 
 Only a human can write or speak a name.
 
-## Researching Names
-
-Some names can be discovered by diligent effort in libraries and Unitarian forums.
-
-A DC 2 Naming check can find the Mortal Name.
-
-A DC 5 Naming check can find any of the Ascending, Chromatic, Coagulant, Extinguishing, Luminous, or Sobering Names.
-
-A DC 10 Naming check can find any of the Avalanche, Bulletproof, Fulminent, Kindling, Kinetic, Respiratory, Steelforging, Taming, Tenebrous, Thunderclap or Wakening Names.
-
-A DC 15 Naming check can find any of the Abjuring, Cavernous, Enlivening, Liberating, Magnifying, Reconditioning, Sentinel, Taming, Vanishing or Volatile Names.
-
-More obscure names generally require quests.
-
 The Coagulant, Extinguishing, Luminous, and Thunderclap Names are available in scrollwheel form as a DC 5 Wealth check.
+
+## List of Names
+
+| *Name* | *Time to Speak* | *DC to Research* | *Effects* |
+|------- | --- | --- | --------------------------------------------------------| 
+|Mortal | 0 | 2 | Kills speaker|
+|Ascending | 2 | 5 | Speaker can float up or down in air, ignoring gravity|
+|Chromatic | 1 | 5 | Changes color of an object|
+|Coagulant | 2 | 5 | Stops bleeding|
+|Extinguishing | 2 | 5 | Puts out fire|
+|Luminous | 1 | 5 | Produces a bright white light|
+|Sobering | 1 | 5 | Removes drunkenness and hangovers|
+|Avalanche | 1 | 10 | A convulsive sort of explosion that can demolish weak structures|
+|Bulletproof | 3 | 10 | Stops one projectile.|
+|Fulminant | 2 | 10 | Produces a small bolt of lightning, enough to stun a person|
+|Kindling | 1 | 10 | Starts a fire|
+|Kinetic | 1 | 10 | Exerts a strong force (like being pushed really hard) against an object|
+|Respiratory | 2 | 10 | Allows speaker to breain an otherwise unbreathable environment for some time|
+|Steelforging | 2 | 10 | Transforms ore to iron, iron to steel, and makes steel stronger|
+|Tenebrous | 2 | 10 | Everywhere within speaker's field of vision goes dark|
+|Thunderclap | 1 | 10 | Very loud noise|
+|Wakening | 1 | 10 | Gives speaker some energy, comparable to chugging a cup of coffee|
+|Abjuring | 3 | 15 | Cancels the effects of Names that can be spoken normally in less than 3 rounds|
+|Cavernous | 3 | 15 | Causes a large cave to form|
+|Enlivening | 2 | 15 | Awakens unconscious or comatose people.|
+|Liberating | 2 | 15 | Unties knots, breaks chains, picks locks, bends bars|
+|Magnifying | 1 | 15 | Allows you to see further and more clearly, like binoculars|
+|Reconditioning | 2 | 15 | Fixes certain types of broken machinery|
+|Sentinel | 3 | 15 | Gives superhuman hearing of certains spoken nearby|
+|Taming | 2 | 15 | Causes animals to be friendly to you|
+|Vanishing | 2 | 15 | Teleports speaker to a location which is a metaphor for the same thing as their current one|
+|Volatile | 1 | 15 | Disturbs things by making them shake and become slightly warmer; pushes them to a lower-entropy state|
+|Amnestic | 3 |  | Target forgets one second of their life|
+|Charismatic | 1 |  | person who hears you speak it likes you more|
+|Confounding | 2 |  | Confuses whatever memory or thought is on somebody's mind at moment.|
+|Explicit | 7 |  | Completely rewrites reality|
+|Fertile | 2 |  | Doubles yield of crops.|
+|Fluvial | 1 |  | A spring of fresh water bursts forth from ground, lasting from a week to a few months.|
+|Heartwarming | 1 |  | Gives one an inner warmth that lets one resist cold climates|
+|Moon-Finding | 1 |  | Shows the direction to the moon|
+|Motive | 3 |  | Makes an object move; can be used to power cars|
+|Nuptial | 3 |  | Initiates Sacred Kabbalistic Marriage|
+|Optometry | 2 |  | Corrects the speaker's vision|
+|Poetic | 2 |  | A supernatural ability to remember poetry and music|
+|Precious | 3 |  | A form of dowsing; increases your ability to find minerals you are looking for|
+|Protective | 1 |  | Makes speaker immune to radioactivity|
+|Purifying | 2 |  | Sterilizes an area of bad bacteria; a powerful antibiotic|
+|Quickening | 3 |  | Speeds pace of gestation of an embryo|
+|Revelatory | 3 |  | Reveals hidden dangers in certain situations, like a minefield|
+|Sanctifying | 1 |  | Makes air in a building cool, pleasant, and healthy to breathe; increases well-being|
+|Sandshaper | 3 |  | Allows one to create monsters and structures from sand|
+|Shield | 2 |  | Some protection against swords and other such weapons|
+|Static | 1 |  | Stops growth, especially cancer|
+|Tempestuous | 2 |  | Produces a whirlwind|
+|Thunderous | 1 |  | Makes your voice louder|
+|Unyielding | 2 |  | A barrier that demons cannot easily pass|
+|Vital | 5 |  | Grants human souls|
+|Wrathful | 4 |  | Nuke-level explosion. Destroys a city.|
+|Xenoglossal | 3 |  | Allows one to speak and understand across a language barrier for any human language except Aramaic|
+
+(Taken straight from Scott's post on the subject)
+
+"Time to Speak" is in rounds (1 round = 6 seconds).  Names without listed research DCs require quests to obtain.
+
