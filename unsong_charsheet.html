@@ -23,7 +23,18 @@
              position: relative;
              bottom: 5px;
          }
-             
+
+         .split {
+             width: calc(6.5in - 112px);
+             margin-left: 112px;
+             display: flex;
+             justify-content: stretch;
+         }
+         .split .text {
+             width: calc((6.5in - 112px) / 2);             
+             margin-left: 0;
+         }
+         
          .sheet {
              height: calc(9in - 88px);
              width: 6.5in;
@@ -48,6 +59,27 @@
              margin: .1in;
              background: white;
              box-shadow: -1px -2px 2px white, 1px 2px 2px #777;
+             position: relative;
+         }
+
+         .bottom {
+             position: absolute;
+             top: 100%;
+             width: 100%;
+             font-size: smaller;
+             display: flex;
+             flex-direction: row;
+             justify-content: stretch;
+         }
+         .bottom span {
+             color: #444;
+             flex-grow: 0;
+         }
+         .bottom u {
+             flex-grow: 999;
+             position: relative;
+             top: -2pt;
+             border-bottom: 1px solid #444;
          }
          
          table {
@@ -75,9 +107,13 @@
     </head>
     <body>
         <img src="alef.png">
-        <div class="text">Name:</div>
-        <div class="text">Player:</div>
+        <div class="split">
+            <div class="text">Name:</div>
+            &nbsp;&nbsp;
+            <div class="text">Player:</div>
+        </div>
         <div class="text">Value System:</div>
+        <div class="text">Background:</div>
         <div class="text">
             <span>Ability Dice:</span><u>&nbsp; &nbsp; &nbsp;</u>  &nbsp;
             <span>Expensive Resources:</span><u>&nbsp; &nbsp; / &nbsp;  &nbsp;</u>  &nbsp;
@@ -85,9 +121,12 @@
         </div>
 
         <div class="sheet">
-            <div class="ability">Destiny</div>
+            <div class="ability">
+                Destiny
+                <div class="bottom"><span>Coincidences:</span><u></u></div>
+            </div>
             <div class="pair">
-                <div class="ability">Understanding</div>
+                <div class="ability">Exegesis</div>
                 <div class="ability">Metaphors</div>
             </div>
             <div class="pair">
@@ -136,7 +175,7 @@
                 <tr><td colspan="2" class="dcs">
                     Metis: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u><br>
                     Science: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u><br>
-                    Understand: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u><br>
+                    Exegesis: &times;3:<u>&nbsp; &nbsp;</u> &nbsp; &times;5:<u>&nbsp; &nbsp;</u><br>
                 </td></tr>
                 <tr><td>SX</td><td>Specific Skills</td></tr>
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>

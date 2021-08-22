@@ -14,23 +14,29 @@ These mechanics reveal things from Unsong which would otherwise be surprises, in
 
 # Basic Mechanics
 
-To see if you succeed at something, roll a number of d10s equal to your relevant ability and add the results.  If any die rolls a 10 (“explodes”) reroll it and keep both values.  You might add dice to the roll if you have a specific skill or helpful circumstance.  If the total value on the dice meets or exceeds the DC, you succeed.
+To see if you succeed at something, roll a number of d10s equal to your relevant ability and add the results.  If any die rolls a 10 (“explodes”) reroll it and keep both values.  If you have a specific skill that is directly relevant, add two dice.  Somewhat relevant, one die.  If this leaves you with no dice to roll, roll a d4 (it does not explode).  Add a (non-exploding) d4 if circumstances are conducive to your success.
 
-(If it is necessary to roll a noninteger number of dice, use d4s.  They do not explode.)
+If the total value on the dice meets or exceeds the DC, you succeed.
 
 (Do not use any dice besides d10s and d4s.  Unless you have physical d22s or d72s, in which case you should find a way to incorporate them.
+
+If an action targets a character (and the target is aware) said target may assist or resist as a reaction.  They roll a relevant ability and add or subtract half their result from the actor's.
 
 In general, DCs should look like:
 
 * 2: Trivial; why are you even rolling?
-* 5: Ordinary people can do this, if given a few tries
+* 5: A sign of basic competence
 * 10: If this is your thing, you should be able to do this
 * 15: Requires real effort from specialists
 * 20: Seriously impressive
 * 30: Near the best of real-world achievement
 * 40: Superhuman
 
+## Combat
+
 If it is necessary to keep track of exactly when characters do things, go into rounds.  Use 10 rounds to the minute.  During a round, you can move up to 20 cubits and do something.
+
+To determine order within a round, roll initiative using Violence.  Ties are broken in favor of the player sitting closer tot he DM's right (NPCs last).  In an ambush or similar scenario, there is one surprise round in which only the ambushers act, followed by initiative as normal.
 
 There are no hit points.  Injuries are described in-universe.  Being shot with a gun is usually fatal.
 
@@ -50,10 +56,12 @@ The abilities (and some example DCs, to be adjusted on the fly by the DM) are:
 
 How relevant your success is to Adam Kadmon's ultimate goodness. A high destiny check means the setting's contrived co-incidences go your way.
 
+Destiny powers the retroactive resource rules (see: [Resources](#resources)) and can be burned to avoid death (see: [Combat](#combat)).  It also controls circumstances that intuitively qualify as "luck".  Furthermore, a player may call for a convenient coincidence a number of times per session equal to their destiny dice, and then roll to see just how convenient the coincidence is.
+
 Example DCs:
 
-* 10: Something which by actual luck had about a 10% chance of happening
-* 20: Something which by actual luck had about a 1% chance of happening
+* 5: Something which by actual luck had about a 50% chance of happening
+* 10: Something which by actual luck had about a 25% chance of happening
 
 ## Metaphors
 
@@ -61,6 +69,7 @@ Recognizing how things are metaphors for eachother. Interacting with Yitzerah.
 
 Example DCs:
 
+* 10: Identify what aspects of the current situation apply to the Vanishing Name
 * 20: Exchange words telepathically
 * 25: Deeper telepathy
 * 25: Obtain crypric prophessies
@@ -70,7 +79,7 @@ Example DCs:
 * 40: See clearly into the future during a solar eclipse
 * 50: Letter manipulation in the material world
 
-## Understanding
+## Exegesis
 
 Knowledge and comprehension of the world as it functions via sephirot.  Knowledge of the sephirot themselves, of sacred texts, and of languages.  Finding relevant references in Tanakh or Talmud. Finding linguistic correspondences.
 
@@ -78,10 +87,12 @@ Does not include how the world functions via math: that's Science.  Also does no
 
 Example DCs:
 
-* 10: Get the answer to a single question, moderately obscure
-* 15: Get the answer to a single question, highly obscure
-* 20: You (the player) can use the internet and treat it as your characters knowledge
-* 30: The entire table (DM included) helps you brainstorm, and then your character thinks of it in an instant.
+* 5: Identify how interactions among sephirot correspond to lived experiences
+* 10: Find the most relevant bit of Torah to a particular situation
+* 15: Identify how a randomly chosen text applies to a given situation
+* 15: Determine whether a linguistic correspondence is the work of mundane language evolution or reveals a hidden truth of Adam Kadmon
+* 20: Trace a consonant triple through a dozen unrelated languages
+* 30: Find all references to a concept in a large body of text
 
 ## Social Skills
 
@@ -114,10 +125,15 @@ Example DCs:
 * 10-15: Track down a Name which is known to the Unitarians or other underground group
 * 20: Deduce how a Name will operate with regard to edge-cases
 * 20: Speak a Name at double speed
+* 20: Memorize a Name by staring at it on a piece of paper for six seconds
 * 25: Deduce a name from most of it, using principles of names
 * 25: Crack early klipot
+* 25: Memorize a Name by hearing it once.
+* 25: Improvise a simple but novel klipah on the spot
 * 30: Improve state-of-the-art Name-finding algorithms efficiency by 1%
+* 30: Spake a Name at triple speed
 * 35: Crack state-of-the-art klipot
+* 35: Speak a Name at double speed in an improvised klipah
 
 ## Placebomancy
 
