@@ -42,9 +42,40 @@ There are no hit points.  Injuries are described in-universe.  Being shot with a
 
 If your character is about to die or otherwise suffer unacceptable harm, you may permanently burn a Destiny die to prevent it by implausible coincidence.  If you have no Destiny dice, you cannot do this.
 
+
+## Character Generation
+
+You start with 10 points to distribute among the abilities.  You may not put more than 4 dice in any one ability.  (A campaign that starts with experienced characters might start with more dice.  The limit on any ability remains 40%, rounded down.)
+
+While not strictly mandatory, it is advisable to put at least one point into Destiny, Social Skills, Metis and Wealth.  A character with no Destiny ultimately doesn't matter, and cannot use the retroactive resource rules.  One with no Social Skills has no relationships, and requires an explanation of how they wound up in an adventuring party.  A character with no Metis cannot reliably prepare meals or outfits for themselves, and requires an active full-time caretaker.  And a character with no wealth has only a 3/4 chance to own pants.
+
+You may claim unlimited resources if you could get them by rolling all 3s on your relevant acquisition check.  Please keep this within reason for a character concept.  Granted, “crazy hoarder” *is* a character concept.  Also, remember that you can fill these in retroactively (see the Resources section).
+
+You also start with four “expensive” resources, which you could get by rolling all 5s on your check.  You may leave some of these blank to fill in retroactively if you wish.  Mark these by checking the “SX” (Starting Expensive) box on your character sheet.
+
+(There are blanks on your character sheet to mark these DCs.  They are useful if you are likely to gain abilities during the game, but may not have immediate downtime.)
+
+Note that languages spoken beyond your native ones count as resources.  You may have multiple native languages if it fits your backstory.  Do not abuse this.
+
+You may be an ordained priest, which enables you to create Holy Water and grants social bonuses in relevant situations.  This counts as a connection and as an expensive resource regardless of your abilities.
+
+A [blank character sheet](unsong_charsheet.html) is available.
+
+### Extra Special Abilities
+
+There are people in this setting with extra abilities that don't fit neatly.  Starting with these means starting with fewer ability dice, and should effect your roleplay substantially.
+
+For example, you can be a Fallen Angel.  This has advantages: you are fluent in all languages except Aramaic; can fly when drunk on holy water; can conjure a flaming sword at will; and if killed by ordinary violence, you recorporate after a brief time.  It also has disadvantages: you cannot learn Aramaic, comprehend deception, reliably remember limitations, or generally cope with the harshness of the world.  You start with one fewer ability die.
+
+You can also have a complicated relationship with space.  Using this to your advantage requires a dc 10 Metaphors check.  You start with two fewer ability dice.
+
+Other abilities are possible, at similar ability-die costs.
+
 ## Leveling
 
-In a multi-session campaign, characters gain dice of abilities after successful sessions.  If multiple dice are gained in a session, they must be placed in separate abilities.  This does not grant resources, or change the DCs at which retroactive resources can be obtained.  (See [Resources](#resources))
+In a multi-session campaign, characters gain dice of abilities after successful sessions: one for a basic session, two for a session with significant challenge or accomplishment, and four for resolving a major plot point.  If multiple dice are gained in a session, they must be placed in separate abilities.  Also, no ability can hold more than 40% of your total dice.
+
+This does not grant resources, or change the DCs at which retroactive resources can be obtained.  (See [Resources](#resources))
 
 If there is in-universe downtime, characters may acquire resources.  This may either be done explicitly, with estimates of how long the acquisitions take, or abstractly, with one Starting Expensive Resource slot per week.  Having downtime, even just one week of it, *does* update the DCs at which retroactive resources can be obtained.
 
@@ -168,7 +199,7 @@ Example DCs:
 
 ## Wealth
 
-Buy stuff.
+Your ability to buy things unexpectedly.  This is approximately the amount of money you have, but after earmarking some of it for rent, adding easily accessible credit, etc.
 
 Example DCs:
 
@@ -334,31 +365,3 @@ A DC 15 Naming check can find any of the Abjuring, Cavernous, Enlivening, Libera
 More obscure names generally require quests.
 
 The Coagulant, Extinguishing, Luminous, and Thunderclap Names are available in scrollwheel form as a DC 5 Wealth check.
-
-# Character Generation
-
-You have one free point in each ability. You have 4 additional points to distribute among abilities as you wish.
-
-You may claim unlimited resources if you could get them by rolling all 3s on your relevant acquisition check.  Please keep this within reason for a character concept.  Granted, “crazy hoarder” *is* a character concept.  Also, remember that you can fill these in retroactively (see the Resources section).
-
-You also start with four “expensive” resources, which you could get by rolling all 5s on your check.  You may leave some of these blank to fill in retroactively if you wish.  Mark these by checking the “SX” (Starting Expensive) box on your character sheet.
-
-(There are blanks on your character sheet to mark these DCs.  They are useful if you are likely to gain abilities during the game, but may not have immediate downtime.)
-
-Note that languages spoken beyond your native ones count as resources.  You may have multiple native languages if it fits your backstory.  Do not abuse this.
-
-You may be an ordained priest, which enables you to create Holy Water and grants social bonuses in relevant situations.  This counts as a connection and as an expensive resource regardless of your abilities.
-
-A [blank character sheet](unsong_charsheet.html) is available.
-
-## Extra Special Abilities
-
-There are people in this setting with extra abilities that don't fit neatly.  Starting with these means starting with fewer ability dice, and should effect your roleplay substantially.
-
-For example, you can be a Fallen Angel.  This has advantages: you are fluent in all languages except Aramaic; can fly when drunk on holy water; can conjure a flaming sword at will; and if killed by ordinary violence, you recorporate after a brief time.  It also has disadvantages: you cannot learn Aramaic, comprehend deception, reliably remember limitations, or generally cope with the harshness of the world.  You start with one fewer ability die.
-
-You can also have a complicated relationship with space.  Using this to your advantage requires a dc 10 Metaphors check.  You start with two fewer ability dice.
-
-Other abilities are possible, at similar ability-die costs.
-
-
