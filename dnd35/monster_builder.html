@@ -571,8 +571,8 @@ recalc = function() {
     $('#gitp').append('[/TABLE]');
     $('#gitp').append($('<br/>'));
     $('#gitp').append($('<br/>'));
-    var specials = Array.concat(d.specialattacks.split(/[;,] */),
-				d.specialqualities.split(/[;,] */)); 
+    var specials = Array.prototype.concat(d.specialattacks.split(/[;,] */),
+                                          d.specialqualities.split(/[;,] */)); 
     for (var i in weapons) {
 	var plus = weapons[i].plus.val();
 	if (plus) {
