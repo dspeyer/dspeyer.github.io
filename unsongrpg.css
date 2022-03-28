@@ -1,5 +1,5 @@
 body::before {
-    content: "UNSONG RPG";
+    content: "UNSONG RPG v1.1";
     font-size: 35pt;
     background: url("alef.png"), linear-gradient(to bottom, rgba(180,119,14,1) 0%, rgba(210,181,100,1) 90%, rgba(210,181,100,1) 100%);
     background-repeat: no-repeat;
@@ -66,3 +66,28 @@ table {
     border-collapse: collapse;
 }
     
+@media print {
+    #TOC { display: none; }
+    body {
+        box-shadow: none;
+        border: none;
+        width: 100%;
+    }
+    body::before {
+        -webkit-print-color-adjust: exact;
+        width: 100%;
+        left: 0;
+    }
+    p {
+        margin: 0;
+        text-indent: 3em;
+        text-align: justify;
+    }
+    td {
+        padding: 0;
+    }
+//    #abilities { break-before: page; }
+//    #social-skills { break-before: page; }
+}
+
+
