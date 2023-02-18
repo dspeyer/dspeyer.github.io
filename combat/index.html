@@ -1,0 +1,1341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="theme.css" type="text/css" />
+</head>
+<body>
+<div id="TOC">
+<ul>
+<li><a href="#example-combat">Example Combat</a></li>
+<li><a href="#general-rules">General Rules</a><ul>
+<li><a href="#attacks">Attacks</a></li>
+<li><a href="#movement">Movement</a></li>
+<li><a href="#reactions">Reactions</a></li>
+<li><a href="#critical-hits">Critical Hits</a></li>
+<li><a href="#non-lethal-damage">Non-lethal Damage</a></li>
+<li><a href="#overpenetration">Overpenetration</a></li>
+<li><a href="#the-ages">The Ages</a></li>
+</ul></li>
+<li><a href="#weapons">Weapons</a><ul>
+<li><a href="#blades">Blades</a><ul>
+<li><a href="#length">Length</a></li>
+<li><a href="#profiles">Profiles</a></li>
+<li><a href="#strength-needed">Strength Needed</a></li>
+<li><a href="#exotic-materials">Exotic Materials</a></li>
+<li><a href="#customization">Customization</a></li>
+</ul></li>
+<li><a href="#hafted-weapons">Hafted Weapons</a><ul>
+<li><a href="#weight-and-requisite-strength">Weight and Requisite Strength</a></li>
+<li><a href="#complexity">Complexity</a></li>
+<li><a href="#cost">Cost</a></li>
+<li><a href="#example-weapons">Example Weapons</a></li>
+<li><a href="#exotic-materials-1">Exotic Materials</a></li>
+<li><a href="#flails">Flails</a></li>
+</ul></li>
+<li><a href="#ranged-weapons">Ranged Weapons</a><ul>
+<li><a href="#weapon-qualities">Weapon Qualities</a></li>
+<li><a href="#firearms">Firearms</a></li>
+<li><a href="#projectile-qualities">Projectile Qualities</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#armor">Armor</a><ul>
+<li><a href="#armor-properties">Armor Properties</a></li>
+<li><a href="#sizing">Sizing</a></li>
+<li><a href="#spot-and-listen-penalties">Spot and Listen Penalties</a></li>
+<li><a href="#weight-1">Weight</a></li>
+<li><a href="#armor-check-penalty">Armor Check Penalty</a></li>
+<li><a href="#stacking-armor">Stacking armor</a></li>
+<li><a href="#exotic-materials-2">Exotic Materials</a></li>
+</ul></li>
+<li><a href="#feats">Feats</a></li>
+</ul>
+</div>
+<h1 id="example-combat">Example Combat</h1>
+<p>These rules will be clearest if we begin with an example. Alice and Bob have decided to kill each other.</p>
+<p>Alice is wearing neck-to-toe gambison, augmented with a plate cuirasse on her torso and a half-closed plate helmet. This combination leaves her complete freedom of movement in her arms and legs, but does apply a -3 penaly to spot checks. She wields a halberd (long haft, blade and sidespike, spear-point).</p>
+<p>Bob is wearing head-to-toe chainmail, with a falchion (fore-bulging 3-foot blade) in his right hand and a rondel dagger (stilhetto, 1-foot blade) in his left.</p>
+<p>Alice moves to ten feet away and attacks. Since Bob is wearing chainmail, which is not very effective against piercing, she uses the side-spike and doesn't worry about where she hits him. Her attack bonus is her base attack (3) plus her dexterity mod (1) totalling 4. His AC is ten plus his dexterity modifier (2) totalling 12. She rolls a 12 totalling 16, a hit.</p>
+<p>But Bob reacts by parrying with his falchion. He rolls his own attack (bab=2 dex=2 die=8 total=12) and adds half the result (6) to his AC. Alice has now missed.</p>
+<p>Bob advances cautiously to a distance of five feet. He has the Two Weapon Fighting feat, so he can attack with both weapons. He begins with the falchion. Since it's not very effective against plate, he deliberately slashes at her right arm. His attack bonus is bab=2 plus dex=2 plus using-a-blade-as-intended=2 = 6. Her arm's AC is ten plus dex (1) plus single-body-part (4) = 15. He rolls a 10 for a total of 16: hit.</p>
+<p>Alice cannot parry because halberds don't have the parry property. But she can dodge, adding just her dex (1) to the roll (5) for a total of 6 which is 3 points of AC. Barely enough.</p>
+<p>Bob attacks again, this time with the dagger. It will barely do damage if going through armor, so he stabs at her face. His attack mod has the 6 from before plus another 4 for using a dagger to get around armor totalling 10. Her AC has the 15 from before, plus another 5 for a half-open helmet making 20. He rolls a 14.</p>
+<p>Alice has already reacted once this round and cannot dodge. She is hit. Bob deals 1d4 + 1/2 strength mod damage. He rolls a 3 and has a str of +2, so this is 4 damage. Alice has a constitution score of 14, so her head is still functional. But Bob has also learned that Alice does not have the Combat Reflexes feat.</p>
+<p>Alice cautiously backs up five feet and swings again. Again, she attacks at +4, his AC is 12 and he parries at +4. She rolls a 15 for a total of 19. He rolls a 4 for a total of 16. A hit. Since she wasn't aiming at a body part, she rolls randomly and gets left leg. A side-spike on a long haft deals 1d10 damage, and swinging a two-handed weapon adds 3/2 strength mod. Alice rolls a 9 and has a str of +2, for 10 damage, reduced to 8 by the chainmail. Bob has a constitution score of 12 so his leg is still functional... barely.</p>
+<p>Bob decides to get more aggressive and advances without caution. Alice spends her reaction on an attack of opportunity which Bob parries, successfully this time. Bob then slashes at Alice's already-damaged face with his falchion. He attacks at +6 against her face AC of 20. He rolls a 15 and just barely hits. He does 1d8+2=7 damage. Combined with the 4 from earlier, she is in bad shape.</p>
+<p>Bob makes his second attack with the dagger. Again, he attacks at +10 against her face AC of 20. But this time he rolls a 17, exceeding her AC by more than 5: a critical hit. It's a piercing attack, so it deals 2.5x damage. He rolls a 3, making 10 damage. The total damage to Alice's head now exceeds her constitution, but does not double it. She is unconscious and bleeding out.</p>
+<h1 id="general-rules">General Rules</h1>
+<h2 id="attacks">Attacks</h2>
+<p>All attack rolls are bab+dex+size. Melee weapons (and some ranged weapons) have a minimum strength needed to wield them.</p>
+<p>An attacker chooses whether to simply attack the enemy or a specific body part (specific limb, torso or head) and, if a specific body part, whether to go around or through armor. Each body part has an AC 4 higher than the enemy as a whole, and the armor's AC bonus is armor-specific.</p>
+<p>Each body part has starting hit points equal to the creature's constitution score. If the body part is reducted to zero or fewer hit points, it cannot be used. If any of your body parts have negative hit points at the end of your turn, they lose at additional hit point. If they reach negative constition score, they are destroyed permanently.</p>
+<p>Melee attacks are either swinging or thrusting. Swinging attacks get 3/2 strength when done in two hands, but may require adequate space.</p>
+<p>One handed melee attacks add strength to damage for primary hand, 1/2 strength for off hand.</p>
+<h2 id="movement">Movement</h2>
+<p>You can move up to your speed on your turn, and take a standard action (such as an attack) anywhere along your movement.</p>
+<p>If you leave a threatened square, the enemy threatening it may use their reaction to make an attack of opportunity. Moving Cautiously prevents this, but counts as having moved twice the distance.</p>
+<p>Some actions (such as drawing a weapon from a sheath) cost five feet of movement. Others (such as reloading a breach-action firearm) cost a Move Action, which is all your movement.</p>
+<h2 id="reactions">Reactions</h2>
+<p>Reactions include attacks of opportunity, parries and dodges.</p>
+<p>To parry, roll an attack with a parrying weapon and add half the result to AC. Bonuses for using a weapon in a specific way (e.g. slashing with a fore-bulging weapon) don't apply here, but the double-polearm bonus of a trident or symmetric fork does, as does Weapon Focus or similar.</p>
+<p>Dodges are simple dex rolls, again adding half.</p>
+<p>You get one reaction per round, resetting at the beginning of your turn. You can use a reaction during a reaction.</p>
+<h2 id="critical-hits">Critical Hits</h2>
+<p>Exceeding AC by five makes a crit, by 10 a double-crit, etc. Crits deal 1.5x damage for bludgeoning, 2x for slashing and 2.5x for piercing, with the multiplier increasing by 0.5 for each additional level of crit.</p>
+<p>There is no concept of critical failure, though some weapons do special things if an attack roll is low enough. For these weapons, it is important to distinguish an ac bonus from an attack penalty.</p>
+<h2 id="non-lethal-damage">Non-lethal Damage</h2>
+<p>To make a non-lethal attack, you must know <em>how</em> to non-lethally attack the target creature, must attack with a bludgeoning weapon, and must achieve a critical hit.</p>
+<p>To figure out how to non-lethally attack a creature, make a dc 15 heal check for that creature. Once you succeed, you have the knowledge forever after, but if you fail, you cannot retry until your bonus has increased. For creatures you have long been in the habit of fighting, you may simply assume you have made this check at some point in the past.</p>
+<p>If you succed at making a non-lethal attack, the damage is not multiplied for the crit (though, if it's a double-crit, it's multiplied as a single crit, etc.). The resulting damage is tracked separately from normal damage. It stacks with normal damage for purposes of disabling body parts (zero hp) but not for permanently disabling them (negative con score hp).</p>
+<p>However, if a body part takes five times con score in non-lethal damage, any additional non-lethal becomes normal.</p>
+<p>Note that non-lethal damage is not safe. If you hit your target and do not achive a crit, the damage will be lethal. See the drug rules and Sleeper Holds in the Grappling section for safer options.</p>
+<h2 id="overpenetration">Overpenetration</h2>
+<p>Attacks can overpenetrate. Subtract the damage actually dealt (maxes at reducing a body part to negative constitution) as if it were armor (so hollow-point and armor-piercing rules apply), and then subtract the victim's armor again upon exit, even if the original wound went around armor. If the remaining damage is positive, the weapon makes a stray attack on whatever's on the other side.</p>
+<h2 id="the-ages">The Ages</h2>
+<p>The ages are:</p>
+<table style="width:100%;">
+<colgroup>
+<col width="8%" />
+<col width="91%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Age</th>
+<th align="left">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Stone</td>
+<td align="left">Prehistory, pre-contact Americas</td>
+</tr>
+<tr class="even">
+<td align="left">Bronze</td>
+<td align="left">Sumeria, Pyramid-building Egypt, Book of Judges, the Trojan War</td>
+</tr>
+<tr class="odd">
+<td align="left">Iron</td>
+<td align="left">Athenian League, Rome, Carolingian Empire, Zhou through Tang China</td>
+</tr>
+<tr class="even">
+<td align="left">Spinning</td>
+<td align="left">Song China, Hundred Years' War, Venetian Empire, Hapsburg Holy Roman Empire</td>
+</tr>
+<tr class="odd">
+<td align="left">Gunpowder</td>
+<td align="left">European Wars of Religion, Ming China</td>
+</tr>
+<tr class="even">
+<td align="left">Industrial</td>
+<td align="left">Napoleanic France, Georgian England, Early United States</td>
+</tr>
+<tr class="odd">
+<td align="left">Steam</td>
+<td align="left">US Civil War, World War One</td>
+</tr>
+<tr class="even">
+<td align="left">Information</td>
+<td align="left">World War Two through present</td>
+</tr>
+<tr class="odd">
+<td align="left">Space</td>
+<td align="left">Firefly, The Qeng Ho, Freefall</td>
+</tr>
+<tr class="even">
+<td align="left">Star</td>
+<td align="left">Star Wars, Star Trek, Stargate</td>
+</tr>
+<tr class="odd">
+<td align="left">Galactic</td>
+<td align="left">The Culture, The Transcend (Fire Upon the Deep)</td>
+</tr>
+</tbody>
+</table>
+<p>Ages are a crude description. Many settings will have some techs from an age and not others, especially for the most plot-relevant technologies.</p>
+<p>Unless specified otherwise by the setting, martial weapons from three or more ages ago (e.g. Stone Age weapons in the Spinning Age) or from the future are Exotic.</p>
+<h1 id="weapons">Weapons</h1>
+<h2 id="blades">Blades</h2>
+<p>Blades are some of the simplest, yet also most versatile, weapons you can wield. All blades can be used in both thrusting/piercing and swinging/slashing manners, though some are better at one than the other. All blades can also be used to parry.</p>
+<h3 id="length">Length</h3>
+<p>The most important variation in a blade is its length. Conveniently, a sword's length (in feet) is equal to its weight (in pounds).</p>
+<div class="captioned">
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Handed</th>
+<th>Special</th>
+<th>Dmg</th>
+<th>L=W</th>
+<th>Strength Needed</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dagger</td>
+<td>Simple</td>
+<td>One Handed</td>
+<td>Gap Finding</td>
+<td>1d4</td>
+<td>1</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Shortsword</td>
+<td>Simple</td>
+<td>One Handed</td>
+<td></td>
+<td>1d6</td>
+<td>2</td>
+<td>8</td>
+<td>40</td>
+</tr>
+<tr class="odd">
+<td>Arming Sword</td>
+<td>Martial</td>
+<td>One Handed</td>
+<td></td>
+<td>1d8</td>
+<td>3</td>
+<td>12</td>
+<td>90</td>
+</tr>
+<tr class="even">
+<td>Bastard Sword</td>
+<td>Exotic or Martial</td>
+<td>One or Two Handed</td>
+<td>Flexible</td>
+<td>1d10</td>
+<td>4</td>
+<td>16 or 12</td>
+<td>160</td>
+</tr>
+<tr class="odd">
+<td>Longsword</td>
+<td>Martial</td>
+<td>Two Handed</td>
+<td></td>
+<td>2d6</td>
+<td>5</td>
+<td>15</td>
+<td>250</td>
+</tr>
+<tr class="even">
+<td>Greatsword</td>
+<td>Exotic</td>
+<td>Two Handed</td>
+<td>Reach</td>
+<td>2d8</td>
+<td>6</td>
+<td>18</td>
+<td>360</td>
+</tr>
+</tbody>
+</table>
+<p>Blade properties by length for medium creatures</p>
+</div>
+<h4 id="character-sizes">Character Sizes</h4>
+<p>The damage, reach and strength requirements of a blade are unaffected by the size of the wielder. The handedness, type, name and special abilities do. Specifically, the lengths they attach to are doubled (or halved) for every size category difference.</p>
+<p>For example, a 2 foot blade will always weigh 2 pounds, deal 1d6 base damage and require 8 strength to wield in one's primary hand. For a human, it would be a shortsword. For a halfling, it would be a bastard sword, requiring an EWP feat to wield one-handed (but allowing two-handing with only 6 strength). For an ogre, it would be a dagger, and would gain the Gap Finding ability. A giant or brownie would be unable to wield it effectively.</p>
+<p>Halfling daggers exist, deal 1d2 damage, and cannot be wielded effectively by big folk. In theory, ogre greatswords exist as well (with double-reach) but they are not available in ordinary markets.</p>
+<h4 id="special-abilities">Special Abilities</h4>
+<p>A Dagger has the Gap Finding property, meaning that when a thrusting, around-armor attack is made with a dagger, the armor's Armor Class Bonus is reduced by 4 (to a minimum of zero).</p>
+<p>A Bastard Sword has the Flexible property, meaning that it can either be a one-handed exotic weapon or a two-handed martial weapon.</p>
+<p>A blade of six feet or longer has the Reach property, meaning that it threatens both adjacent squares <em>and</em> squares one further off.</p>
+<h3 id="profiles">Profiles</h3>
+<p>The other way blades can vary is by profiles. The profile produces attack modifiers for thrusting (piercing) and swinging (slashing):</p>
+<table>
+<thead>
+<tr class="header">
+<th>Profile</th>
+<th>Thrusting</th>
+<th>Swinging</th>
+<th>Available From</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fore-Bulging</td>
+<td>-3</td>
+<td>+2</td>
+<td>Iron</td>
+</tr>
+<tr class="even">
+<td>Waisted</td>
+<td>-1</td>
+<td>+1</td>
+<td>Bronze</td>
+</tr>
+<tr class="odd">
+<td>Conventional</td>
+<td>0</td>
+<td>0</td>
+<td>Stone</td>
+</tr>
+<tr class="even">
+<td>Fully Tapered</td>
+<td>+1</td>
+<td>-1</td>
+<td>Bronze</td>
+</tr>
+<tr class="odd">
+<td>Stiletto</td>
+<td>+2</td>
+<td>-3</td>
+<td>Spinning</td>
+</tr>
+</tbody>
+</table>
+<div class="captioned">
+<p><img src="sword%20profiles.png" alt="Sword Profiles" /> The five blade profiles, at similar lengths.</p>
+</div>
+<p>In some cultures, blade names change with profile. For example, a fore-bulging dagger might be known as a kukri, and a stilletto arming sword as a rapier. Other cultures just use the word “blade” and let adjectives do the work. Yet other cultures split the difference with agglutantive word formation, but this is wandering off-subject a bit.</p>
+<h3 id="strength-needed">Strength Needed</h3>
+<p>To wield a blade effectively requires a strength <em>score</em> which is a multiple of the blade's weight in pounds:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Dominant Hand</td>
+<td>4x</td>
+</tr>
+<tr class="even">
+<td>Weak Hand</td>
+<td>6x</td>
+</tr>
+<tr class="odd">
+<td>Both Hands</td>
+<td>3x</td>
+</tr>
+</tbody>
+</table>
+<p>You cannot wield a blade in more than two hands, even if you have them. Note that this strength is not needed to <em>carry</em> the weapon.</p>
+<h3 id="exotic-materials">Exotic Materials</h3>
+<p>The vast majority of blades are made from steel, in any environment where steel is available. Nevertheless, other materials are possible:</p>
+<p><strong>Glass</strong>: Halve armor DR, but the blade is destroyed if it is ever stopped by armor or parry, or if it takes any sonic or explosive damage. Available in dagger length from the Stone Age, or any length from Spinning.</p>
+<p><strong>Wood and Glass</strong>: (a.k.a. macuahuitl) Every time the blade is stopped by armor or parry, it takes a stacking -1 penalty on future attack rolls, and it can no longer be used as a blade if it takes any sonic or explosive damage. It can also be used as a short-hafted club, negating the preceding penalties. Available from the Stone Age).</p>
+<p><strong>Copper</strong>: Triple price and -1 on all attacks. Available from the Bronze Age.</p>
+<p><strong>Bronze</strong>: Dectuple price. Counts as copper if that is beneficial. Available from the Bronze Age</p>
+<p><strong>Titanium</strong>: Halve weight. Decrease base damage die one step. Available from the Information Age.</p>
+<p><strong>Plasma</strong>: Ignore armor and parries (except from other plasma blades). Add +2d6 fire damage to all successful attacks. Deal yourself 2d6 fire damage (random body part) on any total attack roll less than 10. Available from the Star Age.</p>
+<h3 id="customization">Customization</h3>
+<p>Feel free to decide the curvature, edge-count, hilt-guard, distal taper and decoration of your blade. These things have no mechanical effects.</p>
+<h2 id="hafted-weapons">Hafted Weapons</h2>
+<p>A hafted weapon has a wooden pole and a (usually) metal head.</p>
+<p>The pole may be short (2ft: suitable for attacking enemies in adjacent squares), long (7ft:suitable for attacking enemies one square away) or very long (12ft: suitable for attacking enemies two squares away). Unlike greatswords, a hafted weapon cannot be used against targets which are closer than it's range (unless you have a special ability to counter-act this).</p>
+<p>The head of a hafted weapon may contain a terminal spike, and up to two features, though heads with a spike <em>and</em> two features only become available in the Spinning Age. If the two features are the same, the weapon gives a +1 bonus on attack rolls with the feature, since it can be used forehand or backhand as the enemy's defense encourages. The amount of damage done by a feature is affected by the length of the shaft:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Weight</th>
+<th>Damage Type</th>
+<th>Attack Type</th>
+<th>Special</th>
+<th>Short</th>
+<th>Long</th>
+<th>Very Long</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bare Haft</td>
+<td>0</td>
+<td>Bludgeoning</td>
+<td>Either</td>
+<td></td>
+<td>1d3</td>
+<td>1d4</td>
+<td>1d6</td>
+</tr>
+<tr class="even">
+<td>Spearhead</td>
+<td>1</td>
+<td>Piercing</td>
+<td>Thrusting</td>
+<td></td>
+<td>1d6</td>
+<td>1d6</td>
+<td>1d6</td>
+</tr>
+<tr class="odd">
+<td>Blade</td>
+<td>2</td>
+<td>Slashing</td>
+<td>Swinging</td>
+<td></td>
+<td>1d10</td>
+<td>1d12</td>
+<td>2d8</td>
+</tr>
+<tr class="even">
+<td>Spike</td>
+<td>1</td>
+<td>Piercing</td>
+<td>Swinging</td>
+<td></td>
+<td>1d8</td>
+<td>1d10</td>
+<td>1d12</td>
+</tr>
+<tr class="odd">
+<td>Blunt Face</td>
+<td>2</td>
+<td>Bludgeoning</td>
+<td>Swinging</td>
+<td></td>
+<td>1d6</td>
+<td>2d4</td>
+<td>2d6</td>
+</tr>
+<tr class="even">
+<td>Foreward Hook</td>
+<td>1</td>
+<td>Piercing</td>
+<td>Thrusting</td>
+<td>Parrying</td>
+<td>1d4</td>
+<td>1d4</td>
+<td>1d4</td>
+</tr>
+<tr class="odd">
+<td>Backwards Hook</td>
+<td>1</td>
+<td>Piercing</td>
+<td>Thrusting</td>
+<td>Tripping</td>
+<td>1d4</td>
+<td>1d4</td>
+<td>1d4</td>
+</tr>
+</tbody>
+</table>
+<p>Tripping: weapons with a backwards hook can be used to make trip attacks with a +4 bonus and no attack of opportunity.</p>
+<div class="captioned">
+<p><img src="Polearm%20Names.png" alt="Hafted Weapon Heads" /> The possible hafted weapon heads and some names they might go by.</p>
+</div>
+<p>There is tremendous cultural variation in the naming of hafted weapons, including which weapons get names at all, which different weapons are given the same name, and which weapons have multiple names based on exactly how the head attaches to the shaft, with no general term.</p>
+Note that while the glaive-guisarme can be equally properly refereed to as a guisarme-glaive, the glaive-glaive-glaive-guisarme-glaive is an inside joke among weapons vendors (who traditionally claim to expect one in stock next thursday) and not an actual weapon.
+</div>
+<h3 id="weight-and-requisite-strength">Weight and Requisite Strength</h3>
+<p>While the haft of a hafted weapon has weight (1, 2 or 4 pounds depending on length), it is the weight of the head which determines the strength needed to wield it. However, the shaft length does determine the multiplier, as it is the product of inertia and lever-length that determines the torque the wielder must apply. In this case, the wielder's size affects the needed strength for two-handed grips, as the space between hands provides its own leverage.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Wielded in</th>
+<th>Short</th>
+<th>Long</th>
+<th>Very Long</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary Hand</td>
+<td>3</td>
+<td>14</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Off Hand</td>
+<td>6</td>
+<td>28</td>
+<td>60</td>
+</tr>
+<tr class="odd">
+<td>Two Hands (medium)</td>
+<td>2</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Two Hands (small)</td>
+<td>4</td>
+<td>6</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td>Two Hands (large)</td>
+<td>1</td>
+<td>1.5</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="complexity">Complexity</h3>
+<p>The Club, Staff, Shortspear, Longspear, Axe, and Mace (see examples) are Simple weapons. Apart from these, hafted weapons with hooks (foreward or backward) are Exotic, and those without are Martial.</p>
+<h3 id="cost">Cost</h3>
+<p>The cost of a hafted weapon depends on the complexity of its head:</p>
+<table>
+<thead>
+<tr class="header">
+<th>.</th>
+<th>No Spike</th>
+<th>Spike</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0 Features</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>1 Feature</td>
+<td>30</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>2 Features</td>
+<td>150</td>
+<td>300</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-weapons">Example Weapons</h3>
+<p>These are not the only available hafted weapons, but they are pre-statted for your convenience:</p>
+<div class="wide">
+<table style="width:40%;">
+<colgroup>
+<col width="4%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="4%" />
+<col width="4%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Complexity</th>
+<th>Spike</th>
+<th>Feature 1</th>
+<th>Feature 2</th>
+<th>Haft</th>
+<th>Cost</th>
+<th>Head Weight</th>
+<th>Total Weight</th>
+<th>Strength Needed (1h)</th>
+<th>Strength Needed 2h</th>
+<th>Damage</th>
+<th>Special</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Club</td>
+<td>Simple</td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+<td>Short</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>Bludgeoning 1d3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Staff</td>
+<td>Simple</td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+<td>Long</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>Bludgeoning 1d4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Shortspear</td>
+<td>Simple</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+<td>Short</td>
+<td>10</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>Piercing 1d6</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Longspear</td>
+<td>Simple</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+<td>Long</td>
+<td>10</td>
+<td>1</td>
+<td>3</td>
+<td>14</td>
+<td>3</td>
+<td>Piercing 1d6</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Axe</td>
+<td>Simple</td>
+<td>No</td>
+<td>Blade</td>
+<td>None</td>
+<td>Short</td>
+<td>10</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>4</td>
+<td>Slashing 1d10</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Mace</td>
+<td>Simple</td>
+<td>No</td>
+<td>Blunt</td>
+<td>Blunt</td>
+<td>Short</td>
+<td>150</td>
+<td>4</td>
+<td>5</td>
+<td>12</td>
+<td>8</td>
+<td>Bludgeoning 1d6</td>
+<td>+1 on attacks</td>
+</tr>
+<tr class="odd">
+<td>Pike</td>
+<td>Martial</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+<td>Very long</td>
+<td>10</td>
+<td>1</td>
+<td>5</td>
+<td>30</td>
+<td>10</td>
+<td>Piercing 1d6</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tomahawk</td>
+<td>Martial</td>
+<td>No</td>
+<td>Blunt</td>
+<td>Blade</td>
+<td>Short</td>
+<td>150</td>
+<td>4</td>
+<td>5</td>
+<td>12</td>
+<td>8</td>
+<td>Bludgeoning 1d6 Slashing 1d10</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ji</td>
+<td>Martial</td>
+<td>Yes</td>
+<td>Spike</td>
+<td>None</td>
+<td>Long</td>
+<td>100</td>
+<td>2</td>
+<td>4</td>
+<td>28</td>
+<td>6</td>
+<td>Piercing 1d6 Piercing 1d10</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ji-Pike</td>
+<td>Martial</td>
+<td>Yes</td>
+<td>Spike</td>
+<td>None</td>
+<td>Very long</td>
+<td>100</td>
+<td>2</td>
+<td>6</td>
+<td>60</td>
+<td>20</td>
+<td>Piercing 1d6 Piercing 1d12</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Poleaxe</td>
+<td>Martial</td>
+<td>Yes</td>
+<td>Blade</td>
+<td>Blunt</td>
+<td>Long</td>
+<td>300</td>
+<td>5</td>
+<td>7</td>
+<td>70</td>
+<td>15</td>
+<td>Piercing 1d6 Slashing 1d12 Bludgeoning 2d4</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Halberd</td>
+<td>Martial</td>
+<td>Yes</td>
+<td>Blade</td>
+<td>Spike</td>
+<td>Long</td>
+<td>300</td>
+<td>4</td>
+<td>6</td>
+<td>56</td>
+<td>12</td>
+<td>Piercing 1d6 Piercing 1d12 Slashing 1d12</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Guisarme</td>
+<td>Exotic</td>
+<td>Yes</td>
+<td>Spike</td>
+<td>Backhook</td>
+<td>Long</td>
+<td>300</td>
+<td>3</td>
+<td>5</td>
+<td>42</td>
+<td>9</td>
+<td>Piercing 1d6 Piercing 1d12</td>
+<td>Trip</td>
+</tr>
+<tr class="even">
+<td>Name-it-after-yourself</td>
+<td>Exotic</td>
+<td>No</td>
+<td>Blade</td>
+<td>Forehook</td>
+<td>Long</td>
+<td>150</td>
+<td>3</td>
+<td>5</td>
+<td>42</td>
+<td>9</td>
+<td>Piercing 1d4 Slashing 1d12</td>
+<td>Parry</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="exotic-materials-1">Exotic Materials</h3>
+<p>The vast majority of hafted weapons are also made from steel (and wood), in any environment where steel is available. Nevertheless, other materials are again possible.</p>
+<p><strong>Flint</strong>: No hooks. Spear-points cannot be combined with features. -2 on piercing or slashing attacks, -1 on bludgeoning. Available from the Stone Age.</p>
+<p><strong>Copper</strong>: Triple price and -1 on all attacks. Available from the Bronze Age.</p>
+<p><strong>Bronze</strong>: Dectuple price. Counts as copper if that is beneficial. Available from the Bronze Age</p>
+<p><strong>Titanium</strong>: Halve head weight for piercing features only (others require the weight to be effective. Available from the Information Age.</p>
+<p><strong>Plasma</strong>: Ignore armor and parries (except from plasma blades). Add +2d6 fire damage to all successful attacks. Deal yourself 2d6 fire damage (random body part) on any total attack roll less than 5. No hooks or bludgeons. Available from the Star Age.</p>
+<p><strong>Carbon Fiber</strong>: Halve the <em>pole</em> weight. In case you care about that. Available from the Information Age.</p>
+<h3 id="flails">Flails</h3>
+<p>Flails are like maces, except that the head is attached to the haft by a flexible chain, rope or cable. The mechanical effects of this are:</p>
+<ul>
+<li>Complexity becomes Exotic</li>
+<li>Damage decreases by one die size</li>
+<li>Can make disarm attempts without provoking an attack of opportunity</li>
+<li>For a short-hafted flail, a total attack roll less than 5 means you strike yourself in a random body part</li>
+</ul>
+<h4 id="nunchuks">Nunchuks</h4>
+<p>Nunchuks are a variant of flail where the ball is a copy of the haft. This has the following effects:</p>
+<ul>
+<li>Damage decreases by another die size</li>
+<li>Must use haft-length corresponding to creature size (medium=short, large=long, huge=very long)</li>
+<li>Regardless of size, a total attack roll less than 10 means you strike yourself in a random body part</li>
+<li>Cannot use special materials</li>
+<li>+2 on perform(weapon drill) checks</li>
+</ul>
+<h2 id="ranged-weapons">Ranged Weapons</h2>
+<p>A ranged weapon contains both the weapon itself and the projectile it sends at the enemy. Most ranged weapons have at least some flexibility in what projectiles they can send.</p>
+<p>While melee weapons are mostly fixed by the late iron age, ranged weapons develop extensively. Pay attention to your setting notes.</p>
+<h3 id="weapon-qualities">Weapon Qualities</h3>
+<div class="wide">
+<table style="width:33%;">
+<colgroup>
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weapon</th>
+<th>Ammo</th>
+<th>Damage</th>
+<th>Range</th>
+<th>Reload Time</th>
+<th>Complexity</th>
+<th>Availability</th>
+<th>Hands</th>
+<th>Strength Needed</th>
+<th>Weight</th>
+<th>Cost</th>
+<th>Special</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Throw</td>
+<td>Any with Range</td>
+<td>ammo+strm</td>
+<td>ammo×(str/10)</td>
+<td>n/a</td>
+<td>Simple</td>
+<td>Stone</td>
+<td>1</td>
+<td>weight×2</td>
+<td>0</td>
+<td>0</td>
+<td>Arcing</td>
+</tr>
+<tr class="even">
+<td>Drop</td>
+<td>Any with Range</td>
+<td>ammo×min(height/20',2)</td>
+<td>20</td>
+<td>n/a</td>
+<td>Simple</td>
+<td>Stone</td>
+<td>1</td>
+<td>weight/6</td>
+<td>0</td>
+<td>0</td>
+<td>unlimited range, swift -10, head</td>
+</tr>
+<tr class="odd">
+<td>Atlalt</td>
+<td>Javelin</td>
+<td>ammo+strm</td>
+<td>2×ammo×(str/10)</td>
+<td>Free Action</td>
+<td>Martial</td>
+<td>Stone</td>
+<td>2/1</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sling</td>
+<td>Stone, Ball, Grenade or Bomb</td>
+<td>ammo+strm</td>
+<td>3×ammo×(str/10)</td>
+<td>Move Action</td>
+<td>Martial</td>
+<td>Stone</td>
+<td>2/1</td>
+<td>weight×3</td>
+<td>0.01</td>
+<td>1</td>
+<td>Risky, Arcing</td>
+</tr>
+<tr class="odd">
+<td>Slingstaff</td>
+<td>Stone, Ball, Grenade or Bomb</td>
+<td>ammo+1.5×strm</td>
+<td>3×ammo×(str/10)</td>
+<td>Move Action</td>
+<td>Simple</td>
+<td>Stone</td>
+<td>2</td>
+<td>weight×2</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Long Bow</td>
+<td>Arrow</td>
+<td>ammo+rating</td>
+<td>100+5×rating</td>
+<td>Free Action</td>
+<td>Martial</td>
+<td>Stone</td>
+<td>2</td>
+<td>rating+10</td>
+<td>3</td>
+<td>10+rating^2/5</td>
+<td>Standing, Arcing</td>
+</tr>
+<tr class="odd">
+<td>Short Bow</td>
+<td>Arrow</td>
+<td>ammo+rating</td>
+<td>100+5×rating</td>
+<td>Free Action</td>
+<td>Martial</td>
+<td>Stone</td>
+<td>2</td>
+<td>rating+10</td>
+<td>2</td>
+<td>30+rating^2/10</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Blow-Pipe</td>
+<td>Dart</td>
+<td>ammo</td>
+<td>30</td>
+<td>Move Action</td>
+<td>Simple</td>
+<td>Stone</td>
+<td>2/1</td>
+<td>3</td>
+<td>0.01</td>
+<td>10</td>
+<td>Handless -2</td>
+</tr>
+<tr class="odd">
+<td>Onager</td>
+<td>5 lb Stone or Ball</td>
+<td>5×ammo</td>
+<td>100</td>
+<td>4 minutes</td>
+<td>Martial</td>
+<td>Iron</td>
+<td>n/a</td>
+<td>12(reload)</td>
+<td>1000</td>
+<td>200</td>
+<td>Long, Aim During Reload, Strain, Arcing</td>
+</tr>
+<tr class="even">
+<td>Goatsfoot Crossbow</td>
+<td>Bolt (light or heavy)</td>
+<td>2×ammo</td>
+<td>80</td>
+<td>2 rounds</td>
+<td>Simple</td>
+<td>Iron</td>
+<td>2/1</td>
+<td>12(reload)</td>
+<td>4</td>
+<td>20</td>
+<td>Strain</td>
+</tr>
+<tr class="odd">
+<td>Windlass Crossbow</td>
+<td>Bolt (light or heavy)</td>
+<td>3×ammo</td>
+<td>100</td>
+<td>5 rounds</td>
+<td>Simple</td>
+<td>Iron</td>
+<td>2/1</td>
+<td>8(reload)</td>
+<td>5</td>
+<td>30</td>
+<td>Strain</td>
+</tr>
+<tr class="even">
+<td>Trebuchet</td>
+<td>5-10 lb Stone, Ball or Bomb</td>
+<td>7×ammo</td>
+<td>120</td>
+<td>2 minutes</td>
+<td>Martial</td>
+<td>Spinning</td>
+<td>n/a</td>
+<td>12(reload)</td>
+<td>2000</td>
+<td>400</td>
+<td>Long, Aim During Reload, Assembly Required, Arcing</td>
+</tr>
+<tr class="odd">
+<td>Ballista</td>
+<td>Oversize Bolt</td>
+<td>5×ammo</td>
+<td>120</td>
+<td>2 minutes</td>
+<td>Martial</td>
+<td>Iron</td>
+<td>str</td>
+<td>12;33</td>
+<td>32</td>
+<td>200</td>
+<td>Strain</td>
+</tr>
+<tr class="even">
+<td>Firearm</td>
+<td><em>See</em></td>
+<td><em>Separate</em></td>
+<td><em>Table</em></td>
+</tr>
+<tr class="odd">
+<td>Grenade Launcher</td>
+<td>Grenade</td>
+<td>2×ammo</td>
+<td>100</td>
+<td>Move Action</td>
+<td>Martial</td>
+<td>Information</td>
+<td>2</td>
+<td>12</td>
+<td>3</td>
+<td>50</td>
+<td>Long</td>
+</tr>
+<tr class="even">
+<td>Underslung Grenade Launcher</td>
+<td>Grenade</td>
+<td>2×ammo</td>
+<td>80</td>
+<td>Move Action</td>
+<td>Martial</td>
+<td>Information</td>
+<td>n/a</td>
+<td>12</td>
+<td>2</td>
+<td>50</td>
+<td>Long. Attaches to Firearm</td>
+</tr>
+<tr class="odd">
+<td>Dart Gun</td>
+<td>Dart</td>
+<td>2×ammo</td>
+<td>80</td>
+<td>Free Action</td>
+<td>Simple</td>
+<td>Information</td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Laser</td>
+<td>Coherent Light</td>
+<td>rating×ammo</td>
+<td>500</td>
+<td>Free Action</td>
+<td>Simple</td>
+<td>Space</td>
+<td>1</td>
+<td>6</td>
+<td>rating + power source</td>
+<td>100</td>
+<td>Unlimited Range, Energy Cost: rating, Auto-aim</td>
+</tr>
+<tr class="odd">
+<td>Blaster</td>
+<td>Plasma Blast</td>
+<td>rating×ammo</td>
+<td>300</td>
+<td>Free Action</td>
+<td>Simple</td>
+<td>Star</td>
+<td>1</td>
+<td>6</td>
+<td>rating/2 + power source</td>
+<td>70</td>
+<td>Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ammo">Ammo</h4>
+<p>What sorts of projectiles the weapon supports. For “Any with Range”, see the “Base Range” column in the projectiles table.</p>
+<h4 id="damage">Damage</h4>
+<p>Damage dealt. Here, “ammo” is the base damage of the projectile and “strm” is the wielder's strength modifier. A few weapons (bows and energy weapons) have “rating”, a number that describes how much weapon it is. While any rating is possible, a given store will likely offer ratings of weapon that are useful to the local customer base.</p>
+<h4 id="range">Range</h4>
+<p>The range increment for the weapon, in feet. Here, “ammo” is the base range of the projectile, and “str” is the wielder's strength score. (“Rating” is the same value as the previous column)</p>
+<p>Yes, it's annoying that this column uses strength score when the previous column used strength modifier, but it makes the formulas easier to apply.</p>
+<h4 id="reload-time">Reload Time</h4>
+<p>What sort of action is needed to reload the weapon so it can fire again. If more than a round, the reloader must spend the listed time taking standard actions of reloading.</p>
+<p>(While it is common for weapon wielders to do their own reloading, this is not necessary, and sometimes poor tactics.)</p>
+<h4 id="complexity-1">Complexity</h4>
+<p>What proficiency is needed to wield the weapon.</p>
+<h4 id="availability">Availability</h4>
+<p>In what age the weapon becomes available, though there is no guarantee that any given setting will have exactly the expected weapons.</p>
+<h4 id="hands">Hands</h4>
+<p>How many hands you need to wield the weapon. “2/1” means: two hands to reload, but only one to shoot. “str” means: however many you like, if you're strong enough (see next column). “n/a” means the weapon is too large to wield in hands.</p>
+<h4 id="strength-needed-1">Strength Needed</h4>
+<p>Strength score needed to wield the weapon. If marked “(reload)” this strength is needed to reload, but not to shoot the weapon. If two numbers are given with a semi-colon, these are reload and shoot respectively.</p>
+<h4 id="weight">Weight</h4>
+<p>In pounds. Does not include ammunition. For energy weapons, the weight of the power source is not included (see power sources, chapter ???).</p>
+<h4 id="cost-1">Cost</h4>
+<p>At least until the Economics suplement comes out</p>
+<h4 id="special">Special</h4>
+<p>Many weapons have special properties:</p>
+<h5 id="aim-during-reload">Aim During Reload</h5>
+<p>Weapons with this property (most siege weapons) must be aimed during the last action of reloading them. This gives their targets (if mobile) a chance to be somewhere else. You can lead the target if you choose, but they might realize you are and react accordingly.</p>
+<h5 id="arcing">Arcing</h5>
+<p>Weapons with this property can be fired <em>over</em> obstacles, provided the obstacle is adjacent to neither attacker nor target. Doing so doubles the effective distance. The attacker still needs a way of knowing the target's location.</p>
+<h5 id="assembly-required">Assembly Required</h5>
+<p>This weapon (trebuchet) cannot be transported intact using ordinary land transit. It can be placed intact on a ship or transported on an oversized truck, but for an inland spinning-age siege, it must be assembled on site, a process that typically takes six hours.</p>
+<h5 id="auto-aim">Auto-aim</h5>
+<p>Weapons with this property (space age or later) can assist your aim using stabalizing jets, granting a +4 bonus on attack rolls.</p>
+<h5 id="burst-mode">Burst Mode</h5>
+<p>This weapon (most long guns from the information age or later) can be fired in 3-round-burst mode. Make a single attack roll: if you exceed the target's AC by 10, all three bullets hit; by 5, two bullets; at all, one bullet. Bullets from a burst which miss follow the general rules for stray shots. Only the first bullet qualifies for critical multipliers or other precision damage.</p>
+<p>This stacks with the rapid shot feat and similar abilities.</p>
+<h5 id="energy-cost">Energy Cost</h5>
+<p>This weapon requires an outside energy source per shot fired. The energy source is not included in the weight.</p>
+<h5 id="handless--2">Handless -2</h5>
+<p>This weapon (a blowgun) can be shot with no hands at all, albeit at a -2 penalty.</p>
+<h5 id="head">Head</h5>
+<p>This weapon (dropping) always strikes humanoid enemies in the head, provided they are standing upright.</p>
+<h5 id="long">Long</h5>
+<p>This weapon allows you to make attacks at up to 10 range increments (albeit at a -20 penalty). The normal limit is 5 increments.</p>
+<h5 id="attaches-to-rifle">Attaches to Rifle</h5>
+<p>This weapon (an underslung grenade launcher) cannot be used separately, but can be attached to any firearm with at least a one foot barrel.</p>
+<h5 id="risky">Risky</h5>
+<p>This weapon (a sling) has a chance of striking you. If your total attack roll is less than 5, you hit your own leg (the same side of your body as the sling).</p>
+<h5 id="spray-mode">Spray Mode</h5>
+<p>This weapon offers spray mode. As a full-round action, you can fire either the number of bullets listed or until you need to make a non-free-action reload. Make an attack roll against an area, and then treat all bullets you fire into the area as stray.</p>
+<h5 id="standing">Standing</h5>
+<p>A medium creature using this weapon (a longbow) must stand to do it. Larger creatures are not restricted. Smaller cannot use it at all.</p>
+<h5 id="strain">Strain</h5>
+<p>If this weapon is left loaded for more than an hour, the strain will render the weapon ineffective.</p>
+<h5 id="swift--10">Swift -10</h5>
+<p>This weapon (dropping) can be “fired” as a swift action, but at a -10 on the attack roll.</p>
+<h5 id="unlimited-range">Unlimited Range</h5>
+<p>There is no limit on how far this weapon can fire. Nor is there any limit on the possible AC bonus for range. Once you unleash it, someone or something (but not necessarily your target) is going to have a bad day.</p>
+<h4 id="weapon-specific-notes">Weapon-Specific Notes</h4>
+<h5 id="drop">Drop</h5>
+<p>As the name suggests, this is simply dropping an object. As such, it can only be used to strike targets directly below you, or a bit to the side if there's wind or you're moving horizontally.</p>
+<p>Objects do their base damage if dropped from 20 feet, or twice that if dropped from 40, but no more because of terminal velocity. Unless they are drop-specialized (see flachettes in the projectiles section) which can do up to 4x base damage and have a range increment of 60 feet.</p>
+<h5 id="bows">Bows</h5>
+<p>To produce high rating bows, especially shortbows, it is necessary to bend the ends the opposite direction (recurve) and sometimes to combine multiple materials (composite). These are already factored into the price formulas. Experienced warriors can often estimate the rating of a bow by eye using these clues.</p>
+<h3 id="firearms">Firearms</h3>
+<p>Firearms vary enough to get their own table. For any firearm, select a barrel length, width and style, an action, and as many special features as you like. Firearm weights do not include the weight of ammunition or (for gatling guns) a power source.</p>
+<p>The barrel length must be at least 8 times the barrel width.</p>
+<div class="wide google">
+<p><table><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="0C0" style="width:130px;" class="column-headers-background">A</th><th id="0C1" style="width:100px;" class="column-headers-background">B</th><th id="0C2" style="width:109px;" class="column-headers-background">C</th><th id="0C3" style="width:132px;" class="column-headers-background">D</th><th id="0C4" style="width:132px;" class="column-headers-background">E</th><th id="0C5" style="width:100px;" class="column-headers-background">F</th><th id="0C6" style="width:100px;" class="column-headers-background">G</th><th id="0C7" style="width:140px;" class="column-headers-background">H</th><th id="0C8" style="width:100px;" class="column-headers-background">I</th><th id="0C9" style="width:100px;" class="column-headers-background">J</th></tr></thead><tbody><tr style="height: 20px"><th id="0R0" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">1</div></th><td class="s0 softmerge" dir="ltr"><div class="softmerge-inner" style="width:127px;left:-1px">Barrel Length (feet)</div></td><td class="s0" dir="ltr">Weight</td><td class="s0" dir="ltr">Cost</td><td class="s0" dir="ltr">Available From</td><td class="s0" dir="ltr">Size needed</td><td class="s0 softmerge" dir="ltr"><div class="softmerge-inner" style="width:97px;left:-1px">Range Increment</div></td><td class="s0" dir="ltr">Damage</td><td class="s0" dir="ltr">Strength needed (2h)</td><td class="s0" dir="ltr">Magsize</td><td class="s0"></td></tr><tr style="height: 20px"><th id="0R1" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">2</div></th><td class="s1" dir="ltr">0.25</td><td class="s1" dir="ltr">0.25</td><td></td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr">diminutive</td><td class="s1" dir="ltr">40</td><td class="s2" dir="ltr">4*ammo</td><td class="s1" dir="ltr">12</td><td class="s1" dir="ltr">11</td><td></td></tr><tr style="height: 20px"><th id="0R2" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">3</div></th><td class="s1" dir="ltr">0.5</td><td class="s1" dir="ltr">0.5</td><td></td><td class="s2" dir="ltr">Industrial</td><td class="s2" dir="ltr">tiny</td><td class="s1" dir="ltr">60</td><td class="s2" dir="ltr">6*ammo</td><td class="s1" dir="ltr">10</td><td class="s1" dir="ltr">16</td><td></td></tr><tr style="height: 20px"><th id="0R3" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">4</div></th><td class="s1" dir="ltr">1</td><td class="s1" dir="ltr">1</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr">small</td><td class="s1" dir="ltr">85</td><td class="s2" dir="ltr">8*ammo</td><td class="s1" dir="ltr">8</td><td class="s1">22</td><td></td></tr><tr style="height: 20px"><th id="0R4" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">5</div></th><td class="s1" dir="ltr">2</td><td class="s1" dir="ltr">2</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr">medium</td><td class="s1" dir="ltr">120</td><td class="s2" dir="ltr">12*ammo</td><td class="s1" dir="ltr">6</td><td class="s1" dir="ltr">32</td><td></td></tr><tr style="height: 20px"><th id="0R5" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">6</div></th><td class="s1" dir="ltr">4</td><td class="s1" dir="ltr">4</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr">large</td><td class="s1">170</td><td class="s2" dir="ltr">18*ammo</td><td class="s1" dir="ltr">4</td><td class="s1">44</td><td></td></tr><tr style="height: 20px"><th id="0R6" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">7</div></th><td class="s1" dir="ltr">8</td><td class="s1" dir="ltr">8</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr">huge</td><td class="s1">240</td><td class="s2" dir="ltr">24*ammo</td><td class="s1" dir="ltr">4</td><td class="s1" dir="ltr">64</td><td></td></tr><tr style="height: 20px"><th id="0R7" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">8</div></th><td class="s1" dir="ltr">16</td><td class="s1" dir="ltr">16</td><td></td><td class="s2" dir="ltr">Industrial</td><td class="s2" dir="ltr">gargantuan</td><td class="s1">340</td><td class="s2" dir="ltr">35*ammo</td><td class="s1" dir="ltr">4</td><td class="s1">88</td><td></td></tr><tr style="height: 20px"><th id="0R8" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">9</div></th><td class="s0" dir="ltr">Barrel Style</td><td class="s0" dir="ltr">Weight</td><td class="s0" dir="ltr">Cost</td><td class="s0" dir="ltr">Available From</td><td class="s0" dir="ltr">Muzzle Reload</td><td class="s0 softmerge" dir="ltr"><div class="softmerge-inner" style="width:97px;left:-1px">Range Increment</div></td><td class="s0" dir="ltr">Ammo</td><td></td><td class="s0"></td><td class="s0"></td></tr><tr style="height: 20px"><th id="0R9" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">10</div></th><td class="s2" dir="ltr">Smooth</td><td></td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr">3 rounds</td><td class="s2" dir="ltr">1/4 but long</td><td class="s3 softmerge" dir="ltr"><div class="softmerge-inner" style="width:238px;left:-1px">Ball, bullet or shell</div></td><td class="s4"></td><td class="s4"></td><td></td></tr><tr style="height: 20px"><th id="0R10" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">11</div></th><td class="s2" dir="ltr">Rifled</td><td class="s2" dir="ltr">-</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2 softmerge" dir="ltr"><div class="softmerge-inner" style="width:129px;left:-1px">2 minutes (except Minie Bullet)</div></td><td class="s2" dir="ltr">-</td><td class="s2" dir="ltr">Bullet</td><td></td><td></td><td></td></tr><tr style="height: 20px"><th id="0R11" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">12</div></th><td class="s0" dir="ltr">Barrel Width</td><td class="s0" dir="ltr">Weight</td><td class="s0" dir="ltr">Cost</td><td class="s0" dir="ltr">Available From</td><td class="s0" dir="ltr">Reload Time</td><td class="s0"></td><td class="s0"></td><td class="s0" dir="ltr">Strength needed (2h)</td><td class="s0" dir="ltr">Magsize</td><td class="s0"></td></tr><tr style="height: 20px"><th id="0R12" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">13</div></th><td class="s1" dir="ltr">0.2</td><td class="s2">x 1</td><td></td><td class="s2" dir="ltr">Steam</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr style="height: 20px"><th id="0R13" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">14</div></th><td class="s1" dir="ltr">0.4</td><td class="s2">x 4</td><td></td><td class="s2" dir="ltr">Industrial</td><td></td><td></td><td></td><td class="s2" dir="ltr">+2</td><td class="s2" dir="ltr">/2</td><td></td></tr><tr style="height: 20px"><th id="0R14" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">15</div></th><td class="s1" dir="ltr">0.6</td><td class="s2">x 9</td><td></td><td class="s2" dir="ltr">Industrial</td><td></td><td></td><td></td><td class="s2" dir="ltr">+4</td><td class="s2" dir="ltr">/3</td><td></td></tr><tr style="height: 20px"><th id="0R15" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">16</div></th><td class="s1" dir="ltr">0.8</td><td class="s2">x 16.</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td></td><td></td><td></td><td class="s2" dir="ltr">+6</td><td class="s2" dir="ltr">/4</td><td></td></tr><tr style="height: 20px"><th id="0R16" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">17</div></th><td class="s1" dir="ltr">1</td><td class="s2">x 25</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td></td><td></td><td></td><td class="s2" dir="ltr">+8</td><td class="s2" dir="ltr">/5</td><td></td></tr><tr style="height: 20px"><th id="0R17" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">18</div></th><td class="s1" dir="ltr">2</td><td class="s2">x 100</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr">x2</td><td></td><td></td><td class="s2" dir="ltr">+14</td><td class="s2" dir="ltr">/10</td><td></td></tr><tr style="height: 20px"><th id="0R18" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">19</div></th><td class="s1" dir="ltr">4</td><td class="s2">x 400</td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr">x10</td><td></td><td></td><td class="s2" dir="ltr">+30</td><td class="s2" dir="ltr">/20</td><td></td></tr><tr style="height: 20px"><th id="0R19" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">20</div></th><td class="s1" dir="ltr">6</td><td class="s2">x 900</td><td></td><td class="s2" dir="ltr">Industrial</td><td class="s2" dir="ltr">x20</td><td></td><td></td><td class="s2" dir="ltr">+50</td><td class="s2" dir="ltr">/30</td><td></td></tr><tr style="height: 20px"><th id="0R20" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">21</div></th><td class="s0" dir="ltr">Action</td><td class="s0" dir="ltr">Weight</td><td class="s0" dir="ltr">Cost</td><td class="s0" dir="ltr">Available From</td><td class="s0" dir="ltr" colspan="2">Reload Time</td><td class="s0" dir="ltr" colspan="2">Special</td><td class="s0"></td><td class="s0"></td></tr><tr style="height: 20px"><th id="0R21" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">22</div></th><td class="s2" dir="ltr">Slowmatch</td><td></td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr" colspan="2">Muzzle (3 rounds or 2 minutes, see barrel)</td><td class="s2" dir="ltr" colspan="2">Rain-sensitive, Strain (1m)</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R22" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">23</div></th><td class="s2" dir="ltr">Wheel-lock</td><td></td><td></td><td class="s2" dir="ltr">Gunpowder</td><td class="s2" dir="ltr" colspan="2">5 minutes</td><td class="s5" colspan="2"></td><td></td><td></td></tr><tr style="height: 20px"><th id="0R23" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">24</div></th><td class="s2" dir="ltr">Flint Lock</td><td></td><td></td><td class="s2" dir="ltr">Industrial</td><td class="s2" dir="ltr" colspan="2">Muzzle (3 rounds or 2 minutes, see barrel)</td><td class="s5" colspan="2"></td><td></td><td></td></tr><tr style="height: 20px"><th id="0R24" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">25</div></th><td class="s2" dir="ltr">Interrupted Screw</td><td></td><td></td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">Full Round</td><td class="s2" dir="ltr" colspan="2">Min-barrel 1 in,</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R25" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">26</div></th><td class="s2" dir="ltr">Breach/Cartridge</td><td></td><td></td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">Move Action</td><td class="s2" dir="ltr" colspan="2">Max barrel 1 in</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R26" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">27</div></th><td class="s2" dir="ltr">Revolver</td><td></td><td></td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">Free/Full Round magsize=6</td><td class="s2" dir="ltr" colspan="2">Powder burn, Max barrel 0.6 in</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R27" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">28</div></th><td class="s2" dir="ltr">Gatling</td><td class="s2" dir="ltr">+ 10</td><td></td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">Free (but 100mJ) (max 20/round)</td><td class="s2" dir="ltr" colspan="2">Max barrel 1 in; Allows Spray mode</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R28" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">29</div></th><td class="s2" dir="ltr">Gatling (Improved)</td><td class="s2" dir="ltr">+ 5</td><td></td><td class="s2" dir="ltr">Information</td><td class="s2" dir="ltr" colspan="2">Free (but 100mJ) (max 500/round)</td><td class="s2" dir="ltr" colspan="2">Allows Spray and Burst modes</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R29" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">30</div></th><td class="s2" dir="ltr">Pump</td><td></td><td></td><td class="s2" dir="ltr">Information</td><td class="s2" dir="ltr" colspan="2">Free/Move (max 2/round)</td><td class="s2" dir="ltr" colspan="2">Intimidation</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R30" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">31</div></th><td class="s2" dir="ltr">Semi-Auto</td><td></td><td></td><td class="s2" dir="ltr">Information</td><td class="s2" dir="ltr" colspan="2">Free/Move (max 100/round)</td><td class="s5" colspan="2"></td><td></td><td></td></tr><tr style="height: 20px"><th id="0R31" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">32</div></th><td class="s2" dir="ltr">Full Auto</td><td></td><td></td><td class="s2" dir="ltr">Information</td><td class="s2" dir="ltr" colspan="2">Free/Move (max 100/round)</td><td class="s2" dir="ltr" colspan="2">Allows Spray and Burst modes</td><td></td><td></td></tr><tr style="height: 20px"><th id="0R32" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">33</div></th><td class="s0" dir="ltr">Special Features</td><td class="s0" dir="ltr">Weight</td><td class="s0" dir="ltr">Cost</td><td class="s0" dir="ltr">Available From</td><td class="s0" dir="ltr" colspan="2">Prerequisites</td><td class="s0" dir="ltr" colspan="4">Effect</td></tr><tr style="height: 20px"><th id="0R33" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">34</div></th><td class="s2" dir="ltr">Howitzer Orientation</td><td></td><td class="s6" dir="ltr">×2</td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">Min-barrel 2in</td><td class="s2" dir="ltr" colspan="4">Damage /4, gain arcing</td></tr><tr style="height: 20px"><th id="0R34" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">35</div></th><td class="s3 softmerge" dir="ltr"><div class="softmerge-inner" style="width:228px;left:-1px">Precision Manufacturing</div></td><td class="s4"></td><td class="s7" dir="ltr">×10</td><td class="s2" dir="ltr">Information</td><td class="s5" colspan="2"></td><td class="s2" dir="ltr" colspan="4">Range ×2</td></tr><tr style="height: 20px"><th id="0R35" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">36</div></th><td class="s2 softmerge" dir="ltr"><div class="softmerge-inner" style="width:127px;left:-1px">Decorative Pump Action</div></td><td class="s2" dir="ltr">+0.5</td><td class="s2" dir="ltr">+10</td><td class="s2" dir="ltr">Information</td><td class="s2" dir="ltr" colspan="2">Semi-auto or Full auto</td><td class="s2" dir="ltr" colspan="4">Free intimidation but backfires if knowledge or craft (firearms)</td></tr><tr style="height: 20px"><th id="0R36" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">37</div></th><td class="s2" dir="ltr">Smart Aim</td><td></td><td class="s1">100</td><td class="s2" dir="ltr">Space</td><td class="s5" colspan="2"></td><td class="s2" dir="ltr" colspan="4">+4 Attack</td></tr><tr style="height: 20px"><th id="0R37" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">38</div></th><td class="s2" dir="ltr">Laser Sight</td><td class="s2" dir="ltr">+0.1</td><td class="s2" dir="ltr">+20</td><td class="s2" dir="ltr">Information</td><td class="s5" colspan="2"></td><td class="s2" dir="ltr" colspan="4">+2 Attack, visible</td></tr><tr style="height: 20px"><th id="0R38" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">39</div></th><td class="s2" dir="ltr">Scope</td><td class="s2" dir="ltr">+0.5</td><td class="s2" dir="ltr">+50</td><td class="s2" dir="ltr">Industrial</td><td class="s2" dir="ltr" colspan="2">Min-length 2ft</td><td class="s2" dir="ltr" colspan="4">Can shoot while using telescope at no penalty</td></tr><tr style="height: 20px"><th id="0R39" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">40</div></th><td class="s2" dir="ltr">Bel Fed</td><td></td><td></td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">Gatling, Pump, Semi- or Full-Auto</td><td class="s2" dir="ltr" colspan="4">Unlimited magsize, standard action to ready gun after moving</td></tr><tr style="height: 20px"><th id="0R40" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">41</div></th><td class="s2" dir="ltr">Spray Mode</td><td></td><td class="s2" dir="ltr">+100</td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">Gatling or Full Auto</td><td class="s5" colspan="4"></td></tr><tr style="height: 20px"><th id="0R41" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">42</div></th><td class="s2" dir="ltr">Burst Mode</td><td></td><td class="s2" dir="ltr">+200</td><td class="s2" dir="ltr">Information</td><td class="s2" dir="ltr" colspan="2">Improved Gatling or Full Auto</td><td class="s5" colspan="4"></td></tr><tr style="height: 20px"><th id="0R42" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">43</div></th><td class="s2" dir="ltr">Ugly</td><td></td><td class="s2" dir="ltr">+10</td><td class="s2" dir="ltr">Gunpowder</td><td class="s5" colspan="2"></td><td class="s2" dir="ltr" colspan="4">+2 intimidate, -2 diplomacy when displayed</td></tr><tr style="height: 20px"><th id="0R43" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">44</div></th><td class="s2" dir="ltr">N-barreled (1&lt;N&lt;6)</td><td class="s2" dir="ltr">+(N-1)×80%</td><td class="s2" dir="ltr">+(N-1)×40%</td><td class="s2" dir="ltr">Industrial</td><td class="s2" dir="ltr" colspan="2">Flint lock or breach/cartridge</td><td class="s2" dir="ltr" colspan="4">Swap barrels as free action</td></tr><tr style="height: 20px"><th id="0R44" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">45</div></th><td class="s2" dir="ltr">Multibarrel blast</td><td></td><td class="s2" dir="ltr">+50</td><td class="s2" dir="ltr">Steam</td><td class="s2" dir="ltr" colspan="2">N-barrelled</td><td class="s2" dir="ltr" colspan="4">Fire all loaded barrels, one attack roll</td></tr><tr style="height: 20px"><th id="0R45" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">46</div></th><td class="s2" dir="ltr">Bayonette</td><td class="s2" dir="ltr">+2</td><td class="s2" dir="ltr">+100</td><td class="s2" dir="ltr">Industril</td><td class="s2" dir="ltr" colspan="2">Min-length 1ft</td><td class="s2" dir="ltr" colspan="4">Weapon can be used as a Volge</td></tr></tbody></table></p>
+</div>
+<h4 id="strength-needed-2">Strength Needed</h4>
+<p>This is the strength needed to maintain aim despite recoil. It is not the strength needed to carry the weapon (see carrying rules), nor is it the strength needed to reload the weapon. To reload, the round or magazine must be a light load (i.e.2lbs per point of strength score), but a team may reload a weapon together and add their strength scores.</p>
+<p>The strength listed is for a two handed grip. A strength 3/2 this is needed for primary hand, or twice for off-hand.</p>
+<h4 id="magsize">Magsize</h4>
+<p>The size of the magazine when using an action that uses magazines. Irrelevant otherwise.</p>
+<h4 id="ammo-1">Ammo</h4>
+<p>In addition to being the right type, ammo must be the same size as the barrel width.</p>
+<h4 id="rain-sensitive">Rain-Sensitive</h4>
+<p>Slowmatch based actions are unreliable (50% failure chance) in light rain, and completely non-functional in a downpour.</p>
+<h4 id="strain-1">Strain</h4>
+<p>A slowmatch cannot be left burning (and thus ready to fire) for more than one minute. Such a firearm can be carried loaded escept for this final step, which still requires a standard action (included in the loading time) and two hands.</p>
+<h4 id="powder-burn">Powder Burn</h4>
+<p>A creature who uses a revolver that is of the largest supported size, wielding it in their arms, suffers 2d6 fire damage to their head each time they fire. Smaller revolvers or full-size revolvers on gun stands deal this damage to where the users' head would be -- usually empty air.</p>
+<h4 id="intimidation">Intimidation</h4>
+<p>The wielder of a pump-action firearm may sacrifice one bullet for a +2 bonus on intimidation against creatures who know what firearms are.</p>
+<p>The wielder of a firearm with a decorative pump action may gain the bonus by pretending to sacrifice a bullet, but the bonus becomes a penalty if the target has ranks in knowledge(firearms) or craft(firearm).</p>
+<h4 id="belt-fed">Belt-Fed</h4>
+<p>Note that if the gun is in a vehicle and the enire vehicle moves, this is not a problem. However, forced movement (from, e.g. a bull rush) does require re-readying.</p>
+<h4 id="multi-barrel-blast">Multi-barrel Blast</h4>
+<p>Fire all loaded barrels. Use a single attack roll, but resolve armor separately for all bullets. Strength needed increases by 2 for each barrel after the first.</p>
+<h4 id="bayonette">Bayonette</h4>
+<p>A firearm with a bayonette may be used as a polearm with a final spike and a blade, but only a 2lb head. A 1-4 ft barrel becomes a short-hafted polearm, an 8 ft barrel long-hafted, and a 16 foot barrel very-long-hafted. For the size and strength needed to wield such a weapon, see the Hafted Weapons section. No action is needed to switch the weapon from firearm to melee modes.</p>
+<h3 id="projectile-qualities">Projectile Qualities</h3>
+<div class="wide google">
+<p><table><thead><tr><th class="row-header freezebar-vertical-handle"></th><th id="0C0" style="width:100px;" class="column-headers-background">A</th><th id="0C1" style="width:100px;" class="column-headers-background">B</th><th id="0C2" style="width:100px;" class="column-headers-background">C</th><th id="0C3" style="width:100px;" class="column-headers-background">D</th><th id="0C4" style="width:100px;" class="column-headers-background">E</th><th id="0C5" style="width:100px;" class="column-headers-background">F</th><th id="0C6" style="width:100px;" class="column-headers-background">G</th><th id="0C7" style="width:100px;" class="column-headers-background">H</th><th id="0C8" style="width:100px;" class="column-headers-background">I</th><th id="0C9" style="width:100px;" class="column-headers-background">J</th><th id="0C10" style="width:100px;" class="column-headers-background">K</th><th id="0C11" style="width:100px;" class="column-headers-background">L</th><th id="0C12" style="width:100px;" class="column-headers-background">M</th><th id="0C13" style="width:100px;" class="column-headers-background">N</th></tr></thead><tbody><tr style="height: 20px"><th id="0R0" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">1</div></th><td class="s0" dir="ltr">Projectile</td><td class="s1" dir="ltr">Size</td><td class="s1" dir="ltr">Weight (lb)</td><td class="s1" dir="ltr">Damage</td><td class="s1" dir="ltr">Type</td><td class="s1" dir="ltr">Age</td><td class="s1" dir="ltr">Price</td><td class="s1" dir="ltr">Base Range</td><td class="s1" dir="ltr">Special</td><td></td><td></td><td></td><td></td><td></td></tr><tr><th style="height:3px;" class="freezebar-cell freezebar-horizontal-handle"></th><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td></tr><tr style="height: 20px"><th id="0R1" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">2</div></th><td class="s2" dir="ltr" rowspan="3">Stone</td><td class="s3" dir="ltr">Small</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d2</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Stone</td><td class="s5" dir="ltr">-</td><td class="s4" dir="ltr">20</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R2" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">3</div></th><td class="s3" dir="ltr">Big</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr">1d10</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Stone</td><td class="s5" dir="ltr">-</td><td class="s4" dir="ltr">10</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R3" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">4</div></th><td class="s3" dir="ltr">Bigger</td><td class="s5" dir="ltr">X*5</td><td class="s5" dir="ltr">Xd10</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Stone</td><td class="s3" dir="ltr">X</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R4" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">5</div></th><td class="s2" dir="ltr" rowspan="3">Stone Ball</td><td class="s3" dir="ltr">2</td><td class="s6" dir="ltr">0.5</td><td class="s3" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">10</td><td class="s6" dir="ltr">30</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R5" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">6</div></th><td class="s3" dir="ltr">4</td><td class="s6" dir="ltr">5</td><td class="s3" dir="ltr">1d12</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">10</td><td class="s6" dir="ltr">15</td><td class="s5"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R6" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">7</div></th><td class="s3" dir="ltr">6</td><td class="s6" dir="ltr">15</td><td class="s3" dir="ltr">3d12</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">10</td><td class="s4" dir="ltr">10</td><td class="s5"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R7" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">8</div></th><td class="s7" dir="ltr" colspan="2">Throwing Stick</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">5</td><td class="s4" dir="ltr">50</td><td class="s5" dir="ltr" colspan="2">Melee: Club -2</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R8" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">9</div></th><td class="s7" dir="ltr" colspan="2">Poison Dart</td><td class="s4" dir="ltr">0.01</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">0.1</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr" colspan="2">Drug (Rough)</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R9" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">10</div></th><td class="s2" dir="ltr" rowspan="3">Bolt</td><td class="s3" dir="ltr">Light</td><td class="s4" dir="ltr">0.05</td><td class="s5" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">0.5</td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr" colspan="3">Melee: Stilletto 1 ft blade -4</td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R10" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">11</div></th><td class="s3" dir="ltr">Heavy</td><td class="s4" dir="ltr">0.1</td><td class="s5" dir="ltr">1d8</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">0.5</td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr" colspan="3">Melee: Stilletto 1 ft blade -4</td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R11" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">12</div></th><td class="s3" dir="ltr">Oversize</td><td class="s4" dir="ltr">0.5</td><td class="s5" dir="ltr">2d8</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Stone</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr" colspan="3">Melee: Stilletto 3 ft blade -4</td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R12" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">13</div></th><td class="s7" dir="ltr" rowspan="6">Lead Ball</td><td class="s3" dir="ltr">0.6</td><td class="s3" dir="ltr">0.05</td><td class="s3" dir="ltr">1d4</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Bronze</td><td class="s4" dir="ltr">1</td><td class="s4" dir="ltr">30</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R13" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">14</div></th><td class="s3" dir="ltr">0.8</td><td class="s6" dir="ltr">0.1</td><td class="s3" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Bronze</td><td class="s6" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R14" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">15</div></th><td class="s3" dir="ltr">1</td><td class="s6" dir="ltr">0.2</td><td class="s3" dir="ltr">1d8</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Bronze</td><td class="s6" dir="ltr">2</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R15" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">16</div></th><td class="s3" dir="ltr">2</td><td class="s6" dir="ltr">1.5</td><td class="s3" dir="ltr">1d12</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Bronze</td><td class="s6" dir="ltr">3</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R16" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">17</div></th><td class="s3" dir="ltr">4</td><td class="s6" dir="ltr">15</td><td class="s5" dir="ltr">3d12</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Bronze</td><td class="s4" dir="ltr">30</td><td class="s4" dir="ltr">10</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R17" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">18</div></th><td class="s3" dir="ltr">6</td><td class="s4" dir="ltr">45</td><td class="s5" dir="ltr">9d12</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Bronze</td><td class="s4" dir="ltr">50</td><td class="s4" dir="ltr">10</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R18" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">19</div></th><td class="s7" dir="ltr" colspan="2">Throwing Axe</td><td class="s4" dir="ltr">2</td><td class="s5" dir="ltr">1d8</td><td class="s5" dir="ltr">Slashing</td><td class="s3" dir="ltr">Ironᵃ</td><td class="s4" dir="ltr">40</td><td class="s4" dir="ltr">15</td><td class="s5" dir="ltr" colspan="4">Melee: Short hafted axe -1 (rev)</td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R19" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">20</div></th><td class="s7" dir="ltr" colspan="2">Javelin</td><td class="s4" dir="ltr">2</td><td class="s5" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Ironᵃ</td><td class="s4" dir="ltr">10</td><td class="s4" dir="ltr">30</td><td class="s5" dir="ltr" colspan="3">Melee: Shortspear -1 (rev)</td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R20" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">21</div></th><td class="s7" dir="ltr" colspan="2">Broadhead Arrow</td><td class="s4" dir="ltr">0.05</td><td class="s5" dir="ltr">1d8</td><td class="s5" dir="ltr">Slashing</td><td class="s3" dir="ltr">Ironᵃ</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R21" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">22</div></th><td class="s7" dir="ltr" colspan="2">Bodkin Arrow</td><td class="s4" dir="ltr">0.05</td><td class="s5" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Iron</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R22" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">23</div></th><td class="s7" dir="ltr" colspan="2">Crescent Arrow</td><td class="s4" dir="ltr">0.05</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Iron</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R23" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">24</div></th><td class="s7" dir="ltr" colspan="2">Throwing Knife</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d4</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Iron</td><td class="s4" dir="ltr">10</td><td class="s4" dir="ltr">20</td><td class="s5" dir="ltr" colspan="4">Melee: Fully-Tapered Dagger -1 (rev)</td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R24" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">25</div></th><td class="s7" dir="ltr" colspan="2">Flachette</td><td class="s4" dir="ltr">3</td><td class="s5" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Iron</td><td class="s4" dir="ltr">20</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr" colspan="2">Drop Specialized</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R25" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">26</div></th><td class="s7" dir="ltr" colspan="2">Bomb</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr">1d6</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Gunpowder</td><td class="s4" dir="ltr">50</td><td class="s4" dir="ltr">10</td><td class="s5" dir="ltr" colspan="2">Explodes: 5d6</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R26" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">27</div></th><td class="s2" dir="ltr" rowspan="7">Bullet</td><td class="s3" dir="ltr">0.2</td><td class="s6" dir="ltr">0.005</td><td class="s3" dir="ltr">1d4</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Steam</td><td class="s6" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R27" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">28</div></th><td class="s3" dir="ltr">0.4</td><td class="s6" dir="ltr">0.03</td><td class="s3" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Industrial</td><td class="s6" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R28" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">29</div></th><td class="s3" dir="ltr">0.6</td><td class="s6" dir="ltr">0.1</td><td class="s3" dir="ltr">1d8</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Industrial</td><td class="s6" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R29" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">30</div></th><td class="s3" dir="ltr">0.8</td><td class="s6" dir="ltr">0.3</td><td class="s3" dir="ltr">1d10</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Gunpowder</td><td class="s6" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R30" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">31</div></th><td class="s3" dir="ltr">1</td><td class="s6" dir="ltr">0.5</td><td class="s3" dir="ltr">1d12</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Gunpowder</td><td class="s6" dir="ltr">3</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R31" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">32</div></th><td class="s3" dir="ltr">2</td><td class="s6" dir="ltr">4</td><td class="s3" dir="ltr">4d12</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Gunpowder</td><td class="s6" dir="ltr">10</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R32" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">33</div></th><td class="s3" dir="ltr">4</td><td class="s6" dir="ltr">30</td><td class="s3" dir="ltr">10d12</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Gunpowder</td><td class="s6" dir="ltr">100</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R33" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">34</div></th><td class="s2" dir="ltr" rowspan="4">Minee Bullet</td><td class="s3" dir="ltr">0.4</td><td class="s6" dir="ltr">0.03</td><td class="s3" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Industrial</td><td class="s4" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr">-</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R34" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">35</div></th><td class="s3" dir="ltr">0.6</td><td class="s6" dir="ltr">0.1</td><td class="s3" dir="ltr">1d8</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Industrial</td><td class="s4" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R35" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">36</div></th><td class="s3" dir="ltr">0.8</td><td class="s6" dir="ltr">0.2</td><td class="s3" dir="ltr">1d10</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Industrial</td><td class="s4" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R36" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">37</div></th><td class="s3" dir="ltr">1</td><td class="s6" dir="ltr">0.4</td><td class="s3" dir="ltr">1d12</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Industrial</td><td class="s4" dir="ltr">1</td><td class="s4" dir="ltr"></td><td class="s5" dir="ltr">-</td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R37" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">38</div></th><td class="s2" dir="ltr" rowspan="6">Cannister Shell</td><td class="s3" dir="ltr">0.6</td><td class="s4" dir="ltr">0.03</td><td class="s3" dir="ltr">1d3 or 1d2/4</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Steam</td><td class="s6" dir="ltr">1</td><td class="s5"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Spread, Double Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R38" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">39</div></th><td class="s3" dir="ltr">0.8</td><td class="s4" dir="ltr">0.06</td><td class="s3" dir="ltr">1d4 or 1d2/2</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Steam</td><td class="s6" dir="ltr">1</td><td class="s5"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Spread, Double Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R39" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">40</div></th><td class="s3" dir="ltr">1</td><td class="s6" dir="ltr">0.1</td><td class="s3" dir="ltr">1d6 or 1d2</td><td class="s5" dir="ltr">Piercing</td><td class="s3" dir="ltr">Steam</td><td class="s6" dir="ltr">1</td><td class="s5"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Spread, Double Armor Effect</div></td><td class="s10" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R40" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">41</div></th><td class="s3" dir="ltr">2</td><td class="s6" dir="ltr">1</td><td class="s3" dir="ltr">1d10 or 1d4</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Industrial</td><td class="s6" dir="ltr">5</td><td class="s5"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Spread, Double Armor Effect</div></td><td class="s10" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R41" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">42</div></th><td class="s3" dir="ltr">4</td><td class="s6" dir="ltr">8</td><td class="s3" dir="ltr">2d10 or 1d8</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Industrial</td><td class="s4" dir="ltr">40</td><td class="s5"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Spread, Double Armor Effect</div></td><td class="s10" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R42" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">43</div></th><td class="s3" dir="ltr">6</td><td class="s4" dir="ltr">27</td><td class="s3" dir="ltr">6d12 or 1d12</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Industrial</td><td class="s4" dir="ltr">60</td><td class="s5"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Spread, Double Armor Effect</div></td><td class="s10" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R43" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">44</div></th><td class="s2" dir="ltr" rowspan="5">Explosive Shell</td><td class="s3" dir="ltr">0.8</td><td class="s6" dir="ltr">0.05</td><td class="s3" dir="ltr">1d4</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s3" dir="ltr">Information</td><td class="s6" dir="ltr">100</td><td class="s5"></td><td class="s3" dir="ltr">Explodes: 2d4</td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R44" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">45</div></th><td class="s3" dir="ltr">1</td><td class="s6" dir="ltr">0.1</td><td class="s3" dir="ltr">1d6</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s3" dir="ltr">Information</td><td class="s6" dir="ltr">100</td><td class="s5"></td><td class="s3" dir="ltr">Explodes: 2d6</td><td class="s5" dir="ltr"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R45" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">46</div></th><td class="s3" dir="ltr">2</td><td class="s6" dir="ltr">0.5</td><td class="s3" dir="ltr">1d8</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Steam</td><td class="s6" dir="ltr">50</td><td></td><td class="s3" dir="ltr">Explodes: 3d6</td><td></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R46" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">47</div></th><td class="s3" dir="ltr">4</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr">1d12</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Steam</td><td class="s4" dir="ltr">100</td><td class="s5"></td><td class="s5" dir="ltr" colspan="2">Explodes: 20d6</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R47" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">48</div></th><td class="s3" dir="ltr">6</td><td class="s4" dir="ltr">15</td><td class="s5" dir="ltr">3d12</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Steam</td><td class="s4" dir="ltr">200</td><td class="s5"></td><td class="s5" dir="ltr" colspan="2">Explodes: 60d6</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R48" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">49</div></th><td class="s7" dir="ltr" colspan="2">Grenade (Concussive)</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Steam</td><td class="s4" dir="ltr">20</td><td class="s4" dir="ltr">20</td><td class="s5" dir="ltr" colspan="2">Explodes: 10d6</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R49" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">50</div></th><td class="s7" dir="ltr" colspan="2">Grenade (Fragmentation)</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Information</td><td class="s4" dir="ltr">30</td><td class="s4" dir="ltr">20</td><td class="s5" dir="ltr" colspan="4">Explodes: 7d6 + Piercing 7d6</td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R50" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">51</div></th><td class="s7" dir="ltr" colspan="2">Grenade (Smoke)</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Information</td><td class="s4" dir="ltr">30</td><td class="s4" dir="ltr">20</td><td class="s5" dir="ltr" colspan="4">Explodes: 1d6 + Smoke 20ft 5rounds</td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R51" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">52</div></th><td class="s7" dir="ltr" colspan="2">Grenade (Flashbang)</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Information</td><td class="s4" dir="ltr">30</td><td class="s4" dir="ltr">20</td><td class="s5" dir="ltr" colspan="5">Explodes: 1d6 + fort 20 blind (20ft); stun</td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R52" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">53</div></th><td class="s7" dir="ltr" colspan="2">Grenade (Incendiary)</td><td class="s4" dir="ltr">1</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Bludgeoning</td><td class="s5" dir="ltr">Information</td><td class="s4" dir="ltr">30</td><td class="s4" dir="ltr">20</td><td class="s5" dir="ltr" colspan="6">Explodes: 1d6 + 3d6 fire for 3 rounds (10 ft) + ignite</td></tr><tr style="height: 20px"><th id="0R53" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">54</div></th><td class="s2" dir="ltr" rowspan="7">Armor Piercing Bullet</td><td class="s3" dir="ltr">0.2</td><td class="s6" dir="ltr">0.02</td><td class="s3" dir="ltr">1d2</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">5</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Half Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R54" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">55</div></th><td class="s3" dir="ltr">0.4</td><td class="s6" dir="ltr">0.1</td><td class="s3" dir="ltr">1d4</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">5</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Half Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R55" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">56</div></th><td class="s3" dir="ltr">0.6</td><td class="s6" dir="ltr">0.4</td><td class="s3" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">5</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Half Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R56" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">57</div></th><td class="s3" dir="ltr">0.8</td><td class="s6" dir="ltr">1</td><td class="s3" dir="ltr">1d8</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">5</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Half Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R57" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">58</div></th><td class="s3" dir="ltr">1</td><td class="s6" dir="ltr">2</td><td class="s3" dir="ltr">1d10</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">10</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Half Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R58" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">59</div></th><td class="s3" dir="ltr">2</td><td class="s6" dir="ltr">10</td><td class="s3" dir="ltr">3d12</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">50</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Half Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R59" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">60</div></th><td class="s3" dir="ltr">4</td><td class="s6" dir="ltr">40</td><td class="s3" dir="ltr">8d12</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">500</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Half Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R60" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">61</div></th><td class="s2" dir="ltr" rowspan="4">Hollow-Point Bullet</td><td class="s3" dir="ltr">0.2</td><td class="s6" dir="ltr">0.005</td><td class="s3" dir="ltr">1d6</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">2</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Double Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R61" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">62</div></th><td class="s3" dir="ltr">0.4</td><td class="s6" dir="ltr">0.03</td><td class="s3" dir="ltr">1d8</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">2</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Double Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R62" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">63</div></th><td class="s3" dir="ltr">0.6</td><td class="s6" dir="ltr">0.1</td><td class="s3" dir="ltr">1d10</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">2</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Double Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R63" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">64</div></th><td class="s3" dir="ltr">0.8</td><td class="s6" dir="ltr">0.3</td><td class="s3" dir="ltr">1d12</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s6" dir="ltr">2</td><td class="s4" dir="ltr"></td><td class="s8 softmerge" dir="ltr"><div class="softmerge-inner" style="width:198px;left:-1px">Double Armor Effect</div></td><td class="s9" dir="ltr"></td><td class="s9"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R64" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">65</div></th><td class="s7" dir="ltr" colspan="2">Styringe Dart</td><td class="s4" dir="ltr">0.01</td><td class="s5" dir="ltr">1d3</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Information</td><td class="s4" dir="ltr">5</td><td class="s4" dir="ltr">5</td><td class="s5" dir="ltr" colspan="2">Drug (precise)</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R65" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">66</div></th><td class="s7" dir="ltr" colspan="2">Coherent Light</td><td class="s4" dir="ltr">0</td><td class="s5" dir="ltr">1d10</td><td class="s5" dir="ltr">Fire</td><td class="s5" dir="ltr">Space</td><td class="s4" dir="ltr">0</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr><tr style="height: 20px"><th id="0R66" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">67</div></th><td class="s7" dir="ltr" colspan="2">Plasma Burst</td><td class="s4" dir="ltr">0</td><td class="s5" dir="ltr">1d12</td><td class="s5" dir="ltr">Piercing</td><td class="s5" dir="ltr">Galactic</td><td class="s4" dir="ltr">0</td><td class="s5"></td><td class="s5" dir="ltr" colspan="2">Burn: 1d12 fire</td><td class="s5"></td><td class="s5"></td><td class="s5"></td><td class="s5"></td></tr></tbody></table></p>
+</div>
+<p>ᵃ Throwing Axes, Javelins and Broadhead Arrows listed here are iron-tipped. Flint-tipped (-2 on attack rolls) versions are available from the stone age, and copper (-1 on attack rolls, 3x price) and bronze (10x price) versions are available in the Stone and Bronze ages respectively.</p>
+<p>For projectiles fired from firearms, an equal weight of propelent and accoutrema is required, so the &quot;carrying weight&quot; of the ammunition is twice the weight of the projectile itself (shown here).</p>
+<p>Recall that damage should be interpreted in the context of the weapons table.</p>
+<p>Also note that the “damage” for grenades is the damage they deal by striking the enemy, which is little more than insult added to the injury of the explosion.</p>
+<p>Special Abilities:</p>
+<h4 id="melee">Melee</h4>
+<p>This ammunition can be used as a specific melee weapon, albeit at a small penalty to attacks. If the melee is marked &quot;rev&quot;, this also applies in reverse, and a melee weapon of this description can be used as ammunition at the same penalty.</p>
+<h4 id="spread">Spread</h4>
+<p>Cannister behaves differently depending on the range to the target as a multiple of the <em>barrel length</em>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Multiple</th>
+<th>Effect on Medium Targets</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0-30x</td>
+<td>Normal Effect</td>
+</tr>
+<tr class="even">
+<td>30-60x</td>
+<td>Hits are normal, misses by less than 5 deal half-damage</td>
+</tr>
+<tr class="odd">
+<td>60-120x</td>
+<td>Area-effect in a 5 ft wide line, lesser damage</td>
+</tr>
+<tr class="even">
+<td>120-240x</td>
+<td>Area-effect in a 15 ft wide line, 1/3 of lesser damage</td>
+</tr>
+<tr class="odd">
+<td>&gt;240x</td>
+<td>Deals no damage</td>
+</tr>
+</tbody>
+</table>
+<p>For each size category larger the target is, double all distances except for the no damage threshold. Similarly for smaller creatures, halve them, adding rows as needed, if the creatures' positions are being tracked with sub-square resolution.</p>
+<p>Note that the double-armor-effect property cannister also has is not dependant on range.</p>
+<h4 id="burn">Burn</h4>
+<p>In addition to main damage, this projectile deals this much fire damage.</p>
+<p>Note that while base damage may be multiplied (by the weapon's rating for a blaster), burn damage is not.</p>
+<h4 id="double-armor-effect">Double armor effect</h4>
+<p>When reducing damage for armor, double the armor's effectiveness. Also double the damage expended when calculating blowthrough.</p>
+<h4 id="drop-specialized">Drop Specialized</h4>
+<p>When this projectile is dropped, it has a maximum damage of 5 times base (from a height of 100 feet) and a range increment of 50 feet.</p>
+<h4 id="drug-precision">Drug (Precision)</h4>
+<p>This projectile can be used to deliver a drug or poison. If the projectile does damage, it also delivers the drug.</p>
+<p>A simple poison dart deals a rough dosage, whereas a syringe deals a precise one. See the drug rules.</p>
+<h4 id="explodes">Explodes</h4>
+<p>After impacting, this projectile explodes for the damage shown. Note that this is not part of the ammo's own damage, and is not multiplied.</p>
+<p>If the base damage gets past armor and does not overpenetrate, the explosion occurs <em>inside</em> the target, for triple damage.</p>
+<h1 id="armor">Armor</h1>
+<p>Armor comes in four varieties: fabric (including gambeson, leather and glued hides), chain, scale (including lamelar and brigandine) and plate. It covers six body parts: four limbs, torso and head (adjust for non-humanoids as needed). You can mix and match (and layer) as you choose.</p>
+<h2 id="armor-properties">Armor Properties</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">.</th>
+<th align="right">Fabric</th>
+<th align="right">Chain</th>
+<th align="right">Scale</th>
+<th align="right">Plate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">DR against Piercing</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td align="right">10</td>
+</tr>
+<tr class="even">
+<td align="left">DR against Slashing</td>
+<td align="right">2</td>
+<td align="right">20</td>
+<td align="right">20</td>
+<td align="right">20</td>
+</tr>
+<tr class="odd">
+<td align="left">DR against Bludgeoning</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">AC Bonus against “strike around”</td>
+<td align="right">8</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">8</td>
+</tr>
+<tr class="odd">
+<td align="left">Weight (limb or helmet)</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td align="left">Weight (torso)</td>
+<td align="right">4</td>
+<td align="right">8</td>
+<td align="right">8</td>
+<td align="right">12</td>
+</tr>
+<tr class="odd">
+<td align="left">Weight (full suit)</td>
+<td align="right">14</td>
+<td align="right">28</td>
+<td align="right">28</td>
+<td align="right">42</td>
+</tr>
+<tr class="even">
+<td align="left">Armor Check Penalty</td>
+<td align="right">0</td>
+<td align="right">-1</td>
+<td align="right">-2</td>
+<td align="right">-3</td>
+</tr>
+<tr class="odd">
+<td align="left">Cost</td>
+<td align="right">100</td>
+<td align="right">200</td>
+<td align="right">300</td>
+<td align="right">1000</td>
+</tr>
+<tr class="even">
+<td align="left">Available from</td>
+<td align="right">Stone</td>
+<td align="right">Iron</td>
+<td align="right">Bronze</td>
+<td align="right">Bronze/Spinning</td>
+</tr>
+</tbody>
+</table>
+<p>Plate armor for head and torso is available from the Bronze Age, but for the limbs only becomes available in the Spinning Age.</p>
+<h2 id="sizing">Sizing</h2>
+<p>These rules are for medium creatures. Multiple or divide weight and cost by 4 for every size category away a creature is.</p>
+<h2 id="spot-and-listen-penalties">Spot and Listen Penalties</h2>
+<p>Head armor gives a penalty to spot/listen checks equal to its Armor Class Bonus minus 2 (minimum 0). You may construct head armor with a lower ACB if you wish.</p>
+<div class="captioned">
+<p><img src="helmets.png" alt="Styles of Helmet" /> Three styles of steel plate helmets, with their associated AC bonuses and perception penalties. They are sometimes refered to as &quot;open face&quot;, &quot;half-closed&quot; and &quot;full-pot&quot;. In between levels also exist.</p>
+</div>
+<h2 id="weight-1">Weight</h2>
+<p>The most armor you can wear is 3 lbs per point of strength score. Each pound beyond this gives a -1 to all physical skill checks and to attack rolls. This is <em>separate</em> from limits on how much ordinary gear you can carry. (Some campaigns won't want to track that at all, but those that do should use 2lbs per strength. A character who wears the maximum available armor and takes it off and carries that same armor <em>should</em> take overburdening penalties.)</p>
+<h2 id="armor-check-penalty">Armor Check Penalty</h2>
+<p>Take this penalty to all physical actions involving the body part in question. If multiple body parts are used, take the highest ACP.</p>
+<p>Every point of penalty to leg-based motions (whether ACP or weight) reduces base speed by 1 ft/rnd, to a minimum of 5.</p>
+<h2 id="stacking-armor">Stacking armor</h2>
+<p>You may wear multiple layers of armor. Add the DRs and Weights. Add the ACPs and add one for every layer after the first. (Extra thick armor can be modeled as layering identical armors.)</p>
+<p>Take the highest Armor Class Bonus <em>unless</em> you are stacking fabric and non-fabric armors. In that case, take the highest non-fabric bonus, but attacks around armor still take the fabric's DR.</p>
+<h2 id="exotic-materials-2">Exotic Materials</h2>
+<p><strong>Bronze</strong> (chain, scale or plate): x10 cost (Availability: Bronze Age)</p>
+<p><strong>Kevlar</strong> (fabric only): +10 DR against projectiles (Availability: Information Age)</p>
+<p><strong>Titanium</strong> (chain, scale or plate): ½ weight (Availability: Information Age)</p>
+<p><strong>Silicon Carbide</strong> (scale or plate): 1/3 weight, x5 cost (Availability: Information Age)</p>
+<p><strong>Aluminum Oxide</strong> (plate only): No spot penalty in helmet (Availability: Space Age)</p>
+<p><strong>Carbon Nanoweave</strong> (fabric only): DR against piercing and slashing becomes 8 (Availability: Space Age)</p>
+<p><strong>Mithril</strong> (chain, scale or plate): ½ weight, ACP-1 (Availability: high-magic settings)</p>
+<p><strong>Monstrous Hide</strong> (fabric or scale by creature): 3/4 DR of monster, except bludgeoning for scale armor which maxes at 2. Double weight. (A creature provides enough hide for torso armor or two non-torso pieces, or a full suit one size category smaller)</p>
+<h1 id="feats">Feats</h1>
+<p><strong>Combat Reflexes:</strong> Gain reactions per round equal to your dex mod (if positive). If your dex mode changes during a round, resolve this as benefits you.</p>
+<p><strong>Power Attack:</strong> You may voluntarily take a penalty on attacks up to your BAB to gain a matching bonus on damage, or twice that as a bonus for a <em>swinging</em> two-handed weapon.</p>
+<p><strong>Dodge:</strong> For you, there is a skill Dodge(dex) which is always a class skill. Use it instead of a raw dex roll on dodge checks. Furthermore, Dodge grants a synergy bonus to parry rolls.</p>
+<p><strong>Half-Swording:</strong> You may wield any blade longer than a dagger in both hands and it gains the gap-finding property. If the weapon had reach, it no longer does.</p>
+<p><strong>Murder-Stroke:</strong> You may wield any blade longer than a shortsword as a two-handed bludgeoning swinging weapon that deals 1d6 damage.</p>
+<p><strong>Machine Gunner:</strong> You may use any firearm with spray mode in two other ways: as if it were burst mode, or as if it were a cannister round with a spread-range of 100ft (lesser damage equal to original damage, greater equal to original times half rounds fired),</p>
+</body>
+</html>
