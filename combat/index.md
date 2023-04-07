@@ -50,9 +50,9 @@ Some actions (such as drawing a weapon from a sheath) cost five feet of movement
 
 Reactions include attacks of opportunity, parries and dodges.
 
-To parry, roll an attack with a parrying weapon and add half the result to AC.  Bonuses for using a weapon in a specific way (e.g. slashing with a fore-bulging weapon) don't apply here, but the double-polearm bonus of a trident or symmetric fork does, as does Weapon Focus or similar.
+To parry, roll an attack with a parrying weapon and add half the result to AC.  Bonuses for using a weapon in a specific way (e.g. slashing with a fore-bulging weapon) don't apply here, but the double-polearm bonus of a trident or symmetric fork does, as does Weapon Focus or similar.  Only melee attacks to be parried (without a special feat).
 
-Dodges are simple dex rolls, again adding half.
+Dodges are simple dex rolls, again adding half.  Only melee and pre-gunpowder attacks can be dodged.
 
 You get one reaction per round, resetting at the beginning of your turn.  You can use a reaction during a reaction.
 
@@ -312,27 +312,27 @@ While melee weapons are mostly fixed by the late iron age, ranged weapons develo
 ### Weapon Qualities
 
 <div class=wide>
-Weapon | Ammo | Damage | Range | Reload Time | Complexity | Availability | Hands | Strength Needed | Weight | Cost | Special
--|-|-|-|-|-|-|-|-|-|-|-
-Throw | Any with Range | ammo+strm | ammo×(str/10) | n/a | Simple | Stone | 1 | weight×2 | 0 | 0 | Arcing
-Drop | Any with Range | ammo×min(height/20',2) | 20 | n/a | Simple | Stone | 1 | weight/6 | 0 | 0 | unlimited range, swift -10, head
-Atlalt | Javelin | ammo+strm | 2×ammo×(str/10) | Free Action | Martial | Stone | 2/1 | 6 | 1 | 1 | 
-Sling | Stone, Ball, Grenade or Bomb | ammo+strm | 3×ammo×(str/10) | Move Action | Martial | Stone | 2/1 | weight×3 | 0.01 | 1 | Risky, Arcing
-Slingstaff | Stone, Ball, Grenade or Bomb | ammo+1.5×strm | 3×ammo×(str/10) | Move Action | Simple | Stone | 2 | weight×2 | 1 | 2 | 
-Long Bow | Arrow | ammo+rating | 100+5×rating | Free Action | Martial | Stone | 2 | rating+10 | 3 | 10+rating^2/5 | Standing, Arcing
-Short Bow | Arrow | ammo+rating | 100+5×rating | Free Action | Martial | Stone | 2 | rating+10 | 2 | 30+rating^2/10 |  | Arcing
-Blow-Pipe | Dart | ammo | 30 | Move Action | Simple | Stone | 2/1 | 3 | 0.01 | 10 | Handless -2
-Onager | 5 lb Stone or Ball  | 5×ammo | 100 | 4 minutes | Martial | Iron | n/a | 12(reload) | 1000 | 200 | Long, Aim During Reload, Strain, Arcing
-Goatsfoot Crossbow | Bolt (light or heavy) | 2×ammo | 80 | 2 rounds | Simple | Iron | 2/1 | 12(reload) | 4 | 20 | Strain
-Windlass Crossbow | Bolt (light or heavy) | 3×ammo | 100 | 5 rounds | Simple | Iron | 2/1 | 8(reload) | 5 | 30 | Strain
-Trebuchet | 5-10 lb Stone, Ball or Bomb | 7×ammo | 120 | 2 minutes | Martial | Spinning | n/a | 12(reload) | 2000 | 400 | Long, Aim During Reload, Assembly Required, Arcing
-Ballista | Oversize Bolt | 5×ammo | 120 | 2 minutes | Martial | Iron | str | 12;33 | 32 | 200 | Strain
-Firearm | *See* | *Separate* | *Table*
-Grenade Launcher | Grenade | 2×ammo | 100 | Move Action | Martial | Information | 2 | 12 | 3 | 50 | Long
-Underslung Grenade Launcher | Grenade | 2×ammo | 80 | Move Action | Martial | Information | n/a | 12 | 2 | 50 | Long. Attaches to Firearm
-Dart Gun | Dart | 2×ammo | 80 | Free Action | Simple | Information | 1 | 3 | 2 | 20 | 
-Laser | Coherent Light | rating×ammo | 500 | Free Action | Simple | Space | 1 | 6 | rating + power source | 100 | Unlimited Range, Energy Cost: rating, Auto-aim
-Blaster | Plasma Blast | rating×ammo | 300 | Free Action | Simple | Star | 1 | 6 | rating/2 + power source | 70 | Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim
+Weapon | Ammo | Damage | Range | Reload Time | Complexity | Availability | Hands | Strength Needed | Weight | Length | Cost | Special
+-|-|-|-|-|-|-|-|-|-|-|-|-
+Throw | Any with Range | ammo+strm | ammo×(str/10) | n/a | Simple | Stone | 1 | weight×2 | 0 | 0 | 0 | Arcing, Ready
+Drop | Any with Range | ammo×min(height/20',2) | 20 | n/a | Simple | Stone | 1 | weight/6 | 0 | 0 | 0 | unlimited range, swift -10, head
+Atlalt | Javelin | ammo+strm | 2×ammo×(str/10) | Free Action | Martial | Stone | 2/1 | 6 | 1 | 2 | 1 | 
+Sling | Stone, Ball, Grenade or Bomb | ammo+strm | 3×ammo×(str/10) | Move Action | Martial | Stone | 2/1 | weight×3 | 0.01 | 0 | 1 | Risky, Arcing
+Slingstaff | Stone, Ball, Grenade or Bomb | ammo+1.5×strm | 3×ammo×(str/10) | Move Action | Simple | Stone | 2 | weight×2 | 2 | 1 | 2 | 
+Long Bow | Arrow | ammo+rating | 100+5×rating | Free Action | Martial | Stone | 2 | rating+10 | 3 | 0 | 10+rating^2/5 | Standing, Arcing
+Short Bow | Arrow | ammo+rating | 100+5×rating | Free Action | Martial | Stone | 2 | rating+10 | 2 | 0 | 30+rating^2/10 |  | Arcing
+Blow-Pipe | Dart | ammo | 30 | Move Action | Simple | Stone | 2/1 | 3 | 0.01 | 1 | 10 | Handless -2, Ready
+Onager | 5 lb Stone or Ball  | 5×ammo | 100 | 4 minutes | Martial | Iron | n/a | 12(reload) | 1000 | 15 | 200 | Long, Aim During Reload, Strain, Arcing
+Goatsfoot Crossbow | Bolt (light or heavy) | 2×ammo | 80 | 2 rounds | Simple | Iron | 2/1 | 12(reload) | 4 | 2 | 20 | Strain, Ready
+Windlass Crossbow | Bolt (light or heavy) | 3×ammo | 100 | 5 rounds | Simple | Iron | 2/1 | 8(reload) | 5 | 2 | 30 | Strain, Ready
+Trebuchet | 5-10 lb Stone, Ball or Bomb | 7×ammo | 120 | 2 minutes | Martial | Spinning | n/a | 12(reload) | 2000 | 20 | 400 | Long, Aim During Reload, Assembly Required, Arcing
+Ballista | Oversize Bolt | 5×ammo | 120 | 2 minutes | Martial | Iron | str | 12;33 | 32 | 10 | 200 | Strain
+Firearm | *See* | *Separate* | *Table* | | Simple | | | | | | | Ready
+Grenade Launcher | Grenade | 2×ammo | 100 | Move Action | Martial | Information | 2 | 12 | 3 | 1 | 50 | Long
+Underslung Grenade Launcher | Grenade | 2×ammo | 80 | Move Action | Martial | Information | n/a | 12 | 2 | N/A | 50 | Long. Attaches to Firearm
+Dart Gun | Dart | 2×ammo | 80 | Free Action | Simple | Information | 1 | 3 | 2 | 2 | 20 | Ready
+Laser | Coherent Light | rating×ammo | 500 | Free Action | Simple | Space | 1 | 6 | rating + power source | Varies | 100 | Unlimited Range, Energy Cost: rating, Auto-aim, Ready
+Blaster | Plasma Blast | rating×ammo | 300 | Free Action | Simple | Star | 1 | 6 | rating/2 + power source | 1 | 70 | Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim, Ready
 </div>
 
 #### Ammo
@@ -374,6 +374,10 @@ Strength score needed to wield the weapon.  If marked “(reload)” this streng
 #### Weight
 
 In pounds.  Does not include ammunition.  For energy weapons, the weight of the power source is not included (see power sources, chapter ???).
+
+#### Length
+
+If the length of a weapon equals or exceeds 40% the width of the available space, the wielder suffers a -2 Close Quarters Penalty on attacks and loses the benefits of Ready.  The penalty can be negated by adopting a Shooting Stance (which also gives its usual bonus).
 
 #### Cost
 
@@ -425,6 +429,10 @@ This weapon allows you to make attacks at up to 10 range increments (albeit at a
 
 This weapon (an underslung grenade launcher) cannot be used separately, but can be attached to any firearm with at least a one foot barrel.
 
+##### Ready
+
+For a character who is carrying a loaded Ready weapon, is not suffering a Close Quarters penalty, and has only taken a move action the preceeding turn, anyone becoming visible within 5 range incremens provokes an attack of opportunity.
+
 ##### Risky
 
 This weapon (a sling) has a chance of striking you.  If your total attack roll is less than 5, you hit your own leg (the same side of your body as the sling).
@@ -466,6 +474,8 @@ To produce high rating bows, especially shortbows, it is necessary to bend the e
 Firearms vary enough to get their own table.  For any firearm, select a barrel length, width and style, an action, and as many special features as you like.  Firearm weights do not include the weight of ammunition or (for gatling guns) a power source.
 
 The barrel length must be at least 8 times the barrel width.
+
+All firearms have the Ready property.
 
 <div class="wide google">
 %%firearms%%
@@ -589,9 +599,9 @@ DR against Piercing | 2 | 2 | 10 | 10
 DR against Slashing | 2 | 20 | 20 | 20
 DR against Bludgeoning | 4 | 0 | 2 | 4
 AC Bonus against “strike around” | 8 | 2 | 4 | 8
-Weight (limb or helmet) | 2 | 4 | 4 | 6
-Weight (torso) | 4 | 8 | 8 | 12
-Weight (full suit) | 14 | 28 | 28 | 42
+Weight (limb or helmet) | 2 | 4 | 8 | 6
+Weight (torso) | 4 | 8 | 16 | 12
+Weight (full suit) | 14 | 28 | 56 | 42
 Armor Check Penalty  | 0 | -1 | -2 | -3
 Cost | 100 | 200 | 300 | 1000
 Available from | Stone | Iron | Bronze | Bronze/Spinning
@@ -635,7 +645,7 @@ Take the highest Armor Class Bonus *unless* you are stacking fabric and non-fabr
 
 **Titanium** (chain, scale or plate): ½ weight (Availability: Information Age)
 
-**Silicon Carbide** (scale or plate): 1/3 weight, x5 cost (Availability: Information Age)
+**Silicon Carbide** (scale only): 1/3 weight, x5 cost (Availability: Information Age)
 
 **Aluminum Oxide** (plate only): No spot penalty in helmet (Availability: Space Age)
 
