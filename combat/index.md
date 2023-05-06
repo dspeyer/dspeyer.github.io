@@ -58,7 +58,7 @@ You get one reaction per round, resetting at the beginning of your turn.  You ca
 
 ## Critical Hits
 
-Exceeding AC by five makes a crit, by 10 a double-crit, etc.  Crits deal 1.5x damage for bludgeoning, 2x for slashing and 2.5x for piercing, with the multiplier increasing by 0.5 for each additional level of crit.
+Exceeding AC by five makes a crit, by 10 a double-crit, etc.  Crits deal +25% damage for bludgeoning, +50% for slashing and +75% for piercing.  Double these percentages for a double-crit, etc.
 
 There is no concept of critical failure, though some weapons do special things if an attack roll is low enough.  For these weapons, it is important to distinguish an ac bonus from an attack penalty.
 
@@ -525,6 +525,20 @@ Fire all loaded barrels.  Use a single attack roll, but resolve armor separately
 
 A firearm with a bayonette may be used as a polearm with a final spike and a blade, but only a 2lb head.  A 1-4 ft barrel becomes a short-hafted polearm, an 8 ft barrel long-hafted, and a 16 foot barrel very-long-hafted.  For the size and strength needed to wield such a weapon, see the Hafted Weapons section.  No action is needed to switch the weapon from firearm to melee modes.
 
+#### Gun Mounts
+
+If a gun is too big or strong to fire from one's hands, it can still be used from a gun mount.  Mounts either add to or replace your strength, and often come with special restrictions:
+
+Mount | Str | Length Enabled | Time to Set Up | Weight | Special
+-|-|-|-|-|-
+Bipod | +4 | x2 | Move Action | 1 |
+Tripod        | +8 | x4 | 1 round | 2 |
+Heavy Tripod  | 30 | 8 | 1 minute | 50 |
+Bolted Tripod | 60 | 8  | 10 minutes | 10 | Floor must have bolt holes
+Turret        | substrate | unlimited | 8 hours | 100 | Must attach to a secure substrate
+Polearm | +2 | x2 | 1 round | 3 or more | Must have short haft and side spike, blade or forward hook
+Ground | +2 | x2 | free | 0 | Must be prone
+
 ### Projectile Qualities
 
 <div class="wide google">
@@ -599,9 +613,9 @@ DR against Piercing | 2 | 2 | 10 | 10
 DR against Slashing | 2 | 20 | 20 | 20
 DR against Bludgeoning | 4 | 0 | 2 | 4
 AC Bonus against “strike around” | 8 | 2 | 4 | 8
-Weight (limb or helmet) | 2 | 4 | 8 | 6
-Weight (torso) | 4 | 8 | 16 | 12
-Weight (full suit) | 14 | 28 | 56 | 42
+Weight (limb or helmet) | 1 | 4 | 8 | 6
+Weight (torso) | 2 | 8 | 16 | 12
+Weight (full suit) | 7 | 28 | 56 | 42
 Armor Check Penalty  | 0 | -1 | -2 | -3
 Cost | 100 | 200 | 300 | 1000
 Available from | Stone | Iron | Bronze | Bronze/Spinning
@@ -637,23 +651,55 @@ You may wear multiple layers of armor.  Add the DRs and Weights.  Add the ACPs a
 
 Take the highest Armor Class Bonus *unless* you are stacking fabric and non-fabric armors.  In that case, take the highest non-fabric bonus, but attacks around armor still take the fabric's DR.  
 
+## Other damage types
+
+For heat or cold, armor protects as against piercing for the first round, but does not protect in subsequent rounds (unless made of Nomex, see Exotic Materials).
+
+For electricity, metal armor protects completely and non-metal armor protects as against bludgeoning.
+
+Armor does not protect against sonic damage.
+
+Impacts with things larger than oneself (including the ground and explosive shockwaves) are bludgeoning but armor counts for half against them.
+
 ## Exotic Materials
 
 **Bronze** (chain, scale or plate): x10 cost (Availability: Bronze Age)
 
-**Kevlar** (fabric only): +10 DR against projectiles (Availability: Information Age)
+**Kevlar** (fabric only): non-stacking +10 DR against projectiles (Availability: Information Age)
 
-**Titanium** (chain, scale or plate): ½ weight (Availability: Information Age)
+**Titanium** (chain, scale or plate): 3/4 weight, x2 cost (Availability: Information Age)
 
 **Silicon Carbide** (scale only): 1/3 weight, x5 cost (Availability: Information Age)
 
 **Aluminum Oxide** (plate only): No spot penalty in helmet (Availability: Space Age)
+
+**Nomex** (fabric only): Adds 5 rounds (stacking) to the time that armor protects against heat or cold
 
 **Carbon Nanoweave** (fabric only): DR against piercing and slashing becomes 8 (Availability: Space Age)
 
 **Mithril** (chain, scale or plate): ½ weight, ACP-1 (Availability: high-magic settings)
 
 **Monstrous Hide** (fabric or scale by creature): 3/4 DR of monster, except bludgeoning for scale armor which maxes at 2.  Double weight.  (A creature provides enough hide for torso armor or two non-torso pieces, or a full suit one size category smaller)
+
+## Special Features
+
+**Decoration**: Most armor is decorated.  This has no effect on its stats, though particularly frightening decorations may grant a small circumstance bonus to intimidation, and wearing the emblems of an organization that treats prisoners humanely may make it easier to convince enemies to surrender.
+
+**Camouflage**: Grants +2 to Hide checks, rising to +4 in a chosen environment.  Cost +50.  Limits available decoration to small patches.  Available from Information Age.
+
+**Shiny**: Decreases the effect of laser weapons by 90% before normal DR.  Cannot be combined with camouflage or decoration.  Available from Information Age.
+
+**Air-sealed**: Allows the wearer to go up to 8 hours without breathing outside air.  Protects against poison, disease, nanotech and hard vacuum.  Requires all body parts to be covered in fabric or plate.  Cost +5000, Weight +10.  Available from Solar Age.
+
+**Inertics**: Armor grants full protection against impacts with objects larger than oneself.  Also negates all damage from high gravity environments.  Each round inertics are active consumes 1MJ.  Cost +1000, Weight +1, not counting power source.  Available from Star Age.
+
+## Example Armors
+
+These are some armor patterns from various eras.  All are mirror-symmetrical for simplicity of presentation, but feel free to armor one arm much more heavily than the other if you like.
+
+<div class=google>
+%%examplearmor%%
+</div>
 
 # Feats
 

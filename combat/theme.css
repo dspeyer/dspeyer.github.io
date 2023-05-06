@@ -9,7 +9,7 @@ body {
 }
 
 body::before {
-    content: "Combat Rules";
+    content: "Historical Extrapolation Derived Universal Combat & Knavery System";
     font-size: 25pt;
     text-align: center;
     display: block;
