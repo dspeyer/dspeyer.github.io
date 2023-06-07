@@ -92,7 +92,7 @@ The ages are:
 |Industrial | Napoleanic France, Georgian England, Early United States|
 |Steam | US Civil War, World War One|
 |Information | World War Two through present|
-|Space | Firefly, The Qeng Ho, Freefall|
+|Solar | Firefly, The Qeng Ho, Freefall|
 |Star | Star Wars, Star Trek, Stargate|
 |Galactic | The Culture, The Transcend (Fire Upon the Deep)|
 
@@ -331,7 +331,7 @@ Firearm | *See* | *Separate* | *Table* | | Simple | | | | | | | Ready
 Grenade Launcher | Grenade | 2×ammo | 100 | Move Action | Martial | Information | 2 | 12 | 3 | 1 | 50 | Long
 Underslung Grenade Launcher | Grenade | 2×ammo | 80 | Move Action | Martial | Information | n/a | 12 | 2 | N/A | 50 | Long. Attaches to Firearm
 Dart Gun | Dart | 2×ammo | 80 | Free Action | Simple | Information | 1 | 3 | 2 | 2 | 20 | Ready
-Laser | Coherent Light | rating×ammo | 500 | Free Action | Simple | Space | 1 | 6 | rating + power source | Varies | 100 | Unlimited Range, Energy Cost: rating, Auto-aim, Ready
+Laser | Coherent Light | rating×ammo | 500 | Free Action | Simple | Solar | 1 | 6 | rating + power source | Varies | 100 | Unlimited Range, Energy Cost: rating, Auto-aim, Ready
 Blaster | Plasma Blast | rating×ammo | 300 | Free Action | Simple | Star | 1 | 6 | rating/2 + power source | 1 | 70 | Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim, Ready
 </div>
 
@@ -401,7 +401,7 @@ This weapon (trebuchet) cannot be transported intact using ordinary land transit
 
 ##### Auto-aim
 
-Weapons with this property (space age or later) can assist your aim using stabalizing jets, granting a +4 bonus on attack rolls.
+Weapons with this property (solar age or later) can assist your aim using stabalizing jets, granting a +4 bonus on attack rolls.
 
 ##### Burst Mode
 
@@ -529,6 +529,7 @@ A firearm with a bayonette may be used as a polearm with a final spike and a bla
 
 If a gun is too big or strong to fire from one's hands, it can still be used from a gun mount.  Mounts either add to or replace your strength, and often come with special restrictions:
 
+<div class=wide>
 Mount | Str | Length Enabled | Time to Set Up | Weight | Special
 -|-|-|-|-|-
 Bipod | +4 | x2 | Move Action | 1 |
@@ -538,6 +539,13 @@ Bolted Tripod | 60 | 8  | 10 minutes | 10 | Floor must have bolt holes
 Turret        | substrate | unlimited | 8 hours | 100 | Must attach to a secure substrate
 Polearm | +2 | x2 | 1 round | 3 or more | Must have short haft and side spike, blade or forward hook
 Ground | +2 | x2 | free | 0 | Must be prone
+</div>
+
+#### Example Firearms
+
+<div class="google wide">
+%%examplefirearms%%
+</div>
 
 ### Projectile Qualities
 
@@ -595,11 +603,21 @@ This projectile can be used to deliver a drug or poison.  If the projectile does
 
 A simple poison dart deals a rough dosage, whereas a syringe deals a precise one.  See the drug rules.
 
+#### Binding (Size)
+
+When a bolas strikes a creature of indicated size or smaller, the creature must make a reflex save or grapple check (its choice) against twice the pre-dr damage.  If it fails the check, it is prone and wrapped in ropes.
+
 #### Explodes
 
 After impacting, this projectile explodes for the damage shown.  Note that this is not part of the ammo's own damage, and is not multiplied.
 
 If the base damage gets past armor and does not overpenetrate, the explosion occurs *inside* the target, for triple damage.
+
+#### Attatches
+
+If this projectile successfully does piercing damage it sticks to its target.  It can then detonate *in contact* with said target for double damage.
+
+Note: while the boring and descriptive name of this projectile is "spiked bomb", its original name was "flying incediary club for subjugating demons".
 
 # Armor
 
@@ -637,13 +655,17 @@ Three styles of steel plate helmets, with their associated AC bonuses and percep
 
 ## Weight
 
-The most armor you can wear is 3 lbs per point of strength score.  Each pound beyond this gives a -1 to all physical skill checks and to attack rolls.  This is *separate* from limits on how much ordinary gear you can carry.  (Some campaigns won't want to track that at all, but those that do should use 2lbs per strength.  A character who wears the maximum available armor and takes it off and carries that same armor *should* take overburdening penalties.)
+The most armor you can wear is 3 lbs per point of strength score.  Each missing point of strength inflicts an additional -1 acp to all body parts.  This is *separate* from limits on how much ordinary gear you can carry.  (Some campaigns won't want to track that at all, but those that do should use 2lbs per strength.  A character who wears the maximum available armor and takes it off and carries that same armor *should* take overburdening penalties.)
+
+All weights are computed for earth gravity.  In a low-gravity environment, you can wear more armor.
 
 ## Armor Check Penalty
 
 Take this penalty to all physical actions involving the body part in question.  If multiple body parts are used, take the highest ACP.
 
-Every point of penalty to leg-based motions (whether ACP or weight) reduces base speed by 1 ft/rnd, to a minimum of 5.
+Every point of penalty to leg-based motions (whether ACP or weight) reduces base speed by 5 ft/rnd, to a minimum of 5.
+
+If acp ever reaches -20, the body part in question is immobilized.
 
 ## Stacking armor
 
@@ -669,13 +691,13 @@ Impacts with things larger than oneself (including the ground and explosive shoc
 
 **Titanium** (chain, scale or plate): 3/4 weight, x2 cost (Availability: Information Age)
 
-**Silicon Carbide** (scale only): 1/3 weight, x5 cost (Availability: Information Age)
+**Silicon Carbide** (scale only): 3/8 weight, x5 cost (Availability: Information Age)
 
-**Aluminum Oxide** (plate only): No spot penalty in helmet (Availability: Space Age)
+**Aluminum Oxide** (plate only): No spot penalty in helmet (Availability: Solar Age)
 
 **Nomex** (fabric only): Adds 5 rounds (stacking) to the time that armor protects against heat or cold
 
-**Carbon Nanoweave** (fabric only): DR against piercing and slashing becomes 8 (Availability: Space Age)
+**Carbon Nanoweave** (fabric only): DR against piercing and slashing becomes 8 (Availability: Solar Age)
 
 **Mithril** (chain, scale or plate): ½ weight, ACP-1 (Availability: high-magic settings)
 
@@ -693,11 +715,17 @@ Impacts with things larger than oneself (including the ground and explosive shoc
 
 **Inertics**: Armor grants full protection against impacts with objects larger than oneself.  Also negates all damage from high gravity environments.  Each round inertics are active consumes 1MJ.  Cost +1000, Weight +1, not counting power source.  Available from Star Age.
 
+## Armor Builder
+
+<div>
+%%armorbuilder%%
+</div>
+
 ## Example Armors
 
 These are some armor patterns from various eras.  All are mirror-symmetrical for simplicity of presentation, but feel free to armor one arm much more heavily than the other if you like.
 
-<div class=google>
+<div class="google xa">
 %%examplearmor%%
 </div>
 

@@ -1,0 +1,228 @@
+<html><body>
+    <table>
+        <script>
+         const armors = {
+             none: {pierce: 0, slash: 0, bludgeon: 0, acb: 0, w: 0, acp: 0, cost: 0, alts:[]},
+             Fabric: {pierce: 2, slash: 2, bludgeon: 4, acb: 8, w: 1, acp: 0, cost: 100,
+                      alts:['Linen/Leather','Kevlar','Nomex','Nanoweave']},
+             Chain: {pierce: 2, slash: 20, bludgeon: 0, acb: 2, w: 4, acp: -1, cost: 200,
+                     alts:['Steel','Bronze','Ti','Mithril']},
+             Scale: {pierce: 10, slash: 20, bludgeon: 2, acb: 4, w: 8, acp: -2, cost: 300,
+                     alts:['Steel','Bronze','Ti','Mithril','SiC']},
+             Plate: {pierce: 10, slash: 20, bludgeon: 4, acb: 8, w: 6, acp: -3, cost: 1000,
+                     alts:['Steel','Bronze','Ti','Mithril','Al₂O₃']}
+         };
+         const materials = {
+             Bronze: (x) => { x.cost *= 10; },
+             Kevlar: (x) => { x.special = '+10 against projectiles'; },
+             Ti: (x) => { x.w *= .75; x.cost *= 2; },
+             SiC: (x) => { x.w *= .375; x.cost *= 5; },
+             'Al₂O₃': (x) => { x.spot = 0; },
+             Nomex: (x) => { x.special = '+5 rounds against heat/cold'; },
+             Nanoweave: (x) => { x.pierce = 8; x.slash = 8; },
+             Mithril: (x) => { x.w /= 2; x.acp -= 1; }
+         };
+         let selects = {};
+         function more(part) {
+             let s1 = document.createElement('select');
+             for ( let t in armors ) {
+                 let o = document.createElement('option');
+                 o.innerText=t;
+                 s1.appendChild(o);
+             }
+             let s2 = document.createElement('select');
+             s1.material=s2;
+             if ( ! (part in selects) ) {
+                 selects[part] = [];
+             }
+             selects[part].push(s1);
+             let td = document.getElementById(part+'selectbox');
+             td.appendChild(s1);
+             td.appendChild(s2);
+             td.appendChild(document.createTextNode(' '));
+             s1.onchange = typchange;
+             s2.onchange = recalc;
+         }
+         function typchange() {
+             this.material.innerHTML = '';
+             this.material.style.display = (this.value=='none') ? 'none' : 'inline';
+             for (let i of armors[this.value].alts) {
+                 let o = document.createElement('option');
+                 o.innerText = i;
+                 this.material.appendChild(o);
+             }
+             recalc();
+         }
+         function recalc() {
+             let total = {cost:0, w:0};
+             for (let part in selects) {
+                 let vs = {desc:"", nfacb:-1, special:'', ...armors.none};
+                 let first = true;
+                 for (let layer of selects[part]) {
+                     if (layer.value == 'none') continue;
+                     let x = {desc:"", ...armors[layer.value]};
+                     if (part == 'head') {
+                         let hs = document.getElementById('helmetshape').value;
+                         x.acb = Math.min(x.acb, hs);
+                         x.spot = -(x.acb-2);
+                     }
+                     if ( ! first) {
+                         x.acp -= 1;
+                         x.desc += ' + ';
+                     }
+                     first = false;
+                     x.desc += layer.value;
+                     let mat = layer.material.value;
+                     if (mat && mat != x.alts[0]) {
+                         x.desc += '(' + layer.material.value + ')';
+                     }
+                     if (mat in materials) {
+                         materials[mat](x);
+                     }
+                     for (let i in x) {
+                         if (i == 'acb') {
+                             vs.acb = Math.max(vs.acb, x.acb);
+                             console.log(layer.value);
+                             if ( ! (layer.value in  {Fabric:1, none:1})) {
+                                 console.log(vs.nfacb, x.acb, '=>');
+                                 vs.nfacb = Math.max(vs.nfacb, x.acb);
+                                 console.log(vs.nfacb);
+                             }
+                         } else if (i == 'spot') {
+                             vs.spot = Math.min(vs.spot||0, x.spot);
+                         } else {
+                             vs[i] += x[i];
+                         }
+                     }
+                 }
+                 if (vs.nfacb > -1) {
+                     vs.acb = vs.nfacb;
+                 }
+                 if (part == 'torso') vs.w *= 2;
+                 if (part=='legs' || part=='arms') {
+                     vs.w *= 2;
+                     vs.cost *= 2;
+                 }
+                 vs.desc = vs.desc.replace(/([^+]+) \+ \1 \+ \1/, '3x $1').replace(/([^+]+) \+ \1/, '2x $1');
+                 console.log(vs);
+                 for (let k in vs) {
+                     let e = document.getElementById(part+k);
+                     if (e) {
+                         e.innerText = vs[k];
+                     }
+                 }
+                 for (let i in total) {
+                     total[i] += vs[i];
+                 }
+             }
+             for (let k in total) {
+                 console.log('total'+k);
+                 let e = document.getElementById('total'+k);
+                 e.innerText = total[k];
+             }
+         }
+         
+      </script>
+      <tr>
+          <th>Head:</th>
+          <td colspan="7" id="headselectbox"></td>
+          <td><input type="button" value="Add Layer" onclick="more('head')"></td>
+          <td><select id="helmetshape" >
+              <option value="2">Open Face</option>
+              <option value="3">...</option> 
+              <option value="4">...</option>
+              <option value="5">Half Closed</option> 
+              <option value="6">...</option>
+              <option value="7">...</option>
+              <option value="8">Full Pot</option>
+          </select></td>
+      </tr>
+      <tr>
+          <th>Torso:</th>
+          <td colspan="7" id="torsoselectbox"></td>
+          <td><input type="button" value="Add Layer" onclick="more('torso')"></td>
+      </tr>
+      <tr>
+          <th>Arms:</th>
+          <td colspan="7" id="armsselectbox"></td>
+          <td><input type="button" value="Add Layer" onclick="more('arms')"></td>
+      </tr>
+      <tr>
+          <th>Legs:</th>
+          <td colspan="7" id="legsselectbox"></td>
+          <td><input type="button" value="Add Layer" onclick="more('legs')"></td>
+      </tr>
+      <tr>
+          <th>Part</th>
+          <th>Armor</th>
+          <th>P</th>
+          <th>S</th>
+          <th>B</th>
+          <th>+</th>
+          <th>-</th>
+          <th>$</th>
+          <th>W</th>
+      </tr>
+      <tr>
+          <td>Head</td>
+          <td id="headdesc"></td>
+          <td id="headpierce"></td>
+          <td id="headslash"></td>
+          <td id="headbludgeon"></td>
+          <td id="headacb"></td>
+          <td><span id="headacp"></span>/<span id="headspot" ></span></td>
+          <td id="headcost"></td>
+          <td id="headw"></td>
+          <td id="headspecial"></td>
+      </tr>
+      <tr>
+          <td>Torso</td>
+          <td id="torsodesc"></td>
+          <td id="torsopierce"></td>
+          <td id="torsoslash"></td>
+          <td id="torsobludgeon"></td>
+          <td id="torsoacb"></td>
+          <td id="torsoacp"></td>
+          <td id="torsocost"></td>
+          <td id="torsow"></td>
+          <td id="torsospecial"></td>
+      </tr>
+      <tr>
+          <td>Arms</td>
+          <td id="armsdesc"></td>
+          <td id="armspierce"></td>
+          <td id="armsslash"></td>
+          <td id="armsbludgeon"></td>
+          <td id="armsacb"></td>
+          <td id="armsacp"></td>
+          <td id="armscost"></td>
+          <td id="armsw"></td>
+          <td id="armsspecial"></td>
+      </tr>
+      <tr>
+          <td>Legs</td>
+          <td id="legsdesc"></td>
+          <td id="legspierce"></td>
+          <td id="legsslash"></td>
+          <td id="legsbludgeon"></td>
+          <td id="legsacb"></td>
+          <td id="legsacp"></td>
+          <td id="legscost"></td>
+          <td id="legsw"></td>
+          <td id="legsspecial"></td>
+      </tr>
+      <tr>
+          <td colspan="2"></td>
+          <td colspan="4"></td>
+          <td>Total:</td>
+          <td id="totalcost"></td>
+          <td id="totalw"></td>
+      </tr>
+      <script>
+          more('head');
+          more('torso');
+          more('arms');
+          more('legs');
+      </script>
+    </table>
+</body></html>
