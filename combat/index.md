@@ -667,6 +667,8 @@ Every point of penalty to leg-based motions (whether ACP or weight) reduces base
 
 If acp ever reaches -20, the body part in question is immobilized.
 
+Swimming takes ACP from arms and legs, and suffers a stacking -1 penalty for every three pounds of armor worm (rounded down).
+
 ## Stacking armor
 
 You may wear multiple layers of armor.  Add the DRs and Weights.  Add the ACPs and add one for every layer after the first.  (Extra thick armor can be modeled as layering identical armors.)
