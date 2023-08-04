@@ -147,6 +147,7 @@
              Ammo('Slug', 'd6', 1, 0.3333, 1, 1.5),
              Ammo('Chemical', ' doses', 1.5, 0.25, 0.25, 2),
              Ammo('Laser', 'd4', 2, 1, 5, 0.5),
+             Ammo('Plasma', 'd6', 2, .5, 3, 1),
              Ammo('Water', ' splashes', 1, 1.5, .25, 1)
              // space tech and projectiles omitted
          ];
@@ -186,6 +187,7 @@
              Option('Full Auto', 5, 1, 2, (x)=>{x.gl+=3;}),
              Option('Increased Damage', 5, 1, 3, (x)=>{ x.die = dieSize(x.die,1); x.gl+=Math.ceil(x.dice/2); }),
              Option('Laser Sight', 2, 1, .5, (x)=>{ x.gl+=1; }),
+             Option('Cyber Sight', 4, 1, 1, (x)=>{ x.gl+=2; }),
              Option('Light Item', 2, 5, 0.2, (x,q)=>{ x.weight*=1-q/10; }),
              Option('Modular', 1, 1, 0.2),
              Option('Sniper', 1, 1, 0, (x)=>{ x.price_add=125; x.gl+=1; })
