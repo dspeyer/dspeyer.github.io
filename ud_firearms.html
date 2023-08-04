@@ -147,7 +147,7 @@
              Ammo('Slug', 'd6', 1, 0.3333, 1, 1.5),
              Ammo('Chemical', ' doses', 1.5, 0.25, 0.25, 2),
              Ammo('Laser', 'd4', 2, 1, 5, 0.5),
-             Ammo('Plasma', 'd6', 2, .5, 3, 1),
+             Ammo('Plasma', 'd6', 2, 1, 3, 1),
              Ammo('Water', ' splashes', 1, 1.5, .25, 1)
              // space tech and projectiles omitted
          ];
@@ -343,7 +343,7 @@
                  if (weapon.int_mag) showAmmos(weapon, 'Mags');
                  if (weapon.ext_mag) showAmmos(weapon, 'Belts');
              }
-             if (weapon.ammo == 'Laser') {
+             if (['Laser','Plasma'].includes(weapon.ammo)) {
                  showCP(weapon);
              }
              
@@ -413,17 +413,18 @@
              for (let typ=0; typ<3; typ++) {
                  if (typ<2 && ! weapon.int_mag) continue;
                  if (typ==2 && ! weapon.ext_mag) continue;
-                 for (let q=1; q<8; q++) {
+                 for (let q=1; q<=10; q++) {
                      let tr = $('<tr>').addClass('cpt'+typ).appendTo(table);
                      if (q==1) {
-                         $('<th rowspan=7>').text(desc[typ]).appendTo(tr);
+                         $('<th rowspan=10>').text(desc[typ]).appendTo(tr);
                      }
                      $('<td>').text(q).appendTo(tr);
+                     let cpd = weapon.ammo == 'Plasma' ? 2 : 1;
                      let r = typ<2 ? weapon.mag : 100;
                      let e = (typ==1) ? q : q/10;
                      let c = Math.floor(r * e);
-                     let n = Math.floor(c / weapon.dice);
-                     c = n * weapon.dice;
+                     let n = Math.floor(c / weapon.dice / cpd);
+                     c = n * weapon.dice * cpd;
                      r = Math.ceil(c / e);
                      $('<td>').text(n).appendTo(tr);
                      $('<td>').text(r/100).appendTo(tr);
