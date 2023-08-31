@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <style>
+         .post {
+             width: 95vw;
+             margin: 1em auto;
+             border: thin grey ridge;
+             padding: 0.5em;
+         }
+         a > img {
+             width: .8em;
+             height: .8em;
+         }
+         body > a {
+             font-size: xx-large;
+             display: block;
+             text-align: center;
+         }
+         img.header {
+             width: 75vw;
+             box-shadow: 0 0 10px grey;
+             border-left: 11vw solid black;
+             border-right: 11vw solid black;
+         }
+         body > h1 {
+             position: absolute;
+             left: 0;
+             right: 0;
+             top: 16vw;
+             color: white;
+             text-align: center;
+             text-shadow: 2px 2px 5px black;
+         }
+         h6 {
+             margin: 0;
+             background: #ddd;
+             font-size: large;
+         }
+         .date {
+             font-size: smaller;
+             text-align: right;
+             width: 100%;
+             display: block;
+             font-face: monospace;
+         }
+        </style>
+    </head>
+    <body>
+        <img src="header.jpg" class="header">
+        <h1>Daniel Speyer's Facebook Mirror</h1>
+        <a href="posts.rss"><img src="rss.png">See also rss feed</a>
+        <!-- new stuff goes here -->
+<div class=post>
+<h6>They will look for it from the ivory tower But it will not return from network or from C</h6>
+<p>They will look for it from the ivory tower But it will not return from network or from C</p>
+<p>Through Bitcoin, over fen and field where the banned grass's sold The Crypt Wind comes walking and around the law it goes What news of crypto oh wandering wind do you bring to me tonight? Have you seen Symbiont the Bold by moon or by starlight?</p>
+<p>I saw it spread over seven nodes, through network lag and drop I saw it typify python and all derive from top I saw it pass into Finance, where worth comes forth from myth The Cash Wind may have heard the horn of the son of Mark the Smith</p>
+<p>O Symbiont through all web 3 I looked afar But you came not from Big Enterprise where no sales are.</p>
+<p>Privacy: Public</p>
+<span class=date>Aug 31 7:31PM</span></div>
+
+
+<div class=post>
+<h6>[Elizabeth Tawanda Tubbs->me] I went to a lot of trouble (MK Ray and Daniel Speyer went to a lot of trouble…i mostly just hobbled after them squeeling) to get this gorgeous new chair!</h6>
+<p>I went to a lot of trouble (MK Ray and Daniel Speyer went to a lot of trouble…i mostly just hobbled after them squeeling) to get this gorgeous new chair!   <br />
+ I Knew, but hoped not, that it was only a matter of time. And that time was 24hrs.</p>
+<p>Fyi she already has her own special purple armchair 😓 </p>
+<p>#TheQueenOnHerNewThrone  <br />
+ #ThoseCrazyEyesSayItAll</p>
+<h2><a href="https://facebook.com/photo.php?fbid=10229263136512427">See Photo</a></h2>
+<span class=date>May 31 5:38AM</span></div>
+
+
+<div class=post>
+<h6>There's an Asmodean proverb: Never publicly criticize the boss unless you're trying to take their job.</h6>
+<p>There's an Asmodean proverb: Never publicly criticize the boss unless you're trying to take their job.</p>
+<p>Prigozhin (head of the Wagner mercenary company) has been publicly criticizing Putin a lot.</p>
+<p>Now, I realize Asmodeanism is a fictional religion written by people who are not remotely its practitioners, but I still find Prigozhin's actions make more sense through this lens.</p>
+<p>Including his unforced withdrawal from Bakhmut.  Sure, it looks weak now.  But in a few monthes he'll be saying to Putin's forces, “We held the line in Bakhmut and even pushed it forward a little – you ran like dogs.  Do you really want to face me now?”.  And Putin's officers will answer “You held the line while the Ukrainians waited for equipment, not against the counter-offensive.”  But, valid or not, this will sound like an excuse.</p>
+<p>Will it work?  Will Prigozhin be the next czar of Russia?  Hard to say.  On the one hand, he's managed to be visibly a contender for the post and keep breathing, which I don't think anyone else has managed.  On the other, I'm not sure anyone <em>likes</em> him, and his strategy seems optimized for things happening slowly, which may not be the case.</p>
+<p>Privacy: Public</p>
+<span class=date>May 26 4:24PM</span></div>
+
+
+<div class=post>
+<h6>The problem with conjunctive probabilistic reasoning is that it double-counts model uncertainty.</h6>
+<p>The problem with conjunctive probabilistic reasoning is that it double-counts model uncertainty.</p>
+<p>(If you fully understood that sentence, you can skip the rest of this post.)</p>
+<p>For those just tuning in, conjunctive probabilistic reasoning is when something requires a series of things to happen, so you estimate p(next step | previous step) for each step and multiply.  The math suggests this should work, but in practice everything becomes less likely the more detail you think about it in.  Eliezer and Zvi have written off this entire approach as the “multi-stage fallacy” despite the fact that it ought to work.</p>
+<p>One straightforward error is to ignore multiple paths to a result.  The p(I'll reach Fulton Street) isn't p(I can get on the 1 train)*p(I'll transfer successfully to the 2/3 at 72nd given I made the 1), because if the 2/3 isn't running I'll just stay on the 1 and transfer to the A/C at 59th.  But most examples of this going wrong don't fall into this category.</p>
+<p>Another is to give the probability of each step, instead of the conditional.  Even though we very explicitly said to use the conditional.</p>
+<p>Let's look at it another way.  To have a 50% confidence something will work (entirely reasonable) when it can be broken into a hundred tiny steps (tedious, but generally possible) means having a harmonically average confidence of 99.3% that each step will succeed given the previous.  Which is awfully confident to be of anything.</p>
+<p>But <em>why</em> is that awfully confident to be of anything?  Because there's more than a 0.7% chance that the understanding you're using to estimate these probabilities was flawed to begin with.  Whenever we estimate the probability of anything, we're implicitly estimating p(that thing AND my model of the universe is good enough).  (Well, assuming p(that thing EVEN THOUGH my model isn't good enough) is negligible, which is generally the case when that thing is a plan of mine working.)</p>
+<p>Call the model assumption M and the kth step succeeding Sₖ (because unicode doesn't have a subscript I) and now we can simplify:</p>
+<p>𝚷 p(Sₖ|Sₖ₋₁) = 𝚷 p(M &amp; Sₖ|Sₖ₋₁) = 𝚷 p(Sₖ|Sₖ₋₁,M)p(M) = (𝚷 p(Sₖ|Sₖ₋₁,M))p(M)ⁿ</p>
+<p>See that power of n at the end?  That's our problem.  Because the Ms aren't independent – they're the same event.  If you use your normal habit for estimating probabilities, you get final probabilities falling exponentially with the number of steps you consider – exactly the problem we started with.</p>
+<p>Which makes the solution obvious.  Explicitly estimate all the conditional probabilities as also conditional on your world-model, and then estimate the probability of your model's adequacy and multiply it in <em>once</em>.  AFAICT, this works.  Granted, gaining calibration on estimates given model is probably a bit trickier than gaining calibration on estimates in general.</p>
+<p>Privacy: Public</p>
+<span class=date>Aug 31 7:31PM</span></div>
+
+
+<div class=post>
+<h6>Left Job at SymbiontNew York, New York</h6>
+<p><a href="https://facebook.com/profile.php?id=108424279189115&amp;eav=AfbD7Nb-2dIez3d5Fk_KuiNEEU2RqoaSK60b-FwELgHpMbefoRN2ukNaAfPwo4gjtno&amp;paipv=0&amp;refid=52&amp;_ft_=encrypted_tracking_data.0AY_eTTEgrN4Tyh8CnlFI1aiUX60qwDSKNLX9Y_0qnuVe14FQSIdmCyF35mLaiOCutEKwCeiaN8jUuGqVpElJLOm91URMEWhud5QMHTsm59jdUyh7KKcJ72j6jF0ZJCwGm0_SbqjNXXYcNkKnYXzaVaOiD1itzq0VvRvNRsCo9R57RYu1OW1d3LeZtnd_rOgn7aajUZZ2rCY7RnRvLCc7YjelZebKQZNyGfg4l63FmLnh0X9KNxG7CwCp7i3SEi-0HKReKYnP7BM1if8MFpSOiTl8fII5JLs_w4cLjdutKEWSAsBNzMWnbgdXZUbSuNQDwXQmPjfirR-LV6SPnoUc1e4oUZASTcPgGBNNcR5EmGRqlgowTOdSkHwMjD3VdvRofaitsiaXXavp9qaK-3SY5-P_HeCcT8XF5xQE-G03sQDa73dBbQAhR_e4umApc-YCf64dh6lFSdjDTfq8D97YR9hvOV9caOyldbEZS7Sb9shdsIChNrwAVZsYRkGBjqAk8tHPHnDsCuIdhqDjJ5E3EenhQKQp4xs43XV8IfX4mhT4xq1cb2sHwsGc0Co3mAPEWXQ7TQdW75AX5cjMepV5IRH3_S5Xv-asSd5bm-KppRTW1Vh6hmzzBILlgShMXAstSiHA7o8zXfBmGB3jsU1mWYmpTSTi4IbXyHPtropR8OE6QMuiVGbGpew43gxOXYoZD5GAfW0Sfx0aIQ7IYaDb6T5Lq5-IwlG_7lCFTX6TZ9oZJSpKYuYMmrXOLiiinZLkBkwlrJ6RFiOgb15Wi6PIrW1bJp_S3qeT8beeWKiKXudV6wQvDCCve7ZaB4DEEb5HX7IbQbGiXC4zOz2Ew6SgVwZzUBLE1E5KkMsUL-EBnNKAhY_ZWaMjJxdEmd6avJpTchNWcq4wWYq5k1D3hZfE9DRUK_MxTlWb1CvgCj6EH2o2u8OhbClfcmAF2KoTRlCcKFlRMLOJLEj2BQCEgifghZVZu4mEGdMPM-dY3SCGD8uqsIgmUhdgzjNPgCPTqpfRPFAvuzC2fwYZLWveEEbSsY1EIkMNOLYmcuP3ESqlaFgYGzx89ZM6-swjZNQbtdctuS_rDPZYwQ0ukEVP5JiyTAmg2OpMjwS71ndG&amp;__tn__=H-R">Left Job at SymbiontNew York, New York</a></p>
+<span class=date>May 18 6:23AM</span></div>
+
+
+<div class=post>
+<h6>Reddit deleted all my subreddits and past posts.  Bizarrely, they do seem to be letting me post new things, but I can't trust that.</h6>
+<p>Reddit deleted all my subreddits and past posts.  Bizarrely, they do seem to be letting me post new things, but I can't trust that.</p>
+<p>I was able to rescue the content, and I'll put some stuff various places, though of course links will die.</p>
+<p>I can probably use github as a new fb rss mirror, though it won't have commenting.  I didn't get many comments on the mirror, which is why putting them into an existing stream was important.</p>
+<p>I realize this last part only matters if I start posting stuff again.  I haven't in almost two months.  But I do have fifteen open LibreWriter windows with half-written drafts, so there might be a storm soon.</p>
+<p>Privacy: Public</p>
+<span class=date>Aug 31 7:31PM</span></div>
+
+
+<div class=post>
+<h6>[View edit historyAnn Speyer->me] Daniel Speyer, Ann Speyer and Kenneth Speyer just  before we began our seder</h6>
+<p>Daniel Speyer, Ann Speyer and Kenneth Speyer just  before we began our seder.  It's now 11:45 and we just finished putting everything away -- a wonderful, long, seder full of readings, some discussions and of course, traditional songs. Soup with matzah balls, poached salmon, asparagus and sweet potato kugel.  Dessert was almond cookies which Daniel and I made.  Daniel did all the chocolate dipping.  A very sweet way to end a wonderful night.</p>
+<h2><a href="https://mbasic.facebook.com/story.php?story_fbid=pfbid02s5yujVgoycPnccaf9aLzGMRhgE99pmZABAPcLpZ2ZFR4GcDogHCEX63YTRYBvNUxl&amp;id=603512204&amp;eav=AfaKEbkBNizl_TVtBfQXa1C_3q5ttzyczpimuClsdN8jwWMGW1czfXvCQOV1Yb1zamE&amp;_ft_=encrypted_tracking_data.0AY8oclhCngvfATEo41LA4CnyMcZUVBf6x6sXBpEVIF1cPJk5JNMPcw4rdBoKjNtS-vY9apkUsnuXeGR5uJpSvXFuR7f1nQq4FWM2675YjDI5B3x5hDCDQTGsbhgX0MHoMjBAxNWXMWFd6nC0sHvHNG6OTnAb6Aw45icqWRBSC7sNeDEslHGVSfF2dBESz4IqpyPaU8o-oJNP14MdqTx5IWp9dtmnvMRElxp7v67QQR56_hv992d6RNsDRbrFMl0TJnt5U6PG8ahoHBMsI9aYMAPtFYNQhKrCF1MZ-Tm8AgIFprl_MV4a5pHsXtFU0eajBcMPos1q1o77arg_hmsOSfz4V4KOqbW-0oVWvVyqNAbxVgbmezVSkBsWKFcVuYxFDiqvh5KYi2TZMPrzmq4HqwpxPeBDLg2KgWSEUv5okyjGNqHB6kUYTUFH1K3m9gB_TpPlgPXRzM4IdJODGUmdVDCFjPOUarerb6-lj-EZVdg2nH6IU7LzUseoXzEFdJQzJdfy2hfOdm4FZlRHvLf5-Bli9XSW5Ro8ej1tdGb7cGgwzbFW7aJare-keltlbmUsx_u_xU49zGpsX3i4jQ4-2N8fVXCUfZENQCYCv3Qc8msJ5z8NdPaV4VIndz_zviRBG_1P28kAAYvNDFXTpvpuVFkzRBe1h2KkSB2s80RmqHTRNrzLQxOxmYKOf9Ye03lCM-aQ8q2u1wwDr-UN5PZRA-VpnxxwA9qnAMwlGkhY0uv5Ti1Kex7YbRLOotT1MXbWLBGvCzCtuHmIURAoPpLB5qhzfR6LlfaaTtavqjvoYLLZVOaDbnonrzMdND5-hYM&amp;__tn__=%2AW-R&amp;paipv=0">See 5 Photos</a></h2>
+<span class=date>Apr 05 11:43PM</span></div>
+
+
+<div class=post>
+<h6>Untitled</h6>
+
+<span class=date>Mar 29 5:34PM</span></div>
+
+
+<div class=post>
+<h6>Happy 3/23/23 23:23</h6>
+<p>Happy 3/23/23 23:23</p>
+<p>232 is gematria for "braid", so Elizabeth Tawanda Tubbs braided my hair in a 2-3-2 pattern.  Not sure if that comes through in the photo.  There's inherent difficulties in photographing the back of my own head.</p>
+<h2><a href="https://mbasic.facebook.com/story.php?story_fbid=pfbid03647UYWBmVuaSMVphR6Fqmevr9ubpwpM5Ky9hAhW9YfsNAJCk3H2euutmPJcmzEY7l&amp;id=1794288703&amp;eav=AfboReoX-VpwUHTCFOptJtlg36RDhZTGbBAsN1hk-h7-KkwmiSIPcJDnrF7P_COlmvQ&amp;_ft_=encrypted_tracking_data.0AY_IrE-_hu4_0adcqi6C26dLqhlKYIdXp6y3SfVuwQ8PBrro9qHgtmbucoI-AR6na-TkM8Pn6c3TPeWdldd33W9H7eQ_KU3GotPaM82cldw6MEDK1XViXbjh3EDSwpxjoBaizdf-QdjW0IFoyCGpyWH5iWfzOG539m7Ij36iVRrgctfoiDCVsuFsE_LFSRwiDeIvDQMEHRqhq0RJ9aBjZGgoe0WpAL2HmzqTBnYWmw-xRT2yn0TjzjfUkn0NO2KYoDEHWjzKRHRdH3q7R3A9LPvngsPqeyhuNGn7hDBWYYPKdmldqutsFhVigX-bQAMF4AgBVjBkIAJjyP0YyMUfyPzajmjVrZZYNqW0ydO2DWI5WYVnnGsVeMi1V40vNoCuHUstbXoLX535U4ulbiYi2aM8K_4WjXXSs6KklESkXlm3OO9oI8hf-C1KMAGyvzzOdi6bTPqbdzDMaNc0ArAhSt2g_1o_ITBEkW1r2tn5RKYQ210LyTlRJXonj8PBpjpn0_LsHydNtgJF7OX-YGdVYrMR3m2wPumM0Skv5T3x9d6Uibfu8xNOARMWjS24Da3ufqZtQjWdrk9YXe6sL8Ugwu-T34cYy5kZ7_7DFwDk-jJyvkpMnddZUHiPmKO-li1WQ4YA3eJfr8gjh4KKNZ2DothRbI5t4LFkZpEUxPVBDpPMSAuzOIWyt5ORfeND_nrfdtFutHUiBl5xLyd-S_5e27lGcIrssVymX6clLnj339vwUO5k8nIknvVMyD2WnOztVnrAiPXxvytXxg&amp;__tn__=%2AW-R&amp;paipv=0">See 2 Photos</a></h2>
+<span class=date>Mar 23 11:23PM</span></div>
+
+
+        <a href="old-posts.html">See also: older posts</a>
+    </body>
+</html>
