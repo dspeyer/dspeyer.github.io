@@ -1,0 +1,19 @@
+body {
+    background: #999;
+    margin: 1em;
+}
+
+article {
+    background: #bbb;
+    border: groove #777 2px;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+article h1 {
+    font-size: 22pt;
+}
+
+body h1 {
+    text-shadow: 1px 1px 1px white;
+}
