@@ -1,4 +1,4 @@
-# [OC] An undefended human world
+#  An undefended human world
 
 Incondnosa was a Human world, founded by peaceful secession from the Human Empire.  A whole bunch of human artists and scientists thought they knew a better way to live, and eventually they got big enough that the imperial government said “fine, show us” and deeded them a habitable world on the edge of human space.  So ten thousand humans, and a hundred million tons of equipment, went out to an empty world, and sought to build their paradise.
 

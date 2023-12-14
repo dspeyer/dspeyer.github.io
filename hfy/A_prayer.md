@@ -1,4 +1,4 @@
-# [OC] A prayer
+#  A prayer
 
 “If any gods are real... if there's anyone out there who cares... we beg you... save us now.  The Contali have come for us....  They brought mass drivers....  They plan to slaughter us....  We can't hold them off much longer....  Please...  Help...”
 

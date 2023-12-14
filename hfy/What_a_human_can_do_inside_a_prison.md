@@ -1,4 +1,4 @@
-# [OC][Prison] What a human can do inside a prison
+# [Prison] What a human can do inside a prison
 
 Author's note: I posted this as a comment in the [prison writing prompt](http://www.reddit.com/r/HFY/comments/2bjtvw/wp_writing_promptin_the_universes_most_secure/) but I think people have stopped reading that thread, so I'm giving this its own.
 

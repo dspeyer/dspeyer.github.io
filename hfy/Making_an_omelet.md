@@ -1,4 +1,4 @@
-# [OC] Making an omelet
+#  Making an omelet
 
 I was sent as part of the evaluative delegation to Earth.  One of our stealthier agents had picked up a warning that humans had some rather frightening ideas, chief among them being “You can't make an omelet without breaking a few eggs.”  The meaning of this saying was not entirely clear, so we investigated.  As the member of the team with the most human-like biochemistry, I was assigned to investigate actual omelets.  I objected that this was a waste of my time, but we were told to be thorough.  I've submitted my report on omelets under separate cover.  No one should bother to read it.  In the process of observing, though, I noticed two things that are of interest.
 

@@ -1,0 +1,31 @@
+body {
+    background-image: url(stars.jpg);
+    color: white;
+    background-size: contain;
+}
+
+h1 {
+    background-image: url(logo.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1.5em;
+    margin: 0;
+    color: yellow;
+    text-shadow: 3px 3px 6px yellow, 0 0 10px black;
+}
+
+a {
+    color: #0ff;
+}
+
+a:visited {
+    color: #f0f;
+}
+
+p {
+    max-width: 40em;
+    width: 80vw;
+    margin-left: 10vw;
+    background: rgba(0,0,0,0.5);
+}
