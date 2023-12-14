@@ -1,0 +1,91 @@
+# The Weapon
+
+Peaseblossom and her children huddled amidst the roots of one of the lesser hearttrees.  The war was lost.  The demons had overrun the faerie realms.  When they finished mopping up the last resistance, they would search here.  Peaseblossom did not intend to be found.  She'd kept enough magic in reserve to open a single portal.  But where?
+
+“We could go to Jotunheim,” her eldest suggested, “They're friendly to us, and might have a chance of holding the demons off.”
+
+“Jotunheim already fell,” Peaseblossom said, “I saw a few of them in shackles, hauling carts.”
+
+“Olympus?” her middle child suggested, “They don't like us, but maybe...”
+
+“Maybe,” Peaseblossom said.
+
+The ground shook.  A patrol was on it's way, and there was something large in it.  Not much time.
+
+“I overheard some demons talking,” the youngest child said, “and their next target is Earth.”
+
+“That sounds like a place to stay away from, then,” Peaseblossom said.
+
+“We could warn them,” the youngest said, “Maybe save them.”
+
+All the faeries together had been unable to save themselves, but maybe Peaseblossom could save someone else.  She opened a portal to Earth.
+
+Minutes later, a demonic patrol investigated the tree and found it empty.
+
+-----
+
+Three days later, the humans were ready for war.  They had placed a single command structure over their armies, sent scouts (with Peaseblossom's help) back into the faerie realm to count the enemy, deduced where the demonic army would appear, built fortifications and gathered their forces.  Yet, as Peaseblossom watched and remembered the glory of the faerie army in readiness, she did not think it would be enough.
+
+“It's enough to make them think twice,” she concluded her speech to the assembled generals, “enough to win the first battle, even, but probably not enough to stop them.  That's why I suggest a carrot-and-stick approach.  Let them see how ready you are, and then offer tribute.  If you make the offer before any blood is shed, they might accept it.  If not, they'll do to you what they did to us, and the next world will see your magnificent weapons coming against them as well.”
+
+“I thank you for your warning,” General Palomeros said, “and for all you have done for us.  But we will not be changing our strategy.  You have not seen everything we hold in reserve.  We have one weapon they cannot conceive of or prepare for.”
+
+------
+
+The demon army arrived as expected and marched against the (evacuated) human city.  The humans opened with mortars: a solid volley, arcing high over the invaders' vanguard -- over the elite trolls, over the newly conscripted faeries, over goblins, over nagas, over creatures human storytellers had never heard of to begin with... -- and smashing solidly into the demonic security battalion at the back of the army.  Demons were tough, but they weren't that tough.  The mortars' own shrapnel mixed with shards of demonic chitin in a great chaotic maelstrom of energy.
+
+Before the dust of those explosions cleared, the human snipers began cleanup.  Helicopter-mounted belt-fed rotary auto-cannons loaded with 30mm tracers weren't traditional sniper weapons, nor were millimeter-wave dust-penetrating radars traditional sniper scopes, but snipers are an adaptable lot, and the remaining demons went down quickly.
+
+The rest of the army continued charging.  They didn't seem to realize what the humans' opening salvo had been.  Instead they crashed into the human fortifications with earth-shaking force.  The walls were reinforced concrete, two meters thick, poured in haste but with expertise.  They began to crack, but did not yield.  The goblins readied their grappling hooks.
+
+Then the humans began speaking.  The demonic language (the only one all the invaders were sure to speak) had no word for “surrender”, so the humans improvised.  “The demons behind you are dead,” the human loudspeaker proclaimed, “We do not wish to kill you, but we will if we must.  Lay down your weapons.  Place your hands (or nearest equivalent) on your heads (or nearest equivalent).  Do this and we will allow you to live.  Do otherwise and you will die....”
+
+A few of the invaders tried to rally -- and fell to sniper-fire.  Selective pressure is a wonderful thing, or perhaps potential hot-heads in the army learned from watching.  Soon, the army had lain down its weapons, and placed its collective hands (and nearest equivalents) on its respective heads (and nearest equivalents).
+
+-----
+
+“This is only the beginning,” the refuge warned, “They are adaptable.  They will be ready for you next time.”
+
+“Watch and see,” the general answered.
+
+-----
+
+A day of painful logistics later, the formerly invading army was gathered peacefully in a large auditorium.  The primary feeling in the room was confusion.  The soldiers knew how wars went, and the humans weren't following the script.
+
+Once they were settled, Major Jackson stepped on stage to address them.  He had been chosen out of all the senior staff because of his extraordinary linguistic skills.  His demonic was accented, but understandable.
+
+“Yesterday, you all came here to invade us.  But your stories begin before that.  We have not spoken to all of you, but we spoke to some, and the stories we heard were very similar.  You were living your lives in peace when the demons took your worlds.  Then they demanded you fight on their behalf and invade other worlds.  As terrible as war is, they had something more terrible prepared for those who refused.  And so you fought.  For some of you, this was the first time.  Others have invaded many realms before.
+
+“But, if the stories you told us are to be believed, none of you chose to join this army.  Now, who among you would rather return home, to something like the life you had before the demons arrived?”
+
+The roar of approval in the room was deafening.  It seemed every single soldier was shouting “me!”  Jackson let it continue for a time, then raised his arms for silence.
+
+“We will give you that opportunity.  It may take us some time to open all the portals, but less if some of you help.  And, to ensure that you remain free and alive in your homes, we have prepared some gifts for you.
+
+“This is an AK-47 assault rifle.  It is similar to the weapons we used yesterday, but easier to care for.  Here are three cases of ammunition for it.
+
+“These are an assortment of explosives.  Again, they are similar to what our armies use, but more practical for an individual.
+
+“This is a set of four radios.  They let you talk to each other across distance.  We're giving each of you four because we're guessing you're going to want to give some to friends back home.  Anyone else with a radio can listen in, so talk carefully.
+
+“This is enough preserved food to feed a human for a week.  How long it will feed you I don't know.  I recommend you save it until you need it.
+
+“This is a first-aid kit.  It's designed for humans, but most of it should work on anyone.
+
+“Here are two books, translated into demonic.  One details the care and use of this equipment.  The other describes tactics of irregular warfare that we have found effective.
+
+“Now these are gifts.  You are free to use them or not, or sell them, or regift them in whatever way you choose.  We are not asking you to start rebellions.  We just want to ensure that if the demons try to force you back into their service, you'll be well-prepared to refuse.  But if you do decide to start a rebellion, we hope you'll do it well.”
+
+-----
+
+Peaseblossom and General Palomeros watched the last of the former army leave.
+
+“I don't think these rebellions you're starting will amount to much,” Peaseblossom said, “All of these people lost a war to the demons once.  And it's certain the demons will get ahold of one of those gift-packs.”
+
+“I'm not worried about them getting the gifts,” the general said, “Having a few guns is one thing, reverse engineering them and building factories for them is quite another.  And, no, the rebellions won't do very much.  Especially if they take our advice and mostly lie low.  But they'll do enough that the demons won't ignore them.  They'll send their army all over the place stomping them out.  And in the process, every conscripted soldier will know what we did here today.  They're not used to this sort of war, so they won't see a problem with that.”
+
+“*I* don't see the problem with that.  Or the point, from our perspective.”
+
+“And if you don't see it, what chance do they have?  But the point is simple.  Next time they send an army against us, that army will be better off if we win *and they'll know it*.  The next battle won't be our army against theirs.  It will be our army *and* their army against their security battalions.  And that's a battle we can win.  They wouldn't be building these giant slave armies if they didn't need them.
+
+“I told you once that we had a devastating weapon they could neither understand nor counter.  This is it.  We -- seemingly alone in all the realms -- have *mercy*.”
