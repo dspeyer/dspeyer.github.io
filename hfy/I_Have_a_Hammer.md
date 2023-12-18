@@ -353,6 +353,6 @@ Rebecca laughed all the way into Human space.
 
 ****
 
-^Continuity ^Note: [^Ordinary ^Forces](https://www.reddit.com/r/HFY/comments/43mvoe/dissentinsurrection_ordinary_forces/) ^is ^something ^of ^a ^sequel ^to ^this
-
-[^Stealth ^in ^Space](https://www.reddit.com/r/HFY/comments/4fx0dn/stealth_in_space/) ^is ^a ^more ^direct ^sequel
+<div style="font-size:small">
+Continued in [Stealth in Space](Stealth_in_Space.html)
+</div>

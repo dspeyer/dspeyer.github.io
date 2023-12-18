@@ -26,9 +26,7 @@ Rivkah brought her rock-hammer down on the station's long-range subspace radar e
 
 *****
 
-Sequel to [I Have a Hammer](https://www.reddit.com/r/HFY/comments/46zhu3/i_have_a_hammer/) and less directly to [Ordinary Forces](https://www.reddit.com/r/HFY/comments/43mvoe/dissentinsurrection_ordinary_forces/)
-
-Next in Series: [To Remind Us](https://www.reddit.com/r/HFY/comments/5mcv8v/holiday_spirit_to_remind_us/)
+Next in Series: [To Remind Us](To_Remind_Us.html)
 
 In celebration of Harriet Tubman on the $20
 

@@ -58,7 +58,7 @@ Judging by the reactions around the council chamber, this sense was not common. 
 
 “I could almost believe that if this were all isolated incident.  Less than a week later we captured Lawrence Sprin on a 'book signing tour'.”
 
-Ambassador Hamilton needed no pad for this one, “Sprint really is an author.  I've read some of his books myself.  And we did not encourage him to renounce his citizenship; he did it to evade taxes.  We were quite upset.”
+Ambassador Hamilton needed no pad for this one, “Sprin really is an author.  I've read some of his books myself.  And we did not encourage him to renounce his citizenship; he did it to evade taxes.  We were quite upset.”
 
 “He was carrying a concealed weapon.”
 
@@ -110,4 +110,6 @@ Such a resolution would be very inconvenient for Human diplomacy and commerce, b
 
 *****
 
-^You ^can ^read ^Rebecca's ^Story ^in [^I ^Have ^A ^Hammer](https://www.reddit.com/r/HFY/comments/46zhu3/i_have_a_hammer/)
+<div style="font-size:small">
+You can read Rebecca's Story in [I Have A Hammer](I_Have_a_Hammer.html)
+</div>

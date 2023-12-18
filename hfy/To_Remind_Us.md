@@ -167,13 +167,3 @@ She held out the chip.  After a long moment, Aaron took it.
 “There,” Aaron corrected, “The candles advertise that a great miracle happened *there*.”
 
 “Close enough.”
-
-*****
-
-*****
-
-Previous stories in this universe:
-
-* [I Have a Hammer](https://www.reddit.com/r/HFY/comments/46zhu3/i_have_a_hammer/)
-* [Ordinary Forces](https://www.reddit.com/r/HFY/comments/43mvoe/dissentinsurrection_ordinary_forces/)
-* [Stealth in Space](https://www.reddit.com/r/HFY/comments/4fx0dn/stealth_in_space/)
