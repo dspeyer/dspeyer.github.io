@@ -51,6 +51,40 @@
         <a href="rss.xml"><img src="rss.png">See also rss feed</a>
         <!-- new stuff goes here -->
 <div class=post>
+<h6>Proposed Python feature: parameter-specific enums.</h6>
+<p>Proposed Python feature: parameter-specific enums.</p>
+<p>Example:</p>
+<p>def drawLine(img, p1, p2, style % {“AA”:True, “NO_AA”:False}):</p>
+<p># These all do the same: drawLine(img, p1, p2, True) drawLine(img, p1, p2, %AA) drawLine(img, p1, p2, style=%AA)</p>
+<p>When evaluating the style parameter (positional or named), the unitary % operator comes into existence and means “treat what follows as a string and look it up in this parameter's % map.  Keys in said map must be valid python identifiers, to avoid ambiguities in expressions.  And you can use this with expressions:</p>
+<p># These do the same: chmod(fn, 0o600) chmod(fn, %OW | %OR)</p>
+<p>I call unitary % an “operator”, but it acts on the name of the following token, rather than the value.  This lets it look and feel more like an enum.  The other behavior can be achieved with parenthesis, analogously to brackets in javascript map literals, but I predict it will rarely be used:</p>
+<p>chosenStyle=”AA” drawLine(img, p1, p2, %(chosenStyle))</p>
+<p>Just for thoroughness, you can also get the map from the function using the binary % operator:</p>
+<p># These both return {“AA”:True, “NO_AA”:False} drawLine % 3 drawLine % “style”</p>
+<p>(Though if drawLine is an object with a <code>__call__</code> member, you'll need to do drawLine.<strong>call</strong> % “style”).</p>
+<p>You can also combine % with default values, but if so the % must come first.  If so, unitary % becomes available for the default value:</p>
+<p>def drawLine(img, p1, p2, style % {“AA”:True, “NO_AA”:False} = %AA):</p>
+<p>The restriction is to avoid ambiguities in </p>
+<p>def badFunction(x = “foo %s bar” % {“FOO”:1, “BAR”:2})</p>
+<p>BadFunction does <em>not</em> have parameter-specific enum, just a really weird default value.</p>
+<p>Option maps don't have to be literals, which is handy if multiple functions use the same map:</p>
+<p>fontStyles = {   “HERSHEY_SIMPLEX”: 1,   “HERSHEY_COMPLEX”: 2,   “NESTLE_SAN_SERIF”: 3 }</p>
+<p>def putText(img, x, y, txt, font % fontStyle) def getTextLength(txt, font % fontStyle)</p>
+<p>Option maps are also useful for signal values in parameters that are only sometimes flags:</p>
+<p>def drawCircle(img, center, radius, thickness % {“FILLED”: -1})</p>
+<p>drawCircle(img, p, r, 5) # thick circle drawCircle(img, p, r//2, %FILLED) # filled-in circle</p>
+<p>Without this, you get lots of magic numbers in code or symbols cluttering up the module namespace.  The namespace thing is important.  For example, we currently have:</p>
+<p>MARKER_CROSS = 0 MARKER_TILTED_CROSS = 1 MARKER_STAR = 2 def drawMarker(img, pt, markerType) # markerType should be one of the preceeding</p>
+<p>MORPH_RECT = 0 MORPH_CROSS = 1 MORPH_ELLIPSE = 2 def getStructuringElement(shape, size) # shape should be one of the preceeding</p>
+<p>So you invoke <code>getStructuringElement(MORPH_CROSS, (3,3))</code> or more likely <code>cv2.getStructuringElement(cv2.MORPH_CROSS, (3,3))</code> and that MORPH is verbose and unhelpful, but if you got rid of it you'd conflict with drawMarker's flags.  It'd be much nicer to write <code>cv2.getStructuringElement(%CROSS, (3,3))</code> and be done with it.</p>
+<p>(And even with prefixes everywhere, I suspect a library as big as cv2 has had difficulty avoiding collisions when different devs weren't aware of each other's constants.  Maybe not cv2 specifically, since c++ enums give errors for reusing symbols.)</p>
+<p>As you can probably tell, I've been using cv2 lately and it would <em>really benefit</em> from this feature.  But others would too.  Take subprocess.run.  I'd much rather write <code>stdin=%PIPE</code> than <code>stdin=subprocess.PIPE</code> (so verbose!) or <code>from subprocess import PIPE</code> (what a generic name for such a context-specific constant).</p>
+<p>Privacy: Public</p>
+<span class=date>Feb 04 12:00AM</span></div>
+
+
+<div class=post>
 <h6>Two weeks ago we had enough snow to attempt sledding.  The hill north of the Civil War Memorial is steeper than it looks</h6>
 <p>Two weeks ago we had enough snow to attempt sledding.  The hill north of the Civil War Memorial is steeper than it looks.  And the hay bails at the bottom, while vastly better than the chain link fence we'd otherwise hit, wasn't exactly soft.</p>
 <p>Videography and audio commentary by Elizabeth Tawanda Tubbs</p>
