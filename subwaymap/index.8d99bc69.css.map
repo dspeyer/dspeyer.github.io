@@ -1,1 +1,0 @@
-{"mappings":"AAAA","sources":["src/components/app4.css"],"sourcesContent":["div.station {\n    position: absolute;\n    border: .01in outset grey;\n    font-size: min(.4in, 1vw);\n    width: min(2in,5vw);\n    white-space: pre;\n    overflow: hidden;\n}\n"],"names":[],"version":3,"file":"index.8d99bc69.css.map","sourceRoot":"/__parcel_source_root/"}
