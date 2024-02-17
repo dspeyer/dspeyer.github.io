@@ -1,0 +1,10 @@
+div.station {
+  white-space: pre;
+  border: .01in outset gray;
+  width: min(2in, 5vw);
+  font-size: min(.4in, 1vw);
+  position: absolute;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=index.8d99bc69.css.map */

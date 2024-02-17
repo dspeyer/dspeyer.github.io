@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/components/app.css"],"sourcesContent":["div.station {\n    position: absolute;\n    border: 2px outset grey;\n}\n"],"names":[],"version":3,"file":"index.bdf8d6b0.css.map","sourceRoot":"/__parcel_source_root/"}

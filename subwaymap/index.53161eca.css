@@ -1,0 +1,17 @@
+div.station {
+  white-space: pre;
+  background: #fff;
+  border: .01in outset gray;
+  width: min(2in, 5dvw);
+  font-size: min(.4in, 1dvw);
+  position: absolute;
+  overflow: hidden;
+}
+
+div.station span.rn {
+  color: #fff;
+  text-shadow: 0 0 .1vw #000;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.53161eca.css.map */

@@ -1,0 +1,42 @@
+div.app {
+  --zoom-box: 1;
+  --zoom-text: 1;
+}
+
+div.station {
+  font-size: calc(.3in * var(--zoom-text));
+  width: calc(2in * var(--zoom-box));
+  white-space: pre;
+  background: #fff;
+  border: .01in outset gray;
+  position: absolute;
+  overflow: hidden;
+}
+
+div.station span.rn {
+  color: #fff;
+  text-shadow: 0 0 .1vw #000;
+  width: 1em;
+  font-weight: bold;
+}
+
+div.station span.half {
+  background: linear-gradient(to right, #fff, #fff 90%, #777 100%);
+  width: calc(50% - .5em);
+  display: inline-block;
+  overflow: hidden;
+}
+
+div.ball {
+  width: calc(.2in * var(--zoom-text));
+  height: calc(.2in * var(--zoom-text));
+  text-align: center;
+  color: #fff;
+  font-size: calc(.2in * var(--zoom-text));
+  text-shadow: 0 0 .1vw #000;
+  z-index: -1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/*# sourceMappingURL=index.b4210f6f.css.map */
