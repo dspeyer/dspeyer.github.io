@@ -51,6 +51,25 @@
         <a href="rss.xml"><img src="rss.png">See also rss feed</a>
         <!-- new stuff goes here -->
 <div class=post>
+<h6>I've been getting frustrated with the MTA's realtime subway info page.  It won't display multiple stations at once (often relevant for decision-making) and it often requires multiple network</h6>
+<p>I've been getting frustrated with the MTA's realtime subway info page.  It won't display multiple stations at once (often relevant for decision-making) and it often requires multiple network round-trips to get new data (problematic in tunnels).</p>
+<p>Then I talked to Elizabeth Tawanda Tubbs, who had a different set of frustrations.  Like how it doesn't integrate elevator/escalator or geographic data.</p>
+<p>Then I checked out the MTA's APIs, and while I wouldn't exactly call them well-designed or well-documented, they do <em>exist</em> and provide a pretty good set of data.</p>
+<p>Then I spent most of a week poking at this more intensely than I probably should, and voila: https://dspeyer.github.io/subwaymap/</p>
+<p>Things to Note...</p>
+<p>The actual code is pretty bulky, but loads all at the start.  I recommend leaving the tab open on your phone.  Though hopefully local caching will do good things.</p>
+<p>The counting down is automatic.  Fetching new data isn't.  The buttons on the left control that, as well as reporting how stale the data is.  Old data is often quite accurate, but obvious caveats apply.</p>
+<p>If you don't allow it GPS access (don't worry, nothing gets uploaded), you may start in the upper left corner where nothing is.  Just pan over.</p>
+<p>Tapping on a station both brings it to the front and enlarges it and gives details.  The button in the upper right shrinks it back down, but it remains brought-to-front.</p>
+<p>If you zoom in, the relative size of text shrinks.  So if stations are overlapping, this can help.</p>
+<p>I've tested in Chrome and Opera on android and Chrome and Firefox on desktop (ubuntu).  So it probably works on all modern browsers.  Probably.</p>
+<p>Please don't spread it around really widely.  MTA asks devs to put in caching layers and I haven't.  I figure so long as traffic is low they won't care.</p>
+<p>Though if a bunch of you like it, maybe I'll find someplace to host a simple cache cheaply.</p>
+<h2><a href="https://mbasic.facebook.com/story.php?story_fbid=pfbid0YCoxXAVZ49Vcm2KGw6wE4D5Xni6enqT5SMZLauizajXBX3AASBwEDX1J8TPsuMTXl&amp;id=1794288703&amp;eav=Afa0njFpFmP_v1-ewBKBffOi4aMCi4Zpb-1Wj8d8JoYmsUYkDp2Eu7qDmYh0UXrBGj8&amp;refid=17&amp;_ft_=encrypted_tracking_data.0AY-iR-D4Vm595wCfA1iRUKB5_3o62IYBE4-c6HClZPEpXuEtyZgWVWkCBsJKucqNhU2lAusYuDYpIPU5z6rnSLm-C5_GijIcWTyZZut0cSMQ4czpeITLFVeZf-7d_c1Ws2vu27Ws5ZTsm6iSe-bt2XO0HWdw98Q4XokFHirBezU5AS_YgkHXbvyTDb827uxP0d4EV2ddBkjcRuOoaZ4BFfPxi3Rjeg4LFEPDyvE2UaTkwPmjg01z2ceHWO-hswkjW3tufMSjPR_XrE3vL17Fl9C-mwWXITOtNgFkLphHdAbYlxbxJRR2w8R2ZuL8mU8YOMs9lZoUre6bZwFBHoCKuDMnxP9q-M4fKIk1U95ddQwzq6RJThBelk-HX9RV7OrEaXOlfXNQ4zHJg-Sc6iSlcTChjfwurTSOzLRW8qkfOarcmZZko2USTIvtGTcJl9vVTRW95ZBUVr3sHIussXHI7Lm3zYINd6rmE-bVSrn5VJ1RNj0TYgDjlSC1d_b960OJAOHuPCCZIfOTyCs-lcegTAwd82uR18Wr3ntT6iJ9aXwW118gAfZMPRts5So5mCeLlFuvEfgmCX1w8V9QAYEpVcECOQhilGKhp8Q-qTPj7WiSKiK6IS8vVQ8IORS3K6UtjwXDZjnZZfHkjk0jBfDY5t37YF9DworKyR2XJnGzIvGSNbB-qd2IY2T565ZPkvAAbEf4PZ7a6YiJxuv6vdKmycdy0zIv5-ZdXphlAykZyGEzyaTSNNbqul6i3lIToU38643MS6BIbNbSxiTx6GWFK3k&amp;__tn__=%2AW-R&amp;paipv=0">See Realtime Realspace Subway Map</a></h2>
+<span class=date>Feb 09 7:00AM</span></div>
+
+
+<div class=post>
 <h6>Proposed Python feature: parameter-specific enums.</h6>
 <p>Proposed Python feature: parameter-specific enums.</p>
 <p>Example:</p>
