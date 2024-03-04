@@ -112,6 +112,7 @@ Changes made in Yetzirah do affect the physical world, but they revert as soon a
 Example DCs:
 
 * 10: Identify what aspects of the current situation apply to the Vanishing Name
+* 10: Find the minumum action needed to make the current situation a metaphor for something else (as effects placebomancy and yetzirah)
 * 20: Exchange words telepathically
 * 25: Deeper telepathy
 * 25: Obtain crypric prophessies
@@ -184,15 +185,18 @@ Example DCs:
 
 Perform placebomancy, or deduce how effective it will be without performing it.
 
+Placebomantic blessings and curses usually last until the situation becomes a metaphor for soemthing else.
+
 Remember that placebomancy cannot do the physically impossible.
 
 Example DCs:
 
 * 10: Grant a simple blessing, allowing the recipient to reroll one die in the course of their next operation
-* 15: Grant a more substantive blessing, such as +1 die to all checks of one ability thoughout the operation, or automatic successes on a more narrow category of checks.
+* 10: Cause a known-flaky gun to jam using a piece of its spent ammunition
+* 15: Grant +1 die on all rolls involving sight using a seagull feather
 * 15: Cause a random Motive Name to correctly open the Panama Canal using sand from the Florida Keys
+* 15: Deduce the effectiveness of a ritual without performing it
 * 20: Cause a random Motive Name to correctly open the Panama Canal using ordinary house keys and style
-* 20: Deduce the effectiveness of a ritual without performing it
 * 25: Curse someone with crippling muscle spasms using a piece of their body
 * 30: Curse someone with crippling muscle spasms using a photograph of them
 
