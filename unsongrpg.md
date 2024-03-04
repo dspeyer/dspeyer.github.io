@@ -247,7 +247,7 @@ Can be anything from clean socks to a decommissioned aircraft carrier.  Possessi
 Learning a new skill is usually either a Metis or Science check, and tends to take quite a while.  When making a check for which a specific skill is relevant, add two dice.  Example learning DCs:
 
 * Metis 5: Jerry-rig a belay system out of rope; compose sonnets; cook arbitrary Thai curries
-* Metis 10: Work as a secretary for a large business; craft or repair clothing so that it looks “real”
+* Metis 10: Work as a secretary for a large business; craft or repair clothing so that it looks “real”; handle and shoot a pistol; follow proper ediquette at a formal banquet
 * Science 5: Identify edible plants in your native environment; Change oil in a car
 * Science 10: Write ordinary software; Understand organic chemistry
 * Exegesis 5: Know some basic vocabulary in a foreign language, enough to express simple concepts most of the time
@@ -255,6 +255,8 @@ Learning a new skill is usually either a Metis or Science check, and tends to ta
 * Exegesis 10: Speak an ordinary foreign language fluently
 * Exegesis 15: Speak fluently a foreign language that is notoriously difficult to learn, such as Arabic, Cantonese or Xhosa
 * Naming 10: Practice a klipah until you can speak in it without needing a special check
+
+Note that while using a pistol in combat is Violence and behaving properly at a banquet is Social Skills, *learning* these specific skills is Metis.  This generalizes to any skill where the primary difficulties in learning it are diligent practice and finding suitable excersices of gradually increasing difficulty.
 
 ## Names
 
