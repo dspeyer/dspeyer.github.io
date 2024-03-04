@@ -98,8 +98,8 @@ class FBSParser(HTMLParser):
                     self.link = self.url
                 else:
                     self.link = 'https://mbasic.facebook.com' + attrs['href']
-        if tag=='br' and self.state=='body':
-            self.text += '    \n'
+        if tag=='br' and self.state in {'body', 'photobox'}:
+                self.text += '    \n'
         if tag=='abbr' and self.state!='commeents':
             self.state = 'date'
         #if len(self.stack) and self.state != self.stack[-1]:
@@ -154,6 +154,7 @@ def submit(title, body, date, url):
     except ValueError:
         date = datetime.now()
     #print('\n------------------------------\n##%s\n\n%s\n-----------------\n'%(title,body))
+    #print('\n\n   The HTML    \n\n %s' % markdown(body))
     #return
     req = {"title":title,"content":markdown(body),"date":date,"url":url}
     topost.append(req)

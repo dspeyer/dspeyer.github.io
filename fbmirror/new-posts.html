@@ -86,16 +86,24 @@
 
 <div class=post>
 <h6>Proposed Python feature: parameter-specific enums.</h6>
-<p>Proposed Python feature: parameter-specific enums.</p>
+ <p>Proposed Python feature: parameter-specific enums.</p>
 <p>Example:</p>
 <p>def drawLine(img, p1, p2, style % {“AA”:True, “NO_AA”:False}):</p>
-<p># These all do the same: drawLine(img, p1, p2, True) drawLine(img, p1, p2, %AA) drawLine(img, p1, p2, style=%AA)</p>
+<p># These all do the same:  <br />
+ drawLine(img, p1, p2, True)  <br />
+ drawLine(img, p1, p2, %AA)  <br />
+ drawLine(img, p1, p2, style=%AA)</p>
 <p>When evaluating the style parameter (positional or named), the unitary % operator comes into existence and means “treat what follows as a string and look it up in this parameter's % map.  Keys in said map must be valid python identifiers, to avoid ambiguities in expressions.  And you can use this with expressions:</p>
-<p># These do the same: chmod(fn, 0o600) chmod(fn, %OW | %OR)</p>
+<p># These do the same:  <br />
+ chmod(fn, 0o600)  <br />
+ chmod(fn, %OW | %OR)</p>
 <p>I call unitary % an “operator”, but it acts on the name of the following token, rather than the value.  This lets it look and feel more like an enum.  The other behavior can be achieved with parenthesis, analogously to brackets in javascript map literals, but I predict it will rarely be used:</p>
-<p>chosenStyle=”AA” drawLine(img, p1, p2, %(chosenStyle))</p>
+<p>chosenStyle=”AA”  <br />
+ drawLine(img, p1, p2, %(chosenStyle))</p>
 <p>Just for thoroughness, you can also get the map from the function using the binary % operator:</p>
-<p># These both return {“AA”:True, “NO_AA”:False} drawLine % 3 drawLine % “style”</p>
+<p># These both return {“AA”:True, “NO_AA”:False}  <br />
+ drawLine % 3  <br />
+ drawLine % “style”</p>
 <p>(Though if drawLine is an object with a <code>__call__</code> member, you'll need to do drawLine.<strong>call</strong> % “style”).</p>
 <p>You can also combine % with default values, but if so the % must come first.  If so, unitary % becomes available for the default value:</p>
 <p>def drawLine(img, p1, p2, style % {“AA”:True, “NO_AA”:False} = %AA):</p>
@@ -103,18 +111,29 @@
 <p>def badFunction(x = “foo %s bar” % {“FOO”:1, “BAR”:2})</p>
 <p>BadFunction does <em>not</em> have parameter-specific enum, just a really weird default value.</p>
 <p>Option maps don't have to be literals, which is handy if multiple functions use the same map:</p>
-<p>fontStyles = {   “HERSHEY_SIMPLEX”: 1,   “HERSHEY_COMPLEX”: 2,   “NESTLE_SAN_SERIF”: 3 }</p>
-<p>def putText(img, x, y, txt, font % fontStyle) def getTextLength(txt, font % fontStyle)</p>
+<p>fontStyles = {  <br />
+   “HERSHEY_SIMPLEX”: 1,  <br />
+   “HERSHEY_COMPLEX”: 2,  <br />
+   “NESTLE_SAN_SERIF”: 3  <br />
+ }</p>
+<p>def putText(img, x, y, txt, font % fontStyle)  <br />
+ def getTextLength(txt, font % fontStyle)</p>
 <p>Option maps are also useful for signal values in parameters that are only sometimes flags:</p>
 <p>def drawCircle(img, center, radius, thickness % {“FILLED”: -1})</p>
-<p>drawCircle(img, p, r, 5) # thick circle drawCircle(img, p, r//2, %FILLED) # filled-in circle</p>
+<p>drawCircle(img, p, r, 5) # thick circle  <br />
+ drawCircle(img, p, r//2, %FILLED) # filled-in circle</p>
 <p>Without this, you get lots of magic numbers in code or symbols cluttering up the module namespace.  The namespace thing is important.  For example, we currently have:</p>
-<p>MARKER_CROSS = 0 MARKER_TILTED_CROSS = 1 MARKER_STAR = 2 def drawMarker(img, pt, markerType) # markerType should be one of the preceeding</p>
-<p>MORPH_RECT = 0 MORPH_CROSS = 1 MORPH_ELLIPSE = 2 def getStructuringElement(shape, size) # shape should be one of the preceeding</p>
+<p>MARKER_CROSS = 0  <br />
+ MARKER_TILTED_CROSS = 1  <br />
+ MARKER_STAR = 2  <br />
+ def drawMarker(img, pt, markerType) # markerType should be one of the preceeding</p>
+<p>MORPH_RECT = 0  <br />
+ MORPH_CROSS = 1  <br />
+ MORPH_ELLIPSE = 2  <br />
+ def getStructuringElement(shape, size) # shape should be one of the preceeding</p>
 <p>So you invoke <code>getStructuringElement(MORPH_CROSS, (3,3))</code> or more likely <code>cv2.getStructuringElement(cv2.MORPH_CROSS, (3,3))</code> and that MORPH is verbose and unhelpful, but if you got rid of it you'd conflict with drawMarker's flags.  It'd be much nicer to write <code>cv2.getStructuringElement(%CROSS, (3,3))</code> and be done with it.</p>
 <p>(And even with prefixes everywhere, I suspect a library as big as cv2 has had difficulty avoiding collisions when different devs weren't aware of each other's constants.  Maybe not cv2 specifically, since c++ enums give errors for reusing symbols.)</p>
 <p>As you can probably tell, I've been using cv2 lately and it would <em>really benefit</em> from this feature.  But others would too.  Take subprocess.run.  I'd much rather write <code>stdin=%PIPE</code> than <code>stdin=subprocess.PIPE</code> (so verbose!) or <code>from subprocess import PIPE</code> (what a generic name for such a context-specific constant).</p>
-<p>Privacy: Public</p>
 <span class=date>Feb 04 12:00AM</span></div>
 
 
@@ -297,22 +316,36 @@
 
 <div class=post>
 <h6>How would I have done an Ahsoka show?</h6>
-<p>How would I have done an Ahsoka show?</p>
+ <p>How would I have done an Ahsoka show?</p>
 <p>(I was disappointed in the one we got, in large part <em>because</em> I'm so fond of the character in general.  I was going to write an analysis of that, but it was boring, so have a pitch instead.)</p>
 <p>We start with the final scene in rebels, recreated in live action (assuming we're committed to the live action part – given the choice, I'd probably keep her animated: why change what works so well?).</p>
 <blockquote>
-<p>Ahsoka: I'm ready to go after Ezra.  Are you? &gt;  &gt; Sabine: I've been ready since the day he disappeared.  It's been three months.  What took you so long? &gt;  &gt; Ahsoka: I wear a lot of hats for the rebellion.  Had to reliably hand them all off to other people. &gt; &gt; Sabine: I suppose &gt; &gt;Ahsoka: Also, the purrgil don't owe me a favor like they did Ezra.  He got a bunch to break from their pod and migrate early, but we get to go with the main pod on their schedule. &gt; &gt; Sabine: Right.  Purrgil schedules. &gt; &gt; Ahsoka: Look on the bright side.  They <em>want</em> to find their podmates, which means they'll figure out where those podmates took Ezra and take us to the same place.  Could have been an awful lot of search area otherwise.</p>
+<p>Ahsoka: I'm ready to go after Ezra.  Are you?    </p>
+<p>Sabine: I've been ready since the day he disappeared.  It's been three months.  What took you so long?    </p>
+<p>Ahsoka: I wear a lot of hats for the rebellion.  Had to reliably hand them all off to other people.    </p>
+<p>Sabine: I suppose    </p>
+<p>Ahsoka: Also, the purrgil don't owe me a favor like they did Ezra.  He got a bunch to break from their pod and migrate early, but we get to go with the main pod on their schedule.    </p>
+<p>Sabine: Right.  Purrgil schedules.    </p>
+<p>Ahsoka: Look on the bright side.  They <em>want</em> to find their podmates, which means they'll figure out where those podmates took Ezra and take us to the same place.  Could have been an awful lot of search area otherwise.</p>
 </blockquote>
 <p>We establish the time (pre-ANH), the relationship to the purrgil, and the mission.</p>
 <p>The actual ride goes smoothly, but Ahsoka has a bad feeling, and tells her nav computer to investigate.  It takes a bunch of readings and identifies which galaxy they're in, and also that four years have passed.</p>
 <blockquote>
-<p>Ahsoka: I guess it makes sense.  There's no fundamental reason that the duration experienced in hyperspace has to match the time difference between entering and exiting. &gt; &gt; Sabine: Every hyperdrive I've ever worked on uses fijian pathes which limit the ratio to the seventh root --- &gt; &gt; Ahsoka: But the purrgil aren't drives.  They have their own idea of when and where they want to arrive. &gt; &gt; Sabine: But isn't it always better to arrive sooner rather than later? &gt; &gt; Ahsoka: If you want to be prompt for the people at your destination.  But everyone the purrgil care about travels with them.  So why not hop down the timeline a bit?  Give trouble a chance to subside, food sources time to regrow.</p>
+<p>Ahsoka: I guess it makes sense.  There's no fundamental reason that the duration experienced in hyperspace has to match the time difference between entering and exiting.    </p>
+<p>Sabine: Every hyperdrive I've ever worked on uses fijian pathes which limit the ratio to the seventh root ---    </p>
+<p>Ahsoka: But the purrgil aren't drives.  They have their own idea of when and where they want to arrive.    </p>
+<p>Sabine: But isn't it always better to arrive sooner rather than later?    </p>
+<p>Ahsoka: If you want to be prompt for the people at your destination.  But everyone the purrgil care about travels with them.  So why not hop down the timeline a bit?  Give trouble a chance to subside, food sources time to regrow.</p>
 </blockquote>
 <p>They find the wreckage of Thrawn's star destroyer.  Ahsoka knows the purrgil well enough to know it wasn't their doing.  </p>
 <p>As this thought sinks in, a squadron of unfamiliar fighter craft drop out of hyperspace.  They look almost organic, and rather than force fields, they use physical shields of ultra-dense material for protection.  These shields need to swing out of the way for <em>them</em> to fire, which would seem like a convenient vulnerability for Ahsoka's force-enhanced timing, but she can't get a feel for them in the force.  So Sabine takes over weapons, and gets some hits, but there are just too many of them.  Ahsoka dives for a nearby planet, where thick upper-atmosphere clouds might provide some cover.</p>
 <p>It's not looking like they're going to make it, but as they approach the clouds a fleet of Tie fighters comes up to meet them, spreads out, and fires on the alien ships from multiple angles, destroying them.  The radio crackles to life.</p>
 <blockquote>
-<p>Ezra: Ahsoka?  Is that you &gt;  &gt; Ahsoka: It's me &gt; &gt; Sabine: And me.  Since when do you pilot a tie fighter? &gt;  &gt; Ezra: Since I needed to &gt;  &gt; Thrawn: And since I needed a pilot with super-human reflexes</p>
+<p>Ezra: Ahsoka?  Is that you    </p>
+<p>Ahsoka: It's me    </p>
+<p>Sabine: And me.  Since when do you pilot a tie fighter?    </p>
+<p>Ezra: Since I needed to    </p>
+<p>Thrawn: And since I needed a pilot with super-human reflexes</p>
 </blockquote>
 <p>::end episode one::</p>
 <p>(Hopefully characters will be recognizable by voice despite recasting.  Also, Ezra's pretty clear by context and Thrawn has distinctive word-habits.)</p>
