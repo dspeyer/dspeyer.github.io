@@ -5,7 +5,7 @@
 
 This game assumes you have read [Unsong](https://unsongbook.com) and remember it well.  If you have not, you will likely be very confused.
 
-A successful game *should* include lots of specifically worked out placebomancy and yetzirah manipulation.  That's what makes the setting vibrant, and will make for great stories afterwards.  Therefore these things never get shoved under the abstraction threshold.  But it should be possible to play a character who is better at these things than you are.  Hence the entire-table-helps mechanics.
+A successful game *should* include lots of specifically worked out placebomancy and yetzirah manipulation.  That's what makes the setting vibrant, and will make for great stories afterwards.  Therefore these things never get shoved under the abstraction threshold.  But it should be possible to play a character who is better at these things than you are.  When the character is highly skilled in these things but the player is stuck, the rest of the table should assist, and use out-of-game tools (such as the Internet Anagram Server) as necessary.
 
 Meanwhile, a lot of more boring things *are* getting shoved under the abstraction threshold.  There are explicit rules for retconning equipment precisely so that you don't have to worry about it in advance.
 
