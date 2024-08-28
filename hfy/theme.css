@@ -28,4 +28,5 @@ p {
     width: 80vw;
     margin-left: 10vw;
     background: rgba(0,0,0,0.5);
-}
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}}
