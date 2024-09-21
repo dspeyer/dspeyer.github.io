@@ -2186,6 +2186,7 @@ To: Juniper Hargrave
 Now that I've analyzed the mutagen data from Corporal Stein, I think you should consider taking a Telepathy mutagen.
 
 I'm pretty confident that I've got a few of those identified.
+
 * They're closer to the reference Telepathy than any pair of known-different mutations are to each other
 * They're 2x closer to the reference Telepathy than they are to any other references
 * Telepathy seems to be pretty common, because
@@ -2193,6 +2194,7 @@ I'm pretty confident that I've got a few of those identified.
   * The 3rd, 4th and 5th all failed due to repitition, and they were all closer to Telepathy than to Boost-Int (the 2nd he drew)
 
 I think this mutant power would be a good fit for you because:
+
 * It'll give TC-3 a telepath, something the team currently doesn't have, which will be really useful in breaking language barriers (e.g. with FTL people).
 * It should combine nicely with your existing electrical powers, both being rooted in (for lack of a better term) Charisma.  Corporal Stein became notably more charismatic after receiving it (though later mutations took that away and more).
 * The biggest known downside is strength loss, which will cause you very little inconvenience.
@@ -2214,6 +2216,7 @@ Classified.  Not for Corporal Hargrave's Eyes
 By Deanna Needler
 
 Assuming:
+
 * Blood drunk by a bloodmite summoned via an Aldremach pact goes to Aldremach
 * Bloodmites drink all natural components of blood (plasma, red cells, white cells, platelets...)
 * Blood which has been separated into components and mixed back together is still blood
@@ -2506,6 +2509,7 @@ There are two kinds of doubting another's personhood.  There is the kind that is
 Is this something intrinsic in vampirehood, a property of their society, or an effect of the magical compulsions they use so freely?  I don't know.  I have attempted to introspect myself for signs of evil since my change, but introspection is inherently flawed in these matters.  Sadly Efrayim Stein is not yet skilled enough as a telepath to examine me.  I also watched over Zbignef Steve Musial since his transformation, and saw worrying signs but nothing outright alarming.  His latest report is more worrying but hard to evaluate without context.
 
 The nobility of Jaket have a similar form of evil, but with less sharp edges.  In our excursion there, we did not convince them that a division of nobles and slaves was wrong, but only that this is an entire world of nobles.  This flexibility-of-mind is encouraging, but the problem is not solved.  For a true solution, I suspect their society and worldview can only be displaced by another complete society and worldview.  Building such next to them would be difficult, but not impossible.  In any case, we must never show them weakness, or they will revert in their handling of us.    
+
 The mantle-lords of the battlegrounds are another matter entirely.  They live in a world of violence where anyone can win or lose at any time.  They are not wedded to a worldview but simply trying to survive in a harsh environment.  They should be regarded as victims – even the most powerful and abusive of them.
 
 Governance is not evil.  Proud and quick-to-anger, perhaps, but trying to be decent.
@@ -2758,7 +2762,6 @@ Therefore, I beg you to armor my mind.  To protect me from such magics, and so t
 I remain, as ever, your servant
 Maksim Drogonov
 
-[[OOC: I know Dragonfire doesn't have a straight bonus-to-will-saves, but it seems like it would fit into enchantment alongside the bonus-to-skills, so maybe there's a secret variant that's not in the book but they know.  Alternatively, they could grant Enchantment's morale bonus to all rolls and Boost's bonus to wisdom, both of which include will saves.]]    
 </article>
 
 <article>
@@ -2787,4 +2790,71 @@ Anya Singh, USA, 20: Architecture Major and business minor at MIT and promising 
 Camila Navarro, Columbia, 46: Midwife and married mother of 5. caring and nurturing, with a strong sense of community and togetherness, known for being a central node in her community who everybody knows. sponsored by Raphael with healing magic(despite having no magical experience). claims to be charged by Raphael "with healing the sick and tending to the needy". called Terminus within 6 hours to notify of her experience, and ask for advice on learning spellcraft.
 
 Hanna Jorgstein, Germany, 44: single librarian, youth activity organizer and budding wizard. sponsored by undisclosed angel(Gabriel?) with Celestial Conjury, Force Manipulation, Augment Senses, and a few contingent force effects. called Terminus within 10 min, offering her services to support an invasion of hell. claims that when the time is right for the huge blood ritual, you should contact Gabriel(rune provided) to manage the summoning on their end.    
+</article>
+
+<article>
+## Summary of the Final Invasion
+By Zbigniew "Steve" Musial    
+
+> *Let me see if I've got this...*
+>
+> *I'm a vampire*    
+> *In hell*    
+> *About to contact an archangel*    
+> *So that I can be baptized in blood on his behalf*    
+> *The dunking will be done psychokinetically by an undead mutant alien*    
+> *And it's cancer/poison blood*    
+> *All so we can kill the last lord of hell*    
+> 
+> *I think I've peaked*
+</article>
+
+<article>
+## Table of Staff
+
+| Name | Redacted | Team | Title | Special Abilities | Origin | Notes |
+|:--|:--|:--|:--|:--|:--|:--|
+| Myrria | Daniel | TC-5 | - | Psionics, Drakeness, Vampire | Cubeworld | - |
+| Owen Lloyd | Geoff | TC-5 | Captain | - | Australia | - |
+| Cassidy | Emma | TC-5 | - | is dog. is smart boy. is strong boy. is good boy! | Australia | - |
+| Paul Lloyd | Alex | TC-5 | - | Spellcaster, Entads | United Kingdom | - |
+| Zbigniew "Steve" Musial | Alex | Battlegrounds Ambassador (TC-3) | Corporal | Vampire | Poland | - |
+| Maksim Drogonov | Daniel | TC-3 | Captain | Using a spear, sticking to walls, turning into a giant metal techbane tiger, seeing through all lies | Russia | - |
+| Sean O'Brien | Emma | TC-3 | Professor | Magic | Ireland | - |
+| Juniper Hargrave | Geoff | TC-3 | - | Semipsionic electric storage, Magical demon summoning | Canada | - |
+| Clair Whipcord | Alex | TC-3 | Operative | Tail-strike, Regeneration | Fractured States(Mantle Earth) | - |
+| Rafael | Daniel | Standby-1 | - | Portals | Battlegrounds(Mantle Earth) | - |
+| Efrayim Stein | Daniel | TC-6 | Corporal | All the mutations | Germany | - |
+| Astrid Instinct | Emma | TC-6 | Operative | Dodginess | Fractured States(Mantle Earth) | - |
+| Dara Flanagan | Geoff | TC-6 | Sargent | Technician | United Kingdom | - |
+| Jessica Sinclair | Alex | TC-6 | - | Magic | United States | - |
+| Raila Wamboro | Emma | Infernal Hunters | - | psi boost; the Demon Hunter | Kenya | - |
+| Deanna Needler | Daniel | - | Analyist | - | Israel | Overuses addendums |
+| Jasmine Watts | - |  | Assistant Director | - | United States | Overuses bulletted lists |
+| Rowan Minami | Emma | - | Sargeant, Analyst(Occult) | big guns; magic | United States | Linguist, smartest human, formerly TC-1 |
+| Wensleydale Prim | Daniel | - | Analyist (Political) | - | United Kingdom | Refers to Chinese Governmnet as throwing "Childish Tantrums" |
+| Liam Harding | Emma | - | Analyist (Occult) | - | Australia | Buzzfeed-style reporting |
+| Desmond "Desi" Kaufman | - |  | Analyist (Occult) | - | Ukraine/United States (Dual Citizenship) | Describes custom ammo in terms of comic book references |
+| Mila Harris | - |  | Chief of Intelligence | - | United Kingdom | Ran a good portion of British counterintelligence, A bit scary |
+| John Much | - |  | Chief of Operations | - | United States | - |
+| Miguel Dimas | - |  | Chef | Skilled Manipulator | United States | Sociopath |
+| Ray Harper | - |  | Lieutenant | Pilotting the Saucer | United States | - |
+| Piero Benelli | - |  | Sargeant | - | Italy | Manages the Occult analisys team |
+| Hamahona Akarana | - |  | Terminius Director | - | New Zeland | - |
+| Johnathan Mann | - | Standby-1 | Specialist | Heavy Weapons | United States | Special forces soldier to stand in for contact team members |
+| Carlos Alvarez | - |  | Doctor | - |  | Medical staff |
+| Adriana Bellini | Emma | - | Analyist(Xenobio) | - | Italy | Wishes you would exercise restraint when using explosives |
+| Reese Westbrook | - |  | Assistant Chief of Operations | - |  | Excursion to Jaket |
+| Abigail Bently | - |  | PR Director  | - | United Kingdom | - |
+| Jesse DuMont | - |  | Head of Artifact Custody(interim) | - | Stateless / Germany | has history with Cheif Harris. is an asshole. |
+| Chen Bi | - |  | Head of Mechanical R&D | - | China | - |
+| Deceased | - | - | - | - | - | - |
+| Birch Green | Geoff | --- | Specialist | Robotics | United States | Killed by pack of ghouls during I-22 in Ulaanbaatar, Mongolia |
+| Sycamore Okido | Alex | --- | Lt. Colonel | Tower Shield | United States | Killed by vampire during I-22 in Ulaanbaatar, Mongolia |
+| Mortimer Hammermeister | - | - | Head of Mechanical R&D | - | Germany | Killed by zombies during I-45&I-46 in Terminius HQ, USA |
+| Carmine | Geoff/Alex | --- | - | Something about big guns | Battlegrounds(Mantle Earth) | Killed by zombies during I-45&I-46 in Terminius HQ, USA |
+| Mathew Young | - | - | Lieutenant | Saucer Pilot | United States | Killed by ally comanded by a Pulsekeeper during I-25&I-26 in Terminius HQ, USA |
+| Alexander Barca | - | - | Assistant Director | - | United States | Killed by Necromancy Ritual during I-45&I-46 in Terminius HQ, USA |
+| Alexi Romanov | - | - | Operations Advisor | - | Russia | Killed by Hemotree during I-45&I-46 in Terminius HQ, USA |
+
 </article>

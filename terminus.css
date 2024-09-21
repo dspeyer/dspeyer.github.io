@@ -17,3 +17,16 @@ article h1 {
 body h1 {
     text-shadow: 1px 1px 1px white;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #999;
+}
+
+th {
+    border-right: 1px solid #999;
+    padding: 0 1em;
+}

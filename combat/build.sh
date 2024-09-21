@@ -14,7 +14,7 @@ if [[ $1 != quick ]]; then
     download 19Jl68KBJC00f1Q0Ha6iwoKMYkKT2xH-Toz7saXu7EKs examplefirearms
 fi
 
-pandoc -s --toc -c theme.css -T DUCK < index.md > index.html
+pandoc --from markdown -s --toc -c theme.css --metadata title="Data-Driven Universal Combat Kit" < index.md > index.html
 
 for INSERT in $(grep %% index.md | tr -d %); do
     CONTENT=$( cat ${INSERT}.html | tr '\n' ' ' | sed 's/.*<table[^>]*>/<table>/i' | sed 's@</table>.*@</table>@i' | sed 's/\\/\\\\/g' | sed 's/&/\\&/g')

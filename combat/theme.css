@@ -8,8 +8,7 @@ body {
 	max-width: 1125px;
 }
 
-body::before {
-    content: "Data-driven Universal Combat Kit";
+h1.title {
     font-size: 25pt;
     text-align: center;
     display: block;
@@ -90,3 +89,48 @@ div.captioned p {
     text-align: center;
     font-style: italic;
 }
+
+
+.exampletable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.exampletable td {
+    border: 1px solid #333 !important;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.exampletable th {
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.exampletable th[colspan="7"] {
+    min-width: 40vw;
+}
+
+.exampletable p {
+    margin: 0;
+}
+
+.exampletable tr {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+    
+.exampletable td:has(em) {
+    border-top: 4px double #333 !important;
+}
+
+.exampletable td[rowspan="2"] {
+    border-right: 4px double #333 !important;
+    border-bottom: 4px double #333 !important;
+}
+
+
+.exampletable em {
+    font-style: normal;
+    font-weight: bold;
+}
+

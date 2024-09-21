@@ -1,28 +1,111 @@
 # Example Combat
 
-These rules will be clearest if we begin with an example.  Alice and Bob have decided to kill each other.
+These rules will be clearest if we begin with an example.  Alice and
+Bob have decided to kill each other.
 
-Alice is wearing neck-to-toe gambison, augmented with a plate cuirasse on her torso and a half-closed plate helmet.  This combination leaves her complete freedom of movement in her arms and legs, but does apply a -3 penaly to spot checks.  She wields a halberd (long haft, blade and sidespike, spear-point).
+Alice is wearing neck-to-toe gambison, augmented with a plate cuirasse
+on her torso and a half-closed plate helmet.  This combination leaves
+her complete freedom of movement in her arms and legs, but does apply
+a -3 penaly to spot checks.  She wields a halberd (long haft, blade
+and sidespike, spear-point).
 
-Bob is wearing head-to-toe chainmail, with a falchion (fore-bulging 3-foot blade) in his right hand and a rondel dagger (stilhetto, 1-foot blade) in his left.
+Bob is wearing head-to-toe chainmail, with a falchion (fore-bulging
+3-foot blade) in his right hand and a rondel dagger (stilhetto, 1-foot
+blade) in his left.
 
-Alice moves to ten feet away and attacks.  Since Bob is wearing chainmail, which is not very effective against piercing, she uses the side-spike and doesn't worry about where she hits him.  Her attack bonus is her base attack (3) plus her dexterity mod (1) totalling 4.  His AC is ten plus his dexterity modifier (2) totalling 12.  She rolls a 12 totalling 16, a hit.
 
-But Bob reacts by parrying with his falchion.  He rolls his own attack (bab=2 dex=2 die=8 total=12) and adds half the result (6) to his AC.  Alice has now missed.
+<div class=exampletable>
 
-Bob advances cautiously to a distance of five feet.  He has the Two Weapon Fighting feat, so he can attack with both weapons.  He begins with the falchion.  Since it's not very effective against plate, he deliberately slashes at her right arm.  His attack bonus is bab=2 plus dex=2 plus using-a-blade-as-intended=2 = 6.  Her arm's AC is ten plus dex (1) plus single-body-part (4) = 15.  He rolls a 10 for a total of 16: hit.
++-------------------------------------+-+----------------------------------------+
+| Alice                               | | Bob                                    |
++=====+====+=+======+=====+===========+=+=====+====+=+======+=====+==============+
+| Str | +2 | |BAB   |     |    DR     |v| Str | +2 | | BAB  |     |    DR        |
++-----+----+ |      +-----+---+---+---+s+-----+----+ |      +-----+---+---+------+
+| Dex | +1 | | 3    | ACB | P | S | B | | Dex | +2 | |  2   | ACB | P | S | B    | 
++-----+----+ +------+-----+---+---+---+ +-----+----+ +------+-----+---+---+------+
+| Con | +1 | | Head |  5  | 10| 20| 4 | | Con | 0  | |Head  |  2  | 2 | 20| 0    | 
++-----+----+ +------+-----+---+---+---+ +-----+----+ +------+-----+---+---+------+
+| Int | -1 | |Torso |  8  | 12| 22| 8 | | Int | +1 | |Torso |  2  | 2 | 20| 0    | 
++-----+----+ +------+-----+---+---+---+ +-----+----+ +------+-----+---+---+------+
+| Wis | -1 | |Arms  |  8  | 2 | 2 | 4 | | Wis | 0  | |Arms  |  2  | 2 | 20| 0    | 
++-----+----+ +------+-----+---+---+---+ +-----+----+ +------+-----+---+---+------+
+| Cha | 0  | |Legs  |  8  | 2 | 2 | 4 | | Cha | -2 | |Legs  |  2  | 2 | 20| 0    |  
++-----+----+-+------+-----+---+---+---+ +-----+----+-+------+-----+---+---+------+
+|*Attack*           |*atk*|*t*|*dmg*  | |*Attack*           |*atk*|*t*|*dmg*     |
++-------------------+-----+---+-------+ +-------------------+-----+---+----------+
+|Halberd Side-spike |  +3 | P | 1d10+3| | Falchion Slash    | +6  | S | 1d8+2    |
++-------------------+-----+---+-------+ +-------------------+-----+---+----------+
+|Halberd End-Spike  |  +4 | P | 1d6+2 | | Falchion Stab     | +1  | P | 1d8+2    |
++-------------------+-----+---+-------+ +-------------------+-----+---+----------+
+| Halberd Blade     |  +4 | S | 1d12+3| | Dagger Slash      | +1  | S | 1d4+1    |
++-------------------+-----+---+-------+ +-------------------+-----+---+----------+
+| Halberd Haft      |  +4 | B | 1d4+3 | | Dagger Stab       | +6  | P | 1d4+1    |
++-------------------+-----+---+-------+-+-------------------+-----+---+----------+
 
-Alice cannot parry because halberds don't have the parry property.  But she can dodge, adding just her dex (1) to the roll (5) for a total of 6 which is 3 points of AC.  Barely enough.
+</div>
 
-Bob attacks again, this time with the dagger.  It will barely do damage if going through armor, so he stabs at her face.  His attack mod has the 6 from before plus another 4 for using a dagger to get around armor totalling 10.  Her AC has the 15 from before, plus another 5 for a half-open helmet making 20.  He rolls a 14.
 
-Alice has already reacted once this round and cannot dodge.  She is hit.  Bob deals 1d4 + 1/2 strength mod damage.  He rolls a 3 and has a str of +2, so this is 4 damage.  Alice has a constitution score of 14, so her head is still functional.  But Bob has also learned that Alice does not have the Combat Reflexes feat.
+Alice moves to ten feet away and attacks.  Since Bob is wearing
+chainmail, which is not very effective against piercing, she uses the
+side-spike and doesn't worry about where she hits him.  Her attack
+bonus is her base attack (3) plus her dexterity mod (1) totalling 4.
+His AC is ten plus his dexterity modifier (2) totalling 12.  She rolls
+a 12 totalling 16, a hit.
 
-Alice cautiously backs up five feet and swings again.  Again, she attacks at +4, his AC is 12 and he parries at +4.  She rolls a 15 for a total of 19.  He rolls a 4 for a total of 16.  A hit.  Since she wasn't aiming at a body part, she rolls randomly and gets left leg.  A side-spike on a long haft deals 1d10 damage, and swinging a two-handed weapon adds 3/2 strength mod.  Alice rolls a 9 and has a str of +2, for 10 damage, reduced to 8 by the chainmail.  Bob has a constitution score of 12 so his leg is still functional... barely.
+But Bob reacts by parrying with his falchion.  He rolls his own attack
+(bab=2 dex=2 die=8 total=12) and adds half the result (6) to his AC.
+Alice has now missed.
 
-Bob decides to get more aggressive and advances without caution.  Alice spends her reaction on an attack of opportunity which Bob parries, successfully this time.  Bob then slashes at Alice's already-damaged face with his falchion.  He attacks at +6 against her face AC of 20.  He rolls a 15 and just barely hits.  He does 1d8+2=7 damage.  Combined with the 4 from earlier, she is in bad shape.
+Bob advances cautiously to a distance of five feet.  He has the Two
+Weapon Fighting feat, so he can attack with both weapons.  He begins
+with the falchion.  Since it's not very effective against plate, he
+deliberately slashes at her right arm.  His attack bonus is bab=2 plus
+dex=2 plus using-a-blade-as-intended=2 = 6.  Her arm's AC is ten plus
+dex (1) plus single-body-part (4) = 15.  He rolls a 12 for a total of
+18: hit.
 
-Bob makes his second attack with the dagger.  Again, he attacks at +10 against her face AC of 20.  But this time he rolls a 17, exceeding her AC by more than 5: a critical hit.  It's a piercing attack, so it deals 2.5x damage.  He rolls a 3, making 10 damage.  The total damage to Alice's head now exceeds her constitution, but does not double it.  She is unconscious and bleeding out.
+Alice cannot parry because halberds don't have the parry property.
+But she can dodge, adding just her dex (1) to the roll (3) for a total
+of 4 which is 2 points of AC.  Not enough.  Alice spends her one
+addrenal surge to reroll the dodge (at no bonus, because its her only
+surge) and this time rolls an 18, granting a AC bonus of 9 for a total
+AC of 24, easily enough.
+
+Bob attacks again, this time with the dagger.  It will barely do
+damage if going through armor, so he stabs at her face.  His attack
+mod has the 6 from before plus another 4 for using a dagger to get
+around armor totalling 10.  Her AC has the 15 from before, plus
+another 5 for a half-open helmet making 20.  He rolls a 14.
+
+Alice has already reacted once this round and cannot dodge.  She is
+hit.  Bob deals 1d4 + 1/2 strength mod damage.  He rolls a 3 and has a
+str of +2, so this is 4 damage.  Alice has a constitution score of 12,
+so her head is still functional.  But Bob has also learned that Alice
+does not have the Combat Reflexes feat.
+
+Alice cautiously backs up five feet and swings again.  Again, she
+attacks at +4, his AC is 12 and he parries at +4.  She rolls a 15 for
+a total of 19.  He rolls a 4 for a total of 16.  A hit.  Since she
+wasn't aiming at a body part, she rolls randomly and gets left leg.  A
+side-spike on a long haft deals 1d10 damage, and swinging a two-handed
+weapon adds 3/2 strength mod.  Alice rolls a 5 and has a str of +2,
+for 8 damage, reduced to 8 by the chainmail.  Bob has a constitution
+score of 10 so his leg is still functional... barely.
+
+Bob decides to get more aggressive and advances without caution.
+Alice spends her reaction on an attack of opportunity which Bob
+parries, successfully this time.  Bob then slashes at Alice's
+already-damaged face with his falchion.  He attacks at +6 against her
+face AC of 20.  He rolls a 15 and just barely hits.  He does 1d8+2=7
+damage.  Combined with the 4 from earlier, she is in very bad shape.
+
+Bob makes his second attack with the dagger.  Again, he attacks at +10
+against her face AC of 20.  But this time he rolls a 17, exceeding her
+AC by more than 5: a critical hit.  It's a piercing attack, so it
+deals 2.5x damage.  He rolls a 3 (and has +1 from str), making 10
+damage.  The total damage to Alice's head now exceeds her
+constitution, but does not double it. She is unconscious and bleeding
+out.
 
 # General Rules
 
@@ -37,6 +120,10 @@ Each body part has starting hit points equal to the creature's constitution scor
 Melee attacks are either swinging or thrusting.  Swinging attacks get 3/2 strength when done in two hands, but may require adequate space.
 
 One handed melee attacks add strength to damage for primary hand, 1/2 strength for off hand.
+
+Distance provides an AC bonus (2 per increment) against ranged
+attacks, but nothin against melee.  Note that this is a bonus to AC
+and not a penalty to attack, this will matter in several cases.
 
 ## Movement
 
@@ -77,6 +164,18 @@ Note that non-lethal damage is not safe.  If you hit your target and do not achi
 ## Overpenetration
 
 Attacks can overpenetrate.  Subtract the damage actually dealt (maxes at reducing a body part to negative constitution) as if it were armor (so hollow-point and armor-piercing rules apply), and then subtract the victim's armor again upon exit, even if the original wound went around armor.  If the remaining damage is positive, the weapon makes a stray attack on whatever's on the other side.
+
+## Addrenal Surges
+
+You have a number of addrenal surges equal to your con mod.  When you
+fail a check and are in great danger as a result (usually a parry or
+dodge, but potentially a reflex save or balance check) you may spend
+an addrenal surge to reroll it.  Gain a bonus on the reroll equal to 4
+times the number of addrenal surges remaining (so no bonus on the last
+one).
+
+You regain your surges with an hour of rest, or a proportional
+fraction (rounding down) for a shorter period.
 
 ## The Ages
 
@@ -471,7 +570,10 @@ To produce high rating bows, especially shortbows, it is necessary to bend the e
 
 ### Firearms
 
-Firearms vary enough to get their own table.  For any firearm, select a barrel length, width and style, an action, and as many special features as you like.  Firearm weights do not include the weight of ammunition or (for gatling guns) a power source.
+Firearms vary enough to get their own table.  For any firearm, select a barrel length, width and style, an action, and as many special features as you like.  To a first approximation, length determines range and number of damage dice, size determines kind of dice, action determines rate of fire, and features determine cool extra things a gun can do.
+
+
+Firearm weights do not include the weight of ammunition or (for gatling guns) a power source.
 
 The barrel length must be at least 8 times the barrel width.
 
@@ -494,6 +596,10 @@ The size of the magazine when using an action that uses magazines.  Irrelevant o
 #### Ammo
 
 In addition to being the right type, ammo must be the same size as the barrel width.
+
+#### Max Attack
+
+There is a maximum total attack possible with any given firearm.  If your total attack roll exceeds this, lower it to match.  Remember that range grants an AC bonus, not an attack penalty.  Note that for many characters this will have no effect.
 
 #### Rain-Sensitive
 
@@ -731,6 +837,44 @@ These are some armor patterns from various eras.  All are mirror-symmetrical for
 %%examplearmor%%
 </div>
 
+# Shields
+
+Shields come in varing sizes and materials (also shapes, but this has no mechanical effect).
+
+| Diameter | Base Weight (hide) | Parry at | ACB: Shield Arm | ACB: Torso | ACB: Other |
+| 1 | 1 | +4 | 1 | 0 | 0 |
+| 2 | 2 | +2 | 3 | 1 | 0 |
+| 3 | 4 | 0 | 5 | 3 | 1 |
+| 4 | 7 | -2 | 7 | 4 | 1 |
+| 5 | 11 | -4 | 9 | 6 | 2 |
+
+| Material | Weight Multiplier | DR | Available from |
+| Hide | 1 | 4 | Stone |
+| Wood | 2 |  10 | Stone |
+| Steel | 4 | 20 | Iron |
+| Mithril | 2 | 20 | Iron |
+| Lucite | 1 | 10 | Information |
+
+## Active Use
+
+A shield can be used to parry as if it were a weapon with the parry ability.  Take a bonus or penalty to the parry roll based on the size of the shield.  You must have a strength score at least twice the shield's weight to parry with it in your off hand (or equal for primary hand, or two thirds for both hands).
+
+If you fail the parry so badly as to be critted, and the damage before the crit multiplier exceeds the damage reduction of the shield, the shield is destroyed.  (Normal active parry means brushing sideways such that the shield is not damaged, but if you fail badly enough...)
+
+## Passive Use
+
+Simply holding a shield also provides defense.  If the enemy is trying to strike around your armor, the shield adds ACB, and if through, adds DR, both as shown on the table.  DR from shields is the same regardless of damage type.  The shield only adds DR to body parts for which it provides at least one point of ACB.
+
+## Hunkering
+
+A character holding a shield may hunker behind it.  This causes all body parts to receive the same ACB as the torso (except the shield arm, which continues to receive higher) but means the character cannot attack and takes a -6 penalty on spot checks.  Starting and stopping hunkering are move actions.
+
+(Note that you technically can hunker behind a 1 foot shield, but receive no benefit from doing so, and look very silly.)
+
+## Non-Medium Characters
+
+These rules are written for medium size characters (e.g. humans).  For other sizes, multiply or divide the diameter by the appropriate power of two for purposes of size-dependant traits other than weight.
+
 # Feats
 
 **Combat Reflexes:** Gain reactions per round equal to your dex mod (if positive).  If your dex mode changes during a round, resolve this as benefits you.
@@ -744,3 +888,9 @@ These are some armor patterns from various eras.  All are mirror-symmetrical for
 **Murder-Stroke:** You may wield any blade longer than a shortsword as a two-handed bludgeoning swinging weapon that deals 1d6 damage.
 
 **Machine Gunner:** You may use any firearm with spray mode in two other ways: as if it were burst mode, or as if it were a cannister round with a spread-range of 100ft (lesser damage equal to original damage, greater equal to original times half rounds fired),
+
+**Fury:** You may spend an addrenal surge to reroll a missed melee attack
+
+**Rage:** *(Prereq: Fury)* You may spend an addrenal surge to gain +4 str, +2 to attacks and +2 temporary hit points in all body parts for the next minute.
+
+**Extra Surge:** Gain one extra addrenal surge.  You may take this feat multiple times, to a maximum of your once more than your con bonus.
