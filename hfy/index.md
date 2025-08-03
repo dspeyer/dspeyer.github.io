@@ -23,6 +23,7 @@ HFY stands for Humanity Fuck Yeah, a genre of speculative fiction in which human
 
 ## Uncategorized
 
+ * [Ritual Combat](Ritual_Combat.html)
  * [[ASfH?] Home](Home.html)
  * [[FF] BitV: How Humans Make Peace](BitV_How_Humans_Make_Peace.html)
  * [Ficlet Collection](Ficlet_Collection.html)
