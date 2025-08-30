@@ -29,15 +29,15 @@ Then, the mage needs to learn to assemble spells, which can be fairly complex.  
 
 Some casters use verbal, somatic or material components to help pin bits of incomplete magic into place.  These are not intrinsic to magic, but are specific to the caster.  The *important* motions are mental, but sometimes a physical analog helps in keeping everything straight and precise.  This does not make the motions arbitrary, as they are meaningful to the caster, and an observer with a basic understanding of psychology can deduce what mental actions they likely correspond to.
 
-## Spirits and Conjuration
+## Spirits and Summoning
 
 A spirit is any life form composed entirely of engrionic matter.  They cannot be seen or touched, but can be detected with Soul Sight or other magic.  Many spirits can do magic at no or minimal cost, including using Shadows and Light to present a visible appearence.
 
 A spirit can operate a body if magic forms an interface.  Some spirits can cast this spell themselves, but even those mostly cannot gather appropriate materials without assistance.
 
-Many spirits are natives of other planes.  Some of those are structured to be easy to pull into ours.  Conjury spells do three things: pull a spirit from its native plane to the caster's location, control it, and connect it to a suitable body.  Interplanar travel mostly makes mockery of distance, so there's no need to worry about whether a suitable spirit is "nearby".  If the constructed body is rendered non-functional, the magic holding the spirit on this plane will also be broken.
+Many spirits are natives of other planes.  Some of those are structured to be easy to pull into ours.  Summoning spells do three things: pull a spirit from its native plane to the caster's location, control it, and connect it to a suitable body.  Interplanar travel mostly makes mockery of distance, so there's no need to worry about whether a suitable spirit is "nearby".  If the constructed body is rendered non-functional, the magic holding the spirit on this plane will also be broken.
 
-Sometimes spirits that are natives of other planes will be on ours for more permanent reasons, and some spirits are native here.  These spirits can be compelled and/or offered bodies using similar magic.  Though any compulsion targetting a specific spirit allows a will save (generic conjury spells that are saved against simply grab a different spirit of the same species).
+Sometimes spirits that are natives of other planes will be on ours for more permanent reasons, and some spirits are native here.  These spirits can be compelled and/or offered bodies using similar magic.  Though any compulsion targetting a specific spirit allows a will save (generic summoning spells that are saved against simply grab a different spirit of the same species).
 
 Bodies for weak spirits usually require these materials:
 
@@ -49,7 +49,7 @@ Bodies for weak spirits usually require these materials:
 
 Bodies for more powerful spirits may require rarer or more specific materials.
 
-When a spirit conjures itself, it can be considerably less picky about materials, provided they resemble the requirement in some way.  A determined infernal could conjure itself into an iron sickle that had been left out in the rain, and many a half-blood grows to fear farming equipment for this reason.  A third-party conjurer, even a fellow infernal, cannot make use of this class of shortcut.
+When a spirit summons itself, it can be considerably less picky about materials, provided they resemble the requirement in some way.  A determined infernal could summon itself into an iron sickle that had been left out in the rain, and many a half-blood grows to fear farming equipment for this reason.  A third-party summoner, even a fellow infernal, cannot make use of this class of shortcut.
 
 ## Spirits, Bodies and Reproduction
 
@@ -216,18 +216,18 @@ Ultimately, there is no guaranteed path to magical power, except at chargen.  Ru
 Name  | Source | Activation | Cost | Compatible Schools | Pri | Extra Ability | Restriction
 --|--|--|--|--|-|--|--
 half blood  | magical ancestry | spell craft, 1 rank | spell pool, regenerates with rest | any | 1 | spellcraft a class skill for all classes | frequent monster attacks (~1/week, cr 1d6)
-druid  | mystical connection to nature | survival +10 | mana | elemental *, boost, healing, metamorph, second sight, elemental conjuration, fey conjuration| 1 | can take cross class ranks in spell craft provided survival is higher | cannot cast while wearing inorganic armor or clothing
+druid  | mystical connection to nature | survival +10 | mana | elemental *, boost, healing, metamorph, second sight, summon elementals, summon fey| 1 | can take cross class ranks in spell craft provided survival is higher | cannot cast while wearing inorganic armor or clothing
 artificer | mystical connection to crafts  | craft (any) +10 | spell pool, regenerates with crafting  | elemental air/Earth/wood/metal, materialism, transit | 2 | duration extending metamagic 1/2 cost (round up) on targets you created | save DCs -2
 monk  | mystical connection to martial arts | any attack +7 | vitality |  boost, elemental fire, force manipulation, healing, second sight, transit | 2 | spell craft class for full bab | cannot still-cast 
-Bard  | mystical connection to music | perform (any music) +10 | spell pool, regenerates w/ performance | boost, enchantment, phantasms, fey conjuration | 2 | can take cross class ranks in spell craft provided perform is higher | cannot silent-cast
+Bard  | mystical connection to music | perform (any music) +10 | spell pool, regenerates w/ performance | boost, enchantment, phantasms, telepathy, summon fey | 2 | can take cross class ranks in spell craft provided perform is higher | cannot silent-cast
 wizard | deep understanding of magic itself | spell craft +15 | preparation | any | 3 | can create and use (even when latent) magical gems | cannot quick cast
 sorcerer  | distant magical ancestry | spell craft +5 | spell pool, regenerates with rest | any, max 2 | 3 | can take spellcraft cross class for double cost | cannot ritual-cast
-psyker | touched by the chaos beyond reality | knowledge(planes) +5 | increasing warp phenomena | aberrant conjuration plus 5 random schools (roll at chargen or when touched)  | 3 | can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena  | cannot assist or receive assistance in magic rituals except with other psykers
+psyker | touched by the chaos beyond reality | knowledge(planes) +5 | increasing warp phenomena | summon aberration plus 5 random schools (roll at chargen or when touched)  | 3 | can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena  | cannot assist or receive assistance in magic rituals except with other psykers
 astrologer | unhealthy obsession with stars  | knowledge (astronomy) +7 | increasing risk of rejection | augment senses, elemental air/fire, second sight, Shadow and light, transit | 3 | 1/day may preroll d20 for one planned action that day | cannot cast during new moon (or when too far from Earth for this to have meaning)
 mad biomancer | unhealthy obsession with biology | knowledge(biology) +7 | increasing risk of insanity | boost, healing, metamorph, second sight | 3 | duration extending metamagic 1/2 cost (round up) on living targets | cannot use reagents
 mad scientist | unhealthy obsession with physics | knowledge(physics) +7 | increasing risk of insanity | augment senses, force, materialism, shadows and light | 3 | can deliberately enter fugue state and roughly aim it | cannot use reagents
-paladin | deep commitment to a righteous cause | knowledge(planes), 1 rank | cast from hp | celestial conjury, healing, others based on the cause | 4 | can project unforgeable aura of righteousness | lose powers if betray or abandon cause
-Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell slots | appropriate conjury, others based on patron | 4 | can enchant shaman tokens  | must obey patron's orders (even when latent)
+paladin | deep commitment to a righteous cause | knowledge(planes), 1 rank | cast from hp | summon celestial, healing, others based on the cause | 4 | can project unforgeable aura of righteousness | lose powers if betray or abandon cause
+Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell slots | appropriate summoning, others based on patron | 4 | can enchant shaman tokens  | must obey patron's orders (even when latent)
 
 
 ## Half Blood 
@@ -242,7 +242,7 @@ Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell 
 
 Obtaining magical ancestry if you are not born with it is nearly impossible.  In theory it could be achieved by killing a powerful spirit and grafting pieces of their soul onto yourself, or maybe given by an even more powerful being, but these are legends, not known techniques.
 
-Half-blood souls are extremely nutritious to demons, so once a half-blood activates his powers, demons will spontaneously attack.  Most will simply conjure themselves in and attack immediately, but some will attempt subtlety.  When a half-blood child is expected, the parents may hide all information about spellcraft from them to prevent them from activating before they master some non-magical defenses.  Alternatively, schools for half-bloods may be placed in highly defensible pocket dimensions where simple plane-shift doesn't work.
+Half-blood souls are extremely nutritious to demons, so once a half-blood activates his powers, demons will spontaneously attack.  Most will simply summon themselves in and attack immediately, but some will attempt subtlety.  When a half-blood child is expected, the parents may hide all information about spellcraft from them to prevent them from activating before they master some non-magical defenses.  Alternatively, schools for half-bloods may be placed in highly defensible pocket dimensions where infernals can't directly target their conjury spells.
 
 In addition to rest, half bloods can refill their spell pool by eating magic gems (see wizards).
 
@@ -251,7 +251,7 @@ In addition to rest, half bloods can refill their spell pool by eating magic gem
 **Source:** Mystical connection to nature    
 **Activation:** survival +10    
 **Cost:** mana    
-**Compatible Schools:** elemental *, boost, healing, metamorph, second sight, elemental conjuration, fey conjuration   
+**Compatible Schools:** elemental *, boost, healing, metamorph, second sight, summon elemental , summon fey   
 **Pri:** 1    
 **Extra Ability:** can take cross class ranks in spell craft provided survival is higher    
 **Restriction:** cannot cast while wearing inorganic armor or clothing    
@@ -308,7 +308,7 @@ A monk spends vitality equal to the rating of the spell.  Vitality recovers norm
 **Source:** Mystical connection to music    
 **Activation:** perform (any music) +10    
 **Cost:** spell pool, regenerates w/ performance    
-**Compatible Schools:** boost, enchantment, phantasms, fey conjuration   
+**Compatible Schools:** boost, enchantment, phantasms, telepathy, summon fey    
 **Pri:** 2    
 **Extra Ability:** can take cross class ranks in spellcraft provided perform is higher    
 **Restriction:** cannot silent-cast    
@@ -345,7 +345,7 @@ In theory, magic gems could form without spells given the right combination of n
 
 ### Preparation
 
-To cast a spell as a wizard (without using gems), you must first prepare it.  This takes five minutes per rating of the spell.  When you cast the spell, the preparation is expended.  You can hold a number of prepared spells equal to your intelligence score, and can drop a prepared spell at any time.
+To cast a spell as a wizard (without using gems), you must first prepare it.  The required time is the spells rating divided by your spellcraft ranks in hours.  When you cast the spell, the preparation is expended.  You can hold a number of prepared spells equal to your intelligence score, and can drop a prepared spell at any time.
 
 A wizard can prepare and cast-from-prepared a spell of a school he does not know using a spellbook.  He cannot use a spellbook and gem to cast spontaneously.
 
@@ -370,7 +370,7 @@ In addition to rest, sorcerers can refill their spell pool by eating magic gems 
 **Source:** Touched by the chaos beyond reality    
 **Activation:** knowledge(planes) +5    
 **Cost:** increasing warp phenomena    
-**Compatible Schools:** aberrant conjuration plus 5 random schools (roll at chargen or when touched)     
+**Compatible Schools:** summon aberration plus 5 random schools (roll at chargen or when touched)     
 **Pri:** 3    
 **Extra Ability:** can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena     
 **Restriction:** cannot assist or receive assistance in magic rituals except with other psykers    
@@ -443,7 +443,7 @@ To use the preroll ability, an astrologer must specify a plan in which a single 
 
 ### Rejection
 
-If an astrologer casting a spell fails their will save against the Increasing Level, they become repelled rather than attracted by gravity for the next 24 hours.  For each 5 points they fail by, the effect of gravity is doubled.  If they fail a save while already effected, add the anti-weights.  Note that many ceilings do not make very strong floors.
+If an astrologer casting a spell fails their will save against the Accumulated Level, they become repelled rather than attracted by gravity for the next 24 hours.  For each 5 points they fail by, the effect of gravity is doubled.  If they fail a save while already effected, add the anti-weights.  Note that many ceilings do not make very strong floors.
 
 ## Mad Biomancer
 
@@ -476,7 +476,7 @@ A mad scientist's fugue state is like a mad biomancer's, except that if they ent
 **Source:** Deep commitment to a righteous cause    
 **Activation:** knowledge(planes), 1 rank    
 **Cost:** cast from hp    
-**Compatible Schools:** celestial conjury, healing, others based on the cause    
+**Compatible Schools:** summon celestial, healing, others based on the cause    
 **Pri:** 4    
 **Extra Ability:** can project unforgeable aura of righteousness    
 **Restriction:** lose powers if betray or abandon cause    
@@ -494,7 +494,7 @@ Whenever a paladin casts a spell, they lose HP equal to the spell's rating.  The
 **Source:** Made a pact with a powerful spirit.        
 **Activation:** knowledge(religion), 1 rank    
 **Cost:** spell slots    
-**Compatible Schools:** relevant conjury, others based on patron and pact     
+**Compatible Schools:** relevant summoning, others based on patron and pact     
 **Pri:** 4    
 **Extra Ability:** enchant warlock tokens     
 **Restriction:** must obey patron's orders (even when latent)    
@@ -505,19 +505,19 @@ A pact carries obligations to serve the patron’s interests in the material wor
 
 In any case, if your performance falls short of your promises, however vague, your patron has the ability to issue you orders on how to correct it. You will obey these orders. You have no choice in the matter.  This applies even if latent.
 
-Usually a shaman is eligible for two or three schools that reflect the patron's nature (not counting conjury), but others are possible if a patron is willing to put in additional effort.
+Usually a shaman is eligible for two or three schools that reflect the patron's nature (not counting summoning), but others are possible if a patron is willing to put in additional effort.
 
 ### Example Pacts
 
-A pact with Mammon, archfiend of greed, might require that the mortal cause at least five other mortals a week to steal something they otherwise wouldn't have and grant internal conjury, hexing, necromancy, and phantasms. 
+A pact with Mammon, archfiend of greed, might require that the mortal cause at least five other mortals a week to steal something they otherwise wouldn't have and grant internal summoning, hexing, necromancy, and phantasms. 
 
-A pact with Avon, spirit of that river, might require the mortal to protect the river from pollution and damming, and grant fey conjury, elemental water and metamorph.
+A pact with Avon, spirit of that river, might require the mortal to protect the river from pollution and damming, and grant fey summoning, elemental water and metamorph.
 
-A pact with Ra, elder fire elemental, might require the mortal to uphold order in the world in accordance with ma’at, and grant elemental conjury, elemental fire, shadows and light, and healing.
+A pact with Ra, elder fire elemental, might require the mortal to uphold order in the world in accordance with ma’at, and grant elemental summoning, elemental fire, shadows and light, and healing.
 
-A pact with Raphael, archangel of healing, might require the mortal to diligently arrive to prevent war, and also to act with kindness and honor at all times. It might grant celestial conjury, healing and boost.
+A pact with Raphael, archangel of healing, might require the mortal to diligently strive to prevent war, and also to act with kindness and honor at all times. It might grant celestial summoning, healing and boost.
 
-A pact with Shub-Niggurath, the infamous black goat of a thousand young who dwells beyond the universe, might require the mortal to aid any aberrations who find their way into the material universe, and to act with bissonomy at all times. It might grant aberrant conjury, necromancy and transit.  Note that “bissonomy” cannot be translated into any language mortals can speak, so no sane mortal would promise it.  Also, repeated mental contact with Shub-Niggurath will eventually count as being “touched by the chaos beyond reality” and make the shaman a (possibly latent) psyker as well.
+A pact with Shub-Niggurath, the infamous black goat of a thousand young who dwells beyond the universe, might require the mortal to aid any aberrations who find their way into the material universe, and to act with bissonomy at all times. It might grant aberrant summoning, necromancy and transit.  Note that “bissonomy” cannot be translated into any language mortals can speak, so no sane mortal would promise it.  Also, repeated mental contact with Shub-Niggurath will eventually count as being “touched by the chaos beyond reality” and make the shaman a (possibly latent) psyker as well.
 
 ### Shaman Tokens
 
@@ -530,6 +530,78 @@ A shaman’s highest rating spell slot is his knowledge(religion) ranks. He has 
 A shaman refreshes slots by making mental contact with his patron. This may be done once a day, at a symbolically appropriate hour (usually dawn) and takes ten minutes. 
 
 To cast a spell, a shaman must spend a slot of equal or higher rating.
+
+# Classes
+
+## Mage
+
+A mage is someone who focuses on mastering their magic to the exclusion of almost everything else.
+
+Level | Bab | Ref | Fort | Will | Special
+-|-|-|-|-|--
+1 | 0 | 0 | 0 | 2 | Bonus Feat
+2 | 0 | 0 | 0 | 3 | Bonus Feat
+3 | 0 | 1 | 1 | 3 | Specialization +2
+4 | 0 | 1 | 1 | 4 | Bonus Feat
+5 | 0 | 1 | 1 | 4 | Specialization +4/+2
+6 | 0 | 2 | 2 | 5 | Bonus Feat
+7 | 0 | 2 | 2 | 5 | Specialization +6/+4/+4
+8 | 0 | 2 | 2 | 6 | Bonus Feat
+9 | 0 | 3 | 3 | 6 | Specialization +8/+6/+6/+6
+10 | 0 | 3 | 3 | 7 | Bonus Feat
+
+Vitality d4    
+Skills 2+int    
+Class Skills: Spellcraft, Knowledge(arcana), Knowledge(planes), Knowledge(religion), key skills for known schools (retroactive if needed), skills that activate your magic source(s) (retroactive if needed).
+
+**Bonus Feat:** Gain one feat with the [Magic] tag for which you meet the prerequisites
+
+**Specialization:** At the indicated levels, choose an additional school to specialize in.  Then assign the bonuses in the table to the specialty schools.  Gain this bonus on spellcraft checks to cast from that school.
+
+## Houngan
+
+A houngan learns the art of stepping aside from themself to allow other loas access to their body, while preserving the fundamental soul-body link so they can go back to being themselves afterwards.
+
+Level | BAB | Ref | Fort | Will | Special
+-|-|-|-|-|--
+1 | 0 | 1 | 1 | 2 | Invite Least Loa
+2 | 1 | 1 | 1 | 3 | Hybrid Mind: Skills and Saves
+3 | 2 | 2 | 2 | 3 | Invite Multiple Loas
+4 | 3 | 2 | 2 | 4 | Invite Lesser Loa
+5 | 3 | 3 | 3 | 4 | Hybrid Mind: Attacks and Feats
+6 | 4 | 3 | 3 | 5 | Invite Other Spirits
+7 | 5 | 4 | 4 | 5 | Invite Greater Loa
+8 | 6 | 4 | 4 | 6 | Hybrid Mind: Magic
+9 | 6 | 5 | 5 | 6 | Invite Extraplanar Spirits
+10 | 7 | 5 | 5 | 7 | Invite Greatest Loa
+
+Vitality: d6
+Skills: 4+int
+Class Skills:
+
+* Mental: Knowledge(religion), Knowledge(planes), Listen, Spot
+* Physical: Balance, Climb, Hide, Jump, Move Silently, Sleight of Hand, Swim, Tumble
+* Social: Bluff, Diplomacy, Disguise, Gather Information, Intimidate, Perform, Profession, Sense Motive
+* Technical: Craft, Heal, Repair
+
+**Invite Loa:** Ask a nearby loa to take over your body briefly.  The loa will address your current problem in a way it finds appropriate.  You can end the possession at any time, but if you part on bad terms, this particular loa will be reluctant to possess you again.
+
+**Hybrid Mind:** You can ask a nearby loa to join you in operating your body.  You remain in overall control, but the loa will express opinions, and depart if you do anything it deeply opposes.  You can add its abilities to your own up to a limit of your Houngan level (for numeric abilities).
+
+**Multiple Loas:** You can invite multiple loas to join your hybrid mind simultaneously and enjoy the benefits of all of them.  The number of loas is capped by your wisdom modifier.
+
+**Other Spirits:** You can invite non-loa spirits, and intermediate between them and your body to allow them to act like loas.
+
+**Extraplanar Spirits:** Any spirit which can be summoned, you can invite into yourself.  This is not restricted by location, but most such spirits will leave if your plans don't suit their interest.
+
+
+# Schools
+
+Schools are as in dragonfire, except:
+
+* Summoning requires suitable raw materials for a body
+* Element schools cannot conjure a 5' cube (see Elemental Conjury feat)
+* Telepathy is now a magic school (with approximately the same abilities as the psionic feat)
 
 # Feats
 
@@ -545,8 +617,8 @@ Prerequisite: 6 ranks spell craft.
 Treat your spells as one rating smaller for purposes of cost. You may take this feat multiple times and its effects stack, but no cost can be reduced below zero.  (Note: for Increasing costs, a rating zero spell can still be dangerous to cast.)
 
 ### Soul Sight
-Prerequisite: any active magic source, knowledge (religion) +5
-Make a DC 10 knowledge(religion) check to activate soul sight for the next hour.  If you fail, you cannot retry until the hour is past. With soul sight active, you can detect all souls and soul-like spirits within 60 ft of you and how they relate to your magic source. If you are a paladin, this means the extent to which they support or oppose your particular cause. This does not require line of sight, but it can be blocked by invisibility magic, darksteel or the Quiet Soul feat.
+Prerequisite: any active magic source, knowledge (religion) +5    
+Make a DC 10 knowledge(religion) check to activate soul sight for the next hour.  If you fail, you cannot retry until the hour is past. With soul sight active, you can detect all souls and soul-like spirits within 10 * wis mod meters of you and how they relate to your magic source. If you are a paladin, this means the extent to which they support or oppose your particular cause. This does not require line of sight, but it can be blocked by invisibility magic, darksteel or the Quiet Soul feat.
 
 ### Quiet Soul
 Prerequisite: knowledge religion 1 rank.    
@@ -555,6 +627,14 @@ You can hide from Soul Sight if your concentration check or will save exceeds th
 ### Deceptive Soul
 Prerequisite: Quiet Soul.    
 You can appear as aligned as you choose to a Soul Seer’s magic source if your bluff check exceeds their knowledge(religion) activation. You must know what magic source you are faking.
+
+### Elemental Sight
+Prerequisite: any active magic source, two elemental schools    
+You can sense elements whose schools you know within 10 * wis mod meters of yourself.  Elements which are parts of the bodies of ensouled beings don't count.  Line of sight is not required, but invisibility magic or darksteel block this effect.
+
+### Word Sight
+Prerequisite: any active magic source, telepathy school, spellcraft +6
+You can sense the meaning of all words spoken or signed within 10 * wis mod meters of you with intent that you understand them.  This works regardless of language or audibility.  You can suppress or restore this ability as a free action.
 
 ### Combined Reset
 Prerequisite: Spellpool and an Increasing cost.    
@@ -573,7 +653,7 @@ Prerequisite: druid.
 You can pull Mana from somewhat farther away. Treat yourself as being somewhere within a mile of your actual location for purposes of Mana cost. As a side effect, you can sense Mana levels within a mile radius. 
 
 ### Natural Spell
-Prerequisite: druid, metamorph School, knowledge(nature) +8
+Prerequisite: druid, metamorph School, knowledge(nature) +8    
 You can use verbal and somatic components normally even if a metamorph effect denies you your normal limbs and phonemes, provided you can move and make noise at all.
 
 ### Stable Enchanter
@@ -656,3 +736,18 @@ If you kill one or more ensouled beings immediately before casting a spell, you 
 Prerequisite: two active magic source, spellcraft +10.    
 When you cast a spell from a school both magic sources support, you may split the cost between them, as if you had cast two spells, one from each source, whose ratings sum to the original rating.
 
+
+### Elemental Conjuration
+Prerequisite: knowledge(the planes) +5, any elemental school, any summoning school    
+You can pull normal matter from the elemental planes.  For each elemental school that you have, add an effect to conjure one cubic meter of that element.  You may specify the general nature of the matter conjured, but not precisely.  Conjured fire is a burning hydrocarbon froth, and conjured metals must be cisferric (or iron).  This effect costs 5 rating.
+
+### Spells of Skill
+Choose a school or descriptor.  Gain +4 on spellcraft checks to cast such spells.
+
+### Spells of Power
+Choose a school or descriptor.  Increase save DCs from those spells by +2.
+
+
+### Familiar
+Prerequisites: Druid or any other active magic source and handle animal +5    
+You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.
