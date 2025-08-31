@@ -134,3 +134,6 @@ div.captioned p {
     font-weight: bold;
 }
 
+ul ul {
+    column-break: avoid;
+}
