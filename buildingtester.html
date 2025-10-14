@@ -8,10 +8,15 @@
 	     padding: 3px;
 	     text-align: center;
 	 }
+         div.format {
+             font-face: monospace;
+             font-size: 75%;
+         }
 	</style>
     </head>
     <body>
-	Query (one or more Manhattan addresses):<br>
+      Query (one or more addresses):<br>
+      <div class=format>Format: Number Street Burough[optional]</div>
 	<textarea id="ta" cols="50"  rows="10" ></textarea><br>
 	<input id="search" type="button" value="search"><br>
 	<table id="results" border>
@@ -19,6 +24,7 @@
 		<th>Status</th>
 		<th>Number</th>
 		<th>Street</th>
+                <th>Borough</th>
 		<th>Building ID Number</th>
 		<th>Building Type</th>
 		<th>Number of Elevators</th>

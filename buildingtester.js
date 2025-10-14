@@ -1,3 +1,5 @@
+const buroughs = ['Manhattan', 'Bronx', 'Brooklyn', 'Queens', 'Staten Island'];
+
 async function lookup(addr, tr, status) {
     let sp = addr.indexOf(' ');
     if (sp == -1) {
@@ -7,9 +9,18 @@ async function lookup(addr, tr, status) {
     }
     let number = addr.substr(0,sp);
     let street = addr.substr(sp+1);
+    let buroughid = 0;
+    for (let i=0; i<5; i++) {
+        if (street.endsWith(buroughs[i])) {
+            buroughid = i;
+            street = street.replace(buroughs[i],'').trim();
+            break;
+        }
+    }
     $('<td>').text(number).appendTo(tr);
     $('<td>').text(street).appendTo(tr);
-    let q = `1|${number}|${street}|1`;
+    $('<td>').text(buroughs[buroughid]).appendTo(tr);
+    let q = `1|${number}|${street}|${buroughid+1}`;
     let url = 'https://a810-dobnow.nyc.gov/Publish/WrapperPP/PublicPortal.svc/getPublicPortalPropertyDetailsGet/' + escape(q);
     console.log(url);
     status.text('BINing');
