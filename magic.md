@@ -94,17 +94,19 @@ Material components, like verbal and somatic, are personal and meaningful to the
 
 Assisting in a spell requires a DC 10 spellcraft check and is only possible in ritual casting.  A 1 minute ritual can accept one assistant, whereas a 1 hour can take assistants equal to the primary caster's wisdom modifier.
 
+If the spell allows a save, the dc is 10 plus the caster's int mod (plus any bonuses from feats or the Heighten Spell effect).
+
+When casting in interplanetary space (excepting dark-matter nebulae), you take a -2 on casting checks and cannot cast spells with rating greater than 20.  In interstellar space, this becomes -4 and 15.  Intergalactic, -6 and 10.
+
 ## Scrolls
 
-A scroll is a magic item that can shape raw magical energy into a specific spell.  Each scroll has one specific spell (selection of effects and metamagics) on it.  You can cast from a scroll without knowing the school.  You still pay the cost and need the relevant skills..
+A scroll is a magic item that can shape raw magical energy into a specific spell.  Each scroll has one specific spell (selection of effects and metamagics) on it.  You can cast from a scroll without knowing the school, though your magic source must be compatible with it.  You still pay the cost and need the relevant skills.
 
 Scrolls weigh 0.1lbs per rating of the spell plus the (usually neglegible) mass of the materials.
 
 Crafting a scroll requires ability to cast the spell, a dc 10+rating spellcraft check and rating hours of work.  Note that the “ability to cast” may be based on having another scroll (which you are essentially copying).  While this is a shaping of magical energy, it is more self-contained than an active spell, and does not count against the active spell limit.  Similarly, scrolls cannot be disspelled, though destroying the physical object will also destroy the magic.
 
 Scrolls are not expended by use.
-
-If you're looking for a more complete casting aid, see Shaman Tokens.
 
 ## Spellbooks
 
@@ -141,43 +143,6 @@ To learn a new school, a caster needs one of:
 The first three options result in knowing all the standard effects in the school, but the true from-scratch option grants a single proof-of-concept effect.  Additional effects can be researched according to the Researching New Effects rules.
 
 It should be presumed that any civilized high-magic setting has spellbooks available.
-
-# Researching New Effects
-
-Most magi go their entire careers without inventing or improving upon a spell effect, or do it once, badly, as a student and never again. The process is similar to a programmer writing an operating system kernel.
-
-Nevertheless, effects came from past researchers, and unusual circumstances can happen. 
-
-To research a new effect, you must already know the school the effect will be a part of, that is, the correspondence of organized mundane matter and intrinsic spiritual force that you plan to exploit. To research a new school takes 80 hours and a DC 35 spellcraft check, and, of course, for the correspondence you want to exist in the first place.
-
-Effects come into being in stages (with the spellcraft to to reach each from the previous): 
-
-* Reason to believe it's possible (0)
-* General idea of how it works (15)
-* Bare minimum proof of concept (20)
-* Inefficient and unreliable (25)
-* Basically usable (30)
-* Polished and optimized (35)
-
-Jumping two steps at once increases the DC by 5.  A general idea only helps if you know it to be correct, and it cannot be confirmed by experiment, so this step must usually be skipped.
-
-Research standardly takes a week. Each doubling of the time adds a stacking +2 circumstance bonus.
-
-All effects in the book are polished and optimized.
-
-Once an effect is researched, it can be taught to others or written in spell books just like a mundane discovery. A single effect makes a rather short book, but it is still referred to as a spell book (researchers often put together several related effects for publication, add practical notes about how to make the effect most useful, or simply pad the word count with gratuitous ego stroking).  In high magic settings, there may be libraries filled with spell books of mostly useless, highly situational effects of varying quality.
-
-There are always rumors of brilliant, beyond-optimized effects written in hidden tomes the brave might extract. Most of these rumors are false.  Though the entire Boost school was the secret of an ancient empire until a shaman from a recently conquered province seduced it out of an occupying officer and spread it, so it is possible.
-
-## Example Effect Progression
-
-Bare minimum proof of concept: painful but not damaging electric shock strikes both caster and target (rating +4)
-
-Inefficient and unreliable: 1d4 electric damage to target (95% probability) or caster (5%) (rating +4)
-
-Basically usable: 1d4 electric damage to target (rating +2)
-
-Polished and optimized: 1d6 electric damage to target (rating +1)
 
 # Magic Sources
 
@@ -216,18 +181,18 @@ Ultimately, there is no guaranteed path to magical power, except at chargen.  Ru
 Name  | Source | Activation | Cost | Compatible Schools | Pri | Extra Ability | Restriction
 --|--|--|--|--|-|--|--
 half blood  | magical ancestry | spell craft, 1 rank | spell pool, regenerates with rest | any | 1 | spellcraft a class skill for all classes | frequent monster attacks (~1/week, cr 1d6)
-druid  | mystical connection to nature | survival +10 | mana | elemental *, boost, healing, metamorph, second sight, summon elementals, summon fey| 1 | can take cross class ranks in spell craft provided survival is higher | cannot cast while wearing inorganic armor or clothing
-artificer | mystical connection to crafts  | craft (any) +10 | spell pool, regenerates with crafting  | elemental air/Earth/wood/metal, materialism, transit | 2 | duration extending metamagic 1/2 cost (round up) on targets you created | save DCs -2
-monk  | mystical connection to martial arts | any attack +7 | vitality |  boost, elemental fire, force manipulation, healing, second sight, transit | 2 | spell craft class for full bab | cannot still-cast 
-Bard  | mystical connection to music | perform (any music) +10 | spell pool, regenerates w/ performance | boost, enchantment, phantasms, telepathy, summon fey | 2 | can take cross class ranks in spell craft provided perform is higher | cannot silent-cast
+druid  | mystical connection to nature | survival +10 | mana | elemental *, augment senses, boost, healing, metamorph, summoning (elementals and fey only)| 1 | can take cross class ranks in spell craft provided survival is higher | cannot cast while wearing inorganic armor or clothing
+artificer | mystical connection to crafts  | craft (any) +10 | spell pool, regenerates with crafting  | abjuration, elemental air/Earth/wood/metal, materialism, space manipulation | 2 | duration extending metamagic 1/2 cost (round up) on targets you created | save DCs -2
+monk  | mystical connection to martial arts | any attack +7 | vitality |  boost, elemental fire, healing, hexing, second sight, space manipulation | 2 | spell craft class for full bab | cannot still-cast 
+Bard  | mystical connection to music | perform (any music) +10 | spell pool, regenerates w/ performance | boost, enchantment, phantasms, telepathy, summonning (fey only) | 2 | can take cross class ranks in spell craft provided perform is higher | cannot silent-cast
 wizard | deep understanding of magic itself | spell craft +15 | preparation | any | 3 | can create and use (even when latent) magical gems | cannot quick cast
 sorcerer  | distant magical ancestry | spell craft +5 | spell pool, regenerates with rest | any, max 2 | 3 | can take spellcraft cross class for double cost | cannot ritual-cast
-psyker | touched by the chaos beyond reality | knowledge(planes) +5 | increasing warp phenomena | summon aberration plus 5 random schools (roll at chargen or when touched)  | 3 | can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena  | cannot assist or receive assistance in magic rituals except with other psykers
-astrologer | unhealthy obsession with stars  | knowledge (astronomy) +7 | increasing risk of rejection | augment senses, elemental air/fire, second sight, Shadow and light, transit | 3 | 1/day may preroll d20 for one planned action that day | cannot cast during new moon (or when too far from Earth for this to have meaning)
-mad biomancer | unhealthy obsession with biology | knowledge(biology) +7 | increasing risk of insanity | boost, healing, metamorph, second sight | 3 | duration extending metamagic 1/2 cost (round up) on living targets | cannot use reagents
-mad scientist | unhealthy obsession with physics | knowledge(physics) +7 | increasing risk of insanity | augment senses, force, materialism, shadows and light | 3 | can deliberately enter fugue state and roughly aim it | cannot use reagents
-paladin | deep commitment to a righteous cause | knowledge(planes), 1 rank | cast from hp | summon celestial, healing, others based on the cause | 4 | can project unforgeable aura of righteousness | lose powers if betray or abandon cause
-Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell slots | appropriate summoning, others based on patron | 4 | can enchant shaman tokens  | must obey patron's orders (even when latent)
+psyker | touched by the chaos beyond reality | knowledge(planes) +5 | increasing warp phenomena | summonning (aberration only) plus 5 random schools (roll at chargen or when touched)  | 3 | can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena  | cannot assist or receive assistance in magic rituals except with other psykers
+astrologer | unhealthy obsession with stars  | knowledge (astronomy) +7 | increasing risk of rejection | augment senses, elemental air/fire, second sight, shadows and light, space manipulation | 3 | 1/day may preroll d20 for one planned action that day | cannot cast during new moon (or when too far from Earth for this to have meaning)
+mad biomancer | unhealthy obsession with biology | knowledge(biology) +7 | increasing risk of insanity | augment senses, boost, healing, metamorph | 3 | duration extending metamagic 1/2 cost (round up) on living targets | cannot use reagents
+mad scientist | unhealthy obsession with physics | knowledge(physics) +7 | increasing risk of insanity | augment senses, materialism, shadows and light | 3 | can deliberately enter fugue state and roughly aim it | cannot use reagents
+paladin | deep commitment to a righteous cause | knowledge(planes), 1 rank | cast from hp | summonning (celestial only), healing, others based on the cause | 4 | can project unforgeable aura of righteousness | lose powers if betray or abandon cause
+Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell slots | summoning (restricted), others based on patron | 4 | signature spell  | must obey patron's orders (even when latent)
 
 
 ## Half Blood 
@@ -242,7 +207,7 @@ Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell 
 
 Obtaining magical ancestry if you are not born with it is nearly impossible.  In theory it could be achieved by killing a powerful spirit and grafting pieces of their soul onto yourself, or maybe given by an even more powerful being, but these are legends, not known techniques.
 
-Half-blood souls are extremely nutritious to demons, so once a half-blood activates his powers, demons will spontaneously attack.  Most will simply summon themselves in and attack immediately, but some will attempt subtlety.  When a half-blood child is expected, the parents may hide all information about spellcraft from them to prevent them from activating before they master some non-magical defenses.  Alternatively, schools for half-bloods may be placed in highly defensible pocket dimensions where infernals can't directly target their conjury spells.
+Half-blood souls are extremely nutritious and oddly visible to demons, so once a half-blood activates his powers, demons will spontaneously attack.  Most will simply summon themselves in and attack immediately, but some will attempt subtlety.  When a half-blood child is expected, the parents may hide all information about spellcraft from them to prevent them from activating before they master some non-magical defenses.  Alternatively, schools for half-bloods may be placed in highly defensible pocket dimensions where infernals can't directly target their conjury spells.
 
 In addition to rest, half bloods can refill their spell pool by eating magic gems (see wizards).
 
@@ -251,7 +216,7 @@ In addition to rest, half bloods can refill their spell pool by eating magic gem
 **Source:** Mystical connection to nature    
 **Activation:** survival +10    
 **Cost:** mana    
-**Compatible Schools:** elemental *, boost, healing, metamorph, second sight, summon elemental , summon fey   
+**Compatible Schools:** elemental *, augment senses, boost, healing, metamorph, summoning (elemental and fey only)   
 **Pri:** 1    
 **Extra Ability:** can take cross class ranks in spell craft provided survival is higher    
 **Restriction:** cannot cast while wearing inorganic armor or clothing    
@@ -277,7 +242,7 @@ Every thousand rating's worth of spells cast from a place decrease its modifier 
 **Source:** Mystical connection to crafts     
 **Activation:** craft (any) +10    
 **Cost:** spell pool, regenerates with crafting     
-**Compatible Schools:** elemental air/Earth/wood/metal, materialism, transit    
+**Compatible Schools:** abjuration, elemental air/Earth/wood/metal, materialism, space manipulation    
 **Pri:** 2    
 **Extra Ability:** duration extending metamagic 1/2 cost (round up) on targets you created    
 **Restriction:** save DCs -2    
@@ -289,7 +254,7 @@ The restriction applies to the save DCs your targets experience on spells you ca
 **Source:** Mystical connection to martial arts    
 **Activation:** any attack +7    
 **Cost:** vitality    
-**Compatible Schools:**  boost, elemental fire, force manipulation, healing, second sight, transit    
+**Compatible Schools:**  boost, elemental fire, healing, hexing, second sight, space manipulation    
 **Pri:** 2    
 **Extra Ability:** spell craft class for full bab    
 **Restriction:** cannot still-cast     
@@ -308,7 +273,7 @@ A monk spends vitality equal to the rating of the spell.  Vitality recovers norm
 **Source:** Mystical connection to music    
 **Activation:** perform (any music) +10    
 **Cost:** spell pool, regenerates w/ performance    
-**Compatible Schools:** boost, enchantment, phantasms, telepathy, summon fey    
+**Compatible Schools:** boost, enchantment, phantasms, telepathy, summonning (fey only)    
 **Pri:** 2    
 **Extra Ability:** can take cross class ranks in spellcraft provided perform is higher    
 **Restriction:** cannot silent-cast    
@@ -370,7 +335,7 @@ In addition to rest, sorcerers can refill their spell pool by eating magic gems 
 **Source:** Touched by the chaos beyond reality    
 **Activation:** knowledge(planes) +5    
 **Cost:** increasing warp phenomena    
-**Compatible Schools:** summon aberration plus 5 random schools (roll at chargen or when touched)     
+**Compatible Schools:** summonning (aberration only) plus 5 random schools (roll at chargen or when touched)     
 **Pri:** 3    
 **Extra Ability:** can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena     
 **Restriction:** cannot assist or receive assistance in magic rituals except with other psykers    
@@ -434,7 +399,7 @@ Effects last 4d10 minutes, unless otherwise stated.  Ongoing effects centered on
 **Source:** Unhealthy obsession with stars     
 **Activation:** knowledge (astronomy) +7    
 **Cost:** increasing risk of rejection    
-**Compatible Schools:** augment senses, elemental air/fire, second sight, shadow and light, transit    
+**Compatible Schools:** augment senses, elemental air/fire, second sight, shadows and light, space manipulation    
 **Pri:** 3    
 **Extra Ability:** 1/day may preroll d20 for one planned action that day    
 **Restriction:** cannot cast during new moon (or when too far from Earth for this to have meaning)    
@@ -450,7 +415,7 @@ If an astrologer casting a spell fails their will save against the Accumulated L
 **Source:** unhealthy obsession with biology    
 **Activation:** knowledge(biology) +7    
 **Cost:** increasing risk of insanity    
-**Compatible Schools:** boost, healing, metamorph, second sight    
+**Compatible Schools:** augment senses, boost, healing, metamorph    
 **Pri:** 3    
 **Extra Ability:** duration extending metamagic 1/2 cost (round up) on living targets    
 **Restriction:** cannot use reagents    
@@ -464,7 +429,7 @@ A mad biomancer who fails their casting save enters a fugue state in which they 
 **Source:** Unhealthy obsession with physics    
 **Activation:** knowledge(physics) +7    
 **Cost:** increasing risk of insanity    
-**Compatible Schools:** augment senses, force, materialism, shadows and light    
+**Compatible Schools:** augment senses, materialism, shadows and light    
 **Pri:** 3    
 **Extra Ability:** can deliberately enter fugue state and roughly aim it    
 **Restriction:** cannot use reagents    
@@ -476,7 +441,7 @@ A mad scientist's fugue state is like a mad biomancer's, except that if they ent
 **Source:** Deep commitment to a righteous cause    
 **Activation:** knowledge(planes), 1 rank    
 **Cost:** cast from hp    
-**Compatible Schools:** summon celestial, healing, others based on the cause    
+**Compatible Schools:** summonning (celestial only), healing, others based on the cause    
 **Pri:** 4    
 **Extra Ability:** can project unforgeable aura of righteousness    
 **Restriction:** lose powers if betray or abandon cause    
@@ -484,6 +449,8 @@ A mad scientist's fugue state is like a mad biomancer's, except that if they ent
 A paladin’s cause must be righteous in their own eyes. Furthermore, it may not be to champion their own family, country or other such group, even if they believe that diminishing circles of concern are morally proper.  However, there is no absolute morality checking these causes. A man who sincerely believed that strict patriarchal gender roles were best for *everyone* could become a paladin of that.
 
 Anyone perceiving a paladin's aura of righteousness will intuitively recognize it, but only those with knowledge of paladins will be confident it could not have been forged.  When a paladin truthfully states his cause while showing his aura, the aura flares in a similarly unforgeable way.
+
+A paladin typically gains access to three schools specific to their cause.  These are schools that the paladin sincerely perceives as connected to the cause.  For example, a paladin of Protecting the Innocent might have abjuration, boost and materialism, whereas a paladin of Making Peace might have Enchantment, Second Sight and Telepathy.
 
 ### Casting from HP
 
@@ -494,12 +461,12 @@ Whenever a paladin casts a spell, they lose HP equal to the spell's rating.  The
 **Source:** Made a pact with a powerful spirit.        
 **Activation:** knowledge(religion), 1 rank    
 **Cost:** spell slots    
-**Compatible Schools:** relevant summoning, others based on patron and pact     
+**Compatible Schools:** summoning (restricted), others based on patron and pact     
 **Pri:** 4    
-**Extra Ability:** enchant warlock tokens     
+**Extra Ability:** signature spell    
 **Restriction:** must obey patron's orders (even when latent)    
 
-Contacting a powerful spirit can be both difficult and dangerous. Often the best way is with a shaman token of Contact Patron.  Alternatively, you can seek one out where it dwells, or try to catch its attention.  Regardless, the being is under no obligation to make a pact, or, more generally, to refrain from cursing you. 
+Contacting a powerful spirit can be both difficult and dangerous. Often the best way is with a magic item of Send Spirit.  Alternatively, you can seek one out where it dwells, or try to catch its attention.  Regardless, the being is under no obligation to make a pact, or, more generally, to refrain from cursing you. 
 
 A pact carries obligations to serve the patron’s interests in the material world.  Different spirits may demand more or less concrete promises, and also offer more or less assurance of what is acceptable. 
 
@@ -509,7 +476,7 @@ Usually a shaman is eligible for two or three schools that reflect the patron's 
 
 ### Example Pacts
 
-A pact with Mammon, archfiend of greed, might require that the mortal cause at least five other mortals a week to steal something they otherwise wouldn't have and grant internal summoning, hexing, necromancy, and phantasms. 
+A pact with Mammon, archfiend of greed, might require that the mortal cause at least five other mortals a week to steal something they otherwise wouldn't have and grant internal summoning, hexing, and phantasms. 
 
 A pact with Avon, spirit of that river, might require the mortal to protect the river from pollution and damming, and grant fey summoning, elemental water and metamorph.
 
@@ -517,11 +484,12 @@ A pact with Ra, elder fire elemental, might require the mortal to uphold order i
 
 A pact with Raphael, archangel of healing, might require the mortal to diligently strive to prevent war, and also to act with kindness and honor at all times. It might grant celestial summoning, healing and boost.
 
-A pact with Shub-Niggurath, the infamous black goat of a thousand young who dwells beyond the universe, might require the mortal to aid any aberrations who find their way into the material universe, and to act with bissonomy at all times. It might grant aberrant summoning, necromancy and transit.  Note that “bissonomy” cannot be translated into any language mortals can speak, so no sane mortal would promise it.  Also, repeated mental contact with Shub-Niggurath will eventually count as being “touched by the chaos beyond reality” and make the shaman a (possibly latent) psyker as well.
+A pact with Shub-Niggurath, the infamous black goat of a thousand young who dwells beyond the universe, might require the mortal to aid any aberrations who find their way into the material universe, and to act with bissonomy at all times. It might grant aberrant summoning, hexing and space manipulation.  Note that “bissonomy” cannot be translated into any language mortals can speak, so no sane mortal would promise it.  Also, repeated mental contact with Shub-Niggurath will eventually count as being “touched by the chaos beyond reality” and make the shaman a (possibly latent) psyker as well.
 
-### Shaman Tokens
+### Signature Spell
 
-Since shamanistic magic is at a remove already, it is easier for them to put it at an extra remove. A shaman can take a spell, including one that targets the self, and enchant a token with it. Anyone who possesses the token can then activate the spell, even if they have no magic source or spellcraft ranks.  A used token is no longer magical.  A token normally lasts one minute, but the usual meta magic to increase duration applies.
+Pick a specific spell of rating no more than one quarter your knowledge(religion) ranks rounded up. You may cast it at no cost. As your knowledge(religion) increases, you may add effects to the spell, but you may not change effects already added.
+
 
 ### Spell Slots 
 
@@ -594,160 +562,820 @@ Class Skills:
 
 **Extraplanar Spirits:** Any spirit which can be summoned, you can invite into yourself.  This is not restricted by location, but most such spirits will leave if your plans don't suit their interest.
 
-
-# Schools
-
-Schools are as in dragonfire, except:
-
-* Summoning requires suitable raw materials for a body
-* Element schools cannot conjure a 5' cube (see Elemental Conjury feat)
-* Telepathy is now a magic school (with approximately the same abilities as the psionic feat)
-
 # Feats
 
-### Spell School
-You know a spell school and all its standard effects. You may take this feat multiple times. Choose a new school each time. 
+|Feat | Prerequisites | Description |
+|--|-----|-------|
+|Soul Sight |  any active magic source, knowledge (religion) +5 | detect all souls and soul-like spirits within 10 * wis mod meters of you and how they relate to your magic source |
+|Elemental Sight |  any active magic source, two elemental schools | sense elements whose schools you know |
+|Life Sight |  druid or healing school, spellcraft +6, heal +6 | sense the presence and health of living beings |
+| Magic Sight | spellcraft +6 | sense active magic and counterspell more quickly |
+|Word Sight |  any active magic source, telepathy school, spellcraft +6 | sense the meaning of all words spoken or signed with intent that you understand them |
+|Quiet Soul |  knowledge religion 1 rank | hide from Soul Sight, Life and Magic Sight |
+|Deceptive Soul |  Quiet Soul | appear as aligned as you choose to a Soul Seer’s magic source |
+|Familiar | Druid or any other active magic source and handle animal +5 | You have lightly connected your soul to a single animal |
+|Fluid Caster |  6 ranks spell craft | Treat your spells as one rating smaller for purposes of cost |
+|Multi School |  two known schools | combine effects from different schools in one spell |
+|Multi Source Caster  |  two active magic source, spellcraft +10 | Split cost between schools |
+|Spells of Power | - | Save DC +2 for a linked skill |
+|Spell School | - | You know a spell school and all its standard effects |
+|Spells of Skill | - | Spellcraft +4 for a linked skill |
+|Combined Reset |  Spellpool and an Increasing cost | Whenever you do eight solid hours of whatever refills your Spellpool, you also reset the count of how many spells you've cast for Increasing cost purposes |
+|Rapid Recovery |  Spellpool | Your Spellpool refills at twice the regular rate, going from empty to full in only four hours |
+|Graceful Failure  |  Half blood or sorcerer | When you fail, still cast a weaker spell |
+|Mana Reach |  druid | pull Mana from somewhat farther away |
+|Natural Spell |  druid, metamorph School, knowledge(nature) +8 | use verbal and somatic components normally while  metamorphed |
+|Stable Enchanter |  artificer, mad scientist, mad biomancer or wizard; spellcraft 6 ranks | Your spell forms are especially stable and require less effort to maintain |
+|Perfectly Stable Enchanter  |  artificer, stable enchanter, spell craft 9 ranks | structure your spells into completely stable forms, separate from yourself |
+|Arcane Strike |  Monk or Holy Warrior | You may cast a spell and make an attack as a single standard action |
+|Determined Caster |  monk, Bard or paladin | If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action |
+|Emotive Caster  |  Bard or paladin | Add your charisma bonus (if positive) to your maximum castable spell rating and to any save DCs from the spell |
+|Musical Duration |  Bard, perform (any music) +10 | If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost |
+|Checklist Caster  |  wizard | You  can take 5 on spell craft checks to cast spells |
+|Improved Checklist Caster |  Checklist Caster | You may roll 5d4 instead of 1d20 on spell craft checks to cast spells |
+|Extra Preparation |  wizard | You may prepare twice as many spells as normal |
+|Disciplined Caster  |  psyker, iron will, NOT Embrace Chaos | When rolling for warp phenomena, you may roll twice, look at the table, and choose which happens |
+|Embrace Chaos |  psyker, knowledge (planes) +7, NOT Disciplined Caster | When warp phenomena affect everyone or everything in a radius around you, you may choose for this to exclude you |
+|Multiple Portents  |  astrologer | You may consider up to three plans a day and pre roll one d20 for each of them |
+|Lunar Caster  |  astrologer, spell craft 5 ranks | On the night of the full moon, treat your spells as five rating lower (minimum 1) whenever this is beneficial to you |
+|Body and Soul Specialist |  mad biomancer, knowledge(religion) +10 | When casting a spell on an ensouled being (including yourself) you can anchor the spell to the target's soul and not to your own magic |
+|Techno Mage |  mad scientist, craft(electronics) +10 | use electronic magic boosters |
+|Holy Warrior |  paladin, soul sight, spellcraft 5 ranks, Bab+3 | When you make an attack against someone who you know strongly opposes your cause, gain a +2 morale bonus for every 5 spellcraft ranks you have |
+|Holy Trickster |  paladin, soul sight, spellcraft 5 ranks | When you make an opposed skill check against someone who you know strongly opposes your cause, gain a +2 morale bonus for every 5 spellcraft ranks you have |
+|Holy Mage | paladin, soul sight, spellcraft 5 ranks | Add 2/5 morale bonus to save dcs and counterspelling |
+|Human Sacrifice |  Shaman, knowledge(religion) +5 | empower spells by killing people |
 
-### Multi School
-Prerequisite: two known schools   
-You can combine effects from different schools in one spell. All schools must be compatible with the spell’s magic source. 
 
-### Fluid Caster
-Prerequisite: 6 ranks spell craft.    
-Treat your spells as one rating smaller for purposes of cost. You may take this feat multiple times and its effects stack, but no cost can be reduced below zero.  (Note: for Increasing costs, a rating zero spell can still be dangerous to cast.)
+## Sight Feats
 
-### Soul Sight
+Sight feats allow you to detect something using your magical senses.  The range limit is 10 * wis mod meters.  To activate your sense, make a dc 10 knowledge check (save the result in case someone uses the Deceptive Soul feat).  It remains active for one hour or until you turn it off.  If you fail your check, you cannot retry until an hour has past.  Sight feats do not require line of sight, but they are blocked by the Invisibility magic effect or by darksteel.
+
+#### Soul Sight
 Prerequisite: any active magic source, knowledge (religion) +5    
-Make a DC 10 knowledge(religion) check to activate soul sight for the next hour.  If you fail, you cannot retry until the hour is past. With soul sight active, you can detect all souls and soul-like spirits within 10 * wis mod meters of you and how they relate to your magic source. If you are a paladin, this means the extent to which they support or oppose your particular cause. This does not require line of sight, but it can be blocked by invisibility magic, darksteel or the Quiet Soul feat.
+You can detect all souls and soul-like spirits within 10 * wis mod meters of you and how they relate to your magic source. If you are a paladin, this means the extent to which they support or oppose your particular cause.  Activate this with knowledge(religion)
 
-### Quiet Soul
+#### Elemental Sight
+Prerequisite: any active magic source, two elemental schools    
+You can sense elements whose schools you know.  Elements which are parts of the bodies of ensouled beings don't count.  Activate this with knowledge(physics).
+
+#### Life Sight
+Prerequisite: druid or healing school, spellcraft +6, heal +6    
+You can sense the presence and health of living beings.  Activate this with knowledge(biology).
+
+#### Magic Sight
+Prerequisite: spellcraft +6
+You can sense active spells, as if always using the Detect Magic ability.  You still need a spellcraft check to learn about them, but as a swift action.  Activate this with knowledge(arcana).  Additionally, Magic Sight allows Counterspelling as a reaction, because it's easier to interfere with incoming magic if you can just see it.
+
+#### Word Sight
+Prerequisite: any active magic source, telepathy school, spellcraft +6    
+You can sense the meaning of all words spoken or signed with intent that you understand them.  This works regardless of language or audibility.  Activate this with knowledge(religion).
+
+#### Quiet Soul
 Prerequisite: knowledge religion 1 rank.    
-You can hide from Soul Sight if your concentration check or will save exceeds the seer’s knowledge(religion) check to activate his soul sight.  Make a fresh check once an hour if you remain nearby. 
+You can hide from Soul, Life and Magic Sight if your concentration check or will save exceeds the seer’s knowledge check to activate the sight.  Make a fresh check once an hour if you remain nearby. 
 
-### Deceptive Soul
+#### Deceptive Soul
 Prerequisite: Quiet Soul.    
 You can appear as aligned as you choose to a Soul Seer’s magic source if your bluff check exceeds their knowledge(religion) activation. You must know what magic source you are faking.
 
-### Elemental Sight
-Prerequisite: any active magic source, two elemental schools    
-You can sense elements whose schools you know within 10 * wis mod meters of yourself.  Elements which are parts of the bodies of ensouled beings don't count.  Line of sight is not required, but invisibility magic or darksteel block this effect.
+## General Magic Feats
 
-### Word Sight
-Prerequisite: any active magic source, telepathy school, spellcraft +6
-You can sense the meaning of all words spoken or signed within 10 * wis mod meters of you with intent that you understand them.  This works regardless of language or audibility.  You can suppress or restore this ability as a free action.
+#### Familiar
+Prerequisites: Druid or any other active magic source and handle animal +5    
+You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.
 
-### Combined Reset
-Prerequisite: Spellpool and an Increasing cost.    
-Whenever you do eight solid hours of whatever refills your Spellpool, you also reset the count of how many spells you've cast for Increasing cost purposes. 
+#### Fluid Caster
+Prerequisite: 6 ranks spell craft.    
+Treat your spells as one rating smaller for purposes of cost. You may take this feat multiple times and its effects stack, but no cost can be reduced below zero.  (Note: for Increasing costs, a rating zero spell can still be dangerous to cast.)
 
-### Rapid Recovery
-Prerequisite: Spellpool.    
-Your Spellpool refills at twice the regular rate, going from empty to full in only four hours. 
+#### Multi School
+Prerequisite: two known schools   
+You can combine effects from different schools in one spell. All schools must be compatible with the spell’s magic source. 
 
-### Graceful Failure 
-Prerequisite: Half blood or sorcerer.     
-When you fail a spell craft check to cast a spell, you may remove effects or meta magics to decrease the rating until you passed the check by as large a margin as you originally failed by. The spell now succeeds. Note that this is after you paid the cost based on the original rating, and that is not refunded.
-
-### Mana Reach
-Prerequisite: druid.     
-You can pull Mana from somewhat farther away. Treat yourself as being somewhere within a mile of your actual location for purposes of Mana cost. As a side effect, you can sense Mana levels within a mile radius. 
-
-### Natural Spell
-Prerequisite: druid, metamorph School, knowledge(nature) +8    
-You can use verbal and somatic components normally even if a metamorph effect denies you your normal limbs and phonemes, provided you can move and make noise at all.
-
-### Stable Enchanter
-Prerequisite: artificer, mad scientist, mad biomancer or wizard; spellcraft 6 ranks.   
-Your spell forms are especially stable and require less effort to maintain. You can have twice as many ongoing spells as normal.
-
-### Perfectly Stable Enchanter 
-Prerequisite: artificer, stable enchanter, spell craft 9 ranks.    
-You can structure your spells into completely stable forms, separate from yourself. Treat this as a meta magic effect with rating +5.  Spells cast with this do not count against your ongoing spell limit. 
-
-### Arcane Strike
-Prerequisite: Monk or Holy Warrior.     
-You may cast a spell and make an attack as a single standard action. The spell and attack must have the same target. If the attack misses, the spell is wasted (but still paid for).
-
-### Determined Caster
-Prerequisite: monk, Bard or paladin.   
-If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action.  The casting dc is unchanged.
-
-### Emotive Caster 
-Prerequisite: Bard or paladin.    
-Add your charisma bonus (if positive) to your maximum castable spell rating and to any save DCs from the spell.
-
-### Musical Duration
-Prerequisite: Bard, perform (any music) +10.    
-If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost.
-
-### Checklist Caster 
-Prerequisite: wizard.    
-You  can take 5 on spell craft checks to cast spells.  This includes non wizard spells, if you are a multi caster.
-
-### Improved Checklist Caster
-Prerequisite: Checklist Caster.    
-You may roll 5d4 instead of 1d20 on spell craft checks to cast spells. 
-
-### Extra Preparation
-Prerequisite: wizard.    
-You may prepare twice as many spells as normal.
-
-### Disciplined Caster 
-Prerequisite: psyker, iron will, NOT Embrace Chaos.     
-When rolling for warp phenomena, you may roll twice, look at the table, and choose which happens. 
-
-### Embrace Chaos
-Prerequisite: psyker, knowledge (planes) +7, NOT Disciplined Caster.    
-When warp phenomena affect everyone or everything in a radius around you, you may choose for this to exclude you. Similarly, when the phenomena affect you specifically, you may choose to have a random other person within 50 feet affected.
-
-### Multiple Portents 
-Prerequisite: astrologer.    
-You may consider up to three plans a day and pre roll one d20 for each of them. The plans must be substantively different. 
-
-### Lunar Caster 
-Prerequisite: astrologer, spell craft 5 ranks    
-On the night of the full moon, treat your spells as five rating lower (minimum 1) whenever this is beneficial to you.
-
-### Body and Soul Specialist
-Prerequisite: mad biomancer, knowledge(religion) +10.    
-When casting a spell on an ensouled being (including yourself) you can anchor the spell to the target's soul and not to your own magic. The spell does not count against your ongoing spells limit. The target can have as many spells anchored this way as their wisdom modifier. 
-
-### Techno Mage
-Prerequisite: mad scientist, craft(electronics) +10.    
-You can use electronic magic boosters. Each booster provides a specific effect or set of effects.  These effects do not count as part of the spell’s rating for cost or max rating purposes, though they do for casting DC and any other purposes.  A booster costs 1000 money and consumes 1 mega joule per squared rating of the effects delivered. 
-
-### Holy Warrior
-Prerequisite: paladin, soul sight, spellcraft 5 ranks, Bab+3.    
-When you make an attack against someone who you know strongly opposes your cause, gain a +2 morale bonus for every 5 spellcraft ranks you have.
-
-### Holy Trickster
-Prerequisite: paladin, soul sight, spellcraft 5 ranks    
-When you make an opposed skill check against someone who you know strongly opposes your cause, gain a +2 morale bonus for every 5 spellcraft ranks you have.
-
-### Signature Spell 
-Prerequisite: shaman, knowledge(religion) 4 ranks.    
-Pick a specific spell of rating no more than one quarter your knowledge(religion) ranks. You may cast it at no cost. As your knowledge(religion) increases, you may add effects to the spell.
-
-### Human Sacrifice
-Prerequisite: Shaman, knowledge(religion) +5.    
-If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.
-
-### Multi Source Caster 
+#### Multi Source Caster 
 Prerequisite: two active magic source, spellcraft +10.    
 When you cast a spell from a school both magic sources support, you may split the cost between them, as if you had cast two spells, one from each source, whose ratings sum to the original rating.
 
+#### Spells of Power
+Choose a linked skill.  Increase save DCs for spells from schools with that skill by +2.
 
-### Elemental Conjuration
-Prerequisite: knowledge(the planes) +5, any elemental school, any summoning school    
-You can pull normal matter from the elemental planes.  For each elemental school that you have, add an effect to conjure one cubic meter of that element.  You may specify the general nature of the matter conjured, but not precisely.  Conjured fire is a burning hydrocarbon froth, and conjured metals must be cisferric (or iron).  This effect costs 5 rating.
+#### Spell School
+You know a spell school and all its standard effects. You may take this feat multiple times. Choose a new school each time. 
 
-### Spells of Skill
-Choose a school or descriptor.  Gain +4 on spellcraft checks to cast such spells.
+#### Spells of Skill
+Choose a linked skill.  Gain +4 on spellcraft checks to cast spells from schools with that skill.
 
-### Spells of Power
-Choose a school or descriptor.  Increase save DCs from those spells by +2.
+## Source-Specific Feats
+
+#### Combined Reset
+Prerequisite: Spellpool and an Increasing cost.    
+Whenever you do eight solid hours of whatever refills your Spellpool, you also reset the count of how many spells you've cast for Increasing cost purposes. 
+
+#### Rapid Recovery
+Prerequisite: Spellpool.    
+Your Spellpool refills at twice the regular rate, going from empty to full in only four hours. 
+
+#### Graceful Failure 
+Prerequisite: Half blood or sorcerer.     
+When you fail a spell craft check to cast a spell, you may remove effects or meta magics to decrease the rating until you passed the check by as large a margin as you originally failed by. The spell now succeeds. Note that this is after you paid the cost based on the original rating, and that is not refunded.
+
+#### Mana Reach
+Prerequisite: druid.     
+You can pull Mana from somewhat farther away. Treat yourself as being somewhere within a mile of your actual location for purposes of Mana cost. As a side effect, you can sense Mana levels within a mile radius. 
+
+#### Natural Spell
+Prerequisite: druid, metamorph School, knowledge(nature) +8    
+You can use verbal and somatic components normally even if a metamorph effect denies you your normal limbs and phonemes, provided you can move and make noise at all.
+
+#### Stable Enchanter
+Prerequisite: artificer, mad scientist, mad biomancer or wizard; spellcraft 6 ranks.   
+Your spell forms are especially stable and require less effort to maintain. You can have twice as many ongoing spells as normal.
+
+#### Perfectly Stable Enchanter 
+Prerequisite: artificer, stable enchanter, spell craft 9 ranks.    
+You can structure your spells into completely stable forms, separate from yourself. Treat this as a meta magic effect with rating +5.  Spells cast with this do not count against your ongoing spell limit. 
+
+#### Arcane Strike
+Prerequisite: Monk or Holy Warrior.     
+You may cast a spell and make an attack as a single standard action. The spell and attack must have the same target. If the attack misses, the spell is wasted (but still paid for).
+
+#### Determined Caster
+Prerequisite: monk, Bard or paladin.   
+If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action.  The casting dc is unchanged.
+
+#### Emotive Caster 
+Prerequisite: Bard or paladin.    
+Add your charisma bonus (if positive) to your maximum castable spell rating and to any save DCs from the spell.
+
+#### Musical Duration
+Prerequisite: Bard, perform (any music) +10.    
+If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost.
+
+#### Checklist Caster 
+Prerequisite: wizard.    
+You  can take 5 on spell craft checks to cast spells.  This includes non wizard spells, if you are a multi caster.
+
+#### Improved Checklist Caster
+Prerequisite: Checklist Caster.    
+You may roll 5d4 instead of 1d20 on spell craft checks to cast spells. 
+
+#### Extra Preparation
+Prerequisite: wizard.    
+You may prepare twice as many spells as normal.
+
+#### Disciplined Caster 
+Prerequisite: psyker, iron will, NOT Embrace Chaos.     
+When rolling for warp phenomena, you may roll twice, look at the table, and choose which happens. 
+
+#### Embrace Chaos
+Prerequisite: psyker, knowledge (planes) +7, NOT Disciplined Caster.    
+When warp phenomena affect everyone or everything in a radius around you, you may choose for this to exclude you. Similarly, when the phenomena affect you specifically, you may choose to have a random other person within 50 feet affected.
+
+#### Multiple Portents 
+Prerequisite: astrologer.    
+You may consider up to three plans a day and pre roll one d20 for each of them. The plans must be substantively different. 
+
+#### Lunar Caster 
+Prerequisite: astrologer, spell craft 5 ranks    
+On the night of the full moon, treat your spells as five rating lower (minimum 1) whenever this is beneficial to you.
+
+#### Body and Soul Specialist
+Prerequisite: mad biomancer, knowledge(religion) +10.    
+When casting a spell on an ensouled being (including yourself) you can anchor the spell to the target's soul and not to your own magic. The spell does not count against your ongoing spells limit. The target can have as many spells anchored this way as their wisdom modifier. 
+
+#### Techno Mage
+Prerequisite: mad scientist, craft(electronics) +10.    
+You can use electronic magic boosters. Each booster provides a specific effect or set of effects.  These effects do not count as part of the spell’s rating for cost or max rating purposes, though they do for casting DC and any other purposes.  A booster costs 1000 money and consumes 1 mega joule per squared rating of the effects delivered. 
+
+#### Holy Warrior
+Prerequisite: paladin, soul sight, spellcraft 5 ranks, Bab+3.    
+When you make an attack against someone who you know strongly opposes your cause, gain a +2 morale bonus for every 5 spellcraft ranks you have.
+
+#### Holy Trickster
+Prerequisite: paladin, soul sight, spellcraft 5 ranks    
+When you make an opposed skill check against someone who you know strongly opposes your cause, gain a +2 morale bonus for every 5 spellcraft ranks you have.
+
+#### Holy Mage
+Prerequisite: paladin, soul sight, spellcraft 5 ranks
+When you cast a spell on a target who strongly opposes your cause, add a +2 morale bonus to the save dc for every 5 spellcraft ranks you have.  Add the same morale bonus to all counterspelling checks (whether you are counterspelling or casting despite a couterspell).  Normally spellcraft checks do not benefit from morale; this is an exception.
+
+#### Human Sacrifice
+Prerequisite: Shaman, knowledge(religion) +5.    
+If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.
+
+# Schools
+
+| # | School | Summary | Skill |
+|-|---|------------|---|
+1 | Abjuration|affects other magic, mostly by making it more difficult.|Knowledge (arcana)|
+2 | Augment Senses|affects biological sensory organs|Heal (wis)    |
+3 | Boost|affects muscles and similar living tissues.|Heal (wis)    |
+4 | Elemental Air|affects air.  Most simple gasses qualify as air.|Knowledge(physics)    |
+5 | Elemental Earth|affects rocks, including gravel and sand.|Knowledge(chemistry)    |
+6 | Elemental Fire|affects the process of combustion and anything burning.|Knowledge(physics)    |
+7 | Elemental Metal|affects metals, including alloys.|Knowledge(chemistry)|
+8 | Elemental Water|affects water|Knowledge(physics)|
+9 | Elemental Wood|affects plant matter.|Knowledge(biology)|
+10 | Enchantment|affects souls or other spirits, particularly the parts that manage emotions.|Diplomacy (cha)|
+11 | Health|affects living bodies, specifically their self-repair capabilities.|Heal (wis)|
+12 | Hexing|disrupts the connection between soul and brain.|Knowledge (Religion)|
+13 | Materialism|affects the chemical bonds that give objects their structure.|Knowledge (chemistry)|
+14 | Metamorph|effects anatomy of living creatures |Heal (wis)|
+15 | Phantasms|targets the part of the soul that manages awareness of the outside world.|Bluff (cha)|
+16 | Shadows and Light|manipulates light itself.|Knowledge(physics)|
+17 | Second Sight|supports the part of the soul that manages awareness of the outside world.|Spot(wis)|
+18 | Space Manipulation|bends space itself.|Knowledge(physics)|
+19 | Summoning|works with extraplanar spirits.|Knowledge(the planes)    |
+20 | Telepathy|touches the parts of the soul that handle communication.|Diplomacy(cha)|
 
 
-### Familiar
-Prerequisites: Druid or any other active magic source and handle animal +5    
-You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.
+## Abjuration
+
+This school affects other magic, mostly by making it more difficult.
+
+Save: None    
+Skill: Knowledge (arcana)    
+Target: Object Touched    
+Duration: skill total minutes
+
+Effects:
+
+1. General Resistance: Future spells effecting the same target cost +X (cost: X)
+2. Specific Resistance: Future spells from chosen school effecting the same target cost +2X (cost: X)
+3. Very Specific Resistance: Future spells using chosen effect effecting the same target cost +4X (cost: X)
+4. Passcode: Resistances do not apply if caster thinks a specific phrase (cost: 2)
+4. Optional Resistance: Target person may choose to waive resistances (cost: 3)
+5. Including Internals: Abjuration also effects any objects inside the convex hull of the target (cost: 2)
+6. Retroactive: If target already had spells, their casting DCs are increased to the new rating (cost: 1)
+7. Order Spells: Spells on an object can only be dispelled in chosen order (cost: 3)
+
+The three resistance types do not stack.
+
+It is sometimes possible to evade Very Specific Resistance by inventing a new effect that is slightly different from the specified one.  There does need to be some difference, but it need not be practically relevant.  See the rules for inventing spell effects.
+
+Optional Resistance specifically works for people (that is, animals possessed by spirits).  You can apply it to a non-possessed animal, in which case any spirit which possesses said animal will have the option to waive resistances.
+
+If Retroactive and Including Internals are used, any creature or object entering the abjuration with a spell on it will be affected.  If the original spellcraft roll wasn't saved, reroll it but reroll any value that would have failed at the original DC.
+
+Order Spells includes itself (usually last).  Once spells have been ordered, they cannot be reordered.
+
+## Augment Senses
+
+This school affects biological sensory organs (usually, though not necessarily, embedded in a living being).   Many of its effects are similar to effects in Second Sight or Boost – remember that bonuses of different type stack.
+
+Save: Fortitude (usually willing)    
+Skill: Heal (wis)    
+Target: Creature Touched    
+Duration: skill total rounds    
+
+Effects:
+
+1. Enhance vision: Grant +X enhancement bonus to search and spot (cost: X)
+1. Darkvision: All penalties from darkness are halved (cost: 2)
+2. Enhance hearing: Grant +X enhancement bonus to listen (cost: X)
+3. Enhance taste and smell: Grant +X enhancement bonus to checks to taste or smell precisely, including survival checks to follow tracks by scent (cost: X)
+5. Enhance touch: Grant +X insight bonus to any check based on precise manipulation of hidden objects, including mechanical lockpicking and some annoying repairs (cost: 2*X)
+6. Enhance proprioception: Grant +X insight bonus to any dex-based skill check or attack roll (cost: 2*X)
+7. Enhance hunger and thirst: Target knows exactly which nutrients their body requires and in what ratio, but not those nutrients' names (cost: 4)
+
+## Boost
+
+This school affects muscles and similar living tissues.
+
+Save: Fortitude (usually willing)    
+Skill: Heal (wis)    
+Target: Creature Touched    
+Duration: skill total rounds    
+
+Effects:
+
+1. Enhance Skill: Grant +X enhancement bonus to a physical skill (cost: X)
+2. Enhance Ability: Grant +X enhancement bonus to a physical attribute (cost: 2*X)
+3. Enhance Save: Grant +X enhancement bonus to reflex or fortitude saves (cost: 2*X)
+4. Enhance Movement: Multiply a movement speed by 1+X/4 (cost: X)
+5. Enhance Natural Weapons: Increase damage dice on natural attacks by 2X faces to a maximum of 12 (cost: X)
+6. Enhance Natural Attack: Increase DC for natural attacks by X (cost: 2X)
+
+If Enhance Natural Weapons produces a nonstandard die size (e.g. d5), round up (e.g. to a d6)
+
+For purposes of this school, a human's unarmed strike counts as a natural weapon, and any unarmed combat technique with a save dc (e.g. a blood choke) counts as a natural attack.
+
+## Elemental Air
+
+This school affects air.  Most simple gasses qualify as air.
+
+Lightning falls into this school because aiming it requires creating a path of ionized (and therefore slightly conductive) air from the voltage source to the target.  Otherwise magically produced electricity will act naturally.
+
+Save: Reflex    
+Skill: Knowledge(physics)    
+Target: Object or space within 60 ft    
+Duration: skill total rounds or instantaneous    
+
+Effects:
+
+1. Lightning: Deal Xd6 electricity damage (cost: X)
+3. Wind: Move X cubic meters of air at a speed of up to 45 mph (cost: 1+X)
+2. Air Manipulator: Move 1 cubic meter of air.  It can move objects or perform combat manuevers with an effective strength and dex scores of X. (cost: 3+X)
+4. Control Weather: Alter temperature, wind or precipitation by one step in a kilometer radius (cost: 13)
+5. Ghost Sound: Create sound, up to shouting volume.  Requires perform(imitation) check to fool anyone.  (cost: 1)
+6. Crashing Thunder: Deal Xd4 sonic damage, which bypasses all dr and er.  Any creature which loses more than half its hp to sonic damage is also deafened. (cost: X)
+
+## Elemental Earth
+
+This school affects rocks, including gravel and sand.
+
+Save: Reflex    
+Skill: Knowledge(chemistry)    
+Target: Object or space within 60 ft    
+Duration: skill total rounds or instantaneous    
+
+Effects:
+
+1. Earth Manipulator: Animate 1 cubic meter of rock or soil.  It can move objects or perform combat manuevers with an effective strength score of 10+X and dex of X. (cost: 3+X)
+2. Shape Stone: Reshape a stone of up to X cubic meters.  Detailed shapes require a craft(stonecarving) check.  (cost: 1+X)
+3. Minerology:  Convert minerals in target rock into other minerals obeying stoichiometry but ignoring chemical energy (cost: 5)
+3. Earthquake: All creatures within 200m fall prone (save negates); all structures take 100 damage (cost: 15)
+
+## Elemental Fire
+
+This school affects the process of combustion and anything burning.
+
+Save: Reflex    
+Skill: Knowledge(physics)    
+Target: Object within 60 ft    
+Duration: skill total rounds or instantaneous    
+
+Effects:
+
+1. Burn: Target takes Xd8 fire damage (cost: X)
+2. Freeze: Target takes Xd6 cold damage and a -X dex penalty for 1 round if applicable (cost: X)
+3. Resist Fire and Cold: Target gains 3X ER to fire and cold (cost: X)
+4. Burning Weapon: Target weapon or ammunition deals an additional Xd6 fire damage (cost: 2*X)
+5. Manipulate Fire: Control which way if any a fire that currently fits within X cubic meters spreads (cost: 3+X)
+
+## Elemental Metal
+
+This school affects metals, including alloys.
+
+Save: None    
+Skill: Knowledge(chemistry)    
+Target: Object within 60 ft    
+Duration: skill total rounds
+
+Effects:
+
+1. Metal Manipulator: Animate X kg of metal.  It can fly, carry objects or perform combat manuevers with an effective strength score of 10+X and dex of 5+X. (cost: 3+X)
+2. Shape Metal: Reshape a metal object of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
+3. Magnetize: Target metal becomes magnetic, with an effective strength score of X (cost: X)
+
+Magnetize does not require a ferromagnetic target.  However, if the target is ferromagnetic and the effect is maintained for over an hour, the magnetization will become permanent and nonmagical.
+
+## Elemental Water
+
+This school affects water.  This includes water with solutes, but not other liquids.
+
+This school cannot affect water that is part of a living being.
+
+Save: None    
+Skill: Knowledge(physics)     
+Target: Object within 60 ft    
+Duration: skill total rounds
+
+1. Water Manipulator: Animate X kg of water.  It can fly, carry objects or perform combat manuevers with an effective strength score of 5+X and dex of 5+X. (cost: 3+X)
+2. Shape Ice: Reshape a piece of ice of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
+3. Salt Swap: Convert X liters of salt water into half acid and half alkali.  Each liter deals 1d6 corrosion damage on a splash, or 5d6/round for continual contact.  (cost: X)
+4. Fog: Convert 10*X grams of water into 10*X cubic meters of dense fog (cost: X)
+
+Combining Salt Swap and Fog produces a corrosive fog that deals 1d6/round to anyone or anything in it.
+
+## Elemental Wood
+
+This school affects plant matter.
+
+Save: None    
+Skill: Knowledge(biology)    
+Target: Object within 60 ft    
+Duration: skill total rounds
+
+Effects:
+
+
+1. Wood Manipulator: Animate X kg of wood.  It can fly, carry objects or perform combat manuevers with an effective strength score of 10+X and dex of 10+X. (cost: 3+X)
+2. Shape Wood: Reshape a wood object of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
+3. Shillelagh: Wooden melee or thrown weapon gains +X to attack, +Xd4 damage (cost: 2*X max X=5)
+
+## Enchantment
+
+This school affects souls or other spirits, particularly the parts that manage emotions.
+
+Save: Will    
+Skill: Diplomacy (cha)    
+Target: Creature Touched    
+Duration: Skill total rounds
+
+Effects:
+
+1. Charm Creature: Target creature becomes X levels friendlier (cost: X^2)
+2. Encourage Skill: Target gains +2*X morale bonus to one applicable skill (cost: X)
+3. Encourage: Target gains +X morale bonus to all applicable rolls (cost: 2*X)
+4. Discourage: Target takes a -X morale penalty to all applicable rolls (cost: 2*X)
+5. Taboo: Target becomes unwilling to perform a simple action of the caster's choice, such as “harm me” (cost: 3)
+6. Lesser Compel: Target becomes compelled to perform a simple action (cost: 3)
+7. Greater Compel: Target becomes compelled to perform a complex action (cost: 5)
+8. Enforce Calm: Target becomes calm and rational, and loses all emotion-based bonuses or penalties (cost: 3)
+9. Phobia: Target becomes afraid of object of your choice.  Must make will save (spell dc + 4) for friendly interaction, (spell dc) for unfriendly interaction, (dc – 4) to remain in presence of.  (cost: 5)
+10. Lullaby: Target becomes sleepy, see below. (cost: 5)
+
+For taboos and compulsions, the target gains +4 on their save if the command runs contrary to their nature and a stacking +6 if it is very likely to result in their death.  Furthermore, if the command at first seems innocuous and then becomes apparent not to be, the target gets a second save with the appropriate bonus.
+
+Levels of friendliness:
+
+* Will work hard and take risks to oppose you
+* Will oppose you if reasonably practical
+* Vaguely wishes you ill
+* Doesn't care (might work with or against you for their own sake)
+* Vaguely wishes you well
+* Will support you if reasonably practical
+* Will work hard and take risks to support you
+
+Note: someone charmed and then treated in an unfriendly manner will not only cease to feel friendly, but will often be especially angry at being so betrayed.
+
+Morale bonuses or penalties apply to physical and social skills, will saves, and melee attack rolls.
+
+For lullaby, a target who merely fails their will save becomes drowsy, taking a -3 penalty on all rolls.  A target who fails by 5 or more actually falls asleep (taking time to lie down first).  A target who fails by 10 or more cannot be awoken by mundane means until the spell expires.
+
+## Health
+
+This school affects living bodies, specifically their self-repair capabilities.
+
+Save: Fortitude (usually willing)    
+Skill: Heal (wis)    
+Target: Creature Touched    
+Duration: Instantaneous
+
+Effects:
+
+1. Cure Wounds: Heal X hit points (cost: X)
+2. Cure Deep Injury: Heal X points of ability damage (cost: 2*X)
+3. Cure Poison: Reduce poison DC by X (cost: X)
+4. Cure Disease: Reduce disease DC by X (cost: 2*X)
+5. Cure Cancer: Eliminate X points of cancer (cost: 3*X)
+4. Cure Major Injury: Restore non-functioning body part (cost: 5)
+5. Cure Amputation: Regenerate missing body part (cost: 10)
+
+## Hexing
+
+This school disrupts the connection between soul and brain.
+
+Save: Will    
+Skill: Knowledge (Religion)    
+Target: Creature Touched     
+Duration: Skill total rounds
+
+Effects:
+
+
+1. Lesser Hex: Target takes -X penalty to a skill or saving throw (cost: X)
+2. Pacifying Hex: Target takes -X penalty to all attacks (cost: 2*X)
+3. Greater Hex: Target takes -X penalty to all skills and saving throws (cost: 3*X)
+4. Blindness/Etc: Target loses a sense (cost: 4)
+5. Confusion: Target looses a mental faculty, such as words, arithmetic or theory-of-mind (cost: 10)
+
+## Materialism
+
+This school affects the chemical bonds that give objects their structure.
+
+Save: Fort (if living)    
+Skill: Knowledge (chemistry)     
+Target: Small object (including creature) touched    
+Duration: Skill total minutes
+
+Effects:
+
+
+1. Toughen: Adjust target hp and max hp by ±X0%, rounding down (cost: X, max X=5)
+2. Resistance: Object gains ±X DR (cost: 2*X)
+3. Specialized Resistance: Armor gains ±X DR and ER (cost: 2*X)
+4. Strengthen: Object becomes as strong as if it were +33% or +100% the weight (cost: 4 or 10)
+5. Lesser Optimize Weapon: Weapon gains ±X to hit *or* damage (cost: 3*X, max X=5)
+6. Greater Optimize Weapon:Weapon gains ±X to hit *and* damage (cost: 5*X, max X=5)
+7. Adhesion: Object becomes sticky such that releasing it require a DC 15+X str check (cost: 3+2*X)
+8. Lubrication: Object becomes slippery such that wielding or standing on it requires a DC 15+X reflex save (cost: 3+2*X)
+
+If Lesser and Greater Optimize Weapon are combined, the max limit applies to the two together
+
+Note: Strengthen is useful for guns, swords, armor, vehicles or other objects whose weight is necessary to provide strength.  A ¾ weight gun can be fired normally when under this spell effect, but will destroy itself if fired without it.
+
+## Metamorph
+
+The school effects anatomy by interacting with the semi-magical components of morphogen cascades.  
+
+Each metamorph spell is based on a blueprint animal, from which the caster must have a piece of flesh containing fully intact dna (for common animals, this has negligible cost and weight).  By default the blueprint and target must be in the same family (e.g. primates), but see effect 1.  The blueprint can be a living animal, but if said animal is neither cooperative nor constrained, a touch attack is needed (no extra action).
+
+Under no circumstances can metamorph change the target's size.
+
+Save: Fort    
+Skill: Heal (wis)    
+Target: Living creature touched    
+Duration: Skill total minutes
+
+Effects:
+
+
+1. Greater Metamorph: Allow blueprint to be from the same class/superclass/phylum/kingdom as the target (cost: 2/4/8/12)
+2. Assume Appearance: Target takes on the visual quirks of the blueprint, separate from practical benefits or gross rearrangements (cost: 1)
+2. Assume Skin: Target takes on the native DR and ER of the blueprint (cost: 2)
+3. Assume Senses: Target gains X of the blueprint's senses (cost: 2*X)
+4. Assume Movement: Target gains X of the blueprint's movement modes, or as close as size allows (cost: 3*X)
+5. Assume Weapons: Target gains X of the blueprint's natural attacks, damage adjusted for size (cost: 3*X)
+6. Assume Form: Target is completely physically transformed into the blueprint (cost: 5)
+
+For purposes of this school, tetrapoda is a superclass.
+
+When assuming wings onto a body one category larger, maneuverability becomes clumsy.  Two categories: nonfunctional.  Similarly climb speeds: one size category full effect, two categories half speed, three categories nonfunctional.
+
+Assuming form of a larger blueprint results in a child form.  Complete transformation into a smaller creature simply fails.
+
+## Phantasms
+
+This school targets the part of the soul that manages awareness of the outside world.
+
+The target's subconscious mind fills in details of these illusions.  This means that two observers effected by the same phantasm could realize it's fake by comparing notes.  It also means that a phantasmal mirror will reflect what the target expects, and is therefore useless for peaking around corners.  On the upside, it means that if the target knows what a thing should look like far better than the caster, the illusion will still hold up.
+
+Save: Will    
+Skill: Bluff (cha)     
+Target: Creature within 60 ft    
+Duration: Skill total rounds
+
+Effects:
+
+
+1. Figment: Target perceives a conceptually single object which fits in an X meter cube (cost: 1+X)
+2. Figments: Target perceives any number of objects within an X meter cube area (cost: 3+X)
+2. Invisibility: Target cannot perceive chosen creature or object (cost: 4)
+4. Figment Indirection: Target perceives the illusion's reflection, image on real-time television monitors, etc. (cost: 2)
+3. Confuse Vision: Target suffers -X penalty to checks involving perception (cost: 2*X)
+1. Glamour: Target perceives chosen object or creature as a different object or creature of the same size and general shape (cost: 2)
+
+If an invisible creature interacts with the target, the target gets a fresh will save.  If the creature injures the target, the target adds twice the damage to the will save.
+
+## Shadows and Light
+
+This school manipulates light itself.
+
+Save: None    
+Skill: Knowledge(physics)    
+Target: Object or space within 60ft    
+Duration: Skill total rounds
+
+Effects:
+
+
+1. Optical Figment: Create a figment that fits within an X meter cube (cost: 2+X)
+2. Blur: Target creature or object becomes blurry, gaining X to AC (cost: 2*X)
+3. Telescope: Lens effect makes object appear 1/X the distance (cost: 2*X)
+4. Light/Darkness: Adjust area illumination by ±X (cost: X)
+5. Laser: Create laser that deals Xd4 fire damage, aims with ranged attack increment 100m (cost: X)
+
+Figments created with this school require a craft(illusion) check.  Example DCs:
+
+| DC | Illusion |
+|-|----|
+| 2 | A simple diagram |
+| 5 | Lengthy legible text |
+| 10 | A cartoon |
+| 15 | A simple crate |
+| 20 | A generic person |
+| 25 | A specific person |
+
+An examiner can identify a figment of this sort by making a spot check dc 10 + caster's overage on the craft(illusion) check.
+
+When using the Laser effect, the laser source is the target of the spell (restricted by range).  The laser beam then proceeds indefinitely according to normal physics, though aiming it at a relevant target becomes difficult with range.
+
+## Second Sight
+
+This school supports the part of the soul that manages awareness of the outside world.
+
+Save: Will    
+Skill: Spot(wis)    
+Target: Creature Touched    
+Duration: Skill total rounds    
+
+Effects:
+
+
+1. Enhance Simple Perception: Grant +X insight bonus to Spot, Listen and similar checks(cost: 2*X)
+2. Enhance Complex Perception: Grant +X insight bonus to Search, Insight, Appraise and similar checks (cost: 2*X)
+2. True Sight: Grant +X to will saves against Phantasms, and fresh saves against any ongoing (cost: 2*X)
+3. Share Othersight: Target gains Caster's Sight Feats (e.g. soulsight) (cost: 5)
+4. Share Senses: Target can use Caster's senses as well as their own (cost: 6)
+5. Scrying: Caster can use Target's senses as well as their own (cost: 7)
+
+## Space Manipulation
+
+This school bends space itself.
+
+Several effects in this school depend on a Teleport Beacon.  This is a bit of magic attached to an object which is easy to connect other bits of space to.   A Teleport Beacon on its own does nothing, but it is an active spell for generic active spell purposes.
+
+Save: None    
+Skill: Knowledge(physics)    
+Target: Object within 30 ft    
+Duration: Skill total rounds or Instantaneous
+
+Effects:
+
+
+1. Place Beacon: Create a teleport beacon and attach it to the target (cost: 3)
+1. Locate Beacon: Determine the distance and direction to one of your teleport beacons (cost: 5)
+2. Teleport Send: Transport target object to a teleport beacon of yours (cost: 9)
+3. Teleport Fetch: Transport object with teleport beacon to target location (cost: 10)
+4. Portal: Create a X meter diameter circular portal connecting target surface and your teleport beacon.  Anyone passing through the portal (in either direction) emerges on the other side.  (cost: 12+X)
+6. Holding: Container holding X cubic meters now holds 8X, doubling all linear dimensions (cost: 5+X)
+7. Grow/Shrink: Object changes size (but not mass) by a linear factor of X (cost: 2*X)
+
+Note: a container of holding still experiences the weight of its contents.
+
+## Summoning
+
+This school works with extraplanar spirits.
+
+Save: Will or None   
+Skill: Knowledge(the planes)    
+Target: Object or person touched or none    
+Duration: Skill total rounds    
+
+Effects:
+
+
+1. Summon Spirit: Extraplanar spirit of CR X becomes simultaneously in its home plane and inside target object (cost: X)
+2. Create Body: Convert X cubic meters of appropriate material into a body a CR X spirit can possess (cost: X)
+3. Send Spirit: Willing spirit becomes simultaneously in its location and in an extraplanar location adjacent to a named spirit.  Target spirit is mostly gone, but can return as a standard action. (cost: 1)
+4. Summon Element: Bring X cubic meters of matter from an elemental plane into the material (cost: 5*X) [requires corresponding elemental school]
+
+When selecting extraplanar spirits, you can either seek a spirit of a general description who would be happy to be summoned/contacted or a specific spirit by name (either true name or current use-name).  If you select the former, the spirit will be grateful for the contact and broadly supportive of your goals insofar as they align with its nature.  If you select the latter, the spirit can make a will save to reject the contact altogether, and will act according to its interests.  
+
+(Some summoners enchant the spirits they summon.  With multi-school casting, the spell either succeeds or fails as a whole.  Without it, there's a risk that the spirit will make their save against the enchantment and become angry.)
+
+A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.)
+
+A generic CR X spirit has ability scores 8+X, base attack X/2 and X ranks in all thematically relevant skills.  Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8 slashing for infernals or aberrations.  Fire elemental's natural weapons do an additional 1d6 fire damage.
+
+While many spirits can summon spirits of their own kind, this is limited by body materials.  Except for elementals, who can pull materials from their planes and fey, whose needed materials are easy to find in any forest in autumn.  Fortunately elementals and fey respect the balance of nature, and are generally unwilling to attempt this.
+
+Send Spirit is mostly used to send the souls of humans to meet with powerful extraplanar spirits.  While this is active, the extraplanar spirits can communicate with, cast magic upon, or empower as shamans the human souls.  A human body with its soul mostly absent acts like a trained chimp.  The effect can also be used by inhabitants of other planes to visit the material, if they have the true name of a human to target on.
+
+When summoning an element, you may specify the general nature of the material you summon, but not the full details.  For example, you could use summon earth to summon "a solid block of gneiss" but not one with large rubies.  Summoning metal is limited to cisferric metals (including iron).
+
+## Telepathy
+
+This school touches the parts of the soul that handle communication.
+
+Save: Will    
+Skill: Diplomacy(cha)    
+Target: Person within 60 ft    
+Duration: Skill total rounds or Instantaneous
+
+Effects:
+
+
+1. Send Thought: Target becomes aware of an idea or sentence (cost: 1) [No save]
+1. Insinuate Thought: Target thinks of an idea or sentence as if on their own (cost: 3)
+1. Mental Screech: Target takes Xd4 vitality damage (cost: X)
+2. Detect Surface Thoughts: Caster learns what the target is currently thinking (cost: 3)
+3. Search Memories: Caster learns the answer to a single question that the target knows (cost: 5)
+4. Borrow Skill: Caster gains target's ranks in a single skill or a single feat target knows (cost: 7)
+5. Bestow Skill: Target gains use of caster's ranks in a single skill, or a single feat (cost: 7)
+
+Thoughts delivered via Send Thought feel foreign, but in a way that people unfamiliar with telepathy might not pick up on.
+
+If the target makes their save against Insinuate Thought, the effect acts like Send Thought.  Even if they fail the save, if the thought is sufficiently out-of-character they may brush it off as imp-of-the-perverse.
+
+Skill ranks gained via Borrow or Bestow skill do not stack with actual ranks, but do with other bonuses such as skill focus.  If a feat that can be taken multiple times and stacks with itself is gained this way, the magical and natural feats stack if and only if the donor has strictly more copies of the feat.
+
+If Borrow or Bestow Skill is maintained for 30 days, the skill becomes permanent and nonmagical.
+
+# Metamagics
+
+## Magics of Time
+
+1. Extend: Increase a duration by a factor of 10^X (cost: 3X)
+2. Permanency: Make a duration permanent (cost: 15)
+3. Repeating: Instantaneous spell repeats X times at 1 round intervals (cost: 5X)
+3. Slowly Repeating: Instantaneous spell repeats X times at 1 minute intervals (cost: X)
+4. Trigger: Spell remains latent up to 1 hour for a condition, then activates and is discharged (cost: 2)
+5. Repeating Trigger: Spell remains latent for 1 hour and activates whenever a stated condition is met, max 1/rd, max 10X times total OR X per day (cost: 10+X)
+6. Retarget: When spell is triggered, it targets a new target (cost: 1)
+
+If multiple durations can be mentioned in describing a spell, each can be extended or permanencied separately.
+
+Conditions for a trigger must be discernable by the bespelled object.  It can sense acceleration, physical contact and whether the contacting object is ensouled, the contacting person choosing to activate it (an intuitive mental motion), and any Sight feats the original caster had.  If the object is manufactured for a specific purpose, the spell can detect when the object is used for that purpose.  Targets for retarget use the same senses, plus an awareness of the object's orientation.
+
+If the spell on a repeating trigger has a duration, activating the trigger again cancels any otherwise active instances of the spell.
+
+If the spell specifies an effect on the caster, and you are casting it with a trigger that is unambiguously caused by a single person, you may make that person count as the caster.
+
+## Magics of Space
+
+1. Reach: A spell normally requiring touch now affects a target within 10m (cost: 1)
+2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: 3X)
+2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of 2^X (cost: 5X)
+3. Strong Affinity: Treat an object and a former piece of that object as being the same  (cost: 10)
+4. Moderate Affinity: Target an object based on an image of it being in range (cost: 12)
+5. Weak Affinity: Target an object based on a crude image or thing-that-touched-it being in range (cost: 16)
+
+Magics of Space can be stacked on top of each other.  You could, for example, target a point 10m above a person whose photograph you hold by combining Moderate Affinity and Reach.
+
+## Magics of Targeting
+
+1. Spread: Instead of a single target, the spell effects all valid targets in a meter radius sphere (cost: 1)
+2. Chain: Effect X additional valid targets, each of which must be within 10m of the previous (cost: X)
+
+## Magics of Power
+
+1. Heighten: Add X to save DC (cost: 2X)
+2. Enhance: Increase numeric effects by X * 25% (cost: X, max X=4)
+
+# Researching New Effects
+
+Most magi go their entire careers without inventing or improving upon a spell effect, or do it once, badly, as a student and never again. The process is similar to a programmer writing an operating system kernel.
+
+Nevertheless, effects came from past researchers, and unusual circumstances can happen. 
+
+To research a new effect, you must already know the school the effect will be a part of, that is, the correspondence of organized mundane matter and intrinsic spiritual force that you plan to exploit. To research a new school takes 80 hours and a DC 35 spellcraft check, and, of course, for the correspondence you want to exist in the first place.
+
+Effects come into being in stages (with the spellcraft to to reach each from the previous): 
+
+* Reason to believe it's possible (0)
+* General idea of how it works (15)
+* Bare minimum proof of concept (20)
+* Inefficient and unreliable (25)
+* Basically usable (30)
+* Polished and optimized (35)
+
+Jumping two steps at once increases the DC by 5.  A general idea only helps if you know it to be correct, and it cannot be confirmed by experiment, so this step must usually be skipped.
+
+Research standardly takes a week. Each doubling of the time adds a stacking +2 circumstance bonus.
+
+All effects in the book are polished and optimized.
+
+Once an effect is researched, it can be taught to others or written in spell books just like a mundane discovery. A single effect makes a rather short book, but it is still referred to as a spell book (researchers often put together several related effects for publication, add practical notes about how to make the effect most useful, or simply pad the word count with gratuitous ego stroking).  In high magic settings, there may be libraries filled with spell books of mostly useless, highly situational effects of varying quality.
+
+There are always rumors of brilliant, beyond-optimized effects written in hidden tomes the brave might extract. Most of these rumors are false.  Though the entire Boost school was the secret of an ancient empire until a shaman from a recently conquered province seduced it out of an occupying officer and spread it, so it is possible.
+
+## Example Effect Progression
+
+Bare minimum proof of concept: painful but not damaging electric shock strikes both caster and target (rating 4)
+
+Inefficient and unreliable: Xd4 electric damage to target (95% probability) or caster (5%) (cost 4X)
+
+Basically usable: Xd4 electric damage to target (rating 2X)
+
+Polished and optimized: Xd6 electric damage to target (rating X)
+
+# Other Uses for Spellcraft
+
+Besides casting spells, spellcraft can be used for other things.  These uses do not require a magic source.  All except Identify Spell require a standard action (but see the Magic Sight feat).
+
+#### Detect Magic
+
+* DC 10 to notice active spells or other magic within 20m
+* DC 15 to determine the school(s) and rating of an active spell
+* DC 20+rating to determine the exact nature of an active spell, excluding specific passcodes
+
+#### Dispel Magic
+
+Remove an active spell within 10m.
+
+If your spellcraft check minus 10 exceeds the original caster's spellcraft check minus the DC, the spell is ended.  If the original caster's check wasn't saved, roll it now, but reroll any value that would not have succeeded in the first place.
+
+#### Counterspell
+
+Block a spell being cast.  You must have a way of perceiving the spell, and a readied action.
+
+Like Dispel, but subtract 15 from the counterspelling check.  Unlike dispel, multiple people can counterspell at once, in which case their (check minus 15)s sum.
+
+#### Identify Spell
+
+Without Detect Magic, you can still deduce an incoming spell's identity from somatic and verbal components.
+
+* DC 5+rating: from observing a ritual
+* DC 10+rating: from observing somatic AND verbal
+* DC 15+rating: from observing somatic OR verbal
+
+#### Deduce Spell
+
+Usually DC 10: figure out how a spell will interact with edge-cases of its description.
+
+# Purchasing Magic
+
+**Spellbook:** $500.  Contains instructions for one school of magic.
+
+**Spellcraft Textbook:** $2280.  Includes a permanent +10% hp spell and a diagram thereof.
+
+**Scroll:** $2R^2 .  Enables casting a specific spell without school knowledge (compatible magic source still required).
+
+**Spell Cast:** $5R^2 plus extras.  Spells that require qualifications besides a magic source and a single school cost $100 extra.  Spells that will last longer than a day cost $50 per day to a max of $500.
+
+Note: abilities that decrease a spell's rating for some casters (such as an artificer's discounted time metamagic) do not affect the cost.  The fact that some casters have such advantages is already factored into the cost, and the law of one price applies.
+
+**Bespelled Item:** Cost of casting the spell plus cost of the mundane item.
