@@ -33,7 +33,7 @@ blade) in his left.
 +-----+----+-+------+-----+---+---+---+ +-----+----+-+------+-----+---+---+------+
 |*Attack*           |*atk*|*t*|*dmg*  | |*Attack*           |*atk*|*t*|*dmg*     |
 +-------------------+-----+---+-------+ +-------------------+-----+---+----------+
-|Halberd Side-spike |  +3 | P | 1d10+3| | Falchion Slash    | +6  | S | 1d8+2    |
+|Halberd Side-spike |  +4 | P | 1d10+3| | Falchion Slash    | +6  | S | 1d8+2    |
 +-------------------+-----+---+-------+ +-------------------+-----+---+----------+
 |Halberd End-Spike  |  +4 | P | 1d6+2 | | Falchion Stab     | +1  | P | 1d8+2    |
 +-------------------+-----+---+-------+ +-------------------+-----+---+----------+
@@ -88,8 +88,8 @@ attacks at +4, his AC is 12 and he parries at +4.  She rolls a 15 for
 a total of 19.  He rolls a 4 for a total of 16.  A hit.  Since she
 wasn't aiming at a body part, she rolls randomly and gets left leg.  A
 side-spike on a long haft deals 1d10 damage, and swinging a two-handed
-weapon adds 3/2 strength mod.  Alice rolls a 5 and has a str of +2,
-for 8 damage, reduced to 8 by the chainmail.  Bob has a constitution
+weapon adds 3/2 strength mod.  Alice rolls a 7 and has a str of +2,
+for 10 damage, reduced to 8 by the chainmail.  Bob has a constitution
 score of 10 so his leg is still functional... barely.
 
 Bob decides to get more aggressive and advances without caution.
@@ -842,6 +842,7 @@ These are some armor patterns from various eras.  All are mirror-symmetrical for
 Shields come in varing sizes and materials (also shapes, but this has no mechanical effect).
 
 | Diameter | Base Weight (hide) | Parry at | ACB: Shield Arm | ACB: Torso | ACB: Other |
+| :-: | :-: | :-: | :-: | :-: | :-: |
 | 1 | 1 | +4 | 1 | 0 | 0 |
 | 2 | 2 | +2 | 3 | 1 | 0 |
 | 3 | 4 | 0 | 5 | 3 | 1 |
@@ -849,6 +850,7 @@ Shields come in varing sizes and materials (also shapes, but this has no mechani
 | 5 | 11 | -4 | 9 | 6 | 2 |
 
 | Material | Weight Multiplier | DR | Available from |
+| :-: | :-: | :-: | :-: |
 | Hide | 1 | 4 | Stone |
 | Wood | 2 |  10 | Stone |
 | Steel | 4 | 20 | Iron |
