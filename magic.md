@@ -37,20 +37,6 @@ A spirit can operate a body if magic forms an interface.  Some spirits can cast 
 
 Many spirits are natives of other planes.  Some of those are structured to be easy to pull into ours.  Summoning spells do three things: pull a spirit from its native plane to the caster's location, control it, and connect it to a suitable body.  Interplanar travel mostly makes mockery of distance, so there's no need to worry about whether a suitable spirit is "nearby".  If the constructed body is rendered non-functional, the magic holding the spirit on this plane will also be broken.
 
-Sometimes spirits that are natives of other planes will be on ours for more permanent reasons, and some spirits are native here.  These spirits can be compelled and/or offered bodies using similar magic.  Though any compulsion targetting a specific spirit allows a will save (generic summoning spells that are saved against simply grab a different spirit of the same species).
-
-Bodies for weak spirits usually require these materials:
-
-* Celestials: Feathers and tears
-* Elementals: The substance they are named after
-* Fey: Leaves
-* Infernals: Claws and blood
-* Abberations: Scales, teeth and tentacles
-
-Bodies for more powerful spirits may require rarer or more specific materials.
-
-When a spirit summons itself, it can be considerably less picky about materials, provided they resemble the requirement in some way.  A determined infernal could summon itself into an iron sickle that had been left out in the rain, and many a half-blood grows to fear farming equipment for this reason.  A third-party summoner, even a fellow infernal, cannot make use of this class of shortcut.
-
 ## Spirits, Bodies and Reproduction
 
 Most animals, including human bodies, reproduce via sex.  Most spirits, including human souls, reproduce via love.  Most of the time, a child's biological parents and soul parents are the same.  Human instincts encourage this: finding those we love more sexually attractive and those we have sex with more romantically attractive.  But the system isn't perfect.  Unensouled fetuses tend to self-terminate around five monthes post-conception.  Unembodied souls can stick around for longer, sometimes attaching to a parent and sometimes floating free.  
@@ -573,10 +559,13 @@ Class Skills:
 |Word Sight |  any active magic source, telepathy school, spellcraft +6 | sense the meaning of all words spoken or signed with intent that you understand them |
 |Quiet Soul |  knowledge religion 1 rank | hide from Soul Sight, Life and Magic Sight |
 |Deceptive Soul |  Quiet Soul | appear as aligned as you choose to a Soul Seer’s magic source |
+|Astral Projection | | Briefly detatch your soul from your body |
+|Ambiguous Soul | Astral Projection, appropriate lifestyle | Treat your soul as another spirit type |
 |Familiar | Druid or any other active magic source and handle animal +5 | You have lightly connected your soul to a single animal |
 |Fluid Caster |  6 ranks spell craft | Treat your spells as one rating smaller for purposes of cost |
 |Multi School |  two known schools | combine effects from different schools in one spell |
 |Multi Source Caster  |  two active magic source, spellcraft +10 | Split cost between schools |
+| Necromancy | Summoning (infernals) | Use corpses as basis for infernal body |
 |Spells of Power | - | Save DC +2 for a linked skill |
 |Spell School | - | You know a spell school and all its standard effects |
 |Spells of Skill | - | Spellcraft +4 for a linked skill |
@@ -640,6 +629,13 @@ You can appear as aligned as you choose to a Soul Seer’s magic source if your 
 
 ## General Magic Feats
 
+#### Astral Projection
+You can briefly detatch your soul from your body.  See the rules on disembodied souls and disensouled bodies.
+
+#### Ambiguous Soul
+Prerequisites: Astral Projection, lifestyle appropriate to spirit type    
+You can treat your soul as another spirit type when this benefits you.  For example, you can astral project into a prepared body for such a spirit.  You must maintain a lifestyle in line with the values of that spirit type.
+
 #### Familiar
 Prerequisites: Druid or any other active magic source and handle animal +5    
 You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.
@@ -655,6 +651,10 @@ You can combine effects from different schools in one spell. All schools must be
 #### Multi Source Caster 
 Prerequisite: two active magic source, spellcraft +10.    
 When you cast a spell from a school both magic sources support, you may split the cost between them, as if you had cast two spells, one from each source, whose ratings sum to the original rating.
+
+#### Necromancy
+Prerequisites: Summoning (infernals)
+When using the Create Body Summoning effect for an infernal, you can use a fresh chordate corpse in place of the usual blood and claws.  A small corpse counts as one cubic meter, medium two, large four and so forth.  An infernal that inhabits this body gains the animal's senses, movement modes and natural weapons.  It also gains access to the host's memories, and can use the host's skill ranks and feats (though if both spirit and host have ranks in the same skill, they do not stack).  If the nerves connecting the corpse's brain and heart are severed, the body becomes unsuitable for possession.
 
 #### Spells of Power
 Choose a linked skill.  Increase save DCs for spells from schools with that skill by +2.
@@ -1206,23 +1206,23 @@ Duration: Skill total rounds
 
 Effects:
 
-
 1. Summon Spirit: Extraplanar spirit of CR X becomes simultaneously in its home plane and inside target object (cost: X)
-2. Create Body: Convert X cubic meters of appropriate material into a body a CR X spirit can possess (cost: X)
+2. Create Body: Convert an appropriate amount (usually X cubic meters) of appropriate material into a body a CR X spirit can possess (cost: X)
 3. Send Spirit: Willing spirit becomes simultaneously in its location and in an extraplanar location adjacent to a named spirit.  Target spirit is mostly gone, but can return as a standard action. (cost: 1)
+4. Spirit Anchor: Target object qualifies as a comfortable environment for one type of spirit  (cost: 3)
 4. Summon Element: Bring X cubic meters of matter from an elemental plane into the material (cost: 5*X) [requires corresponding elemental school]
 
 When selecting extraplanar spirits, you can either seek a spirit of a general description who would be happy to be summoned/contacted or a specific spirit by name (either true name or current use-name).  If you select the former, the spirit will be grateful for the contact and broadly supportive of your goals insofar as they align with its nature.  If you select the latter, the spirit can make a will save to reject the contact altogether, and will act according to its interests.  
 
 (Some summoners enchant the spirits they summon.  With multi-school casting, the spell either succeeds or fails as a whole.  Without it, there's a risk that the spirit will make their save against the enchantment and become angry.)
 
-A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.)
-
-A generic CR X spirit has ability scores 8+X, base attack X/2 and X ranks in all thematically relevant skills.  Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8 slashing for infernals or aberrations.  Fire elemental's natural weapons do an additional 1d6 fire damage.
-
 While many spirits can summon spirits of their own kind, this is limited by body materials.  Except for elementals, who can pull materials from their planes and fey, whose needed materials are easy to find in any forest in autumn.  Fortunately elementals and fey respect the balance of nature, and are generally unwilling to attempt this.
 
-Send Spirit is mostly used to send the souls of humans to meet with powerful extraplanar spirits.  While this is active, the extraplanar spirits can communicate with, cast magic upon, or empower as shamans the human souls.  A human body with its soul mostly absent acts like a trained chimp.  The effect can also be used by inhabitants of other planes to visit the material, if they have the true name of a human to target on.
+When a spirit uses the Create Body effect *for itself*, it can be considerably less picky about materials, provided they resemble the requirement in some way.  A determined infernal could create a body for itself from an iron sickle that had been left out in the rain, and many a half-blood grows to fear farming equipment for this reason.  A third-party summoner, even a fellow infernal, cannot make use of this class of shortcut.
+
+The Create Body and Spirit Anchor effects cannot be cast on objects that already have that effect cast on them.
+
+Send Spirit is mostly used to send the souls of humans to meet with powerful extraplanar spirits.  While this is active, the extraplanar spirits can communicate with, cast magic upon, or empower as shamans the human souls.  The effect can also be used by inhabitants of other planes to visit the material, if they have the true name of a human to target on.
 
 When summoning an element, you may specify the general nature of the material you summon, but not the full details.  For example, you could use summon earth to summon "a solid block of gneiss" but not one with large rubies.  Summoning metal is limited to cisferric metals (including iron).
 
@@ -1379,3 +1379,123 @@ Usually DC 10: figure out how a spell will interact with edge-cases of its descr
 Note: abilities that decrease a spell's rating for some casters (such as an artificer's discounted time metamagic) do not affect the cost.  The fact that some casters have such advantages is already factored into the cost, and the law of one price applies.
 
 **Bespelled Item:** Cost of casting the spell plus cost of the mundane item.
+
+# Spirits as Monsters
+
+A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most non-soul spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.)  This includes human souls that are seperated from the body, whether by Astral Projection, Send Spirit or Death.
+
+Spirits can move themselves, flying at 10 meters per round unless otherwise specified.
+
+Spirits have specific environments they're comfortable in.  A spirit outside of such an environment for an hour must make a DC 10 will save to hold itself together, then additional will saves at incrementing DCs each hour thereafter.  A spirit that straddles a planar boundary and is only uncomfortable on one side will snap back to the other, but a monoplanar spirit will perish.  A spirit which rests for five minutes in a comfortable environmnet resets this counter.
+
+A generic CR X spirit inhabiting a magically created body has ability scores 8+X, base attack X/2 and X ranks in all thematically relevant skills.  Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8 slashing for infernals or aberrations.  Fire elemental's natural weapons do an additional 1d6 fire damage.
+
+
+## Celestials
+
+Each celestial embodies a single virtue (whereas each generally acknowledged virtue is embodied by a great many celestials).
+
+Celestials are comfortable on the celestial plane, or in holy spaces (consecrated in the eyes of a significant group of mortals), or amidst people engaged in organized righteous activity.
+
+Bodies for celestials usually require feathers and tears.
+
+## Elementals
+
+Elementals have a deep tie to on of the magical elements (air, water, earth, fire, wood or metal).  They have a sense of responsibility toward the balance of nature, and an emotional pattern appropriate to the element.
+
+Elementals are comfortable on their respective planes, or in the presense of a great deal of their respective element.  There exist a significant population of elementals that are permanent residents of the material plane, and have never visited their respective elemental planes.
+
+Bodies for elementals must be made of the element in question.  For fire, this can be anything currently burning.
+
+## Fey
+
+Fey are great appreciaters of beauty.  The beauty of nature, of music, or of a well-played prank.
+
+They are comfortable in the feywild, or in suitable ecosystems (varies by type).
+
+Creating a body for fey requires leaves.
+
+## Infernals
+
+Infernals both want for all other beings to suffer and for other beings to engage in acts of evil.  Most infernals have a particular sin they take special joy in tempting.
+
+Infernals are comfortable in the presence of great suffering.
+
+An infernal body is made from claws and blood.
+
+Infernals have a special Sight ability to detect claws and blood (including inside living creatures) and how close to being a valid Create Body target any given assemblage gets.
+
+### Blood Drinker
+
+Blood Drinkers are a particularly dangerous infernal spirit.
+
+Str: 16^1 Dex: 12^1 Con: 12^1 Int: 14 Wis: 14 Cha: 16    
+Base Attack: 6
+Attacks^1: 2xClaw +7 1d8+3 slashing and Bite +7 1d6+3 piercing
+Skills: Bluff: 9, Diplomacy: 9, Knowledge(Planes): 8, Listen: 12, Spellcraft: 8, Spot: 12
+Schools: Enchantment, Phantasms (except Indirect Figments), Summoning (infernals only)    
+Magic Cost: Spellpool 36 (regrows with rest)   
+HP: 12
+Feats: Necromancy, Spells of Power, 2 x Fluid Caster
+
+When a Blood Drinker deals damage with its bite attack, it may either heal that much damage to itself or restore that many points of spellpool.
+
+^1 Assuming possession of a body
+
+## Abberations
+
+Abberations are from somewhat farther away than the elemental planes or the feywild, and are correspondingly more confusing.  They probably have desires, values and goals, but we're not sure.  Close contact with one can cause permanent psychological damage.
+
+Under exactly what circumstances abberations are comfortable is unknown.  It may vary by type.
+
+An abberation body is made from scales, teeth and tentacles.
+
+## Souls
+
+A human soul is normally found piloting a human body.  A soul whose body has died is known as a phantom.
+
+In fact, a soul is only comfortable in its body (or in a Spirit Anchor).  However, a phantom that fails its will save to survive in an uncomfortable environment has the option to become a ghost rather than vanishing altogether.
+
+Souls cannot operate bodies created with the Create Body magic effect.  Souls *can* operated actual living human bodies besides their own *if* those bodies are not currently inhabited by another soul (or said soul deliberately steps aside to let them in).
+
+There is persistant speculation that souls do straddle a planar boundary, and when they cannot find rest in this world, they snap back to the other.  There is no solid evidence for this, but there is no proof to the contrary, and many wish to believe.
+
+## Ghosts
+
+A ghost was a soul, but was stripped down to only care about a single cause or value.  Ghosts are often seen as evil, but only in the same way that anyone who fanatically pursues a goal other than goodness itself tends to default to evil.
+
+A ghost is comfortable so long as it is meaningfully pursuing its cause.  A ghost that wishes to protect something might be comfortable standing guard for years, whereas a vengeful ghost will only wait and watch so long as it has a credible chance of learning something useful.  A ghost whose cause has become unpursuable (including because it has been accomplished) cannot be comfortable and will dissipate in short order.
+
+A created body for a ghost requires white woolen cloth and something symbolic of the ghost's cause.
+
+## Disensouled Bodies
+
+A human body with its soul mostly absent acts like a trained chimp.  It has a roughly chimpanzee-equivalent intelligence, plus many habits from when it was soul-operated.  It is keenly aware of who its friends and enemies are, and generally of all other subjects that a chimp would understand, even if it gained that knowledge in soul-based ways.
+
+## Undead
+
+Undead are corpses turned into Infernal bodies by summoners with the Necromancy feat.
+
+It is common for necromancers to try to control their undead with enchantments.  This works to a point, but the infernal inside will always be looking for loopholes in the enchantments which can be used for evil.  Futhermore, passing up an opportunity to hurt someone very badly qualifies as Contrary To Their Nature, giving the spirit a fresh save and a +4 bonus.
+
+Undead operated by low-CR generic infernals are referred to as "zombies", but terminology for other undead is inconsistent.  Except for vampires and liches.
+
+### Vampires
+
+Vampires are undead operated by a blood-drinker.
+
+They typically maintain a Glamour of being a normal living human (which they can renew at will thanks to Fluid Caster) but mirrors, shadows and cameras reveal the hideous truth.
+
+They have everything they need to create more vampires, but not to create permanent ones, as their spellcraft modifier is not high enough.  Still, a vampire that kills a dozen people and turns them all into temporary vampires is a serious threat.  Also, a temporary vampire can use Create Body and Spirit anchor on a fresh body and move to it shortly before their current one runs out.  At least provided there are enough people around to kill.
+
+Also, if a highly skilled mage is made into a vampire, the resulting monster would have access to the original mage's skill ranks, which might be enough to create permanent vampires.
+
+### Liches
+
+Liches are phantoms who use the Spirit Anchor effect to preserve themselves, and then the combination of Ambiguous Soul (Infernal) and Necromancy to inhabit convenient corpses.
+
+It is common for Liches who are going into danger (or are generally paranoid) to hide a backup Spirit Anchor somewhere nearby, so that if their body is destroyed they can retreat to the backup, rebuild a body and return.  Though as Liches are both Phantoms and Infernals, they rest in a place of great suffering if a Spirit Anchor is unavailable.
+
+Phantoms who eschew Necromancy and inhabit more constructed spirit bodies are known as demi-liches.  And while they still require the Ambiguous Soul feat, they have a choice of which spirit category to emulate.
+
+Phantoms who eschew Ambiguous Soul and preserve their entire self may still use Elemental Manipulator effects as a crude approximation of a body.
