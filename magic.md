@@ -35,7 +35,7 @@ A spirit is any life form composed entirely of engrionic matter.  They cannot be
 
 A spirit can operate a body if magic forms an interface.  Some spirits can cast this spell themselves, but even those mostly cannot gather appropriate materials without assistance.
 
-Many spirits are natives of other planes.  Some of those are structured to be easy to pull into ours.  Summoning spells do three things: pull a spirit from its native plane to the caster's location, control it, and connect it to a suitable body.  Interplanar travel mostly makes mockery of distance, so there's no need to worry about whether a suitable spirit is "nearby".  If the constructed body is rendered non-functional, the magic holding the spirit on this plane will also be broken.
+Many spirits are natives of other planes.  Some of those are structured to be easy to pull into ours.  Summoning spells pull a spirit from its native plane to the caster's, and connect it to a suitable body.  Interplanar travel mostly makes mockery of distance, so there's no need to worry about whether a suitable spirit is "nearby".  If the constructed body is rendered non-functional, the magic holding the spirit on this plane will also be broken.
 
 ## Spirits, Bodies and Reproduction
 
@@ -1133,6 +1133,7 @@ Effects:
 
 1. Optical Figment: Create a figment that fits within an X meter cube (cost: 2+X)
 2. Blur: Target creature or object becomes blurry, gaining X to AC (cost: 2*X)
+2. Active Camouflage: Target creature gains +4*X circumstance bonus to hide checks and the Hide In Plain Sight ability (cost: X)
 3. Telescope: Lens effect makes object appear 1/X the distance (cost: 2*X)
 4. Light/Darkness: Adjust area illumination by ±X (cost: X)
 5. Laser: Create laser that deals Xd4 fire damage, aims with ranged attack increment 100m (cost: X)
@@ -1207,7 +1208,7 @@ Duration: Skill total rounds
 Effects:
 
 1. Summon Spirit: Extraplanar spirit of CR X becomes simultaneously in its home plane and inside target object (cost: X)
-2. Create Body: Convert an appropriate amount (usually X cubic meters) of appropriate material into a body a CR X spirit can possess (cost: X)
+2. Create Body: Convert an appropriate amount (usually X*10 kg) of appropriate material into a body a CR X spirit can possess (cost: X)
 3. Send Spirit: Willing spirit becomes simultaneously in its location and in an extraplanar location adjacent to a named spirit.  Target spirit is mostly gone, but can return as a standard action. (cost: 1)
 4. Spirit Anchor: Target object qualifies as a comfortable environment for one type of spirit  (cost: 3)
 4. Summon Element: Bring X cubic meters of matter from an elemental plane into the material (cost: 5*X) [requires corresponding elemental school]
@@ -1430,12 +1431,12 @@ Infernals have a special Sight ability to detect claws and blood (including insi
 Blood Drinkers are a particularly dangerous infernal spirit.
 
 Str: 16^1 Dex: 12^1 Con: 12^1 Int: 14 Wis: 14 Cha: 16    
-Base Attack: 6
-Attacks^1: 2xClaw +7 1d8+3 slashing and Bite +7 1d6+3 piercing
-Skills: Bluff: 9, Diplomacy: 9, Knowledge(Planes): 8, Listen: 12, Spellcraft: 8, Spot: 12
-Schools: Enchantment, Phantasms (except Indirect Figments), Summoning (infernals only)    
-Magic Cost: Spellpool 36 (regrows with rest)   
-HP: 12
+Base Attack: 6    
+Attacks^1: 2xClaw +7 1d8+3 slashing and Bite +7 1d6+3 piercing    
+Skills: Bluff: 9, Diplomacy: 9, Knowledge(Planes): 8, Listen: 12, Spellcraft: 8, Spot: 12    
+Schools: Enchantment, Phantasms (except Indirect Figments), Summoning (infernals only)     
+Magic Cost: Spellpool 36 (regrows with rest)    
+HP: 12    
 Feats: Necromancy, Spells of Power, 2 x Fluid Caster
 
 When a Blood Drinker deals damage with its bite attack, it may either heal that much damage to itself or restore that many points of spellpool.
@@ -1498,4 +1499,4 @@ It is common for Liches who are going into danger (or are generally paranoid) to
 
 Phantoms who eschew Necromancy and inhabit more constructed spirit bodies are known as demi-liches.  And while they still require the Ambiguous Soul feat, they have a choice of which spirit category to emulate.
 
-Phantoms who eschew Ambiguous Soul and preserve their entire self may still use Elemental Manipulator effects as a crude approximation of a body.
+Phantoms who eschew Ambiguous Soul and preserve their entire self may still use Elemental Manipulator effects as a crude approximation of a body.  Animated elements do not provide senses, however, so such phantoms use some combination of Sight feats, Telepathy, and Scrying.
