@@ -23,7 +23,7 @@ HFY stands for Humanity Fuck Yeah, a genre of speculative fiction in which human
 
 ## Uncategorized
 
- * [Ritual Combat](Ritual_Combat.html)
+ * [Ritual Combat](Ritual_Combat.html) ([NetNarrator narrates](https://www.youtube.com/watch?v=vTtOqLWxLgs)) ([Talesmith Kiar narrates](https://www.youtube.com/watch?v=eUCbbua_D9k)) ([La Rana Que Narra narrates in Spanish](https://www.youtube.com/watch?v=Y-u-0nKBa_g))
  * [[ASfH?] Home](Home.html)
  * [[FF] BitV: How Humans Make Peace](BitV_How_Humans_Make_Peace.html)
  * [Ficlet Collection](Ficlet_Collection.html)
