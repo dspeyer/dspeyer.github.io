@@ -605,7 +605,7 @@ Prerequisite: any active magic source, knowledge (religion) +5
 You can detect all souls and soul-like spirits and how they relate to your magic source. If you are a paladin, this means the extent to which they support or oppose your particular cause.  Activate this with knowledge(religion)
 
 #### Body Sight
-Prerequisite: any active magic source, summoning
+Prerequisite: any active magic source, summoning    
 You can detect materials which would be valid targets for the Create Body effect of the Summoning school, and which sort of body they'd be valid for.  Activate this with knowledge(the planes).
 
 #### Elemental Sight
@@ -1347,6 +1347,10 @@ Besides casting spells, spellcraft can be used for other things.  These uses do 
 * DC 10 to notice active spells or other magic within 20m
 * DC 15 to determine the school(s) and rating of an active spell
 * DC 20+rating to determine the exact nature of an active spell, excluding specific passcodes
+
+#### Detect Past Magic
+
+Magic leaves traces.  The DC to observe that an object had been targeted by a spell is 20 + time since spell in hours - spell rating.  If you exceed this DC by 5, you can also determine the school, rating, and length of time ago.
 
 #### Dispel Magic
 
