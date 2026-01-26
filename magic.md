@@ -552,7 +552,8 @@ Class Skills:
 
 |Feat | Prerequisites | Description |
 |--|-----|-------|
-|Soul Sight |  any active magic source, knowledge (religion) +5 | detect all souls and soul-like spirits within 10 * wis mod meters of you and how they relate to your magic source |
+|Soul Sight |  any active magic source, knowledge (religion) +5 | detect all souls and soul-like spirits and how they relate to your magic source |
+|Body Sight | any active magic source, summoning | detect materials which would be valid targets for the Create Body effect of the Summoning school |
 |Elemental Sight |  any active magic source, two elemental schools | sense elements whose schools you know |
 |Life Sight |  druid or healing school, spellcraft +6, heal +6 | sense the presence and health of living beings |
 | Magic Sight | spellcraft +6 | sense active magic and counterspell more quickly |
@@ -597,11 +598,15 @@ Class Skills:
 
 ## Sight Feats
 
-Sight feats allow you to detect something using your magical senses.  The range limit is 10 * wis mod meters.  To activate your sense, make a dc 10 knowledge check (save the result in case someone uses the Deceptive Soul feat).  It remains active for one hour or until you turn it off.  If you fail your check, you cannot retry until an hour has past.  Sight feats do not require line of sight, but they are blocked by the Invisibility magic effect or by darksteel.
+Sight feats allow you to detect something using your magical senses.  The range limit is 10 * wis mod meters, or 5 meters for zero or negative wis mod.  To activate your sense, make a dc 10 knowledge check (save the result in case someone uses the Deceptive Soul feat).  It remains active for one hour or until you turn it off.  If you fail your check, you cannot retry until an hour has past.  Sight feats do not require line of sight, but they are blocked by the Invisibility magic effect or by darksteel.
 
 #### Soul Sight
 Prerequisite: any active magic source, knowledge (religion) +5    
-You can detect all souls and soul-like spirits within 10 * wis mod meters of you and how they relate to your magic source. If you are a paladin, this means the extent to which they support or oppose your particular cause.  Activate this with knowledge(religion)
+You can detect all souls and soul-like spirits and how they relate to your magic source. If you are a paladin, this means the extent to which they support or oppose your particular cause.  Activate this with knowledge(religion)
+
+#### Body Sight
+Prerequisite: any active magic source, summoning
+You can detect materials which would be valid targets for the Create Body effect of the Summoning school, and which sort of body they'd be valid for.  Activate this with knowledge(the planes).
 
 #### Elemental Sight
 Prerequisite: any active magic source, two elemental schools    
@@ -612,7 +617,7 @@ Prerequisite: druid or healing school, spellcraft +6, heal +6
 You can sense the presence and health of living beings.  Activate this with knowledge(biology).
 
 #### Magic Sight
-Prerequisite: spellcraft +6
+Prerequisite: spellcraft +6    
 You can sense active spells, as if always using the Detect Magic ability.  You still need a spellcraft check to learn about them, but as a swift action.  Activate this with knowledge(arcana).  Additionally, Magic Sight allows Counterspelling as a reaction, because it's easier to interfere with incoming magic if you can just see it.
 
 #### Word Sight
@@ -1383,7 +1388,7 @@ Note: abilities that decrease a spell's rating for some casters (such as an arti
 
 # Spirits as Monsters
 
-A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most non-soul spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.)  This includes human souls that are seperated from the body, whether by Astral Projection, Send Spirit or Death.
+A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most non-soul spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.  Elemental Sight or Body sight can solve this problem, but Soul Sight cannot.)  This includes human souls that are seperated from the body, whether by Astral Projection, Send Spirit or Death.
 
 Spirits can move themselves, flying at 10 meters per round unless otherwise specified.
 
