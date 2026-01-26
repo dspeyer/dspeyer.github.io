@@ -136,4 +136,5 @@ div.captioned p {
 
 ul ul {
     break-inside: avoid;
+    break-before: avoid;
 }
