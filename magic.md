@@ -659,7 +659,7 @@ When you cast a spell from a school both magic sources support, you may split th
 
 #### Necromancy
 Prerequisites: Summoning (infernals)
-When using the Create Body Summoning effect for an infernal, you can use a fresh chordate corpse in place of the usual blood and claws.  A small corpse counts as one cubic meter, medium two, large four and so forth.  An infernal that inhabits this body gains the animal's senses, movement modes and natural weapons.  It also gains access to the host's memories, and can use the host's skill ranks and feats (though if both spirit and host have ranks in the same skill, they do not stack).  If the nerves connecting the corpse's brain and heart are severed, the body becomes unsuitable for possession.
+When using the Create Body Summoning effect for an infernal, you can use a fresh chordate corpse in place of the usual blood and claws.  An infernal that inhabits this body gains the animal's senses, movement modes and natural weapons.  It also gains access to the host's memories, and can use the host's skill ranks and feats (though if both spirit and host have ranks in the same skill, they do not stack).  If the nerves connecting the corpse's brain and heart are severed, the body becomes unsuitable for possession.
 
 #### Spells of Power
 Choose a linked skill.  Increase save DCs for spells from schools with that skill by +2.
@@ -761,7 +761,7 @@ Prerequisite: paladin, soul sight, spellcraft 5 ranks
 When you make an opposed skill check against someone who you know strongly opposes your cause, gain a +2 morale bonus for every 5 spellcraft ranks you have.
 
 #### Holy Mage
-Prerequisite: paladin, soul sight, spellcraft 5 ranks
+Prerequisite: paladin, soul sight, spellcraft 5 ranks    
 When you cast a spell on a target who strongly opposes your cause, add a +2 morale bonus to the save dc for every 5 spellcraft ranks you have.  Add the same morale bonus to all counterspelling checks (whether you are counterspelling or casting despite a couterspell).  Normally spellcraft checks do not benefit from morale; this is an exception.
 
 #### Human Sacrifice
@@ -878,7 +878,7 @@ Duration: skill total rounds or instantaneous
 
 Effects:
 
-1. Lightning: Deal Xd6 electricity damage (cost: X)
+1. Lightning: Deal Xd6 electricity damage to nonmetallic target.  Living targets must make a fort save (dc 2*damage) or fall prone with muscle spasms. (cost: X)
 3. Wind: Move X cubic meters of air at a speed of up to 45 mph (cost: 1+X)
 2. Air Manipulator: Move 1 cubic meter of air.  It can move objects or perform combat manuevers with an effective strength and dex scores of X. (cost: 3+X)
 4. Control Weather: Alter temperature, wind or precipitation by one step in a kilometer radius (cost: 13)
@@ -949,7 +949,7 @@ Duration: skill total rounds
 1. Water Manipulator: Animate X kg of water.  It can fly, carry objects or perform combat manuevers with an effective strength score of 5+X and dex of 5+X. (cost: 3+X)
 2. Shape Ice: Reshape a piece of ice of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Salt Swap: Convert X liters of salt water into half acid and half alkali.  Each liter deals 1d6 corrosion damage on a splash, or 5d6/round for continual contact.  (cost: X)
-4. Fog: Convert 10*X grams of water into 10*X cubic meters of dense fog (cost: X)
+4. Fog: Convert 10X grams of water into 10X cubic meters of dense fog (cost: X)
 
 Combining Salt Swap and Fog produces a corrosive fog that deals 1d6/round to anyone or anything in it.
 
@@ -1213,7 +1213,7 @@ Duration: Skill total rounds
 Effects:
 
 1. Summon Spirit: Extraplanar spirit of CR X becomes simultaneously in its home plane and inside target object (cost: X)
-2. Create Body: Convert an appropriate amount (usually X*10 kg) of appropriate material into a body a CR X spirit can possess (cost: X)
+2. Create Body: Convert an appropriate amount (usually X*10 kg) of appropriate material into a body a CR X or weaker spirit can possess (cost: X)
 3. Send Spirit: Willing spirit becomes simultaneously in its location and in an extraplanar location adjacent to a named spirit.  Target spirit is mostly gone, but can return as a standard action. (cost: 1)
 4. Spirit Anchor: Target object qualifies as a comfortable environment for one type of spirit  (cost: 3)
 4. Summon Element: Bring X cubic meters of matter from an elemental plane into the material (cost: 5*X) [requires corresponding elemental school]
