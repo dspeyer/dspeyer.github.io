@@ -144,7 +144,8 @@ table {
 }
 
 td {
-    border-left: 3px inset grey;
+    border-left: 3px inset #7774;
+    padding: 0 4px;
 }
 
 td:first-child {
