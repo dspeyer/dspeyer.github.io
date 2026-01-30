@@ -788,7 +788,7 @@ If you kill one or more ensouled beings immediately before casting a spell, you 
 14 | Metamorph|effects anatomy of living creatures |Heal (wis)|
 15 | Phantasms|targets the part of the soul that manages awareness of the outside world.|Bluff (cha)|
 16 | Shadows and Light|manipulates light itself.|Knowledge(physics)|
-17 | Second Sight|supports the part of the soul that manages awareness of the outside world.|Spot(wis)|
+17 | Second Sight|supports the part of the soul that manages awareness of the outside world.|Knowledge(religion)|
 18 | Space Manipulation|bends space itself.|Knowledge(physics)|
 19 | Summoning|works with extraplanar spirits.|Knowledge(the planes)    |
 20 | Telepathy|touches the parts of the soul that handle communication.|Diplomacy(cha)|
@@ -1075,7 +1075,7 @@ Note: Strengthen is useful for guns, swords, armor, vehicles or other objects wh
 
 The school effects anatomy by interacting with the semi-magical components of morphogen cascades.  
 
-Each metamorph spell is based on a blueprint animal, from which the caster must have a piece of flesh containing fully intact dna (for common animals, this has negligible cost and weight).  By default the blueprint and target must be in the same family (e.g. primates), but see effect 1.  The blueprint can be a living animal, but if said animal is neither cooperative nor constrained, a touch attack is needed (no extra action).
+Each metamorph spell is based on a blueprint animal, from which the caster must have a piece of flesh containing fully intact dna (for common animals, this has negligible cost and weight).  By default the blueprint and target must be in the same family (e.g. primates), but see Greater Metamorph.  The blueprint can be a living animal, but if said animal is neither cooperative nor constrained, a touch attack is needed (no extra action).
 
 Under no circumstances can metamorph change the target's size.
 
@@ -1097,9 +1097,13 @@ Effects:
 
 For purposes of this school, tetrapoda is a superclass.
 
+Magic does have a single opinion on which clades are classes, superclasses or phylums.  Human-written taxonomies that are informed by intuition tend to agree with it most of the time.  It is generally safe to assume that whichever out-of-game taxonomy reference is closest to hand matches magic regarding every case that comes up in game (except the tetrapoda thing).
+
 When assuming wings onto a body one category larger, maneuverability becomes clumsy.  Two categories: nonfunctional.  Similarly climb speeds: one size category full effect, two categories half speed, three categories nonfunctional.
 
 Assuming form of a larger blueprint results in a child form.  Complete transformation into a smaller creature simply fails.
+
+Assume Form covers all the other Assume effects and replaces the target's physical ability scores with the blueprint's.
 
 ## Phantasms
 
@@ -1163,7 +1167,7 @@ When using the Laser effect, the laser source is the target of the spell (restri
 This school supports the part of the soul that manages awareness of the outside world.
 
 Save: Will    
-Skill: Spot(wis)    
+Skill: Knowledge(religion)    
 Target: Creature Touched    
 Duration: Skill total rounds    
 
@@ -1174,6 +1178,7 @@ Effects:
 2. Enhance Complex Perception: Grant +X insight bonus to Search, Insight, Appraise and similar checks (cost: 2*X)
 2. True Sight: Grant +X to will saves against Phantasms, and fresh saves against any ongoing (cost: 2*X)
 3. Share Othersight: Target gains Caster's Sight Feats (e.g. soulsight) (cost: 5)
+3. Grant Othersight: Target gains a single Sight feat (the caster need not have it) (cost: 7)
 4. Share Senses: Target can use Caster's senses as well as their own (cost: 6)
 5. Scrying: Caster can use Target's senses as well as their own (cost: 7)
 
@@ -1230,7 +1235,7 @@ The Create Body and Spirit Anchor effects cannot be cast on objects that already
 
 Send Spirit is mostly used to send the souls of humans to meet with powerful extraplanar spirits.  While this is active, the extraplanar spirits can communicate with, cast magic upon, or empower as shamans the human souls.  The effect can also be used by inhabitants of other planes to visit the material, if they have the true name of a human to target on.
 
-When summoning an element, you may specify the general nature of the material you summon, but not the full details.  For example, you could use summon earth to summon "a solid block of gneiss" but not one with large rubies.  Summoning metal is limited to cisferric metals (including iron).
+When summoning an element, you may specify the general nature of the material you summon, but not the full details.  For example, you could use summon earth to summon "a solid block of gneiss" but not one with large rubies.  Summoning metal cannot summon transferric metals, nor can you select isotopes.
 
 ## Telepathy
 

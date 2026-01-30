@@ -138,3 +138,15 @@ ul ul {
     break-inside: avoid;
     break-before: avoid;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border-left: 3px inset grey;
+}
+
+td:first-child {
+    border-left: none;
+}
