@@ -176,7 +176,7 @@ sorcerer  | distant magical ancestry | spell craft +5 | spell pool, regenerates 
 psyker | touched by the chaos beyond reality | knowledge(planes) +5 | increasing warp phenomena | summonning (aberration only) plus 5 random schools (roll at chargen or when touched)  | 3 | can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena  | cannot assist or receive assistance in magic rituals except with other psykers
 astrologer | unhealthy obsession with stars  | knowledge (astronomy) +7 | increasing risk of rejection | augment senses, elemental air/fire, second sight, shadows and light, space manipulation | 3 | 1/day may preroll d20 for one planned action that day | cannot cast during new moon (or when too far from Earth for this to have meaning)
 mad biomancer | unhealthy obsession with biology | knowledge(biology) +7 | increasing risk of insanity | augment senses, boost, healing, metamorph | 3 | duration extending metamagic 1/2 cost (round up) on living targets | cannot use reagents
-mad scientist | unhealthy obsession with physics | knowledge(physics) +7 | increasing risk of insanity | augment senses, materialism, shadows and light | 3 | can deliberately enter fugue state and roughly aim it | cannot use reagents
+mad scientist | unhealthy obsession with physics | knowledge(physics) +7 | increasing risk of insanity | augment senses, materialism, shadows and light, space manipulation | 3 | can deliberately enter fugue state and roughly aim it | cannot use reagents
 paladin | deep commitment to a righteous cause | knowledge(planes), 1 rank | cast from hp | summonning (celestial only), healing, others based on the cause | 4 | can project unforgeable aura of righteousness | lose powers if betray or abandon cause
 Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell slots | summoning (restricted), others based on patron | 4 | signature spell  | must obey patron's orders (even when latent)
 
@@ -415,7 +415,7 @@ A mad biomancer who fails their casting save enters a fugue state in which they 
 **Source:** Unhealthy obsession with physics    
 **Activation:** knowledge(physics) +7    
 **Cost:** increasing risk of insanity    
-**Compatible Schools:** augment senses, materialism, shadows and light    
+**Compatible Schools:** augment senses, materialism, shadows and light, space manipulation    
 **Pri:** 3    
 **Extra Ability:** can deliberately enter fugue state and roughly aim it    
 **Restriction:** cannot use reagents    
@@ -824,6 +824,8 @@ If Retroactive and Including Internals are used, any creature or object entering
 
 Order Spells includes itself (usually last).  Once spells have been ordered, they cannot be reordered.
 
+Any caster who could cast a spell on a target effected by an abjuration can sense the abjuration.  No action is required, but deliberate attention is.  Any caster who attempts to cast such a spell will notice the abjuration in time to change their choice of spell.
+
 ## Augment Senses
 
 This school affects biological sensory organs (usually, though not necessarily, embedded in a living being).   Many of its effects are similar to effects in Second Sight or Boost – remember that bonuses of different type stack.
@@ -873,7 +875,7 @@ Lightning falls into this school because aiming it requires creating a path of i
 
 Save: Reflex    
 Skill: Knowledge(physics)    
-Target: Object or space within 60 ft    
+Target: Object or space within 20m    
 Duration: skill total rounds or instantaneous    
 
 Effects:
@@ -891,7 +893,7 @@ This school affects rocks, including gravel and sand.
 
 Save: Reflex    
 Skill: Knowledge(chemistry)    
-Target: Object or space within 60 ft    
+Target: Object or space within 20m    
 Duration: skill total rounds or instantaneous    
 
 Effects:
@@ -907,7 +909,7 @@ This school affects the process of combustion and anything burning.
 
 Save: Reflex    
 Skill: Knowledge(physics)    
-Target: Object within 60 ft    
+Target: Object within 20m    
 Duration: skill total rounds or instantaneous    
 
 Effects:
@@ -924,7 +926,7 @@ This school affects metals, including alloys.
 
 Save: None    
 Skill: Knowledge(chemistry)    
-Target: Object within 60 ft    
+Target: Object within 20m    
 Duration: skill total rounds
 
 Effects:
@@ -943,7 +945,7 @@ This school cannot affect water that is part of a living being.
 
 Save: None    
 Skill: Knowledge(physics)     
-Target: Object within 60 ft    
+Target: Object within 20m    
 Duration: skill total rounds
 
 1. Water Manipulator: Animate X kg of water.  It can fly, carry objects or perform combat manuevers with an effective strength score of 5+X and dex of 5+X. (cost: 3+X)
@@ -959,7 +961,7 @@ This school affects plant matter.
 
 Save: None    
 Skill: Knowledge(biology)    
-Target: Object within 60 ft    
+Target: Object within 20m    
 Duration: skill total rounds
 
 Effects:
@@ -975,7 +977,7 @@ This school affects souls or other spirits, particularly the parts that manage e
 
 Save: Will    
 Skill: Diplomacy (cha)    
-Target: Creature Touched    
+Target: Creature within 10m    
 Duration: Skill total rounds
 
 Effects:
@@ -1034,7 +1036,7 @@ This school disrupts the connection between soul and brain.
 
 Save: Will    
 Skill: Knowledge (Religion)    
-Target: Creature Touched     
+Target: Creature within 10m     
 Duration: Skill total rounds
 
 Effects:
@@ -1052,7 +1054,7 @@ This school affects the chemical bonds that give objects their structure.
 
 Save: Fort (if living)    
 Skill: Knowledge (chemistry)     
-Target: Small object (including creature) touched    
+Target: Object (including creature) touched    
 Duration: Skill total minutes
 
 Effects:
@@ -1113,7 +1115,7 @@ The target's subconscious mind fills in details of these illusions.  This means 
 
 Save: Will    
 Skill: Bluff (cha)     
-Target: Creature within 60 ft    
+Target: Creature within 10m    
 Duration: Skill total rounds
 
 Effects:
@@ -1134,7 +1136,7 @@ This school manipulates light itself.
 
 Save: None    
 Skill: Knowledge(physics)    
-Target: Object or space within 60ft    
+Target: Object or space within 20m    
 Duration: Skill total rounds
 
 Effects:
@@ -1168,7 +1170,7 @@ This school supports the part of the soul that manages awareness of the outside 
 
 Save: Will    
 Skill: Knowledge(religion)    
-Target: Creature Touched    
+Target: Creature within 10m    
 Duration: Skill total rounds    
 
 Effects:
@@ -1182,6 +1184,8 @@ Effects:
 4. Share Senses: Target can use Caster's senses as well as their own (cost: 6)
 5. Scrying: Caster can use Target's senses as well as their own (cost: 7)
 
+Grant Othersight can be used to grant Soulsight based on a different magic source the caster is familiar with.
+
 ## Space Manipulation
 
 This school bends space itself.
@@ -1190,7 +1194,7 @@ Several effects in this school depend on a Teleport Beacon.  This is a bit of ma
 
 Save: None    
 Skill: Knowledge(physics)    
-Target: Object within 30 ft    
+Target: Object within 10m    
 Duration: Skill total rounds or Instantaneous
 
 Effects:
@@ -1201,10 +1205,15 @@ Effects:
 2. Teleport Send: Transport target object to a teleport beacon of yours (cost: 9)
 3. Teleport Fetch: Transport object with teleport beacon to target location (cost: 10)
 4. Portal: Create a X meter diameter circular portal connecting target surface and your teleport beacon.  Anyone passing through the portal (in either direction) emerges on the other side.  (cost: 12+X)
+8. Warp Step: When target object moves, it finds space contracted such that the distance it covers is X times farther than speed times time would predict (cost: X^2)
 6. Holding: Container holding X cubic meters now holds 8X, doubling all linear dimensions (cost: 5+X)
 7. Grow/Shrink: Object changes size (but not mass) by a linear factor of X (cost: 2*X)
 
-Note: a container of holding still experiences the weight of its contents.
+Warp Step does not effect the kinetic energy imparted by collision, magnetic field generated if charged, special relativistic effects, or similar velocity-dependent physics.  Note that newtonian relativity still applies: distance traveled relative to an object depends on velocity relative to that object.
+
+Creatures under Warp Step perceive their immediate surroundings as shrunken and the rest of the world as normal.
+
+A container of holding still experiences the weight of its contents.
 
 ## Summoning
 
@@ -1243,7 +1252,7 @@ This school touches the parts of the soul that handle communication.
 
 Save: Will    
 Skill: Diplomacy(cha)    
-Target: Person within 60 ft    
+Target: Person within 20m    
 Duration: Skill total rounds or Instantaneous
 
 Effects:
