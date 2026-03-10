@@ -56,6 +56,7 @@ To be able to cast the spell, you need:
 * Knowledge of the school
 * A magic source compatible with the school (if you have multiple compatible sources, pick one)
 * A total modifier to the school's linked skill at least as high as the spell's rating
+* To perceive the target
 * To pay the cost
 * If the spell has duration, to not already have too many spells active
 * To make a spellcraft check dc 10 + 2 X rating.
@@ -83,6 +84,18 @@ Assisting in a spell requires a DC 10 spellcraft check and is only possible in r
 If the spell allows a save, the dc is 10 plus the caster's int mod (plus any bonuses from feats or the Heighten Spell effect).
 
 When casting in interplanetary space (excepting dark-matter nebulae), you take a -2 on casting checks and cannot cast spells with rating greater than 20.  In interstellar space, this becomes -4 and 15.  Intergalactic, -6 and 10.
+
+## Targets
+
+Most spells target an "object".  An object must be contiguous and distinguishable from its surroundings without mental effort.  It is often possible to make a part of an object into an object in its own right by chalking its border.  An object must be at least as large as a grain of rice and no larger than a minivan (unless the Outsized Target metamagic is applied).
+
+Some spells target a "creature".  This must be biological and living.
+
+Some target a "spirit" which includes a human soul.  For embodied spirits, perceiving the body counts as perceiving the spirit.
+
+Objects include creatures include human bodies.
+
+Some spells require the caster to touch the target.  If embodied, touch it with your body.  If not, you must occupy the same space as the target.
 
 ## Scrolls
 
@@ -141,6 +154,8 @@ Latent mages can on rare occasions cast spells using improvised (inefficient and
 A mage with multiple sources must choose which to use for each spell they cast.
 
 In high-magic games, each character starts with a (possibly latent) magic source based on their magic priority.  Outside of chargen, or in games not using magic priority, gaining a magic source requires a deep spiritual undertaking or other extraordinary intervention.
+
+This is not a complete list of possible magic sources, nor does such a list exist in-universe.  This can cause endless frustration to security-minded people.
 
 ## Costs
 
@@ -548,6 +563,55 @@ Class Skills:
 
 **Extraplanar Spirits:** Any spirit which can be summoned, you can invite into yourself.  This is not restricted by location, but most such spirits will leave if your plans don't suit their interest.
 
+## Wilderness Rogue
+
+This is not a standalone class, but a variant of the base Rogue class.
+
+There is nothing intrinsically magical about a wilderness rogue, and some non-magicals do pursue this path.  It is, however, a great favorite of druids, and so included here.
+
+Lose class skills:
+
+* Appraise
+* Gather Information
+* Profession
+* Street Smarts
+* Computer Use
+* Disable Device
+* Forgery
+* Open Lock
+
+Gain class skills:
+
+* Survival
+* Knowledge (biology)
+* Knowledge (nature)
+* Handle Animal
+* Craft (medical)
+* Craft (survival gear)
+* Craft (trap)
+* Heal
+
+Lose Special Ability options:
+
+* Counterfeiter's Shuffle
+* Over There
+* Throw Voice
+
+Gain Special Ability options:
+
+#### Camouflage
+
+You have learned to be unseen simply by blending into the background.  When dressed for your environment, you may make hide checks without cover.  You take a -4 penalty if you do this.
+
+#### Favored Environment
+
+You are an expert on a particular biome.  Gain a +2 insight bonus to all skills relating to the biome or the plants or animals that inhabit it.  (Perception checks relate both to the thing being perceived and the backdrop it must be perceived against.)  You may take this ability multiple times.  Each time select a new biome *and* the bonuses for all biomes increase by 2.
+
+#### Climb Speed
+
+When you climb, you move half (rather than a quarter) of your base speed.  You retain your dex bonus to AC and do not risk falling if injured.  Furthermore, you can take 10 on climb checks even when threatened.
+
+
 # Feats
 
 |Feat | Prerequisites | Description |
@@ -875,7 +939,7 @@ Lightning falls into this school because aiming it requires creating a path of i
 
 Save: Reflex    
 Skill: Knowledge(physics)    
-Target: Object or space within 20m    
+Target: Object or patch of air within 20m    
 Duration: skill total rounds or instantaneous    
 
 Effects:
@@ -893,7 +957,7 @@ This school affects rocks, including gravel and sand.
 
 Save: Reflex    
 Skill: Knowledge(chemistry)    
-Target: Object or space within 20m    
+Target: Object or patch of earth within 20m    
 Duration: skill total rounds or instantaneous    
 
 Effects:
@@ -926,7 +990,7 @@ This school affects metals, including alloys.
 
 Save: None    
 Skill: Knowledge(chemistry)    
-Target: Object within 20m    
+Target: Object or patch of metal within 20m    
 Duration: skill total rounds
 
 Effects:
@@ -945,7 +1009,7 @@ This school cannot affect water that is part of a living being.
 
 Save: None    
 Skill: Knowledge(physics)     
-Target: Object within 20m    
+Target: Object or patch of water within 20m    
 Duration: skill total rounds
 
 1. Water Manipulator: Animate X kg of water.  It can fly, carry objects or perform combat manuevers with an effective strength score of 5+X and dex of 5+X. (cost: 3+X)
@@ -977,12 +1041,12 @@ This school affects souls or other spirits, particularly the parts that manage e
 
 Save: Will    
 Skill: Diplomacy (cha)    
-Target: Creature within 10m    
+Target: Spirit within 10m    
 Duration: Skill total rounds
 
 Effects:
 
-1. Charm Creature: Target creature becomes X levels friendlier (cost: X^2)
+1. Charm: Target becomes X levels friendlier (cost: X^2)
 2. Encourage Skill: Target gains +2*X morale bonus to one applicable skill (cost: X)
 3. Encourage: Target gains +X morale bonus to all applicable rolls (cost: 2*X)
 4. Discourage: Target takes a -X morale penalty to all applicable rolls (cost: 2*X)
@@ -1036,7 +1100,7 @@ This school disrupts the connection between soul and brain.
 
 Save: Will    
 Skill: Knowledge (Religion)    
-Target: Creature within 10m     
+Target: Spirit within 10m     
 Duration: Skill total rounds
 
 Effects:
@@ -1054,7 +1118,7 @@ This school affects the chemical bonds that give objects their structure.
 
 Save: Fort (if living)    
 Skill: Knowledge (chemistry)     
-Target: Object (including creature) touched    
+Target: Object touched    
 Duration: Skill total minutes
 
 Effects:
@@ -1083,7 +1147,7 @@ Under no circumstances can metamorph change the target's size.
 
 Save: Fort    
 Skill: Heal (wis)    
-Target: Living creature touched    
+Target: Creature touched    
 Duration: Skill total minutes
 
 Effects:
@@ -1115,7 +1179,7 @@ The target's subconscious mind fills in details of these illusions.  This means 
 
 Save: Will    
 Skill: Bluff (cha)     
-Target: Creature within 10m    
+Target: Spirit within 10m    
 Duration: Skill total rounds
 
 Effects:
@@ -1136,17 +1200,17 @@ This school manipulates light itself.
 
 Save: None    
 Skill: Knowledge(physics)    
-Target: Object or space within 20m    
+Target: Object within 20m    
 Duration: Skill total rounds
 
 Effects:
 
 
-1. Optical Figment: Create a figment that fits within an X meter cube (cost: 2+X)
+1. Optical Figment: Create a figment that fits within an X meter cube adjacent to target (cost: 2+X)
 2. Blur: Target creature or object becomes blurry, gaining X to AC (cost: 2*X)
 2. Active Camouflage: Target creature gains +4*X circumstance bonus to hide checks and the Hide In Plain Sight ability (cost: X)
-3. Telescope: Lens effect makes object appear 1/X the distance (cost: 2*X)
-4. Light/Darkness: Adjust area illumination by ±X (cost: X)
+3. Telescope: Lens effect makes whatever is on the far side of the target appear 1/X the distance (cost: 2*X)
+4. Light/Darkness: Adjust illumination for 20m around target by ±X (cost: X)
 5. Laser: Create laser that deals Xd4 fire damage, aims with ranged attack increment 100m (cost: X)
 
 Figments created with this school require a craft(illusion) check.  Example DCs:
@@ -1170,7 +1234,7 @@ This school supports the part of the soul that manages awareness of the outside 
 
 Save: Will    
 Skill: Knowledge(religion)    
-Target: Creature within 10m    
+Target: Spirit within 10m    
 Duration: Skill total rounds    
 
 Effects:
@@ -1221,7 +1285,7 @@ This school works with extraplanar spirits.
 
 Save: Will or None   
 Skill: Knowledge(the planes)    
-Target: Object or person touched or none    
+Target: Object touched or spirit within 10m or none    
 Duration: Skill total rounds    
 
 Effects:
@@ -1252,7 +1316,7 @@ This school touches the parts of the soul that handle communication.
 
 Save: Will    
 Skill: Diplomacy(cha)    
-Target: Person within 20m    
+Target: Spirit within 20m    
 Duration: Skill total rounds or Instantaneous
 
 Effects:
@@ -1299,6 +1363,7 @@ If the spell specifies an effect on the caster, and you are casting it with a tr
 1. Reach: A spell normally requiring touch now affects a target within 10m (cost: 1)
 2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: 3X)
 2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of 2^X (cost: 5X)
+2. Outsized Target: Effect a target that would normally be X times too large or small (cost: X)
 3. Strong Affinity: Treat an object and a former piece of that object as being the same  (cost: 10)
 4. Moderate Affinity: Target an object based on an image of it being in range (cost: 12)
 5. Weak Affinity: Target an object based on a crude image or thing-that-touched-it being in range (cost: 16)
@@ -1309,6 +1374,8 @@ Magics of Space can be stacked on top of each other.  You could, for example, ta
 
 1. Spread: Instead of a single target, the spell effects all valid targets in a meter radius sphere (cost: 1)
 2. Chain: Effect X additional valid targets, each of which must be within 10m of the previous (cost: X)
+
+When using Spread on a spell with duration, the spread effect is instantaneous and the spell continues on all targets that were within the sphere at casting time.
 
 ## Magics of Power
 

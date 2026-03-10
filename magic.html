@@ -44,6 +44,7 @@ Materials</a></li>
 <li><a href="#casting-a-spell" id="toc-casting-a-spell">Casting a
 Spell</a>
 <ul>
+<li><a href="#targets" id="toc-targets">Targets</a></li>
 <li><a href="#scrolls" id="toc-scrolls">Scrolls</a></li>
 <li><a href="#spellbooks" id="toc-spellbooks">Spellbooks</a></li>
 </ul></li>
@@ -117,6 +118,8 @@ Spell</a></li>
 <ul>
 <li><a href="#mage" id="toc-mage">Mage</a></li>
 <li><a href="#houngan" id="toc-houngan">Houngan</a></li>
+<li><a href="#wilderness-rogue" id="toc-wilderness-rogue">Wilderness
+Rogue</a></li>
 </ul></li>
 <li><a href="#feats" id="toc-feats">Feats</a>
 <ul>
@@ -335,6 +338,7 @@ sum of all the ratings is the spell’s rating.</p>
 compatible sources, pick one)</li>
 <li>A total modifier to the school’s linked skill at least as high as
 the spell’s rating</li>
+<li>To perceive the target</li>
 <li>To pay the cost</li>
 <li>If the spell has duration, to not already have too many spells
 active</li>
@@ -402,6 +406,21 @@ wisdom modifier.</p>
 you take a -2 on casting checks and cannot cast spells with rating
 greater than 20. In interstellar space, this becomes -4 and 15.
 Intergalactic, -6 and 10.</p>
+<h2 id="targets">Targets</h2>
+<p>Most spells target an “object”. An object must be contiguous and
+distinguishable from its surroundings without mental effort. It is often
+possible to make a part of an object into an object in its own right by
+chalking its border. An object must be at least as large as a grain of
+rice and no larger than a minivan (unless the Outsized Target metamagic
+is applied).</p>
+<p>Some spells target a “creature”. This must be biological and
+living.</p>
+<p>Some target a “spirit” which includes a human soul. For embodied
+spirits, perceiving the body counts as perceiving the spirit.</p>
+<p>Objects include creatures include human bodies.</p>
+<p>Some spells require the caster to touch the target. If embodied,
+touch it with your body. If not, you must occupy the same space as the
+target.</p>
 <h2 id="scrolls">Scrolls</h2>
 <p>A scroll is a magic item that can shape raw magical energy into a
 specific spell. Each scroll has one specific spell (selection of effects
@@ -489,6 +508,9 @@ they cast.</p>
 magic source based on their magic priority. Outside of chargen, or in
 games not using magic priority, gaining a magic source requires a deep
 spiritual undertaking or other extraordinary intervention.</p>
+<p>This is not a complete list of possible magic sources, nor does such
+a list exist in-universe. This can cause endless frustration to
+security-minded people.</p>
 <h2 id="costs">Costs</h2>
 <p>The cost of a spell is paid when the spell is attempted, regardless
 of whether it succeeds.</p>
@@ -1535,6 +1557,57 @@ loas.</p>
 summoned, you can invite into yourself. This is not restricted by
 location, but most such spirits will leave if your plans don’t suit
 their interest.</p>
+<h2 id="wilderness-rogue">Wilderness Rogue</h2>
+<p>This is not a standalone class, but a variant of the base Rogue
+class.</p>
+<p>There is nothing intrinsically magical about a wilderness rogue, and
+some non-magicals do pursue this path. It is, however, a great favorite
+of druids, and so included here.</p>
+<p>Lose class skills:</p>
+<ul>
+<li>Appraise</li>
+<li>Gather Information</li>
+<li>Profession</li>
+<li>Street Smarts</li>
+<li>Computer Use</li>
+<li>Disable Device</li>
+<li>Forgery</li>
+<li>Open Lock</li>
+</ul>
+<p>Gain class skills:</p>
+<ul>
+<li>Survival</li>
+<li>Knowledge (biology)</li>
+<li>Knowledge (nature)</li>
+<li>Handle Animal</li>
+<li>Craft (medical)</li>
+<li>Craft (survival gear)</li>
+<li>Craft (trap)</li>
+<li>Heal</li>
+</ul>
+<p>Lose Special Ability options:</p>
+<ul>
+<li>Counterfeiter’s Shuffle</li>
+<li>Over There</li>
+<li>Throw Voice</li>
+</ul>
+<p>Gain Special Ability options:</p>
+<h4 id="camouflage">Camouflage</h4>
+<p>You have learned to be unseen simply by blending into the background.
+When dressed for your environment, you may make hide checks without
+cover. You take a -4 penalty if you do this.</p>
+<h4 id="favored-environment">Favored Environment</h4>
+<p>You are an expert on a particular biome. Gain a +2 insight bonus to
+all skills relating to the biome or the plants or animals that inhabit
+it. (Perception checks relate both to the thing being perceived and the
+backdrop it must be perceived against.) You may take this ability
+multiple times. Each time select a new biome <em>and</em> the bonuses
+for all biomes increase by 2.</p>
+<h4 id="climb-speed">Climb Speed</h4>
+<p>When you climb, you move half (rather than a quarter) of your base
+speed. You retain your dex bonus to AC and do not risk falling if
+injured. Furthermore, you can take 10 on climb checks even when
+threatened.</p>
 <h1 id="feats">Feats</h1>
 <table>
 <colgroup>
@@ -2258,7 +2331,7 @@ voltage source to the target. Otherwise magically produced electricity
 will act naturally.</p>
 <p>Save: Reflex<br />
 Skill: Knowledge(physics)<br />
-Target: Object or space within 20m<br />
+Target: Object or patch of air within 20m<br />
 Duration: skill total rounds or instantaneous</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2282,7 +2355,7 @@ also deafened. (cost: X)</li>
 <p>This school affects rocks, including gravel and sand.</p>
 <p>Save: Reflex<br />
 Skill: Knowledge(chemistry)<br />
-Target: Object or space within 20m<br />
+Target: Object or patch of earth within 20m<br />
 Duration: skill total rounds or instantaneous</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2319,7 +2392,7 @@ within X cubic meters spreads (cost: 3+X)</li>
 <p>This school affects metals, including alloys.</p>
 <p>Save: None<br />
 Skill: Knowledge(chemistry)<br />
-Target: Object within 20m<br />
+Target: Object or patch of metal within 20m<br />
 Duration: skill total rounds</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2340,7 +2413,7 @@ other liquids.</p>
 <p>This school cannot affect water that is part of a living being.</p>
 <p>Save: None<br />
 Skill: Knowledge(physics)<br />
-Target: Object within 20m<br />
+Target: Object or patch of water within 20m<br />
 Duration: skill total rounds</p>
 <ol type="1">
 <li>Water Manipulator: Animate X kg of water. It can fly, carry objects
@@ -2377,12 +2450,11 @@ damage (cost: 2*X max X=5)</li>
 that manage emotions.</p>
 <p>Save: Will<br />
 Skill: Diplomacy (cha)<br />
-Target: Creature within 10m<br />
+Target: Spirit within 10m<br />
 Duration: Skill total rounds</p>
 <p>Effects:</p>
 <ol type="1">
-<li>Charm Creature: Target creature becomes X levels friendlier (cost:
-X^2)</li>
+<li>Charm: Target becomes X levels friendlier (cost: X^2)</li>
 <li>Encourage Skill: Target gains +2*X morale bonus to one applicable
 skill (cost: X)</li>
 <li>Encourage: Target gains +X morale bonus to all applicable rolls
@@ -2450,7 +2522,7 @@ Duration: Instantaneous</p>
 <p>This school disrupts the connection between soul and brain.</p>
 <p>Save: Will<br />
 Skill: Knowledge (Religion)<br />
-Target: Creature within 10m<br />
+Target: Spirit within 10m<br />
 Duration: Skill total rounds</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2469,7 +2541,7 @@ or theory-of-mind (cost: 10)</li>
 structure.</p>
 <p>Save: Fort (if living)<br />
 Skill: Knowledge (chemistry)<br />
-Target: Object (including creature) touched<br />
+Target: Object touched<br />
 Duration: Skill total minutes</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2507,7 +2579,7 @@ animal is neither cooperative nor constrained, a touch attack is needed
 <p>Under no circumstances can metamorph change the target’s size.</p>
 <p>Save: Fort<br />
 Skill: Heal (wis)<br />
-Target: Living creature touched<br />
+Target: Creature touched<br />
 Duration: Skill total minutes</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2554,7 +2626,7 @@ knows what a thing should look like far better than the caster, the
 illusion will still hold up.</p>
 <p>Save: Will<br />
 Skill: Bluff (cha)<br />
-Target: Creature within 10m<br />
+Target: Spirit within 10m<br />
 Duration: Skill total rounds</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2578,19 +2650,20 @@ twice the damage to the will save.</p>
 <p>This school manipulates light itself.</p>
 <p>Save: None<br />
 Skill: Knowledge(physics)<br />
-Target: Object or space within 20m<br />
+Target: Object within 20m<br />
 Duration: Skill total rounds</p>
 <p>Effects:</p>
 <ol type="1">
 <li>Optical Figment: Create a figment that fits within an X meter cube
-(cost: 2+X)</li>
+adjacent to target (cost: 2+X)</li>
 <li>Blur: Target creature or object becomes blurry, gaining X to AC
 (cost: 2*X)</li>
 <li>Active Camouflage: Target creature gains +4*X circumstance bonus to
 hide checks and the Hide In Plain Sight ability (cost: X)</li>
-<li>Telescope: Lens effect makes object appear 1/X the distance (cost:
-2*X)</li>
-<li>Light/Darkness: Adjust area illumination by ±X (cost: X)</li>
+<li>Telescope: Lens effect makes whatever is on the far side of the
+target appear 1/X the distance (cost: 2*X)</li>
+<li>Light/Darkness: Adjust illumination for 20m around target by ±X
+(cost: X)</li>
 <li>Laser: Create laser that deals Xd4 fire damage, aims with ranged
 attack increment 100m (cost: X)</li>
 </ol>
@@ -2641,7 +2714,7 @@ becomes difficult with range.</p>
 the outside world.</p>
 <p>Save: Will<br />
 Skill: Knowledge(religion)<br />
-Target: Creature within 10m<br />
+Target: Spirit within 10m<br />
 Duration: Skill total rounds</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2706,7 +2779,7 @@ contents.</p>
 <p>This school works with extraplanar spirits.</p>
 <p>Save: Will or None<br />
 Skill: Knowledge(the planes)<br />
-Target: Object or person touched or none<br />
+Target: Object touched or spirit within 10m or none<br />
 Duration: Skill total rounds</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2765,7 +2838,7 @@ you select isotopes.</p>
 communication.</p>
 <p>Save: Will<br />
 Skill: Diplomacy(cha)<br />
-Target: Person within 20m<br />
+Target: Spirit within 20m<br />
 Duration: Skill total rounds or Instantaneous</p>
 <p>Effects:</p>
 <ol type="1">
@@ -2835,6 +2908,8 @@ may make that person count as the caster.</p>
 10^X (cost: 3X)</li>
 <li>Widen: Increase a three-dimensional aspect of a spell by a linear
 factor of 2^X (cost: 5X)</li>
+<li>Outsized Target: Effect a target that would normally be X times too
+large or small (cost: X)</li>
 <li>Strong Affinity: Treat an object and a former piece of that object
 as being the same (cost: 10)</li>
 <li>Moderate Affinity: Target an object based on an image of it being in
@@ -2852,6 +2927,9 @@ targets in a meter radius sphere (cost: 1)</li>
 <li>Chain: Effect X additional valid targets, each of which must be
 within 10m of the previous (cost: X)</li>
 </ol>
+<p>When using Spread on a spell with duration, the spread effect is
+instantaneous and the spell continues on all targets that were within
+the sphere at casting time.</p>
 <h2 id="magics-of-power">Magics of Power</h2>
 <ol type="1">
 <li>Heighten: Add X to save DC (cost: 2X)</li>
