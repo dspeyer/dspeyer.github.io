@@ -722,8 +722,8 @@ Prerequisite: two active magic source, spellcraft +10.
 When you cast a spell from a school both magic sources support, you may split the cost between them, as if you had cast two spells, one from each source, whose ratings sum to the original rating.
 
 #### Necromancy
-Prerequisites: Summoning (infernals)
-When using the Create Body Summoning effect for an infernal, you can use a fresh chordate corpse in place of the usual blood and claws.  An infernal that inhabits this body gains the animal's senses, movement modes and natural weapons.  It also gains access to the host's memories, and can use the host's skill ranks and feats (though if both spirit and host have ranks in the same skill, they do not stack).  If the nerves connecting the corpse's brain and heart are severed, the body becomes unsuitable for possession.
+Prerequisites: Summoning (infernals)    
+When using the Create Body Summoning effect for an infernal, you can use a fresh chordate corpse in place of the usual blood and claws.  An infernal that inhabits this body gains the animal's senses, movement modes and natural weapons.  It also gains access to the host's memories, and can use the host's feats, physical skill ranks and half other skill ranks (though if both spirit and host have ranks in the same skill, they do not stack).  If the nerves connecting the corpse's brain and heart are severed, the body becomes unsuitable for possession.
 
 #### Spells of Power
 Choose a linked skill.  Increase save DCs for spells from schools with that skill by +2.
@@ -1281,7 +1281,7 @@ A container of holding still experiences the weight of its contents.
 
 ## Summoning
 
-This school works with extraplanar spirits.
+This school works with extraplanar spirits.  See the Spirits as Monsters section for general rules on summoned creatures.
 
 Save: Will or None   
 Skill: Knowledge(the planes)    
@@ -1479,6 +1479,8 @@ Spirits can move themselves, flying at 10 meters per round unless otherwise spec
 
 Spirits have specific environments they're comfortable in.  A spirit outside of such an environment for an hour must make a DC 10 will save to hold itself together, then additional will saves at incrementing DCs each hour thereafter.  A spirit that straddles a planar boundary and is only uncomfortable on one side will snap back to the other, but a monoplanar spirit will perish.  A spirit which rests for five minutes in a comfortable environmnet resets this counter.
 
+Most magically created bodies have vulnerabilities, determined by what class of spirit would inhabit them.
+
 A generic CR X spirit inhabiting a magically created body has ability scores 8+X, base attack X/2 and X ranks in all thematically relevant skills.  Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8 slashing for infernals or aberrations.  Fire elemental's natural weapons do an additional 1d6 fire damage.
 
 
@@ -1488,7 +1490,7 @@ Each celestial embodies a single virtue (whereas each generally acknowledged vir
 
 Celestials are comfortable on the celestial plane, or in holy spaces (consecrated in the eyes of a significant group of mortals), or amidst people engaged in organized righteous activity.
 
-Bodies for celestials usually require feathers and tears.
+Bodies for celestials usually require feathers and tears.  They are vulnerable to sulfur taking 1p/rnd of damage from contact and double damage from weapons coated in it (the sulfur in gunpowder does not coat bullets).
 
 ## Elementals
 
@@ -1498,6 +1500,14 @@ Elementals are comfortable on their respective planes, or in the presense of a g
 
 Bodies for elementals must be made of the element in question.  For fire, this can be anything currently burning.
 
+Fire elementals are vulnerable to water: taking 1d6/rnd on contact, double damage from weapons, and instant death if submerged.
+
+Water elementals are vulnerable to fire, taking double damage from it.
+
+Metal elementals are vulnerable to acid, likewise taking double damage.
+
+Air and Earth elementals do not have vulnerabilities.
+
 ## Fey
 
 Fey are great appreciaters of beauty.  The beauty of nature, of music, or of a well-played prank.
@@ -1506,6 +1516,8 @@ They are comfortable in the feywild, or in suitable ecosystems (varies by type).
 
 Creating a body for fey requires leaves.
 
+Fey are vulnerable to iron, taking 1/rnd from contact and double damage from iron weapons (this includes steel and steel-jacket bullets).
+
 ## Infernals
 
 Infernals both want for all other beings to suffer and for other beings to engage in acts of evil.  Most infernals have a particular sin they take special joy in tempting.
@@ -1513,6 +1525,8 @@ Infernals both want for all other beings to suffer and for other beings to engag
 Infernals are comfortable in the presence of great suffering.
 
 An infernal body is made from claws and blood.
+
+Infernals are vulnerable to holiness and sunlight.  A holy object is anything that a large number of people in the general vicinity regard as holy, and does 1d6/round on contact or double as a weapon.  Infernals are killed by complete immersion in holy water.  Infernals also take 1/round in sunlight and double damage from laser weapons.
 
 Infernals have a special Sight ability to detect claws and blood (including inside living creatures) and how close to being a valid Create Body target any given assemblage gets.
 
@@ -1531,6 +1545,8 @@ Feats: Necromancy, Spells of Power, 2 x Fluid Caster
 
 When a Blood Drinker deals damage with its bite attack, it may either heal that much damage to itself or restore that many points of spellpool.
 
+In addition to normal vulnerabilities, blood drinker bodies are also vulnerable to wood.  They take no damage from contact, but double from wooden weapons.  A critical piercing hit from a wooden weapon destroys them.
+
 ^1 Assuming possession of a body
 
 ## Abberations
@@ -1540,6 +1556,8 @@ Abberations are from somewhat farther away than the elemental planes or the feyw
 Under exactly what circumstances abberations are comfortable is unknown.  It may vary by type.
 
 An abberation body is made from scales, teeth and tentacles.
+
+Abberations are vulnerable to silver, taking double damage from silver weapons.  Usually.
 
 ## Souls
 
@@ -1558,6 +1576,8 @@ A ghost was a soul, but was stripped down to only care about a single cause or v
 A ghost is comfortable so long as it is meaningfully pursuing its cause.  A ghost that wishes to protect something might be comfortable standing guard for years, whereas a vengeful ghost will only wait and watch so long as it has a credible chance of learning something useful.  A ghost whose cause has become unpursuable (including because it has been accomplished) cannot be comfortable and will dissipate in short order.
 
 A created body for a ghost requires white woolen cloth and something symbolic of the ghost's cause.
+
+Ghost bodies are vulnerable to salt, taking double damage from salt weapons or ammunition. 
 
 ## Disensouled Bodies
 
