@@ -723,7 +723,7 @@ When you cast a spell from a school both magic sources support, you may split th
 
 #### Necromancy
 Prerequisites: Summoning (infernals)    
-When using the Create Body Summoning effect for an infernal, you can use a fresh chordate corpse in place of the usual blood and claws.  An infernal that inhabits this body gains the animal's senses, movement modes and natural weapons.  It also gains access to the host's memories, and can use the host's feats, physical skill ranks and half other skill ranks (though if both spirit and host have ranks in the same skill, they do not stack).  If the nerves connecting the corpse's brain and heart are severed, the body becomes unsuitable for possession.
+When using the Create Body Summoning effect for an infernal, you can use a fresh chordate corpse in place of the usual blood and claws.  An infernal that inhabits this body gains the animal's senses, movement modes and natural weapons.  It also gains access to the host's memories, and can use the host's feats, physical skill ranks and half other skill ranks (though if both spirit and host have ranks in the same skill, they do not stack).  If the nerves connecting the corpse's brain and heart are severed, the body becomes unsuitable for possession.  The resulting creature makes sufficient use of the brain to be effected by enchantments.
 
 #### Spells of Power
 Choose a linked skill.  Increase save DCs for spells from schools with that skill by +2.
@@ -746,7 +746,8 @@ Your Spellpool refills at twice the regular rate, going from empty to full in on
 
 #### Graceful Failure 
 Prerequisite: Half blood or sorcerer.     
-When you fail a spell craft check to cast a spell, you may remove effects or meta magics to decrease the rating until you passed the check by as large a margin as you originally failed by. The spell now succeeds. Note that this is after you paid the cost based on the original rating, and that is not refunded.
+When you fail a spell craft check to cast a spell, you may remove effects or meta magics to decrease the rating until you passed the check by as large a margin as you originally failed by. The spell now succeeds. Note that this is after you paid the cost based on the original rating, and that is not refunded.    
+*This feat only applies to spells cast from these sources*
 
 #### Mana Reach
 Prerequisite: druid.     
@@ -770,19 +771,22 @@ You may cast a spell and make an attack as a single standard action. The spell a
 
 #### Determined Caster
 Prerequisite: monk, Bard or paladin.   
-If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action.  The casting dc is unchanged.
+If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action.  The casting dc is unchanged.    
+*This feat only applies to spells cast from these sources*
 
 #### Emotive Caster 
 Prerequisite: Bard or paladin.    
-Add your charisma bonus (if positive) to your maximum castable spell rating and to any save DCs from the spell.
+Add your charisma bonus (if positive) to your maximum castable spell rating and to any save DCs from the spell.    
+*This feat only applies to spells cast from these sources*
 
 #### Musical Duration
 Prerequisite: Bard, perform (any music) +10.    
-If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost.
+If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost.    
+*This feat only applies to spells cast from these sources*
 
 #### Checklist Caster 
 Prerequisite: wizard.    
-You  can take 5 on spell craft checks to cast spells.  This includes non wizard spells, if you are a multi caster.
+You  can take 5 on spell craft checks to cast spells.
 
 #### Improved Checklist Caster
 Prerequisite: Checklist Caster.    
@@ -830,7 +834,8 @@ When you cast a spell on a target who strongly opposes your cause, add a +2 mora
 
 #### Human Sacrifice
 Prerequisite: Shaman, knowledge(religion) +5.    
-If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.
+If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.    
+*This feat only applies to spells cast from this source*
 
 # Schools
 
@@ -845,7 +850,7 @@ If you kill one or more ensouled beings immediately before casting a spell, you 
 7 | Elemental Metal|affects metals, including alloys.|Knowledge(chemistry)|
 8 | Elemental Water|affects water|Knowledge(physics)|
 9 | Elemental Wood|affects plant matter.|Knowledge(biology)|
-10 | Enchantment|affects souls or other spirits, particularly the parts that manage emotions.|Diplomacy (cha)|
+10 | Enchantment|affects emotions centers in the brain|Diplomacy (cha)|
 11 | Health|affects living bodies, specifically their self-repair capabilities.|Heal (wis)|
 12 | Hexing|disrupts the connection between soul and brain.|Knowledge (Religion)|
 13 | Materialism|affects the chemical bonds that give objects their structure.|Knowledge (chemistry)|
@@ -1037,7 +1042,7 @@ Effects:
 
 ## Enchantment
 
-This school affects souls or other spirits, particularly the parts that manage emotions.
+This school affects the brains of animals, particularly the parts that manage emotions.
 
 Save: Will    
 Skill: Diplomacy (cha)    
@@ -1059,6 +1064,8 @@ Effects:
 
 For taboos and compulsions, the target gains +4 on their save if the command runs contrary to their nature and a stacking +6 if it is very likely to result in their death.  Furthermore, if the command at first seems innocuous and then becomes apparent not to be, the target gets a second save with the appropriate bonus.
 
+Complex actions are those which require a possessing spirit to understand.
+
 Levels of friendliness:
 
 * Will work hard and take risks to oppose you
@@ -1071,7 +1078,7 @@ Levels of friendliness:
 
 Note: someone charmed and then treated in an unfriendly manner will not only cease to feel friendly, but will often be especially angry at being so betrayed.
 
-Morale bonuses or penalties apply to physical and social skills, will saves, and melee attack rolls.
+Morale bonuses or penalties apply to physical and social skills, will saves, and melee attack rolls.  Note that a creature that cannot perform an action does not become able to from a morale bonus.
 
 For lullaby, a target who merely fails their will save becomes drowsy, taking a -3 penalty on all rolls.  A target who fails by 5 or more actually falls asleep (taking time to lie down first).  A target who fails by 10 or more cannot be awoken by mundane means until the spell expires.
 
@@ -1298,8 +1305,6 @@ Effects:
 
 When selecting extraplanar spirits, you can either seek a spirit of a general description who would be happy to be summoned/contacted or a specific spirit by name (either true name or current use-name).  If you select the former, the spirit will be grateful for the contact and broadly supportive of your goals insofar as they align with its nature.  If you select the latter, the spirit can make a will save to reject the contact altogether, and will act according to its interests.  
 
-(Some summoners enchant the spirits they summon.  With multi-school casting, the spell either succeeds or fails as a whole.  Without it, there's a risk that the spirit will make their save against the enchantment and become angry.)
-
 While many spirits can summon spirits of their own kind, this is limited by body materials.  Except for elementals, who can pull materials from their planes and fey, whose needed materials are easy to find in any forest in autumn.  Fortunately elementals and fey respect the balance of nature, and are generally unwilling to attempt this.
 
 When a spirit uses the Create Body effect *for itself*, it can be considerably less picky about materials, provided they resemble the requirement in some way.  A determined infernal could create a body for itself from an iron sickle that had been left out in the rain, and many a half-blood grows to fear farming equipment for this reason.  A third-party summoner, even a fellow infernal, cannot make use of this class of shortcut.
@@ -1490,7 +1495,7 @@ Each celestial embodies a single virtue (whereas each generally acknowledged vir
 
 Celestials are comfortable on the celestial plane, or in holy spaces (consecrated in the eyes of a significant group of mortals), or amidst people engaged in organized righteous activity.
 
-Bodies for celestials usually require feathers and tears.  They are vulnerable to sulfur taking 1p/rnd of damage from contact and double damage from weapons coated in it (the sulfur in gunpowder does not coat bullets).
+Bodies for celestials usually require feathers and tears.  They are vulnerable to blood taking 1p/rnd of damage from contact and double damage from weapons coated in it.
 
 ## Elementals
 
