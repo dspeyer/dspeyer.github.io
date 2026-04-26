@@ -421,6 +421,9 @@ spirits, perceiving the body counts as perceiving the spirit.</p>
 <p>Some spells require the caster to touch the target. If embodied,
 touch it with your body. If not, you must occupy the same space as the
 target.</p>
+<p>If you target equipment worn by an unwilling creature, said creature
+may cancel your spell with a reflex save in addition to any save the
+target gets (same DC).</p>
 <h2 id="scrolls">Scrolls</h2>
 <p>A scroll is a magic item that can shape raw magical energy into a
 specific spell. Each scroll has one specific spell (selection of effects
@@ -436,6 +439,13 @@ copying). While this is a shaping of magical energy, it is more
 self-contained than an active spell, and does not count against the
 active spell limit. Similarly, scrolls cannot be disspelled, though
 destroying the physical object will also destroy the magic.</p>
+<p>If the magic requires a skill check, the skill can either be included
+in the scroll or supplied by the user. If included in the scroll, the
+scroll also specifies all decisions made in the casting. For example, a
+scroll of Shape Metal could shape anything (up to a cubic meter) but
+would require a craft check, whereas a scroll of Shape Metal into a
+Rapier would not require a craft check, but could only produce that one
+design of rapier.</p>
 <p>Scrolls are not expended by use.</p>
 <h2 id="spellbooks">Spellbooks</h2>
 <p>A spellbook is not a magical item. It is simply a text describing
@@ -2409,10 +2419,16 @@ dex of 5+X. (cost: 3+X)</li>
 Detailed shapes require a relevant craft check. (cost: 1+X)</li>
 <li>Magnetize: Target metal becomes magnetic, with an effective strength
 score of X (cost: X)</li>
+<li>Corrode: Target metal object of up to X cubic centimeters reacts
+with surrounding chemicals, know(chem) check required (cost: X)</li>
 </ol>
 <p>Magnetize does not require a ferromagnetic target. However, if the
 target is ferromagnetic and the effect is maintained for over an hour,
 the magnetization will become permanent and nonmagical.</p>
+<p>To corrode metal into a form it naturally would (e.g. Iron Oxide) is
+DC 10. To corrode metal into something unnatural but stable (e.g. Gold
+Oxide, Copper Nitrate) is DC 15. Something highly unstable (e.g. Iron
+Azide) is DC 20.</p>
 <h2 id="elemental-water">Elemental Water</h2>
 <p>This school affects water. This includes water with solutes, but not
 other liquids.</p>
@@ -2803,9 +2819,12 @@ and in an extraplanar location adjacent to a named spirit. Target spirit
 is mostly gone, but can return as a standard action. (cost: 1)</li>
 <li>Spirit Anchor: Target object qualifies as a comfortable environment
 for one type of spirit (cost: 3)</li>
-<li>Summon Element: Bring X cubic meters of matter from an elemental
-plane into the material (cost: 5*X) [requires corresponding elemental
-school]</li>
+<li>Summon Element: Bring up to X cubic meters of matter from an
+elemental plane into the material (cost: 5*X) [requires corresponding
+elemental school]</li>
+<li>Lesser Summon Element: Bring up to one liter of matter from an
+elemental plane into the material (cost: 2) [requires corresponding
+elemental school]</li>
 </ol>
 <p>When selecting extraplanar spirits, you can either seek a spirit of a
 general description who would be happy to be summoned/contacted or a

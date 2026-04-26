@@ -97,6 +97,8 @@ Objects include creatures include human bodies.
 
 Some spells require the caster to touch the target.  If embodied, touch it with your body.  If not, you must occupy the same space as the target.
 
+If you target equipment worn by an unwilling creature, said creature may cancel your spell with a reflex save in addition to any save the target gets (same DC).
+
 ## Scrolls
 
 A scroll is a magic item that can shape raw magical energy into a specific spell.  Each scroll has one specific spell (selection of effects and metamagics) on it.  You can cast from a scroll without knowing the school, though your magic source must be compatible with it.  You still pay the cost and need the relevant skills.
@@ -104,6 +106,8 @@ A scroll is a magic item that can shape raw magical energy into a specific spell
 Scrolls weigh 0.1lbs per rating of the spell plus the (usually neglegible) mass of the materials.
 
 Crafting a scroll requires ability to cast the spell, a dc 10+rating spellcraft check and rating hours of work.  Note that the “ability to cast” may be based on having another scroll (which you are essentially copying).  While this is a shaping of magical energy, it is more self-contained than an active spell, and does not count against the active spell limit.  Similarly, scrolls cannot be disspelled, though destroying the physical object will also destroy the magic.
+
+If the magic requires a skill check, the skill can either be included in the scroll or supplied by the user.  If included in the scroll, the scroll also specifies all decisions made in the casting.  For example, a scroll of Shape Metal could shape anything (up to a cubic meter) but would require a craft check, whereas a scroll of Shape Metal into a Rapier would not require a craft check, but could only produce that one design of rapier.
 
 Scrolls are not expended by use.
 
@@ -1003,8 +1007,11 @@ Effects:
 1. Metal Manipulator: Animate X kg of metal.  It can fly, carry objects or perform combat manuevers with an effective strength score of 10+X and dex of 5+X. (cost: 3+X)
 2. Shape Metal: Reshape a metal object of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Magnetize: Target metal becomes magnetic, with an effective strength score of X (cost: X)
+4. Corrode: Target metal object of up to X cubic centimeters reacts with surrounding chemicals, know(chem) check required (cost: X)
 
 Magnetize does not require a ferromagnetic target.  However, if the target is ferromagnetic and the effect is maintained for over an hour, the magnetization will become permanent and nonmagical.
+
+To corrode metal into a form it naturally would (e.g. Iron Oxide) is DC 10.  To corrode metal into something unnatural but stable (e.g. Gold Oxide, Copper Nitrate) is DC 15.  Something highly unstable (e.g. Iron Azide) is DC 20.
 
 ## Elemental Water
 
@@ -1301,7 +1308,8 @@ Effects:
 2. Create Body: Convert an appropriate amount (usually X*10 kg) of appropriate material into a body a CR X or weaker spirit can possess (cost: X)
 3. Send Spirit: Willing spirit becomes simultaneously in its location and in an extraplanar location adjacent to a named spirit.  Target spirit is mostly gone, but can return as a standard action. (cost: 1)
 4. Spirit Anchor: Target object qualifies as a comfortable environment for one type of spirit  (cost: 3)
-4. Summon Element: Bring X cubic meters of matter from an elemental plane into the material (cost: 5*X) [requires corresponding elemental school]
+4. Summon Element: Bring up to X cubic meters of matter from an elemental plane into the material (cost: 5*X) [requires corresponding elemental school]
+5. Lesser Summon Element: Bring up to one liter of matter from an elemental plane into the material (cost: 2) [requires corresponding elemental school]
 
 When selecting extraplanar spirits, you can either seek a spirit of a general description who would be happy to be summoned/contacted or a specific spirit by name (either true name or current use-name).  If you select the former, the spirit will be grateful for the contact and broadly supportive of your goals insofar as they align with its nature.  If you select the latter, the spirit can make a will save to reject the contact altogether, and will act according to its interests.  
 

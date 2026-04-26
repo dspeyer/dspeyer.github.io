@@ -609,6 +609,14 @@ Slowmatch based actions are unreliable (50% failure chance) in light rain, and c
 
 A slowmatch cannot be left burning (and thus ready to fire) for more than one minute.  Such a firearm can be carried loaded escept for this final step, which still requires a standard action (included in the loading time) and two  hands.
 
+#### Spell-Scroll
+
+Spell-scroll firearms use Iron bullets and Iron (III) Azide propellent.  Since Azides are far more volatile than mere nitrate ions, a loaded spell-scroll firearm that is sharply jostled will fire in whatever direction it's pointed.
+
+Possessing the gun imparts knowledge of the bullet-creation spell, but the reloader must still pay the cost.
+
+As the bullets are summoned at need from the elemental plane of metal, there is no need to carry or track ammunition.  Furthermore, if the gun allows multiple bullet types (e.g. hollow-point, canister, or explosive shells) the wielder may chose from all compatible options at reload-time.
+
 #### Powder Burn
 
 A creature who uses a revolver that is of the largest supported size, wielding it in their arms, suffers 2d6 fire damage to their head each time they fire.  Smaller revolvers or full-size revolvers on gun stands deal this damage to where the users' head would be -- usually empty air.
