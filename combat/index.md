@@ -413,7 +413,7 @@ While melee weapons are mostly fixed by the late iron age, ranged weapons develo
 <div class=wide>
 Weapon | Ammo | Damage | Range | Reload Time | Complexity | Availability | Hands | Strength Needed | Weight | Length | Cost | Special
 -|-|-|-|-|-|-|-|-|-|-|-|-
-Throw | Any with Range | ammo+strm | ammo×(str/10) | n/a | Simple | Stone | 1 | weight×2 | 0 | 0 | 0 | Arcing, Ready
+Throw | Any with Range | ammo+strm | ammo×(str/10) | n/a | Human | Stone | 1 | weight×2 | 0 | 0 | 0 | Arcing, Ready
 Drop | Any with Range | ammo×min(height/20',2) | 20 | n/a | Simple | Stone | 1 | weight/6 | 0 | 0 | 0 | unlimited range, swift -10, head
 Atlalt | Javelin | ammo+strm | 2×ammo×(str/10) | Free Action | Martial | Stone | 2/1 | 6 | 1 | 2 | 1 | 
 Sling | Stone, Ball, Grenade or Bomb | ammo+strm | 3×ammo×(str/10) | Move Action | Martial | Stone | 2/1 | weight×3 | 0.01 | 0 | 1 | Risky, Arcing
@@ -426,10 +426,13 @@ Goatsfoot Crossbow | Bolt (light or heavy) | 2×ammo | 80 | 2 rounds | Simple | 
 Windlass Crossbow | Bolt (light or heavy) | 3×ammo | 100 | 5 rounds | Simple | Iron | 2/1 | 8(reload) | 5 | 2 | 30 | Strain, Ready
 Trebuchet | 5-10 lb Stone, Ball or Bomb | 7×ammo | 120 | 2 minutes | Martial | Spinning | n/a | 12(reload) | 2000 | 20 | 400 | Long, Aim During Reload, Assembly Required, Arcing
 Ballista | Oversize Bolt | 5×ammo | 120 | 2 minutes | Martial | Iron | str | 12;33 | 32 | 10 | 200 | Strain
+Pump Flamethrower | Burning Oil or Napalm | 2*ammo | 50 | free or 1 minute | Martial | Spinning | 2 | n/a | 100 | 5 | 300 | 
 Firearm | *See* | *Separate* | *Table* | | Simple | | | | | | | Ready
 Grenade Launcher | Grenade | 2×ammo | 100 | Move Action | Martial | Information | 2 | 12 | 3 | 1 | 50 | Long
 Underslung Grenade Launcher | Grenade | 2×ammo | 80 | Move Action | Martial | Information | n/a | 12 | 2 | N/A | 50 | Long. Attaches to Firearm
 Dart Gun | Dart | 2×ammo | 80 | Free Action | Simple | Information | 1 | 3 | 2 | 2 | 20 | Ready
+Light Pressurized Flamethrower | Burning Oil or Napalm | 3*ammo | 75 | free or 2 rounds | Martial | Steam | 1 | n/a | 40 | 0 | 100 | 
+Heavy Pressurized Flamethrower | Burning Oil or Napalm | 4*ammo | 100 | free or 2 rounds | Martial | Steam | 1 | n/a | 75 | 0 | 200 | 3-round burst mode
 Laser | Coherent Light | rating×ammo | 500 | Free Action | Simple | Solar | 1 | 6 | rating + power source | Varies | 100 | Unlimited Range, Energy Cost: rating, Auto-aim, Ready
 Blaster | Plasma Blast | rating×ammo | 300 | Free Action | Simple | Star | 1 | 6 | rating/2 + power source | 1 | 70 | Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim, Ready
 </div>
@@ -451,6 +454,8 @@ Yes, it's annoying that this column uses strength score when the previous column
 #### Reload Time
 
 What sort of action is needed to reload the weapon so it can fire again.  If more than a round, the reloader must spend the listed time taking standard actions of reloading.
+
+Flamethrowers and some firearms have two times: one for loading the next entry in the embedded tank or magazine and one for swapping in a fresh tank or magazine.
 
 (While it is common for weapon wielders to do their own reloading, this is not necessary, and sometimes poor tactics.)
 
@@ -557,6 +562,10 @@ This weapon (dropping) can be “fired” as a swift action, but at a -10 on the
 There is no limit on how far this weapon can fire.  Nor is there any limit on the possible AC bonus for range.  Once you unleash it, someone or something (but not necessarily your target) is going to have a bad day.
 
 #### Weapon-Specific Notes
+
+##### Throw
+
+Throw is a martial "weapon", except for humans who treat it as simple thanks to a racial ability.  In a human-only game, you can think of it as simple.
 
 ##### Drop
 
@@ -733,6 +742,10 @@ If this projectile successfully does piercing damage it sticks to its target.  I
 
 Note: while the boring and descriptive name of this projectile is "spiked bomb", its original name was "flying incediary club for subjugating demons".
 
+#### Sticky: X rounds
+
+This weapon continues to deal damage for X rounds (at the start of the turn of the character who fired it).
+
 # Armor
 
 Armor comes in four varieties: fabric (including gambeson, leather and glued hides), chain, scale (including lamelar and brigandine) and plate.  It covers six body parts: four limbs, torso and head (adjust for non-humanoids as needed).  You can mix and match (and layer) as you choose.
@@ -884,6 +897,113 @@ A character holding a shield may hunker behind it.  This causes all body parts t
 ## Non-Medium Characters
 
 These rules are written for medium size characters (e.g. humans).  For other sizes, multiply or divide the diameter by the appropriate power of two for purposes of size-dependant traits other than weight.
+
+# Grappling
+
+When two characters grapple, they generally seek to gain advantage (control of some of the opponent's limbs) or to pin (control all of them).  Sometimes neither character has advantage, so there are five levels of grapple.  Every level can be done either standing up or on the ground, making 10 total states.  Plus "not grappling" for 11.  Which state you are in effects what you can do.
+
+Most actions while grappling require a grapple check, which is base attack plus strength.
+
+| | Pinning | Grappling Adventageously | Grappling Neutrally | Grappling Disadventageously | Being Pinned|
+| -: | :-: | :-: | :-: | :-: | :-: |
+|Improve Position | N/A | Grapple check | Grapple check | Grapple or Escape Artist check  | Grapple or Escape Artist check|
+|Exit Grapple | At will | Grapple or Escape Artist check at +5 | Grapple or Escape Artist check  | Grapple or Escape Artist check at -5 | Cannot|
+|Go to Ground| Free Action | Yes | Grapple Check | Grapple Check | Grapple Check at -5 |
+|Rise from Ground | Grapple Check to keep pin | Lose Advantage | No | No | No |
+|Choke | Yes | No | No | No | No|
+|Hogtie | Yes | Requires Feat | No | No | No|
+|Throw (standing only) | Yes | Requires Feat and Grapple Check | No | No | No|
+|Wield as melee weapon (standing only) | Requires Feat | Requires Feat and Grapple Check | No | No | No|
+|Attack with weapon | Any one handed, no active defenses | Any one handed | One handed less than 2.5 lbs | One handed less than 1.5 lb | No|
+|Cause injury | 1d8 + 1.5 * str mod | 1d8 + 1.5 * str mod requires grapple check | 1d4 + str mode requires grapple check | 1d4 + str mode requires grapple check at -5 | No|
+|Disarm | Grapple check at +5 | Grapple check | Grapple check AND disarm attempt | No | No|
+|Disarmor | Grapple check | Grapple check at -5 | No | No | No|
+|Spell with Somatic Components | Yes | Grapple check at +5 | Grapple check | Grapple check at -5 | No|
+|Move grapple | Half speed (standing) | Grapple check for half speed (standing) | Grapple check for 5 feet | No | No|
+|Attacked from outside | -12 or accept certainty of hitting other grappler | -8 or accept 75% chance of hitting other grappler | -4 or accept 50% chance of hitting other grappler | Proceeds normally | No dex to AC or active defenses|
+|
+
+## Begin Grapple
+
+To begin grappling an unwilling opponent, first you must land an unarmed strike on your opponent that does no damage (ignore DR).  Then make a grapple check opposed by your opponent's grapple or escape artist.  If your check is higher, you are now grappling neutrally.  If your check is higher by five or more, you are now grappling with advantage.
+
+If your opponent consents to the grapple, no unarmed strike is needed.  You both make grapple checks.  If one exceeds the other by 5, that character has advantage.  If not, you are grappling neutrally.
+
+## Improve Position
+
+Make opposed checks.  If yours is higher, improve your status by one step.  If yours is higher by five or more, improve by two steps.  Exception: if you are grappling disadvantageously and use escape artist, you can only improve to neutral even if you succeed by five.
+
+## Exit Grapple
+
+This causes you to no longer be grappling.
+
+If you are on the ground, you may rise as part of this action.
+
+## Go to Ground
+
+Both you and your opponent become prone.
+
+If you are pinning them, you can do this as a free action.  Otherwise it requires a standard as normal.
+
+If you do not have advantage, this requires an opposed grapple check, on which you take -5 if pinned.
+
+## Rise from Ground
+
+Getting a grapple *off* the ground is much harder than going onto it.
+
+If you do not have advantage, you can't do it (though you might be able to exit the grapple and then start it again once risen).  If you merely have advantage, you lose it in the transition to vertical.  If you are pinning, make an opposed grapple check.  If you succeed, become standing and pinning.  If you fail, choose between staying ground and pinning or becoming standing and neutral.
+
+## Choke
+
+If your opponent has no neck protection (included by default in scale or plate *torso* armors) and you are pinning them, you may attempt a choke.  When you begin a choke, select whether it is a blood choke (to unconsciousness) or an air choke (to death).  You must succeed on an opposed grapple check each turn to maintain the choke.  A blood choke renders its target unconscious in three turns; an air choke kills its target in five. 
+
+## Hogtie
+
+When pinning (or grappling with advantage and possessing the Grappling Specialist feat) and possessing a rope, you may make a Use Rope check to tie them as if they were unresisting.
+
+## Throw
+
+If you are strong enough (equivalently, your opponent is small enough) to use the generic thrown object rules, you can use those provided you are not pinned.
+
+Failing that, if you are pinning your opponent and standing, you may throw them into an adjacent square.  Anyone in the square takes no damage but must make a dc 15 reflex save or be knocked prone.  If your strength score times ten exceeds your opponent's weight in pounds, you can throw them two squares away.  If you are grappling with advantage, have the Grappling Specialist feat and win an opposed grapple check, you can do the same.
+
+## Wield as melee weapon
+
+If you are standing and have the Grappling Specialist feat, and your opponent is not a larger size category than you, you may be able to wield them as a melee weapon.  If you have advantage, this requires an opposed grapple check for every attack or parry you make.  If you are pinning, you can simply do it.
+
+Opponents are a bludgeoning swinging weapon wielded in two hands with 1d6 base damage if medium, 1d4 for small, etc.  Medium opponents have reach.
+
+Whenever you deal damage this way, the "weapon" takes half of that damage as well.  When you successfully parry, the "weapon" takes incoming weapon base damage.
+
+## Attack with weapon
+
+If you have a sufficiently small weapon (see table) you may attack with it.  If you have pinned your opponent, they cannot use active defences.
+
+## Cause injury
+
+If you do not have or wish to use a weapon, you may cause injury by bending joints in ways they don't go.  See table.
+
+## Disarm
+
+Deprive your opponent of a wielded weapon.
+
+## Disarmor
+
+Remove a single piece of your opponent's armor.  Exception: Torso armor requires two successful disarmor actions (torso armor with one such action is "unbuckled" but still fully effective, and can be rebuckled with a disarmor attempt by the person whose armor it is.
+
+## Spell with Somatic Components
+
+This may require a grapple check.  Alternatively, still-cast.
+
+## Move grapple
+
+If you are pinning, you can simply do this.  If you are at a disadvantage or pinned, you cannot.  In between, make a grapple check.
+
+If you are standing *and* are pinning or have advantage and succeeded on your check, you can move half your speed.  If you are on the ground or grappling neutrally (and succeeded) you can move five feet.
+
+## Attacked from outside
+
+Not actually a thing you do, but a thing that can happen.  The choice between attack penalty and error chance is made by the attacker.
 
 # Feats
 

@@ -1319,7 +1319,7 @@ your knowledge(religion) increases, you may add effects to the spell,
 but you may not change effects already added.</p>
 <h3 id="spell-slots">Spell Slots</h3>
 <p>A shaman’s highest rating spell slot is his knowledge(religion)
-ranks. He has one slot at this rating, 2 at the next highest, 3 next,
+modifier. He has one slot at this rating, 2 at the next highest, 3 next,
 etc to a maximum of his wisdom modifier. For example, a shaman with 6
 ranks and a wisdom modifier of +3 would have 3,3,3,3,2,1 spell slots. A
 shaman without a positive wisdom modifier has one slot at each rating.
@@ -1687,6 +1687,12 @@ understand them</td>
 <td>Treat your soul as another spirit type</td>
 </tr>
 <tr>
+<td>Possess Animal</td>
+<td>Astral Projection</td>
+<td>Operate an animal (including a human body) as if it were your own
+body</td>
+</tr>
+<tr>
 <td>Familiar</td>
 <td>Druid or any other active magic source and handle animal +5</td>
 <td>You have lightly connected your soul to a single animal</td>
@@ -1931,6 +1937,17 @@ You can treat your soul as another spirit type when this benefits you.
 For example, you can astral project into a prepared body for such a
 spirit. You must maintain a lifestyle in line with the values of that
 spirit type.</p>
+<h4 id="possess-animal">Possess Animal</h4>
+<p>Prerequisites: Astral Projection If you disembodiedly enter the same
+space an animal (including a human body) you may attempt to take
+possession of it. Make a will save opposed by the animal’s will save. If
+the animal is already possessed by another spirit, make a second will
+save opposed by that spirit’s will save. Every time you act against the
+animal’s nature (or against the rival possessor’s nature), or for every
+hour you hold them, make opposed will save(s) again to maintain the
+possession. Each time you such saves, the defender gets a stacking +1
+bonus for each previous save. Additionally, a soul which grew up in the
+body in question gets a flat +10.</p>
 <h4 id="familiar">Familiar</h4>
 <p>Prerequisites: Druid or any other active magic source and handle
 animal +5<br />
@@ -2536,6 +2553,9 @@ Duration: Instantaneous</p>
 <p>Effects:</p>
 <ol type="1">
 <li>Cure Wounds: Heal X hit points (cost: X)</li>
+<li>Diagnose: Caster learns how badly wounded target is (cost: 1)</li>
+<li>Instant Rest: Target gains the benefits of 3*X minutes of rest
+(cost: X)</li>
 <li>Cure Deep Injury: Heal X points of ability damage (cost: 2*X)</li>
 <li>Cure Poison: Reduce poison DC by X (cost: X)</li>
 <li>Cure Disease: Reduce disease DC by X (cost: 2*X)</li>
@@ -2754,9 +2774,9 @@ saves against any ongoing (cost: 2*X)</li>
 <li>Grant Othersight: Target gains a single Sight feat (the caster need
 not have it) (cost: 7)</li>
 <li>Share Senses: Target can use Caster’s senses as well as their own
-(cost: 6)</li>
+(cost: 4)</li>
 <li>Scrying: Caster can use Target’s senses as well as their own (cost:
-7)</li>
+5)</li>
 </ol>
 <p>Grant Othersight can be used to grant Soulsight based on a different
 magic source the caster is familiar with.</p>
@@ -2819,6 +2839,8 @@ and in an extraplanar location adjacent to a named spirit. Target spirit
 is mostly gone, but can return as a standard action. (cost: 1)</li>
 <li>Spirit Anchor: Target object qualifies as a comfortable environment
 for one type of spirit (cost: 3)</li>
+<li>Exorcise: Target object does not quality as a comfortable
+environment for a given spirit (cost: 3)</li>
 <li>Summon Element: Bring up to X cubic meters of matter from an
 elemental plane into the material (cost: 5*X) [requires corresponding
 elemental school]</li>
@@ -2847,6 +2869,7 @@ third-party summoner, even a fellow infernal, cannot make use of this
 class of shortcut.</p>
 <p>The Create Body and Spirit Anchor effects cannot be cast on objects
 that already have that effect cast on them.</p>
+<p>Exorcise cannot discomfit a soul from the body it grew up in.</p>
 <p>Send Spirit is mostly used to send the souls of humans to meet with
 powerful extraplanar spirits. While this is active, the extraplanar
 spirits can communicate with, cast magic upon, or empower as shamans the
@@ -2935,16 +2958,12 @@ may make that person count as the caster.</p>
 factor of 2^X (cost: 5X)</li>
 <li>Outsized Target: Effect a target that would normally be X times too
 large or small (cost: X)</li>
-<li>Strong Affinity: Treat an object and a former piece of that object
-as being the same (cost: 10)</li>
-<li>Moderate Affinity: Target an object based on an image of it being in
-range (cost: 12)</li>
-<li>Weak Affinity: Target an object based on a crude image or
-thing-that-touched-it being in range (cost: 16)</li>
+<li>Affinity: Target an animal or a spirit inhabiting that animal
+because a piece of the animal is in range (cost: 8)</li>
 </ol>
 <p>Magics of Space can be stacked on top of each other. You could, for
-example, target a point 10m above a person whose photograph you hold by
-combining Moderate Affinity and Reach.</p>
+example, target a point 10m above a person whose hair you hold by
+combining Affinity and Reach.</p>
 <h2 id="magics-of-targeting">Magics of Targeting</h2>
 <ol type="1">
 <li>Spread: Instead of a single target, the spell effects all valid
@@ -3077,6 +3096,12 @@ cannot.) This includes human souls that are seperated from the body,
 whether by Astral Projection, Send Spirit or Death.</p>
 <p>Spirits can move themselves, flying at 10 meters per round unless
 otherwise specified.</p>
+<p>Spirits have hit points equal to their wisdom score. They do not take
+damage from baryonic sources, but disembodied spirits do take half
+damage from light-based weapons (embodied spirits have cover from their
+bodies). Spirits do not have their own vitality pool, so if a
+disembodied spirit would take vitality damage, it instead takes
+nonlethal hit point damage.</p>
 <p>Spirits have specific environments they’re comfortable in. A spirit
 outside of such an environment for an hour must make a DC 10 will save
 to hold itself together, then additional will saves at incrementing DCs

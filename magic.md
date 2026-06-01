@@ -498,7 +498,7 @@ Pick a specific spell of rating no more than one quarter your knowledge(religion
 
 ### Spell Slots 
 
-A shaman’s highest rating spell slot is his knowledge(religion) ranks. He has one slot at this rating, 2 at the next highest, 3 next, etc to a maximum of his wisdom modifier.  For example, a shaman with 6 ranks and a wisdom modifier of +3 would have 3,3,3,3,2,1 spell slots. A shaman without a positive wisdom modifier has one slot at each rating. Temporary changes to wisdom do not affect spell slots, but long term (day or longer) do, starting when the slots are refreshed. 
+A shaman’s highest rating spell slot is his knowledge(religion) modifier. He has one slot at this rating, 2 at the next highest, 3 next, etc to a maximum of his wisdom modifier.  For example, a shaman with 6 ranks and a wisdom modifier of +3 would have 3,3,3,3,2,1 spell slots. A shaman without a positive wisdom modifier has one slot at each rating. Temporary changes to wisdom do not affect spell slots, but long term (day or longer) do, starting when the slots are refreshed. 
 
 A shaman refreshes slots by making mental contact with his patron. This may be done once a day, at a symbolically appropriate hour (usually dawn) and takes ten minutes. 
 
@@ -630,6 +630,7 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Deceptive Soul |  Quiet Soul | appear as aligned as you choose to a Soul Seer’s magic source |
 |Astral Projection | | Briefly detatch your soul from your body |
 |Ambiguous Soul | Astral Projection, appropriate lifestyle | Treat your soul as another spirit type |
+|Possess Animal | Astral Projection | Operate an animal (including a human body) as if it were your own body |
 |Familiar | Druid or any other active magic source and handle animal +5 | You have lightly connected your soul to a single animal |
 |Fluid Caster |  6 ranks spell craft | Treat your spells as one rating smaller for purposes of cost |
 |Multi School |  two known schools | combine effects from different schools in one spell |
@@ -708,6 +709,10 @@ You can briefly detatch your soul from your body.  See the rules on disembodied 
 #### Ambiguous Soul
 Prerequisites: Astral Projection, lifestyle appropriate to spirit type    
 You can treat your soul as another spirit type when this benefits you.  For example, you can astral project into a prepared body for such a spirit.  You must maintain a lifestyle in line with the values of that spirit type.
+
+#### Possess Animal
+Prerequisites: Astral Projection
+If you disembodiedly enter the same space an animal (including a human body) you may attempt to take possession of it.  Make a will save opposed by the animal's will save.  If the animal is already possessed by another spirit, make a second will save opposed by that spirit's will save.  Every time you act against the animal's nature (or against the rival possessor's nature), or for every hour you hold them, make opposed will save(s) again to maintain the possession.  Each time you such saves, the defender gets a stacking +1 bonus for each previous save.  Additionally, a soul which grew up in the body in question gets a flat +10.
 
 #### Familiar
 Prerequisites: Druid or any other active magic source and handle animal +5    
@@ -1101,6 +1106,8 @@ Duration: Instantaneous
 Effects:
 
 1. Cure Wounds: Heal X hit points (cost: X)
+2. Diagnose: Caster learns how badly wounded target is (cost: 1)
+6. Instant Rest: Target gains the benefits of 3*X minutes of rest (cost: X)
 2. Cure Deep Injury: Heal X points of ability damage (cost: 2*X)
 3. Cure Poison: Reduce poison DC by X (cost: X)
 4. Cure Disease: Reduce disease DC by X (cost: 2*X)
@@ -1259,8 +1266,8 @@ Effects:
 2. True Sight: Grant +X to will saves against Phantasms, and fresh saves against any ongoing (cost: 2*X)
 3. Share Othersight: Target gains Caster's Sight Feats (e.g. soulsight) (cost: 5)
 3. Grant Othersight: Target gains a single Sight feat (the caster need not have it) (cost: 7)
-4. Share Senses: Target can use Caster's senses as well as their own (cost: 6)
-5. Scrying: Caster can use Target's senses as well as their own (cost: 7)
+4. Share Senses: Target can use Caster's senses as well as their own (cost: 4)
+5. Scrying: Caster can use Target's senses as well as their own (cost: 5)
 
 Grant Othersight can be used to grant Soulsight based on a different magic source the caster is familiar with.
 
@@ -1308,6 +1315,7 @@ Effects:
 2. Create Body: Convert an appropriate amount (usually X*10 kg) of appropriate material into a body a CR X or weaker spirit can possess (cost: X)
 3. Send Spirit: Willing spirit becomes simultaneously in its location and in an extraplanar location adjacent to a named spirit.  Target spirit is mostly gone, but can return as a standard action. (cost: 1)
 4. Spirit Anchor: Target object qualifies as a comfortable environment for one type of spirit  (cost: 3)
+4. Exorcise: Target object does not quality as a comfortable environment for a given spirit (cost: 3)
 4. Summon Element: Bring up to X cubic meters of matter from an elemental plane into the material (cost: 5*X) [requires corresponding elemental school]
 5. Lesser Summon Element: Bring up to one liter of matter from an elemental plane into the material (cost: 2) [requires corresponding elemental school]
 
@@ -1318,6 +1326,8 @@ While many spirits can summon spirits of their own kind, this is limited by body
 When a spirit uses the Create Body effect *for itself*, it can be considerably less picky about materials, provided they resemble the requirement in some way.  A determined infernal could create a body for itself from an iron sickle that had been left out in the rain, and many a half-blood grows to fear farming equipment for this reason.  A third-party summoner, even a fellow infernal, cannot make use of this class of shortcut.
 
 The Create Body and Spirit Anchor effects cannot be cast on objects that already have that effect cast on them.
+
+Exorcise cannot discomfit a soul from the body it grew up in.
 
 Send Spirit is mostly used to send the souls of humans to meet with powerful extraplanar spirits.  While this is active, the extraplanar spirits can communicate with, cast magic upon, or empower as shamans the human souls.  The effect can also be used by inhabitants of other planes to visit the material, if they have the true name of a human to target on.
 
@@ -1377,11 +1387,9 @@ If the spell specifies an effect on the caster, and you are casting it with a tr
 2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: 3X)
 2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of 2^X (cost: 5X)
 2. Outsized Target: Effect a target that would normally be X times too large or small (cost: X)
-3. Strong Affinity: Treat an object and a former piece of that object as being the same  (cost: 10)
-4. Moderate Affinity: Target an object based on an image of it being in range (cost: 12)
-5. Weak Affinity: Target an object based on a crude image or thing-that-touched-it being in range (cost: 16)
+3. Affinity: Target an animal or a spirit inhabiting that animal because a piece of the animal is in range  (cost: 8)
 
-Magics of Space can be stacked on top of each other.  You could, for example, target a point 10m above a person whose photograph you hold by combining Moderate Affinity and Reach.
+Magics of Space can be stacked on top of each other.  You could, for example, target a point 10m above a person whose hair you hold by combining Affinity and Reach.
 
 ## Magics of Targeting
 
@@ -1489,6 +1497,8 @@ Note: abilities that decrease a spell's rating for some casters (such as an arti
 A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most non-soul spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.  Elemental Sight or Body sight can solve this problem, but Soul Sight cannot.)  This includes human souls that are seperated from the body, whether by Astral Projection, Send Spirit or Death.
 
 Spirits can move themselves, flying at 10 meters per round unless otherwise specified.
+
+Spirits have hit points equal to their wisdom score.  They do not take damage from baryonic sources, but disembodied spirits do take half damage from light-based weapons (embodied spirits have cover from their bodies).  Spirits do not have their own vitality pool, so if a disembodied spirit would take vitality damage, it instead takes nonlethal hit point damage.
 
 Spirits have specific environments they're comfortable in.  A spirit outside of such an environment for an hour must make a DC 10 will save to hold itself together, then additional will saves at incrementing DCs each hour thereafter.  A spirit that straddles a planar boundary and is only uncomfortable on one side will snap back to the other, but a monoplanar spirit will perish.  A spirit which rests for five minutes in a comfortable environmnet resets this counter.
 
