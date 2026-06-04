@@ -309,7 +309,7 @@ The crystal must be at least 1cm on a side.  Note that this makes it 3 grams for
 
 A wizard, including a latent wizard, can use a magic gem as the cost of a spell.  The gem's rating is decreased by the spell's.  Once the rating is reduced to zero, the gem reverts to being a mundane crystal and the spell that created the gem counts as completed.
 
-An active wizard can create a magic gem using a spell.  The spell's rating is 1.2 times the rating of the gem to be created, rounded up.  By default, the gem lasts one hour, though a shorter time may be chosen at no additional cost.  Gems empowerments count against the limit of active spells.
+An active wizard can create a magic gem using a spell.  The spell's rating is 1.2 times the rating of the gem to be created, rounded up.  By default, the gem lasts one hour, though a shorter time may be chosen at no additional cost.  Gems empowerments count against the limit of active spells.  They cannot be combined with Metamagics of Targeting.
 
 In theory, magic gems could form without spells given the right combination of natural magic and precipitation of crystals, most likely in a plutonic intrusion.  Most worlds do not have these.
 
