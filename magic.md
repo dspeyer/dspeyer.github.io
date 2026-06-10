@@ -285,6 +285,8 @@ A monk spends vitality equal to the rating of the spell.  Vitality recovers norm
 
 A bard's casting is activated by their total perform modifier (excluding any bonus from their instrument), but their ability to take ranks in spellcraft requires that the ranks in spellcraft be less than the ranks in perform.
 
+A bard may treat any creation of music as the verbal component of a spell (including playing a breath-based instrument that prevents singing).
+
 ## Wizard
 
 **Source:** Deep understanding of magic itself    
@@ -477,7 +479,7 @@ A pact carries obligations to serve the patron’s interests in the material wor
 
 In any case, if your performance falls short of your promises, however vague, your patron has the ability to issue you orders on how to correct it. You will obey these orders. You have no choice in the matter.  This applies even if latent.
 
-Usually a shaman is eligible for two or three schools that reflect the patron's nature (not counting summoning), but others are possible if a patron is willing to put in additional effort.
+Usually a shaman is eligible for two or three schools that reflect the patron's nature (not counting summoning), but others are possible if a patron is willing to put in additional effort.  Usually a shaman's schools don't change after initiation, but the shaman *can* change them if circumstances warrant.
 
 ### Example Pacts
 
@@ -498,7 +500,7 @@ Pick a specific spell of rating no more than one quarter your knowledge(religion
 
 ### Spell Slots 
 
-A shaman’s highest rating spell slot is his knowledge(religion) modifier. He has one slot at this rating, 2 at the next highest, 3 next, etc to a maximum of his wisdom modifier.  For example, a shaman with 6 ranks and a wisdom modifier of +3 would have 3,3,3,3,2,1 spell slots. A shaman without a positive wisdom modifier has one slot at each rating. Temporary changes to wisdom do not affect spell slots, but long term (day or longer) do, starting when the slots are refreshed. 
+A shaman’s highest rating spell slot is his knowledge(religion) modifier. He has one slot at this rating, 2 at the next highest, 3 next, etc to a maximum of his wisdom modifier.  For example, a shaman with +6 knowledge(religion) and a wisdom modifier of +3 would have 3,3,3,3,2,1 spell slots. A shaman without a positive wisdom modifier has one slot at each rating. Temporary changes to wisdom do not affect spell slots, but long term (day or longer) do, starting when the slots are refreshed. 
 
 A shaman refreshes slots by making mental contact with his patron. This may be done once a day, at a symbolically appropriate hour (usually dawn) and takes ten minutes. 
 
@@ -650,6 +652,7 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Determined Caster |  monk, Bard or paladin | If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action |
 |Emotive Caster  |  Bard or paladin | Add your charisma bonus (if positive) to your maximum castable spell rating and to any save DCs from the spell |
 |Musical Duration |  Bard, perform (any music) +10 | If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost |
+| Silent Song | Bard, Telepathy | You can create entirely spiritual music |
 |Checklist Caster  |  wizard | You  can take 5 on spell craft checks to cast spells |
 |Improved Checklist Caster |  Checklist Caster | You may roll 5d4 instead of 1d20 on spell craft checks to cast spells |
 |Extra Preparation |  wizard | You may prepare twice as many spells as normal |
@@ -792,6 +795,10 @@ Add your charisma bonus (if positive) to your maximum castable spell rating and 
 Prerequisite: Bard, perform (any music) +10.    
 If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost.    
 *This feat only applies to spells cast from these sources*
+
+#### Silent Song
+Prerequisites: Bard, Telepathy
+You can create entirely spiritual music.  This does not require any ability to create sound, and cannot be heard by mundane means, but any spirit within 20 meters can perceive the music.  This counts as "performing music" for bardic purposes, such as replacing a verbal component or powering the Musical Duration feat.  This can be used as a free area-affect Send Thoughts, but conveys music rather than raw ideas, and is therefore far more culture-dependent.  Also, any lyrics in this music must both rhyme and scan.
 
 #### Checklist Caster 
 Prerequisite: wizard.    
