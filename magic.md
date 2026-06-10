@@ -1340,6 +1340,8 @@ Send Spirit is mostly used to send the souls of humans to meet with powerful ext
 
 When summoning an element, you may specify the general nature of the material you summon, but not the full details.  For example, you could use summon earth to summon "a solid block of gneiss" but not one with large rubies.  Summoning metal cannot summon transferric metals, nor can you select isotopes.
 
+Some magic sources only permit summoning of some spirit types.  Restricted summoners can still use Exorcise and Send Spirit without regard to spirit types, and can create Spirit Anchors for themselves.  The Summon Element powers require the ability to summon elementals.  Also, the technique of summoning is a single feat, so if you take the feat while having magic source with restricted summoning and then gain another magic source with unrestricted, you can summon new creatures immediately without learning additional techniques.
+
 ## Telepathy
 
 This school touches the parts of the soul that handle communication.
