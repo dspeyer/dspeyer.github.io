@@ -153,7 +153,7 @@ Under most circumstances, souls are so specialized in possessing bodies that the
 
 A magic source has both a deep nature and an activation requirement.  A mage who has not activated their powers is known as “latent”.  For some magic sources, latent magi experience the special benefits and drawbacks, but mostly not.
 
-Awaking magic triggers a temporary euphoria that makes learning more magic very easy.  When you awaken, take a bonus magic feat.  You must still meet any prerequisites.
+Awaking magic triggers a temporary euphoria that makes learning more magic very easy.  When you awaken, take a bonus magic feat.  You must still meet any prerequisites.  If you awaken in the midst of action (by gaining a  magic source for which you already meet the activation criteria), you get the bonus feat when next you have a bit of downtime to study in.
 
 Latent mages can on rare occasions cast spells using improvised (inefficient and unreliable) effects under extreme stress or intense emotion.  This cannot be done deliberately, and generally goes badly for all involved, but it is how some latent mages learn what they are.
 
