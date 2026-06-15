@@ -188,7 +188,7 @@ Name  | Source | Activation | Cost | Compatible Schools | Pri | Extra Ability | 
 half blood  | magical ancestry | spell craft, 1 rank | spell pool, regenerates with rest | any | 1 | spellcraft a class skill for all classes | frequent monster attacks (~1/week, cr 1d6)
 druid  | mystical connection to nature | survival +10 | mana | elemental *, augment senses, boost, healing, metamorph, summoning (elementals and fey only)| 1 | can take cross class ranks in spell craft provided survival is higher | cannot cast while wearing inorganic armor or clothing
 artificer | mystical connection to crafts  | craft (any) +10 | spell pool, regenerates with crafting  | abjuration, elemental air/Earth/wood/metal, materialism, space manipulation | 2 | duration extending metamagic 1/2 cost (round up) on targets you created | save DCs -2
-monk  | mystical connection to martial arts | any attack +7 | vitality |  boost, elemental fire, healing, hexing, second sight, space manipulation | 2 | spell craft class for full bab | cannot still-cast 
+monk  | mystical connection to martial arts | any attack +7 | vitality |  augment senses, boost, elemental fire, healing, hexing, second sight | 2 | spell craft class for full bab | cannot still-cast 
 Bard  | mystical connection to music | perform (any music) +10 | spell pool, regenerates w/ performance | boost, enchantment, phantasms, telepathy, summonning (fey only) | 2 | can take cross class ranks in spell craft provided perform is higher | cannot silent-cast
 wizard | deep understanding of magic itself | spell craft +15 | preparation | any | 3 | can create and use (even when latent) magical gems | cannot quick cast
 sorcerer  | distant magical ancestry | spell craft +5 | spell pool, regenerates with rest | any, max 2 | 3 | can take spellcraft cross class for double cost | cannot ritual-cast
@@ -259,7 +259,7 @@ The restriction applies to the save DCs your targets experience on spells you ca
 **Source:** Mystical connection to martial arts    
 **Activation:** any attack +7    
 **Cost:** vitality    
-**Compatible Schools:**  boost, elemental fire, healing, hexing, second sight, space manipulation    
+**Compatible Schools:**  augment senses, boost, elemental fire, healing, hexing, second sight,     
 **Pri:** 2    
 **Extra Ability:** spell craft class for full bab    
 **Restriction:** cannot still-cast     
@@ -479,7 +479,7 @@ A pact carries obligations to serve the patron’s interests in the material wor
 
 In any case, if your performance falls short of your promises, however vague, your patron has the ability to issue you orders on how to correct it. You will obey these orders. You have no choice in the matter.  This applies even if latent.
 
-Usually a shaman is eligible for two or three schools that reflect the patron's nature (not counting summoning), but others are possible if a patron is willing to put in additional effort.  Usually a shaman's schools don't change after initiation, but the shaman *can* change them if circumstances warrant.
+Usually a shaman is eligible for two or three schools that reflect the patron's nature (not counting summoning), but others are possible if a patron is willing to put in additional effort.  Usually a shaman's schools don't change after initiation, but the patron *can* change them if circumstances warrant.
 
 ### Example Pacts
 
@@ -495,12 +495,12 @@ A pact with Shub-Niggurath, the infamous black goat of a thousand young who dwel
 
 ### Signature Spell
 
-Pick a specific spell of rating no more than one quarter your knowledge(religion) ranks rounded up. You may cast it at no cost. As your knowledge(religion) increases, you may add effects to the spell, but you may not change effects already added.
+Pick a specific spell of rating no more than one quarter your knowledge(religion) ranks rounded up. You may cast it at no cost. As your knowledge(religion) increases, you may add effects to the spell, and you may replace the most recently added effect with a higher-rating one, but you cannot otherwise remove effects.
 
 
 ### Spell Slots 
 
-A shaman’s highest rating spell slot is his knowledge(religion) modifier. He has one slot at this rating, 2 at the next highest, 3 next, etc to a maximum of his wisdom modifier.  For example, a shaman with +6 knowledge(religion) and a wisdom modifier of +3 would have 3,3,3,3,2,1 spell slots. A shaman without a positive wisdom modifier has one slot at each rating. Temporary changes to wisdom do not affect spell slots, but long term (day or longer) do, starting when the slots are refreshed. 
+A shaman’s highest rating spell slot is his knowledge(religion) modifier. He has one slot at this rating, 2 at a rating 2 less, 3 at a rating two less than that, etc to a maximum of his wisdom modifier.  For example, a shaman with +8 knowledge(religion) and a wisdom modifier of +3 would have 3,3,2,1 spell slots at ratings 2,4,6,8 respectively. A shaman without a positive wisdom modifier has one slot at each rating. Temporary changes to wisdom do not affect spell slots, but long term (day or longer) do, starting when the slots are refreshed. 
 
 A shaman refreshes slots by making mental contact with his patron. This may be done once a day, at a symbolically appropriate hour (usually dawn) and takes ten minutes. 
 
@@ -698,7 +698,7 @@ You can sense the meaning of all words spoken or signed with intent that you und
 
 #### Quiet Soul
 Prerequisite: knowledge religion 1 rank.    
-You can hide from Soul, Life and Magic Sight if your concentration check or will save exceeds the seer’s knowledge check to activate the sight.  Make a fresh check once an hour if you remain nearby. 
+You can hide from Soul, Life and Magic Sight if your bluff check or will save exceeds the seer’s knowledge check to activate the sight.  Make a fresh check once an hour if you remain nearby. 
 
 #### Deceptive Soul
 Prerequisite: Quiet Soul.    
@@ -797,7 +797,7 @@ If you cast a spell with a duration while performing music, you may set the dura
 *This feat only applies to spells cast from these sources*
 
 #### Silent Song
-Prerequisites: Bard, Telepathy
+Prerequisites: Bard, Telepathy    
 You can create entirely spiritual music.  This does not require any ability to create sound, and cannot be heard by mundane means, but any spirit within 20 meters can perceive the music.  This counts as "performing music" for bardic purposes, such as replacing a verbal component or powering the Musical Duration feat.  This can be used as a free area-affect Send Thoughts, but conveys music rather than raw ideas, and is therefore far more culture-dependent.  Also, any lyrics in this music must both rhyme and scan.
 
 #### Checklist Caster 
@@ -1499,11 +1499,13 @@ Usually DC 10: figure out how a spell will interact with edge-cases of its descr
 
 Note: abilities that decrease a spell's rating for some casters (such as an artificer's discounted time metamagic) do not affect the cost.  The fact that some casters have such advantages is already factored into the cost, and the law of one price applies.
 
+Note: An object with a permanent repeating trigger of activation is known as a "wand" and costs $5(26+R)^2+500 for 1/day or 11 total uses.
+
 **Bespelled Item:** Cost of casting the spell plus cost of the mundane item.
 
 # Spirits as Monsters
 
-A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most non-soul spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.  Elemental Sight or Body sight can solve this problem, but Soul Sight cannot.)  This includes human souls that are seperated from the body, whether by Astral Projection, Send Spirit or Death.
+A spirit without a body cannot do very much.  It cannot move objects, make sound, or even perceive physical objects.  Most non-soul spirits have some form of soulsight, so it can perceive people.  It can cast spells if it has spellcasting feats, but cannot target anything it cannot perceive, though it can use indirect targetting via Detect Surface Thoughts or Scrying on an embodied spirit.  (Among things it cannot do is summon more incorporeal spirits: the Summon Spirit effect requires a material target to anchor on.  Elemental Sight or Body sight can solve this problem, but Soul Sight cannot.)  This includes human souls that are seperated from the body, whether by Astral Projection, Send Spirit or Death.
 
 Spirits can move themselves, flying at 10 meters per round unless otherwise specified.
 

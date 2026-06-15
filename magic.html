@@ -623,8 +623,8 @@ created</td>
 <td>mystical connection to martial arts</td>
 <td>any attack +7</td>
 <td>vitality</td>
-<td>boost, elemental fire, healing, hexing, second sight, space
-manipulation</td>
+<td>augment senses, boost, elemental fire, healing, hexing, second
+sight</td>
 <td>2</td>
 <td>spell craft class for full bab</td>
 <td>cannot still-cast</td>
@@ -820,8 +820,8 @@ spells you cast, if you cast spells that allow saves.</p>
 <p><strong>Source:</strong> Mystical connection to martial arts<br />
 <strong>Activation:</strong> any attack +7<br />
 <strong>Cost:</strong> vitality<br />
-<strong>Compatible Schools:</strong> boost, elemental fire, healing,
-hexing, second sight, space manipulation<br />
+<strong>Compatible Schools:</strong> augment senses, boost, elemental
+fire, healing, hexing, second sight,<br />
 <strong>Pri:</strong> 2<br />
 <strong>Extra Ability:</strong> spell craft class for full bab<br />
 <strong>Restriction:</strong> cannot still-cast</p>
@@ -1291,7 +1291,7 @@ matter. This applies even if latent.</p>
 <p>Usually a shaman is eligible for two or three schools that reflect
 the patron’s nature (not counting summoning), but others are possible if
 a patron is willing to put in additional effort. Usually a shaman’s
-schools don’t change after initiation, but the shaman <em>can</em>
+schools don’t change after initiation, but the patron <em>can</em>
 change them if circumstances warrant.</p>
 <h3 id="example-pacts">Example Pacts</h3>
 <p>A pact with Mammon, archfiend of greed, might require that the mortal
@@ -1321,15 +1321,17 @@ the shaman a (possibly latent) psyker as well.</p>
 <p>Pick a specific spell of rating no more than one quarter your
 knowledge(religion) ranks rounded up. You may cast it at no cost. As
 your knowledge(religion) increases, you may add effects to the spell,
-but you may not change effects already added.</p>
+and you may replace the most recently added effect with a higher-rating
+one, but you cannot otherwise remove effects.</p>
 <h3 id="spell-slots">Spell Slots</h3>
 <p>A shaman’s highest rating spell slot is his knowledge(religion)
-modifier. He has one slot at this rating, 2 at the next highest, 3 next,
-etc to a maximum of his wisdom modifier. For example, a shaman with +6
-knowledge(religion) and a wisdom modifier of +3 would have 3,3,3,3,2,1
-spell slots. A shaman without a positive wisdom modifier has one slot at
-each rating. Temporary changes to wisdom do not affect spell slots, but
-long term (day or longer) do, starting when the slots are refreshed.</p>
+modifier. He has one slot at this rating, 2 at a rating 2 less, 3 at a
+rating two less than that, etc to a maximum of his wisdom modifier. For
+example, a shaman with +8 knowledge(religion) and a wisdom modifier of
++3 would have 3,3,2,1 spell slots at ratings 2,4,6,8 respectively. A
+shaman without a positive wisdom modifier has one slot at each rating.
+Temporary changes to wisdom do not affect spell slots, but long term
+(day or longer) do, starting when the slots are refreshed.</p>
 <p>A shaman refreshes slots by making mental contact with his patron.
 This may be done once a day, at a symbolically appropriate hour (usually
 dawn) and takes ten minutes.</p>
@@ -1928,9 +1930,9 @@ you understand them. This works regardless of language or audibility.
 Activate this with knowledge(religion).</p>
 <h4 id="quiet-soul">Quiet Soul</h4>
 <p>Prerequisite: knowledge religion 1 rank.<br />
-You can hide from Soul, Life and Magic Sight if your concentration check
-or will save exceeds the seer’s knowledge check to activate the sight.
-Make a fresh check once an hour if you remain nearby.</p>
+You can hide from Soul, Life and Magic Sight if your bluff check or will
+save exceeds the seer’s knowledge check to activate the sight. Make a
+fresh check once an hour if you remain nearby.</p>
 <h4 id="deceptive-soul">Deceptive Soul</h4>
 <p>Prerequisite: Quiet Soul.<br />
 You can appear as aligned as you choose to a Soul Seer’s magic source if
@@ -2062,14 +2064,15 @@ If you cast a spell with a duration while performing music, you may set
 the duration to “as long as the music lasts” at no cost.<br />
 <em>This feat only applies to spells cast from these sources</em></p>
 <h4 id="silent-song">Silent Song</h4>
-<p>Prerequisites: Bard, Telepathy You can create entirely spiritual
-music. This does not require any ability to create sound, and cannot be
-heard by mundane means, but any spirit within 20 meters can perceive the
-music. This counts as “performing music” for bardic purposes, such as
-replacing a verbal component or powering the Musical Duration feat. This
-can be used as a free area-affect Send Thoughts, but conveys music
-rather than raw ideas, and is therefore far more culture-dependent.
-Also, any lyrics in this music must both rhyme and scan.</p>
+<p>Prerequisites: Bard, Telepathy<br />
+You can create entirely spiritual music. This does not require any
+ability to create sound, and cannot be heard by mundane means, but any
+spirit within 20 meters can perceive the music. This counts as
+“performing music” for bardic purposes, such as replacing a verbal
+component or powering the Musical Duration feat. This can be used as a
+free area-affect Send Thoughts, but conveys music rather than raw ideas,
+and is therefore far more culture-dependent. Also, any lyrics in this
+music must both rhyme and scan.</p>
 <h4 id="checklist-caster">Checklist Caster</h4>
 <p>Prerequisite: wizard.<br />
 You can take 5 on spell craft checks to cast spells.</p>
@@ -3109,6 +3112,9 @@ of $500.</p>
 as an artificer’s discounted time metamagic) do not affect the cost. The
 fact that some casters have such advantages is already factored into the
 cost, and the law of one price applies.</p>
+<p>Note: An object with a permanent repeating trigger of activation is
+known as a “wand” and costs $5(26+R)^2+500 for 1/day or 11 total
+uses.</p>
 <p><strong>Bespelled Item:</strong> Cost of casting the spell plus cost
 of the mundane item.</p>
 <h1 id="spirits-as-monsters">Spirits as Monsters</h1>
@@ -3116,11 +3122,13 @@ of the mundane item.</p>
 make sound, or even perceive physical objects. Most non-soul spirits
 have some form of soulsight, so it can perceive people. It can cast
 spells if it has spellcasting feats, but cannot target anything it
-cannot perceive. (Among things it cannot do is summon more incorporeal
-spirits: the Summon Spirit effect requires a material target to anchor
-on. Elemental Sight or Body sight can solve this problem, but Soul Sight
-cannot.) This includes human souls that are seperated from the body,
-whether by Astral Projection, Send Spirit or Death.</p>
+cannot perceive, though it can use indirect targetting via Detect
+Surface Thoughts or Scrying on an embodied spirit. (Among things it
+cannot do is summon more incorporeal spirits: the Summon Spirit effect
+requires a material target to anchor on. Elemental Sight or Body sight
+can solve this problem, but Soul Sight cannot.) This includes human
+souls that are seperated from the body, whether by Astral Projection,
+Send Spirit or Death.</p>
 <p>Spirits can move themselves, flying at 10 meters per round unless
 otherwise specified.</p>
 <p>Spirits have hit points equal to their wisdom score. They do not take
