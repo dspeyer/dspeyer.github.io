@@ -716,8 +716,8 @@ Prerequisites: Astral Projection, lifestyle appropriate to spirit type
 You can treat your soul as another spirit type when this benefits you.  For example, you can astral project into a prepared body for such a spirit.  You must maintain a lifestyle in line with the values of that spirit type.
 
 #### Possess Animal
-Prerequisites: Astral Projection
-If you disembodiedly enter the same space an animal (including a human body) you may attempt to take possession of it.  Make a will save opposed by the animal's will save.  If the animal is already possessed by another spirit, make a second will save opposed by that spirit's will save.  Every time you act against the animal's nature (or against the rival possessor's nature), or for every hour you hold them, make opposed will save(s) again to maintain the possession.  Each time you such saves, the defender gets a stacking +1 bonus for each previous save.  Additionally, a soul which grew up in the body in question gets a flat +10.
+Prerequisites: Astral Projection     
+If you disembodiedly enter the same space an animal (including a human body) you may attempt to take possession of it.  Make a will save opposed by the animal's will save.  If the animal is already possessed by another spirit, make a second will save opposed by that spirit's will save.  Every time you act against the animal's nature (or against the rival possessor's nature), or for every hour you hold them, make opposed will save(s) again to maintain the possession.  Each time you make such saves, the defender gets a stacking +1 bonus for each previous save.  Additionally, a soul which grew up in the body in question gets a flat +10.
 
 #### Familiar
 Prerequisites: Druid or any other active magic source and handle animal +5    
@@ -836,7 +836,7 @@ When casting a spell on an ensouled being (including yourself) you can anchor th
 
 #### Techno Mage
 Prerequisite: mad scientist, craft(electronics) +10.    
-You can use electronic magic boosters. Each booster provides a specific effect or set of effects.  These effects do not count as part of the spell’s rating for cost or max rating purposes, though they do for casting DC and any other purposes.  A booster costs 1000 money and consumes 1 mega joule per squared rating of the effects delivered. 
+You can use electronic magic boosters. Each booster provides a specific effect or set of effects.  These effects do not count as part of the spell’s rating for cost or max rating purposes, though they do for casting DC and any other purposes.  A booster costs 1000 money, consumes 1 mega joule and masses 1kg all per squared rating of the effects delivered.   Note that the mass does not include the power source, and batteries can be quite heavy.  You can only use a single booster for any given casting.
 
 #### Holy Warrior
 Prerequisite: paladin, soul sight, spellcraft 5 ranks, Bab+3.    
@@ -1295,13 +1295,15 @@ Effects:
 
 
 1. Place Beacon: Create a teleport beacon and attach it to the target (cost: 3)
-1. Locate Beacon: Determine the distance and direction to one of your teleport beacons (cost: 5)
+1. Locate Beacon: Determine the distance and direction to one of your teleport beacons (cost: 5) [No target]
 2. Teleport Send: Transport target object to a teleport beacon of yours (cost: 9)
-3. Teleport Fetch: Transport object with teleport beacon to target location (cost: 10)
+3. Teleport Fetch: Transport object with teleport beacon to a location directly adjacent to target object  (cost: 10)
 4. Portal: Create a X meter diameter circular portal connecting target surface and your teleport beacon.  Anyone passing through the portal (in either direction) emerges on the other side.  (cost: 12+X)
 8. Warp Step: When target object moves, it finds space contracted such that the distance it covers is X times farther than speed times time would predict (cost: X^2)
 6. Holding: Container holding X cubic meters now holds 8X, doubling all linear dimensions (cost: 5+X)
 7. Grow/Shrink: Object changes size (but not mass) by a linear factor of X (cost: 2*X)
+
+Distance to a teleport beacon is generally irrelevant.  The target (specified as such in the effect description) must be targeted normally, but the beacon is not a target.  Even the speed-of-light limit does not apply.
 
 Warp Step does not effect the kinetic energy imparted by collision, magnetic field generated if charged, special relativistic effects, or similar velocity-dependent physics.  Note that newtonian relativity still applies: distance traveled relative to an object depends on velocity relative to that object.
 
