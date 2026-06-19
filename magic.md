@@ -1388,7 +1388,7 @@ If Borrow or Bestow Skill is maintained for 30 days, the skill becomes permanent
 
 If multiple durations can be mentioned in describing a spell, each can be extended or permanencied separately.
 
-Conditions for a trigger must be discernable by the bespelled object.  It can sense acceleration, physical contact and whether the contacting object is ensouled, the contacting person choosing to activate it (an intuitive mental motion), and any Sight feats the original caster had.  If the object is manufactured for a specific purpose, the spell can detect when the object is used for that purpose.  Targets for retarget use the same senses, plus an awareness of the object's orientation.
+Conditions for a trigger must be discernable by the bespelled object.  It can sense acceleration, physical contact and whether the contacting object is ensouled, the contacting person choosing to activate it (an intuitive mental motion), and any Sight feats the original caster had.  If the object is manufactured for a specific purpose, the spell can detect when the object is used for that purpose.  If the object is an animal, the spell can detect the animal's world-model, but in a low-resolution sort of way.  Targets for retarget use the same senses, plus an awareness of the object's orientation.
 
 If the spell on a repeating trigger has a duration, activating the trigger again cancels any otherwise active instances of the spell.
 
