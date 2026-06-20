@@ -1398,7 +1398,7 @@ If the spell specifies an effect on the caster, and you are casting it with a tr
 
 1. Reach: A spell normally requiring touch now affects a target within 10m (cost: 1)
 2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: 3X)
-2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of 2^X (cost: 5X)
+2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of X^2 (cost: 2X)
 2. Outsized Target: Effect a target that would normally be X times too large or small (cost: X)
 3. Affinity: Target an animal or a spirit inhabiting that animal because a piece of the animal is in range  (cost: 8)
 
@@ -1410,6 +1410,8 @@ Magics of Space can be stacked on top of each other.  You could, for example, ta
 2. Chain: Effect X additional valid targets, each of which must be within 10m of the previous (cost: X)
 
 When using Spread on a spell with duration, the spread effect is instantaneous and the spell continues on all targets that were within the sphere at casting time.
+
+For a target partially inside a spread, part of the target is affected if that makes sense for the spell (e.g. fractional damage), but if not then the target is affected iff more than half of it is inside the spread.
 
 ## Magics of Power
 

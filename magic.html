@@ -3001,7 +3001,7 @@ may make that person count as the caster.</p>
 <li>Enlarge: Increase a one-dimensional aspect of a spell by a factor of
 10^X (cost: 3X)</li>
 <li>Widen: Increase a three-dimensional aspect of a spell by a linear
-factor of 2^X (cost: 5X)</li>
+factor of X^2 (cost: 2X)</li>
 <li>Outsized Target: Effect a target that would normally be X times too
 large or small (cost: X)</li>
 <li>Affinity: Target an animal or a spirit inhabiting that animal
@@ -3020,6 +3020,10 @@ within 10m of the previous (cost: X)</li>
 <p>When using Spread on a spell with duration, the spread effect is
 instantaneous and the spell continues on all targets that were within
 the sphere at casting time.</p>
+<p>For a target partially inside a spread, part of the target is
+affected if that makes sense for the spell (e.g. fractional damage), but
+if not then the target is affected iff more than half of it is inside
+the spread.</p>
 <h2 id="magics-of-power">Magics of Power</h2>
 <ol type="1">
 <li>Heighten: Add X to save DC (cost: 2X)</li>
