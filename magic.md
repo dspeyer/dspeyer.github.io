@@ -1,4 +1,4 @@
-<!--  pandoc -s --toc -c combat/theme.css -T "UD" --metadata title="Magic System" < magic.md > magic.html -->
+<!--  pandoc -s --toc -c combat/theme.css -T "UD Magic" --metadata title="Coherently Approximate Scientific Thaumaturgy" < magic.md > magic.html -->
 
 <style>
 #TOC { column-count: 2; }
@@ -76,6 +76,8 @@ The default spellcraft dc is based on using verbal and somatic components (i.e. 
 | Assistant | -2 |
 
 Note that these are modifiers to the DC, not the rating.  They do not affect cost.
+
+Somatic components require a hand (or nonhuman equivalent).  They hand may either be empty or wielding something relevant to the magic source (a weapon for a monk, instrument for a bard, tool for artificier, holy symbol for shaman, etc.).
 
 Material components, like verbal and somatic, are personal and meaningful to the caster.  Gathering components for a spell from a well-packed component pouch takes a standard action.
 
@@ -1400,18 +1402,24 @@ If the spell specifies an effect on the caster, and you are casting it with a tr
 2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: 3X)
 2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of X^2 (cost: 2X)
 2. Outsized Target: Effect a target that would normally be X times too large or small (cost: X)
-3. Affinity: Target an animal or a spirit inhabiting that animal because a piece of the animal is in range  (cost: 8)
+3. Affinity: Target a multicellular life form or a spirit inhabiting that life form because a piece of it is in range  (cost: 8)
 
 Magics of Space can be stacked on top of each other.  You could, for example, target a point 10m above a person whose hair you hold by combining Affinity and Reach.
 
+Affinity targetting does work on recent corpses, but not those which have significantly decayed (dead for one day under typical circumstances).  Affinity targetting a cnidarian effects a single zooid, not a colony.
+
 ## Magics of Targeting
 
-1. Spread: Instead of a single target, the spell effects all valid targets in a meter radius sphere (cost: 1)
+1. Spread: Instead of a single target, the spell effects all valid targets in a cube one meter on a side (cost: 1)
 2. Chain: Effect X additional valid targets, each of which must be within 10m of the previous (cost: X)
 
-When using Spread on a spell with duration, the spread effect is instantaneous and the spell continues on all targets that were within the sphere at casting time.
+When using Spread on a spell with duration, the spread effect is instantaneous and the spell continues on all targets that were within the space at casting time.
 
 For a target partially inside a spread, part of the target is affected if that makes sense for the spell (e.g. fractional damage), but if not then the target is affected iff more than half of it is inside the spread.
+
+A one meter cube can fit four humans, if they are able and willing to crouch awkwardly and hug each other.  Four people lying down fill a two meter square, but with agressively tight shelving, five layers of those squares can be packed into two meters of height for 20 total.
+
+Spreads in shapes other than cubes are possible, but cubes are the most widely used because they are efficient and practical.
 
 ## Magics of Power
 

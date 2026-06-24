@@ -206,7 +206,7 @@ id="toc-disensouled-bodies">Disensouled Bodies</a></li>
 </ul></li>
 </ul>
 </nav>
-<!--  pandoc -s --toc -c combat/theme.css -T "UD" --metadata title="Magic System" < magic.md > magic.html -->
+<!--  pandoc -s --toc -c combat/theme.css -T "UD Magic" --metadata title="Coherently Approximate Scientific Thaumaturgy" < magic.md > magic.html -->
 <style>
 #TOC { column-count: 2; }
 #TOC::before { content: ""; }
@@ -393,6 +393,10 @@ your magic source affects these):</p>
 </table>
 <p>Note that these are modifiers to the DC, not the rating. They do not
 affect cost.</p>
+<p>Somatic components require a hand (or nonhuman equivalent). They hand
+may either be empty or wielding something relevant to the magic source
+(a weapon for a monk, instrument for a bard, tool for artificier, holy
+symbol for shaman, etc.).</p>
 <p>Material components, like verbal and somatic, are personal and
 meaningful to the caster. Gathering components for a spell from a
 well-packed component pouch takes a standard action.</p>
@@ -3004,26 +3008,36 @@ may make that person count as the caster.</p>
 factor of X^2 (cost: 2X)</li>
 <li>Outsized Target: Effect a target that would normally be X times too
 large or small (cost: X)</li>
-<li>Affinity: Target an animal or a spirit inhabiting that animal
-because a piece of the animal is in range (cost: 8)</li>
+<li>Affinity: Target a multicellular life form or a spirit inhabiting
+that life form because a piece of it is in range (cost: 8)</li>
 </ol>
 <p>Magics of Space can be stacked on top of each other. You could, for
 example, target a point 10m above a person whose hair you hold by
 combining Affinity and Reach.</p>
+<p>Affinity targetting does work on recent corpses, but not those which
+have significantly decayed (dead for one day under typical
+circumstances). Affinity targetting a cnidarian effects a single zooid,
+not a colony.</p>
 <h2 id="magics-of-targeting">Magics of Targeting</h2>
 <ol type="1">
 <li>Spread: Instead of a single target, the spell effects all valid
-targets in a meter radius sphere (cost: 1)</li>
+targets in a cube one meter on a side (cost: 1)</li>
 <li>Chain: Effect X additional valid targets, each of which must be
 within 10m of the previous (cost: X)</li>
 </ol>
 <p>When using Spread on a spell with duration, the spread effect is
 instantaneous and the spell continues on all targets that were within
-the sphere at casting time.</p>
+the space at casting time.</p>
 <p>For a target partially inside a spread, part of the target is
 affected if that makes sense for the spell (e.g. fractional damage), but
 if not then the target is affected iff more than half of it is inside
 the spread.</p>
+<p>A one meter cube can fit four humans, if they are able and willing to
+crouch awkwardly and hug each other. Four people lying down fill a two
+meter square, but with agressively tight shelving, five layers of those
+squares can be packed into two meters of height for 20 total.</p>
+<p>Spreads in shapes other than cubes are possible, but cubes are the
+most widely used because they are efficient and practical.</p>
 <h2 id="magics-of-power">Magics of Power</h2>
 <ol type="1">
 <li>Heighten: Add X to save DC (cost: 2X)</li>
