@@ -637,6 +637,7 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Astral Projection | | Briefly detatch your soul from your body |
 |Ambiguous Soul | Astral Projection, appropriate lifestyle | Treat your soul as another spirit type |
 |Possess Animal | Astral Projection | Operate an animal (including a human body) as if it were your own body |
+| Effect Specialist | Magic School | 4 free metamagics for a specific effect. |
 |Familiar | Druid or any other active magic source and handle animal +5 | You have lightly connected your soul to a single animal |
 |Fluid Caster |  6 ranks spell craft | Treat your spells as one rating smaller for purposes of cost |
 |Multi School |  two known schools | combine effects from different schools in one spell |
@@ -720,6 +721,11 @@ You can treat your soul as another spirit type when this benefits you.  For exam
 #### Possess Animal
 Prerequisites: Astral Projection     
 If you disembodiedly enter the same space an animal (including a human body) you may attempt to take possession of it.  Make a will save opposed by the animal's will save.  If the animal is already possessed by another spirit, make a second will save opposed by that spirit's will save.  Every time you act against the animal's nature (or against the rival possessor's nature), or for every hour you hold them, make opposed will save(s) again to maintain the possession.  Each time you make such saves, the defender gets a stacking +1 bonus for each previous save.  Additionally, a soul which grew up in the body in question gets a flat +10.
+
+#### Effect Specialist
+Prerequisites: Magic School
+You know a particular effect so well that you can easily attach metamagic to it.  Chose a single effect from a magic school you know.  When casting spells that use only that non-metamagic effect, gain 4 rating of free metamagic effects.
+You can take this feat multiple times, but must pick a different effect each time.
 
 #### Familiar
 Prerequisites: Druid or any other active magic source and handle animal +5    
