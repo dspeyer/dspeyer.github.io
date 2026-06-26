@@ -644,6 +644,7 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Fluid Caster |  6 ranks spell craft | Treat your spells as one rating smaller for purposes of cost |
 |Multi School |  two known schools | combine effects from different schools in one spell |
 |Multi Source Caster  |  two active magic source, spellcraft +10 | Split cost between schools |
+| Source Combination | Multi Source Caster, spellcraft +15, metamagic reducing special ability | Use metamagic reduction ability from one magic source with spells from another |
 | Necromancy | Summoning (infernals) | Use corpses as basis for infernal body |
 |Spells of Power | - | Save DC +2 for a linked skill |
 |Spell School | - | You know a spell school and all its standard effects |
@@ -744,6 +745,10 @@ You can combine effects from different schools in one spell. All schools must be
 #### Multi Source Caster 
 Prerequisite: two active magic source, spellcraft +10.    
 When you cast a spell from a school both magic sources support, you may split the cost between them, as if you had cast two spells, one from each source, whose ratings sum to the original rating.
+
+#### Source Combination
+Prerequisites: Multi Source Caster, spellcraft +15, metamagic reducing special ability    
+You can use the metamagic reduction ability from one of your magic sources (see Artificier and Mad Biomancer) with spells from your other magic source.
 
 #### Necromancy
 Prerequisites: Summoning (infernals)    
