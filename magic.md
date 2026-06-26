@@ -1664,3 +1664,5 @@ It is common for Liches who are going into danger (or are generally paranoid) to
 Phantoms who eschew Necromancy and inhabit more constructed spirit bodies are known as demi-liches.  And while they still require the Ambiguous Soul feat, they have a choice of which spirit category to emulate.
 
 Phantoms who eschew Ambiguous Soul and preserve their entire self may still use Elemental Manipulator effects as a crude approximation of a body.  Animated elements do not provide senses, however, so such phantoms use some combination of Sight feats, Telepathy, and Scrying.
+
+<script src=combat/linkableh.js></script>

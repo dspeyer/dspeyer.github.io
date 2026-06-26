@@ -151,3 +151,15 @@ td {
 td:first-child {
     border-left: none;
 }
+
+a.selflink {
+    font-size: 75%;
+    line-height: 86%;
+    text-decoration: none;
+    border: 1px solid blue;
+    height: .5em;
+    width: .5em;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: end;
+}
