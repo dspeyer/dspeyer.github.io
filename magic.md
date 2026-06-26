@@ -61,6 +61,8 @@ To be able to cast the spell, you need:
 * If the spell has duration, to not already have too many spells active
 * To make a spellcraft check dc 10 + 2 X rating.
 
+When calculating your total modifier to the linked skill, include active spells and scholarly advice but not circumstances or tool bonuses.  Exception: do add the quality of reference texts when ritual-casting.
+
 The number of active spells a caster can maintain is equal to their intelligence modifier or two, whichever is higher.  A caster who has reached this limit can still cast instantaneous spells, but cannot cast anything with a duration.
 
 The default spellcraft dc is based on using verbal and somatic components (i.e. speaking at a normal volume and gesturing emphatically with at least one hand) but not material components.  It is also based on a standard action casting time.  Modifiers are available (though check if your magic source affects these):
@@ -1384,12 +1386,19 @@ If Borrow or Bestow Skill is maintained for 30 days, the skill becomes permanent
 
 # Metamagics
 
+These effects make other effects within a spell more powerful.  They do not require a feat and can be applied to any school.
+
+Some metamagics have costs which are percentages.  These are percentages *of the non-metamagic* costs.  Round up if necessary, but at the very end (in case you have multiple non-integer costs).
+
+For example, suppose you wish to grant all your grad students a +6 morale bonus to gather information checks for the next 20 hours, and you have so many that they need a 9x9 meter room to fit.  Encourage skill costs 3.  Spread costs 1.  Widen 3 costs 150% which is 4.5. Extend 3 costs 300% which is 9.  Total rating is 3 + 1 + 4.5 + 9 = 17.5 rounds to 18.
+
 ## Magics of Time
 
-1. Extend: Increase a duration by a factor of 10^X (cost: 3X)
-2. Permanency: Make a duration permanent (cost: 15)
-3. Repeating: Instantaneous spell repeats X times at 1 round intervals (cost: 5X)
-3. Slowly Repeating: Instantaneous spell repeats X times at 1 minute intervals (cost: X)
+1. Extend: Increase a duration by a factor of 10^X (cost: X00%)
+2. Permanency: Make a duration permanent (cost: 500% )
+2. Permanent Wait: Make the duration the spell can sit idle permanent (cost: 300%)
+3. Repeating: Instantaneous spell repeats X times at 1 round intervals (cost: (25X)0%)
+3. Slowly Repeating: Instantaneous spell repeats X times at 1 minute intervals (cost: (5X)0%)
 4. Trigger: Spell remains latent up to 1 hour for a condition, then activates and is discharged (cost: 2)
 5. Repeating Trigger: Spell remains latent for 1 hour and activates whenever a stated condition is met, max 1/rd, max 10X times total OR X per day (cost: 10+X)
 6. Retarget: When spell is triggered, it targets a new target (cost: 1)
@@ -1405,8 +1414,8 @@ If the spell specifies an effect on the caster, and you are casting it with a tr
 ## Magics of Space
 
 1. Reach: A spell normally requiring touch now affects a target within 10m (cost: 1)
-2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: 3X)
-2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of X^2 (cost: 2X)
+2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: X00%)
+2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of X^2 (cost: (5X)0%)
 2. Outsized Target: Effect a target that would normally be X times too large or small (cost: X)
 3. Affinity: Target a multicellular life form or a spirit inhabiting that life form because a piece of it is in range  (cost: 8)
 
@@ -1417,7 +1426,7 @@ Affinity targetting does work on recent corpses, but not those which have signif
 ## Magics of Targeting
 
 1. Spread: Instead of a single target, the spell effects all valid targets in a cube one meter on a side (cost: 1)
-2. Chain: Effect X additional valid targets, each of which must be within 10m of the previous (cost: X)
+2. Chain: Effect X additional valid targets, each of which must be within 10m of the previous (cost: (5X)0%)
 
 When using Spread on a spell with duration, the spread effect is instantaneous and the spell continues on all targets that were within the space at casting time.
 
@@ -1515,11 +1524,40 @@ Usually DC 10: figure out how a spell will interact with edge-cases of its descr
 
 **Scroll:** $2R^2 .  Enables casting a specific spell without school knowledge (compatible magic source still required).
 
-**Spell Cast:** $5R^2 plus extras.  Spells that require qualifications besides a magic source and a single school cost $100 extra.  Spells that will last longer than a day cost $50 per day to a max of $500.
+**Spell Cast:** $5R^2 plus extras.  Spells that require qualifications besides a magic source and a single school cost $100 extra.  Spells that will last longer than a day cost $50 per day to a max of $500.  Ratings over 30 are not available without extraordinary contacts.
 
 Note: abilities that decrease a spell's rating for some casters (such as an artificer's discounted time metamagic) do not affect the cost.  The fact that some casters have such advantages is already factored into the cost, and the law of one price applies.
 
-Note: An object with a permanent repeating trigger of activation is known as a "wand" and costs $5(26+R)^2+500 for 1/day or 11 total uses.
+For convenience, here are some precomputed permanent spell types:
+
+Type of Permanent Spell | Base Rating | Total Rating | Cost |
+| --- | -- | -- | --- |
+| Simple | 1 | 6 | 680 |
+| Simple | 2 | 12 | 1220 |
+| Simple | 3 | 18 | 2120 |
+| Simple | 4 | 24 | 3380 |
+| Simple | 5 | 30 | 5000 |
+| Trigger once | 1 | 6 | 680 |
+| Trigger once | 2 | 10 | 1000 |
+| Trigger once | 3 | 14 | 1480 |
+| Trigger once | 4 | 18 | 2120 |
+| Trigger once | 5 | 22 | 2920 |
+| Trigger once | 6 | 26 | 3880 |
+| Trigger once | 7 | 30 | 5000 |
+| Trigger 3/day | 1 | 17 | 1945 |
+| Trigger 3/day | 2 | 21 | 2705 |
+| Trigger 3/day | 3 | 25 | 3625 |
+| Trigger 3/day | 4 | 29 | 4705 |
+| Trigger once + retarget | 1 | 7 | 745 |
+| Trigger once + retarget | 2 | 11 | 1105 |
+| Trigger once + retarget | 3 | 15 | 1625 |
+| Trigger once + retarget | 4 | 19 | 2305 |
+| Trigger once + retarget | 5 | 23 | 3145 |
+| Trigger once + retarget | 6 | 27 | 4145 |
+| Trigger 3/day + retarget | 1 | 18 | 2120 |
+| Trigger 3/day + retarget | 2 | 22 | 2920 |
+| Trigger 3/day + retarget | 3 | 26 | 3880 |
+| Trigger 3/day + retarget | 4 | 30 | 5000 |
 
 **Bespelled Item:** Cost of casting the spell plus cost of the mundane item.
 

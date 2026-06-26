@@ -344,6 +344,10 @@ the spell’s rating</li>
 active</li>
 <li>To make a spellcraft check dc 10 + 2 X rating.</li>
 </ul>
+<p>When calculating your total modifier to the linked skill, include
+active spells and scholarly advice but not circumstances or tool
+bonuses. Exception: do add the quality of reference texts when
+ritual-casting.</p>
 <p>The number of active spells a caster can maintain is equal to their
 intelligence modifier or two, whichever is higher. A caster who has
 reached this limit can still cast instantaneous spells, but cannot cast
@@ -2978,14 +2982,27 @@ strictly more copies of the feat.</p>
 <p>If Borrow or Bestow Skill is maintained for 30 days, the skill
 becomes permanent and nonmagical.</p>
 <h1 id="metamagics">Metamagics</h1>
+<p>These effects make other effects within a spell more powerful. They
+do not require a feat and can be applied to any school.</p>
+<p>Some metamagics have costs which are percentages. These are
+percentages <em>of the non-metamagic</em> costs. Round up if necessary,
+but at the very end (in case you have multiple non-integer costs).</p>
+<p>For example, suppose you wish to grant all your grad students a +6
+morale bonus to gather information checks for the next 20 hours, and you
+have so many that they need a 9x9 meter room to fit. Encourage skill
+costs 3. Spread costs 1. Widen 3 costs 150% which is 4.5. Extend 3 costs
+300% which is 9. Total rating is 3 + 1 + 4.5 + 9 = 17.5 rounds to
+18.</p>
 <h2 id="magics-of-time">Magics of Time</h2>
 <ol type="1">
-<li>Extend: Increase a duration by a factor of 10^X (cost: 3X)</li>
-<li>Permanency: Make a duration permanent (cost: 15)</li>
+<li>Extend: Increase a duration by a factor of 10^X (cost: X00%)</li>
+<li>Permanency: Make a duration permanent (cost: 500% )</li>
+<li>Permanent Wait: Make the duration the spell can sit idle permanent
+(cost: 300%)</li>
 <li>Repeating: Instantaneous spell repeats X times at 1 round intervals
-(cost: 5X)</li>
+(cost: (25X)0%)</li>
 <li>Slowly Repeating: Instantaneous spell repeats X times at 1 minute
-intervals (cost: X)</li>
+intervals (cost: (5X)0%)</li>
 <li>Trigger: Spell remains latent up to 1 hour for a condition, then
 activates and is discharged (cost: 2)</li>
 <li>Repeating Trigger: Spell remains latent for 1 hour and activates
@@ -3015,9 +3032,9 @@ may make that person count as the caster.</p>
 <li>Reach: A spell normally requiring touch now affects a target within
 10m (cost: 1)</li>
 <li>Enlarge: Increase a one-dimensional aspect of a spell by a factor of
-10^X (cost: 3X)</li>
+10^X (cost: X00%)</li>
 <li>Widen: Increase a three-dimensional aspect of a spell by a linear
-factor of X^2 (cost: 2X)</li>
+factor of X^2 (cost: (5X)0%)</li>
 <li>Outsized Target: Effect a target that would normally be X times too
 large or small (cost: X)</li>
 <li>Affinity: Target a multicellular life form or a spirit inhabiting
@@ -3035,7 +3052,7 @@ not a colony.</p>
 <li>Spread: Instead of a single target, the spell effects all valid
 targets in a cube one meter on a side (cost: 1)</li>
 <li>Chain: Effect X additional valid targets, each of which must be
-within 10m of the previous (cost: X)</li>
+within 10m of the previous (cost: (5X)0%)</li>
 </ol>
 <p>When using Spread on a spell with duration, the spread effect is
 instantaneous and the spell continues on all targets that were within
@@ -3153,14 +3170,181 @@ without school knowledge (compatible magic source still required).</p>
 <p><strong>Spell Cast:</strong> $5R^2 plus extras. Spells that require
 qualifications besides a magic source and a single school cost $100
 extra. Spells that will last longer than a day cost $50 per day to a max
-of $500.</p>
+of $500. Ratings over 30 are not available without extraordinary
+contacts.</p>
 <p>Note: abilities that decrease a spell’s rating for some casters (such
 as an artificer’s discounted time metamagic) do not affect the cost. The
 fact that some casters have such advantages is already factored into the
 cost, and the law of one price applies.</p>
-<p>Note: An object with a permanent repeating trigger of activation is
-known as a “wand” and costs $5(26+R)^2+500 for 1/day or 11 total
-uses.</p>
+<p>For convenience, here are some precomputed permanent spell types:</p>
+<table>
+<thead>
+<tr>
+<th>Type of Permanent Spell</th>
+<th>Base Rating</th>
+<th>Total Rating</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simple</td>
+<td>1</td>
+<td>6</td>
+<td>680</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>2</td>
+<td>12</td>
+<td>1220</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>3</td>
+<td>18</td>
+<td>2120</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>4</td>
+<td>24</td>
+<td>3380</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>5</td>
+<td>30</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>Trigger once</td>
+<td>1</td>
+<td>6</td>
+<td>680</td>
+</tr>
+<tr>
+<td>Trigger once</td>
+<td>2</td>
+<td>10</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Trigger once</td>
+<td>3</td>
+<td>14</td>
+<td>1480</td>
+</tr>
+<tr>
+<td>Trigger once</td>
+<td>4</td>
+<td>18</td>
+<td>2120</td>
+</tr>
+<tr>
+<td>Trigger once</td>
+<td>5</td>
+<td>22</td>
+<td>2920</td>
+</tr>
+<tr>
+<td>Trigger once</td>
+<td>6</td>
+<td>26</td>
+<td>3880</td>
+</tr>
+<tr>
+<td>Trigger once</td>
+<td>7</td>
+<td>30</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>Trigger 3/day</td>
+<td>1</td>
+<td>17</td>
+<td>1945</td>
+</tr>
+<tr>
+<td>Trigger 3/day</td>
+<td>2</td>
+<td>21</td>
+<td>2705</td>
+</tr>
+<tr>
+<td>Trigger 3/day</td>
+<td>3</td>
+<td>25</td>
+<td>3625</td>
+</tr>
+<tr>
+<td>Trigger 3/day</td>
+<td>4</td>
+<td>29</td>
+<td>4705</td>
+</tr>
+<tr>
+<td>Trigger once + retarget</td>
+<td>1</td>
+<td>7</td>
+<td>745</td>
+</tr>
+<tr>
+<td>Trigger once + retarget</td>
+<td>2</td>
+<td>11</td>
+<td>1105</td>
+</tr>
+<tr>
+<td>Trigger once + retarget</td>
+<td>3</td>
+<td>15</td>
+<td>1625</td>
+</tr>
+<tr>
+<td>Trigger once + retarget</td>
+<td>4</td>
+<td>19</td>
+<td>2305</td>
+</tr>
+<tr>
+<td>Trigger once + retarget</td>
+<td>5</td>
+<td>23</td>
+<td>3145</td>
+</tr>
+<tr>
+<td>Trigger once + retarget</td>
+<td>6</td>
+<td>27</td>
+<td>4145</td>
+</tr>
+<tr>
+<td>Trigger 3/day + retarget</td>
+<td>1</td>
+<td>18</td>
+<td>2120</td>
+</tr>
+<tr>
+<td>Trigger 3/day + retarget</td>
+<td>2</td>
+<td>22</td>
+<td>2920</td>
+</tr>
+<tr>
+<td>Trigger 3/day + retarget</td>
+<td>3</td>
+<td>26</td>
+<td>3880</td>
+</tr>
+<tr>
+<td>Trigger 3/day + retarget</td>
+<td>4</td>
+<td>30</td>
+<td>5000</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Bespelled Item:</strong> Cost of casting the spell plus cost
 of the mundane item.</p>
 <h1 id="spirits-as-monsters">Spirits as Monsters</h1>
