@@ -659,7 +659,8 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Arcane Strike |  Monk or Holy Warrior | You may cast a spell and make an attack as a single standard action |
 |Determined Caster |  monk, Bard or paladin | If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action |
 |Emotive Caster  |  Bard or paladin | Add your charisma bonus (if positive) to your maximum castable spell rating and to any save DCs from the spell |
-|Musical Duration |  Bard, perform (any music) +10 | If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost |
+|Musical Duration |  Bard, perform (any music) +10 | Half-cost all duration metamagic while music lasts |
+|Musical Reach |  Bard, perform (any music) +10 | Half-cost all targetting and spacial metamagic so long as targets can hear the music |
 | Silent Song | Bard, Telepathy | You can create entirely spiritual music |
 |Checklist Caster  |  wizard | You  can take 5 on spell craft checks to cast spells |
 |Improved Checklist Caster |  Checklist Caster | You may roll 5d4 instead of 1d20 on spell craft checks to cast spells |
@@ -810,8 +811,13 @@ Add your charisma bonus (if positive) to your maximum castable spell rating and 
 
 #### Musical Duration
 Prerequisite: Bard, perform (any music) +10.    
-If you cast a spell with a duration while performing music, you may set the duration to “as long as the music lasts” at no cost.    
-*This feat only applies to spells cast from these sources*
+If you cast a spell with a duration while performing music, you may treat all time metamagics as half cost (round up).  However, the spell ends immediately if you stop performing music.    
+*This feat only applies to spells cast from this source*
+
+#### Musical Reach
+Prerequisite: Bard, perform (any music) +10.    
+If you cast a spell while performing music, you may treat all targetting and spacial metamagics as half cost (round up).  All targets must be able to hear your music.    
+*This feat only applies to spells cast from this source*
 
 #### Silent Song
 Prerequisites: Bard, Telepathy    
