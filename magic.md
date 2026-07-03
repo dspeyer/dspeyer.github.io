@@ -995,6 +995,8 @@ Effects:
 5. Ghost Sound: Create sound, up to shouting volume.  Requires perform(imitation) check to fool anyone.  (cost: 1)
 6. Crashing Thunder: Deal Xd4 sonic damage, which bypasses all dr and er.  Any creature which loses more than half its hp to sonic damage is also deafened. (cost: X)
 
+A manipulator uses its caster's BAB and skill ranks.
+
 ## Elemental Earth
 
 This school affects rocks, including gravel and sand.
@@ -1010,6 +1012,8 @@ Effects:
 2. Shape Stone: Reshape a stone of up to X cubic meters.  Detailed shapes require a craft(stonecarving) check.  (cost: 1+X)
 3. Minerology:  Convert minerals in target rock into other minerals obeying stoichiometry but ignoring chemical energy (cost: 5)
 3. Earthquake: All creatures within 200m fall prone (save negates); all structures take 100 damage (cost: 15)
+
+A manipulator uses its caster's BAB and skill ranks.
 
 ## Elemental Fire
 
@@ -1044,6 +1048,8 @@ Effects:
 3. Magnetize: Target metal becomes magnetic, with an effective strength score of X (cost: X)
 4. Corrode: Target metal object of up to X cubic centimeters reacts with surrounding chemicals, know(chem) check required (cost: X)
 
+A manipulator uses its caster's BAB and skill ranks.
+
 Magnetize does not require a ferromagnetic target.  However, if the target is ferromagnetic and the effect is maintained for over an hour, the magnetization will become permanent and nonmagical.
 
 To corrode metal into a form it naturally would (e.g. Iron Oxide) is DC 10.  To corrode metal into something unnatural but stable (e.g. Gold Oxide, Copper Nitrate) is DC 15.  Something highly unstable (e.g. Iron Azide) is DC 20.
@@ -1064,6 +1070,8 @@ Duration: skill total rounds
 3. Salt Swap: Convert X liters of salt water into half acid and half alkali.  Each liter deals 1d6 corrosion damage on a splash, or 5d6/round for continual contact.  (cost: X)
 4. Fog: Convert 10X grams of water into 10X cubic meters of dense fog (cost: X)
 
+A manipulator uses its caster's BAB and skill ranks.
+
 Combining Salt Swap and Fog produces a corrosive fog that deals 1d6/round to anyone or anything in it.
 
 ## Elemental Wood
@@ -1081,6 +1089,8 @@ Effects:
 1. Wood Manipulator: Animate X kg of wood.  It can fly, carry objects or perform combat manuevers with an effective strength score of 10+X and dex of 10+X. (cost: 3+X)
 2. Shape Wood: Reshape a wood object of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Shillelagh: Wooden melee or thrown weapon gains +X to attack, +Xd4 damage (cost: 2*X max X=5)
+
+A manipulator uses its caster's BAB and skill ranks.
 
 ## Enchantment
 
@@ -1584,7 +1594,7 @@ Spirits have specific environments they're comfortable in.  A spirit outside of 
 
 Most magically created bodies have vulnerabilities, determined by what class of spirit would inhabit them.
 
-A generic CR X spirit inhabiting a magically created body has ability scores 8+X, base attack X/2 and X ranks in all thematically relevant skills.  Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8 slashing for infernals or aberrations.  Fire elemental's natural weapons do an additional 1d6 fire damage.
+A generic CR X spirit inhabiting a magically created body has ability scores 8+X, base attack X/2 and X ranks in all thematically relevant skills.  Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8 slashing for infernals or aberrations.  Fire elemental's natural weapons do an additional 1d6 fire damage.  Created bodies take no damage from piercing weapons and half damage from slashing weapons, because they're held together by magic and not physical forces.
 
 
 ## Celestials
