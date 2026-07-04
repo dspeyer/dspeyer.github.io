@@ -801,7 +801,7 @@ You may cast a spell and make an attack as a single standard action. The spell a
 
 #### Determined Caster
 Prerequisite: monk, Bard or paladin.   
-If you fail a spellcasting check, you can immediately try again (to cast the same spell) as a swift action.  The casting dc is unchanged.    
+If you fail a spellcraft check to cast a spell (including as a ritual), you can immediately try again (to cast the same spell) as a swift action.  The casting dc is unchanged.    
 *This feat only applies to spells cast from these sources*
 
 #### Emotive Caster 
