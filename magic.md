@@ -968,10 +968,10 @@ Effects:
 2. Enhance Ability: Grant +X enhancement bonus to a physical attribute (cost: 2*X)
 3. Enhance Save: Grant +X enhancement bonus to reflex or fortitude saves (cost: 2*X)
 4. Enhance Movement: Multiply a movement speed by 1+X/4 (cost: X)
-5. Enhance Natural Weapons: Increase damage dice on natural attacks by 2X faces to a maximum of 12 (cost: X)
+5. Enhance Natural Weapons: Increase damage die on natural attacks by X steps (cost: X, max X=3)
 6. Enhance Natural Attack: Increase DC for natural attacks by X (cost: 2X)
 
-If Enhance Natural Weapons produces a nonstandard die size (e.g. d5), round up (e.g. to a d6)
+Natural weapon damage die steps are the same progression used for size changes.  If the underlying rules don't provide such, use: 1, 1d2, 1d3, 1d4, 1d6, 1d8, 1d10, 1d12, 2d8, 2d10, 2d12, 3d10, 3d12.
 
 For purposes of this school, a human's unarmed strike counts as a natural weapon, and any unarmed combat technique with a save dc (e.g. a blood choke) counts as a natural attack.
 
