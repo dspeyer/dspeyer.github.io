@@ -1517,13 +1517,13 @@ Magic leaves traces.  The DC to observe that an object had been targeted by a sp
 
 Remove an active spell within 10m.
 
-If your spellcraft check minus 10 exceeds the original caster's spellcraft check minus the DC, the spell is ended.  If the original caster's check wasn't saved, roll it now, but reroll any value that would not have succeeded in the first place.
+If your spellcraft check minus 15 exceeds the original caster's spellcraft check minus the DC, the spell is ended.  If the original caster's check wasn't saved, roll it now, but reroll any value that would not have succeeded in the first place.
 
 #### Counterspell
 
 Block a spell being cast.  You must have a way of perceiving the spell, and a readied action.
 
-Like Dispel, but subtract 15 from the counterspelling check.  Unlike dispel, multiple people can counterspell at once, in which case their (check minus 15)s sum.
+Like Dispel, but subtract 20 from the counterspelling check.  Unlike dispel, multiple people can counterspell at once, in which case their (check minus 20)s sum.
 
 #### Identify Spell
 
