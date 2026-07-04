@@ -1098,7 +1098,7 @@ This school affects the brains of animals, particularly the parts that manage em
 
 Save: Will    
 Skill: Diplomacy (cha)    
-Target: Spirit within 10m    
+Target: Animal within 10m    
 Duration: Skill total rounds
 
 Effects:
