@@ -1132,7 +1132,7 @@ Note: someone charmed and then treated in an unfriendly manner will not only cea
 
 Morale bonuses or penalties apply to physical and social skills, will saves, and melee attack rolls.  Note that a creature that cannot perform an action does not become able to from a morale bonus.
 
-For lullaby, a target who merely fails their will save becomes drowsy, taking a -3 penalty on all rolls.  A target who fails by 5 or more actually falls asleep (taking time to lie down first).  A target who fails by 10 or more cannot be awoken by mundane means until the spell expires.
+For lullaby, a target who merely fails their will save becomes drowsy, taking a -2 penalty on all rolls.  A target who fails by 5 or more actually falls asleep (taking time to lie down first).  A target who fails by 10 or more cannot be awoken by mundane means until the spell expires.
 
 ## Health
 
