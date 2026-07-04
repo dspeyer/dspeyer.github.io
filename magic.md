@@ -155,9 +155,9 @@ It should be presumed that any civilized high-magic setting has spellbooks avail
 
 Under most circumstances, souls are so specialized in possessing bodies that they cannot directly manipulate engrionic matter with any efficiency.  As such, most humans cannot cast spells.  Those who can are those with a magic source.  The source determines the cost associated with spellcasting and which schools the mage can cast.  Each source also comes with a special benefit and drawback.
 
-A magic source has both a deep nature and an activation requirement.  A mage who has not activated their powers is known as “latent”.  For some magic sources, latent magi experience the special benefits and drawbacks, but mostly not.
+A magic source has both a deep nature and an activation requirement.  A mage who has not activated their powers is known as “latent”, while one who has is known as "awakened".  For some magic sources, latent magi experience the special benefits and drawbacks, but mostly not.
 
-Awaking magic triggers a temporary euphoria that makes learning more magic very easy.  When you awaken, take a bonus magic feat.  You must still meet any prerequisites.  If you awaken in the midst of action (by gaining a  magic source for which you already meet the activation criteria), you get the bonus feat when next you have a bit of downtime to study in.
+Activating magic triggers a temporary euphoria that makes learning more magic very easy.  When you awaken, take a bonus magic feat.  You must still meet any prerequisites.  If you awaken in the midst of action (by gaining a  magic source for which you already meet the awakening criteria), you get the bonus feat when next you have a bit of downtime to study in.
 
 Latent mages can on rare occasions cast spells using improvised (inefficient and unreliable) effects under extreme stress or intense emotion.  This cannot be done deliberately, and generally goes badly for all involved, but it is how some latent mages learn what they are.
 
@@ -218,7 +218,7 @@ Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell 
 
 Obtaining magical ancestry if you are not born with it is nearly impossible.  In theory it could be achieved by killing a powerful spirit and grafting pieces of their soul onto yourself, or maybe given by an even more powerful being, but these are legends, not known techniques.
 
-Half-blood souls are extremely nutritious and oddly visible to demons, so once a half-blood activates his powers, demons will spontaneously attack.  Most will simply summon themselves in and attack immediately, but some will attempt subtlety.  When a half-blood child is expected, the parents may hide all information about spellcraft from them to prevent them from activating before they master some non-magical defenses.  Alternatively, schools for half-bloods may be placed in highly defensible pocket dimensions where infernals can't directly target their conjury spells.
+Half-blood souls are extremely nutritious and oddly visible to demons, so once a half-blood awakens his powers, demons will spontaneously attack.  Most will simply summon themselves in and attack immediately, but some will attempt subtlety.  When a half-blood child is expected, the parents may hide all information about spellcraft from them to prevent them from awakening before they master some non-magical defenses.  Alternatively, schools for half-bloods may be placed in highly defensible pocket dimensions where infernals can't directly target their conjury spells.
 
 In addition to rest, half bloods can refill their spell pool by eating magic gems (see wizards).
 
@@ -317,7 +317,7 @@ The crystal must be at least 1cm on a side.  Note that this makes it 3 grams for
 
 A wizard, including a latent wizard, can use a magic gem as the cost of a spell.  The gem's rating is decreased by the spell's.  Once the rating is reduced to zero, the gem reverts to being a mundane crystal and the spell that created the gem counts as completed.
 
-An active wizard can create a magic gem using a spell.  The spell's rating is 1.2 times the rating of the gem to be created, rounded up.  By default, the gem lasts one hour, though a shorter time may be chosen at no additional cost.  Gems empowerments count against the limit of active spells.  They cannot be combined with Metamagics of Targeting.
+An awoken wizard can create a magic gem using a spell.  The spell's rating is 1.2 times the rating of the gem to be created, rounded up.  By default, the gem lasts one hour, though a shorter time may be chosen at no additional cost.  Gems empowerments count against the limit of active spells.  They cannot be combined with Metamagics of Targeting.
 
 In theory, magic gems could form without spells given the right combination of natural magic and precipitation of crystals, most likely in a plutonic intrusion.  Most worlds do not have these.
 
