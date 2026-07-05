@@ -928,9 +928,10 @@ It is sometimes possible to evade Very Specific Resistance by inventing a new ef
 
 Optional Resistance specifically works for people (that is, animals possessed by spirits).  You can apply it to a non-possessed animal, in which case any spirit which possesses said animal will have the option to waive resistances.
 
+
 If Retroactive and Including Internals are used, any creature or object entering the abjuration with a spell on it will be affected.  If the original spellcraft roll wasn't saved, reroll it but reroll any value that would have failed at the original DC.
 
-Order Spells includes itself (usually last).  Once spells have been ordered, they cannot be reordered.
+Order Spells includes itself (usually last).  Once spells have been ordered, they cannot be reordered.  However, if spells have been ordered and then one expires, and the exact same spell is cast on the same target, it slips into the existing ordering where its predecessor was.
 
 Any caster who could cast a spell on a target effected by an abjuration can sense the abjuration.  No action is required, but deliberate attention is.  Any caster who attempts to cast such a spell will notice the abjuration in time to change their choice of spell.
 
