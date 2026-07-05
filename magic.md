@@ -733,7 +733,7 @@ You can take this feat multiple times, but must pick a different effect each tim
 
 #### Familiar
 Prerequisites: Druid or any other active magic source and handle animal +5    
-You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.
+You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.  The animal can have creature levels no more than half your Handle Animal modifier.  If your familiar dies or you dismiss it, you can find and connect to a new one with one day of effort.
 
 #### Fluid Caster
 Prerequisite: 6 ranks spell craft.    
