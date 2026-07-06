@@ -996,6 +996,7 @@ Effects:
 4. Control Weather: Alter temperature, wind or precipitation by one step in a kilometer radius (cost: 13)
 5. Ghost Sound: Create sound, up to shouting volume.  Requires perform(imitation) check to fool anyone.  (cost: 1)
 6. Crashing Thunder: Deal Xd4 sonic damage, which bypasses all dr and er.  Any creature which loses more than half its hp to sonic damage is also deafened. (cost: X)
+7. Hush: Sound is suppressed in the immediate vicinity of target object.  Any listen checks by or about the target take -2X (cost: X)
 
 A manipulator uses its caster's BAB and skill ranks.
 
