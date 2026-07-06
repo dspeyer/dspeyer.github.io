@@ -922,6 +922,7 @@ Effects:
 5. Including Internals: Abjuration also effects any objects inside the convex hull of the target (cost: 2)
 6. Retroactive: If target already had spells, their casting DCs are increased to the new rating (cost: 1)
 7. Order Spells: Spells on an object can only be dispelled in chosen order (cost: 3)
+8. Abjure Spirits: Target object cannot be possessed or passed through by a spirit.  (cost: 5)
 
 The three resistance types do not stack.
 
@@ -935,6 +936,8 @@ If Retroactive and Including Internals are used, any creature or object entering
 Order Spells includes itself (usually last).  Once spells have been ordered, they cannot be reordered.  However, if spells have been ordered and then one expires, and the exact same spell is cast on the same target, it slips into the existing ordering where its predecessor was.
 
 Any caster who could cast a spell on a target effected by an abjuration can sense the abjuration.  No action is required, but deliberate attention is.  Any caster who attempts to cast such a spell will notice the abjuration in time to change their choice of spell.
+
+If you attempt to cast Abjure Spirits on an object that is already possessed or occuppied by a spirit, the spell fails.  A soul can always possess its usual body regardless of this effect.
 
 ## Augment Senses
 
@@ -1175,6 +1178,8 @@ Effects:
 3. Greater Hex: Target takes -X penalty to all skills and saving throws (cost: 3*X)
 4. Blindness/Etc: Target loses a sense (cost: 4)
 5. Confusion: Target looses a mental faculty, such as words, arithmetic or theory-of-mind (cost: 10)
+
+Blindness/Etc can be used to shut down Othersenses (e.g. Soul Sight).  If you attempt to shut down a sense the target does not have, the target loses a random sense instead.
 
 ## Materialism
 
