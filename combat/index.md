@@ -808,7 +808,9 @@ For heat or cold, armor protects as against piercing for the first round, but do
 
 For electricity, metal armor protects completely and non-metal armor protects as against bludgeoning.
 
-Armor does not protect against sonic damage.
+Armor does not protect against sonic damage.  Nor does it protect against corrosive gasses or fogs unless the Air Sealed special feature is included.
+
+Armor completely negates corrosive splash damage
 
 Impacts with things larger than oneself (including the ground and explosive shockwaves) are bludgeoning but armor counts for half against them.
 
@@ -821,6 +823,8 @@ Impacts with things larger than oneself (including the ground and explosive shoc
 **Titanium** (chain, scale or plate): 3/4 weight, x2 cost (Availability: Information Age)
 
 **Silicon Carbide** (scale only): 3/8 weight, x5 cost (Availability: Information Age)
+
+**Metal Composite Foam** (scale or plate): 1/4 weight, x10 cost, +1 ACP (Availability: Information Age)
 
 **Aluminum Oxide** (plate only): No spot penalty in helmet (Availability: Solar Age)
 

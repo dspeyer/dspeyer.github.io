@@ -596,7 +596,8 @@ Gain class skills:
 
 * Survival
 * Knowledge (biology)
-* Knowledge (nature)
+* Knowledge (chemistry)
+* Knowledge (physics)
 * Handle Animal
 * Craft (medical)
 * Craft (survival gear)
@@ -653,7 +654,7 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Rapid Recovery |  Spellpool | Your Spellpool refills at twice the regular rate, going from empty to full in only four hours |
 |Graceful Failure  |  Half blood or sorcerer | When you fail, still cast a weaker spell |
 |Mana Reach |  druid | pull Mana from somewhat farther away |
-|Natural Spell |  druid, metamorph School, knowledge(nature) +8 | use verbal and somatic components normally while  metamorphed |
+|Natural Spell |  druid, metamorph School, knowledge(biology) +8 | use verbal and somatic components normally while  metamorphed |
 |Stable Enchanter |  artificer, mad scientist, mad biomancer or wizard; spellcraft 6 ranks | Your spell forms are especially stable and require less effort to maintain |
 |Perfectly Stable Enchanter  |  artificer, stable enchanter, spell craft 9 ranks | structure your spells into completely stable forms, separate from yourself |
 |Arcane Strike |  Monk or Holy Warrior | You may cast a spell and make an attack as a single standard action |
@@ -784,7 +785,7 @@ Prerequisite: druid.
 You can pull Mana from somewhat farther away. Treat yourself as being somewhere within a mile of your actual location for purposes of Mana cost. As a side effect, you can sense Mana levels within a mile radius. 
 
 #### Natural Spell
-Prerequisite: druid, metamorph School, knowledge(nature) +8    
+Prerequisite: druid, metamorph School, knowledge(biology) +8    
 You can use verbal and somatic components normally even if a metamorph effect denies you your normal limbs and phonemes, provided you can move and make noise at all.
 
 #### Stable Enchanter
