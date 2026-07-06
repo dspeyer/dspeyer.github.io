@@ -1313,6 +1313,8 @@ Effects:
 
 Grant Othersight can be used to grant Soulsight based on a different magic source the caster is familiar with.
 
+In addition to a spirit, scrying can be cast on an animal or constructed body (see Summoning).
+
 ## Space Manipulation
 
 This school bends space itself.
