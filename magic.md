@@ -163,7 +163,7 @@ Latent mages can on rare occasions cast spells using improvised (inefficient and
 
 A mage with multiple sources must choose which to use for each spell they cast.
 
-In high-magic games, each character starts with a (possibly latent) magic source based on their magic priority.  Outside of chargen, or in games not using magic priority, gaining a magic source requires a deep spiritual undertaking or other extraordinary intervention.
+In high-magic games, characters cat start with a (possibly latent) magic source based on their magic priority (pri 4 = no magic).  Outside of chargen, or in games not using magic priority, gaining a magic source requires a deep spiritual undertaking or other extraordinary intervention.
 
 This is not a complete list of possible magic sources, nor does such a list exist in-universe.  This can cause endless frustration to security-minded people.
 
@@ -196,14 +196,14 @@ druid  | mystical connection to nature | survival +10 | mana | elemental *, augm
 artificer | mystical connection to crafts  | craft (any) +10 | spell pool, regenerates with crafting  | abjuration, elemental air/Earth/wood/metal, materialism, space manipulation | 2 | duration extending metamagic 1/2 cost (round up) on targets you created | save DCs -2
 monk  | mystical connection to martial arts | any attack +7 | vitality |  augment senses, boost, elemental fire, healing, hexing, second sight | 2 | spell craft class for full bab | cannot still-cast 
 Bard  | mystical connection to music | perform (any music) +10 | spell pool, regenerates w/ performance | boost, enchantment, phantasms, telepathy, summonning (fey only) | 2 | can take cross class ranks in spell craft provided perform is higher | cannot silent-cast
-wizard | deep understanding of magic itself | spell craft +15 | preparation | any | 3 | can create and use (even when latent) magical gems | cannot quick cast
+wizard | deep understanding of magic itself | spell craft +15 | preparation | any | 2 | can create and use (even when latent) magical gems | cannot quick cast
 sorcerer  | distant magical ancestry | spell craft +5 | spell pool, regenerates with rest | any, max 2 | 3 | can take spellcraft cross class for double cost | cannot ritual-cast
 psyker | touched by the chaos beyond reality | knowledge(planes) +5 | increasing warp phenomena | summonning (aberration only) plus 5 random schools (roll at chargen or when touched)  | 3 | can overreach: add 2 to max rating, 4 to casting check, 8 to effective rating for purposes of warp phenomena  | cannot assist or receive assistance in magic rituals except with other psykers
 astrologer | unhealthy obsession with stars  | knowledge (astronomy) +7 | increasing risk of rejection | augment senses, elemental air/fire, second sight, shadows and light, space manipulation | 3 | 1/day may preroll d20 for one planned action that day | cannot cast during new moon (or when too far from Earth for this to have meaning)
 mad biomancer | unhealthy obsession with biology | knowledge(biology) +7 | increasing risk of insanity | augment senses, boost, healing, metamorph | 3 | duration extending metamagic 1/2 cost (round up) on living targets | cannot use reagents
 mad scientist | unhealthy obsession with physics | knowledge(physics) +7 | increasing risk of insanity | augment senses, materialism, shadows and light, space manipulation | 3 | can deliberately enter fugue state and roughly aim it | cannot use reagents
-paladin | deep commitment to a righteous cause | knowledge(planes), 1 rank | cast from hp | summonning (celestial only), healing, others based on the cause | 4 | can project unforgeable aura of righteousness | lose powers if betray or abandon cause
-Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell slots | summoning (restricted), others based on patron | 4 | signature spell  | must obey patron's orders (even when latent)
+paladin | deep commitment to a righteous cause | knowledge(planes), 1 rank | cast from hp | summonning (celestial only), healing, others based on the cause | 3 | can project unforgeable aura of righteousness | lose powers if betray or abandon cause
+Shaman | made a pact with a powerful spirit | knowledge(planes), 1 rank | spell slots | summoning (restricted), others based on patron | 3 | signature spell  | must obey patron's orders (even when latent)
 
 
 ## Half Blood 
@@ -299,7 +299,7 @@ A bard may treat any creation of music as the verbal component of a spell (inclu
 **Activation:** spell craft +15    
 **Cost:** preparation    
 **Compatible Schools:** any    
-**Pri:** 3    
+**Pri:** 2    
 **Extra Ability:** can create and use (even when latent) magical gems    
 **Restriction:** cannot quick cast    
 
@@ -455,7 +455,7 @@ A mad scientist's fugue state is like a mad biomancer's, except that if they ent
 **Activation:** knowledge(planes), 1 rank    
 **Cost:** cast from hp    
 **Compatible Schools:** summonning (celestial only), healing, others based on the cause    
-**Pri:** 4    
+**Pri:** 3    
 **Extra Ability:** can project unforgeable aura of righteousness    
 **Restriction:** lose powers if betray or abandon cause    
 
@@ -475,7 +475,7 @@ Whenever a paladin casts a spell, they lose HP equal to the spell's rating.  The
 **Activation:** knowledge(religion), 1 rank    
 **Cost:** spell slots    
 **Compatible Schools:** summoning (restricted), others based on patron and pact     
-**Pri:** 4    
+**Pri:** 3    
 **Extra Ability:** signature spell    
 **Restriction:** must obey patron's orders (even when latent)    
 
