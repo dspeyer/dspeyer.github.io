@@ -1500,7 +1500,32 @@ Basically usable: Xd4 electric damage to target (rating 2X)
 
 Polished and optimized: Xd6 electric damage to target (rating X)
 
-# Other Uses for Spellcraft
+# Skills
+
+## Knowledge (Arcana)
+
+Knowledge (Arcana) is a knowledge skill that covers magic, spells, magic sources and related concepts.
+
+Example DCs:
+
+* DC 10 to know that a particular school or source exists and roughly what it does
+* DC 15 to know the specific capabilities of a magic source or about a specific effect
+* DC 20 to know the specific behavior of an effect
+
+As with any knowledge skill, checks are not needed to remember things you have personally encountered.  In particular, you know the limits of your own abilities even if you have no ranks in knowledge(arcana).
+
+## Knowledge (Religion)
+
+Knowledge (Religion) is a knowledge skill that covers spirits, souls, holiness and holy customs.
+
+Example DCs:
+
+* DC 10 to know general facts about spirit types or the names and interests of the most powerful spirits
+* DC 15 to know what is done in the human soul vs brain
+
+## Spellcraft
+
+Spellcraft is an intelligence-based technical skill that suffers from armor check penalty (for arms, if the armor rules distinguish this).
 
 Besides casting spells, spellcraft can be used for other things.  These uses do not require a magic source.  All except Identify Spell require a standard action (but see the Magic Sight feat).
 
@@ -1537,6 +1562,25 @@ Without Detect Magic, you can still deduce an incoming spell's identity from som
 #### Deduce Spell
 
 Usually DC 10: figure out how a spell will interact with edge-cases of its description.
+
+## Othersight
+
+Othersight is a wisdom-based mental skill that does not suffer from armor check penalty.  It is a racial skill for anyone with a Sight feat.  It represents how precisely you can discern things via othersight.
+
+Example DCs:
+
+* A paladin of justice using soul-sight on an honest businessman:
+    * DC 5: He is weakly aligned with justice
+    * DC 10: He approves of justice, but does not consider it his responsibility
+    * DC 15: There are a great many unjust things that he would absolutely never do even at extreme cost to himself, and he honors those who ensure justice beyond that, but he still will not put serious effort into establishing justice unless it's also in his personal interest.
+* Element Sight:
+    * DC 10: Read the combination of a standard padlock
+    * DC 15: Recognize a human shape by the dirt on their clothing
+    * DC 20: Distinguish water from wine based on the water concentration
+    * DC 80: Read the circuit diagram of an integrated chip
+* Life Sight
+    * DC 5: Determine if someone is more or less than half dead
+    * DC 15: Get exact hit point values
 
 # Purchasing Magic
 
