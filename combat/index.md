@@ -848,6 +848,10 @@ Impacts with things larger than oneself (including the ground and explosive shoc
 
 **Inertics**: Armor grants full protection against impacts with objects larger than oneself.  Also negates all damage from high gravity environments.  Each round inertics are active consumes 1MJ.  Cost +1000, Weight +1, not counting power source.  Available from Star Age.
 
+**Silver-Plated**: Metal armors only.  Cost +500.  Counts as silver for magical purposes.  Shiny.
+
+**Holy**: Must be decorated with holy symbols and then blessed by a cleric.  Counts as a holy object for magical purposes.  Cost +50, though often available free if the wearer is devout or going on a religiously aligned mission.
+
 ## Armor Builder
 
 <div>
