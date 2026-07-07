@@ -1263,6 +1263,8 @@ Effects:
 
 If an invisible creature interacts with the target, the target gets a fresh will save.  If the creature injures the target, the target adds twice the damage to the will save.
 
+If you make your will save against a figment or glamour, you do perceive it.  You just know that it isn't real and continue to perceive reality unimpeded.  
+
 ## Shadows and Light
 
 This school manipulates light itself.
