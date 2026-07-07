@@ -1404,8 +1404,8 @@ Effects:
 1. Mental Screech: Target takes Xd4 vitality damage (cost: X)
 2. Detect Surface Thoughts: Caster learns what the target is currently thinking (cost: 3)
 3. Search Memories: Caster learns the answer to a single question that the target knows (cost: 5)
-4. Borrow Skill: Caster gains target's ranks in a single skill or a single feat target knows (cost: 7)
-5. Bestow Skill: Target gains use of caster's ranks in a single skill, or a single feat (cost: 7)
+4. Borrow Skill: Caster gains up to 3X of target's ranks in a single skill or a single feat target knows (cost: 6+X)
+5. Bestow Skill: Target gains use of up to 3X of caster's ranks in a single skill, or a single feat (cost: 6+X)
 
 Thoughts delivered via Send Thought feel foreign, but in a way that people unfamiliar with telepathy might not pick up on.
 
@@ -1413,7 +1413,7 @@ If the target makes their save against Insinuate Thought, the effect acts like S
 
 Skill ranks gained via Borrow or Bestow skill do not stack with actual ranks, but do with other bonuses such as skill focus.  If a feat that can be taken multiple times and stacks with itself is gained this way, the magical and natural feats stack if and only if the donor has strictly more copies of the feat.
 
-If Borrow or Bestow Skill is maintained for 30 days, the skill becomes permanent and nonmagical.
+If Borrow or Bestow Skill is maintained at least 8 hours a day for 30 days, the skill becomes permanent and nonmagical.  Skills gained this way are capped by class levels, just like normal skills.
 
 # Metamagics
 
@@ -1599,7 +1599,7 @@ Example DCs:
 
 **Scroll:** $2R^2 .  Enables casting a specific spell without school knowledge (compatible magic source still required).
 
-**Spell Cast:** $5R^2 plus extras.  Spells that require qualifications besides a magic source and a single school cost $100 extra.  Spells that will last longer than a day cost $50 per day to a max of $500.  Ratings over 30 are not available without extraordinary contacts.
+**Spell Cast:** $5R^2 plus extras.  Spells that require qualifications besides a magic source and a single school cost $100 extra, or more if it's a rare qualification or one that anticorrelates with the school.  Spells that will last longer than a day cost $50 per day to a max of $500.  Ratings over 30 are not available without extraordinary contacts.
 
 Note: abilities that decrease a spell's rating for some casters (such as an artificer's discounted time metamagic) do not affect the cost.  The fact that some casters have such advantages is already factored into the cost, and the law of one price applies.
 
@@ -1633,6 +1633,10 @@ Type of Permanent Spell | Base Rating | Total Rating | Cost |
 | Trigger 3/day + retarget | 2 | 22 | 2920 |
 | Trigger 3/day + retarget | 3 | 26 | 3880 |
 | Trigger 3/day + retarget | 4 | 30 | 5000 |
+
+Also, 30 days of Bestow Skill typically requires 120 double-extended castings.  For 3 ranks or 1 feat, this is a rating 21 spell costing $2305 each (extra 100 for needing to have the skill in question) for $265800 total.
+
+Hiring someone to be the target of your Borrow Skill typically costs only $100/day, but doing this in your backstory counts against starting equipment as if Bestow Skill.  Having spent a solid month borrowing the skill came at a serious opportunity cost, and starting equipment is based on what you have, not how you got it.
 
 **Bespelled Item:** Cost of casting the spell plus cost of the mundane item.
 
