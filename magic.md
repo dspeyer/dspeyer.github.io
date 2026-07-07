@@ -725,7 +725,7 @@ You can treat your soul as another spirit type when this benefits you.  For exam
 
 #### Possess Animal
 Prerequisites: Astral Projection     
-If you disembodiedly enter the same space an animal (including a human body) you may attempt to take possession of it.  Make a will save opposed by the animal's will save.  If the animal is already possessed by another spirit, make a second will save opposed by that spirit's will save.  Every time you act against the animal's nature (or against the rival possessor's nature), or for every hour you hold them, make opposed will save(s) again to maintain the possession.  Each time you make such saves, the defender gets a stacking +1 bonus for each previous save.  Additionally, a soul which grew up in the body in question gets a flat +10.
+If you disembodiedly enter the same space an animal (including a human body) you may attempt to take possession of it.  Make a will save opposed by the animal's will save.  If the animal is already possessed by another spirit, make a second will save opposed by that spirit's will save.  Every time you act against the animal's nature (or against the rival possessor's nature), or for every hour you hold them, or for every alcoholic bevarage they consume (explained [here](#souls)), make opposed will save(s) again to maintain the possession.  Each time you make such saves, the defender gets a stacking +1 bonus for each previous save.  Additionally, a soul which grew up in the body in question gets a flat +10.
 
 #### Effect Specialist
 Prerequisites: Magic School
@@ -1646,7 +1646,7 @@ Spirits have hit points equal to their wisdom score.  They do not take damage fr
 
 Spirits have specific environments they're comfortable in.  A spirit outside of such an environment for an hour must make a DC 10 will save to hold itself together, then additional will saves at incrementing DCs each hour thereafter.  A spirit that straddles a planar boundary and is only uncomfortable on one side will snap back to the other, but a monoplanar spirit will perish.  A spirit which rests for five minutes in a comfortable environmnet resets this counter.
 
-Most magically created bodies have vulnerabilities, determined by what class of spirit would inhabit them.
+Each class of spirit has a mundane substance which interfeares with their native magic.  These substances deal damage to created bodies in various degrees, and prevent disembodied spirits from passing through them.  A disembodied spirit cannot directly perceive objects made of this substance (unless some other ability allows them to) but can notice that there's a place they can't go.
 
 A generic CR X spirit inhabiting a magically created body has ability scores 8+X, base attack X/2 and X ranks in all thematically relevant skills.  Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8 slashing for infernals or aberrations.  Fire elemental's natural weapons do an additional 1d6 fire damage.  Created bodies take no damage from piercing weapons and half damage from slashing weapons, because they're held together by magic and not physical forces.
 
@@ -1733,6 +1733,8 @@ A human soul is normally found piloting a human body.  A soul whose body has die
 In fact, a soul is only comfortable in its body (or in a Spirit Anchor).  However, a phantom that fails its will save to survive in an uncomfortable environment has the option to become a ghost rather than vanishing altogether.
 
 Souls cannot operate bodies created with the Create Body magic effect.  Souls *can* operated actual living human bodies besides their own *if* those bodies are not currently inhabited by another soul (or said soul deliberately steps aside to let them in).
+
+Souls are vulnerable to alcohol.  A disembodied soul cannot pass through a concentrated alcoholic beverage.  A soul possessing a living animal must make an additional will save if it consumes alcohol, and one possessing a dead body via Ambiguous Soul and Necromancy suffers (or enjoys) intoxication and poisoning as if alive.  Created bodies housing souls (e.g. via Ambiguous Soul) take 1.5x damage from weapons coated in alcohol.  Natural ensouled bodies suffer more from alcohol poisoning than similar unensouled bodies, but this is already encorporated into the alcohol poisoning rules.
 
 There is persistant speculation that souls do straddle a planar boundary, and when they cannot find rest in this world, they snap back to the other.  There is no solid evidence for this, but there is no proof to the contrary, and many wish to believe.
 
