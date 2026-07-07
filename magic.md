@@ -83,6 +83,8 @@ Somatic components require a hand (or nonhuman equivalent).  They hand may eithe
 
 Material components, like verbal and somatic, are personal and meaningful to the caster.  Gathering components for a spell from a well-packed component pouch takes a standard action.
 
+Verbal, somatic and material components only apply to humans and similar beings.  Spirits that routinely operate disembodiedly don't use them and don't take penalties or bonuses.
+
 Assisting in a spell requires a DC 10 spellcraft check and is only possible in ritual casting.  A 1 minute ritual can accept one assistant, whereas a 1 hour can take assistants equal to the primary caster's wisdom modifier.
 
 If the spell allows a save, the dc is 10 plus the caster's int mod (plus any bonuses from feats or the Heighten Spell effect).
