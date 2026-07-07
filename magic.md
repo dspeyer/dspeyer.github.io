@@ -1714,13 +1714,50 @@ Skills: Bluff: 9, Diplomacy: 9, Knowledge(Planes): 8, Listen: 12, Spellcraft: 8,
 Schools: Enchantment, Phantasms (except Indirect Figments), Summoning (infernals only)     
 Magic Cost: Spellpool 36 (regrows with rest)    
 HP: 12    
-Feats: Necromancy, Spells of Power, 2 x Fluid Caster
+Feats: Necromancy, Spells of Power, 2 x Fluid Caster    
+CR: 6
 
 When a Blood Drinker deals damage with its bite attack, it may either heal that much damage to itself or restore that many points of spellpool.
 
 In addition to normal vulnerabilities, blood drinker bodies are also vulnerable to wood.  They take no damage from contact, but double from wooden weapons.  A critical piercing hit from a wooden weapon destroys them.
 
 ^1 Assuming possession of a body
+
+### Tvar
+
+A Tvar (plural Tvari) is a creature of simple pecking orders.  They believe that the strong should prey upon the weak and the weak should serve the strong.  They regard themselves (accurately) as quite strong, but will submit to greater power.
+
+When a tvar occupies a constructed body, it takes the rough form of a giant wolf.
+
+Size: Large    
+Str: 18^1 Dex: 16^1 Con: 16^1 Int: 6 Wis: 14 Cha: 12    
+Base Attack: 6    
+Attacks^1: 2xClaw +8 1d10+4 slashing and Bite +8 1d12+4 piercing    
+Skills: Knowledge(planes): 7 Listen: 11 Heal: 11 Smell: 19 Spot: 11 Spellcraft: 7 Spellcraft(casting): 11    
+Schools: Healing (self only), Metamorph (self only; caniforms only), Summoning (infernals only)     
+Magic Cost: Spellpool 36 (regrows with rest or see below)    
+HP: 32    
+Feats: Improved Natural Attack (bite), Spells of Skill (heal), Iron Will    
+Saves: Ref: 5^1 Fort: 5^1 Will: 9    
+CR: 6
+
+^1 Assuming possession of a body
+
+When a tvar deals HP damage, it regenerates spellpool equal to the damage dealt.  When it eats meat, it regenerates 1 SP.  A tvar has a +4 bonus to spellcraft when attempting to summon another tvar.
+
+When a disembodied tvar makes contact with a human, it can attempt possession.  The tvar and human make opposed will saves.  The human gets a +10 bonus unless it was bitten by a tvar in the past round.  If the tvar's save is higher, the resulting combination is a werewolf (see below).
+
+A tvar's self-only healing and metamorph do not work on constructed bodies: only living ones.
+
+In addition to normal metamorphs, a tvar possessing a human can take on a monstrous hybrid form, gaining +8 str, +6 dex, +6 con, +8 smell and claws and bite normal for its size.  This is a rating 3 effect that does not require a template.  Non-tvar mages have never succeeded in duplicating it.
+
+In addition to holy items, a tvar is vulnerable to silver, taking double damage from silver weapons and ammunition.  Furthermore, a tvar cannot cast spells on a target that has silver embedded in it.  This, combined with the sheer strangeness of some of their abilities, suggests they may have a touch of abberant ancestry.
+
+### Werewolf
+
+A werewolf is a human body piloted simultaneously by a soul and a tvar.  When a circumstance is important to both of them, they make opposed will saves for control, with circumstance bonuses of up to +8 depending on the importance of the circumstance.  In addition, the tvar gains a +4 morale bonus on the night of the full moon.  Whichever loses the contested save can try again after an hour or when the stakes increase.  Regardless of who is in control, both have access to the body's senses.
+
+When the soul is in charge, the tvar will generally assist in surviving and winning fights -- even if the fight is for a cause the tvar disapproves of.  When the tvar is in charge, the soul can do whatever it wants that doesn't require a body (often this is nothing).  In combat they have separate actions, but act on the same initiative.
 
 ## Abberations
 
