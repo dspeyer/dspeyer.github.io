@@ -1032,3 +1032,5 @@ Not actually a thing you do, but a thing that can happen.  The choice between at
 **Rage:** *(Prereq: Fury)* You may spend an addrenal surge to gain +4 str, +2 to attacks and +2 temporary hit points in all body parts for the next minute.
 
 **Extra Surge:** Gain one extra addrenal surge.  You may take this feat multiple times, to a maximum of your once more than your con bonus.
+
+<script src=combat/linkableh.js></script>

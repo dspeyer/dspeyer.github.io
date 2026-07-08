@@ -1120,7 +1120,7 @@ Effects:
 
 1. Charm: Target becomes X levels friendlier (cost: X^2)
 2. Encourage Skill: Target gains +X morale bonus to one applicable skill (cost: X)
-2. Encourage Will: Target gains +X morale bonus to one applicable skill (cost: 2*X)
+2. Encourage Will: Target gains +X morale bonus to will saves (cost: 2*X)
 2. Encourage Attacks: Target gains +X morale bonus to attacks (cost: 3*X)
 3. Encourage: Target gains +X morale bonus to all applicable rolls (cost: 4*X)
 4. Discourage: Target takes a -X morale penalty to all applicable rolls (cost: 2*X)
