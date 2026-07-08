@@ -65,6 +65,8 @@ When calculating your total modifier to the linked skill, include active spells 
 
 The number of active spells a caster can maintain is equal to their intelligence modifier or two, whichever is higher.  A caster who has reached this limit can still cast instantaneous spells, but cannot cast anything with a duration.
 
+On the spellcraft check, receive a synergy bonus for the linked skill.
+
 The default spellcraft dc is based on using verbal and somatic components (i.e. speaking at a normal volume and gesturing emphatically with at least one hand) but not material components.  It is also based on a standard action casting time.  Modifiers are available (though check if your magic source affects these):
 
 |Casting Style | DC Modifier |
@@ -1570,7 +1572,7 @@ Example DCs:
 
 ## Spellcraft
 
-Spellcraft is an intelligence-based technical skill that suffers from armor check penalty (for arms, if the armor rules distinguish this).
+Spellcraft is an intelligence-based technical skill that suffers from armor check penalty (for arms, if the armor rules distinguish this).  Spellcraft checks relating to a specific school receive synergy from that school's linked skill.
 
 Besides casting spells, spellcraft can be used for other things.  These uses do not require a magic source.  All except Identify Spell require a standard action (but see the Magic Sight feat).
 
