@@ -960,7 +960,7 @@ Effects:
 2. Enhance hearing: Grant +X enhancement bonus to listen (cost: X)
 3. Enhance taste and smell: Grant +X enhancement bonus to checks to taste or smell precisely, including survival checks to follow tracks by scent (cost: X)
 5. Enhance touch: Grant +X insight bonus to any check based on precise manipulation of hidden objects, including mechanical lockpicking and some annoying repairs (cost: 2*X)
-6. Enhance proprioception: Grant +X insight bonus to any dex-based skill check or attack roll (cost: 2*X)
+6. Enhance proprioception: Grant +X insight bonus to any dex-based skill check or attack roll (cost: 3*X)
 7. Enhance hunger and thirst: Target knows exactly which nutrients their body requires and in what ratio, but not those nutrients' names (cost: 4)
 
 ## Boost
@@ -1119,8 +1119,10 @@ Duration: Skill total rounds
 Effects:
 
 1. Charm: Target becomes X levels friendlier (cost: X^2)
-2. Encourage Skill: Target gains +2*X morale bonus to one applicable skill (cost: X)
-3. Encourage: Target gains +X morale bonus to all applicable rolls (cost: 2*X)
+2. Encourage Skill: Target gains +X morale bonus to one applicable skill (cost: X)
+2. Encourage Will: Target gains +X morale bonus to one applicable skill (cost: 2*X)
+2. Encourage Attacks: Target gains +X morale bonus to attacks (cost: 3*X)
+3. Encourage: Target gains +X morale bonus to all applicable rolls (cost: 4*X)
 4. Discourage: Target takes a -X morale penalty to all applicable rolls (cost: 2*X)
 5. Taboo: Target becomes unwilling to perform a simple action of the caster's choice, such as “harm me” (cost: 3)
 6. Lesser Compel: Target becomes compelled to perform a simple action (cost: 3)
@@ -1145,7 +1147,7 @@ Levels of friendliness:
 
 Note: someone charmed and then treated in an unfriendly manner will not only cease to feel friendly, but will often be especially angry at being so betrayed.
 
-Morale bonuses or penalties apply to physical and social skills, will saves, and melee attack rolls.  Note that a creature that cannot perform an action does not become able to from a morale bonus.
+Morale bonuses or penalties apply to physical and social skills, will saves, and attack rolls.  Note that a creature that cannot perform an action does not become able to from a morale bonus.
 
 For lullaby, a target who merely fails their will save becomes drowsy, taking a -2 penalty on all rolls.  A target who fails by 5 or more actually falls asleep (taking time to lie down first).  A target who fails by 10 or more cannot be awoken by mundane means until the spell expires.
 
