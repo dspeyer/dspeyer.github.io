@@ -182,6 +182,12 @@ id="toc-example-effect-progression">Example Effect Progression</a></li>
 <ul>
 <li><a href="#knowledge-arcana" id="toc-knowledge-arcana">Knowledge
 (Arcana)</a></li>
+<li><a href="#knowledge-geology" id="toc-knowledge-geology">Knowledge
+(Geology)</a></li>
+<li><a href="#knowledge-meteorology"
+id="toc-knowledge-meteorology">Knowledge (Meteorology)</a></li>
+<li><a href="#knowledge-nature" id="toc-knowledge-nature">Knowledge
+(Nature)</a></li>
 <li><a href="#knowledge-religion" id="toc-knowledge-religion">Knowledge
 (Religion)</a></li>
 <li><a href="#spellcraft" id="toc-spellcraft">Spellcraft</a></li>
@@ -199,6 +205,8 @@ as Monsters</a>
 <ul>
 <li><a href="#blood-drinker" id="toc-blood-drinker">Blood
 Drinker</a></li>
+<li><a href="#tvar" id="toc-tvar">Tvar</a></li>
+<li><a href="#werewolf" id="toc-werewolf">Werewolf</a></li>
 </ul></li>
 <li><a href="#abberations" id="toc-abberations">Abberations</a></li>
 <li><a href="#souls" id="toc-souls">Souls</a></li>
@@ -359,6 +367,8 @@ ritual-casting.</p>
 intelligence modifier or two, whichever is higher. A caster who has
 reached this limit can still cast instantaneous spells, but cannot cast
 anything with a duration.</p>
+<p>On the spellcraft check, receive a synergy bonus for the linked
+skill.</p>
 <p>The default spellcraft dc is based on using verbal and somatic
 components (i.e. speaking at a normal volume and gesturing emphatically
 with at least one hand) but not material components. It is also based on
@@ -411,6 +421,9 @@ symbol for shaman, etc.).</p>
 <p>Material components, like verbal and somatic, are personal and
 meaningful to the caster. Gathering components for a spell from a
 well-packed component pouch takes a standard action.</p>
+<p>Verbal, somatic and material components only apply to humans and
+similar beings. Spirits that routinely operate disembodiedly don’t use
+them and don’t take penalties or bonuses.</p>
 <p>Assisting in a spell requires a DC 10 spellcraft check and is only
 possible in ritual casting. A 1 minute ritual can accept one assistant,
 whereas a 1 hour can take assistants equal to the primary caster’s
@@ -1617,8 +1630,9 @@ of druids, and so included here.</p>
 <ul>
 <li>Survival</li>
 <li>Knowledge (biology)</li>
-<li>Knowledge (chemistry)</li>
-<li>Knowledge (physics)</li>
+<li>Knowledge (geology)</li>
+<li>Knowledge (meteorology)</li>
+<li>Knowledge (nature)</li>
 <li>Handle Animal</li>
 <li>Craft (medical)</li>
 <li>Craft (survival gear)</li>
@@ -1997,7 +2011,7 @@ by the animal’s will save. If the animal is already possessed by another
 spirit, make a second will save opposed by that spirit’s will save.
 Every time you act against the animal’s nature (or against the rival
 possessor’s nature), or for every hour you hold them, or for every
-alcoholic bevarage they consume (explained <a href="#Souls">here</a>),
+alcoholic bevarage they consume (explained <a href="#souls">here</a>),
 make opposed will save(s) again to maintain the possession. Each time
 you make such saves, the defender gets a stacking +1 bonus for each
 previous save. Additionally, a soul which grew up in the body in
@@ -2247,13 +2261,13 @@ spell.<br />
 <td>4</td>
 <td>Elemental Air</td>
 <td>affects air. Most simple gasses qualify as air.</td>
-<td>Knowledge(physics)</td>
+<td>Knowledge(physics) or Knowledge(meteorology)</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Elemental Earth</td>
 <td>affects rocks, including gravel and sand.</td>
-<td>Knowledge(chemistry)</td>
+<td>Knowledge(chemistry) or Knowledge(geology)</td>
 </tr>
 <tr>
 <td>6</td>
@@ -2463,7 +2477,7 @@ a path of ionized (and therefore slightly conductive) air from the
 voltage source to the target. Otherwise magically produced electricity
 will act naturally.</p>
 <p>Save: Reflex<br />
-Skill: Knowledge(physics)<br />
+Skill: Knowledge(physics) or Knowledge(meteorology)<br />
 Target: Object or patch of air within 20m<br />
 Duration: skill total rounds or instantaneous</p>
 <p>Effects:</p>
@@ -2487,10 +2501,12 @@ also deafened. (cost: X)</li>
 object. Any listen checks by or about the target take -2X (cost: X)</li>
 </ol>
 <p>A manipulator uses its caster’s BAB and skill ranks.</p>
+<p>Any ambiguities from the choice of skills are resolved in the
+caster’s favor.</p>
 <h2 id="elemental-earth">Elemental Earth</h2>
 <p>This school affects rocks, including gravel and sand.</p>
 <p>Save: Reflex<br />
-Skill: Knowledge(chemistry)<br />
+Skill: Knowledge(chemistry) or Knowledge(geology)<br />
 Target: Object or patch of earth within 20m<br />
 Duration: skill total rounds or instantaneous</p>
 <p>Effects:</p>
@@ -2506,6 +2522,8 @@ obeying stoichiometry but ignoring chemical energy (cost: 5)</li>
 structures take 100 damage (cost: 15)</li>
 </ol>
 <p>A manipulator uses its caster’s BAB and skill ranks.</p>
+<p>Any ambiguities from the choice of skills are resolved in the
+caster’s favor.</p>
 <h2 id="elemental-fire">Elemental Fire</h2>
 <p>This school affects the process of combustion and anything
 burning.</p>
@@ -2801,6 +2819,9 @@ object or creature of the same size and general shape (cost: 2)</li>
 <p>If an invisible creature interacts with the target, the target gets a
 fresh will save. If the creature injures the target, the target adds
 twice the damage to the will save.</p>
+<p>If you make your will save against a figment or glamour, you do
+perceive it. You just know that it isn’t real and continue to perceive
+reality unimpeded.</p>
 <h2 id="shadows-and-light">Shadows and Light</h2>
 <p>This school manipulates light itself.</p>
 <p>Save: None<br />
@@ -3023,10 +3044,10 @@ their own (cost: 3)</li>
 thinking (cost: 3)</li>
 <li>Search Memories: Caster learns the answer to a single question that
 the target knows (cost: 5)</li>
-<li>Borrow Skill: Caster gains target’s ranks in a single skill or a
-single feat target knows (cost: 7)</li>
-<li>Bestow Skill: Target gains use of caster’s ranks in a single skill,
-or a single feat (cost: 7)</li>
+<li>Borrow Skill: Caster gains up to 3X of target’s ranks in a single
+skill or a single feat target knows (cost: 6+X)</li>
+<li>Bestow Skill: Target gains use of up to 3X of caster’s ranks in a
+single skill, or a single feat (cost: 6+X)</li>
 </ol>
 <p>Thoughts delivered via Send Thought feel foreign, but in a way that
 people unfamiliar with telepathy might not pick up on.</p>
@@ -3039,8 +3060,9 @@ actual ranks, but do with other bonuses such as skill focus. If a feat
 that can be taken multiple times and stacks with itself is gained this
 way, the magical and natural feats stack if and only if the donor has
 strictly more copies of the feat.</p>
-<p>If Borrow or Bestow Skill is maintained for 30 days, the skill
-becomes permanent and nonmagical.</p>
+<p>If Borrow or Bestow Skill is maintained at least 8 hours a day for 30
+days, the skill becomes permanent and nonmagical. Skills gained this way
+are capped by class levels, just like normal skills.</p>
 <h1 id="metamagics">Metamagics</h1>
 <p>These effects make other effects within a spell more powerful. They
 do not require a feat and can be applied to any school.</p>
@@ -3196,6 +3218,39 @@ specific effect</li>
 <p>As with any knowledge skill, checks are not needed to remember things
 you have personally encountered. In particular, you know the limits of
 your own abilities even if you have no ranks in knowledge(arcana).</p>
+<h2 id="knowledge-geology">Knowledge (Geology)</h2>
+<p>Covers rocks, minerals, soils, erosion and tectonics. Receives a
+synergy from knowledge(chemistry).</p>
+<h2 id="knowledge-meteorology">Knowledge (Meteorology)</h2>
+<p>Covers weather and climate. Receives a synergy from
+knowledge(physics).</p>
+<p>Can be used to predict the weather</p>
+<ul>
+<li>From local observations:
+<ul>
+<li>DC 15: today’s weather</li>
+<li>DC 25: tomorrow’s weather</li>
+</ul></li>
+<li>With observations from several hundred miles:
+<ul>
+<li>DC 10: today’s weather</li>
+<li>DC 20: tomorrow’s weather</li>
+<li>DC 30: four days out</li>
+</ul></li>
+<li>With detailed observations from thousands of miles plus satellite
+imagery and composite radar maps
+<ul>
+<li>DC 5: today’s weather</li>
+<li>DC 10: tomorrow’s weather</li>
+<li>DC 15: four days out</li>
+<li>DC 25: ten days out</li>
+</ul></li>
+</ul>
+<h2 id="knowledge-nature">Knowledge (Nature)</h2>
+<p>Not it’s own set of knowledge but an attempt to understand biology,
+geology, meteorology and physics as part of a coherent whole. You can
+use half ranks in this in place of any of those. Grants a synergy to
+Survival</p>
 <h2 id="knowledge-religion">Knowledge (Religion)</h2>
 <p>Knowledge (Religion) is a knowledge skill that covers spirits, souls,
 holiness and holy customs.</p>
@@ -3207,7 +3262,9 @@ interests of the most powerful spirits</li>
 </ul>
 <h2 id="spellcraft">Spellcraft</h2>
 <p>Spellcraft is an intelligence-based technical skill that suffers from
-armor check penalty (for arms, if the armor rules distinguish this).</p>
+armor check penalty (for arms, if the armor rules distinguish this).
+Spellcraft checks relating to a specific school receive synergy from
+that school’s linked skill.</p>
 <p>Besides casting spells, spellcraft can be used for other things.
 These uses do not require a magic source. All except Identify Spell
 require a standard action (but see the Magic Sight feat).</p>
@@ -3285,9 +3342,10 @@ school of magic.</p>
 without school knowledge (compatible magic source still required).</p>
 <p><strong>Spell Cast:</strong> $5R^2 plus extras. Spells that require
 qualifications besides a magic source and a single school cost $100
-extra. Spells that will last longer than a day cost $50 per day to a max
-of $500. Ratings over 30 are not available without extraordinary
-contacts.</p>
+extra, or more if it’s a rare qualification or one that anticorrelates
+with the school. Spells that will last longer than a day cost $50 per
+day to a max of $500. Ratings over 30 are not available without
+extraordinary contacts.</p>
 <p>Note: abilities that decrease a spell’s rating for some casters (such
 as an artificer’s discounted time metamagic) do not affect the cost. The
 fact that some casters have such advantages is already factored into the
@@ -3461,6 +3519,15 @@ cost, and the law of one price applies.</p>
 </tr>
 </tbody>
 </table>
+<p>Also, 30 days of Bestow Skill typically requires 120 double-extended
+castings. For 3 ranks or 1 feat, this is a rating 21 spell costing $2305
+each (extra 100 for needing to have the skill in question) for $265800
+total.</p>
+<p>Hiring someone to be the target of your Borrow Skill typically costs
+only $100/day, but doing this in your backstory counts against starting
+equipment as if Bestow Skill. Having spent a solid month borrowing the
+skill came at a serious opportunity cost, and starting equipment is
+based on what you have, not how you got it.</p>
 <p><strong>Bespelled Item:</strong> Cost of casting the spell plus cost
 of the mundane item.</p>
 <h1 id="spirits-as-monsters">Spirits as Monsters</h1>
@@ -3493,9 +3560,11 @@ a comfortable environmnet resets this counter.</p>
 <p>Each class of spirit has a mundane substance which interfeares with
 their native magic. These substances deal damage to created bodies in
 various degrees, and prevent disembodied spirits from passing through
-them. A disembodied spirit cannot directly perceive objects made of this
-substance (unless some other ability allows them to) but can notice that
-there’s a place they can’t go.</p>
+them. Relatedly, the spirits (except souls) cannot cast spells on items
+made of this substance and need an additional 4 rating to cast on
+targets encased in it. A disembodied spirit cannot directly perceive
+objects made of this substance (unless some other ability allows them
+to) but can notice that there’s a place they can’t go.</p>
 <p>A generic CR X spirit inhabiting a magically created body has ability
 scores 8+X, base attack X/2 and X ranks in all thematically relevant
 skills. Generic bodies have a 1d6 bludgeoning natural weapon, or 1d8
@@ -3565,7 +3634,8 @@ Schools: Enchantment, Phantasms (except Indirect Figments), Summoning
 (infernals only)<br />
 Magic Cost: Spellpool 36 (regrows with rest)<br />
 HP: 12<br />
-Feats: Necromancy, Spells of Power, 2 x Fluid Caster</p>
+Feats: Necromancy, Spells of Power, 2 x Fluid Caster<br />
+CR: 6</p>
 <p>When a Blood Drinker deals damage with its bite attack, it may either
 heal that much damage to itself or restore that many points of
 spellpool.</p>
@@ -3574,6 +3644,62 @@ vulnerable to wood. They take no damage from contact, but double from
 wooden weapons. A critical piercing hit from a wooden weapon destroys
 them.</p>
 <p>^1 Assuming possession of a body</p>
+<h3 id="tvar">Tvar</h3>
+<p>A Tvar (plural Tvari) is a creature of simple pecking orders. They
+believe that the strong should prey upon the weak and the weak should
+serve the strong. They regard themselves (accurately) as quite strong,
+but will submit to greater power.</p>
+<p>When a tvar occupies a constructed body, it takes the rough form of a
+giant wolf.</p>
+<p>Size: Large<br />
+Str: 18^1 Dex: 16^1 Con: 16^1 Int: 6 Wis: 14 Cha: 12<br />
+Base Attack: 6<br />
+Attacks^1: 2xClaw +8 1d10+4 slashing and Bite +8 1d12+4 piercing<br />
+Skills: Knowledge(planes): 7 Listen: 11 Heal: 11 Smell: 19 Spot: 11
+Spellcraft: 7 Spellcraft(casting): 11<br />
+Schools: Healing (self only), Metamorph (self only; caniforms only),
+Summoning (infernals only)<br />
+Magic Cost: Spellpool 36 (regrows with rest or see below)<br />
+HP: 32<br />
+Feats: Improved Natural Attack (bite), Spells of Skill (heal), Iron
+Will<br />
+Saves: Ref: 5^1 Fort: 5^1 Will: 9<br />
+CR: 6</p>
+<p>^1 Assuming possession of a body</p>
+<p>When a tvar deals HP damage, it regenerates spellpool equal to the
+damage dealt. When it eats meat, it regenerates 1 SP. A tvar has a +4
+bonus to spellcraft when attempting to summon another tvar.</p>
+<p>When a disembodied tvar makes contact with a human, it can attempt
+possession. The tvar and human make opposed will saves. The human gets a
++10 bonus unless it was bitten by a tvar in the past round. If the
+tvar’s save is higher, the resulting combination is a werewolf (see
+below).</p>
+<p>A tvar’s self-only healing and metamorph do not work on constructed
+bodies: only living ones.</p>
+<p>In addition to normal metamorphs, a tvar possessing a human can take
+on a monstrous hybrid form, gaining +8 str, +6 dex, +6 con, +8 smell and
+claws and bite normal for its size. This is a rating 3 effect that does
+not require a template. Non-tvar mages have never succeeded in
+duplicating it.</p>
+<p>In addition to holy items, a tvar is vulnerable to silver, taking
+double damage from silver weapons and ammunition. Furthermore, a tvar
+cannot cast spells on a target that has silver embedded in it. This,
+combined with the sheer strangeness of some of their abilities, suggests
+they may have a touch of abberant ancestry.</p>
+<h3 id="werewolf">Werewolf</h3>
+<p>A werewolf is a human body piloted simultaneously by a soul and a
+tvar. When a circumstance is important to both of them, they make
+opposed will saves for control, with circumstance bonuses of up to +8
+depending on the importance of the circumstance. In addition, the tvar
+gains a +4 morale bonus on the night of the full moon. Whichever loses
+the contested save can try again after an hour or when the stakes
+increase. Regardless of who is in control, both have access to the
+body’s senses.</p>
+<p>When the soul is in charge, the tvar will generally assist in
+surviving and winning fights – even if the fight is for a cause the tvar
+disapproves of. When the tvar is in charge, the soul can do whatever it
+wants that doesn’t require a body (often this is nothing). In combat
+they have separate actions, but act on the same initiative.</p>
 <h2 id="abberations">Abberations</h2>
 <p>Abberations are from somewhat farther away than the elemental planes
 or the feywild, and are correspondingly more confusing. They probably
