@@ -598,8 +598,9 @@ Gain class skills:
 
 * Survival
 * Knowledge (biology)
-* Knowledge (chemistry)
-* Knowledge (physics)
+* Knowledge (geology)
+* Knowledge (meteorology)
+* Knowledge (nature)
 * Handle Animal
 * Craft (medical)
 * Craft (survival gear)
@@ -886,8 +887,8 @@ If you kill one or more ensouled beings immediately before casting a spell, you 
 1 | Abjuration|affects other magic, mostly by making it more difficult.|Knowledge (arcana)|
 2 | Augment Senses|affects biological sensory organs|Heal (wis)    |
 3 | Boost|affects muscles and similar living tissues.|Heal (wis)    |
-4 | Elemental Air|affects air.  Most simple gasses qualify as air.|Knowledge(physics)    |
-5 | Elemental Earth|affects rocks, including gravel and sand.|Knowledge(chemistry)    |
+4 | Elemental Air|affects air.  Most simple gasses qualify as air.|Knowledge(physics) or Knowledge(meteorology)  |
+5 | Elemental Earth|affects rocks, including gravel and sand.|Knowledge(chemistry) or Knowledge(geology)   |
 6 | Elemental Fire|affects the process of combustion and anything burning.|Knowledge(physics)    |
 7 | Elemental Metal|affects metals, including alloys.|Knowledge(chemistry)|
 8 | Elemental Water|affects water|Knowledge(physics)|
@@ -989,7 +990,7 @@ This school affects air.  Most simple gasses qualify as air.
 Lightning falls into this school because aiming it requires creating a path of ionized (and therefore slightly conductive) air from the voltage source to the target.  Otherwise magically produced electricity will act naturally.
 
 Save: Reflex    
-Skill: Knowledge(physics)    
+Skill: Knowledge(physics) or Knowledge(meteorology)    
 Target: Object or patch of air within 20m    
 Duration: skill total rounds or instantaneous    
 
@@ -1005,12 +1006,14 @@ Effects:
 
 A manipulator uses its caster's BAB and skill ranks.
 
+Any ambiguities from the choice of skills are resolved in the caster's favor.
+
 ## Elemental Earth
 
 This school affects rocks, including gravel and sand.
 
 Save: Reflex    
-Skill: Knowledge(chemistry)    
+Skill: Knowledge(chemistry) or Knowledge(geology)    
 Target: Object or patch of earth within 20m    
 Duration: skill total rounds or instantaneous    
 
@@ -1022,6 +1025,8 @@ Effects:
 3. Earthquake: All creatures within 200m fall prone (save negates); all structures take 100 damage (cost: 15)
 
 A manipulator uses its caster's BAB and skill ranks.
+
+Any ambiguities from the choice of skills are resolved in the caster's favor.
 
 ## Elemental Fire
 
@@ -1526,6 +1531,33 @@ Example DCs:
 * DC 20 to know the specific behavior of an effect
 
 As with any knowledge skill, checks are not needed to remember things you have personally encountered.  In particular, you know the limits of your own abilities even if you have no ranks in knowledge(arcana).
+
+## Knowledge (Geology)
+
+Covers rocks, minerals, soils, erosion and tectonics.  Receives a synergy from knowledge(chemistry).
+
+## Knowledge (Meteorology)
+
+Covers weather and climate.  Receives a synergy from knowledge(physics).
+
+Can be used to predict the weather
+
+* From local observations:
+    * DC 15: today's weather
+    * DC 25: tomorrow's weather
+* With observations from several hundred miles:
+    * DC 10: today's weather
+    * DC 20: tomorrow's weather
+    * DC 30: four days out
+* With detailed observations from thousands of miles plus satellite imagery and composite radar maps
+    * DC 5: today's weather
+    * DC 10: tomorrow's weather
+    * DC 15: four days out
+    * DC 25: ten days out
+
+## Knowledge (Nature)
+
+Not it's own set of knowledge but an attempt to understand biology, geology, meteorology and physics as part of a coherent whole.  You can use half ranks in this in place of any of those.  Grants a synergy to Survival
 
 ## Knowledge (Religion)
 
