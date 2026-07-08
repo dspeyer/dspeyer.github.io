@@ -808,9 +808,9 @@ For heat or cold, armor protects as against piercing for the first round, but do
 
 For electricity, metal armor protects completely and non-metal armor protects as against bludgeoning.
 
-Armor does not protect against sonic damage.  Nor does it protect against corrosive gasses or fogs unless the Air Sealed special feature is included.
+Armor protects against corrosive splash damage as against piercing, but does not protect against corrosive fogs or immersion unless Air Sealed, in which case it protects completely.  However, corrosives do damage armor proportionally to how much the armor protects its wearer, and armor reduced to 0 hp is destroyed.
 
-Armor completely negates corrosive splash damage
+Armor does not protect against sonic damage.
 
 Impacts with things larger than oneself (including the ground and explosive shockwaves) are bludgeoning but armor counts for half against them.
 
@@ -842,13 +842,13 @@ Impacts with things larger than oneself (including the ground and explosive shoc
 
 **Camouflage**: Grants +2 to Hide checks, rising to +4 in a chosen environment.  Cost +50.  Limits available decoration to small patches.  Available from Information Age.
 
-**Shiny**: Decreases the effect of laser weapons by 90% before normal DR.  Cannot be combined with camouflage or decoration.  Available from Information Age.
+**Shiny**: Decreases the effect of laser weapons by 90% before normal DR.  Cannot be combined with camouflage or decoration.  Not usable with chain mail.  Cost +50.  Available from Information Age.
 
 **Air-sealed**: Allows the wearer to go up to 8 hours without breathing outside air.  Protects against poison, disease, nanotech and hard vacuum.  Requires all body parts to be covered in fabric or plate.  Cost +5000, Weight +10.  Available from Solar Age.
 
 **Inertics**: Armor grants full protection against impacts with objects larger than oneself.  Also negates all damage from high gravity environments.  Each round inertics are active consumes 1MJ.  Cost +1000, Weight +1, not counting power source.  Available from Star Age.
 
-**Silver-Plated**: Metal armors only.  Cost +500.  Counts as silver for magical purposes.  Shiny.
+**Silver-Plated**: Metal armors only.  Cost +500.  Counts as silver for magical purposes.  Shiny (unless chainmail).  Available from Steam Age.
 
 **Holy**: Must be decorated with holy symbols and then blessed by a cleric.  Counts as a holy object for magical purposes.  Cost +50, though often available free if the wearer is devout or going on a religiously aligned mission.
 
