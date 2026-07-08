@@ -800,7 +800,7 @@ Your spell forms are especially stable and require less effort to maintain. You 
 #### Perfectly Stable Enchanter 
 Prerequisite: artificer, stable enchanter, spellcraft 9 ranks.    
 You can structure your spells into completely stable forms, separate from yourself. Treat this as a meta magic effect with rating +5.  Spells cast with this do not count against your ongoing spell limit.     
-
+*This feat only applies to spells cast from this source*
 
 #### Arcane Strike
 Prerequisite: Monk or Holy Warrior.     
