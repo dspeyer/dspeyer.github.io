@@ -1033,4 +1033,4 @@ Not actually a thing you do, but a thing that can happen.  The choice between at
 
 **Extra Surge:** Gain one extra addrenal surge.  You may take this feat multiple times, to a maximum of your once more than your con bonus.
 
-<script src=combat/linkableh.js></script>
+<script src=linkableh.js></script>
