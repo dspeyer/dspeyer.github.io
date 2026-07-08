@@ -1469,6 +1469,7 @@ Affinity targetting does work on recent corpses, but not those which have signif
 
 1. Spread: Instead of a single target, the spell effects all valid targets in a cube one meter on a side (cost: 1)
 2. Chain: Effect X additional valid targets, each of which must be within 10m of the previous (cost: (5X)0%)
+3. Exception: When using Spread, up to 3X valid targets are not targetted (cost: X)
 
 When using Spread on a spell with duration, the spread effect is instantaneous and the spell continues on all targets that were within the space at casting time.
 
