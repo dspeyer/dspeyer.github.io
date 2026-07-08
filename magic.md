@@ -860,7 +860,8 @@ On the night of the full moon, treat your spells as five rating lower (minimum 1
 
 #### Body and Soul Specialist
 Prerequisite: mad biomancer, knowledge(religion) +10.    
-When casting a spell on an ensouled being (including yourself) you can anchor the spell to the target's soul and not to your own magic. The spell does not count against your ongoing spells limit. The target can have as many spells anchored this way as their wisdom modifier. 
+When casting a spell on an ensouled being (including yourself) you can anchor the spell to the target's soul and not to your own magic. The spell does not count against your ongoing spells limit. The target can have as many spells anchored this way as their wisdom modifier.     
+*This feat only applies to spells cast from this source*
 
 #### Techno Mage
 Prerequisite: mad scientist, craft(electronics) +10.    
