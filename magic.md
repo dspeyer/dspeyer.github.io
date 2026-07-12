@@ -1357,6 +1357,8 @@ Effects:
 4. Portal: Create a X meter diameter circular portal connecting target surface and your teleport beacon.  Anyone passing through the portal (in either direction) emerges on the other side.  (cost: 12+X)
 8. Warp Step: When target object moves, it finds space contracted such that the distance it covers is X times farther than speed times time would predict (cost: X^2)
 6. Holding: Container holding X cubic meters now holds 8X, doubling all linear dimensions (cost: 5+X)
+6. Pinch Demiplane: Space inside target container of up to 10X liters becomes demiplane, see below (cost: 6+X)
+6. Demiplane Sense: When creating a demiplane, gain a sense for its contents which can be used as a fetching beacon (cost: 3)
 7. Grow/Shrink: Object changes size (but not mass) by a linear factor of X (cost: 2*X)
 
 Distance to a teleport beacon is generally irrelevant.  The target (specified as such in the effect description) must be targeted normally, but the beacon is not a target.  Even the speed-of-light limit does not apply.
@@ -1366,6 +1368,12 @@ Warp Step does not effect the kinetic energy imparted by collision, magnetic fie
 Creatures under Warp Step perceive their immediate surroundings as shrunken and the rest of the world as normal.
 
 A container of holding still experiences the weight of its contents.
+
+When a demiplane is pinched off from normal space, its edges cease to be adjacent to the walls of the container, and those walls becomes adjacent to each other.  The stretched space left behind when a demiplane is pinched off is known as a "space scar" (and can be accessed by carefully cutting holes in the container walls).  If the demiplane terminates within an hour, it will reattach to the scar, returning its contents and producing normal space.  If the demiplane lasts longer than an hour, the scar heals.  If the demiplane then terminates, it (and its contents) will be randomly inserted into normal space within 100km of the container or what's left of it.
+
+A demiplane acts as a free teleport beacon for purposes of Send and Portal.  Furthermore, those effects cost half when used with a demiplane. 
+
+If you create a demiplane with the Demiplane Sense effect, you gain an awareness of the plane's contents: their shape and density.  You can use this to treat any object in the demiplane as having a teleport beacon on it for Fetch purposes, and fetch at half-cost with those beacons. 
 
 ## Summoning
 
