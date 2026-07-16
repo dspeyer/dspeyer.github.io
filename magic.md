@@ -1002,6 +1002,7 @@ Effects:
 
 1. Lightning: Deal Xd6 electricity damage to nonmetallic target.  Living targets must make a fort save (DC 2*damage) or fall prone with muscle spasms. (cost: X)
 3. Wind: Move X cubic meters of air at a speed of up to 45 mph (cost: 1+X)
+4. Updraft: Falling objects in a square meter column take max damage as if falling from 2^(6-X) meters (cost: X)
 2. Air Manipulator: Move 1 cubic meter of air.  It can move objects or perform combat manuevers with an effective strength and dex scores of X. (cost: 3+X)
 4. Control Weather: Alter temperature, wind or precipitation by one step in a kilometer radius (cost: 13)
 5. Ghost Sound: Create sound, up to shouting volume.  Requires perform(imitation) check to fool anyone.  (cost: 1)
