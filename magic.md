@@ -642,11 +642,16 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Word Sight |  any active magic source, telepathy school, spellcraft +6 | sense the meaning of all words spoken or signed with intent that you understand them |
 |Quiet Soul |  knowledge religion 1 rank | hide from Soul Sight, Life and Magic Sight |
 |Deceptive Soul |  Quiet Soul | appear as aligned as you choose to a Soul Seer’s magic source |
+| Expand Sight | Any Sight feat | The range on your Sight feat(s) is doubled |
 |Astral Projection | | Briefly detach your soul from your body |
 |Ambiguous Soul | Astral Projection, appropriate lifestyle | Treat your soul as another spirit type |
 |Possess Animal | Astral Projection | Operate an animal (including a human body) as if it were your own body |
 | Effect Specialist | Magic School | 4 free metamagics for a specific effect. |
 |Familiar | Druid or any other active magic source and handle animal +5 | You have lightly connected your soul to a single animal |
+| Familiar Spirit | Soul Sight and diplomacy +5 | You have lightly connected your soul to a spirit |
+| Multiple Familiar Spirits | Familiar Spirit | Number of familiar spirits up to one third of your diplomacy modifier |
+| Grant Spell Slot | Familiar Spirit, Spellcraft +15 | Grant your familiar spirit a spell slot |
+| Grant Spell Slot Suite | Grant Spell Slot | Grant your familiar spirit a set of spell slots |
 |Fluid Caster |  6 ranks spellcraft | Treat your spells as one rating smaller for purposes of cost |
 |Multi School |  two known schools | combine effects from different schools in one spell |
 |Multi Source Caster  |  two active magic source, spellcraft +10 | Split cost between schools |
@@ -719,6 +724,10 @@ You can hide from Soul, Life and Magic Sight if your bluff check or will save ex
 Prerequisite: Quiet Soul.    
 You can appear as aligned as you choose to a Soul Seer’s magic source if your bluff check exceeds their knowledge(religion) activation. You must know what magic source you are faking.
 
+#### Expand Sight
+Prerequisite: Any Sight feat
+The range on your Sight feat(s) is doubled.  You may take this feat multiple times.  Its effects stack exponentially.
+
 ## General Magic Feats
 
 #### Astral Projection
@@ -739,7 +748,23 @@ You can take this feat multiple times, but must pick a different effect each tim
 
 #### Familiar
 Prerequisites: Druid or any other active magic source and handle animal +5    
-You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.  The animal can have creature levels no more than half your Handle Animal modifier.  If your familiar dies or you dismiss it, you can find and connect to a new one with one day of effort.
+You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.  The animal can have creature levels no more than half your Handle Animal modifier.  If your familiar dies or you dismiss it, you can connect to a new one with one day of effort.
+
+#### Familiar Spirit
+Prerequisites: Soul Sight and diplomacy +5    
+You have lightly connected your soul to a spirit.  The spirit must be willing and positively aligned to your magic source.  While your spirit is within Soul Sight range, you can communicate telepathically and cast spells from each other's locations.  The spirit can have no more total levels than your diplomacy modifier.  If your familiar spirit dies or rejects you, or you dismiss it, you can connect to a new one with one day of effort.
+
+#### Multiple Familiar Spirits
+Prerequisites: Familiar Spirit    
+You can have a number of familiar spirits up to one third of your diplomacy modifier.
+
+#### Grant Spell Slot
+Prerequisites: Familiar Spirit, Spellcraft +15     
+You can grant your familiar spirit a spell slot that will power a single spell of up to a given level.  The spell slot is compatible with up to three schools of your choice that your magic source provides and lasts (by default) for one day.  Granting it counts as a school-less spell of rating one higher than the slot's value, and counts against your active spells.
+
+#### Grant Spell Slot Suite
+Prerequisites: Grant Spell Slot    
+You can grant your familiar spirit a set of spell slots, up to a maximum of what they'd have as a Shaman.  This requires a single cast from you, with rating equal to the sum of the slots given plus one.
 
 #### Fluid Caster
 Prerequisite: 6 ranks spellcraft.    
