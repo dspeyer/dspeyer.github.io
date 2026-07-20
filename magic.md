@@ -1393,7 +1393,9 @@ Effects:
 
 Distance to a teleport beacon is generally irrelevant.  The target (specified as such in the effect description) must be targeted normally, but the beacon is not a target.  Even the speed-of-light limit does not apply.
 
-Warp Step does not effect the kinetic energy imparted by collision, magnetic field generated if charged, special relativistic effects, or similar velocity-dependent physics.  Note that newtonian relativity still applies: distance traveled relative to an object depends on velocity relative to that object.
+Warp Step operates in the frame of reference of the object which exerts the greatest gravity on the target.  If the target moves into the gravity well of a different object, Warp Step changes to operate in the new frame of reference.
+
+It does not effect the kinetic energy imparted by collision, magnetic field generated if charged, special relativistic effects, or similar velocity-dependent physics.
 
 Creatures under Warp Step perceive their immediate surroundings as shrunken and the rest of the world as normal.
 

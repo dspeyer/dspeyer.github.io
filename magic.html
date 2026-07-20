@@ -2275,8 +2275,11 @@ checks do not benefit from morale; this is an exception.</p>
 <p>Prerequisite: Shaman, knowledge(religion) +5.<br />
 If you kill one or more ensouled beings immediately before casting a
 spell, you may add effects with rating equal to the square root of the
-number of people killed. This does not affect the rating of the
-spell.<br />
+number of people killed. This does not affect the rating of the spell.
+Only deaths within Othersight range count and the maximum rating of
+effects added this way is your spellcraft modifier. (It is suspected
+that there’s a way around the latter limitation, but if anyone knows how
+to do it, they won’t admit to it.)<br />
 <em>This feat only applies to spells cast from this source</em></p>
 <h1 id="schools">Schools</h1>
 <table>
@@ -2543,8 +2546,8 @@ targets must make a fort save (DC 2*damage) or fall prone with muscle
 spasms. (cost: X)</li>
 <li>Wind: Move X cubic meters of air at a speed of up to 45 mph (cost:
 1+X)</li>
-<li>Updraft: Falling objects in a square meter column take max damage as
-if falling from 2^(6-X) meters (cost: X)</li>
+<li>Adjust Air Resistance: The force that air applies to target object
+is multiplied or divided by X (cost: X min X=2)</li>
 <li>Air Manipulator: Move 1 cubic meter of air. It can move objects or
 perform combat manuevers with an effective strength and dex scores of X.
 (cost: 3+X)</li>
@@ -2559,6 +2562,13 @@ also deafened. (cost: X)</li>
 object. Any listen checks by or about the target take -2X (cost: X)</li>
 </ol>
 <p>A manipulator uses its caster’s BAB and skill ranks.</p>
+<p>Adjusted Air Resistance multiplies or divides the maximum speed of an
+object with fixed acceleration (e.g. a falling object) by sqrt(X), and
+therefore collision damage from that speed by X. It also multiplies or
+divides the accelleration of a sailing vessel by X (no effect on top
+speed).</p>
+<p>An upward wind and a x2 air resistance will allow a human to briefly
+hover.</p>
 <p>Any ambiguities from the choice of skills are resolved in the
 caster’s favor.</p>
 <h2 id="elemental-earth">Elemental Earth</h2>
@@ -3014,11 +3024,13 @@ of X (cost: 2*X)</li>
 (specified as such in the effect description) must be targeted normally,
 but the beacon is not a target. Even the speed-of-light limit does not
 apply.</p>
-<p>Warp Step does not effect the kinetic energy imparted by collision,
-magnetic field generated if charged, special relativistic effects, or
-similar velocity-dependent physics. Note that newtonian relativity still
-applies: distance traveled relative to an object depends on velocity
-relative to that object.</p>
+<p>Warp Step operates in the frame of reference of the object which
+exerts the greatest gravity on the target. If the target moves into the
+gravity well of a different object, Warp Step changes to operate in the
+new frame of reference.</p>
+<p>It does not effect the kinetic energy imparted by collision, magnetic
+field generated if charged, special relativistic effects, or similar
+velocity-dependent physics.</p>
 <p>Creatures under Warp Step perceive their immediate surroundings as
 shrunken and the rest of the world as normal.</p>
 <p>A container of holding still experiences the weight of its
