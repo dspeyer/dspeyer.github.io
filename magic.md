@@ -1027,7 +1027,7 @@ Effects:
 
 1. Lightning: Deal Xd6 electricity damage to nonmetallic target.  Living targets must make a fort save (DC 2*damage) or fall prone with muscle spasms. (cost: X)
 3. Wind: Move X cubic meters of air at a speed of up to 45 mph (cost: 1+X)
-4. Updraft: Falling objects in a square meter column take max damage as if falling from 2^(6-X) meters (cost: X)
+4. Adjust Air Resistance: The force that air applies to target object is multiplied or divided by X (cost: X min X=2)
 2. Air Manipulator: Move 1 cubic meter of air.  It can move objects or perform combat manuevers with an effective strength and dex scores of X. (cost: 3+X)
 4. Control Weather: Alter temperature, wind or precipitation by one step in a kilometer radius (cost: 13)
 5. Ghost Sound: Create sound, up to shouting volume.  Requires perform(imitation) check to fool anyone.  (cost: 1)
@@ -1035,6 +1035,10 @@ Effects:
 7. Hush: Sound is suppressed in the immediate vicinity of target object.  Any listen checks by or about the target take -2X (cost: X)
 
 A manipulator uses its caster's BAB and skill ranks.
+
+Adjusted Air Resistance multiplies or divides the maximum speed of an object with fixed acceleration (e.g. a falling object) by sqrt(X), and therefore collision damage from that speed by X.  It also multiplies or divides the accelleration of a sailing vessel by X (no effect on top speed).
+
+An upward wind and a x2 air resistance will allow a human to briefly hover.
 
 Any ambiguities from the choice of skills are resolved in the caster's favor.
 
