@@ -906,7 +906,7 @@ When you cast a spell on a target who strongly opposes your cause, add a +2 mora
 
 #### Human Sacrifice
 Prerequisite: Shaman, knowledge(religion) +5.    
-If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.    
+If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.  Only deaths within Othersight range count and the maximum rating of effects added this way is your spellcraft modifier.  (It is suspected that there's a way around the latter limitation, but if anyone knows how to do it, they won't admit to it.)    
 *This feat only applies to spells cast from this source*
 
 # Schools
