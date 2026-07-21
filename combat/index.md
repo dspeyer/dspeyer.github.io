@@ -666,6 +666,14 @@ Polearm | +2 | x2 | 1 round | 1.5 or more | Must have short haft and side spike,
 Ground | +2 | x2 | free | 0 | Must be prone
 </div>
 
+#### Firearm Builder
+
+Pick a barrel length, width, style and action, and add any special features, to see the resulting weapon's stats computed live.
+
+<div>
+%%firearmbuilder%%
+</div>
+
 #### Example Firearms
 
 <div class="google wide">
