@@ -410,6 +410,83 @@ A ranged weapon contains both the weapon itself and the projectile it sends at t
 
 While melee weapons are mostly fixed by the late iron age, ranged weapons develop extensively.  Pay attention to your setting notes.
 
+### Projectile Qualities
+
+<div class="wide google">
+%%ammo%%
+</div>
+
+ᵃ Throwing Axes, Javelins and Broadhead Arrows listed here are iron-tipped.  Flint-tipped (-2 on attack rolls) versions are available from the stone age, and copper (-1 on attack rolls, 3x price) and bronze (10x price) versions are available in the Stone and Bronze ages respectively.
+
+For projectiles fired from firearms, an equal weight of propelent and accoutrema is required, so the "carrying weight" of the ammunition is twice the weight of the projectile itself (shown here).
+
+Recall that damage should be interpreted in the context of the weapons table.
+
+Also note that the “damage” for grenades is the damage they deal by striking the enemy, which is little more than insult added to the injury of the explosion.
+
+Special Abilities:
+
+#### Melee
+
+This ammunition can be used as a specific melee weapon, albeit at a small penalty to attacks.  If the melee is marked "rev", this also applies in reverse, and a melee weapon of this description can be used as ammunition at the same penalty.
+
+#### Spread
+
+Cannister behaves differently depending on the range to the target as a multiple of the *barrel length*:
+
+Multiple | Effect on Medium Targets
+-|-
+0-30x | Normal Effect
+30-60x | Hits are normal, misses by less than 5 deal half-damage
+60-120x | Area-effect in a 1m wide line, lesser damage
+120-240x | Area-effect in a 5m wide line, 1/3 of lesser damage
+>240x | Deals no damage
+
+For each size category larger the target is, double all distances except for the no damage threshold.  Similarly for smaller creatures, halve them, adding rows as needed, if the creatures' positions are being tracked with sub-square resolution.
+
+Note that the double-armor-effect property cannister also has is not dependant on range.
+
+#### Burn
+
+In addition to main damage, this projectile deals this much fire damage.
+
+Note that while base damage may be multiplied (by the weapon's rating for a blaster), burn damage is not.
+
+#### Double armor effect
+
+When reducing damage for armor, double the armor's effectiveness.  Also double the damage expended when calculating blowthrough.
+
+#### Drop Specialized
+
+When this projectile is dropped, it has a maximum damage of 4 times base (from a height of 20 meters) and a range increment of 20 meters.
+
+#### Drug (Precision)
+
+This projectile can be used to deliver a drug or poison.  If the projectile does damage, it also delivers the drug.
+
+A simple poison dart deals a rough dosage, whereas a syringe deals a precise one.  See the drug rules.
+
+#### Binding (Size)
+
+When a bolas strikes a creature of indicated size or smaller, the creature must make a reflex save or grapple check (its choice) against twice the pre-dr damage.  If it fails the check, it is prone and wrapped in ropes.
+
+#### Explodes
+
+After impacting, this projectile explodes for the damage shown.  Note that this is not part of the ammo's own damage, and is not multiplied.
+
+If the base damage gets past armor and does not overpenetrate, the explosion occurs *inside* the target, for triple damage.
+
+#### Attatches
+
+If this projectile successfully does piercing damage it sticks to its target.  It can then detonate *in contact* with said target for double damage.
+
+Note: while the boring and descriptive name of this projectile is "spiked bomb", its original name was "flying incediary club for subjugating demons".
+
+#### Sticky: X rounds
+
+This weapon continues to deal damage for X rounds (at the start of the turn of the character who fired it).
+
+
 ### Weapon Qualities
 
 <div class=wide>
@@ -679,82 +756,6 @@ Pick a barrel length, width, style and action, and add any special features, to 
 <div class="google wide wrapcells">
 %%examplefirearms%%
 </div>
-
-### Projectile Qualities
-
-<div class="wide google">
-%%ammo%%
-</div>
-
-ᵃ Throwing Axes, Javelins and Broadhead Arrows listed here are iron-tipped.  Flint-tipped (-2 on attack rolls) versions are available from the stone age, and copper (-1 on attack rolls, 3x price) and bronze (10x price) versions are available in the Stone and Bronze ages respectively.
-
-For projectiles fired from firearms, an equal weight of propelent and accoutrema is required, so the "carrying weight" of the ammunition is twice the weight of the projectile itself (shown here).
-
-Recall that damage should be interpreted in the context of the weapons table.
-
-Also note that the “damage” for grenades is the damage they deal by striking the enemy, which is little more than insult added to the injury of the explosion.
-
-Special Abilities:
-
-#### Melee
-
-This ammunition can be used as a specific melee weapon, albeit at a small penalty to attacks.  If the melee is marked "rev", this also applies in reverse, and a melee weapon of this description can be used as ammunition at the same penalty.
-
-#### Spread
-
-Cannister behaves differently depending on the range to the target as a multiple of the *barrel length*:
-
-Multiple | Effect on Medium Targets
--|-
-0-30x | Normal Effect
-30-60x | Hits are normal, misses by less than 5 deal half-damage
-60-120x | Area-effect in a 1m wide line, lesser damage
-120-240x | Area-effect in a 5m wide line, 1/3 of lesser damage
->240x | Deals no damage
-
-For each size category larger the target is, double all distances except for the no damage threshold.  Similarly for smaller creatures, halve them, adding rows as needed, if the creatures' positions are being tracked with sub-square resolution.
-
-Note that the double-armor-effect property cannister also has is not dependant on range.
-
-#### Burn
-
-In addition to main damage, this projectile deals this much fire damage.
-
-Note that while base damage may be multiplied (by the weapon's rating for a blaster), burn damage is not.
-
-#### Double armor effect
-
-When reducing damage for armor, double the armor's effectiveness.  Also double the damage expended when calculating blowthrough.
-
-#### Drop Specialized
-
-When this projectile is dropped, it has a maximum damage of 4 times base (from a height of 20 meters) and a range increment of 20 meters.
-
-#### Drug (Precision)
-
-This projectile can be used to deliver a drug or poison.  If the projectile does damage, it also delivers the drug.
-
-A simple poison dart deals a rough dosage, whereas a syringe deals a precise one.  See the drug rules.
-
-#### Binding (Size)
-
-When a bolas strikes a creature of indicated size or smaller, the creature must make a reflex save or grapple check (its choice) against twice the pre-dr damage.  If it fails the check, it is prone and wrapped in ropes.
-
-#### Explodes
-
-After impacting, this projectile explodes for the damage shown.  Note that this is not part of the ammo's own damage, and is not multiplied.
-
-If the base damage gets past armor and does not overpenetrate, the explosion occurs *inside* the target, for triple damage.
-
-#### Attatches
-
-If this projectile successfully does piercing damage it sticks to its target.  It can then detonate *in contact* with said target for double damage.
-
-Note: while the boring and descriptive name of this projectile is "spiked bomb", its original name was "flying incediary club for subjugating demons".
-
-#### Sticky: X rounds
-
-This weapon continues to deal damage for X rounds (at the start of the turn of the character who fired it).
 
 # Armor
 
