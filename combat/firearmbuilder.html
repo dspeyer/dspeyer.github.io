@@ -120,11 +120,11 @@
                  20: {weight:0.15, damage:'1d12', type:'Piercing', avail:'Information', special:'Double Armor Effect'},
              },
              'Sabot Shell': {
-                 10: {weight:0.05, damage:'1d2', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
                  15: {weight:0.2, damage:'1d4', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
                  20: {weight:0.5, damage:'1d6', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
                  25: {weight:1.0, damage:'1d8', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
                  50: {weight:5.0, damage:'1d10', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
+                 100: {weight:20.0, damage:'1d12', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
              },
          };
 
@@ -134,7 +134,7 @@
          const features = [
              {key:'howitzer',   label:'Howitzer Orientation',    avail:'Steam',
               prereq: ctx => ctx.mmWidth>=50 ? null : 'requires barrel width ≥ 50mm',
-              apply: (s) => { s.cost*=2; s.dmgMult/=4; s.special.push('Arcing'); }},
+              apply: (s) => { s.cost*=2; s.dmgMult=Math.floor(s.dmgMult/4); s.special.push('Arcing'); }},
              {key:'precision',  label:'Precision Manufacturing', avail:'Information',
               apply: (s) => { s.cost*=10; s.ri*=2; s.maxAtk+=10; }},
              {key:'sniper',     label:'Sniper',                  avail:'Information',
@@ -257,7 +257,6 @@
              }
              if (/[0-9]+d[0-9]+/.test(b)) {
                  let [n,d] = b.split('d');
-                 console.log({m,b,n,d});
                  return (m*n)+'d'+d;
              }
              return m + ' × ' + b;
@@ -309,9 +308,11 @@
              if (action.special) s.special.push(action.special);
              let reloadText = action.muzzle ? (shot.reload ? shot.reload : style.muzzleReload) : action.reload;
              if (width.reloadMult) {
-                 let [_,n,u] = /([0-9]+)( .*)/.exec(reloadText);
-                 console.log({n,u,reloadText,rm:width.reloadMult});
-                 reloadText = (width.reloadMult * n) + u;
+                 let parsed = /([0-9]+)( .*)/.exec(reloadText);
+                 if (parsed) {
+                     let [_,n,u] = parsed; 
+                     reloadText = (width.reloadMult * n) + u;
+                 }
              }
              if (action.prereq) {
                  let ok = (action.minMm===undefined || width.mm>=action.minMm) &&

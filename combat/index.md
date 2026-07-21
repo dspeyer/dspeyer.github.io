@@ -676,7 +676,7 @@ Pick a barrel length, width, style and action, and add any special features, to 
 
 #### Example Firearms
 
-<div class="google wide">
+<div class="google wide wrapcells">
 %%examplefirearms%%
 </div>
 

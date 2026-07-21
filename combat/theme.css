@@ -36,7 +36,10 @@ h1.title {
     border: inset 2px grey;
     white-space: nowrap;
 }
-    
+
+.wrapcells td {
+    white-space: normal;
+}
                     
 .google th {
     display: none;
