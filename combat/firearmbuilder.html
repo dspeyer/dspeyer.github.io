@@ -263,6 +263,11 @@
              return m + ' × ' + b;
          }
          
+         const formatter = new Intl.NumberFormat('en-US', {
+             maximumSignificantDigits: 3
+         });
+
+
          function recalc() {
              updateAmmoOptions();
              let length = lengths[document.getElementById('FB-length').value];
@@ -342,8 +347,9 @@
 /*             document.getElementById('FB-out-str1h').innerText = Math.ceil(s.str*1.5);
              document.getElementById('FB-out-stroff').innerText = Math.round(s.str*2);*/
              document.getElementById('FB-out-mag').innerText = s.mag;
+             document.getElementById('FB-out-mag-weight').innerText = formatter.format(typeof(s.mag)==typeof(1) ? s.mag * shot.weight : shot.weight);
              document.getElementById('FB-out-reload').innerText = reloadText;
-             document.getElementById('FB-out-ammo').innerText = shot ? (ammoFamilyName + ' (' + width.mm + 'mm)') : (ammoFamilyName + ' -- no ' + width.mm + 'mm variant');
+/*             document.getElementById('FB-out-ammo').innerText = shot ? (ammoFamilyName + ' (' + width.mm + 'mm)') : (ammoFamilyName + ' -- no ' + width.mm + 'mm variant');*/
              document.getElementById('FB-out-special').innerText = s.special.join('; ');
              document.getElementById('FB-out-warnings').innerText = warnings.join('; ');
              document.getElementById('FB-tr-warnings').style.display = warnings.length ? 'table-row' : 'none';;
@@ -373,8 +379,8 @@
           <th>Range Increment</th>
           <th>Max Attack</th>
           <th>Damage</th>
-          <th>Ammo</th>
           <th>Magsize</th>
+          <th>Mag Weight</th>
           <th>Str (2h)</th>
           <th>Reload</th>
       </tr>
@@ -385,8 +391,8 @@
           <td id="FB-out-ri"></td>
           <td id="FB-out-maxatk"></td>
           <td id="FB-out-dmg"></td>
-          <td id="FB-out-ammo"></td>
           <td id="FB-out-mag"></td>
+          <td id="FB-out-mag-weight"></td>
           <td id="FB-out-str2h"></td>
           <td id="FB-out-reload"></td>
       </tr>
