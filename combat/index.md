@@ -165,6 +165,55 @@ Note that non-lethal damage is not safe.  If you hit your target and do not achi
 
 Attacks can overpenetrate.  Subtract the damage actually dealt (maxes at reducing a body part to negative constitution) as if it were armor (so hollow-point and armor-piercing rules apply), and then subtract the victim's armor again upon exit, even if the original wound went around armor.  If the remaining damage is positive, the weapon makes a stray attack on whatever's on the other side.
 
+Stray attacks roll at -5 against every target in the generally relevant area.
+
+## Distances
+
+Generally distances should be tracked to 1 meter resolution.  Unless otherwise noted, a "square" is 1x1 meter.
+
+Assuming you are medium sized, you can pass through squares with allies in them, but if you make an attack while in the same square as an ally you suffer a cramped quarters penalty regardless of weapon.  You cannot pass through the square of an enemy, but you can tumble or bull rush them.
+
+When computing distance, approximate sqrt(2) as 1.5, sum first, then round down.  Unless there's a convenient pythagorean triple.
+
+Concretely:
+
+| 6 | 5 | 4 | 4 | 4 | 4 | 4 | 5 | 6 |
+| 5 | 4 | 4 | 3 | 3 | 3 | 4 | 4 | 5 |
+| 4 | 4 | 3 | 2 | 2 | 2 | 3 | 4 | 4 |
+| 4 | 3 | 2 | 1 | 1 | 1 | 2 | 3 | 4 |
+| 4 | 3 | 2 | 1 | 0 | 1 | 2 | 3 | 4 |
+| 4 | 3 | 2 | 1 | 1 | 1 | 2 | 3 | 4 |
+| 4 | 4 | 3 | 2 | 2 | 2 | 3 | 4 | 4 |
+| 5 | 4 | 4 | 3 | 3 | 3 | 4 | 4 | 5 |
+| 6 | 5 | 4 | 4 | 4 | 4 | 4 | 5 | 6 |
+
+A normal melee weapon can strike at a distance of 1 meter (adjacent).  A reach weapon 2 meters, double-reach 3, etc.
+
+A ranged weapon faces distance AC when the range exceeds the range increment.
+
+## Cramped Quarters
+
+If you attempt to fight in the same square as another character, or use a weapon longer than the width of your environment, you suffer a Cramped Quarters Penalty.
+
+This does four things:
+
+* -4 penalty on melee swinging attacks
+* -2 penalty on melee thrusting attacks
+* You cannot make attacks of opportunity
+* Your weapon loses the Ready property (if it had it)
+
+The width of your environment can be thought of as the largest diameter your-height cylinder that could navigate that environment.  In a corridor, this is simply the width of the corrider.
+
+## Readied Actions
+
+Instead of taking an action on your turn, you can ready one.  This can be a standard action or part or all of your movement or both.  Simply don't take whatever type action it is.
+
+Readied actions must have simple triggers, such that you can evaluate them in an instant.  When the trigger happens, you perform the readied action -- even if you no longer want to.  If the trigger does not occur before your next turn, the action is wasted.
+
+Exception: if you have a weapon with the Ready property, you can use "it seems like a good idea to attack someone" as a trigger and "attack them" as the action.  If you take no standard action while holding a loaded ready weapon, it is presumed you readied this.
+
+If multiple people ready based on the same trigger, they roll initiative to determine who acts first.
+
 ## Addrenal Surges
 
 You have a number of addrenal surges equal to your con mod.  When you
@@ -176,6 +225,16 @@ one).
 
 You regain your surges with an hour of rest, or a proportional
 fraction (rounding down) for a shorter period.
+
+## Character Sizes
+
+The sizes are fine < diminutive < tiny < small < medium < large < huge < gargantuan < colossal.
+
+Each step represent a 2x linear scale-up so 8x mass.  For example, a human is very roughly 2 meters tall, 100kg and, stands in a quarter of a square meter and needs a full square meter to fight effectively.  A halfling (small) is very roughly 1 meter tall, 12.5kh and stands in sixteenth of a square meter but needs a quarter to fight effectively.  An ogre (large): 4 meters, 800kg, 1 square meter, 4 square meters.  Of course, many animals are differently shaped.
+
+To create a larger version of a creature, *multiply the strength score* by 4 and decrease the dexterity by 2.  Tracking tiny or smaller creatures requires fractional strength scores: round these to 1 where non-integers become awkward.
+
+Non-medium creates take a weight penalty or bonus to their jump and climb checks.  
 
 ## The Ages
 
@@ -292,7 +351,7 @@ Feel free to decide the curvature, edge-count, hilt-guard, distal taper and deco
 
 A hafted weapon has a wooden pole and a (usually) metal head.  
 
-The pole may be short (1m: suitable for attacking enemies in adjacent squares), long (2m:suitable for attacking enemies one square away) or very long (4m: suitable for attacking enemies three squares away).  Unlike greatswords, a hafted weapon cannot be used against targets which are closer than it's range (unless you have a special ability to counter-act this).
+The pole may be short (1m: suitable for attacking enemies in adjacent squares), long (2m:suitable for attacking enemies one square away) or very long (4m: suitable for attacking enemies three squares away).  Unlike greatswords, a hafted weapon cannot be used against targets which are closer than it's range (unless you have a special ability to counter-act this).  The length of a hafted weapon for Cramped Quarters purposes is the length of its pole.
 
 (A 3m haft would be easy enough to make, but it would have all the downsides of a 4m haft without the most important upside, so no one does.)
 
@@ -482,6 +541,10 @@ If this projectile successfully does piercing damage it sticks to its target.  I
 
 Note: while the boring and descriptive name of this projectile is "spiked bomb", its original name was "flying incediary club for subjugating demons".
 
+#### Smoke
+
+Specially designed explosives emit smoke clouds with the radius and duration given.  Each meter of smoke between an observer and observee gives a -10 penalty to spot checks.
+
 #### Sticky: X rounds
 
 This weapon continues to deal damage for X rounds (at the start of the turn of the character who fired it).
@@ -560,7 +623,7 @@ In kilograms.  Does not include ammunition.  For energy weapons, the weight of t
 
 #### Length
 
-If the length of a weapon equals or exceeds 40% the width of the available space, the wielder suffers a -2 Close Quarters Penalty on attacks and loses the benefits of Ready.  The penalty can be negated by adopting a Shooting Stance (which also gives its usual bonus).
+This is the length of the entire weapon and is used for Cramped Quarters Penalty purposes.  Note that a bow has a length of zero because it is held vertically.
 
 #### Cost
 
@@ -614,7 +677,7 @@ This weapon (an underslung grenade launcher) cannot be used separately, but can 
 
 ##### Ready
 
-For a character who is carrying a loaded Ready weapon, is not suffering a Close Quarters penalty, and has only taken a move action the preceeding turn, anyone becoming visible within 5 range incremens provokes an attack of opportunity.
+A character who is carrying a loaded Ready weapon and is not suffering a Close Quarters penalty can ready an attack on the trigger "it seems like a good idea to attack someone".
 
 ##### Risky
 
@@ -659,7 +722,6 @@ To produce high rating bows, especially shortbows, it is necessary to bend the e
 ### Firearms
 
 Firearms vary enough to get their own table.  For any firearm, select a barrel length, width and style, an action, and as many special features as you like.  To a first approximation, length determines range and number of damage dice, size determines kind of dice, action determines rate of fire, and features determine cool extra things a gun can do.
-
 
 Firearm weights do not include the weight of ammunition or (for gatling guns) a power source.
 
