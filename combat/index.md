@@ -171,7 +171,7 @@ Stray attacks roll at -5 against every target in the generally relevant area.
 
 Generally distances should be tracked to 1 meter resolution.  Unless otherwise noted, a "square" is 1x1 meter.
 
-Assuming you are medium sized, you can pass through squares with allies in them, but if you make an attack while in the same square as an ally you suffer a cramped quarters penalty regardless of weapon.  You cannot pass through the square of an enemy, but you can tumble or bull rush them.
+Assuming you are medium sized, you can pass through squares with willing people in them, but if you make an attack while in the same square as another person you suffer a cramped quarters penalty regardless of weapon.  You cannot pass through the square of an unwilling person, but you can tumble or bull rush them.
 
 When computing distance, approximate sqrt(2) as 1.5, sum first, then round down.  Unless there's a convenient pythagorean triple.
 
@@ -365,9 +365,9 @@ Blade | 1 | Slashing | Swinging |  | 1d10 | 1d12 | 2d10
 Spike | 0.5 | Piercing | Swinging |  | 1d8 | 1d10 | 2d8
 Blunt Face | 1 | Bludgeoning | Swinging |  | 1d6 | 2d4 | 2d6
 Foreward Hook | 0.5 | Piercing | Thrusting | Parrying | 1d4 | 1d4 | 1d4
-Backwards Hook | 0.5 | Piercing | Thrusting | Tripping | 1d4 | 1d4 | 1d4
+Backwards Hook | 0.5 | Piercing | Thrusting | Tripping/Disarming | 1d4 | 1d4 | 1d4
 
-Tripping: weapons with a backwards hook can be used to make trip attacks with a +4 bonus and no attack of opportunity.
+Tripping/Disarming: weapons with a backwards hook can be used to make trip attacks and grants a +4 bonus on both trips and disarms.
 
 <div class=captioned>
 ![Hafted Weapon Heads](Polearm Names.png)
@@ -462,6 +462,18 @@ Nunchuks are a variant of flail where the ball is a copy of the haft.  This has 
 * Regardless of size, a total attack roll less than 10 means you strike yourself in a random body part
 * Cannot use special materials
 * +2 on perform(weapon drill) checks
+
+### Fire Lances
+
+A fire lance is a spear with an attached tray of burning gunpowder.  It takes a -2 penalty on attacks but deals an extra 1d6 fire damage and provides a +4 bonus to intimidation.  It's available from the gunpowder age.
+
+### Unarmed Strikes
+
+A basic unarmed strike is a simple melee thrusting weapon that deals 1d2 bludgeoning damage.  It provokes an attack of opportunity (including when used for grappling, tripping or disarming).  Also, it may be performed with hands or feet, but feet can only be used to target legs.
+
+A competent unarmed strike is an exotic melee thrusting or swinging weapon that deals 1d3 bludgeoning damage.  It can be done using any body part and does not have special restrictions.
+
+If you have the Two Weapon Fighting feat, one of those weapons may be an unarmed strike.  Including your weapons could be a two-handed sword and a kick.
 
 ## Ranged Weapons
 
@@ -1086,6 +1098,34 @@ If you are standing *and* are pinning or have advantage and succeeded on your ch
 
 Not actually a thing you do, but a thing that can happen.  The choice between attack penalty and error chance is made by the attacker.
 
+# Special Actions
+
+## Bull Rush
+
+A bull rush is an attempt to shove someone in a direction.  It requires a standard action and at least 2 meters of movement.
+
+First make a weaponless melee attack (full body, through armor) that does no damage.  If your target successfully dodges, you move through their space without effecting them (they may choose not to dodge if they are trying to contain you).  If they successfully parry, you are stopped.
+
+If your attack succeeds, roll opposed strength checks.  If yours is higher, you may move into their space.  For every 5 points yours is higher by, you may shove them an additional meter.
+
+## Trip
+
+Make an attack roll (either unarmed or with a backhooked weapon) against the targets legs.
+
+If you hit, make a strength check opposed by target's strength or dexterity (their choice).  If yours is higher, they fall prone.
+
+## Disarm
+
+To disarm someone, make opposed attack rolls with your respective weapons.  If yours is higher by at least 5, they lose the weapon.  If you used an unarmed strike, you now have their weapon.
+
+You can disarm someone of something that was not a weapon.  They roll as if it were a weapon they were proficient with.
+
+If the item was on a sling, it remains attached to the original wearer.  You still cause them to be no-longer-wielding it, and you can still take it, just not go anywhere.
+
+## Take Aim
+
+You may spend a standard action preparing to attack a target you can clearly see.  You gain +2 on your next attack against this target.  If you lose sight of the target for any reason, the bonus vanishes.
+
 # Feats
 
 **Combat Reflexes:** Gain reactions per round equal to your dex mod (if positive).  If your dex mode changes during a round, resolve this as benefits you.
@@ -1093,6 +1133,10 @@ Not actually a thing you do, but a thing that can happen.  The choice between at
 **Power Attack:** You may voluntarily take a penalty on attacks up to your BAB to gain a matching bonus on damage, or twice that as a bonus for a *swinging* two-handed weapon.
 
 **Dodge:** For you, there is a skill Dodge(dex) which is always a class skill.  Use it instead of a raw dex roll on dodge checks.  Furthermore, Dodge grants a synergy bonus to parry rolls.
+
+**Two Weapon Fighting:** If you are wielding two weapons, you may attack with both of them as a standard attack action.
+
+**Exotic Weapon Proficiency:** Either pick a single exotic weapon to be proficient with or a single reason for a weapon to be exotic that no longer applies to you.
 
 **Half-Swording:** You may wield any blade longer than a dagger in both hands and it gains the gap-finding property.  If the weapon had reach, it no longer does.
 
@@ -1104,6 +1148,11 @@ Not actually a thing you do, but a thing that can happen.  The choice between at
 
 **Rage:** *(Prereq: Fury)* You may spend an addrenal surge to gain +4 str, +2 to attacks and +2 temporary hit points in all body parts for the next minute.
 
-**Extra Surge:** Gain one extra addrenal surge.  You may take this feat multiple times, to a maximum of your once more than your con bonus.
+**Extra Surge:** Gain one extra addrenal surge.  You may take this feat multiple times, a maximum of once more than your con bonus times.
+
+**Kebab-Shot:** When you overpenetrate with a ranged weapon, instead of making a stray shot, make a shot at -5 against a target of your choice behind the original target.
+
+**Assassin:** The Take Aim action grants you a +4 bonus.  Also, you may take it up to three times for the same target and the bonuses stack.
+
 
 <script src=linkableh.js></script>

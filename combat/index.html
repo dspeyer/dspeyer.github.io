@@ -79,6 +79,9 @@ Weapons</a></li>
 <li><a href="#exotic-materials-1" id="toc-exotic-materials-1">Exotic
 Materials</a></li>
 <li><a href="#flails" id="toc-flails">Flails</a></li>
+<li><a href="#fire-lances" id="toc-fire-lances">Fire Lances</a></li>
+<li><a href="#unarmed-strikes" id="toc-unarmed-strikes">Unarmed
+Strikes</a></li>
 </ul></li>
 <li><a href="#ranged-weapons" id="toc-ranged-weapons">Ranged Weapons</a>
 <ul>
@@ -146,6 +149,14 @@ Components</a></li>
 <li><a href="#move-grapple" id="toc-move-grapple">Move grapple</a></li>
 <li><a href="#attacked-from-outside"
 id="toc-attacked-from-outside">Attacked from outside</a></li>
+</ul></li>
+<li><a href="#special-actions" id="toc-special-actions">Special
+Actions</a>
+<ul>
+<li><a href="#bull-rush" id="toc-bull-rush">Bull Rush</a></li>
+<li><a href="#trip" id="toc-trip">Trip</a></li>
+<li><a href="#disarm-1" id="toc-disarm-1">Disarm</a></li>
+<li><a href="#take-aim" id="toc-take-aim">Take Aim</a></li>
 </ul></li>
 <li><a href="#feats" id="toc-feats">Feats</a></li>
 </ul>
@@ -473,10 +484,10 @@ relevant area.</p>
 <p>Generally distances should be tracked to 1 meter resolution. Unless
 otherwise noted, a “square” is 1x1 meter.</p>
 <p>Assuming you are medium sized, you can pass through squares with
-allies in them, but if you make an attack while in the same square as an
-ally you suffer a cramped quarters penalty regardless of weapon. You
-cannot pass through the square of an enemy, but you can tumble or bull
-rush them.</p>
+willing people in them, but if you make an attack while in the same
+square as another person you suffer a cramped quarters penalty
+regardless of weapon. You cannot pass through the square of an unwilling
+person, but you can tumble or bull rush them.</p>
 <p>When computing distance, approximate sqrt(2) as 1.5, sum first, then
 round down. Unless there’s a convenient pythagorean triple.</p>
 <p>Concretely:</p>
@@ -959,15 +970,15 @@ shaft:</p>
 <td>0.5</td>
 <td>Piercing</td>
 <td>Thrusting</td>
-<td>Tripping</td>
+<td>Tripping/Disarming</td>
 <td>1d4</td>
 <td>1d4</td>
 <td>1d4</td>
 </tr>
 </tbody>
 </table>
-<p>Tripping: weapons with a backwards hook can be used to make trip
-attacks with a +4 bonus and no attack of opportunity.</p>
+<p>Tripping/Disarming: weapons with a backwards hook can be used to make
+trip attacks and grants a +4 bonus on both trips and disarms.</p>
 <div class="captioned">
 <p><img src="Polearm%20Names.png" alt="Hafted Weapon Heads" /> The
 possible hafted weapon heads and some names they might go by.</p>
@@ -1361,6 +1372,23 @@ strike yourself in a random body part</li>
 <li>Cannot use special materials</li>
 <li>+2 on perform(weapon drill) checks</li>
 </ul>
+<h3 id="fire-lances">Fire Lances</h3>
+<p>A fire lance is a spear with an attached tray of burning gunpowder.
+It takes a -2 penalty on attacks but deals an extra 1d6 fire damage and
+provides a +4 bonus to intimidation. It’s available from the gunpowder
+age.</p>
+<h3 id="unarmed-strikes">Unarmed Strikes</h3>
+<p>A basic unarmed strike is a simple melee thrusting weapon that deals
+1d2 bludgeoning damage. It provokes an attack of opportunity (including
+when used for grappling, tripping or disarming). Also, it may be
+performed with hands or feet, but feet can only be used to target
+legs.</p>
+<p>A competent unarmed strike is an exotic melee thrusting or swinging
+weapon that deals 1d3 bludgeoning damage. It can be done using any body
+part and does not have special restrictions.</p>
+<p>If you have the Two Weapon Fighting feat, one of those weapons may be
+an unarmed strike. Including your weapons could be a two-handed sword
+and a kick.</p>
 <h2 id="ranged-weapons">Ranged Weapons</h2>
 <p>A ranged weapon contains both the weapon itself and the projectile it
 sends at the enemy. Most ranged weapons have at least some flexibility
@@ -2768,6 +2796,36 @@ feet.</p>
 <h2 id="attacked-from-outside">Attacked from outside</h2>
 <p>Not actually a thing you do, but a thing that can happen. The choice
 between attack penalty and error chance is made by the attacker.</p>
+<h1 id="special-actions">Special Actions</h1>
+<h2 id="bull-rush">Bull Rush</h2>
+<p>A bull rush is an attempt to shove someone in a direction. It
+requires a standard action and at least 2 meters of movement.</p>
+<p>First make a weaponless melee attack (full body, through armor) that
+does no damage. If your target successfully dodges, you move through
+their space without effecting them (they may choose not to dodge if they
+are trying to contain you). If they successfully parry, you are
+stopped.</p>
+<p>If your attack succeeds, roll opposed strength checks. If yours is
+higher, you may move into their space. For every 5 points yours is
+higher by, you may shove them an additional meter.</p>
+<h2 id="trip">Trip</h2>
+<p>Make an attack roll (either unarmed or with a backhooked weapon)
+against the targets legs.</p>
+<p>If you hit, make a strength check opposed by target’s strength or
+dexterity (their choice). If yours is higher, they fall prone.</p>
+<h2 id="disarm-1">Disarm</h2>
+<p>To disarm someone, make opposed attack rolls with your respective
+weapons. If yours is higher by at least 5, they lose the weapon. If you
+used an unarmed strike, you now have their weapon.</p>
+<p>You can disarm someone of something that was not a weapon. They roll
+as if it were a weapon they were proficient with.</p>
+<p>If the item was on a sling, it remains attached to the original
+wearer. You still cause them to be no-longer-wielding it, and you can
+still take it, just not go anywhere.</p>
+<h2 id="take-aim">Take Aim</h2>
+<p>You may spend a standard action preparing to attack a target you can
+clearly see. You gain +2 on your next attack against this target. If you
+lose sight of the target for any reason, the bonus vanishes.</p>
 <h1 id="feats">Feats</h1>
 <p><strong>Combat Reflexes:</strong> Gain reactions per round equal to
 your dex mod (if positive). If your dex mode changes during a round,
@@ -2778,6 +2836,12 @@ as a bonus for a <em>swinging</em> two-handed weapon.</p>
 <p><strong>Dodge:</strong> For you, there is a skill Dodge(dex) which is
 always a class skill. Use it instead of a raw dex roll on dodge checks.
 Furthermore, Dodge grants a synergy bonus to parry rolls.</p>
+<p><strong>Two Weapon Fighting:</strong> If you are wielding two
+weapons, you may attack with both of them as a standard attack
+action.</p>
+<p><strong>Exotic Weapon Proficiency:</strong> Either pick a single
+exotic weapon to be proficient with or a single reason for a weapon to
+be exotic that no longer applies to you.</p>
 <p><strong>Half-Swording:</strong> You may wield any blade longer than a
 dagger in both hands and it gains the gap-finding property. If the
 weapon had reach, it no longer does.</p>
@@ -2794,8 +2858,14 @@ missed melee attack</p>
 addrenal surge to gain +4 str, +2 to attacks and +2 temporary hit points
 in all body parts for the next minute.</p>
 <p><strong>Extra Surge:</strong> Gain one extra addrenal surge. You may
-take this feat multiple times, to a maximum of your once more than your
-con bonus.</p>
+take this feat multiple times, a maximum of once more than your con
+bonus times.</p>
+<p><strong>Kebab-Shot:</strong> When you overpenetrate with a ranged
+weapon, instead of making a stray shot, make a shot at -5 against a
+target of your choice behind the original target.</p>
+<p><strong>Assassin:</strong> The Take Aim action grants you a +4 bonus.
+Also, you may take it up to three times for the same target and the
+bonuses stack.</p>
 <script src=linkableh.js></script>
 </body>
 </html>
