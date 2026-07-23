@@ -469,7 +469,7 @@ Nunchuks are a variant of flail where the ball is a copy of the haft.  This has 
 
 A fire lance is a spear with an attached tray of burning gunpowder.  It takes a -2 penalty on attacks but deals an extra 1d6 fire damage and provides a +4 bonus to intimidation.  It's available from the gunpowder age.
 
-### Unarmed Strikes
+## Unarmed Strikes
 
 A basic unarmed strike is a simple melee thrusting weapon that deals 1d2 bludgeoning damage.  It provokes an attack of opportunity (including when used for grappling, tripping or disarming).  Also, it may be performed with hands or feet, but feet can only be used to target legs.
 
@@ -1131,6 +1131,18 @@ If the item was on a sling, it remains attached to the original wearer.  You sti
 ## Take Aim
 
 You may spend a standard action preparing to attack a target you can clearly see.  You gain +2 on your next attack against this target.  If you lose sight of the target for any reason, the bonus vanishes.
+
+## Charge
+
+A charge combines you move and standard actions into a single attack.
+
+You must move directly toward your enemy and move at least 2 meters.
+
+If you attack with a thrusting weapon, you deal double damage.
+
+Alternatively, if you attack with a swining weapon and jump at the end of your charge achieving a vertical at least half your enemies height, you deal double damage *and* attack their head at their body's AC.
+
+However, charging carries risks.  If you are attacked with a thrusting weapon while charging (e.g. via an attack of opportunity or a readied action) you take double damage.  And if you are attacked while jumping, you cannot react.
 
 # Feats
 
