@@ -216,6 +216,8 @@ If multiple people ready based on the same trigger, they roll initiative to dete
 
 You may ready an action based on a trigger you perform.  If so, you gain +5 on initiative for that trigger.  For example, you could ready an action "If I see someone after rounding that corner" and you would have a +5 on initiative against the person on the far side who's trigger was "If someone rounds that corner".
 
+You take the readied action when you believe the trigger is fullfilled, even if you're wrong.  Furthermore, you take a -5 haste penalty on skill checks to determine if it is fullfilled.  (Useful to anyone trying to deceive you into wasting the readied action.)
+
 ## Addrenal Surges
 
 You have a number of addrenal surges equal to your con mod.  When you
