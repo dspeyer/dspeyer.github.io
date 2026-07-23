@@ -174,7 +174,9 @@
               apply: (s) => { s.weight+=1; s.cost+=100; s.special.push('Can be used as a Voulge (polearm)'); }},
              {key:'rotating',   label:'Rotating Barrel',         avail:'Information',
               prereq: ctx => (ctx.action==='Gatling (Improved)' && ctx.checked.nbarrel && ctx.checked.burst) ? null : 'requires Gatling (Improved) action, N-barreled, and Burst Mode',
-              apply: (s) => { s.weight+=2; s.cost+=100; s.special.push('In Burst Mode, all barrels reload at the max rate and fire in rotation'); }}
+              apply: (s) => { s.weight+=2; s.cost+=100; s.special.push('In Burst Mode, all barrels reload at the max rate and fire in rotation'); }},
+             {key:'periscope', label:'Periscope Mount', avail:'Steam',
+              apply: (s)=>{ s.weight+=1; s.cost+=50; s.special.push('periscoping'); s.special.push('-2 on attacks')}},
          ];
 
          function fillSelect(sel, data, labelFn) {

@@ -214,6 +214,8 @@ Exception: if you have a weapon with the Ready property, you can use "it seems l
 
 If multiple people ready based on the same trigger, they roll initiative to determine who acts first.
 
+You may ready an action based on a trigger you perform.  If so, you gain +5 on initiative for that trigger.  For example, you could ready an action "If I see someone after rounding that corner" and you would have a +5 on initiative against the person on the far side who's trigger was "If someone rounds that corner".
+
 ## Addrenal Surges
 
 You have a number of addrenal surges equal to your con mod.  When you
@@ -800,6 +802,10 @@ Fire all loaded barrels.  Use a single attack roll, but resolve armor separately
 #### Bayonette
 
 A firearm with a bayonette may be used as a polearm with a final spike and a blade, but only a 1kg head.  A 50-100 cm barrel becomes a short-hafted polearm, a 2m barrel long-hafted, and a 4m barrel very-long-hafted.  For the size and strength needed to wield such a weapon, see the Hafted Weapons section.  No action is needed to switch the weapon from firearm to melee modes.
+
+#### Periscope Mount
+
+A firearm with a periscope mount has a trigger and control frame about half a meter below the actual barrel, plus a pair of angled mirrors.  As such the gun can be put around a corner (most often above a wall), aimed (using the mirrors) and fired -- all without exposing any part of the wielder's body.  The inability to brace the gun normally gives it a -2 on all attacks.
 
 #### Gun Mounts
 
