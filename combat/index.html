@@ -80,9 +80,9 @@ Weapons</a></li>
 Materials</a></li>
 <li><a href="#flails" id="toc-flails">Flails</a></li>
 <li><a href="#fire-lances" id="toc-fire-lances">Fire Lances</a></li>
+</ul></li>
 <li><a href="#unarmed-strikes" id="toc-unarmed-strikes">Unarmed
 Strikes</a></li>
-</ul></li>
 <li><a href="#ranged-weapons" id="toc-ranged-weapons">Ranged Weapons</a>
 <ul>
 <li><a href="#projectile-qualities"
@@ -157,6 +157,8 @@ Actions</a>
 <li><a href="#trip" id="toc-trip">Trip</a></li>
 <li><a href="#disarm-1" id="toc-disarm-1">Disarm</a></li>
 <li><a href="#take-aim" id="toc-take-aim">Take Aim</a></li>
+<li><a href="#charge" id="toc-charge">Charge</a></li>
+<li><a href="#cover-fire" id="toc-cover-fire">Cover Fire</a></li>
 </ul></li>
 <li><a href="#feats" id="toc-feats">Feats</a></li>
 </ul>
@@ -537,6 +539,10 @@ gain +5 on initiative for that trigger. For example, you could ready an
 action “If I see someone after rounding that corner” and you would have
 a +5 on initiative against the person on the far side who’s trigger was
 “If someone rounds that corner”.</p>
+<p>You take the readied action when you believe the trigger is
+fullfilled, even if you’re wrong. Furthermore, you take a -5 haste
+penalty on skill checks to determine if it is fullfilled. (Useful to
+anyone trying to deceive you into wasting the readied action.)</p>
 <h2 id="addrenal-surges">Addrenal Surges</h2>
 <p>You have a number of addrenal surges equal to your con mod. When you
 fail a check and are in great danger as a result (usually a parry or
@@ -1382,7 +1388,7 @@ strike yourself in a random body part</li>
 It takes a -2 penalty on attacks but deals an extra 1d6 fire damage and
 provides a +4 bonus to intimidation. It’s available from the gunpowder
 age.</p>
-<h3 id="unarmed-strikes">Unarmed Strikes</h3>
+<h2 id="unarmed-strikes">Unarmed Strikes</h2>
 <p>A basic unarmed strike is a simple melee thrusting weapon that deals
 1d2 bludgeoning damage. It provokes an attack of opportunity (including
 when used for grappling, tripping or disarming). Also, it may be
@@ -1740,7 +1746,7 @@ the turn of the character who fired it).</p>
 <td>Burning Oil or Napalm</td>
 <td>2*ammo</td>
 <td>17</td>
-<td>free or 1 minute</td>
+<td>free or 1 minute (10)</td>
 <td>Martial</td>
 <td>Spinning</td>
 <td>2</td>
@@ -1815,30 +1821,30 @@ the turn of the character who fired it).</p>
 <td>Burning Oil or Napalm</td>
 <td>3*ammo</td>
 <td>25</td>
-<td>free or 2 rounds</td>
+<td>free or 2 rounds (20)</td>
 <td>Martial</td>
 <td>Steam</td>
 <td>1</td>
 <td>n/a</td>
 <td>20</td>
-<td>0</td>
+<td>50cm</td>
 <td>100</td>
-<td></td>
+<td>Spray Mode</td>
 </tr>
 <tr>
 <td>Heavy Pressurized Flamethrower</td>
 <td>Burning Oil or Napalm</td>
 <td>4*ammo</td>
 <td>33</td>
-<td>free or 2 rounds</td>
+<td>free or 2 rounds (30)</td>
 <td>Martial</td>
 <td>Steam</td>
 <td>1</td>
 <td>n/a</td>
 <td>37.5</td>
-<td>0</td>
+<td>1m</td>
 <td>200</td>
-<td>3-round burst mode</td>
+<td>3-round burst mode, Spray Mode</td>
 </tr>
 <tr>
 <td>Laser</td>
@@ -1896,7 +1902,8 @@ again. If more than a round, the reloader must spend the listed time
 taking standard actions of reloading.</p>
 <p>Flamethrowers and some firearms have two times: one for loading the
 next entry in the embedded tank or magazine and one for swapping in a
-fresh tank or magazine.</p>
+fresh tank or magazine. For flamethrowers, the number of shots between
+tank swaps is given in parentheses.</p>
 <p>(While it is common for weapon wielders to do their own reloading,
 this is not necessary, and sometimes poor tactics.)</p>
 <h4 id="complexity-1">Complexity</h4>
@@ -2838,6 +2845,28 @@ still take it, just not go anywhere.</p>
 <p>You may spend a standard action preparing to attack a target you can
 clearly see. You gain +2 on your next attack against this target. If you
 lose sight of the target for any reason, the bonus vanishes.</p>
+<h2 id="charge">Charge</h2>
+<p>A charge combines you move and standard actions into a single
+attack.</p>
+<p>You must move directly toward your enemy and move at least 2
+meters.</p>
+<p>If you attack with a thrusting weapon, you deal double damage.</p>
+<p>Alternatively, if you attack with a swining weapon and jump at the
+end of your charge achieving a vertical at least half your enemies
+height, you deal double damage <em>and</em> attack their head at their
+body’s AC.</p>
+<p>However, charging carries risks. If you are attacked with a thrusting
+weapon while charging (e.g. via an attack of opportunity or a readied
+action) you take double damage. And if you are attacked while jumping,
+you cannot react.</p>
+<h2 id="cover-fire">Cover Fire</h2>
+<p>When using the Spray mode on a ranged weapon, you may slow your shots
+to cover all the time until your next turn. Anyone who passes through a
+square you are spraying takes 1/10th of the stray shots you fire. Anyone
+who begins or ends their turn in the area takes 1/2.</p>
+<p>Furthermore, anyone choosing to enter the spray zone must make a dc
+15 will save and anyone choosing to stand adjactent to the spray zone
+must make a dc 10 will save.</p>
 <h1 id="feats">Feats</h1>
 <p><strong>Combat Reflexes:</strong> Gain reactions per round equal to
 your dex mod (if positive). If your dex mode changes during a round,

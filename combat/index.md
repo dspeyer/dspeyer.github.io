@@ -584,13 +584,13 @@ Goatsfoot Crossbow | Bolt (light or heavy) | 2×ammo | 27 | 2 rounds | Simple | 
 Windlass Crossbow | Bolt (light or heavy) | 3×ammo | 33 | 5 rounds | Simple | Iron | 2/1 | 8(reload) | 2.5 | 70cm | 30 | Strain, Ready
 Trebuchet | 2.5-5 kg Stone, Ball or Bomb | 7×ammo | 40 | 2 minutes | Martial | Spinning | n/a | 12(reload) | 1000 | 7m | 400 | Long, Aim During Reload, Assembly Required, Arcing
 Ballista | Oversize Bolt | 5×ammo | 40 | 2 minutes | Martial | Iron | str | 12;33 | 16 | 3m | 200 | Strain
-Pump Flamethrower | Burning Oil or Napalm | 2*ammo | 17 | free or 1 minute | Martial | Spinning | 2 | n/a | 50 | 170cm | 300 | 
+Pump Flamethrower | Burning Oil or Napalm | 2*ammo | 17 | free or 1 minute (10) | Martial | Spinning | 2 | n/a | 50 | 170cm | 300 | 
 Firearm | *See* | *Separate* | *Table* | | Simple | | | | | | | Ready
 Grenade Launcher | Grenade | 2×ammo | 33 | Move Action | Martial | Information | 2 | 12 | 1.5 | 30cm | 50 | Long
 Underslung Grenade Launcher | Grenade | 2×ammo | 27 | Move Action | Martial | Information | n/a | 12 | 1 | N/A | 50 | Long. Attaches to Firearm
 Dart Gun | Dart | 2×ammo | 27 | Free Action | Simple | Information | 1 | 3 | 1 | 70cm | 20 | Ready
-Light Pressurized Flamethrower | Burning Oil or Napalm | 3*ammo | 25 | free or 2 rounds | Martial | Steam | 1 | n/a | 20 | 0 | 100 | 
-Heavy Pressurized Flamethrower | Burning Oil or Napalm | 4*ammo | 33 | free or 2 rounds | Martial | Steam | 1 | n/a | 37.5 | 0 | 200 | 3-round burst mode
+Light Pressurized Flamethrower | Burning Oil or Napalm | 3*ammo | 25 | free or 2 rounds (20) | Martial | Steam | 1 | n/a | 20 | 50cm | 100 | Spray Mode
+Heavy Pressurized Flamethrower | Burning Oil or Napalm | 4*ammo | 33 | free or 2 rounds (30) | Martial | Steam | 1 | n/a | 37.5 | 1m | 200 | 3-round burst mode, Spray Mode
 Laser | Coherent Light | rating×ammo | 167 | Free Action | Simple | Solar | 1 | 6 | rating + power source | Varies | 100 | Unlimited Range, Energy Cost: rating, Auto-aim, Ready
 Blaster | Plasma Blast | rating×ammo | 100 | Free Action | Simple | Star | 1 | 6 | rating/2 + power source | 30cm | 70 | Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim, Ready
 </div>
@@ -613,7 +613,7 @@ Yes, it's annoying that this column uses strength score when the previous column
 
 What sort of action is needed to reload the weapon so it can fire again.  If more than a round, the reloader must spend the listed time taking standard actions of reloading.
 
-Flamethrowers and some firearms have two times: one for loading the next entry in the embedded tank or magazine and one for swapping in a fresh tank or magazine.
+Flamethrowers and some firearms have two times: one for loading the next entry in the embedded tank or magazine and one for swapping in a fresh tank or magazine.  For flamethrowers, the number of shots between tank swaps is given in parentheses. 
 
 (While it is common for weapon wielders to do their own reloading, this is not necessary, and sometimes poor tactics.)
 
@@ -1145,6 +1145,12 @@ If you attack with a thrusting weapon, you deal double damage.
 Alternatively, if you attack with a swining weapon and jump at the end of your charge achieving a vertical at least half your enemies height, you deal double damage *and* attack their head at their body's AC.
 
 However, charging carries risks.  If you are attacked with a thrusting weapon while charging (e.g. via an attack of opportunity or a readied action) you take double damage.  And if you are attacked while jumping, you cannot react.
+
+## Cover Fire
+
+When using the Spray mode on a ranged weapon, you may slow your shots to cover all the time until your next turn.  Anyone who passes through a square you are spraying takes 1/10th of the stray shots you fire.  Anyone who begins or ends their turn in the area takes 1/2.
+
+Furthermore, anyone choosing to enter the spray zone must make a dc 15 will save and anyone choosing to stand adjactent to the spray zone must make a dc 10 will save.
 
 # Feats
 
