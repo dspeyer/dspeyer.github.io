@@ -1655,7 +1655,7 @@ With a DC 12 spellcraft check, you can attach a spell that doesn't do anything t
 
 You can embed a short message in an arcane mark (roughly five words or equivalent).  You can also embed a signature which identifies the mark as yours.  Forging someone else's signature is a minimum DC 22 spellcraft check.
 
-A DC 15 detect magic will identify the spell as an arcane mark; a DC 20 will reveal any message.  A DC 20+X check will reveal a forged signature cast at 20+2X.
+A DC 15 detect magic will identify the spell as an arcane mark; a DC 20 will reveal any message.  A DC 20+X check will reveal a forged signature cast at 20+2X.  (Recognizing a signature, forged or genuine, requires outside knowledge of what the real signature looks like.)
 
 #### Identify Spell
 
