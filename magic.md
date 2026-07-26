@@ -1033,12 +1033,16 @@ Effects:
 5. Ghost Sound: Create sound, up to shouting volume.  Requires perform(imitation) check to fool anyone.  (cost: 1)
 6. Crashing Thunder: Deal Xd4 sonic damage, which bypasses all dr and er.  Any creature which loses more than half its hp to sonic damage is also deafened. (cost: X)
 7. Hush: Sound is suppressed in the immediate vicinity of target object.  Any listen checks by or about the target take -2X (cost: X)
+8. Air Ward: Target object is surrounded (at a distance of up to a meter) by a field air cannot cross in either direction.  Other things can.  (cost: 5)
+9. Extract Carbon: All carbon in up to X cubic meters of air is separated from its bonds and falls as fine graphite dust. (cost: X)
 
 A manipulator uses its caster's BAB and skill ranks.
 
 Adjusted Air Resistance multiplies or divides the maximum speed of an object with fixed acceleration (e.g. a falling object) by sqrt(X), and therefore collision damage from that speed by X.  It also multiplies or divides the accelleration of a sailing vessel by X (no effect on top speed).
 
 An upward wind and a x2 air resistance will allow a human to briefly hover.
+
+Extract Carbon on 1 cubic meter of human exhalation produces roughly 22 grams (10ml) of graphite dust, and the refreshed air will support one human for about 4 hours.
 
 Any ambiguities from the choice of skills are resolved in the caster's favor.
 
@@ -1116,6 +1120,7 @@ Duration: skill total rounds
 2. Shape Ice: Reshape a piece of ice of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Salt Swap: Convert X liters of salt water into half acid and half alkali.  Each liter deals 1d6 corrosion damage on a splash, or 5d6/round for continual contact.  (cost: X)
 4. Fog: Convert 10X grams of water into 10X cubic meters of dense fog (cost: X)
+5. Water Ward: Target object is surrounded (at a distance of up to a meter) by a field water cannot cross in either direction.  Other things can.  (cost: 5)
 
 A manipulator uses its caster's BAB and skill ranks.
 
@@ -1136,6 +1141,7 @@ Effects:
 1. Wood Manipulator: Animate X kg of wood.  It can fly, carry objects or perform combat manuevers with an effective strength score of 10+X and dex of 10+X. (cost: 3+X)
 2. Shape Wood: Reshape a wood object of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Shillelagh: Wooden melee or thrown weapon gains +X to attack, +Xd4 damage (cost: 2*X max X=5)
+5. Wood Ward: Target object is surrounded (at a distance of up to a meter) by a field water cannot cross in either direction.  Other things can.  (cost: 7)
 
 A manipulator uses its caster's BAB and skill ranks.
 
