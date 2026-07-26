@@ -1619,7 +1619,7 @@ Example DCs:
 
 Spellcraft is an intelligence-based technical skill that suffers from armor check penalty (for arms, if the armor rules distinguish this).  Spellcraft checks relating to a specific school receive synergy from that school's linked skill.
 
-Besides casting spells, spellcraft can be used for other things.  These uses do not require a magic source.  All except Identify Spell require a standard action (but see the Magic Sight feat).
+Besides casting spells, spellcraft can be used for other things.  These uses do not require a magic source (except Arcane Mark).  All except Identify Spell require a standard action (but see the Magic Sight feat).
 
 #### Detect Magic
 
@@ -1642,6 +1642,14 @@ If your spellcraft check minus 15 exceeds the original caster's spellcraft check
 Block a spell being cast.  You must have a way of perceiving the spell, and a readied action.
 
 Like Dispel, but subtract 20 from the counterspelling check.  Unlike dispel, multiple people can counterspell at once, in which case their (check minus 20)s sum.
+
+#### Arcane Mark
+
+With a dc 12 spellcraft check, you can attach a spell that doesn't do anything to an object.  This does require an active magic source, and costs as a rating 1 spell.  It does not, however, count against your active spell limit.  An arcane mark is permanent unless dispelled.
+
+Each caster's mark is unique.  Also, you can include a brief message with the mark (about five words).
+
+A DC 15 detect magic will identify the spell as an arcane mark; a DC 20 will reveal any message and the caster's uniqueness (though identifying a caster by their mark requires having knowingly seen their mark before).
 
 #### Identify Spell
 
