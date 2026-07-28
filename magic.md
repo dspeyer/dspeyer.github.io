@@ -1225,6 +1225,7 @@ Effects:
 1. Lesser Hex: Target takes -X penalty to a skill or saving throw (cost: X)
 2. Pacifying Hex: Target takes -X penalty to all attacks (cost: 2*X)
 3. Greater Hex: Target takes -X penalty to all skills and saving throws (cost: 3*X)
+3. Ability Hex: Target takes -X penalty to an ability score (cost: 2*X)
 4. Blindness/Etc: Target loses a sense (cost: 4)
 5. Confusion: Target looses a mental faculty, such as words, arithmetic or theory-of-mind (cost: 10)
 
