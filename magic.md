@@ -1442,6 +1442,8 @@ Effects:
 
 When selecting extraplanar spirits, you can either seek a spirit of a general description who would be happy to be summoned/contacted or a specific spirit by name (either true name or current use-name).  If you select the former, the spirit will be grateful for the contact and broadly supportive of your goals insofar as they align with its nature.  If you select the latter, the spirit can make a will save to reject the contact altogether, and will act according to its interests.  
 
+When doing a general summoning, the summoner's culture effects which spirits hear the summoning how clearly, albeit in a complicated way.  As such, communities without direct contact rarely learn of each other by summoning the same extraplanar spirits.  And when they do, they don't learn very much, because the summoned spirits usually don't pay attention to the things people want to know.
+
 While many spirits can summon spirits of their own kind, this is limited by body materials.  Except for elementals, who can pull materials from their planes and fey, whose needed materials are easy to find in any forest in autumn.  Fortunately elementals and fey respect the balance of nature, and are generally unwilling to attempt this.
 
 When a spirit uses the Create Body effect *for itself*, it can be considerably less picky about materials, provided they resemble the requirement in some way.  A determined infernal could create a body for itself from an iron sickle that had been left out in the rain, and many a half-blood grows to fear farming equipment for this reason.  A third-party summoner, even a fellow infernal, cannot make use of this class of shortcut.
