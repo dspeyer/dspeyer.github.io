@@ -2560,6 +2560,11 @@ er. Any creature which loses more than half its hp to sonic damage is
 also deafened. (cost: X)</li>
 <li>Hush: Sound is suppressed in the immediate vicinity of target
 object. Any listen checks by or about the target take -2X (cost: X)</li>
+<li>Air Ward: Target object is surrounded (at a distance of up to a
+meter) by a field air cannot cross in either direction. Other things
+can. (cost: 5)</li>
+<li>Extract Carbon: All carbon in up to X cubic meters of air is
+separated from its bonds and falls as fine graphite dust. (cost: X)</li>
 </ol>
 <p>A manipulator uses its caster’s BAB and skill ranks.</p>
 <p>Adjusted Air Resistance multiplies or divides the maximum speed of an
@@ -2569,6 +2574,11 @@ divides the accelleration of a sailing vessel by X (no effect on top
 speed).</p>
 <p>An upward wind and a x2 air resistance will allow a human to briefly
 hover.</p>
+<p>Extract Carbon on 1 cubic meter of human exhalation produces roughly
+22 grams (10ml) of graphite dust, and the refreshed air will support one
+human for about 4 hours.</p>
+<p>The force exerted on an air ward still affects the warded object. It
+cannot deal damage but it may still be able to cause motion.</p>
 <p>Any ambiguities from the choice of skills are resolved in the
 caster’s favor.</p>
 <h2 id="elemental-earth">Elemental Earth</h2>
@@ -2656,10 +2666,15 @@ alkali. Each liter deals 1d6 corrosion damage on a splash, or 5d6/round
 for continual contact. (cost: X)</li>
 <li>Fog: Convert 10X grams of water into 10X cubic meters of dense fog
 (cost: X)</li>
+<li>Water Ward: Target object is surrounded (at a distance of up to a
+meter) by a field water cannot cross in either direction. Other things
+can. (cost: 5)</li>
 </ol>
 <p>A manipulator uses its caster’s BAB and skill ranks.</p>
 <p>Combining Salt Swap and Fog produces a corrosive fog that deals
 1d6/round to anyone or anything in it.</p>
+<p>The force exerted on a water ward still affects the warded object. It
+cannot deal damage but it may still be able to cause motion.</p>
 <h2 id="elemental-wood">Elemental Wood</h2>
 <p>This school affects plant matter.</p>
 <p>Save: None<br />
@@ -2675,8 +2690,13 @@ dex of 10+X. (cost: 3+X)</li>
 shapes require a relevant craft check. (cost: 1+X)</li>
 <li>Shillelagh: Wooden melee or thrown weapon gains +X to attack, +Xd4
 damage (cost: 2*X max X=5)</li>
+<li>Wood Ward: Target object is surrounded (at a distance of up to a
+meter) by a field water cannot cross in either direction. Other things
+can. (cost: 7)</li>
 </ol>
 <p>A manipulator uses its caster’s BAB and skill ranks.</p>
+<p>The force exerted on a wood ward still affects the warded object. It
+cannot deal damage but it may still be able to cause motion.</p>
 <h2 id="enchantment">Enchantment</h2>
 <p>This school affects the brains of animals, particularly the parts
 that manage emotions.</p>
@@ -2774,6 +2794,8 @@ Duration: Skill total rounds</p>
 2*X)</li>
 <li>Greater Hex: Target takes -X penalty to all skills and saving throws
 (cost: 3*X)</li>
+<li>Ability Hex: Target takes -X penalty to an ability score (cost:
+2*X)</li>
 <li>Blindness/Etc: Target loses a sense (cost: 4)</li>
 <li>Confusion: Target looses a mental faculty, such as words, arithmetic
 or theory-of-mind (cost: 10)</li>
@@ -3364,8 +3386,9 @@ armor check penalty (for arms, if the armor rules distinguish this).
 Spellcraft checks relating to a specific school receive synergy from
 that school’s linked skill.</p>
 <p>Besides casting spells, spellcraft can be used for other things.
-These uses do not require a magic source. All except Identify Spell
-require a standard action (but see the Magic Sight feat).</p>
+These uses do not require a magic source (except Arcane Mark). All
+except Identify Spell require a standard action (but see the Magic Sight
+feat).</p>
 <h4 id="detect-magic">Detect Magic</h4>
 <ul>
 <li>DC 10 to notice active spells or other magic within 20m</li>
@@ -3390,6 +3413,19 @@ spell, and a readied action.</p>
 <p>Like Dispel, but subtract 20 from the counterspelling check. Unlike
 dispel, multiple people can counterspell at once, in which case their
 (check minus 20)s sum.</p>
+<h4 id="arcane-mark">Arcane Mark</h4>
+<p>With a DC 12 spellcraft check, you can attach a spell that doesn’t do
+anything to an object. This does require an active magic source, and
+costs as a rating 1 spell. It does not, however, count against your
+active spell limit. An arcane mark is permanent unless dispelled.</p>
+<p>You can embed a short message in an arcane mark (roughly five words
+or equivalent). You can also embed a signature which identifies the mark
+as yours. Forging someone else’s signature is a minimum DC 22 spellcraft
+check.</p>
+<p>A DC 15 detect magic will identify the spell as an arcane mark; a DC
+20 will reveal any message. A DC 20+X check will reveal a forged
+signature cast at 20+2X. (Recognizing a signature, forged or genuine,
+requires outside knowledge of what the real signature looks like.)</p>
 <h4 id="identify-spell">Identify Spell</h4>
 <p>Without Detect Magic, you can still deduce an incoming spell’s
 identity from somatic and verbal components.</p>
