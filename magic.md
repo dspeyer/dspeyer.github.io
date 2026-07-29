@@ -1044,6 +1044,8 @@ An upward wind and a x2 air resistance will allow a human to briefly hover.
 
 Extract Carbon on 1 cubic meter of human exhalation produces roughly 22 grams (10ml) of graphite dust, and the refreshed air will support one human for about 4 hours.
 
+The force exerted on an air ward still affects the warded object.  It cannot deal damage but it may still be able to cause motion.
+
 Any ambiguities from the choice of skills are resolved in the caster's favor.
 
 ## Elemental Earth
@@ -1126,6 +1128,8 @@ A manipulator uses its caster's BAB and skill ranks.
 
 Combining Salt Swap and Fog produces a corrosive fog that deals 1d6/round to anyone or anything in it.
 
+The force exerted on a water ward still affects the warded object.  It cannot deal damage but it may still be able to cause motion.
+
 ## Elemental Wood
 
 This school affects plant matter.
@@ -1144,6 +1148,9 @@ Effects:
 5. Wood Ward: Target object is surrounded (at a distance of up to a meter) by a field water cannot cross in either direction.  Other things can.  (cost: 7)
 
 A manipulator uses its caster's BAB and skill ranks.
+
+The force exerted on a wood ward still affects the warded object.  It cannot deal damage but it may still be able to cause motion.
+
 
 ## Enchantment
 
