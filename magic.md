@@ -95,7 +95,7 @@ When casting in interplanetary space (excepting dark-matter nebulae), you take a
 
 ## Targets
 
-Most spells target an "object".  An object must be contiguous and distinguishable from its surroundings without mental effort.  It is often possible to make a part of an object into an object in its own right by chalking its border.  An object must be at least as large as a grain of rice and no larger than a minivan (unless the Outsized Target metamagic is applied).
+Most spells target an "object".  An object must be contiguous and distinguishable from its surroundings without mental effort.  It is often possible to make a part of an object into an object in its own right by chalking its border.  However, you can never target part of a living being: all or nothing.  An object must be at least as large as a grain of rice and no larger than a minivan (unless the Outsized Target metamagic is applied).
 
 Some spells target a "creature".  This must be biological and living.
 
