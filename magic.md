@@ -1145,12 +1145,15 @@ Effects:
 1. Wood Manipulator: Animate X kg of wood.  It can fly, carry objects or perform combat manuevers with an effective strength score of 10+X and dex of 10+X. (cost: 3+X)
 2. Shape Wood: Reshape a wood object of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Shillelagh: Wooden melee or thrown weapon gains +X to attack, +Xd4 damage (cost: 2*X max X=5)
-5. Wood Ward: Target object is surrounded (at a distance of up to a meter) by a field water cannot cross in either direction.  Other things can.  (cost: 7)
+4. Plant Anatomy: Convert target from one form of plant matter to another form produced by the same plant, respecting stoichiometry if necessary (cost: 5)
+5. Plant Growth: Living plant grows X times faster (cost: X-1)
+6. Final Growth: Dead wooden object of up to X kg grows as if alive, see below (cost: X)
 
 A manipulator uses its caster's BAB and skill ranks.
 
-The force exerted on a wood ward still affects the warded object.  It cannot deal damage but it may still be able to cause motion.
+A plant undergoing Plant Growth also consumes X times as much water, CO2, and nitrates.  It does not require extra sunlight: the magic provides for that.
 
+A wooden object undergoing Final Growth will attempt to put forth roots, shoots and leaves in accordance with plant nature.  The material for these comes from elsewhere in the object, where it becomes thinner.  If the object finds soil, water, air and sunlight, it becomes a living plant.  If not, it expends the last of its chemical resources, and cannot be the target of another Final Growth effect.
 
 ## Enchantment
 
