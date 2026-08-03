@@ -95,7 +95,7 @@ When casting in interplanetary space (excepting dark-matter nebulae), you take a
 
 ## Targets
 
-Most spells target an "object".  An object must be contiguous and distinguishable from its surroundings without mental effort.  It is often possible to make a part of an object into an object in its own right by chalking its border.  An object must be at least as large as a grain of rice and no larger than a minivan (unless the Outsized Target metamagic is applied).
+Most spells target an "object".  An object must be contiguous and distinguishable from its surroundings without mental effort.  It is often possible to make a part of an object into an object in its own right by chalking its border.  However, you can never target part of a living being: all or nothing.  An object must be at least as large as a grain of rice and no larger than a minivan (unless the Outsized Target metamagic is applied).
 
 Some spells target a "creature".  This must be biological and living.
 
@@ -642,11 +642,16 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 |Word Sight |  any active magic source, telepathy school, spellcraft +6 | sense the meaning of all words spoken or signed with intent that you understand them |
 |Quiet Soul |  knowledge religion 1 rank | hide from Soul Sight, Life and Magic Sight |
 |Deceptive Soul |  Quiet Soul | appear as aligned as you choose to a Soul Seer’s magic source |
+| Expand Sight | Any Sight feat | The range on your Sight feat(s) is doubled |
 |Astral Projection | | Briefly detach your soul from your body |
 |Ambiguous Soul | Astral Projection, appropriate lifestyle | Treat your soul as another spirit type |
 |Possess Animal | Astral Projection | Operate an animal (including a human body) as if it were your own body |
 | Effect Specialist | Magic School | 4 free metamagics for a specific effect. |
 |Familiar | Druid or any other active magic source and handle animal +5 | You have lightly connected your soul to a single animal |
+| Familiar Spirit | Soul Sight and diplomacy +5 | You have lightly connected your soul to a spirit |
+| Multiple Familiar Spirits | Familiar Spirit | Number of familiar spirits up to one third of your diplomacy modifier |
+| Grant Spell Slot | Familiar Spirit, Spellcraft +15 | Grant your familiar spirit a spell slot |
+| Grant Spell Slot Suite | Grant Spell Slot | Grant your familiar spirit a set of spell slots |
 |Fluid Caster |  6 ranks spellcraft | Treat your spells as one rating smaller for purposes of cost |
 |Multi School |  two known schools | combine effects from different schools in one spell |
 |Multi Source Caster  |  two active magic source, spellcraft +10 | Split cost between schools |
@@ -719,6 +724,10 @@ You can hide from Soul, Life and Magic Sight if your bluff check or will save ex
 Prerequisite: Quiet Soul.    
 You can appear as aligned as you choose to a Soul Seer’s magic source if your bluff check exceeds their knowledge(religion) activation. You must know what magic source you are faking.
 
+#### Expand Sight
+Prerequisite: Any Sight feat
+The range on your Sight feat(s) is doubled.  You may take this feat multiple times.  Its effects stack exponentially.
+
 ## General Magic Feats
 
 #### Astral Projection
@@ -739,7 +748,23 @@ You can take this feat multiple times, but must pick a different effect each tim
 
 #### Familiar
 Prerequisites: Druid or any other active magic source and handle animal +5    
-You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.  The animal can have creature levels no more than half your Handle Animal modifier.  If your familiar dies or you dismiss it, you can find and connect to a new one with one day of effort.
+You have lightly connected your soul to a single animal.  The animal gains an intelligence score equal to half of yours, and becomes fanatically loyal to you.  You can communicate telepathically.  You may count your position as being the animal's for magical purposes provided it is within 100 meters.  The animal can have creature levels no more than half your Handle Animal modifier.  If your familiar dies or you dismiss it, you can connect to a new one with one day of effort.
+
+#### Familiar Spirit
+Prerequisites: Soul Sight and diplomacy +5    
+You have lightly connected your soul to a spirit.  The spirit must be willing and positively aligned to your magic source.  While your spirit is within Soul Sight range, you can communicate telepathically and cast spells from each other's locations.  The spirit can have no more total levels than your diplomacy modifier.  If your familiar spirit dies or rejects you, or you dismiss it, you can connect to a new one with one day of effort.
+
+#### Multiple Familiar Spirits
+Prerequisites: Familiar Spirit    
+You can have a number of familiar spirits up to one third of your diplomacy modifier.
+
+#### Grant Spell Slot
+Prerequisites: Familiar Spirit, Spellcraft +15     
+You can grant your familiar spirit a spell slot that will power a single spell of up to a given level.  The spell slot is compatible with up to three schools of your choice that your magic source provides and lasts (by default) for one day.  Granting it counts as a school-less spell of rating one higher than the slot's value, and counts against your active spells.
+
+#### Grant Spell Slot Suite
+Prerequisites: Grant Spell Slot    
+You can grant your familiar spirit a set of spell slots, up to a maximum of what they'd have as a Shaman.  This requires a single cast from you, with rating equal to the sum of the slots given plus one.
 
 #### Fluid Caster
 Prerequisite: 6 ranks spellcraft.    
@@ -881,7 +906,7 @@ When you cast a spell on a target who strongly opposes your cause, add a +2 mora
 
 #### Human Sacrifice
 Prerequisite: Shaman, knowledge(religion) +5.    
-If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.    
+If you kill one or more ensouled beings immediately before casting a spell, you may add effects with rating equal to the square root of the number of people killed. This does not affect the rating of the spell.  Only deaths within Othersight range count and the maximum rating of effects added this way is your spellcraft modifier.  (It is suspected that there's a way around the latter limitation, but if anyone knows how to do it, they won't admit to it.)    
 *This feat only applies to spells cast from this source*
 
 # Schools
@@ -1002,13 +1027,24 @@ Effects:
 
 1. Lightning: Deal Xd6 electricity damage to nonmetallic target.  Living targets must make a fort save (DC 2*damage) or fall prone with muscle spasms. (cost: X)
 3. Wind: Move X cubic meters of air at a speed of up to 45 mph (cost: 1+X)
+4. Adjust Air Resistance: The force that air applies to target object is multiplied or divided by X (cost: X min X=2)
 2. Air Manipulator: Move 1 cubic meter of air.  It can move objects or perform combat manuevers with an effective strength and dex scores of X. (cost: 3+X)
 4. Control Weather: Alter temperature, wind or precipitation by one step in a kilometer radius (cost: 13)
 5. Ghost Sound: Create sound, up to shouting volume.  Requires perform(imitation) check to fool anyone.  (cost: 1)
 6. Crashing Thunder: Deal Xd4 sonic damage, which bypasses all dr and er.  Any creature which loses more than half its hp to sonic damage is also deafened. (cost: X)
 7. Hush: Sound is suppressed in the immediate vicinity of target object.  Any listen checks by or about the target take -2X (cost: X)
+8. Air Ward: Target object is surrounded (at a distance of up to a meter) by a field air cannot cross in either direction.  Other things can.  (cost: 5)
+9. Extract Carbon: All carbon in up to X cubic meters of air is separated from its bonds and falls as fine graphite dust. (cost: X)
 
 A manipulator uses its caster's BAB and skill ranks.
+
+Adjusted Air Resistance multiplies or divides the maximum speed of an object with fixed acceleration (e.g. a falling object) by sqrt(X), and therefore collision damage from that speed by X.  It also multiplies or divides the accelleration of a sailing vessel by X (no effect on top speed).
+
+An upward wind and a x2 air resistance will allow a human to briefly hover.
+
+Extract Carbon on 1 cubic meter of human exhalation produces roughly 22 grams (10ml) of graphite dust, and the refreshed air will support one human for about 4 hours.
+
+The force exerted on an air ward still affects the warded object.  It cannot deal damage but it may still be able to cause motion.
 
 Any ambiguities from the choice of skills are resolved in the caster's favor.
 
@@ -1086,10 +1122,13 @@ Duration: skill total rounds
 2. Shape Ice: Reshape a piece of ice of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Salt Swap: Convert X liters of salt water into half acid and half alkali.  Each liter deals 1d6 corrosion damage on a splash, or 5d6/round for continual contact.  (cost: X)
 4. Fog: Convert 10X grams of water into 10X cubic meters of dense fog (cost: X)
+5. Water Ward: Target object is surrounded (at a distance of up to a meter) by a field water cannot cross in either direction.  Other things can.  (cost: 5)
 
 A manipulator uses its caster's BAB and skill ranks.
 
 Combining Salt Swap and Fog produces a corrosive fog that deals 1d6/round to anyone or anything in it.
+
+The force exerted on a water ward still affects the warded object.  It cannot deal damage but it may still be able to cause motion.
 
 ## Elemental Wood
 
@@ -1106,8 +1145,15 @@ Effects:
 1. Wood Manipulator: Animate X kg of wood.  It can fly, carry objects or perform combat manuevers with an effective strength score of 10+X and dex of 10+X. (cost: 3+X)
 2. Shape Wood: Reshape a wood object of up to X cubic meters.  Detailed shapes require a relevant craft check.  (cost: 1+X)
 3. Shillelagh: Wooden melee or thrown weapon gains +X to attack, +Xd4 damage (cost: 2*X max X=5)
+4. Plant Anatomy: Convert target from one form of plant matter to another form produced by the same plant, respecting stoichiometry if necessary (cost: 5)
+5. Plant Growth: Living plant grows X times faster (cost: X-1)
+6. Final Growth: Dead wooden object of up to X kg grows as if alive, see below (cost: X)
 
 A manipulator uses its caster's BAB and skill ranks.
+
+A plant undergoing Plant Growth also consumes X times as much water, CO2, and nitrates.  It does not require extra sunlight: the magic provides for that.
+
+A wooden object undergoing Final Growth will attempt to put forth roots, shoots and leaves in accordance with plant nature.  The material for these comes from elsewhere in the object, where it becomes thinner.  If the object finds soil, water, air and sunlight, it becomes a living plant.  If not, it expends the last of its chemical resources, and cannot be the target of another Final Growth effect.
 
 ## Enchantment
 
@@ -1189,6 +1235,7 @@ Effects:
 1. Lesser Hex: Target takes -X penalty to a skill or saving throw (cost: X)
 2. Pacifying Hex: Target takes -X penalty to all attacks (cost: 2*X)
 3. Greater Hex: Target takes -X penalty to all skills and saving throws (cost: 3*X)
+3. Ability Hex: Target takes -X penalty to an ability score (cost: 2*X)
 4. Blindness/Etc: Target loses a sense (cost: 4)
 5. Confusion: Target looses a mental faculty, such as words, arithmetic or theory-of-mind (cost: 10)
 
@@ -1363,7 +1410,9 @@ Effects:
 
 Distance to a teleport beacon is generally irrelevant.  The target (specified as such in the effect description) must be targeted normally, but the beacon is not a target.  Even the speed-of-light limit does not apply.
 
-Warp Step does not effect the kinetic energy imparted by collision, magnetic field generated if charged, special relativistic effects, or similar velocity-dependent physics.  Note that newtonian relativity still applies: distance traveled relative to an object depends on velocity relative to that object.
+Warp Step operates in the frame of reference of the object which exerts the greatest gravity on the target.  If the target moves into the gravity well of a different object, Warp Step changes to operate in the new frame of reference.
+
+It does not effect the kinetic energy imparted by collision, magnetic field generated if charged, special relativistic effects, or similar velocity-dependent physics.
 
 Creatures under Warp Step perceive their immediate surroundings as shrunken and the rest of the world as normal.
 
@@ -1395,6 +1444,8 @@ Effects:
 5. Lesser Summon Element: Bring up to one liter of matter from an elemental plane into the material (cost: 2) [requires corresponding elemental school]
 
 When selecting extraplanar spirits, you can either seek a spirit of a general description who would be happy to be summoned/contacted or a specific spirit by name (either true name or current use-name).  If you select the former, the spirit will be grateful for the contact and broadly supportive of your goals insofar as they align with its nature.  If you select the latter, the spirit can make a will save to reject the contact altogether, and will act according to its interests.  
+
+When doing a general summoning, the summoner's culture effects which spirits hear the summoning how clearly, albeit in a complicated way.  As such, communities without direct contact rarely learn of each other by summoning the same extraplanar spirits.  And when they do, they don't learn very much, because the summoned spirits usually don't pay attention to the things people want to know.
 
 While many spirits can summon spirits of their own kind, this is limited by body materials.  Except for elementals, who can pull materials from their planes and fey, whose needed materials are easy to find in any forest in autumn.  Fortunately elementals and fey respect the balance of nature, and are generally unwilling to attempt this.
 
@@ -1587,7 +1638,7 @@ Example DCs:
 
 Spellcraft is an intelligence-based technical skill that suffers from armor check penalty (for arms, if the armor rules distinguish this).  Spellcraft checks relating to a specific school receive synergy from that school's linked skill.
 
-Besides casting spells, spellcraft can be used for other things.  These uses do not require a magic source.  All except Identify Spell require a standard action (but see the Magic Sight feat).
+Besides casting spells, spellcraft can be used for other things.  These uses do not require a magic source (except Arcane Mark).  All except Identify Spell require a standard action (but see the Magic Sight feat).
 
 #### Detect Magic
 
@@ -1610,6 +1661,14 @@ If your spellcraft check minus 15 exceeds the original caster's spellcraft check
 Block a spell being cast.  You must have a way of perceiving the spell, and a readied action.
 
 Like Dispel, but subtract 20 from the counterspelling check.  Unlike dispel, multiple people can counterspell at once, in which case their (check minus 20)s sum.
+
+#### Arcane Mark
+
+With a DC 12 spellcraft check, you can attach a spell that doesn't do anything to an object.  This does require an active magic source, and costs as a rating 1 spell.  It does not, however, count against your active spell limit.  An arcane mark is permanent unless dispelled.
+
+You can embed a short message in an arcane mark (roughly five words or equivalent).  You can also embed a signature which identifies the mark as yours.  Forging someone else's signature is a minimum DC 22 spellcraft check.
+
+A DC 15 detect magic will identify the spell as an arcane mark; a DC 20 will reveal any message.  A DC 20+X check will reveal a forged signature cast at 20+2X.  (Recognizing a signature, forged or genuine, requires outside knowledge of what the real signature looks like.)
 
 #### Identify Spell
 

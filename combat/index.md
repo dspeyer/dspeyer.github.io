@@ -6,11 +6,11 @@ Bob have decided to kill each other.
 Alice is wearing neck-to-toe gambison, augmented with a plate cuirasse
 on her torso and a half-closed plate helmet.  This combination leaves
 her complete freedom of movement in her arms and legs, but does apply
-a -3 penaly to spot checks.  She wields a halberd (long haft, blade
+a -3 penaly to spot checks.  She wields a halberd (2m haft, blade
 and sidespike, spear-point).
 
 Bob is wearing head-to-toe chainmail, with a falchion (fore-bulging
-3-foot blade) in his right hand and a rondel dagger (stilhetto, 1-foot
+1 meter blade) in his right hand and a rondel dagger (stilhetto, 30 cm
 blade) in his left.
 
 
@@ -45,7 +45,7 @@ blade) in his left.
 </div>
 
 
-Alice moves to ten feet away and attacks.  Since Bob is wearing
+Alice moves to 2 meters away and attacks.  Since Bob is wearing
 chainmail, which is not very effective against piercing, she uses the
 side-spike and doesn't worry about where she hits him.  Her attack
 bonus is her base attack (3) plus her dexterity mod (1) totalling 4.
@@ -56,7 +56,7 @@ But Bob reacts by parrying with his falchion.  He rolls his own attack
 (bab=2 dex=2 die=8 total=12) and adds half the result (6) to his AC.
 Alice has now missed.
 
-Bob advances cautiously to a distance of five feet.  He has the Two
+Bob advances cautiously to a distance of 1m.  He has the Two
 Weapon Fighting feat, so he can attack with both weapons.  He begins
 with the falchion.  Since it's not very effective against plate, he
 deliberately slashes at her right arm.  His attack bonus is bab=2 plus
@@ -83,7 +83,7 @@ str of +2, so this is 4 damage.  Alice has a constitution score of 12,
 so her head is still functional.  But Bob has also learned that Alice
 does not have the Combat Reflexes feat.
 
-Alice cautiously backs up five feet and swings again.  Again, she
+Alice cautiously backs up 2m and swings again.  Again, she
 attacks at +4, his AC is 12 and he parries at +4.  She rolls a 15 for
 a total of 19.  He rolls a 4 for a total of 16.  A hit.  Since she
 wasn't aiming at a body part, she rolls randomly and gets left leg.  A
@@ -131,7 +131,7 @@ You can move up to your speed on your turn, and take a standard action (such as 
 
 If you leave a threatened square, the enemy threatening it may use their reaction to make an attack of opportunity.  Moving Cautiously prevents this, but counts as having moved twice the distance.
 
-Some actions (such as drawing a weapon from a sheath) cost five feet of movement.  Others (such as reloading a breach-action firearm) cost a Move Action, which is all your movement.
+Some actions (such as drawing a weapon from a sheath) cost 1m of movement.  Others (such as reloading a breach-action firearm) cost a Move Action, which is all your movement.
 
 ## Reactions
 
@@ -165,6 +165,59 @@ Note that non-lethal damage is not safe.  If you hit your target and do not achi
 
 Attacks can overpenetrate.  Subtract the damage actually dealt (maxes at reducing a body part to negative constitution) as if it were armor (so hollow-point and armor-piercing rules apply), and then subtract the victim's armor again upon exit, even if the original wound went around armor.  If the remaining damage is positive, the weapon makes a stray attack on whatever's on the other side.
 
+Stray attacks roll at -5 against every target in the generally relevant area.
+
+## Distances
+
+Generally distances should be tracked to 1 meter resolution.  Unless otherwise noted, a "square" is 1x1 meter.
+
+Assuming you are medium sized, you can pass through squares with willing people in them, but if you make an attack while in the same square as another person you suffer a cramped quarters penalty regardless of weapon.  You cannot pass through the square of an unwilling person, but you can tumble or bull rush them.
+
+When computing distance, approximate sqrt(2) as 1.5, sum first, then round down.  Unless there's a convenient pythagorean triple.
+
+Concretely:
+
+| 6 | 5 | 4 | 4 | 4 | 4 | 4 | 5 | 6 |
+| 5 | 4 | 4 | 3 | 3 | 3 | 4 | 4 | 5 |
+| 4 | 4 | 3 | 2 | 2 | 2 | 3 | 4 | 4 |
+| 4 | 3 | 2 | 1 | 1 | 1 | 2 | 3 | 4 |
+| 4 | 3 | 2 | 1 | 0 | 1 | 2 | 3 | 4 |
+| 4 | 3 | 2 | 1 | 1 | 1 | 2 | 3 | 4 |
+| 4 | 4 | 3 | 2 | 2 | 2 | 3 | 4 | 4 |
+| 5 | 4 | 4 | 3 | 3 | 3 | 4 | 4 | 5 |
+| 6 | 5 | 4 | 4 | 4 | 4 | 4 | 5 | 6 |
+
+A normal melee weapon can strike at a distance of 1 meter (adjacent).  A reach weapon 2 meters, double-reach 3, etc.
+
+A ranged weapon faces distance AC when the range exceeds the range increment.
+
+## Cramped Quarters
+
+If you attempt to fight in the same square as another character, or use a weapon longer than the width of your environment, you suffer a Cramped Quarters Penalty.
+
+This does four things:
+
+* -4 penalty on melee swinging attacks
+* -2 penalty on melee thrusting attacks
+* You cannot make attacks of opportunity
+* Your weapon loses the Ready property (if it had it)
+
+The width of your environment can be thought of as the largest diameter your-height cylinder that could navigate that environment.  In a corridor, this is simply the width of the corrider.
+
+## Readied Actions
+
+Instead of taking an action on your turn, you can ready one.  This can be a standard action or part or all of your movement or both.  Simply don't take whatever type action it is.
+
+Readied actions must have simple triggers, such that you can evaluate them in an instant.  When the trigger happens, you perform the readied action -- even if you no longer want to.  If the trigger does not occur before your next turn, the action is wasted.
+
+Exception: if you have a weapon with the Ready property, you can use "it seems like a good idea to attack someone" as a trigger and "attack them" as the action.  If you take no standard action while holding a loaded ready weapon, it is presumed you readied this.
+
+If multiple people ready based on the same trigger, they roll initiative to determine who acts first.
+
+You may ready an action based on a trigger you perform.  If so, you gain +5 on initiative for that trigger.  For example, you could ready an action "If I see someone after rounding that corner" and you would have a +5 on initiative against the person on the far side who's trigger was "If someone rounds that corner".
+
+You take the readied action when you believe the trigger is fullfilled, even if you're wrong.  Furthermore, you take a -5 haste penalty on skill checks to determine if it is fullfilled.  (Useful to anyone trying to deceive you into wasting the readied action.)
+
 ## Addrenal Surges
 
 You have a number of addrenal surges equal to your con mod.  When you
@@ -176,6 +229,16 @@ one).
 
 You regain your surges with an hour of rest, or a proportional
 fraction (rounding down) for a shorter period.
+
+## Character Sizes
+
+The sizes are fine < diminutive < tiny < small < medium < large < huge < gargantuan < colossal.
+
+Each step represent a 2x linear scale-up so 8x mass.  For example, a human is very roughly 2 meters tall, 100kg and, stands in a quarter of a square meter and needs a full square meter to fight effectively.  A halfling (small) is very roughly 1 meter tall, 12.5kh and stands in sixteenth of a square meter but needs a quarter to fight effectively.  An ogre (large): 4 meters, 800kg, 1 square meter, 4 square meters.  Of course, many animals are differently shaped.
+
+To create a larger version of a creature, *multiply the strength score* by 4 and decrease the dexterity by 2.  Tracking tiny or smaller creatures requires fractional strength scores: round these to 1 where non-integers become awkward.
+
+Non-medium creates take a weight penalty or bonus to their jump and climb checks.  
 
 ## The Ages
 
@@ -207,17 +270,17 @@ Blades are some of the simplest, yet also most versatile, weapons you can wield.
 
 ### Length
 
-The most important variation in a blade is its length.  Conveniently, a sword's length (in feet) is equal to its weight (in pounds).
+The most important variation in a blade is its length.
 
 <div class=captioned>
-Name | Type | Handed | Special | Dmg | L=W | Strength Needed | Price
--|-|-|-|-|-|-|-
-Dagger | Simple | One Handed | Gap Finding | 1d4 | 1 | 4 | 10
-Shortsword | Simple | One Handed |  | 1d6 | 2 | 8 | 40
-Arming Sword | Martial | One Handed |  | 1d8 | 3 | 12 | 90
-Bastard Sword | Exotic or Martial | One or Two Handed | Flexible | 1d10 | 4 | 16 or 12 | 160
-Longsword | Martial | Two Handed |  | 2d6 | 5 | 15 | 250
-Greatsword | Exotic | Two Handed | Reach | 2d8 | 6 | 18 | 360
+Name | Type | Handed | Special | Dmg | Length (cm) | Weight (kg) | Strength Needed | Price
+-|-|-|-|-|-|-|-|-
+Dagger | Simple | One Handed | Gap Finding | 1d4 | 30 | 0.5 | 4 | 10
+Shortsword | Simple | One Handed |  | 1d6 | 70 | 1 | 8 | 40
+Arming Sword | Martial | One Handed |  | 1d8 | 100 | 1.5 | 12 | 90
+Bastard Sword | Exotic or Martial | One or Two Handed | Flexible | 1d10 | 130 | 2 | 16 or 12 | 160
+Longsword | Martial | Two Handed | Reach | 2d6 | 170 | 2.5 | 15 | 250
+Greatsword | Exotic | Two Handed | Double Reach | 2d8 | 200 | 3 | 18 | 360
 Blade properties by length for medium creatures
 </div>
 
@@ -225,7 +288,7 @@ Blade properties by length for medium creatures
 
 The damage, reach and strength requirements of a blade are unaffected by the size of the wielder.  The handedness, type, name and special abilities do.  Specifically, the lengths they attach to are doubled (or halved) for every size category difference.
 
-For example, a 2 foot blade will always weigh 2 pounds, deal 1d6 base damage and require 8 strength to wield in one's primary hand.  For a human, it would be a shortsword.  For a halfling, it would be a bastard sword, requiring an EWP feat to wield one-handed (but allowing two-handing with only 6 strength).  For an ogre, it would be a dagger, and would gain the Gap Finding ability.  A giant or brownie would be unable to wield it effectively.
+For example, a 70 cm blade will always weigh 1 kg, deal 1d6 base damage and require 8 strength to wield in one's primary hand.  For a human, it would be a shortsword.  For a halfling, it would be a bastard sword, requiring an EWP feat to wield one-handed (but allowing two-handing with only 6 strength).  For an ogre, it would be a dagger, and would gain the Gap Finding ability.  A giant or brownie would be unable to wield it effectively.
 
 Halfling daggers exist, deal 1d2 damage, and cannot be wielded effectively by big folk.  In theory, ogre greatswords exist as well (with double-reach) but they are not available in ordinary markets.
 
@@ -233,9 +296,9 @@ Halfling daggers exist, deal 1d2 damage, and cannot be wielded effectively by bi
 
 A Dagger has the Gap Finding property, meaning that when a thrusting, around-armor attack is made with a dagger, the armor's Armor Class Bonus is reduced by 4 (to a minimum of zero).
 
-A Bastard Sword has the Flexible property, meaning that it can either be a one-handed exotic weapon or a two-handed martial weapon.
+A Bastard Sword has the Flexible property, meaning that it can either be a one-handed exotic weapon or a two-handed martial weapon.  When wielded one handed, it gains the Reach property.
 
-A blade of six feet or longer has the Reach property, meaning that it threatens both adjacent squares *and* squares one further off.
+A blade with reach can attack both adjacent and one-off squares.  A blade with double-reach can attack those and squares one further.
 
 ### Profiles
 
@@ -258,13 +321,13 @@ In some cultures, blade names change with profile.  For example, a fore-bulging 
 
 ### Strength Needed
 
-To wield a blade effectively requires a strength *score* which is a multiple of the blade's weight in pounds:
+To wield a blade effectively requires a strength *score* which is a multiple of the blade's weight in kilograms:
 
  | 
 -|-
-Dominant Hand | 4x
-Weak Hand | 6x
-Both Hands | 3x
+Dominant Hand | 8x
+Weak Hand | 12x
+Both Hands | 6x
 
 You cannot wield a blade in more than two hands, even if you have them.  Note that this strength is not needed to *carry* the weapon.
 
@@ -292,21 +355,23 @@ Feel free to decide the curvature, edge-count, hilt-guard, distal taper and deco
 
 A hafted weapon has a wooden pole and a (usually) metal head.  
 
-The pole may be short (2ft: suitable for attacking enemies in adjacent squares), long (7ft:suitable for attacking enemies one square away) or very long (12ft: suitable for attacking enemies two squares away).  Unlike greatswords, a hafted weapon cannot be used against targets which are closer than it's range (unless you have a special ability to counter-act this).
+The pole may be short (1m: suitable for attacking enemies in adjacent squares), long (2m:suitable for attacking enemies one square away) or very long (4m: suitable for attacking enemies three squares away).  Unlike greatswords, a hafted weapon cannot be used against targets which are closer than it's range (unless you have a special ability to counter-act this).  The length of a hafted weapon for Cramped Quarters purposes is the length of its pole.
+
+(A 3m haft would be easy enough to make, but it would have all the downsides of a 4m haft without the most important upside, so no one does.)
 
 The head of a hafted weapon may contain a terminal spike, and up to two features, though heads with a spike *and* two features only become available in the Spinning Age.  If the two features are the same, the weapon gives a +1 bonus on attack rolls with the feature, since it can be used forehand or backhand as the enemy's defense encourages.  The amount of damage done by a feature is affected by the length of the shaft:
 
-Feature | Weight | Damage Type | Attack Type | Special | Short | Long | Very Long
+Feature | Weight (kg) | Damage Type | Attack Type | Special | Short | Long | Very Long
 --|-|-|-|-|-|-|-
 Bare Haft | 0 | Bludgeoning | Either |  | 1d3 | 1d4 | 1d6
-Spearhead | 1 | Piercing | Thrusting |  | 1d6 | 1d6 | 1d6
-Blade | 2 | Slashing | Swinging |  | 1d10 | 1d12 | 2d8
-Spike | 1 | Piercing | Swinging |  | 1d8 | 1d10 | 1d12
-Blunt Face | 2 | Bludgeoning | Swinging |  | 1d6 | 2d4 | 2d6
-Foreward Hook | 1 | Piercing | Thrusting | Parrying | 1d4 | 1d4 | 1d4
-Backwards Hook | 1 | Piercing | Thrusting | Tripping | 1d4 | 1d4 | 1d4
+Spearhead | 0.5 | Piercing | Thrusting |  | 1d6 | 1d6 | 1d6
+Blade | 1 | Slashing | Swinging |  | 1d10 | 1d12 | 2d10
+Spike | 0.5 | Piercing | Swinging |  | 1d8 | 1d10 | 2d8
+Blunt Face | 1 | Bludgeoning | Swinging |  | 1d6 | 2d4 | 2d6
+Foreward Hook | 0.5 | Piercing | Thrusting | Parrying | 1d4 | 1d4 | 1d4
+Backwards Hook | 0.5 | Piercing | Thrusting | Tripping/Disarming | 1d4 | 1d4 | 1d4
 
-Tripping: weapons with a backwards hook can be used to make trip attacks with a +4 bonus and no attack of opportunity.
+Tripping/Disarming: weapons with a backwards hook can be used to make trip attacks and grants a +4 bonus on both trips and disarms.
 
 <div class=captioned>
 ![Hafted Weapon Heads](Polearm Names.png)
@@ -320,7 +385,7 @@ Note that while the glaive-guisarme can be equally properly refereed to as a gui
 
 ### Weight and Requisite Strength
 
-While the haft of a hafted weapon has weight (1, 2 or 4 pounds depending on length), it is the weight of the head which determines the strength needed to wield it.  However, the shaft length does determine the multiplier, as it is the product of inertia and lever-length that determines the torque the wielder must apply.  In this case, the wielder's size affects the needed strength for two-handed grips, as the space between hands provides its own leverage.
+While the haft of a hafted weapon has weight (0.5, 1 or 2 kg depending on length), it is the weight of the head which determines the strength needed to wield it.  However, the shaft length does determine the multiplier, as it is the product of inertia and lever-length that determines the torque the wielder must apply.  In this case, the wielder's size affects the needed strength for two-handed grips, as the space between hands provides its own leverage.
 
 Wielded in | Short | Long | Very Long
 --|-|-|-
@@ -349,22 +414,22 @@ The cost of a hafted weapon depends on the complexity of its head:
 These are not the only available hafted weapons, but they are pre-statted for your convenience:
 
 <div class=wide>
-Name | Complexity | Spike | Feature 1 | Feature 2 | Haft | Cost | Head Weight | Total Weight | Strength Needed (1h) | Strength Needed 2h | Damage | Special
+Name | Complexity | Spike | Feature 1 | Feature 2 | Haft | Cost | Head Weight (kg) | Total Weight (kg) | Strength Needed (1h) | Strength Needed 2h | Damage | Special
 --|-|-|-|-|-|-|-|-|-|-|--|--
-Club | Simple | No | None | None | Short | 3 | 0 | 1 | 0 | 0 | Bludgeoning 1d3     | 
-Staff | Simple | No | None | None | Long | 3 | 0 | 2 | 0 | 0 | Bludgeoning 1d4     | 
-Shortspear | Simple | Yes | None | None | Short | 10 | 1 | 2 | 3 | 2 | Piercing 1d6     | 
-Longspear | Simple | Yes | None | None | Long | 10 | 1 | 3 | 14 | 3 | Piercing 1d6     | 
-Axe | Simple | No | Blade | None | Short | 10 | 2 | 3 | 6 | 4 | Slashing 1d10     | 
-Mace | Simple | No | Blunt | Blunt | Short | 150 | 4 | 5 | 12 | 8 | Bludgeoning 1d6     | +1 on attacks
-Pike | Martial | Yes | None | None | Very long | 10 | 1 | 5 | 30 | 10 | Piercing 1d6     | 
-Tomahawk | Martial | No | Blunt | Blade | Short | 150 | 4 | 5 | 12 | 8 | Bludgeoning 1d6 Slashing 1d10   | 
-Ji | Martial | Yes | Spike | None | Long | 100 | 2 | 4 | 28 | 6 | Piercing 1d6 Piercing 1d10   | 
-Ji-Pike | Martial | Yes | Spike | None | Very long | 100 | 2 | 6 | 60 | 20 | Piercing 1d6 Piercing 1d12   | 
-Poleaxe | Martial | Yes | Blade | Blunt | Long | 300 | 5 | 7 | 70 | 15 | Piercing 1d6 Slashing 1d12 Bludgeoning 2d4 | 
-Halberd | Martial | Yes | Blade | Spike | Long | 300 | 4 | 6 | 56 | 12 | Piercing 1d6 Piercing 1d12 Slashing 1d12 | 
-Guisarme | Exotic | Yes | Spike | Backhook | Long | 300 | 3 | 5 | 42 | 9 | Piercing 1d6 Piercing 1d12   | Trip
-Name-it-after-yourself | Exotic | No | Blade | Forehook | Long | 150 | 3 | 5 | 42 | 9 | Piercing 1d4 Slashing 1d12   | Parry
+Club | Simple | No | None | None | Short | 3 | 0 | 0.5 | 0 | 0 | Bludgeoning 1d3     | 
+Staff | Simple | No | None | None | Long | 3 | 0 | 1 | 0 | 0 | Bludgeoning 1d4     | 
+Shortspear | Simple | Yes | None | None | Short | 10 | 0.5 | 1 | 3 | 2 | Piercing 1d6     | 
+Longspear | Simple | Yes | None | None | Long | 10 | 0.5 | 1.5 | 14 | 3 | Piercing 1d6     | 
+Axe | Simple | No | Blade | None | Short | 10 | 1 | 1.5 | 6 | 4 | Slashing 1d10     | 
+Mace | Simple | No | Blunt | Blunt | Short | 150 | 2 | 2.5 | 12 | 8 | Bludgeoning 1d6     | +1 on attacks
+Pike | Martial | Yes | None | None | Very long | 10 | 0.5 | 2.5 | 30 | 10 | Piercing 1d6     | 
+Tomahawk | Martial | No | Blunt | Blade | Short | 150 | 2 | 2.5 | 12 | 8 | Bludgeoning 1d6 Slashing 1d10   | 
+Ji | Martial | Yes | Spike | None | Long | 100 | 1 | 2 | 28 | 6 | Piercing 1d6 Piercing 1d10   | 
+Ji-Pike | Martial | Yes | Spike | None | Very long | 100 | 1 | 3 | 60 | 20 | Piercing 1d6 Piercing 2d8   | 
+Poleaxe | Martial | Yes | Blade | Blunt | Long | 300 | 2.5 | 3.5 | 70 | 15 | Piercing 1d6 Slashing 1d12 Bludgeoning 2d4 | 
+Halberd | Martial | Yes | Blade | Spike | Long | 300 | 2 | 3 | 56 | 12 | Piercing 1d6 Piercing 1d12 Slashing 1d12 | 
+Guisarme | Exotic | Yes | Spike | Backhook | Long | 300 | 1.5 | 2.5 | 42 | 9 | Piercing 1d6 Piercing 1d12   | Trip
+Name-it-after-yourself | Exotic | No | Blade | Forehook | Long | 150 | 1.5 | 2.5 | 42 | 9 | Piercing 1d4 Slashing 1d12   | Parry
 </div>
 
 ### Exotic Materials
@@ -402,11 +467,104 @@ Nunchuks are a variant of flail where the ball is a copy of the haft.  This has 
 * Cannot use special materials
 * +2 on perform(weapon drill) checks
 
+### Fire Lances
+
+A fire lance is a spear with an attached tray of burning gunpowder.  It takes a -2 penalty on attacks but deals an extra 1d6 fire damage and provides a +4 bonus to intimidation.  It's available from the gunpowder age.
+
+## Unarmed Strikes
+
+A basic unarmed strike is a simple melee thrusting weapon that deals 1d2 bludgeoning damage.  It provokes an attack of opportunity (including when used for grappling, tripping or disarming).  Also, it may be performed with hands or feet, but feet can only be used to target legs.
+
+A competent unarmed strike is an exotic melee thrusting or swinging weapon that deals 1d3 bludgeoning damage.  It can be done using any body part and does not have special restrictions.
+
+If you have the Two Weapon Fighting feat, one of those weapons may be an unarmed strike.  Including your weapons could be a two-handed sword and a kick.
+
 ## Ranged Weapons
 
 A ranged weapon contains both the weapon itself and the projectile it sends at the enemy.  Most ranged weapons have at least some flexibility in what projectiles they can send.
 
 While melee weapons are mostly fixed by the late iron age, ranged weapons develop extensively.  Pay attention to your setting notes.
+
+### Projectile Qualities
+
+<div class="wide google">
+%%ammo%%
+</div>
+
+ᵃ Throwing Axes, Javelins and Broadhead Arrows listed here are iron-tipped.  Flint-tipped (-2 on attack rolls) versions are available from the stone age, and copper (-1 on attack rolls, 3x price) and bronze (10x price) versions are available in the Stone and Bronze ages respectively.
+
+For projectiles fired from firearms, an equal weight of propelent and accoutrema is required, so the "carrying weight" of the ammunition is twice the weight of the projectile itself (shown here).
+
+Recall that damage should be interpreted in the context of the weapons table.
+
+Also note that the “damage” for grenades is the damage they deal by striking the enemy, which is little more than insult added to the injury of the explosion.
+
+Special Abilities:
+
+#### Melee
+
+This ammunition can be used as a specific melee weapon, albeit at a small penalty to attacks.  If the melee is marked "rev", this also applies in reverse, and a melee weapon of this description can be used as ammunition at the same penalty.
+
+#### Spread
+
+Cannister behaves differently depending on the range to the target as a multiple of the *barrel length*:
+
+Multiple | Effect on Medium Targets
+-|-
+0-30x | Normal Effect
+30-60x | Hits are normal, misses by less than 5 deal half-damage
+60-120x | Area-effect in a 1m wide line, lesser damage
+120-240x | Area-effect in a 5m wide line, 1/3 of lesser damage
+>240x | Deals no damage
+
+For each size category larger the target is, double all distances except for the no damage threshold.  Similarly for smaller creatures, halve them, adding rows as needed, if the creatures' positions are being tracked with sub-square resolution.
+
+Note that the double-armor-effect property cannister also has is not dependant on range.
+
+#### Burn
+
+In addition to main damage, this projectile deals this much fire damage.
+
+Note that while base damage may be multiplied (by the weapon's rating for a blaster), burn damage is not.
+
+#### Double armor effect
+
+When reducing damage for armor, double the armor's effectiveness.  Also double the damage expended when calculating blowthrough.
+
+#### Drop Specialized
+
+When this projectile is dropped, it has a maximum damage of 4 times base (from a height of 20 meters) and a range increment of 20 meters.
+
+#### Drug (Precision)
+
+This projectile can be used to deliver a drug or poison.  If the projectile does damage, it also delivers the drug.
+
+A simple poison dart deals a rough dosage, whereas a syringe deals a precise one.  See the drug rules.
+
+#### Binding (Size)
+
+When a bolas strikes a creature of indicated size or smaller, the creature must make a reflex save or grapple check (its choice) against twice the pre-dr damage.  If it fails the check, it is prone and wrapped in ropes.
+
+#### Explodes
+
+After impacting, this projectile explodes for the damage shown.  Note that this is not part of the ammo's own damage, and is not multiplied.
+
+If the base damage gets past armor and does not overpenetrate, the explosion occurs *inside* the target, for triple damage.
+
+#### Attatches
+
+If this projectile successfully does piercing damage it sticks to its target.  It can then detonate *in contact* with said target for double damage.
+
+Note: while the boring and descriptive name of this projectile is "spiked bomb", its original name was "flying incediary club for subjugating demons".
+
+#### Smoke
+
+Specially designed explosives emit smoke clouds with the radius and duration given.  Each meter of smoke between an observer and observee gives a -10 penalty to spot checks.
+
+#### Sticky: X rounds
+
+This weapon continues to deal damage for X rounds (at the start of the turn of the character who fired it).
+
 
 ### Weapon Qualities
 
@@ -414,27 +572,27 @@ While melee weapons are mostly fixed by the late iron age, ranged weapons develo
 Weapon | Ammo | Damage | Range | Reload Time | Complexity | Availability | Hands | Strength Needed | Weight | Length | Cost | Special
 -|-|-|-|-|-|-|-|-|-|-|-|-
 Throw | Any with Range | ammo+strm | ammo×(str/10) | n/a | Human | Stone | 1 | weight×2 | 0 | 0 | 0 | Arcing, Ready
-Drop | Any with Range | ammo×min(height/20',2) | 20 | n/a | Simple | Stone | 1 | weight/6 | 0 | 0 | 0 | unlimited range, swift -10, head
-Atlalt | Javelin | ammo+strm | 2×ammo×(str/10) | Free Action | Martial | Stone | 2/1 | 6 | 1 | 2 | 1 | 
-Sling | Stone, Ball, Grenade or Bomb | ammo+strm | 3×ammo×(str/10) | Move Action | Martial | Stone | 2/1 | weight×3 | 0.01 | 0 | 1 | Risky, Arcing
-Slingstaff | Stone, Ball, Grenade or Bomb | ammo+1.5×strm | 3×ammo×(str/10) | Move Action | Simple | Stone | 2 | weight×2 | 2 | 1 | 2 | 
-Long Bow | Arrow | ammo+rating | 100+5×rating | Free Action | Martial | Stone | 2 | rating+10 | 3 | 0 | 10+rating^2/5 | Standing, Arcing
-Short Bow | Arrow | ammo+rating | 100+5×rating | Free Action | Martial | Stone | 2 | rating+10 | 2 | 0 | 30+rating^2/10 |  | Arcing
-Blow-Pipe | Dart | ammo | 30 | Move Action | Simple | Stone | 2/1 | 3 | 0.01 | 1 | 10 | Handless -2, Ready
-Onager | 5 lb Stone or Ball  | 5×ammo | 100 | 4 minutes | Martial | Iron | n/a | 12(reload) | 1000 | 15 | 200 | Long, Aim During Reload, Strain, Arcing
-Goatsfoot Crossbow | Bolt (light or heavy) | 2×ammo | 80 | 2 rounds | Simple | Iron | 2/1 | 12(reload) | 4 | 2 | 20 | Strain, Ready
-Windlass Crossbow | Bolt (light or heavy) | 3×ammo | 100 | 5 rounds | Simple | Iron | 2/1 | 8(reload) | 5 | 2 | 30 | Strain, Ready
-Trebuchet | 5-10 lb Stone, Ball or Bomb | 7×ammo | 120 | 2 minutes | Martial | Spinning | n/a | 12(reload) | 2000 | 20 | 400 | Long, Aim During Reload, Assembly Required, Arcing
-Ballista | Oversize Bolt | 5×ammo | 120 | 2 minutes | Martial | Iron | str | 12;33 | 32 | 10 | 200 | Strain
-Pump Flamethrower | Burning Oil or Napalm | 2*ammo | 50 | free or 1 minute | Martial | Spinning | 2 | n/a | 100 | 5 | 300 | 
+Drop | Any with Range | ammo×min(height/7m,2) | 7 | n/a | Simple | Stone | 1 | weight/6 | 0 | 0 | 0 | unlimited range, swift -10, head
+Atlalt | Javelin | ammo+strm | 2×ammo×(str/10) | Free Action | Martial | Stone | 2/1 | 6 | 0.5 | 70cm | 1 | 
+Sling | Stone, Ball, Grenade or Bomb | ammo+strm | 3×ammo×(str/10) | Move Action | Martial | Stone | 2/1 | weight×3 | 0.005 | 0 | 1 | Risky, Arcing
+Slingstaff | Stone, Ball, Grenade or Bomb | ammo+1.5×strm | 3×ammo×(str/10) | Move Action | Simple | Stone | 2 | weight×2 | 1 | 30cm | 2 | 
+Long Bow | Arrow | ammo+rating | 33+1.7×rating | Free Action | Martial | Stone | 2 | rating+10 | 1.5 | 0 | 10+rating^2/5 | Standing, Arcing
+Short Bow | Arrow | ammo+rating | 33+1.7×rating | Free Action | Martial | Stone | 2 | rating+10 | 1 | 0 | 30+rating^2/10 |  | Arcing
+Blow-Pipe | Dart | ammo | 10 | Move Action | Simple | Stone | 2/1 | 3 | 0.005 | 30cm | 10 | Handless -2, Ready
+Onager | 2.5 kg Stone or Ball  | 5×ammo | 33 | 4 minutes | Martial | Iron | n/a | 12(reload) | 500 | 5m | 200 | Long, Aim During Reload, Strain, Arcing
+Goatsfoot Crossbow | Bolt (light or heavy) | 2×ammo | 27 | 2 rounds | Simple | Iron | 2/1 | 12(reload) | 2 | 70cm | 20 | Strain, Ready
+Windlass Crossbow | Bolt (light or heavy) | 3×ammo | 33 | 5 rounds | Simple | Iron | 2/1 | 8(reload) | 2.5 | 70cm | 30 | Strain, Ready
+Trebuchet | 2.5-5 kg Stone, Ball or Bomb | 7×ammo | 40 | 2 minutes | Martial | Spinning | n/a | 12(reload) | 1000 | 7m | 400 | Long, Aim During Reload, Assembly Required, Arcing
+Ballista | Oversize Bolt | 5×ammo | 40 | 2 minutes | Martial | Iron | str | 12;33 | 16 | 3m | 200 | Strain
+Pump Flamethrower | Burning Oil or Napalm | 2*ammo | 17 | free or 1 minute (10) | Martial | Spinning | 2 | n/a | 50 | 170cm | 300 | 
 Firearm | *See* | *Separate* | *Table* | | Simple | | | | | | | Ready
-Grenade Launcher | Grenade | 2×ammo | 100 | Move Action | Martial | Information | 2 | 12 | 3 | 1 | 50 | Long
-Underslung Grenade Launcher | Grenade | 2×ammo | 80 | Move Action | Martial | Information | n/a | 12 | 2 | N/A | 50 | Long. Attaches to Firearm
-Dart Gun | Dart | 2×ammo | 80 | Free Action | Simple | Information | 1 | 3 | 2 | 2 | 20 | Ready
-Light Pressurized Flamethrower | Burning Oil or Napalm | 3*ammo | 75 | free or 2 rounds | Martial | Steam | 1 | n/a | 40 | 0 | 100 | 
-Heavy Pressurized Flamethrower | Burning Oil or Napalm | 4*ammo | 100 | free or 2 rounds | Martial | Steam | 1 | n/a | 75 | 0 | 200 | 3-round burst mode
-Laser | Coherent Light | rating×ammo | 500 | Free Action | Simple | Solar | 1 | 6 | rating + power source | Varies | 100 | Unlimited Range, Energy Cost: rating, Auto-aim, Ready
-Blaster | Plasma Blast | rating×ammo | 300 | Free Action | Simple | Star | 1 | 6 | rating/2 + power source | 1 | 70 | Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim, Ready
+Grenade Launcher | Grenade | 2×ammo | 33 | Move Action | Martial | Information | 2 | 12 | 1.5 | 30cm | 50 | Long
+Underslung Grenade Launcher | Grenade | 2×ammo | 27 | Move Action | Martial | Information | n/a | 12 | 1 | N/A | 50 | Long. Attaches to Firearm
+Dart Gun | Dart | 2×ammo | 27 | Free Action | Simple | Information | 1 | 3 | 1 | 70cm | 20 | Ready
+Light Pressurized Flamethrower | Burning Oil or Napalm | 3*ammo | 25 | free or 2 rounds (20) | Martial | Steam | 1 | n/a | 20 | 50cm | 100 | Spray Mode
+Heavy Pressurized Flamethrower | Burning Oil or Napalm | 4*ammo | 33 | free or 2 rounds (30) | Martial | Steam | 1 | n/a | 37.5 | 1m | 200 | 3-round burst mode, Spray Mode
+Laser | Coherent Light | rating×ammo | 167 | Free Action | Simple | Solar | 1 | 6 | rating + power source | Varies | 100 | Unlimited Range, Energy Cost: rating, Auto-aim, Ready
+Blaster | Plasma Blast | rating×ammo | 100 | Free Action | Simple | Star | 1 | 6 | rating/2 + power source | 30cm | 70 | Burst Mode, Spray Mode (100), Energy Cost: rating/2, Auto-aim, Ready
 </div>
 
 #### Ammo
@@ -447,7 +605,7 @@ Damage dealt.  Here, “ammo” is the base damage of the projectile and “strm
 
 #### Range
 
-The range increment for the weapon, in feet.  Here, “ammo” is the base range of the projectile, and “str” is the wielder's strength score.  (“Rating” is the same value as the previous column)
+The range increment for the weapon, in meters.  Here, “ammo” is the base range of the projectile, and “str” is the wielder's strength score.  (“Rating” is the same value as the previous column)
 
 Yes, it's annoying that this column uses strength score when the previous column used strength modifier, but it makes the formulas easier to apply.
 
@@ -455,7 +613,7 @@ Yes, it's annoying that this column uses strength score when the previous column
 
 What sort of action is needed to reload the weapon so it can fire again.  If more than a round, the reloader must spend the listed time taking standard actions of reloading.
 
-Flamethrowers and some firearms have two times: one for loading the next entry in the embedded tank or magazine and one for swapping in a fresh tank or magazine.
+Flamethrowers and some firearms have two times: one for loading the next entry in the embedded tank or magazine and one for swapping in a fresh tank or magazine.  For flamethrowers, the number of shots between tank swaps is given in parentheses. 
 
 (While it is common for weapon wielders to do their own reloading, this is not necessary, and sometimes poor tactics.)
 
@@ -477,11 +635,11 @@ Strength score needed to wield the weapon.  If marked “(reload)” this streng
 
 #### Weight
 
-In pounds.  Does not include ammunition.  For energy weapons, the weight of the power source is not included (see power sources, chapter ???).
+In kilograms.  Does not include ammunition.  For energy weapons, the weight of the power source is not included (see power sources, chapter ???).
 
 #### Length
 
-If the length of a weapon equals or exceeds 40% the width of the available space, the wielder suffers a -2 Close Quarters Penalty on attacks and loses the benefits of Ready.  The penalty can be negated by adopting a Shooting Stance (which also gives its usual bonus).
+This is the length of the entire weapon and is used for Cramped Quarters Penalty purposes.  Note that a bow has a length of zero because it is held vertically.
 
 #### Cost
 
@@ -535,7 +693,7 @@ This weapon (an underslung grenade launcher) cannot be used separately, but can 
 
 ##### Ready
 
-For a character who is carrying a loaded Ready weapon, is not suffering a Close Quarters penalty, and has only taken a move action the preceeding turn, anyone becoming visible within 5 range incremens provokes an attack of opportunity.
+A character who is carrying a loaded Ready weapon and is not suffering a Close Quarters penalty can ready an attack on the trigger "it seems like a good idea to attack someone".
 
 ##### Risky
 
@@ -571,7 +729,7 @@ Throw is a martial "weapon", except for humans who treat it as simple thanks to 
 
 As the name suggests, this is simply dropping an object.  As such, it can only be used to strike targets directly below you, or a bit to the side if there's wind or you're moving horizontally.
 
-Objects do their base damage if dropped from 20 feet, or twice that if dropped from 40, but no more because of terminal velocity.  Unless they are drop-specialized (see flachettes in the projectiles section) which can do up to 4x base damage and have a range increment of 60 feet.
+Objects do their base damage if dropped from 5 meters, or twice that if dropped from 10, but no more because of terminal velocity.  Unless they are drop-specialized (see flachettes in the projectiles section) which can do up to 4x base damage and have a range increment of 20 meters.
 
 ##### Bows
 
@@ -581,10 +739,9 @@ To produce high rating bows, especially shortbows, it is necessary to bend the e
 
 Firearms vary enough to get their own table.  For any firearm, select a barrel length, width and style, an action, and as many special features as you like.  To a first approximation, length determines range and number of damage dice, size determines kind of dice, action determines rate of fire, and features determine cool extra things a gun can do.
 
-
 Firearm weights do not include the weight of ammunition or (for gatling guns) a power source.
 
-The barrel length must be at least 8 times the barrel width.
+The barrel length must be more than 12 times the barrel width.
 
 All firearms have the Ready property.
 
@@ -594,7 +751,7 @@ All firearms have the Ready property.
 
 #### Strength Needed
 
-This is the strength needed to maintain aim despite recoil.  It is not the strength needed to carry the weapon (see carrying rules), nor is it the strength needed to reload the weapon.  To reload, the round or magazine must be a light load (i.e.2lbs per point of strength score), but a team may reload a weapon together and add their strength scores.
+This is the strength needed to maintain aim despite recoil.  It is not the strength needed to carry the weapon (see carrying rules), nor is it the strength needed to reload the weapon.  To reload, the round or magazine must be a light load (i.e. 1kg per point of strength score), but a team may reload a weapon together and add their strength scores.
 
 The strength listed is for a two handed grip.  A strength 3/2 this is needed for primary hand, or twice for off-hand.
 
@@ -646,7 +803,11 @@ Fire all loaded barrels.  Use a single attack roll, but resolve armor separately
 
 #### Bayonette
 
-A firearm with a bayonette may be used as a polearm with a final spike and a blade, but only a 2lb head.  A 1-4 ft barrel becomes a short-hafted polearm, an 8 ft barrel long-hafted, and a 16 foot barrel very-long-hafted.  For the size and strength needed to wield such a weapon, see the Hafted Weapons section.  No action is needed to switch the weapon from firearm to melee modes.
+A firearm with a bayonette may be used as a polearm with a final spike and a blade, but only a 1kg head.  A 50-100 cm barrel becomes a short-hafted polearm, a 2m barrel long-hafted, and a 4m barrel very-long-hafted.  For the size and strength needed to wield such a weapon, see the Hafted Weapons section.  No action is needed to switch the weapon from firearm to melee modes.
+
+#### Periscope Mount
+
+A firearm with a periscope mount has a trigger and control frame about half a meter below the actual barrel, plus a pair of angled mirrors.  As such the gun can be put around a corner (most often above a wall), aimed (using the mirrors) and fired -- all without exposing any part of the wielder's body.  The inability to brace the gun normally gives it a -2 on all attacks.
 
 #### Gun Mounts
 
@@ -655,96 +816,28 @@ If a gun is too big or strong to fire from one's hands, it can still be used fro
 <div class=wide>
 Mount | Str | Length Enabled | Time to Set Up | Weight | Special
 -|-|-|-|-|-
-Bipod | +4 | x2 | Move Action | 1 |
-Tripod        | +8 | x4 | 1 round | 2 |
-Heavy Tripod  | 30 | 8 | 1 minute | 50 |
-Bolted Tripod | 60 | 8  | 10 minutes | 10 | Floor must have bolt holes
-Turret        | substrate | unlimited | 8 hours | 100 | Must attach to a secure substrate
-Polearm | +2 | x2 | 1 round | 3 or more | Must have short haft and side spike, blade or forward hook
+Bipod | +4 | x2 | Move Action | 0.5 |
+Tripod        | +8 | x4 | 1 round | 1 |
+Heavy Tripod  | 30 | 3 | 1 minute | 25 |
+Bolted Tripod | 60 | 3  | 10 minutes | 5 | Floor must have bolt holes
+Turret        | substrate | unlimited | 8 hours | 50 | Must attach to a secure substrate
+Polearm | +2 | x2 | 1 round | 1.5 or more | Must have short haft and side spike, blade or forward hook
 Ground | +2 | x2 | free | 0 | Must be prone
+</div>
+
+#### Firearm Builder
+
+Pick a barrel length, width, style and action, and add any special features, to see the resulting weapon's stats computed live.
+
+<div>
+%%firearmbuilder%%
 </div>
 
 #### Example Firearms
 
-<div class="google wide">
+<div class="google wide wrapcells">
 %%examplefirearms%%
 </div>
-
-### Projectile Qualities
-
-<div class="wide google">
-%%ammo%%
-</div>
-
-ᵃ Throwing Axes, Javelins and Broadhead Arrows listed here are iron-tipped.  Flint-tipped (-2 on attack rolls) versions are available from the stone age, and copper (-1 on attack rolls, 3x price) and bronze (10x price) versions are available in the Stone and Bronze ages respectively.
-
-For projectiles fired from firearms, an equal weight of propelent and accoutrema is required, so the "carrying weight" of the ammunition is twice the weight of the projectile itself (shown here).
-
-Recall that damage should be interpreted in the context of the weapons table.
-
-Also note that the “damage” for grenades is the damage they deal by striking the enemy, which is little more than insult added to the injury of the explosion.
-
-Special Abilities:
-
-#### Melee
-
-This ammunition can be used as a specific melee weapon, albeit at a small penalty to attacks.  If the melee is marked "rev", this also applies in reverse, and a melee weapon of this description can be used as ammunition at the same penalty.
-
-#### Spread
-
-Cannister behaves differently depending on the range to the target as a multiple of the *barrel length*:
-
-Multiple | Effect on Medium Targets
--|-
-0-30x | Normal Effect
-30-60x | Hits are normal, misses by less than 5 deal half-damage
-60-120x | Area-effect in a 5 ft wide line, lesser damage
-120-240x | Area-effect in a 15 ft wide line, 1/3 of lesser damage
->240x | Deals no damage
-
-For each size category larger the target is, double all distances except for the no damage threshold.  Similarly for smaller creatures, halve them, adding rows as needed, if the creatures' positions are being tracked with sub-square resolution.
-
-Note that the double-armor-effect property cannister also has is not dependant on range.
-
-#### Burn
-
-In addition to main damage, this projectile deals this much fire damage.
-
-Note that while base damage may be multiplied (by the weapon's rating for a blaster), burn damage is not.
-
-#### Double armor effect
-
-When reducing damage for armor, double the armor's effectiveness.  Also double the damage expended when calculating blowthrough.
-
-#### Drop Specialized
-
-When this projectile is dropped, it has a maximum damage of 5 times base (from a height of 100 feet) and a range increment of 50 feet.
-
-#### Drug (Precision)
-
-This projectile can be used to deliver a drug or poison.  If the projectile does damage, it also delivers the drug.
-
-A simple poison dart deals a rough dosage, whereas a syringe deals a precise one.  See the drug rules.
-
-#### Binding (Size)
-
-When a bolas strikes a creature of indicated size or smaller, the creature must make a reflex save or grapple check (its choice) against twice the pre-dr damage.  If it fails the check, it is prone and wrapped in ropes.
-
-#### Explodes
-
-After impacting, this projectile explodes for the damage shown.  Note that this is not part of the ammo's own damage, and is not multiplied.
-
-If the base damage gets past armor and does not overpenetrate, the explosion occurs *inside* the target, for triple damage.
-
-#### Attatches
-
-If this projectile successfully does piercing damage it sticks to its target.  It can then detonate *in contact* with said target for double damage.
-
-Note: while the boring and descriptive name of this projectile is "spiked bomb", its original name was "flying incediary club for subjugating demons".
-
-#### Sticky: X rounds
-
-This weapon continues to deal damage for X rounds (at the start of the turn of the character who fired it).
 
 # Armor
 
@@ -758,9 +851,9 @@ DR against Piercing | 2 | 2 | 10 | 10
 DR against Slashing | 2 | 20 | 20 | 20
 DR against Bludgeoning | 4 | 0 | 2 | 4
 AC Bonus against “strike around” | 8 | 2 | 4 | 8
-Weight (limb or helmet) | 1 | 4 | 8 | 6
-Weight (torso) | 2 | 8 | 16 | 12
-Weight (full suit) | 7 | 28 | 56 | 42
+Weight (kg, limb or helmet) | 0.5 | 2 | 4 | 3
+Weight (kg, torso) | 1 | 4 | 8 | 6
+Weight (kg, full suit) | 3.5 | 14 | 28 | 21
 Armor Check Penalty  | 0 | -1 | -2 | -3
 Cost | 100 | 200 | 300 | 1000
 Available from | Stone | Iron | Bronze | Bronze/Spinning
@@ -782,7 +875,7 @@ Three styles of steel plate helmets, with their associated AC bonuses and percep
 
 ## Weight
 
-The most armor you can wear is 3 lbs per point of strength score.  Each missing point of strength inflicts an additional -1 acp to all body parts.  This is *separate* from limits on how much ordinary gear you can carry.  (Some campaigns won't want to track that at all, but those that do should use 2lbs per strength.  A character who wears the maximum available armor and takes it off and carries that same armor *should* take overburdening penalties.)
+The most armor you can wear is 1.5 kg per point of strength score.  Each missing point of strength inflicts an additional -1 acp to all body parts.  This is *separate* from limits on how much ordinary gear you can carry.  (Some campaigns won't want to track that at all, but those that do should use 1 kg per strength.  A character who wears the maximum available armor and takes it off and carries that same armor *should* take overburdening penalties.)
 
 All weights are computed for earth gravity.  In a low-gravity environment, you can wear more armor.
 
@@ -790,11 +883,11 @@ All weights are computed for earth gravity.  In a low-gravity environment, you c
 
 Take this penalty to all physical actions involving the body part in question.  If multiple body parts are used, take the highest ACP.
 
-Every point of penalty to leg-based motions (whether ACP or weight) reduces base speed by 5 ft/rnd, to a minimum of 5.
+Every point of penalty to leg-based motions (whether ACP or weight) reduces base speed by 1m/rnd, to a minimum of 1m.
 
 If acp ever reaches -20, the body part in question is immobilized.
 
-Swimming takes ACP from arms and legs, and suffers a stacking -1 penalty for every three pounds of armor worm (rounded down).
+Swimming takes ACP from arms and legs, and suffers a stacking -1 penalty for every 1.5 kg of armor worm (rounded down).
 
 ## Stacking armor
 
@@ -844,9 +937,9 @@ Impacts with things larger than oneself (including the ground and explosive shoc
 
 **Shiny**: Decreases the effect of laser weapons by 90% before normal DR.  Cannot be combined with camouflage or decoration.  Not usable with chain mail.  Cost +50.  Available from Information Age.
 
-**Air-sealed**: Allows the wearer to go up to 8 hours without breathing outside air.  Protects against poison, disease, nanotech and hard vacuum.  Requires all body parts to be covered in fabric or plate.  Cost +5000, Weight +10.  Available from Solar Age.
+**Air-sealed**: Allows the wearer to go up to 8 hours without breathing outside air.  Protects against poison, disease, nanotech and hard vacuum.  Requires all body parts to be covered in fabric or plate.  Cost +5000, Weight +5.  Available from Solar Age.
 
-**Inertics**: Armor grants full protection against impacts with objects larger than oneself.  Also negates all damage from high gravity environments.  Each round inertics are active consumes 1MJ.  Cost +1000, Weight +1, not counting power source.  Available from Star Age.
+**Inertics**: Armor grants full protection against impacts with objects larger than oneself.  Also negates all damage from high gravity environments.  Each round inertics are active consumes 1MJ.  Cost +1000, Weight +0.5, not counting power source.  Available from Star Age.
 
 **Silver-Plated**: Metal armors only.  Cost +500.  Counts as silver for magical purposes.  Shiny (unless chainmail).  Available from Steam Age.
 
@@ -870,13 +963,13 @@ These are some armor patterns from various eras.  All are mirror-symmetrical for
 
 Shields come in varing sizes and materials (also shapes, but this has no mechanical effect).
 
-| Diameter | Base Weight (hide) | Parry at | ACB: Shield Arm | ACB: Torso | ACB: Other |
+| Diameter (cm) | Base Weight (hide, kg) | Parry at | ACB: Shield Arm | ACB: Torso | ACB: Other |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 1 | 1 | +4 | 1 | 0 | 0 |
-| 2 | 2 | +2 | 3 | 1 | 0 |
-| 3 | 4 | 0 | 5 | 3 | 1 |
-| 4 | 7 | -2 | 7 | 4 | 1 |
-| 5 | 11 | -4 | 9 | 6 | 2 |
+| 30 | 0.5 | +4 | 1 | 0 | 0 |
+| 70 | 1 | +2 | 3 | 1 | 0 |
+| 100 | 2 | 0 | 5 | 3 | 1 |
+| 130 | 3.5 | -2 | 7 | 4 | 1 |
+| 170 | 5.5 | -4 | 9 | 6 | 2 |
 
 | Material | Weight Multiplier | DR | Available from |
 | :-: | :-: | :-: | :-: |
@@ -888,7 +981,7 @@ Shields come in varing sizes and materials (also shapes, but this has no mechani
 
 ## Active Use
 
-A shield can be used to parry as if it were a weapon with the parry ability.  Take a bonus or penalty to the parry roll based on the size of the shield.  You must have a strength score at least twice the shield's weight to parry with it in your off hand (or equal for primary hand, or two thirds for both hands).
+A shield can be used to parry as if it were a weapon with the parry ability.  Take a bonus or penalty to the parry roll based on the size of the shield.  You must have a strength score at least four times the shield's weight (in kg) to parry with it in your off hand (or twice the weight for primary hand, or four-thirds the weight for both hands).
 
 If you fail the parry so badly as to be critted, and the damage before the crit multiplier exceeds the damage reduction of the shield, the shield is destroyed.  (Normal active parry means brushing sideways such that the shield is not damaged, but if you fail badly enough...)
 
@@ -900,7 +993,7 @@ Simply holding a shield also provides defense.  If the enemy is trying to strike
 
 A character holding a shield may hunker behind it.  This causes all body parts to receive the same ACB as the torso (except the shield arm, which continues to receive higher) but means the character cannot attack and takes a -6 penalty on spot checks.  Starting and stopping hunkering are move actions.
 
-(Note that you technically can hunker behind a 1 foot shield, but receive no benefit from doing so, and look very silly.)
+(Note that you technically can hunker behind a 30 cm shield, but receive no benefit from doing so, and look very silly.)
 
 ## Non-Medium Characters
 
@@ -922,12 +1015,12 @@ Most actions while grappling require a grapple check, which is base attack plus 
 |Hogtie | Yes | Requires Feat | No | No | No|
 |Throw (standing only) | Yes | Requires Feat and Grapple Check | No | No | No|
 |Wield as melee weapon (standing only) | Requires Feat | Requires Feat and Grapple Check | No | No | No|
-|Attack with weapon | Any one handed, no active defenses | Any one handed | One handed less than 2.5 lbs | One handed less than 1.5 lb | No|
+|Attack with weapon | Any one handed, no active defenses | Any one handed | One handed less than 1.25 kg | One handed less than 0.75 kg | No|
 |Cause injury | 1d8 + 1.5 * str mod | 1d8 + 1.5 * str mod requires grapple check | 1d4 + str mode requires grapple check | 1d4 + str mode requires grapple check at -5 | No|
 |Disarm | Grapple check at +5 | Grapple check | Grapple check AND disarm attempt | No | No|
 |Disarmor | Grapple check | Grapple check at -5 | No | No | No|
 |Spell with Somatic Components | Yes | Grapple check at +5 | Grapple check | Grapple check at -5 | No|
-|Move grapple | Half speed (standing) | Grapple check for half speed (standing) | Grapple check for 5 feet | No | No|
+|Move grapple | Half speed (standing) | Grapple check for half speed (standing) | Grapple check for 1m | No | No|
 |Attacked from outside | -12 or accept certainty of hitting other grappler | -8 or accept 75% chance of hitting other grappler | -4 or accept 50% chance of hitting other grappler | Proceeds normally | No dex to AC or active defenses|
 |
 
@@ -973,7 +1066,7 @@ When pinning (or grappling with advantage and possessing the Grappling Specialis
 
 If you are strong enough (equivalently, your opponent is small enough) to use the generic thrown object rules, you can use those provided you are not pinned.
 
-Failing that, if you are pinning your opponent and standing, you may throw them into an adjacent square.  Anyone in the square takes no damage but must make a dc 15 reflex save or be knocked prone.  If your strength score times ten exceeds your opponent's weight in pounds, you can throw them two squares away.  If you are grappling with advantage, have the Grappling Specialist feat and win an opposed grapple check, you can do the same.
+Failing that, if you are pinning your opponent and standing, you may throw them into an adjacent square.  Anyone in the square takes no damage but must make a dc 15 reflex save or be knocked prone.  If your strength score times five exceeds your opponent's weight in kilograms, you can throw them two squares away.  If you are grappling with advantage, have the Grappling Specialist feat and win an opposed grapple check, you can do the same.
 
 ## Wield as melee weapon
 
@@ -1013,6 +1106,52 @@ If you are standing *and* are pinning or have advantage and succeeded on your ch
 
 Not actually a thing you do, but a thing that can happen.  The choice between attack penalty and error chance is made by the attacker.
 
+# Special Actions
+
+## Bull Rush
+
+A bull rush is an attempt to shove someone in a direction.  It requires a standard action and at least 2 meters of movement.
+
+First make a weaponless melee attack (full body, through armor) that does no damage.  If your target successfully dodges, you move through their space without effecting them (they may choose not to dodge if they are trying to contain you).  If they successfully parry, you are stopped.
+
+If your attack succeeds, roll opposed strength checks.  If yours is higher, you may move into their space.  For every 5 points yours is higher by, you may shove them an additional meter.
+
+## Trip
+
+Make an attack roll (either unarmed or with a backhooked weapon) against the targets legs.
+
+If you hit, make a strength check opposed by target's strength or dexterity (their choice).  If yours is higher, they fall prone.
+
+## Disarm
+
+To disarm someone, make opposed attack rolls with your respective weapons.  If yours is higher by at least 5, they lose the weapon.  If you used an unarmed strike, you now have their weapon.
+
+You can disarm someone of something that was not a weapon.  They roll as if it were a weapon they were proficient with.
+
+If the item was on a sling, it remains attached to the original wearer.  You still cause them to be no-longer-wielding it, and you can still take it, just not go anywhere.
+
+## Take Aim
+
+You may spend a standard action preparing to attack a target you can clearly see.  You gain +2 on your next attack against this target.  If you lose sight of the target for any reason, the bonus vanishes.
+
+## Charge
+
+A charge combines you move and standard actions into a single attack.
+
+You must move directly toward your enemy and move at least 2 meters.
+
+If you attack with a thrusting weapon, you deal double damage.
+
+Alternatively, if you attack with a swining weapon and jump at the end of your charge achieving a vertical at least half your enemies height, you deal double damage *and* attack their head at their body's AC.
+
+However, charging carries risks.  If you are attacked with a thrusting weapon while charging (e.g. via an attack of opportunity or a readied action) you take double damage.  And if you are attacked while jumping, you cannot react.
+
+## Cover Fire
+
+When using the Spray mode on a ranged weapon, you may slow your shots to cover all the time until your next turn.  Anyone who passes through a square you are spraying takes 1/10th of the stray shots you fire.  Anyone who begins or ends their turn in the area takes 1/2.
+
+Furthermore, anyone choosing to enter the spray zone must make a dc 15 will save and anyone choosing to stand adjactent to the spray zone must make a dc 10 will save.
+
 # Feats
 
 **Combat Reflexes:** Gain reactions per round equal to your dex mod (if positive).  If your dex mode changes during a round, resolve this as benefits you.
@@ -1021,16 +1160,25 @@ Not actually a thing you do, but a thing that can happen.  The choice between at
 
 **Dodge:** For you, there is a skill Dodge(dex) which is always a class skill.  Use it instead of a raw dex roll on dodge checks.  Furthermore, Dodge grants a synergy bonus to parry rolls.
 
+**Two Weapon Fighting:** If you are wielding two weapons, you may attack with both of them as a standard attack action.
+
+**Exotic Weapon Proficiency:** Either pick a single exotic weapon to be proficient with or a single reason for a weapon to be exotic that no longer applies to you.
+
 **Half-Swording:** You may wield any blade longer than a dagger in both hands and it gains the gap-finding property.  If the weapon had reach, it no longer does.
 
 **Murder-Stroke:** You may wield any blade longer than a shortsword as a two-handed bludgeoning swinging weapon that deals 1d6 damage.
 
-**Machine Gunner:** You may use any firearm with spray mode in two other ways: as if it were burst mode, or as if it were a cannister round with a spread-range of 100ft (lesser damage equal to original damage, greater equal to original times half rounds fired),
+**Machine Gunner:** You may use any firearm with spray mode in two other ways: as if it were burst mode, or as if it were a cannister round with a spread-range of 30m (lesser damage equal to original damage, greater equal to original times half rounds fired),
 
 **Fury:** You may spend an addrenal surge to reroll a missed melee attack
 
 **Rage:** *(Prereq: Fury)* You may spend an addrenal surge to gain +4 str, +2 to attacks and +2 temporary hit points in all body parts for the next minute.
 
-**Extra Surge:** Gain one extra addrenal surge.  You may take this feat multiple times, to a maximum of your once more than your con bonus.
+**Extra Surge:** Gain one extra addrenal surge.  You may take this feat multiple times, a maximum of once more than your con bonus times.
+
+**Kebab-Shot:** When you overpenetrate with a ranged weapon, instead of making a stray shot, make a shot at -5 against a target of your choice behind the original target.
+
+**Assassin:** The Take Aim action grants you a +4 bonus.  Also, you may take it up to three times for the same target and the bonuses stack.
+
 
 <script src=linkableh.js></script>

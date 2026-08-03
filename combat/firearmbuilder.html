@@ -1,0 +1,414 @@
+<html><body>
+    <table>
+        <script>
+         const ages = ['Stone','Bronze','Iron','Spinning','Gunpowder','Industrial','Steam','Information','Space','Solar','Star','Galactic'];
+         function maxAge(list) {
+             return list.reduce((a,b) => ages.indexOf(b) > ages.indexOf(a) ? b : a, 'Stone');
+         }
+
+         const lengths = {
+             '12cm':  {cm:12,  weight:0.5, cost:400,  avail:'Steam',      size:'diminutive', ri:2,   maxAtk:6,  dmgMult:4,  str:10, mag:11},
+             '25cm':  {cm:25,  weight:1,   cost:300,  avail:'Industrial', size:'tiny',       ri:5,   maxAtk:9,  dmgMult:6,  str:8,  mag:16},
+             '50cm':  {cm:50,  weight:2,   cost:250,  avail:'Gunpowder',  size:'small',      ri:30,  maxAtk:12, dmgMult:8,  str:6,  mag:22},
+             '1m':    {cm:100, weight:4,   cost:200,  avail:'Gunpowder',  size:'medium',     ri:50,  maxAtk:15, dmgMult:12, str:4,  mag:32},
+             '2m':    {cm:200, weight:8,   cost:400,  avail:'Gunpowder',  size:'large',      ri:150, maxAtk:18, dmgMult:18, str:4,  mag:44},
+             '4m':    {cm:400, weight:16,  cost:800,  avail:'Gunpowder',  size:'huge',       ri:150, maxAtk:21, dmgMult:24, str:4,  mag:64},
+             '8m':    {cm:800, weight:32,  cost:1600, avail:'Industrial', size:'gargantuan', ri:150, maxAtk:24, dmgMult:35, str:4,  mag:88}
+         };
+
+         const widths = {
+             '5mm':   {mm:5,   avail:'Steam'},
+             '10mm':  {mm:10,  avail:'Industrial', str:2,  magDiv:2},
+             '15mm':  {mm:15,  avail:'Gunpowder',  str:4,  magDiv:3},
+             '20mm':  {mm:20,  avail:'Gunpowder',  str:6,  magDiv:4},
+             '25mm':  {mm:25,  avail:'Gunpowder',  str:8,  magDiv:5},
+             '50mm':  {mm:50,  avail:'Gunpowder',  str:14, magDiv:10, costMult:2, reloadMult:2},
+             '100mm': {mm:100, avail:'Gunpowder',  str:30, magDiv:20, costMult:3, reloadMult:10},
+             '150mm': {mm:150, avail:'Industrial', str:50, magDiv:30, costMult:4, reloadMult:20}
+         };
+
+         const styles = {
+             Smooth: {avail:'Gunpowder', muzzleReload:'3 rounds',  riDiv:5, ammo:'Ball, bullet or shell'},
+             Rifled: {avail:'Gunpowder', muzzleReload:'2 minutes', cost:50, maxAtk:10, ammo:'Bullet'}
+         };
+
+         const actions = {
+             'Slowmatch':          {avail:'Gunpowder',  muzzle:true, special:'Rain-sensitive, Strain (1m)', fixedMag:'N/A'},
+             'Friction Wheel':     {avail:'Gunpowder',  cost:50, reload:'5 minutes', fixedMag:'N/A'},
+             'Spell-Scroll':       {avail:'Gunpowder',  reload:'1 casting (5 rating Summoning / Ele Metal or 2nd circle Conjuration)', special:'Magical Settings Only, See Text'},
+             'Flint and Frizzen':  {avail:'Industrial', muzzle:true, fixedMag:'N/A'},
+             'Interrupted Screw':  {avail:'Steam',      reload:'Full Round', prereq:'Min-barrel 25mm', minMm:25, fixedMag:'N/A'},
+             'Breach/Cartridge':   {avail:'Steam',      reload:'Move Action', maxAtk:10, prereq:'Max barrel 25mm', maxMm:25, fixedMag:'N/A'},
+             'Revolver':           {avail:'Steam',      reload:'Free/Full Round', maxAtk:5, fixedMag:6, special:'Powder burn', prereq:'Max barrel 15mm', maxMm:15},
+             'Gatling':            {avail:'Steam',      weight:10, cost:100, reload:'Free/Full Round (100mJ, max 20/round)', maxAtk:5, special:'Allows Spray mode', prereq:'Max barrel 25mm', maxMm:25},
+             'Gatling (Improved)': {avail:'Information',weight:5,  cost:1000, reload:'Free/Move (100mJ, max 100/round)', maxAtk:10, special:'Allows Spray and Burst modes'},
+             'Pump':                {avail:'Information',reload:'Free/Move (max 2/round)', maxAtk:5, special:'Intimidation'},
+             'Semi-Auto':           {avail:'Information',reload:'Free/Move (max 100/round)', maxAtk:5},
+             'Full Auto':           {avail:'Information',cost:200, reload:'Free/Move (max 100/round)', maxAtk:5, special:'Allows Spray and Burst modes'}
+         };
+
+         const ammoFamilies = {
+             'Stone Ball': {
+                 50: {weight:0.25, damage:'1d3', type:'Bludgeoning', avail:'Stone', special:''},
+                 100: {weight:2.5, damage:'1d12', type:'Bludgeoning', avail:'Stone', special:''},
+                 150: {weight:7.5, damage:'3d12', type:'Bludgeoning', avail:'Stone', special:''},
+             },
+             'Lead Ball': {
+                 15: {weight:0.025, damage:'1d4', type:'Piercing', avail:'Bronze', special:''},
+                 20: {weight:0.05, damage:'1d6', type:'Piercing', avail:'Bronze', special:''},
+                 25: {weight:0.1, damage:'1d8', type:'Piercing', avail:'Bronze', special:''},
+                 50: {weight:0.75, damage:'1d12', type:'Bludgeoning', avail:'Bronze', special:''},
+                 100: {weight:7.5, damage:'3d12', type:'Bludgeoning', avail:'Bronze', special:''},
+                 150: {weight:22.5, damage:'9d12', type:'Bludgeoning', avail:'Bronze', special:''},
+             },
+             'Bullet': {
+                 5: {weight:0.0025, damage:'1d4', type:'Piercing', avail:'Steam', special:''},
+                 10: {weight:0.015, damage:'1d6', type:'Piercing', avail:'Industrial', special:''},
+                 15: {weight:0.05, damage:'1d8', type:'Piercing', avail:'Gunpowder', special:''},
+                 20: {weight:0.15, damage:'1d10', type:'Piercing', avail:'Gunpowder', special:''},
+                 25: {weight:0.25, damage:'1d12', type:'Piercing', avail:'Gunpowder', special:''},
+                 50: {weight:2.0, damage:'4d12', type:'Piercing', avail:'Gunpowder', special:''},
+                 100: {weight:15.0, damage:'10d12', type:'Piercing', avail:'Gunpowder', special:''},
+             },
+             'Minee Bullet': {
+                 10: {weight:0.015, damage:'1d6', type:'Piercing', avail:'Industrial', reload:'3 rounds', special:''},
+                 15: {weight:0.05, damage:'1d8', type:'Piercing', avail:'Industrial', reload:'3 rounds', special:''},
+                 20: {weight:0.1, damage:'1d10', type:'Piercing', avail:'Industrial', reload:'3 rounds', special:''},
+                 25: {weight:0.2, damage:'1d12', type:'Piercing', avail:'Industrial', reload:'3 rounds', special:''},
+             },
+             'Cannister Shell': {
+                 15: {weight:0.015, damage:'1d3 or 1d2/4', type:'Piercing', avail:'Steam', special:'Spread, Double Armor Effect'},
+                 20: {weight:0.03, damage:'1d4 or 1d2/2', type:'Piercing', avail:'Steam', special:'Spread, Double Armor Effect'},
+                 25: {weight:0.05, damage:'1d6 or 1d2', type:'Piercing', avail:'Steam', special:'Spread, Double Armor Effect'},
+                 50: {weight:0.5, damage:'1d10 or 1d4', type:'Piercing', avail:'Industrial', special:'Spread, Double Armor Effect'},
+                 100: {weight:4.0, damage:'2d10 or 1d8', type:'Piercing', avail:'Industrial', special:'Spread, Double Armor Effect'},
+                 150: {weight:13.5, damage:'6d12 or 1d12', type:'Piercing', avail:'Industrial', special:'Spread, Double Armor Effect'},
+             },
+             'Magnesium Cannister Shell': {
+                 15: {weight:0.003, damage:'1d3/2 or 1d2/8', type:'Fire', avail:'Information', special:'Spread'},
+                 20: {weight:0.006, damage:'1d2 or 1d2/4', type:'Fire', avail:'Information', special:'Spread'},
+                 25: {weight:0.01, damage:'1d3 or 1d2/2', type:'Fire', avail:'Information', special:'Spread'},
+                 50: {weight:0.1, damage:'1d6 or 1d2', type:'Fire', avail:'Information', special:'Spread'},
+                 100: {weight:0.8, damage:'1d10 or 1d4', type:'Fire', avail:'Information', special:'Spread'},
+                 150: {weight:2.7, damage:'3d12 or 1d6', type:'Fire', avail:'Information', special:'Spread'},
+             },
+             'Explosive Shell': {
+                 20: {weight:0.025, damage:'1d4', type:'Bludgeoning', avail:'Information', special:'Explodes: 2d4'},
+                 25: {weight:0.05, damage:'1d6', type:'Bludgeoning', avail:'Information', special:'Explodes: 2d6'},
+                 50: {weight:0.25, damage:'1d8', type:'Bludgeoning', avail:'Steam', special:'Explodes: 3d6'},
+                 100: {weight:2.5, damage:'1d12', type:'Bludgeoning', avail:'Steam', special:'Explodes: 20d6'},
+                 150: {weight:7.5, damage:'3d12', type:'Bludgeoning', avail:'Steam', special:'Explodes: 60d6'},
+             },
+             'Smoke Shell': {
+                 25: {weight:0.05, damage:'1d6', type:'Bludgeoning', avail:'Information', special:'Smoke 1m 2 rounds'},
+                 50: {weight:0.25, damage:'1d8', type:'Bludgeoning', avail:'Information', special:'Smoke 2m 4 rounds'},
+                 100: {weight:2.5, damage:'1d12', type:'Bludgeoning', avail:'Information', special:'Explodes: 1d6 + Smoke 5m 8 rounds'},
+             },
+             'Armor Piercing Bullet': {
+                 5: {weight:0.01, damage:'1d2', type:'Piercing', avail:'Information', special:'Half Armor Effect'},
+                 10: {weight:0.05, damage:'1d4', type:'Piercing', avail:'Information', special:'Half Armor Effect'},
+                 15: {weight:0.2, damage:'1d6', type:'Piercing', avail:'Information', special:'Half Armor Effect'},
+                 20: {weight:0.5, damage:'1d8', type:'Piercing', avail:'Information', special:'Half Armor Effect'},
+                 25: {weight:1.0, damage:'1d10', type:'Piercing', avail:'Information', special:'Half Armor Effect'},
+                 50: {weight:5.0, damage:'3d12', type:'Piercing', avail:'Information', special:'Half Armor Effect'},
+                 100: {weight:20.0, damage:'8d12', type:'Piercing', avail:'Information', special:'Half Armor Effect'},
+             },
+             'Hollow-Point Bullet': {
+                 5: {weight:0.0025, damage:'1d6', type:'Piercing', avail:'Information', special:'Double Armor Effect'},
+                 10: {weight:0.015, damage:'1d8', type:'Piercing', avail:'Information', special:'Double Armor Effect'},
+                 15: {weight:0.05, damage:'1d10', type:'Piercing', avail:'Information', special:'Double Armor Effect'},
+                 20: {weight:0.15, damage:'1d12', type:'Piercing', avail:'Information', special:'Double Armor Effect'},
+             },
+             'Sabot Shell': {
+                 15: {weight:0.2, damage:'1d4', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
+                 20: {weight:0.5, damage:'1d6', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
+                 25: {weight:1.0, damage:'1d8', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
+                 50: {weight:5.0, damage:'1d10', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
+                 100: {weight:20.0, damage:'1d12', type:'Piercing', avail:'Information', special:'Quarter Armor Effect'},
+             },
+         };
+
+         /* Special Features: apply(state, ctx) mutates the running totals in `state`.
+            prereq(ctx) returns null if satisfied, or a warning string if not (features
+            still apply their effects either way -- this is a sandbox, not a rules cop). */
+         const features = [
+             {key:'howitzer',   label:'Howitzer Orientation',    avail:'Steam',
+              prereq: ctx => ctx.mmWidth>=50 ? null : 'requires barrel width ≥ 50mm',
+              apply: (s) => { s.cost*=2; s.dmgMult=Math.floor(s.dmgMult/4); s.special.push('Arcing'); }},
+             {key:'precision',  label:'Precision Manufacturing', avail:'Information',
+              apply: (s) => { s.cost*=10; s.ri*=2; s.maxAtk+=10; }},
+             {key:'sniper',     label:'Sniper',                  avail:'Information',
+              prereq: ctx => ctx.checked.precision ? null : 'requires Precision Manufacturing',
+              apply: (s) => { s.cost*=2; s.maxAtk*=2; }},
+             {key:'decopump',   label:'Decorative Pump Action',  avail:'Information',
+              prereq: ctx => ['Semi-Auto','Full Auto'].includes(ctx.action) ? null : 'requires Semi-Auto or Full Auto action',
+              apply: (s) => { s.weight+=0.25; s.cost+=10; s.special.push('Free intimidation (backfires vs. knowledge/craft(firearms))'); }},
+             {key:'smartaim',   label:'Smart Aim',               avail:'Space',
+              apply: (s) => { s.cost+=100; s.special.push('+4 tech bonus to attack'); }},
+             {key:'lasersight', label:'Laser Sight',             avail:'Information',
+              apply: (s) => { s.weight+=0.05; s.cost+=20; s.special.push('+2 tech bonus to attack, visible'); }},
+             {key:'holosight',  label:'Holographic Sight',       avail:'Information',
+              apply: (s) => { s.weight+=0.05; s.cost+=100; s.special.push('+2 tech bonus to attack'); }},
+             {key:'scope',      label:'Scope',                   avail:'Industrial',
+              prereq: ctx => ctx.cmLength>=100 ? null : 'requires barrel length ≥ 1m',
+              apply: (s) => { s.weight+=0.25; s.cost+=50; s.special.push('Can shoot while using telescope at no penalty'); }},
+             {key:'beltfed',    label:'Belt Fed',                avail:'Steam',
+              prereq: ctx => ['Gatling','Gatling (Improved)','Pump','Semi-Auto','Full Auto'].includes(ctx.action) ? null : 'requires Gatling, Pump, Semi- or Full-Auto action',
+              apply: (s) => { s.mag = 'unlimited'; s.special.push('Unlimited magsize, standard action to ready after moving'); }},
+             {key:'spray',      label:'Spray Mode',              avail:'Steam',
+              prereq: ctx => ['Gatling','Full Auto'].includes(ctx.action) ? null : 'requires Gatling or Full Auto action',
+              apply: (s) => { s.cost+=100; s.special.push('Spray Mode'); }},
+             {key:'burst',      label:'Burst Mode',              avail:'Information',
+              prereq: ctx => ['Gatling (Improved)','Full Auto'].includes(ctx.action) ? null : 'requires Gatling (Improved) or Full Auto action',
+              apply: (s) => { s.cost+=200; s.special.push('Burst Mode'); }},
+             {key:'ugly',       label:'Ugly',                    avail:'Gunpowder',
+              apply: (s) => { s.cost+=10; s.special.push('+2 intimidate, -2 diplomacy when displayed'); }},
+             {key:'nbarrel',    label:'N-barreled',              avail:'Industrial', hasN:true,
+              prereq: ctx => ['Flint and Frizzen','Breach/Cartridge'].includes(ctx.action) ? null : 'requires Flint and Frizzen or Breach/Cartridge action',
+              apply: (s, ctx) => { let n=ctx.n; s.weight*=(1+(n-1)*0.8); s.cost*=(1+(n-1)*0.4); s.special.push('Swap barrels as free action ('+n+'-barreled)'); }},
+             {key:'multiblast', label:'Multibarrel Blast',       avail:'Steam',
+              prereq: ctx => ctx.checked.nbarrel ? null : 'requires N-barreled',
+              apply: (s, ctx) => { s.str *= (ctx.checked.nbarrel ? ctx.n : 1); s.special.push('Fire all loaded barrels, one attack roll'); }},
+             {key:'bayonette',  label:'Bayonette',               avail:'Industrial',
+              prereq: ctx => ctx.cmLength>=50 ? null : 'requires barrel length ≥ 50cm',
+              apply: (s) => { s.weight+=1; s.cost+=100; s.special.push('Can be used as a Voulge (polearm)'); }},
+             {key:'rotating',   label:'Rotating Barrel',         avail:'Information',
+              prereq: ctx => (ctx.action==='Gatling (Improved)' && ctx.checked.nbarrel && ctx.checked.burst) ? null : 'requires Gatling (Improved) action, N-barreled, and Burst Mode',
+              apply: (s) => { s.weight+=2; s.cost+=100; s.special.push('In Burst Mode, all barrels reload at the max rate and fire in rotation'); }},
+             {key:'periscope', label:'Periscope Mount', avail:'Steam',
+              apply: (s)=>{ s.weight+=1; s.cost+=50; s.special.push('periscoping'); s.special.push('-2 on attacks')}},
+         ];
+
+         function fillSelect(sel, data, labelFn) {
+             for (let k in data) {
+                 let o = document.createElement('option');
+                 o.value = k;
+                 o.innerText = labelFn ? labelFn(k, data[k]) : k;
+                 sel.appendChild(o);
+             }
+         }
+
+         function init() {
+             fillSelect(document.getElementById('FB-length'), lengths);
+             fillSelect(document.getElementById('FB-width'), widths);
+             fillSelect(document.getElementById('FB-style'), styles);
+             fillSelect(document.getElementById('FB-action'), actions);
+             fillSelect(document.getElementById('FB-ammo'), ammoFamilies);
+             let box = document.getElementById('FB-featurebox');
+             for (let f of features) {
+                 let label = document.createElement('label');
+                 label.style.marginRight = '1em';
+                 label.style.whiteSpace = 'nowrap';
+                 let cb = document.createElement('input');
+                 cb.type = 'checkbox';
+                 cb.id = 'FB-feat-' + f.key;
+                 cb.onchange = recalc;
+                 label.appendChild(cb);
+                 label.appendChild(document.createTextNode(' ' + f.label));
+                 if (f.hasN) {
+                     let n = document.createElement('input');
+                     n.type = 'number';
+                     n.id = 'FB-feat-' + f.key + '-n';
+                     n.min = 2;
+                     n.max = 5;
+                     n.value = 2;
+                     n.style.width = '3em';
+                     n.onchange = recalc;
+                     label.appendChild(document.createTextNode(' ×'));
+                     label.appendChild(n);
+                 }
+                 box.appendChild(label);
+             }
+             ['FB-length','FB-width','FB-style','FB-action','FB-ammo'].forEach(id => document.getElementById(id).onchange = recalc);
+             recalc();
+         }
+
+         /* Grey out (disable) ammo options that don't have a variant matching the
+            current barrel width, or that Rifled barrels can't chamber. If the
+            currently-selected ammo just became invalid, jump to the first ammo
+            that's still valid. */
+         function updateAmmoOptions() {
+             let width = widths[document.getElementById('FB-width').value];
+             let style = styles[document.getElementById('FB-style').value];
+             let sel = document.getElementById('FB-ammo');
+             let firstOk = null;
+             let currentOk = false;
+             for (let opt of sel.children) {
+                 let fam = opt.value;
+                 let ok = (ammoFamilies[fam][width.mm] !== undefined) &&
+                          (style !== styles.Rifled || /bullet/i.test(fam));
+                 opt.disabled = !ok;
+                 if (ok && firstOk === null) firstOk = fam;
+                 if (ok && fam === sel.value) currentOk = true;
+             }
+             if (!currentOk && firstOk !== null) sel.value = firstOk;
+         }
+
+         function multiplyDamage(m,b) {
+             if (b.indexOf(' or ')!=-1) {
+                 return b.split(' or ').map(p=>multiplyDamage(m,p)).join(' or ');
+             }
+             if (b.indexOf('/')!=-1) {
+                 let [base,div] = b.split('/');
+                 div -= 0;
+                 if (m/div==Math.floor(m/div)) {
+                     return multiplyDamage(m/div, base);
+                 } else {
+                     return multiplyDamage(m,base) + '/' + div;
+                 }
+             }
+             if (/[0-9]+d[0-9]+/.test(b)) {
+                 let [n,d] = b.split('d');
+                 return (m*n)+'d'+d;
+             }
+             return m + ' × ' + b;
+         }
+         
+         const formatter = new Intl.NumberFormat('en-US', {
+             maximumSignificantDigits: 3
+         });
+
+
+         function recalc() {
+             updateAmmoOptions();
+             let length = lengths[document.getElementById('FB-length').value];
+             let width = widths[document.getElementById('FB-width').value];
+             let style = styles[document.getElementById('FB-style').value];
+             let actionName = document.getElementById('FB-action').value;
+             let action = actions[actionName];
+             let ammoFamilyName = document.getElementById('FB-ammo').value;
+             let shot = ammoFamilies[ammoFamilyName][width.mm];
+
+             let s = {weight:length.weight, cost:length.cost, ri:length.ri, maxAtk:length.maxAtk,
+                       dmgMult:length.dmgMult, str:length.str, mag:length.mag, special:[]};
+             let availList = [length.avail, width.avail, style.avail, action.avail];
+             let warnings = [];
+
+             if (shot) {
+                 availList.push(shot.avail);
+                 if (shot.special) s.special.push('Ammo: ' + shot.special);
+                 if (style === styles.Rifled && !/bullet/i.test(ammoFamilyName)) {
+                     warnings.push('Rifled barrels take Bullet ammo only (have ' + ammoFamilyName + ')');
+                 }
+             } else {
+                 warnings.push('no ' + width.mm + 'mm ' + ammoFamilyName + ' exists -- ammo must be the same size as the barrel width');
+             }
+
+             s.str += width.str || 0;
+             if (width.magDiv) s.mag /= width.magDiv;
+             s.mag =  Math.max(1, Math.floor(s.mag));
+             if (width.costMult) s.cost *= width.costMult;
+
+             if (style.riDiv) { s.ri = Math.round(s.ri / style.riDiv); s.riSuffix = ' (long)'; } else { s.riSuffix = ''; }
+             s.cost += style.cost || 0;
+             s.maxAtk += style.maxAtk || 0;
+
+             s.weight += action.weight || 0;
+             s.cost += action.cost || 0;
+             s.maxAtk += action.maxAtk || 0;
+             if (action.fixedMag) s.mag = action.fixedMag;
+             if (action.special) s.special.push(action.special);
+             let reloadText = action.muzzle ? (shot.reload ? shot.reload : style.muzzleReload) : action.reload;
+             if (width.reloadMult) {
+                 let parsed = /([0-9]+)( .*)/.exec(reloadText);
+                 if (parsed) {
+                     let [_,n,u] = parsed; 
+                     reloadText = (width.reloadMult * n) + u;
+                 }
+             }
+             if (action.prereq) {
+                 let ok = (action.minMm===undefined || width.mm>=action.minMm) &&
+                          (action.maxMm===undefined || width.mm<=action.maxMm);
+                 if (!ok) warnings.push(actionName + ' ' + action.prereq + ' (have ' + width.mm + 'mm)');
+             }
+
+             let checked = {};
+             for (let f of features) checked[f.key] = document.getElementById('FB-feat-' + f.key).checked;
+             let ctx = {mmWidth:width.mm, cmLength:length.cm, action:actionName, checked,
+                        n: document.getElementById('FB-feat-nbarrel-n') ? parseInt(document.getElementById('FB-feat-nbarrel-n').value)||2 : 2};
+
+             for (let f of features) {
+                 if (!checked[f.key]) continue;
+                 f.apply(s, ctx);
+                 availList.push(f.avail);
+                 if (f.prereq) {
+                     let bad = f.prereq(ctx);
+                     if (bad) warnings.push(f.label + ' ' + bad);
+                 }
+             }
+
+             let barrelOk = length.cm * 10 > 12 * width.mm;
+             if (!barrelOk) warnings.push('barrel length must be more than 12× the barrel width (have ' + length.cm + 'cm vs ' + width.mm + 'mm)');
+
+             document.getElementById('FB-out-weight').innerText = Math.round(s.weight*100)/100;
+             document.getElementById('FB-out-cost').innerText = Math.round(s.cost);
+             document.getElementById('FB-out-avail').innerText = maxAge(availList);
+             document.getElementById('FB-out-ri').innerText = s.ri + s.riSuffix;
+             document.getElementById('FB-out-maxatk').innerText = Math.round(s.maxAtk);
+             document.getElementById('FB-out-dmg').innerText = multiplyDamage(s.dmgMult, shot.damage);
+             document.getElementById('FB-out-str2h').innerText = Math.round(s.str);
+/*             document.getElementById('FB-out-str1h').innerText = Math.ceil(s.str*1.5);
+             document.getElementById('FB-out-stroff').innerText = Math.round(s.str*2);*/
+             document.getElementById('FB-out-mag').innerText = s.mag;
+             document.getElementById('FB-out-mag-weight').innerText = formatter.format(typeof(s.mag)==typeof(1) ? s.mag * shot.weight : shot.weight);
+             document.getElementById('FB-out-reload').innerText = reloadText;
+/*             document.getElementById('FB-out-ammo').innerText = shot ? (ammoFamilyName + ' (' + width.mm + 'mm)') : (ammoFamilyName + ' -- no ' + width.mm + 'mm variant');*/
+             document.getElementById('FB-out-special').innerText = s.special.join('; ');
+             document.getElementById('FB-out-warnings').innerText = warnings.join('; ');
+             document.getElementById('FB-tr-warnings').style.display = warnings.length ? 'table-row' : 'none';;
+             
+         }
+      </script>
+      <tr>
+          <th>Barrel Length:</th>
+          <td><select id="FB-length"></select></td>
+          <th>Barrel Width:</th>
+          <td><select id="FB-width"></select></td>
+          <th>Barrel Style:</th>
+          <td><select id="FB-style"></select></td>
+          <th>Action:</th>
+          <td><select id="FB-action"></select></td>
+          <th>Ammo:</th>
+          <td colspan="3"><select id="FB-ammo"></select></td>
+      </tr>
+      <tr>
+          <th>Special Features:</th>
+          <td colspan="9" id="FB-featurebox"></td>
+      </tr>
+      <tr>
+          <th>Weight (kg)</th>
+          <th>Cost</th>
+          <th>Available From</th>
+          <th>Range Increment</th>
+          <th>Max Attack</th>
+          <th>Damage</th>
+          <th>Magsize</th>
+          <th>Mag Weight</th>
+          <th>Str (2h)</th>
+          <th>Reload</th>
+      </tr>
+      <tr>
+          <td id="FB-out-weight"></td>
+          <td id="FB-out-cost"></td>
+          <td id="FB-out-avail"></td>
+          <td id="FB-out-ri"></td>
+          <td id="FB-out-maxatk"></td>
+          <td id="FB-out-dmg"></td>
+          <td id="FB-out-mag"></td>
+          <td id="FB-out-mag-weight"></td>
+          <td id="FB-out-str2h"></td>
+          <td id="FB-out-reload"></td>
+      </tr>
+      <tr>
+          <th>Special</th>
+          <td colspan="9" id="FB-out-special"></td>
+      </tr>
+      <tr id="FB-tr-warnings">
+          <th style="color:red">Warnings</th>
+          <td colspan="9" id="FB-out-warnings" style="color:red"></td>
+      </tr>
+      <script>
+          init();
+      </script>
+    </table>
+</body></html>

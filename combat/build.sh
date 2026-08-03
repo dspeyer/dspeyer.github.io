@@ -1,7 +1,7 @@
 #!/bin/bash
 
 download() {
-    curl "https://docs.google.com/spreadsheets/d/$1/export?format=zip&id=$1" --cookie "$(cat .cookie)" -L > tmp.zip
+    curl "https://docs.google.com/spreadsheets/d/$1/export?format=zip&id=$1" -L > tmp.zip
     unzip tmp.zip Sheet1.html
     mv Sheet1.html $2.html
     rm tmp.zip
