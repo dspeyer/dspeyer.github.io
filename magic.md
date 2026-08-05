@@ -829,7 +829,7 @@ You can structure your spells into completely stable forms, separate from yourse
 
 #### Arcane Strike
 Prerequisite: Monk or Holy Warrior.     
-You may cast a spell and make an attack as a single standard action. The spell and attack must have the same target. If the attack misses, the spell is wasted (but still paid for).
+When you make an attack (including as part of e.g. a disarm attempt), you may cast a spell as part of the same action.   The spell and attack must have the same target. If the attack misses, the spell is wasted (but still paid for).
 
 #### Determined Caster
 Prerequisite: monk, Bard or paladin.   
@@ -1233,11 +1233,15 @@ Effects:
 
 
 1. Lesser Hex: Target takes -X penalty to a skill or saving throw (cost: X)
-2. Pacifying Hex: Target takes -X penalty to all attacks (cost: 2*X)
+2. Offensive Hex: Target takes -X penalty to all attacks (cost: 2*X)
+3. Defensive Hex: Target takes -X penalty to all active attempts to resist attack, disarmement, grapple or similar (cost: 2*X)
 3. Greater Hex: Target takes -X penalty to all skills and saving throws (cost: 3*X)
 3. Ability Hex: Target takes -X penalty to an ability score (cost: 2*X)
 4. Blindness/Etc: Target loses a sense (cost: 4)
 5. Confusion: Target looses a mental faculty, such as words, arithmetic or theory-of-mind (cost: 10)
+6. One-Off: Hex only applies to the single next time the target attempts the action (cost: /2)
+
+A Defensive Hex delivered with an Arcane Strike does not apply to dodging or parrying the strike itself, but if the strike was the first step of a disarm attempt or similar, the hex does apply to resisting the disarm.
 
 Blindness/Etc can be used to shut down Othersenses (e.g. Soul Sight).  If you attempt to shut down a sense the target does not have, the target loses a random sense instead.
 

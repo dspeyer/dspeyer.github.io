@@ -2173,9 +2173,10 @@ cast with this do not count against your ongoing spell limit.<br />
 <em>This feat only applies to spells cast from this source</em></p>
 <h4 id="arcane-strike">Arcane Strike</h4>
 <p>Prerequisite: Monk or Holy Warrior.<br />
-You may cast a spell and make an attack as a single standard action. The
-spell and attack must have the same target. If the attack misses, the
-spell is wasted (but still paid for).</p>
+When you make an attack (including as part of e.g. a disarm attempt),
+you may cast a spell as part of the same action. The spell and attack
+must have the same target. If the attack misses, the spell is wasted
+(but still paid for).</p>
 <h4 id="determined-caster">Determined Caster</h4>
 <p>Prerequisite: monk, Bard or paladin.<br />
 If you fail a spellcraft check to cast a spell (including as a ritual),
@@ -2801,8 +2802,10 @@ Duration: Skill total rounds</p>
 <ol type="1">
 <li>Lesser Hex: Target takes -X penalty to a skill or saving throw
 (cost: X)</li>
-<li>Pacifying Hex: Target takes -X penalty to all attacks (cost:
+<li>Offensive Hex: Target takes -X penalty to all attacks (cost:
 2*X)</li>
+<li>Defensive Hex: Target takes -X penalty to all active attempts to
+resist attack, disarmement, grapple or similar (cost: 2*X)</li>
 <li>Greater Hex: Target takes -X penalty to all skills and saving throws
 (cost: 3*X)</li>
 <li>Ability Hex: Target takes -X penalty to an ability score (cost:
@@ -2810,7 +2813,13 @@ Duration: Skill total rounds</p>
 <li>Blindness/Etc: Target loses a sense (cost: 4)</li>
 <li>Confusion: Target looses a mental faculty, such as words, arithmetic
 or theory-of-mind (cost: 10)</li>
+<li>One-Off: Hex only applies to the single next time the target
+attempts the action (cost: /2)</li>
 </ol>
+<p>A Defensive Hex delivered with an Arcane Strike does not apply to
+dodging or parrying the strike itself, but if the strike was the first
+step of a disarm attempt or similar, the hex does apply to resisting the
+disarm.</p>
 <p>Blindness/Etc can be used to shut down Othersenses (e.g. Soul Sight).
 If you attempt to shut down a sense the target does not have, the target
 loses a random sense instead.</p>
