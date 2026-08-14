@@ -133,6 +133,14 @@ If you leave a threatened square, the enemy threatening it may use their reactio
 
 Some actions (such as drawing a weapon from a sheath) cost 1m of movement.  Others (such as reloading a breach-action firearm) cost a Move Action, which is all your movement.
 
+### Frame of Reference
+
+Usually the metagame grid of squares follows the frame of reference of whatever the majority of PCs are standing on (very often: the ground).  Occasionally (e.g. in a chase seen), the frame of refrence might be the most plot-relevant character or object.
+
+If there are large objects moving relative to each other (e.g. ships), they move at the lowest initiative.
+
+If a character is moving under their own power to keep pace with the grid, simply subtract the grid's movement from the character's available movement.  If the character moves relative to the grid, sideways moves of 1/3 the grid's speed rounded up are free, larger sideways moves and forward moves cost normally, and backwards moves refund movement to the character.
+
 ## Reactions
 
 Reactions include attacks of opportunity, parries and dodges.
@@ -689,7 +697,7 @@ This weapon allows you to make attacks at up to 10 range increments (albeit at a
 
 ##### Attaches to Rifle
 
-This weapon (an underslung grenade launcher) cannot be used separately, but can be attached to any firearm with at least a one foot barrel.
+This weapon (an underslung grenade launcher) cannot be used separately, but can be attached to any firearm with at least a 50cm barrel.
 
 ##### Ready
 
