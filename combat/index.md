@@ -78,8 +78,8 @@ around armor totalling 10.  Her AC has the 15 from before, plus
 another 5 for a half-open helmet making 20.  He rolls a 14.
 
 Alice has already reacted once this round and cannot dodge.  She is
-hit.  Bob deals 1d4 + 1/2 strength mod damage.  He rolls a 3 and has a
-str of +2, so this is 4 damage.  Alice has a constitution score of 12,
+hit.  Bob deals 1d4 + 1/2 strength mod damage.  He rolls a 4 and has a
+str of +2, so this is 5 damage.  Alice has a constitution score of 12,
 so her head is still functional.  But Bob has also learned that Alice
 does not have the Combat Reflexes feat.
 
@@ -102,10 +102,35 @@ damage.  Combined with the 4 from earlier, she is in very bad shape.
 Bob makes his second attack with the dagger.  Again, he attacks at +10
 against her face AC of 20.  But this time he rolls a 17, exceeding her
 AC by more than 5: a critical hit.  It's a piercing attack, so it
-deals 2.5x damage.  He rolls a 3 (and has +1 from str), making 10
-damage.  The total damage to Alice's head now exceeds her
-constitution, but does not double it. She is unconscious and bleeding
-out.
+deals 1.75x damage.  He rolls a 3 (and has +1 from str), making 7
+damage.  The total damage to Alice's head now equals her
+constitution. She is unconscious and bleeding out.
+
+## Higher Tech Example
+
+Carol has decided to kill Donald.
+
+First she picks the lock to his apartment.  He hears this and realizes what it means, so he overturns a sturdy table and kneels behind it, with eyes and right hand just peeking over the top.  He readies an action to shoot anyone who becomes visible at the door.
+
+Carol readies an action to shoot in the head anyone who becomes visible inside.  She then spends 1 meter of movement to open the door.
+
+Both readied actions trigger.  Donald wins initiative and shoots Carol first: ranged attack dex=2 + bab=2 = 4 against base=10 + dex=3 = 13.  He rolls a 10, just barely a hit.  He rolls body part and gets left arm.  He's using a 10mm pistol with AP rounds, so it only does 6d4=17 damage, but against this her kevlar jacket only reduces 6.   She takes 12 damage but has 14 con.  Her arm is functional, and she can take her shot: dex=3 + bab=2 = 5 against AC base=10 + dex=2 + head=4 + partial cover=2 = 18.  She rolls a 14 and also barely hits.  She's using a 10mm carbine for 8d6=24 damage.  But he's wearing a titanium and kevlar helmet which absorbs 22 of the damage.  2 damage to Donald's head.
+
+Readied actions complete, Carol finishes her turn.  She's used her standard action, but she has movement left.  Knowing she can't afford to get shot in the arm again, she moves to an armchair and kneels behind it.
+
+Donald knows which armchair Carol's behind, but not exactly where.  He shoots the armchair (atk 4 vs ac 5 -- can't miss).  The bullet overpenetrates and makes a wild shot into Carol's square.  The bullet attacks at -5 and Carol's AC is 13, so it needs an 18 to hit.  It misses.
+
+Carol pulls out a grenade, primes it, and tosses it arcing into Donald's square.  Atk 5 against AC 5.  She rolls a 6 -- a crit if squares had discernable anatomy.
+
+But Donald has the Improved Unarmed Strike feat meaning he can parry with his bare hands.  His parry totals 15, so he adds 7 to the square's AC making 12 -- more than Carol's 11.  For an unarmed parry he takes half base damage, but base damage from a thrown grenade is only 1d3+2=4 (Carol has a strength score of 14).  As he backhands the grenade he takes 2 point of bruising to his knuckles.
+
+Parrying is not an arcing weapon, so he can't send it back at Carol, but he does the next best thing and targets the square next to her.  Unfortunately this is only 2 meters away from him.  He attacks at a net -1 but still easily hits AC 5.
+
+The grenade detonates for 10d6=36 damage.  Being in the adjacent square, Carol takes (1+1)^-2=1/4 damage or 9 points.  Her head-to-toe kevlar absorbs 2 of them.  Her left arm is out of commission and the rest of her is hurting badly.  Donald is 2 meters away and takes (2+1)^-2=1/9 damage or 4 points.  His helmet protects his head completely and the rest of him remains functional.
+
+The table and armchair are both mostly wrecked by the explosion, so neither has cover.  Donald shoots Carol again this time crippling her right leg.
+
+Carol's left hand is nonfunctional and her carbine requires a strength score of 15 to fire one-handed (hers is 14).  She lies prone and uses the floor as a gun mount to provide the extra strength needed.  She explicitly aims for Donald's lightly armored torso and fires.  Her attack is still at +5 and his torso's AC is 14.  Luck is finally with her as she rolls a 16 for a total of 21: a crit.  Base damage 8d6=24 minus 12 for kevlar jacket makes 12 times 1.75 for crit makes 21.  Donald's con is 10, so he is dead.
 
 # General Rules
 
@@ -145,7 +170,11 @@ If a character is moving under their own power to keep pace with the grid, simpl
 
 Reactions include attacks of opportunity, parries and dodges.
 
-To parry, roll an attack with a parrying weapon and add half the result to AC.  Bonuses for using a weapon in a specific way (e.g. slashing with a fore-bulging weapon) don't apply here, but the double-polearm bonus of a trident or symmetric fork does, as does Weapon Focus or similar.  Only melee attacks to be parried (without a special feat).
+To parry, roll an attack with a parrying weapon and add half the result to AC.  Bonuses for using a weapon in a specific way (e.g. slashing with a fore-bulging weapon) don't apply here, but the double-polearm bonus of a trident or symmetric fork does, as does Weapon Focus or similar.  Only melee attacks or ranged attacks with the parryable property (throws and drops) can be parried (without a special feat).
+
+You can parry an attack on your square or on an ally in your square.  If multiple people parry the same attack, only the highest roll counts.
+
+If you parry a thrown weapon, you may make a ranged attack at -5 to send it to a square of your choice.  This is mostly useful for grenades.
 
 Dodges are simple dex rolls, again adding half.  Only melee and pre-gunpowder attacks can be dodged.
 
@@ -154,6 +183,8 @@ You get one reaction per round, resetting at the beginning of your turn.  You ca
 ## Critical Hits
 
 Exceeding AC by five makes a crit, by 10 a double-crit, etc.  Crits deal +25% damage for bludgeoning, +50% for slashing and +75% for piercing.  Double these percentages for a double-crit, etc.
+
+Critical multipliers are applied after DR from armor.
 
 There is no concept of critical failure, though some weapons do special things if an attack roll is low enough.  For these weapons, it is important to distinguish an ac bonus from an attack penalty.
 
@@ -199,9 +230,13 @@ A normal melee weapon can strike at a distance of 1 meter (adjacent).  A reach w
 
 A ranged weapon faces distance AC when the range exceeds the range increment.
 
+## Explosions
+
+An explosion deals its nominitive damage to things in its square.  Further away targets take (d+1)^-2 damage.  Targets in contact with the explosive take double damage and targets with the explosion inside them take triple.
+
 ## Cramped Quarters
 
-If you attempt to fight in the same square as another character, or use a weapon longer than the width of your environment, you suffer a Cramped Quarters Penalty.
+If you attempt to fight in the same square as another character, or use a weapon as long or longer than the width of your environment, you suffer a Cramped Quarters Penalty.
 
 This does four things:
 
@@ -226,6 +261,33 @@ You may ready an action based on a trigger you perform.  If so, you gain +5 on i
 
 You take the readied action when you believe the trigger is fullfilled, even if you're wrong.  Furthermore, you take a -5 haste penalty on skill checks to determine if it is fullfilled.  (Useful to anyone trying to deceive you into wasting the readied action.)
 
+## Cover and Concealment
+
+You can keep some parts of your body behind something to make it more difficult for an enemy to attack them.  However, you must have your head exposed to see them (unless you have a periscope or similar) and your hand or hands exposed to attack them (except with an arcing ranged weapon, or a periscope-mounted firearm).
+
+If someone has only one or two body parts visible, you can only attack them by choosing a body part.  If they have three or more showing, you can attack generally and reroll unexposed body parts if necessary.
+
+If your torso is behind cover, you can expose "just enough" of a body part.  This gives the part a +2 to AC.
+
+You can also attack someone through cover if you can deduce where they are.  All AC bonuses go away but they get DR:
+
+| Cover | Damage Reduction |
+| - | - |
+| Ordinary Furniture | 1 |
+| Solid wooden furniture | 10 |
+| Wallboard | 5 |
+| Hostage | 2 * (con + armor) |
+| Big Tree | 20 |
+| Brick Wall | 30 |
+| Stone Wall | 100 |
+| Concrete Wall | 150 |
+
+(These are typical values: specific cases can vary.  Armor piercing and hollow point modifiers apply.)
+
+If you don't know where your enemy is beyond the square, you can still attack the cover and hope to overpenetrate with a wild shot.
+
+If you can't see your enemy but can hear them, you can try to determine their location from the sound.  Roll Listen against their Move Silently (if they are not attempting to move silently, they take a 1 on the roll but still have their modifier).  If your check exceeds theirs by 20 or more, you have determined their location.
+
 ## Addrenal Surges
 
 You have a number of addrenal surges equal to your con mod.  When you
@@ -242,7 +304,7 @@ fraction (rounding down) for a shorter period.
 
 The sizes are fine < diminutive < tiny < small < medium < large < huge < gargantuan < colossal.
 
-Each step represent a 2x linear scale-up so 8x mass.  For example, a human is very roughly 2 meters tall, 100kg and, stands in a quarter of a square meter and needs a full square meter to fight effectively.  A halfling (small) is very roughly 1 meter tall, 12.5kh and stands in sixteenth of a square meter but needs a quarter to fight effectively.  An ogre (large): 4 meters, 800kg, 1 square meter, 4 square meters.  Of course, many animals are differently shaped.
+Each step represent a 2x linear scale-up so 8x mass.  For example, a human is very roughly 2 meters tall, 100kg and, stands in a quarter of a square meter and needs a full square meter to fight effectively.  A halfling (small) is very roughly 1 meter tall, 12.5kg and stands in sixteenth of a square meter but needs a quarter to fight effectively.  An ogre (large): 4 meters, 800kg, 1 square meter, 4 square meters.  Of course, many animals are differently shaped.
 
 To create a larger version of a creature, *multiply the strength score* by 4 and decrease the dexterity by 2.  Tracking tiny or smaller creatures requires fractional strength scores: round these to 1 where non-integers become awkward.
 
@@ -256,8 +318,8 @@ The ages are:
 |:-----|:------------------------------------------------------------------------------|
 |Stone | Prehistory, pre-contact Americas|
 |Bronze | Sumeria, Pyramid-building Egypt, Book of Judges, the Trojan War|
-|Iron | Athenian League, Rome, Carolingian Empire, Zhou through Tang China|
-|Spinning | Song China, Hundred Years' War, Venetian Empire, Hapsburg Holy Roman Empire|
+|Iron | Athenian League, Rome, Carolingian Empire, Zhou through Tang China, Lord of the Rings |
+|Spinning | Song China, Hundred Years' War, Venetian Empire, Hapsburg Holy Roman Empire, Lord of the Rings (Peter Jackson adaptation), Dungeons and Dragons |
 |Gunpowder | European Wars of Religion, Ming China|
 |Industrial | Napoleanic France, Georgian England, Early United States|
 |Steam | US Civil War, World War One|
@@ -483,7 +545,7 @@ A fire lance is a spear with an attached tray of burning gunpowder.  It takes a 
 
 A basic unarmed strike is a simple melee thrusting weapon that deals 1d2 bludgeoning damage.  It provokes an attack of opportunity (including when used for grappling, tripping or disarming).  Also, it may be performed with hands or feet, but feet can only be used to target legs.
 
-A competent unarmed strike is an exotic melee thrusting or swinging weapon that deals 1d3 bludgeoning damage.  It can be done using any body part and does not have special restrictions.
+A competent unarmed strike is an exotic melee thrusting or swinging weapon that deals 1d3 bludgeoning damage.  It can be done using any body part and does not have special restrictions.  A competent unarmed strike can be used to parry, but the limb used takes half base weapon damage on success.
 
 If you have the Two Weapon Fighting feat, one of those weapons may be an unarmed strike.  Including your weapons could be a two-handed sword and a kick.
 
@@ -579,8 +641,8 @@ This weapon continues to deal damage for X rounds (at the start of the turn of t
 <div class=wide>
 Weapon | Ammo | Damage | Range | Reload Time | Complexity | Availability | Hands | Strength Needed | Weight | Length | Cost | Special
 -|-|-|-|-|-|-|-|-|-|-|-|-
-Throw | Any with Range | ammo+strm | ammo×(str/10) | n/a | Human | Stone | 1 | weight×2 | 0 | 0 | 0 | Arcing, Ready
-Drop | Any with Range | ammo×min(height/7m,2) | 7 | n/a | Simple | Stone | 1 | weight/6 | 0 | 0 | 0 | unlimited range, swift -10, head
+Throw | Any with Range | ammo+strm | ammo×(str/10) | n/a | Human | Stone | 1 | weight×2 | 0 | 0 | 0 | Arcing, Ready, Parryable
+Drop | Any with Range | ammo×min(height/7m,2) | 7 | n/a | Simple | Stone | 1 | weight/6 | 0 | 0 | 0 | unlimited range, swift -10, head, Parryable
 Atlalt | Javelin | ammo+strm | 2×ammo×(str/10) | Free Action | Martial | Stone | 2/1 | 6 | 0.5 | 70cm | 1 | 
 Sling | Stone, Ball, Grenade or Bomb | ammo+strm | 3×ammo×(str/10) | Move Action | Martial | Stone | 2/1 | weight×3 | 0.005 | 0 | 1 | Risky, Arcing
 Slingstaff | Stone, Ball, Grenade or Bomb | ammo+1.5×strm | 3×ammo×(str/10) | Move Action | Simple | Stone | 2 | weight×2 | 1 | 30cm | 2 | 
@@ -694,6 +756,10 @@ This weapon (dropping) always strikes humanoid enemies in the head, provided the
 ##### Long
 
 This weapon allows you to make attacks at up to 10 range increments (albeit at a -20 penalty).  The normal limit is 5 increments.
+
+#### Parryable
+
+Attacks with these weapons can be parried without the Parry Ranged Attacks feat.
 
 ##### Attaches to Rifle
 
@@ -1202,5 +1268,10 @@ Not actually a thing you do, but a thing that can happen.  The choice between at
 
 **Assassin:** The Take Aim action grants you a +4 bonus.  Also, you may take it up to three times for the same target and the bonuses stack.
 
+**Extra Readied Actions:** *(prereq: Wis 14)* You may ready a number of triggers and actions equal to your wisdom modifier simultaneously.  If any of the triggers occur, all your readied actions are expended.
+
+**Parry Ranged Attacks:** You can parry attacks from ranged weapons from before the gunpowder age
+
+**Greater Parry Ranged Attacks:** *(prereqs: Parry Ranged Attacks, precognition or superspeed)* You can parry attacks from any ranged weapons, though parrying plasma blasts requires a plasma weapon.
 
 <script src=linkableh.js></script>
