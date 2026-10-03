@@ -114,7 +114,7 @@ First she picks the lock to his apartment.  He hears this and realizes what it m
 
 Carol readies an action to shoot in the head anyone who becomes visible inside.  She then spends 1 meter of movement to open the door.
 
-Both readied actions trigger.  Donald wins initiative and shoots Carol first: ranged attack dex=2 + bab=2 = 4 against base=10 + dex=3 = 13.  He rolls a 10, just barely a hit.  He rolls body part and gets left arm.  He's using a 10mm pistol with AP rounds, so it only does 6d4=17 damage, but against this her kevlar jacket only reduces 6.   She takes 12 damage but has 14 con.  Her arm is functional, and she can take her shot: dex=3 + bab=2 = 5 against AC base=10 + dex=2 + head=4 + partial cover=2 = 18.  She rolls a 14 and also barely hits.  She's using a 10mm carbine for 8d6=24 damage.  But he's wearing a titanium and kevlar helmet which absorbs 22 of the damage.  2 damage to Donald's head.
+Both readied actions trigger.  Donald wins initiative (despite Carol's +5 readiness bonus) and shoots Carol first: ranged attack dex=2 + bab=2 = 4 against base=10 + dex=3 = 13.  He rolls a 10, just barely a hit.  He rolls body part and gets left arm.  He's using a 10mm pistol with AP rounds, so it only does 6d4=17 damage, but against this her kevlar jacket only reduces 6.   She takes 12 damage but has 14 con.  Her arm is functional, and she can take her shot: dex=3 + bab=2 = 5 against AC base=10 + dex=2 + head=4 + partial cover=2 = 18.  She rolls a 14 and also barely hits.  She's using a 10mm carbine for 8d6=24 damage.  But he's wearing a titanium and kevlar helmet which absorbs 22 of the damage.  2 damage to Donald's head.
 
 Readied actions complete, Carol finishes her turn.  She's used her standard action, but she has movement left.  Knowing she can't afford to get shot in the arm again, she moves to an armchair and kneels behind it.
 
@@ -257,9 +257,11 @@ Exception: if you have a weapon with the Ready property, you can use "it seems l
 
 If multiple people ready based on the same trigger, they roll initiative to determine who acts first.
 
-You may ready an action based on a trigger you perform.  If so, you gain +5 on initiative for that trigger.  For example, you could ready an action "If I see someone after rounding that corner" and you would have a +5 on initiative against the person on the far side who's trigger was "If someone rounds that corner".
+You may ready an action based on a trigger you perform.  If so, you gain a +5 readiness bonus on initiative for that trigger.  For example, you could ready an action "If I see someone after rounding that corner" and you would have a +5 on initiative against the person on the far side who's trigger was "If someone rounds that corner".
 
 You take the readied action when you believe the trigger is fullfilled, even if you're wrong.  Furthermore, you take a -5 haste penalty on skill checks to determine if it is fullfilled.  (Useful to anyone trying to deceive you into wasting the readied action.)
+
+If the trigger has natural consequences within 200ms, those consequences occur before any readied actions.  For example, if you ready an action on someone firing a gun, or a low-tech ranged weapon at a range of less than 10 meters, that attack resolves first.
 
 ## Cover and Concealment
 
