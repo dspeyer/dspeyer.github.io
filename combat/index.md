@@ -347,6 +347,7 @@ The most important variation in a blade is its length.
 <div class=captioned>
 Name | Type | Handed | Special | Dmg | Length (cm) | Weight (kg) | Strength Needed | Price
 -|-|-|-|-|-|-|-|-
+Knife | Simple | One Handed | | 1d2 | 15 | 0.25 | 2 | 5
 Dagger | Simple | One Handed | Gap Finding | 1d4 | 30 | 0.5 | 4 | 10
 Shortsword | Simple | One Handed |  | 1d6 | 70 | 1 | 8 | 40
 Arming Sword | Martial | One Handed |  | 1d8 | 100 | 1.5 | 12 | 90
@@ -360,9 +361,9 @@ Blade properties by length for medium creatures
 
 The damage, reach and strength requirements of a blade are unaffected by the size of the wielder.  The handedness, type, name and special abilities do.  Specifically, the lengths they attach to are doubled (or halved) for every size category difference.
 
-For example, a 70 cm blade will always weigh 1 kg, deal 1d6 base damage and require 8 strength to wield in one's primary hand.  For a human, it would be a shortsword.  For a halfling, it would be a bastard sword, requiring an EWP feat to wield one-handed (but allowing two-handing with only 6 strength).  For an ogre, it would be a dagger, and would gain the Gap Finding ability.  A giant or brownie would be unable to wield it effectively.
+For example, a 70 cm blade will always weigh 1 kg, deal 1d6 base damage and require 8 strength to wield in one's primary hand.  For a human, it would be a shortsword.  For a halfling, it would be a bastard sword, requiring an EWP feat to wield one-handed (but allowing two-handing with only 6 strength).  For an ogre, it would be a dagger, and would gain the Gap Finding ability.  A giant would see it as a mere knife (no Gap Finding) and a brownie would be unable to wield it effectively.
 
-Halfling daggers exist, deal 1d2 damage, and cannot be wielded effectively by big folk.  In theory, ogre greatswords exist as well (with double-reach) but they are not available in ordinary markets.
+In theory, ogre greatswords exist as well (with double-reach) but they are not available in ordinary markets.
 
 #### Special Abilities
 
@@ -417,7 +418,7 @@ The vast majority of blades are made from steel, in any environment where steel 
 
 **Titanium**: Halve weight.  Decrease base damage die one step.  Available from the Information Age.
 
-**Plasma**: Ignore armor and parries (except from other plasma blades).  Add +2d6 fire damage to all successful attacks.  Deal yourself 2d6 fire damage (random body part) on any total attack roll less than 10.  Available from the Star Age.
+**Plasma**: Ignore armor and parries (except from other plasma blades).  Add +2d6 fire damage to all successful attacks.  Deal yourself 2d6 fire damage (random body part) on any total attack roll less than 10.  Treat as 10cm when not actively wielded.  Available from the Star Age.
 
 ### Customization
 
@@ -1088,7 +1089,18 @@ Manipulating an object generally requires less than a move action.  Specifically
 | Pick up from sling | 2 meters
 | Pick up from ground | 5 meters |
 | Drop | free |
-| Give / Take | 1 meter total |
+| Draw from back-scabbard | 2 meters |
+| Sheathe in back-scabbard | 5 meters |
+| Remove from  backpack | 4+2d8 meters |
+| Shove into backpack | 5 meters |
+| Give / Take | 2 meters total |
+| Open Door | 1 meter |
+
+Give/Take can cost 2 meters movement from giver or taker, or 1 from each.
+
+You can wear 2 sheathes of up to 1.7 meters on your belt, 4 of up to 50cm on a chest bandoleer (though this looks highly aggressive), 1 of up to 15cm in each boot (hidden) and 1 back-scabbard of up to 2 meters.  For these purposes, shortbows are 1m long and longbows 2m.
+
+Reminder: moving cautiously (without provoking AoOs) costs double of normal movement.  This isn't actually an object manipulation, but it's relevant if you're counting movement carefully.
 
 ## Bull Rush
 
