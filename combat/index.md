@@ -56,7 +56,7 @@ But Bob reacts by parrying with his falchion.  He rolls his own attack
 (bab=2 dex=2 die=8 total=12) and adds half the result (6) to his AC.
 Alice has now missed.
 
-Bob advances cautiously to a distance of 1m.  He has the Two
+Bob advances cautiously to a distance of 1m.  He has the Multi
 Weapon Fighting feat, so he can attack with both weapons.  He begins
 with the falchion.  Since it's not very effective against plate, he
 deliberately slashes at her right arm.  His attack bonus is bab=2 plus
@@ -122,7 +122,7 @@ Donald knows which armchair Carol's behind, but not exactly where.  He shoots th
 
 Carol pulls out a grenade, primes it, and tosses it arcing into Donald's square.  Atk 5 against AC 5.  She rolls a 6 -- a crit if squares had discernable anatomy.
 
-But Donald has the Improved Unarmed Strike feat meaning he can parry with his bare hands.  His parry totals 15, so he adds 7 to the square's AC making 12 -- more than Carol's 11.  For an unarmed parry he takes half base damage, but base damage from a thrown grenade is only 1d3+2=4 (Carol has a strength score of 14).  As he backhands the grenade he takes 2 point of bruising to his knuckles.
+But Donald has the Exotic Weapon Proficiency: Unarmed Strike feat meaning he can parry with his bare hands.  His parry totals 15, so he adds 7 to the square's AC making 12 -- more than Carol's 11.  For an unarmed parry he takes half base damage, but base damage from a thrown grenade is only 1d3+2=4 (Carol has a strength score of 14).  As he backhands the grenade he takes 2 point of bruising to his knuckles.
 
 Parrying is not an arcing weapon, so he can't send it back at Carol, but he does the next best thing and targets the square next to her.  Unfortunately this is only 2 meters away from him.  He attacks at a net -1 but still easily hits AC 5.
 
@@ -548,9 +548,9 @@ A fire lance is a spear with an attached tray of burning gunpowder.  It takes a 
 
 A basic unarmed strike is a simple melee thrusting weapon that deals 1d2 bludgeoning damage.  It provokes an attack of opportunity (including when used for grappling, tripping or disarming).  Also, it may be performed with hands or feet, but feet can only be used to target legs.
 
-A competent unarmed strike is an exotic melee thrusting or swinging weapon that deals 1d3 bludgeoning damage.  It can be done using any body part and does not have special restrictions.  A competent unarmed strike can be used to parry, but the limb used takes half base weapon damage on success.
+A competent unarmed strike is a martial (exotic starting in the spinning age) melee thrusting or swinging weapon that deals 1d3 bludgeoning damage.  It can be done using any body part and does not have special restrictions.  A competent unarmed strike can be used to parry, but the limb used takes half base weapon damage on success.
 
-If you have the Two Weapon Fighting feat, one of those weapons may be an unarmed strike.  Including your weapons could be a two-handed sword and a kick.
+If you have the Multi Weapon Fighting feat, one of those weapons may be an unarmed strike.  Including your weapons could be a two-handed sword and a kick.
 
 ## Ranged Weapons
 
@@ -1262,7 +1262,7 @@ Not actually a thing you do, but a thing that can happen.  The choice between at
 
 **Dodge:** For you, there is a skill Dodge(dex) which is always a class skill.  Use it instead of a raw dex roll on dodge checks.  Furthermore, Dodge grants a synergy bonus to parry rolls.
 
-**Two Weapon Fighting:** If you are wielding two weapons, you may attack with both of them as a standard attack action.
+**Multi Weapon Fighting:** If you are wielding multiple weapons, you may attack with each of them as a standard attack action.  (Note: a normal human can wield one weapon in each hand and kick) 
 
 **Exotic Weapon Proficiency:** Either pick a single exotic weapon to be proficient with or a single reason for a weapon to be exotic that no longer applies to you.
 

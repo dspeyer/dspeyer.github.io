@@ -653,6 +653,7 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 | Grant Spell Slot | Familiar Spirit, Spellcraft +15 | Grant your familiar spirit a spell slot |
 | Grant Spell Slot Suite | Grant Spell Slot | Grant your familiar spirit a set of spell slots |
 |Fluid Caster |  6 ranks spellcraft | Treat your spells as one rating smaller for purposes of cost |
+|Metamorph Swarm | Metamorph school, spellcraft +10, knowledge(biology) +10 | Transform into a swarm of animals |
 |Multi School |  two known schools | combine effects from different schools in one spell |
 |Multi Source Caster  |  two active magic source, spellcraft +10 | Split cost between schools |
 | Source Combination | Multi Source Caster, spellcraft +15, metamagic reducing special ability | Use metamagic reduction ability from one magic source with spells from another |
@@ -769,6 +770,11 @@ You can grant your familiar spirit a set of spell slots, up to a maximum of what
 #### Fluid Caster
 Prerequisite: 6 ranks spellcraft.    
 Treat your spells as one rating smaller for purposes of cost. You may take this feat multiple times and its effects stack, but no cost can be reduced below zero.  (Note: for Increasing costs, a rating zero spell can still be dangerous to cast.)
+
+#### Metamorph Swarm
+Prerequisites: Metamorph school, spellcraft +10, knowledge(biology) +10    
+When you use the Assume Form effect for a creature smaller than the target by up to four size categories, they turn into multiple instances of that creature (conserving mass).  All your bodies must remain within 100m of each other or the effect ends.  They do not get extra actions, but can use a move action to move any number of bodies in the same direction or to the same destination, and do qualify as having a great many limbs (e.g. for multi-weapon fighting).
+
 
 #### Multi School
 Prerequisite: two known schools   
