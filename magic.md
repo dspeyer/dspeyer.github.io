@@ -955,6 +955,8 @@ Effects:
 1. General Resistance: Future spells effecting the same target cost +X (cost: X)
 2. Specific Resistance: Future spells from chosen school effecting the same target cost +2X (cost: X)
 3. Very Specific Resistance: Future spells using chosen effect effecting the same target cost +4X (cost: X)
+3. Incoming Affinity Resistance: Future spells using affinities to affect the same target cost +2X (cost: X)
+3. Outgoing Affinity Resistance: Future attempts to use this object or spells on it for affinity targetting cost +4X (cost: X)
 4. Passcode: Resistances do not apply if caster thinks a specific phrase (cost: 2)
 4. Optional Resistance: Target person may choose to waive resistances (cost: 3)
 5. Including Internals: Abjuration also effects any objects inside the convex hull of the target (cost: 2)
@@ -967,7 +969,6 @@ The three resistance types do not stack.
 It is sometimes possible to evade Very Specific Resistance by inventing a new effect that is slightly different from the specified one.  There does need to be some difference, but it need not be practically relevant.  See the rules for inventing spell effects.
 
 Optional Resistance specifically works for people (that is, animals possessed by spirits).  You can apply it to a non-possessed animal, in which case any spirit which possesses said animal will have the option to waive resistances.
-
 
 If Retroactive and Including Internals are used, any creature or object entering the abjuration with a spell on it will be affected.  If the original spellcraft roll wasn't saved, reroll it but reroll any value that would have failed at the original DC.
 
@@ -1532,11 +1533,14 @@ If the spell specifies an effect on the caster, and you are casting it with a tr
 2. Enlarge: Increase a one-dimensional aspect of a spell by a factor of 10^X (cost: X00%)
 2. Widen: Increase a three-dimensional aspect of a spell by a linear factor of X^2 (cost: (5X)0%)
 2. Outsized Target: Effect a target that would normally be X times too large or small (cost: X)
-3. Affinity: Target a multicellular life form or a spirit inhabiting that life form because a piece of it is in range  (cost: 8)
+3. Biological Affinity: Target a multicellular life form or a spirit inhabiting that life form because a piece of it is in range  (cost: 8)
+4. Magical Affinity: Target a spirit or the body the spirit currently inhabits because one of that spirit's active spells is in range (cost: 6)
 
 Magics of Space can be stacked on top of each other.  You could, for example, target a point 10m above a person whose hair you hold by combining Affinity and Reach.
 
-Affinity targetting does work on recent corpses, but not those which have significantly decayed (dead for one day under typical circumstances).  Affinity targetting a cnidarian effects a single zooid, not a colony.
+Biological affinity targetting does work on recent corpses, but not those which have significantly decayed (dead for one day under typical circumstances).  Affinity targetting a cnidarian effects a single zooid, not a colony.
+
+Effects which cause a spell to not count against the active spell limit (e.g. Perfectly Stable Enchanter, Body and Soul Specialist) also make them not work for affinity targetting.
 
 ## Magics of Targeting
 
