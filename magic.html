@@ -932,7 +932,8 @@ and the spell that created the gem counts as completed.</p>
 rating is 1.2 times the rating of the gem to be created, rounded up. By
 default, the gem lasts one hour, though a shorter time may be chosen at
 no additional cost. Gems empowerments count against the limit of active
-spells. They cannot be combined with Metamagics of Targeting.</p>
+spells. They cannot be combined with Metamagics of Targeting, nor can
+their cost be reduced (e.g. by Fluid Caster).</p>
 <p>In theory, magic gems could form without spells given the right
 combination of natural magic and precipitation of crystals, most likely
 in a plutonic intrusion. Most worlds do not have these.</p>
@@ -1778,6 +1779,11 @@ modifier</td>
 <td>Treat your spells as one rating smaller for purposes of cost</td>
 </tr>
 <tr>
+<td>Invert Healing</td>
+<td>Health School</td>
+<td>Do healing magic backwards to cause harm</td>
+</tr>
+<tr>
 <td>Metamorph Swarm</td>
 <td>Metamorph school, spellcraft +10, knowledge(biology) +10</td>
 <td>Transform into a swarm of animals</td>
@@ -2100,6 +2106,17 @@ Treat your spells as one rating smaller for purposes of cost. You may
 take this feat multiple times and its effects stack, but no cost can be
 reduced below zero. (Note: for Increasing costs, a rating zero spell can
 still be dangerous to cast.)</p>
+<h4 id="invert-healing">Invert Healing</h4>
+<p>Prerequisites: Health School<br />
+Do healing magic backwards to cause harm. Inverting the Cure Wounds,
+Deep Injury, Poison, Disease and Cancer effects simply negate the
+numeric effects. Note that Aggrevate Poison or Disease do not themselves
+cause poison or disease, but only increase the DC of one already
+present. Inverted Instant Rest costs vitality as if from that many
+minutes of excercise. Inverted Cure Major Injury can render an arm or
+leg nonfunctional. Cure Amputation cannot be inverted.<br />
+Special: If the Health school is learned inverted, this feat allows for
+using the school the normal way.</p>
 <h4 id="metamorph-swarm">Metamorph Swarm</h4>
 <p>Prerequisites: Metamorph school, spellcraft +10, knowledge(biology)
 +10<br />
@@ -2811,6 +2828,9 @@ Duration: Instantaneous</p>
 <li>Cure Major Injury: Restore non-functioning body part (cost: 5)</li>
 <li>Cure Amputation: Regenerate missing body part (cost: 10)</li>
 </ol>
+<p>This school can be learned inverted (see the Invert Healing feat). If
+so, all effects are as if that feat were applied and that feat is needed
+to use the normal versions.</p>
 <h2 id="hexing">Hexing</h2>
 <p>This school disrupts the connection between soul and brain.</p>
 <p>Save: Will<br />

@@ -321,7 +321,7 @@ The crystal must be at least 1cm on a side.  Note that this makes it 3 grams for
 
 A wizard, including a latent wizard, can use a magic gem as the cost of a spell.  The gem's rating is decreased by the spell's.  Once the rating is reduced to zero, the gem reverts to being a mundane crystal and the spell that created the gem counts as completed.
 
-An awoken wizard can create a magic gem using a spell.  The spell's rating is 1.2 times the rating of the gem to be created, rounded up.  By default, the gem lasts one hour, though a shorter time may be chosen at no additional cost.  Gems empowerments count against the limit of active spells.  They cannot be combined with Metamagics of Targeting.
+An awoken wizard can create a magic gem using a spell.  The spell's rating is 1.2 times the rating of the gem to be created, rounded up.  By default, the gem lasts one hour, though a shorter time may be chosen at no additional cost.  Gems empowerments count against the limit of active spells.  They cannot be combined with Metamagics of Targeting, nor can their cost be reduced (e.g. by Fluid Caster).
 
 In theory, magic gems could form without spells given the right combination of natural magic and precipitation of crystals, most likely in a plutonic intrusion.  Most worlds do not have these.
 
@@ -653,6 +653,7 @@ When you climb, you move half (rather than a quarter) of your base speed.  You r
 | Grant Spell Slot | Familiar Spirit, Spellcraft +15 | Grant your familiar spirit a spell slot |
 | Grant Spell Slot Suite | Grant Spell Slot | Grant your familiar spirit a set of spell slots |
 |Fluid Caster |  6 ranks spellcraft | Treat your spells as one rating smaller for purposes of cost |
+| Invert Healing | Health School | Do healing magic backwards to cause harm |
 |Metamorph Swarm | Metamorph school, spellcraft +10, knowledge(biology) +10 | Transform into a swarm of animals |
 |Multi School |  two known schools | combine effects from different schools in one spell |
 |Multi Source Caster  |  two active magic source, spellcraft +10 | Split cost between schools |
@@ -770,6 +771,11 @@ You can grant your familiar spirit a set of spell slots, up to a maximum of what
 #### Fluid Caster
 Prerequisite: 6 ranks spellcraft.    
 Treat your spells as one rating smaller for purposes of cost. You may take this feat multiple times and its effects stack, but no cost can be reduced below zero.  (Note: for Increasing costs, a rating zero spell can still be dangerous to cast.)
+
+#### Invert Healing
+Prerequisites: Health School    
+Do healing magic backwards to cause harm.  Inverting the Cure Wounds, Deep Injury, Poison, Disease and Cancer effects simply negate the numeric effects.  Note that Aggrevate Poison or Disease do not themselves cause poison or disease, but only increase the DC of one already present.  Inverted Instant Rest costs vitality as if from that many minutes of excercise.  Inverted Cure Major Injury can render an arm or leg nonfunctional.  Cure Amputation cannot be inverted.    
+Special: If the Health school is learned inverted, this feat allows for using the school the normal way.
 
 #### Metamorph Swarm
 Prerequisites: Metamorph school, spellcraft +10, knowledge(biology) +10    
@@ -1226,6 +1232,8 @@ Effects:
 5. Cure Cancer: Eliminate X points of cancer (cost: 3*X)
 4. Cure Major Injury: Restore non-functioning body part (cost: 5)
 5. Cure Amputation: Regenerate missing body part (cost: 10)
+
+This school can be learned inverted (see the Invert Healing feat).  If so, all effects are as if that feat were applied and that feat is needed to use the normal versions.
 
 ## Hexing
 
