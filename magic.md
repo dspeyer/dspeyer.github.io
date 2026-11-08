@@ -1225,7 +1225,7 @@ Effects:
 
 1. Cure Wounds: Heal X hit points (cost: X)
 2. Diagnose: Caster learns how badly wounded target is (cost: 1)
-6. Instant Rest: Target gains the benefits of 15*X minutes of rest (cost: 2*X+3)
+6. Instant Rest: Target gains the benefits of 15X minutes of rest (cost: 2X+3)
 2. Cure Deep Injury: Heal X points of ability damage (cost: 2*X)
 3. Cure Poison: Reduce poison DC by X (cost: X)
 4. Cure Disease: Reduce disease DC by X (cost: 2*X)
