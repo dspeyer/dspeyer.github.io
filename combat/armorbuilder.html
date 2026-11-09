@@ -99,20 +99,19 @@
                      vs.acb = vs.nfacb;
                  }
                  if (part == 'torso') vs.w *= 2;
-                 if (part=='legs' || part=='arms') {
-                     vs.w *= 2;
-                     vs.cost *= 2;
-                 }
                  vs.desc = vs.desc.replace(/([^+]+) \+ \1 \+ \1/, '3x $1').replace(/([^+]+) \+ \1/, '2x $1');
                  console.log(vs);
-                 for (let k in vs) {
-                     let e = document.getElementById(part+k);
-                     if (e) {
-                         e.innerText = vs[k];
+                 let parts = (part in {arms:1, legs:1}) ? ['l'+part.slice(0,-1), 'r'+part.slice(0,-1)] : [part];
+                 for (let spart of parts) {
+                     for (let k in vs) {
+                         let e = document.getElementById(spart+k);
+                         if (e) {
+                             e.innerText = vs[k];
+                         }
                      }
-                 }
-                 for (let i in total) {
-                     total[i] += vs[i];
+                     for (let i in total) {
+                         total[i] += vs[i];
+                     }
                  }
              }
              for (let k in total) {
@@ -188,28 +187,52 @@
           <td id="torsospecial"></td>
       </tr>
       <tr>
-          <td>Arms</td>
-          <td id="armsdesc"></td>
-          <td id="armspierce"></td>
-          <td id="armsslash"></td>
-          <td id="armsbludgeon"></td>
-          <td id="armsacb"></td>
-          <td id="armsacp"></td>
-          <td id="armscost"></td>
-          <td id="armsw"></td>
-          <td id="armsspecial"></td>
+          <td>Left Arm</td>
+          <td id="larmdesc"></td>
+          <td id="larmpierce"></td>
+          <td id="larmslash"></td>
+          <td id="larmbludgeon"></td>
+          <td id="larmacb"></td>
+          <td id="larmacp"></td>
+          <td id="larmcost"></td>
+          <td id="larmw"></td>
+          <td id="larmspecial"></td>
       </tr>
       <tr>
-          <td>Legs</td>
-          <td id="legsdesc"></td>
-          <td id="legspierce"></td>
-          <td id="legsslash"></td>
-          <td id="legsbludgeon"></td>
-          <td id="legsacb"></td>
-          <td id="legsacp"></td>
-          <td id="legscost"></td>
-          <td id="legsw"></td>
-          <td id="legsspecial"></td>
+          <td>Right Arm</td>
+          <td id="rarmdesc"></td>
+          <td id="rarmpierce"></td>
+          <td id="rarmslash"></td>
+          <td id="rarmbludgeon"></td>
+          <td id="rarmacb"></td>
+          <td id="rarmacp"></td>
+          <td id="rarmcost"></td>
+          <td id="rarmw"></td>
+          <td id="rarmspecial"></td>
+      </tr>
+      <tr>
+          <td>Left Leg</td>
+          <td id="llegdesc"></td>
+          <td id="llegpierce"></td>
+          <td id="llegslash"></td>
+          <td id="llegbludgeon"></td>
+          <td id="llegacb"></td>
+          <td id="llegacp"></td>
+          <td id="llegcost"></td>
+          <td id="llegw"></td>
+          <td id="llegspecial"></td>
+      </tr>
+        <tr>
+          <td>Right Leg</td>
+          <td id="rlegdesc"></td>
+          <td id="rlegpierce"></td>
+          <td id="rlegslash"></td>
+          <td id="rlegbludgeon"></td>
+          <td id="rlegacb"></td>
+          <td id="rlegacp"></td>
+          <td id="rlegcost"></td>
+          <td id="rlegw"></td>
+          <td id="rlegspecial"></td>
       </tr>
       <tr>
           <td colspan="2"></td>

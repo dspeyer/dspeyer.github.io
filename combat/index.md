@@ -874,6 +874,10 @@ The wielder of a firearm with a decorative pump action may gain the bonus by pre
 
 Note that if the gun is in a vehicle and the enire vehicle moves, this is not a problem.  However, forced movement (from, e.g. a bull rush) does require re-readying.
 
+#### N-Barreled
+
+When firing an N-Barreled gun, you may choose freely which barrel to fire (they may be loaded with different ammunition).  When reloading, reload all barrels at no additional time-cost.  A pump-action N-Barreled gun has N seperate magazines.
+
 #### Multi-barrel Blast
 
 Fire all loaded barrels.  Use a single attack roll, but resolve armor separately for all bullets.  Strength needed increases by 2 for each barrel after the first.

@@ -1251,7 +1251,7 @@ Effects:
 2. Offensive Hex: Target takes -X penalty to all attacks (cost: 2*X)
 3. Defensive Hex: Target takes -X penalty to all active attempts to resist attack, disarmement, grapple or similar (cost: 2*X)
 3. Greater Hex: Target takes -X penalty to all skills and saving throws (cost: 3*X)
-3. Ability Hex: Target takes -X penalty to an ability score (cost: 2*X)
+3. Ability Hex: Target takes -X penalty to a non-constitution ability score (cost: 2*X)
 4. Blindness/Etc: Target loses a sense (cost: 4)
 5. Confusion: Target looses a mental faculty, such as words, arithmetic or theory-of-mind (cost: 10)
 6. One-Off: Hex only applies to the single next time the target attempts the action (cost: /2)

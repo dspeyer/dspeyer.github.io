@@ -164,7 +164,7 @@
              {key:'ugly',       label:'Ugly',                    avail:'Gunpowder',
               apply: (s) => { s.cost+=10; s.special.push('+2 intimidate, -2 diplomacy when displayed'); }},
              {key:'nbarrel',    label:'N-barreled',              avail:'Industrial', hasN:true,
-              prereq: ctx => ['Flint and Frizzen','Breach/Cartridge'].includes(ctx.action) ? null : 'requires Flint and Frizzen or Breach/Cartridge action',
+              prereq: ctx => ['Flint and Frizzen','Breach/Cartridge','Pump'].includes(ctx.action) ? null : 'requires Flint and Frizzen, Pump or Breach/Cartridge action',
               apply: (s, ctx) => { let n=ctx.n; s.weight*=(1+(n-1)*0.8); s.cost*=(1+(n-1)*0.4); s.special.push('Swap barrels as free action ('+n+'-barreled)'); }},
              {key:'multiblast', label:'Multibarrel Blast',       avail:'Steam',
               prereq: ctx => ctx.checked.nbarrel ? null : 'requires N-barreled',
