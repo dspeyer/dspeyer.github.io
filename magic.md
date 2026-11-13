@@ -841,7 +841,7 @@ You can structure your spells into completely stable forms, separate from yourse
 
 #### Arcane Strike
 Prerequisite: Monk or Holy Warrior.     
-When you make an attack (including as part of e.g. a disarm attempt), you may cast a spell as part of the same action.   The spell and attack must have the same target. If the attack misses, the spell is wasted (but still paid for).
+When you make a melee attack (including as part of e.g. a disarm attempt), you may cast a spell as part of the same action.   The spell and attack must have the same target. If the attack misses, the spell is wasted (but still paid for).
 
 #### Determined Caster
 Prerequisite: monk, Bard or paladin.   
@@ -1778,7 +1778,7 @@ A spirit without a body cannot do very much.  It cannot move objects, make sound
 
 Spirits can move themselves, flying at 10 meters per round unless otherwise specified.
 
-Spirits have hit points equal to their wisdom score.  They do not take damage from baryonic sources, but disembodied spirits do take half damage from light-based weapons (embodied spirits have cover from their bodies).  Spirits do not have their own vitality pool, so if a disembodied spirit would take vitality damage, it instead takes nonlethal hit point damage.
+Spirits have hit points equal to their wisdom score.  They do not take damage from baryonic or optical sources, but disembodied spirits do take half damage from direct (non-optical) heat-based weapons, as the principle of entropy is not dependent on the specific physics of the microstates.  (Embodied spirits have cover from their bodies).  Spirits do not have their own vitality pool, so if a disembodied spirit would take vitality damage, it instead takes nonlethal hit point damage.
 
 Spirits have specific environments they're comfortable in.  A spirit outside of such an environment for an hour must make a DC 10 will save to hold itself together, then additional will saves at incrementing DCs each hour thereafter.  A spirit that straddles a planar boundary and is only uncomfortable on one side will snap back to the other, but a monoplanar spirit will perish.  A spirit which rests for five minutes in a comfortable environmnet resets this counter.
 
